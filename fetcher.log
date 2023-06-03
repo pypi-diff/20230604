@@ -328,3 +328,47 @@
 [2023-06-04 00:36:04] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
 [2023-06-04 00:37:00] INFO root fetch - main [MainThread]: End processing [django-oasis4-certs]: success
 [2023-06-04 00:37:00] INFO root fetch - main [MainThread]: Store serial: [18362588]
+[2023-06-04 00:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362588]
+[2023-06-04 00:42:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudmersive-validate-api-client
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedbase-client
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mynacode
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-vault
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prikfy
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-coding-assistant
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mynacode
+[2023-06-04 00:42:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: relevanceai
+[2023-06-04 00:42:09] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:42:09] INFO root fetch - processPackages [cloudmersive-validate-api-client]: New version: [3.2.5] Old Version: [3.2.4]
+[2023-06-04 00:42:09] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-04 00:42:09] WARNING root fetch - processPackages [prikfy]: Skipping, unable to determine old version
+[2023-06-04 00:42:09] INFO root fetch - main [MainThread]: End processing [prikfy] error
+[2023-06-04 00:42:09] WARNING root fetch - processPackages [python-coding-assistant]: Skipping, unable to determine old version
+[2023-06-04 00:42:09] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:42:09] INFO root fetch - processPackages [vector-vault]: New version: [1.7.8.2] Old Version: [1.7.8.1]
+[2023-06-04 00:42:09] INFO root fetch - main [MainThread]: End processing [python-coding-assistant] error
+[2023-06-04 00:42:09] INFO root fetch - processPackages [embedbase-client]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 00:42:09] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:42:09] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:42:09] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-04 00:42:09] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230604/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-04 00:42:09] INFO root fetch - processPackages [cloudmersive-validate-api-client]: Downloading https://files.pythonhosted.org/packages/61/9b/a1a778d0cb8679d2579070d15e57ffc3afb0af1f0562fe3e4e3ca4270993/cloudmersive_validate_api_client-3.2.4.tar.gz
+[2023-06-04 00:42:09] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:42:09] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:42:09] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/8a/76/291cc355a1e8554a5ea6e16ca18a452b40ef6d14af342e773204fdc63a1a/vector_vault-1.7.8.1.tar.gz
+[2023-06-04 00:42:09] INFO root fetch - processPackages [embedbase-client]: Downloading https://files.pythonhosted.org/packages/90/db/865483191299d5dcb46ecc277d9924d1ca10c9f8e942bcb29ff963cefab6/embedbase_client-0.1.9.tar.gz
+[2023-06-04 00:42:09] INFO root fetch - processPackages [cloudmersive-validate-api-client]: Downloading https://files.pythonhosted.org/packages/1d/78/720aa2b8e9363a069baa5b996627a77da42b674fcf8a530de80630b98dc1/cloudmersive_validate_api_client-3.2.5.tar.gz
+[2023-06-04 00:42:09] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/b3/8a/7fec46ae00f38163d542415c472641387e32d0bab52d97b3fa6f210b373c/vector_vault-1.7.8.2.tar.gz
+[2023-06-04 00:42:09] INFO root fetch - processPackages [embedbase-client]: executing diffoscope
+[2023-06-04 00:42:09] INFO root fetch - processPackages [embedbase-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase_client-0.1.8.tar.gz tmp/embedbase_client-0.1.9.tar.gz --markdown 20230604/e/embedbase-client/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 00:42:09] INFO root fetch - processPackages [cloudmersive-validate-api-client]: executing diffoscope
+[2023-06-04 00:42:09] INFO root fetch - processPackages [cloudmersive-validate-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudmersive_validate_api_client-3.2.4.tar.gz tmp/cloudmersive_validate_api_client-3.2.5.tar.gz --markdown 20230604/c/cloudmersive-validate-api-client/3.2.4-3.2.5/diff.md --exclude *.pyd
+[2023-06-04 00:42:10] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 00:42:10] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.8.1.tar.gz tmp/vector_vault-1.7.8.2.tar.gz --markdown 20230604/v/vector-vault/1.7.8.1-1.7.8.2/diff.md --exclude *.pyd
+[2023-06-04 00:42:10] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:42:10] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:42:10] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-04 00:42:11] INFO root fetch - main [MainThread]: End processing [embedbase-client]: success
+[2023-06-04 00:42:11] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 00:42:12] INFO root fetch - main [MainThread]: End processing [cloudmersive-validate-api-client]: success
+[2023-06-04 00:42:12] INFO root fetch - main [MainThread]: Store serial: [18362612]
