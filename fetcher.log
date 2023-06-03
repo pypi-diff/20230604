@@ -643,3 +643,22 @@
 [2023-06-04 01:23:38] INFO root fetch - main [MainThread]: End processing [poonia]: success
 [2023-06-04 01:23:38] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
 [2023-06-04 01:23:38] INFO root fetch - main [MainThread]: Store serial: [18362791]
+[2023-06-04 01:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362791]
+[2023-06-04 01:28:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 01:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pySSRSapi
+[2023-06-04 01:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BoilerTest
+[2023-06-04 01:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fgdb-to-gpkg
+[2023-06-04 01:28:47] INFO root fetch - processPackages [pySSRSapi]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 01:28:47] INFO root fetch - processPackages [fgdb-to-gpkg]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-06-04 01:28:47] WARNING root fetch - processPackages [BoilerTest]: Skipping, unable to determine old version
+[2023-06-04 01:28:47] INFO root fetch - main [MainThread]: End processing [BoilerTest] error
+[2023-06-04 01:28:48] INFO root fetch - processPackages [pySSRSapi]: Downloading https://files.pythonhosted.org/packages/32/b8/8bb7c2010d8c23e781cccec0d116e531d9325978bb3069f551df7ed1760a/pySSRSapi-0.0.4.tar.gz
+[2023-06-04 01:28:48] INFO root fetch - processPackages [fgdb-to-gpkg]: Downloading https://files.pythonhosted.org/packages/36/cb/9155e6975e48a370006e1a910354fd557c90c2548d4838765f6987264852/fgdb_to_gpkg-0.1.4.tar.gz
+[2023-06-04 01:28:48] INFO root fetch - processPackages [pySSRSapi]: executing diffoscope
+[2023-06-04 01:28:48] INFO root fetch - processPackages [pySSRSapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySSRSapi-0.0.3.tar.gz tmp/pySSRSapi-0.0.4.tar.gz --markdown 20230604/p/pySSRSapi/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 01:28:48] INFO root fetch - processPackages [fgdb-to-gpkg]: Downloading https://files.pythonhosted.org/packages/dd/4a/c83f64cb0b33a2791b7438e0b938dd3503fa5137066ad28c6a4a8078cbf2/fgdb_to_gpkg-0.1.6.tar.gz
+[2023-06-04 01:28:48] INFO root fetch - processPackages [fgdb-to-gpkg]: executing diffoscope
+[2023-06-04 01:28:48] INFO root fetch - processPackages [fgdb-to-gpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgdb_to_gpkg-0.1.4.tar.gz tmp/fgdb_to_gpkg-0.1.6.tar.gz --markdown 20230604/f/fgdb-to-gpkg/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-06-04 01:28:49] INFO root fetch - main [MainThread]: End processing [pySSRSapi]: success
+[2023-06-04 01:28:49] INFO root fetch - main [MainThread]: End processing [fgdb-to-gpkg]: success
+[2023-06-04 01:28:49] INFO root fetch - main [MainThread]: Store serial: [18362813]
