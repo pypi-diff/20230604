@@ -629,3 +629,17 @@
 [2023-06-04 01:18:28] INFO root fetch - main [MainThread]: End processing [hstsparser]: success
 [2023-06-04 01:18:28] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-06-04 01:18:28] INFO root fetch - main [MainThread]: Store serial: [18362769]
+[2023-06-04 01:23:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362769]
+[2023-06-04 01:23:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 01:23:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poonia
+[2023-06-04 01:23:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-explorer
+[2023-06-04 01:23:36] INFO root fetch - processPackages [poonia]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 01:23:36] INFO root fetch - processPackages [llm-explorer]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 01:23:36] INFO root fetch - processPackages [llm-explorer]: Downloading https://files.pythonhosted.org/packages/e2/11/93f3fcfad76cb408ed06bd48f83334cd0381bda20417bd1666ced8334361/llm_explorer-0.0.6.tar.gz
+[2023-06-04 01:23:37] INFO root fetch - processPackages [llm-explorer]: executing diffoscope
+[2023-06-04 01:23:37] INFO root fetch - processPackages [llm-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_explorer-0.0.5.tar.gz tmp/llm_explorer-0.0.6.tar.gz --markdown 20230604/l/llm-explorer/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 01:23:37] INFO root fetch - processPackages [poonia]: executing diffoscope
+[2023-06-04 01:23:37] INFO root fetch - processPackages [poonia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poonia-0.1.8.tar.gz tmp/poonia-0.1.9.tar.gz --markdown 20230604/p/poonia/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 01:23:38] INFO root fetch - main [MainThread]: End processing [poonia]: success
+[2023-06-04 01:23:38] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
+[2023-06-04 01:23:38] INFO root fetch - main [MainThread]: Store serial: [18362791]
