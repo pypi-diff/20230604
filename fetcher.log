@@ -483,3 +483,42 @@
 [2023-06-04 00:52:34] INFO root fetch - main [MainThread]: End processing [griptape-tools]: success
 [2023-06-04 00:52:34] INFO root fetch - main [MainThread]: End processing [griptape]: success
 [2023-06-04 00:52:34] INFO root fetch - main [MainThread]: Store serial: [18362666]
+[2023-06-04 00:57:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362666]
+[2023-06-04 00:57:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 00:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: veetility
+[2023-06-04 00:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: boris-behav-obs
+[2023-06-04 00:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: string-py
+[2023-06-04 00:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-vault
+[2023-06-04 00:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: static-frame-pyodide
+[2023-06-04 00:57:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metricspace
+[2023-06-04 00:57:43] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 00:57:43] INFO root fetch - processPackages [string-py]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 00:57:43] INFO root fetch - processPackages [static-frame-pyodide]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 00:57:43] INFO root fetch - processPackages [metricspace]: New version: [0.3.1] Old Version: [0.2.1]
+[2023-06-04 00:57:43] INFO root fetch - processPackages [vector-vault]: New version: [1.7.9] Old Version: [1.7.8.2]
+[2023-06-04 00:57:43] INFO root fetch - processPackages [boris-behav-obs]: New version: [8.9.8] Old Version: [8.9.6]
+[2023-06-04 00:57:43] INFO root fetch - processPackages [string-py]: Downloading https://files.pythonhosted.org/packages/e5/1e/62786ebbc3988c3203547958c3e819e802127f46510898ceb8de4e6b006a/string_py-0.1.2.tar.gz
+[2023-06-04 00:57:43] INFO root fetch - processPackages [static-frame-pyodide]: Downloading https://files.pythonhosted.org/packages/df/f6/cd90196e9c53c009064df42c358aaa170ba29d9ec57bc4da3fef58488e04/static-frame-pyodide-0.1.2.tar.gz
+[2023-06-04 00:57:43] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/a1/fd/b2d4fcc379937acb64c42d6a50f203f7b62a41fe536a6fc56389fd5cd411/vector_vault-1.7.9.tar.gz
+[2023-06-04 00:57:43] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/fa/86/dab63c46ea7662e1b517fc8475e5a2625b89b056908a6f8b06c809b6ee0c/metricspace-0.3.1.tar.gz
+[2023-06-04 00:57:43] INFO root fetch - processPackages [metricspace]: executing diffoscope
+[2023-06-04 00:57:43] INFO root fetch - processPackages [metricspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metricspace-0.2.1.tar.gz tmp/metricspace-0.3.1.tar.gz --markdown 20230604/m/metricspace/0.2.1-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 00:57:43] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-06-04 00:57:43] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230604/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 00:57:43] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 00:57:43] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.8.2.tar.gz tmp/vector_vault-1.7.9.tar.gz --markdown 20230604/v/vector-vault/1.7.8.2-1.7.9/diff.md --exclude *.pyd
+[2023-06-04 00:57:43] INFO root fetch - processPackages [boris-behav-obs]: executing diffoscope
+[2023-06-04 00:57:43] INFO root fetch - processPackages [boris-behav-obs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boris-behav-obs-8.9.6.tar.gz tmp/boris-behav-obs-8.9.8.tar.gz --markdown 20230604/b/boris-behav-obs/8.9.6-8.9.8/diff.md --exclude *.pyd
+[2023-06-04 00:57:43] INFO root fetch - processPackages [static-frame-pyodide]: Downloading https://files.pythonhosted.org/packages/06/08/af44976ce359c7c8f34b77b89276d9ee7fc27f194378df817d1b5a8676f6/static-frame-pyodide-0.1.3.tar.gz
+[2023-06-04 00:57:43] INFO root fetch - processPackages [string-py]: Downloading https://files.pythonhosted.org/packages/da/8d/2b6c0b14251ddd37dd3576666f0404127ba8f5b420a5810e6833eafb0e75/string_py-0.1.3.tar.gz
+[2023-06-04 00:57:43] INFO root fetch - processPackages [static-frame-pyodide]: executing diffoscope
+[2023-06-04 00:57:43] INFO root fetch - processPackages [static-frame-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/static-frame-pyodide-0.1.2.tar.gz tmp/static-frame-pyodide-0.1.3.tar.gz --markdown 20230604/s/static-frame-pyodide/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 00:57:44] INFO root fetch - processPackages [string-py]: executing diffoscope
+[2023-06-04 00:57:44] INFO root fetch - processPackages [string-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/string_py-0.1.2.tar.gz tmp/string_py-0.1.3.tar.gz --markdown 20230604/s/string-py/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [metricspace]: success
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [veetility]: success
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [static-frame-pyodide]: success
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [string-py]: success
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [boris-behav-obs]: success
+[2023-06-04 00:57:45] INFO root fetch - main [MainThread]: Store serial: [18362682]
