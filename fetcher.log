@@ -765,3 +765,36 @@
 [2023-06-04 01:42:24] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
 [2023-06-04 01:42:24] INFO root fetch - main [MainThread]: End processing [sage-conf] error
 [2023-06-04 01:42:24] INFO root fetch - main [MainThread]: Store serial: [18362868]
+[2023-06-04 01:47:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362868]
+[2023-06-04 01:47:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 01:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moss-engine
+[2023-06-04 01:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: good-regex
+[2023-06-04 01:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: granny-pliers
+[2023-06-04 01:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlalchemy-firebird
+[2023-06-04 01:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfish
+[2023-06-04 01:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythttp
+[2023-06-04 01:47:33] INFO root fetch - processPackages [moss-engine]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 01:47:33] INFO root fetch - processPackages [pythttp]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 01:47:33] INFO root fetch - processPackages [sqlalchemy-firebird]: New version: [2.0.0] Old Version: [0.8.0]
+[2023-06-04 01:47:33] WARNING root fetch - processPackages [granny-pliers]: Skipping, unable to determine old version
+[2023-06-04 01:47:33] INFO root fetch - main [MainThread]: End processing [granny-pliers] error
+[2023-06-04 01:47:33] WARNING root fetch - processPackages [good-regex]: Skipping, unable to determine old version
+[2023-06-04 01:47:33] INFO root fetch - main [MainThread]: End processing [good-regex] error
+[2023-06-04 01:47:33] INFO root fetch - processPackages [kfish]: New version: [99.0.202306032341] Old Version: [99.0.202306030901]
+[2023-06-04 01:47:33] INFO root fetch - processPackages [sqlalchemy-firebird]: Downloading https://files.pythonhosted.org/packages/66/6f/341016da1866b9f34442ae7163c9d8e34dbe3b77292f27896fe4d2cd2142/sqlalchemy-firebird-0.8.0.tar.gz
+[2023-06-04 01:47:33] INFO root fetch - processPackages [moss-engine]: Downloading https://files.pythonhosted.org/packages/11/f2/14abc80a186d7762b276167d6b223ff09b4f94457c6cc4c80af495599ad5/moss-engine-0.0.1.tar.gz
+[2023-06-04 01:47:33] WARNING root fetch - processPackages [moss-engine]: Skipping package: exceeds size limit 36859860>=10485760
+[2023-06-04 01:47:33] INFO root fetch - main [MainThread]: End processing [moss-engine] error
+[2023-06-04 01:47:33] INFO root fetch - processPackages [pythttp]: Downloading https://files.pythonhosted.org/packages/ef/dd/1d1313eb2e76d8fb9aaa4cd732f7353cbb3499d4859b36b8cc86a7da89a1/pythttp-0.1.1.tar.gz
+[2023-06-04 01:47:33] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/d1/70/069b24fe1092cfa21d73301887b53cb11025f3a98de876470bb9b0532b27/kfish-99.0.202306032341-py3-none-any.whl
+[2023-06-04 01:47:33] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 01:47:33] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306030901-py3-none-any.whl.zip tmp/kfish-99.0.202306032341-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306030901-99.0.202306032341/diff.md --exclude *.pyd
+[2023-06-04 01:47:33] INFO root fetch - processPackages [sqlalchemy-firebird]: Downloading https://files.pythonhosted.org/packages/3c/9c/7eb9250a524fa134a956d6d7d7107f1f4d79f23fd03ce00118c4f3191c4b/sqlalchemy-firebird-2.0.0.tar.gz
+[2023-06-04 01:47:33] INFO root fetch - processPackages [pythttp]: executing diffoscope
+[2023-06-04 01:47:33] INFO root fetch - processPackages [pythttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythttp-0.1.0.tar.gz tmp/pythttp-0.1.1.tar.gz --markdown 20230604/p/pythttp/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 01:47:33] INFO root fetch - processPackages [sqlalchemy-firebird]: executing diffoscope
+[2023-06-04 01:47:33] INFO root fetch - processPackages [sqlalchemy-firebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-firebird-0.8.0.tar.gz tmp/sqlalchemy-firebird-2.0.0.tar.gz --markdown 20230604/s/sqlalchemy-firebird/0.8.0-2.0.0/diff.md --exclude *.pyd
+[2023-06-04 01:47:34] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 01:47:34] INFO root fetch - main [MainThread]: End processing [sqlalchemy-firebird]: success
+[2023-06-04 01:47:34] INFO root fetch - main [MainThread]: End processing [pythttp]: success
+[2023-06-04 01:47:34] INFO root fetch - main [MainThread]: Store serial: [18362887]
