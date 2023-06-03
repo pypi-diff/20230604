@@ -120,3 +120,67 @@
 [2023-06-04 00:15:18] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2023-06-04 00:15:19] INFO root fetch - main [MainThread]: End processing [egobox]: success
 [2023-06-04 00:15:19] INFO root fetch - main [MainThread]: Store serial: [18362471]
+[2023-06-04 00:20:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362471]
+[2023-06-04 00:20:28] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bground
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlfast
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jiggybase
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: traceblame
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: most-queue
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: catencfamily
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-hostutils
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: traceblame
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mb-pandas
+[2023-06-04 00:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cspot
+[2023-06-04 00:20:28] INFO root fetch - processPackages [mlfast]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [catencfamily]: New version: [0.0.61] Old Version: [0.0.6]
+[2023-06-04 00:20:28] ERROR root fetch - processPackages [cspot]: Unable to get metadata: No such project 'cspot'
+[2023-06-04 00:20:28] INFO root fetch - processPackages [most-queue]: New version: [1.22] Old Version: [1.21]
+[2023-06-04 00:20:28] INFO root fetch - main [MainThread]: End processing [cspot] error
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [jiggybase]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [bground]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [django-hostutils]: New version: [0.0.dev3] Old Version: [0.0.5]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [mb-pandas]: New version: [1.0.202306032219] Old Version: [1.0.202305311045]
+[2023-06-04 00:20:28] INFO root fetch - processPackages [django-hostutils]: Downloading https://files.pythonhosted.org/packages/4d/ed/d7e72995bd1780527929844a9d15c5d9c61d257942a14e90b3c3f6a8658c/django-hostutils-0.0.5.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: Downloading https://files.pythonhosted.org/packages/d5/cd/aaf6a5e679a592d405ffd8cba9da809b996eb1865914d77483ebb4a83aa5/traceblame-0.0.5.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: Downloading https://files.pythonhosted.org/packages/d5/cd/aaf6a5e679a592d405ffd8cba9da809b996eb1865914d77483ebb4a83aa5/traceblame-0.0.5.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [bground]: Downloading https://files.pythonhosted.org/packages/c6/ba/db678f55c1405c2b4df7d29b53fa571155a427d895aed5a646204d1eb5a7/bground-0.0.3.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [most-queue]: Downloading https://files.pythonhosted.org/packages/55/27/fff290eed01e9e63b15d49334cfe1593c57be376bffae6dea64401459c4e/most_queue-1.22.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [mlfast]: Downloading https://files.pythonhosted.org/packages/ab/76/94207ce88b025577723a1aa3c900c92dbe5c19b7661e797a8b6c63981cfc/mlfast-0.0.7.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [mb-pandas]: Downloading https://files.pythonhosted.org/packages/bd/18/2cbe4588bfc9951e250fe1d240e8ef0daed774c4651606f94d9bc0e8c519/mb_pandas-1.0.202306032219-py3-none-any.whl
+[2023-06-04 00:20:28] INFO root fetch - processPackages [catencfamily]: Downloading https://files.pythonhosted.org/packages/f0/a4/c84a7731e090c33a9e52a4be0e4cdadbf6cd0a43eac50bb31f029bfc0dff/catencfamily-0.0.61.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [jiggybase]: Downloading https://files.pythonhosted.org/packages/d1/d0/6e08814d2fdd1dd73e9491009c19e11d63323b522d5a891aa477bed5ffb0/jiggybase-0.0.36.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: Downloading https://files.pythonhosted.org/packages/e4/75/e0705f4a4630ed769d63452e5c5a221b333dde91a89f0599ce7edd456f60/traceblame-0.0.7.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: Downloading https://files.pythonhosted.org/packages/e4/75/e0705f4a4630ed769d63452e5c5a221b333dde91a89f0599ce7edd456f60/traceblame-0.0.7.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [django-hostutils]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [django-hostutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-hostutils-0.0.5.tar.gz tmp/django-hostutils-0.0.dev3.tar.gz --markdown 20230604/d/django-hostutils/0.0.5-0.0.dev3/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [most-queue]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [most-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/most_queue-1.21.tar.gz tmp/most_queue-1.22.tar.gz --markdown 20230604/m/most-queue/1.21-1.22/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [mb-pandas]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [mb-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pandas-1.0.202305311045-py3-none-any.whl.zip tmp/mb_pandas-1.0.202306032219-py3-none-any.whl.zip --markdown 20230604/m/mb-pandas/1.0.202305311045-1.0.202306032219/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [catencfamily]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [bground]: Downloading https://files.pythonhosted.org/packages/41/6c/f6ff13cece28ecabd838b558c5dfef8d3b171f79ce0ea00c7d957d9498d8/bground-0.1.0.tar.gz
+[2023-06-04 00:20:28] INFO root fetch - processPackages [catencfamily]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catencfamily-0.0.6.tar.gz tmp/catencfamily-0.0.61.tar.gz --markdown 20230604/c/catencfamily/0.0.6-0.0.61/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [jiggybase]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [jiggybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiggybase-0.0.35.tar.gz tmp/jiggybase-0.0.36.tar.gz --markdown 20230604/j/jiggybase/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceblame-0.0.5.tar.gz tmp/traceblame-0.0.7.tar.gz --markdown 20230604/t/traceblame/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [traceblame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traceblame-0.0.5.tar.gz tmp/traceblame-0.0.7.tar.gz --markdown 20230604/t/traceblame/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 00:20:28] INFO root fetch - processPackages [bground]: executing diffoscope
+[2023-06-04 00:20:28] INFO root fetch - processPackages [bground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bground-0.0.3.tar.gz tmp/bground-0.1.0.tar.gz --markdown 20230604/b/bground/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-06-04 00:20:29] INFO root fetch - processPackages [mlfast]: Downloading https://files.pythonhosted.org/packages/e2/fe/1766115228a5487697577fe004010600f383974022f6296c3eebc5bec29b/mlfast-0.0.8.tar.gz
+[2023-06-04 00:20:29] INFO root fetch - processPackages [mlfast]: executing diffoscope
+[2023-06-04 00:20:29] INFO root fetch - processPackages [mlfast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlfast-0.0.7.tar.gz tmp/mlfast-0.0.8.tar.gz --markdown 20230604/m/mlfast/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [mb-pandas]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [traceblame]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [bground]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [mlfast]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [traceblame]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [jiggybase]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [catencfamily]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [django-hostutils]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: End processing [most-queue]: success
+[2023-06-04 00:20:30] INFO root fetch - main [MainThread]: Store serial: [18362508]
