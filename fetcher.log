@@ -843,3 +843,33 @@
 [2023-06-04 01:53:00] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-06-04 01:53:17] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
 [2023-06-04 01:53:17] INFO root fetch - main [MainThread]: Store serial: [18362907]
+[2023-06-04 01:58:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362907]
+[2023-06-04 01:58:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BoilerTest
+[2023-06-04 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robyn
+[2023-06-04 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tercol
+[2023-06-04 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyAutoSummarizer
+[2023-06-04 01:58:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BoilerTest
+[2023-06-04 01:58:26] INFO root fetch - processPackages [BoilerTest]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 01:58:26] WARNING root fetch - processPackages [pyAutoSummarizer]: Skipping, unable to determine old version
+[2023-06-04 01:58:26] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer] error
+[2023-06-04 01:58:26] INFO root fetch - processPackages [BoilerTest]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 01:58:26] INFO root fetch - processPackages [tercol]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-04 01:58:26] INFO root fetch - processPackages [robyn]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-06-04 01:58:27] INFO root fetch - processPackages [tercol]: Downloading https://files.pythonhosted.org/packages/95/ea/f2873654573ed146cec46638e925a3c4353b34a8ad350362f3680f37fd43/tercol-0.1.3.tar.gz
+[2023-06-04 01:58:27] INFO root fetch - processPackages [BoilerTest]: Downloading https://files.pythonhosted.org/packages/a8/b6/8f1fb3c24b274ba2d3d9705d0367eb53f77575785a6e1fece1f368b71eeb/BoilerTest-1.1.1.tar.gz
+[2023-06-04 01:58:27] INFO root fetch - processPackages [BoilerTest]: Downloading https://files.pythonhosted.org/packages/a8/b6/8f1fb3c24b274ba2d3d9705d0367eb53f77575785a6e1fece1f368b71eeb/BoilerTest-1.1.1.tar.gz
+[2023-06-04 01:58:27] INFO root fetch - processPackages [BoilerTest]: executing diffoscope
+[2023-06-04 01:58:27] INFO root fetch - processPackages [BoilerTest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BoilerTest-1.1.0.tar.gz tmp/BoilerTest-1.1.1.tar.gz --markdown 20230604/B/BoilerTest/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 01:58:27] INFO root fetch - processPackages [BoilerTest]: executing diffoscope
+[2023-06-04 01:58:27] INFO root fetch - processPackages [BoilerTest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BoilerTest-1.1.0.tar.gz tmp/BoilerTest-1.1.1.tar.gz --markdown 20230604/B/BoilerTest/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 01:58:27] INFO root fetch - processPackages [robyn]: executing diffoscope
+[2023-06-04 01:58:27] INFO root fetch - processPackages [robyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robyn-0.8.1.tar.gz tmp/robyn-0.9.0.tar.gz --markdown 20230604/r/robyn/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 01:58:27] INFO root fetch - processPackages [tercol]: Downloading https://files.pythonhosted.org/packages/a7/fa/d6eedb893f4655e8395d2550bd30db0d510e4c2bac7d9767c3188f8a82ac/tercol-0.1.4.tar.gz
+[2023-06-04 01:58:27] INFO root fetch - processPackages [tercol]: executing diffoscope
+[2023-06-04 01:58:27] INFO root fetch - processPackages [tercol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tercol-0.1.3.tar.gz tmp/tercol-0.1.4.tar.gz --markdown 20230604/t/tercol/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 01:58:28] INFO root fetch - main [MainThread]: End processing [BoilerTest]: success
+[2023-06-04 01:58:28] INFO root fetch - main [MainThread]: End processing [BoilerTest]: success
+[2023-06-04 01:58:28] INFO root fetch - main [MainThread]: End processing [tercol]: success
+[2023-06-04 01:58:28] INFO root fetch - main [MainThread]: End processing [robyn]: success
+[2023-06-04 01:58:28] INFO root fetch - main [MainThread]: Store serial: [18362971]
