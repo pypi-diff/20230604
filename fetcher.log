@@ -1,0 +1,40 @@
+[2023-06-04 00:04:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362395]
+[2023-06-04 00:04:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mynacode
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mynacode
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phiterm
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phidata
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CommandAlarm
+[2023-06-04 00:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mynacode
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [phidata]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [CommandAlarm]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [phiterm]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-06-04 00:04:53] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2023-06-04 00:04:53] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-1.6.8.tar.gz tmp/phidata-1.6.9.tar.gz --markdown 20230604/p/phidata/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-06-04 00:04:53] INFO root fetch - processPackages [phiterm]: executing diffoscope
+[2023-06-04 00:04:53] INFO root fetch - processPackages [phiterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phiterm-1.6.8.tar.gz tmp/phiterm-1.6.9.tar.gz --markdown 20230604/p/phiterm/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-06-04 00:04:53] INFO root fetch - processPackages [CommandAlarm]: Downloading https://files.pythonhosted.org/packages/ec/d1/7608d0b1a08a0a9e519767c9ea8fba74c64b5d219c33ca198c21bcc22904/CommandAlarm-0.1.0.tar.gz
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:04:53] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:04:53] INFO root fetch - processPackages [CommandAlarm]: Downloading https://files.pythonhosted.org/packages/58/68/729027133ab16e48e36ea24f8f982f0ac15e39e85953b6d2da2d1dbadcbf/CommandAlarm-0.2.0.tar.gz
+[2023-06-04 00:04:54] INFO root fetch - processPackages [CommandAlarm]: executing diffoscope
+[2023-06-04 00:04:54] INFO root fetch - processPackages [CommandAlarm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommandAlarm-0.1.0.tar.gz tmp/CommandAlarm-0.2.0.tar.gz --markdown 20230604/C/CommandAlarm/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [CommandAlarm]: success
+[2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [phiterm]: success
+[2023-06-04 00:04:57] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2023-06-04 00:04:57] INFO root fetch - main [MainThread]: Store serial: [18362411]
