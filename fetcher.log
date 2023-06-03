@@ -662,3 +662,38 @@
 [2023-06-04 01:28:49] INFO root fetch - main [MainThread]: End processing [pySSRSapi]: success
 [2023-06-04 01:28:49] INFO root fetch - main [MainThread]: End processing [fgdb-to-gpkg]: success
 [2023-06-04 01:28:49] INFO root fetch - main [MainThread]: Store serial: [18362813]
+[2023-06-04 01:33:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362813]
+[2023-06-04 01:33:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 01:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: relevanceai
+[2023-06-04 01:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: femr
+[2023-06-04 01:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: femr-cuda
+[2023-06-04 01:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: femr-oldcpu
+[2023-06-04 01:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: skelly-synchronize
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr-cuda]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr-oldcpu]: New version: [0.1.8] Old Version: [0.0.19]
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-04 01:33:58] INFO root fetch - processPackages [relevanceai]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-04 01:33:58] INFO root fetch - processPackages [skelly-synchronize]: New version: [2023.6.1018] Old Version: [2023.5.1017]
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr-oldcpu]: Downloading https://files.pythonhosted.org/packages/3c/86/1cf2a8d99c6de8f94e020e1dbaed5b9b7c1d07106c6c35a1587160d2a13e/femr_oldcpu-0.0.19-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr-cuda]: Downloading https://files.pythonhosted.org/packages/47/4a/751ab6007fcde8c31d161812ff5403ac7485b4a43eee595fb398da2d0ca2/femr_cuda-0.1.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr]: Downloading https://files.pythonhosted.org/packages/05/12/81ae4a5b1dd3aad27a74fbb4da2f103977ed5e3b3b81cc929410554cde17/femr-0.1.7.tar.gz
+[2023-06-04 01:33:58] INFO root fetch - processPackages [relevanceai]: executing diffoscope
+[2023-06-04 01:33:58] INFO root fetch - processPackages [relevanceai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relevanceai-4.0.8.tar.gz tmp/relevanceai-4.0.9.tar.gz --markdown 20230604/r/relevanceai/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-04 01:33:58] INFO root fetch - processPackages [skelly-synchronize]: Downloading https://files.pythonhosted.org/packages/74/f3/f21eb486e23606ef1c375e9bb52cfe95b91594da2196aadf2b6131432a95/skelly_synchronize-2023.6.1018.tar.gz
+[2023-06-04 01:33:58] INFO root fetch - processPackages [skelly-synchronize]: executing diffoscope
+[2023-06-04 01:33:58] INFO root fetch - processPackages [skelly-synchronize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skelly_synchronize-2023.5.1017.tar.gz tmp/skelly_synchronize-2023.6.1018.tar.gz --markdown 20230604/s/skelly-synchronize/2023.5.1017-2023.6.1018/diff.md --exclude *.pyd
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr]: Downloading https://files.pythonhosted.org/packages/ff/bf/0e8a5ba345650ad69da87255688668f9c2318f9cb544d8278dd2a37fcffb/femr-0.1.8.tar.gz
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr-oldcpu]: Downloading https://files.pythonhosted.org/packages/cb/f3/e541dc14821d86ba255ff4b11d13f991266c95f4efcdad29c10546926229/femr_oldcpu-0.1.8-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr]: executing diffoscope
+[2023-06-04 01:33:58] INFO root fetch - processPackages [femr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/femr-0.1.7.tar.gz tmp/femr-0.1.8.tar.gz --markdown 20230604/f/femr/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 01:33:59] INFO root fetch - processPackages [femr-cuda]: Downloading https://files.pythonhosted.org/packages/67/7f/df7956701c7ea7a0fbaa637d2d8a9b688fbd5b01b2646fa917c7a6a5675b/femr_cuda-0.1.8-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 01:33:59] INFO root fetch - processPackages [femr-oldcpu]: executing diffoscope
+[2023-06-04 01:33:59] INFO root fetch - processPackages [femr-oldcpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/femr_oldcpu-0.0.19-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/femr_oldcpu-0.1.8-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/f/femr-oldcpu/0.0.19-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 01:33:59] INFO root fetch - processPackages [femr-cuda]: executing diffoscope
+[2023-06-04 01:33:59] INFO root fetch - processPackages [femr-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/femr_cuda-0.1.7-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/femr_cuda-0.1.8-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/f/femr-cuda/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 01:33:59] INFO root fetch - main [MainThread]: End processing [relevanceai]: success
+[2023-06-04 01:34:00] INFO root fetch - main [MainThread]: End processing [skelly-synchronize]: success
+[2023-06-04 01:34:00] INFO root fetch - main [MainThread]: End processing [femr]: success
+[2023-06-04 01:34:11] INFO root fetch - main [MainThread]: End processing [femr-oldcpu]: success
+[2023-06-04 01:34:11] INFO root fetch - main [MainThread]: End processing [femr-cuda]: success
+[2023-06-04 01:34:11] INFO root fetch - main [MainThread]: Store serial: [18362842]
