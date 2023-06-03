@@ -274,3 +274,57 @@
 [2023-06-04 00:30:52] INFO root fetch - main [MainThread]: End processing [puup]: success
 [2023-06-04 00:30:53] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
 [2023-06-04 00:30:53] INFO root fetch - main [MainThread]: Store serial: [18362559]
+[2023-06-04 00:35:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362559]
+[2023-06-04 00:36:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipen
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pref-voting
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-explorer
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rtmilk
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abmatrix
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pp-project-pkg
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mynacode
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vector-vault
+[2023-06-04 00:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-oasis4-certs
+[2023-06-04 00:36:01] INFO root fetch - processPackages [pp-project-pkg]: New version: [1.0.202306031833] Old Version: [1.0.202306031828]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [abmatrix]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [llm-explorer]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [rtmilk]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [pipen]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [django-oasis4-certs]: New version: [1.0.2b0] Old Version: [1.0.1b1]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [vector-vault]: New version: [1.7.8] Old Version: [1.7.7.1]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [pref-voting]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-04 00:36:01] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pp-project-pkg]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pp-project-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pp_project_pkg-1.0.202306031828-py3-none-any.whl.zip tmp/pp_project_pkg-1.0.202306031833-py3-none-any.whl.zip --markdown 20230604/p/pp-project-pkg/1.0.202306031828-1.0.202306031833/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [django-oasis4-certs]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [django-oasis4-certs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-oasis4-certs-1.0.1b1.tar.gz tmp/django-oasis4-certs-1.0.2b0.tar.gz --markdown 20230604/d/django-oasis4-certs/1.0.1b1-1.0.2b0/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-0.4.8.tar.gz tmp/pref_voting-0.4.9.tar.gz --markdown 20230604/p/pref-voting/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.7.1.tar.gz tmp/vector_vault-1.7.8.tar.gz --markdown 20230604/v/vector-vault/1.7.7.1-1.7.8/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [llm-explorer]: Downloading https://files.pythonhosted.org/packages/3b/57/6d0fe1ff1b4cb079c5474ca74c9423472e0dc938de09c32ad20b3a20de60/llm_explorer-0.0.5.tar.gz
+[2023-06-04 00:36:02] INFO root fetch - processPackages [rtmilk]: Downloading https://files.pythonhosted.org/packages/1f/47/75cbb66174d7540f4b50d01af3db9b8067a2f9e2ee4d1ff701688fe3ba82/rtmilk-0.2.2.tar.gz
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/89/8d/9c6dc54d1785255af9c0f2b040483e2d6d4b2c0f75ac4eef36237b5ba735/pipen-0.9.8.tar.gz
+[2023-06-04 00:36:02] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/6b/4a/fc887d086881be3bb60243f5ab65b82b3b4502ca62b85673799b52f67980/abmatrix-0.1.4.tar.gz
+[2023-06-04 00:36:02] INFO root fetch - processPackages [llm-explorer]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [llm-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_explorer-0.0.4.tar.gz tmp/llm_explorer-0.0.5.tar.gz --markdown 20230604/l/llm-explorer/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [abmatrix]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [abmatrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abmatrix-0.1.2.tar.gz tmp/abmatrix-0.1.4.tar.gz --markdown 20230604/a/abmatrix/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [rtmilk]: Downloading https://files.pythonhosted.org/packages/01/79/6131b3303f0f9c2ec67ffe64c6a6647e5a74c0eefe774bfc9d4350b9c7ff/rtmilk-0.2.3.tar.gz
+[2023-06-04 00:36:02] INFO root fetch - processPackages [rtmilk]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [rtmilk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtmilk-0.2.2.tar.gz tmp/rtmilk-0.2.3.tar.gz --markdown 20230604/r/rtmilk/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/45/94/66725f0ebe253ae8e488f0eba36085ecc25349bc326bfe14d38c76bb9482/pipen-0.9.9.tar.gz
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2023-06-04 00:36:02] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.9.8.tar.gz tmp/pipen-0.9.9.tar.gz --markdown 20230604/p/pipen/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [pp-project-pkg]: success
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [rtmilk]: success
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
+[2023-06-04 00:36:03] INFO root fetch - main [MainThread]: End processing [pipen]: success
+[2023-06-04 00:36:04] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
+[2023-06-04 00:37:00] INFO root fetch - main [MainThread]: End processing [django-oasis4-certs]: success
+[2023-06-04 00:37:00] INFO root fetch - main [MainThread]: Store serial: [18362588]
