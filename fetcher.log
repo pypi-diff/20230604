@@ -38,3 +38,45 @@
 [2023-06-04 00:04:55] INFO root fetch - main [MainThread]: End processing [phiterm]: success
 [2023-06-04 00:04:57] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2023-06-04 00:04:57] INFO root fetch - main [MainThread]: Store serial: [18362411]
+[2023-06-04 00:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362411]
+[2023-06-04 00:10:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 00:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: custom-secrets-manager
+[2023-06-04 00:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Metamorf
+[2023-06-04 00:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cspot
+[2023-06-04 00:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cspot
+[2023-06-04 00:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: read-rapidpe
+[2023-06-04 00:10:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: abmatrix
+[2023-06-04 00:10:06] INFO root fetch - processPackages [Metamorf]: New version: [0.4.3.1] Old Version: [0.3.9.1]
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 00:10:06] INFO root fetch - processPackages [read-rapidpe]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 00:10:06] INFO root fetch - processPackages [custom-secrets-manager]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 00:10:06] INFO root fetch - processPackages [abmatrix]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: Downloading https://files.pythonhosted.org/packages/30/a7/ce63a0882a226725a14f4fd8d235aa739fd8a2ae9d8024d7e5a3ac44e66e/cspot-1.0.1.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: Downloading https://files.pythonhosted.org/packages/30/a7/ce63a0882a226725a14f4fd8d235aa739fd8a2ae9d8024d7e5a3ac44e66e/cspot-1.0.1.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [custom-secrets-manager]: Downloading https://files.pythonhosted.org/packages/f5/53/b2253ddf0142988b6f25aa240d7c14c0c0dbb65b83ec110efbf0adfa658a/custom_secrets_manager-1.0.2.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/f2/ef/239d6ba51efa6ad2930eac13ccb832693fb98863c91eafb546de42ff8dac/abmatrix-0.1.1.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [Metamorf]: Downloading https://files.pythonhosted.org/packages/2c/b6/a53493db493c667cfe96333e33caa5bb78ee2815f40f606e4d3d66400a2e/Metamorf-0.4.3.1.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/34/1f/d5d68761d2d752b0eabe76112ebebc82889f1ca65d894e335e0576fb89ff/read_rapidpe-0.5.7.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [custom-secrets-manager]: executing diffoscope
+[2023-06-04 00:10:06] INFO root fetch - processPackages [custom-secrets-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_secrets_manager-1.0.1.tar.gz tmp/custom_secrets_manager-1.0.2.tar.gz --markdown 20230604/c/custom-secrets-manager/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 00:10:06] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-06-04 00:10:06] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.5.6.tar.gz tmp/read_rapidpe-0.5.7.tar.gz --markdown 20230604/r/read-rapidpe/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: Downloading https://files.pythonhosted.org/packages/15/8d/e7803b814740abef592c3fc770296c8f32739d208e6aaa69f60de4c32f4e/cspot-1.0.2.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [Metamorf]: executing diffoscope
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: Downloading https://files.pythonhosted.org/packages/15/8d/e7803b814740abef592c3fc770296c8f32739d208e6aaa69f60de4c32f4e/cspot-1.0.2.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [Metamorf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Metamorf-0.3.9.1.tar.gz tmp/Metamorf-0.4.3.1.tar.gz --markdown 20230604/M/Metamorf/0.3.9.1-0.4.3.1/diff.md --exclude *.pyd
+[2023-06-04 00:10:06] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/78/66/4ec83905f2e9b4802a35278a57321b64460275f37a18a267ffa6483afdb3/abmatrix-0.1.2.tar.gz
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: executing diffoscope
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cspot-1.0.1.tar.gz tmp/cspot-1.0.2.tar.gz --markdown 20230604/c/cspot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: executing diffoscope
+[2023-06-04 00:10:06] INFO root fetch - processPackages [cspot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cspot-1.0.1.tar.gz tmp/cspot-1.0.2.tar.gz --markdown 20230604/c/cspot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 00:10:06] INFO root fetch - processPackages [abmatrix]: executing diffoscope
+[2023-06-04 00:10:06] INFO root fetch - processPackages [abmatrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abmatrix-0.1.1.tar.gz tmp/abmatrix-0.1.2.tar.gz --markdown 20230604/a/abmatrix/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 00:10:07] INFO root fetch - main [MainThread]: End processing [custom-secrets-manager]: success
+[2023-06-04 00:10:07] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-06-04 00:10:07] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
+[2023-06-04 00:10:08] INFO root fetch - main [MainThread]: End processing [cspot]: success
+[2023-06-04 00:10:08] INFO root fetch - main [MainThread]: End processing [cspot]: success
+[2023-06-04 00:10:08] INFO root fetch - main [MainThread]: End processing [Metamorf]: success
+[2023-06-04 00:10:08] INFO root fetch - main [MainThread]: Store serial: [18362431]
