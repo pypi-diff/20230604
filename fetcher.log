@@ -80,3 +80,43 @@
 [2023-06-04 00:10:08] INFO root fetch - main [MainThread]: End processing [cspot]: success
 [2023-06-04 00:10:08] INFO root fetch - main [MainThread]: End processing [Metamorf]: success
 [2023-06-04 00:10:08] INFO root fetch - main [MainThread]: Store serial: [18362431]
+[2023-06-04 00:15:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362431]
+[2023-06-04 00:15:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vector-vault
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opentherm-web-api
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: egobox
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bispy-polar
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rapidgzip
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-nightly-intel
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xklb
+[2023-06-04 00:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ldimbenchmark
+[2023-06-04 00:15:16] INFO root fetch - processPackages [egobox]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-06-04 00:15:16] WARNING root fetch - processPackages [opentherm-web-api]: Skipping, unable to determine old version
+[2023-06-04 00:15:16] INFO root fetch - main [MainThread]: End processing [opentherm-web-api] error
+[2023-06-04 00:15:16] INFO root fetch - processPackages [vector-vault]: New version: [1.7.8] Old Version: [1.7.7.1]
+[2023-06-04 00:15:16] WARNING root fetch - processPackages [rapidgzip]: Skipping, unable to determine old version
+[2023-06-04 00:15:16] INFO root fetch - main [MainThread]: End processing [rapidgzip] error
+[2023-06-04 00:15:16] WARNING root fetch - processPackages [bispy-polar]: Skipping, unable to determine old version
+[2023-06-04 00:15:16] INFO root fetch - main [MainThread]: End processing [bispy-polar] error
+[2023-06-04 00:15:16] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230602] Old Version: [2.14.0.dev20230601]
+[2023-06-04 00:15:17] INFO root fetch - processPackages [xklb]: New version: [1.29.8] Old Version: [1.29.7]
+[2023-06-04 00:15:17] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/f5/25/138b68fcaa9ae28964104b5ab133be79af53a31008103e5957dda16e3d37/tf_nightly_intel-2.14.0.dev20230601-cp39-cp39-win_amd64.whl
+[2023-06-04 00:15:17] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 00:15:17] INFO root fetch - processPackages [egobox]: Downloading https://files.pythonhosted.org/packages/2c/27/daa7243ef27f4af7c33674635637e96c93553aafa2302c086619afd81830/egobox-0.8.2.tar.gz
+[2023-06-04 00:15:17] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 182812069>=10485760
+[2023-06-04 00:15:17] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-06-04 00:15:17] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/6e/8f/09339c53bd1f0b0166d614c2ab45d84213027f1fe75c21a9835b65416424/vector_vault-1.7.8.tar.gz
+[2023-06-04 00:15:17] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 00:15:17] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.7.1.tar.gz tmp/vector_vault-1.7.8.tar.gz --markdown 20230604/v/vector-vault/1.7.7.1-1.7.8/diff.md --exclude *.pyd
+[2023-06-04 00:15:17] INFO root fetch - processPackages [egobox]: Downloading https://files.pythonhosted.org/packages/34/88/c69edd89856a25d17290a69e24e4ac9cda0269e04e953058d7bcf9d2c32a/egobox-0.9.0.tar.gz
+[2023-06-04 00:15:17] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-06-04 00:15:17] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.29.7.tar.gz tmp/xklb-1.29.8.tar.gz --markdown 20230604/x/xklb/1.29.7-1.29.8/diff.md --exclude *.pyd
+[2023-06-04 00:15:17] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-06-04 00:15:17] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.8.tar.gz tmp/ldimbenchmark-0.2.9.tar.gz --markdown 20230604/l/ldimbenchmark/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 00:15:17] INFO root fetch - processPackages [egobox]: executing diffoscope
+[2023-06-04 00:15:17] INFO root fetch - processPackages [egobox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/egobox-0.8.2.tar.gz tmp/egobox-0.9.0.tar.gz --markdown 20230604/e/egobox/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 00:15:18] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 00:15:18] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-06-04 00:15:18] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-06-04 00:15:19] INFO root fetch - main [MainThread]: End processing [egobox]: success
+[2023-06-04 00:15:19] INFO root fetch - main [MainThread]: Store serial: [18362471]
