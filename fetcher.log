@@ -522,3 +522,33 @@
 [2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [string-py]: success
 [2023-06-04 00:57:45] INFO root fetch - main [MainThread]: End processing [boris-behav-obs]: success
 [2023-06-04 00:57:45] INFO root fetch - main [MainThread]: Store serial: [18362682]
+[2023-06-04 01:02:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362682]
+[2023-06-04 01:02:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 01:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metricspace
+[2023-06-04 01:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-vault
+[2023-06-04 01:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: voyager-dev
+[2023-06-04 01:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psyke
+[2023-06-04 01:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tmnt-cu101
+[2023-06-04 01:02:54] INFO root fetch - processPackages [metricspace]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-06-04 01:02:54] WARNING root fetch - processPackages [voyager-dev]: Skipping, unable to determine old version
+[2023-06-04 01:02:54] INFO root fetch - main [MainThread]: End processing [voyager-dev] error
+[2023-06-04 01:02:54] INFO root fetch - processPackages [vector-vault]: New version: [1.8.0] Old Version: [1.7.9]
+[2023-06-04 01:02:54] INFO root fetch - processPackages [psyke]: New version: [0.4.4.dev1] Old Version: [0.4.2.dev2]
+[2023-06-04 01:02:54] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230603] Old Version: [0.7.0b20230602]
+[2023-06-04 01:02:55] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/15/9c/d148e27337c008bc8b6c3c41b1bf5563c705cc987266fd375641acd57c55/vector_vault-1.8.0.tar.gz
+[2023-06-04 01:02:55] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/f1/93/cf3b032dbde808d2cfe41dc3b0071236fec4c20d50b273bfe723a4e41b01/psyke-0.4.4.dev1.tar.gz
+[2023-06-04 01:02:55] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/b8/21/56749aede0c19d6356ef9d199e394d7edd6f770a307715c30cf1ce4fccd5/metricspace-0.4.0.tar.gz
+[2023-06-04 01:02:55] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 01:02:55] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.7.9.tar.gz tmp/vector_vault-1.8.0.tar.gz --markdown 20230604/v/vector-vault/1.7.9-1.8.0/diff.md --exclude *.pyd
+[2023-06-04 01:02:55] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/da/e3/f18e6945f830afa2e3c5083b579d72f052652d8744d06a01393c898ff743/tmnt-cu101-0.7.0b20230603.tar.gz
+[2023-06-04 01:02:55] INFO root fetch - processPackages [metricspace]: executing diffoscope
+[2023-06-04 01:02:55] INFO root fetch - processPackages [metricspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metricspace-0.3.1.tar.gz tmp/metricspace-0.4.0.tar.gz --markdown 20230604/m/metricspace/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-06-04 01:02:55] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-06-04 01:02:55] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.4.2.dev2.tar.gz tmp/psyke-0.4.4.dev1.tar.gz --markdown 20230604/p/psyke/0.4.2.dev2-0.4.4.dev1/diff.md --exclude *.pyd
+[2023-06-04 01:02:55] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-06-04 01:02:55] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230602.tar.gz tmp/tmnt-cu101-0.7.0b20230603.tar.gz --markdown 20230604/t/tmnt-cu101/0.7.0b20230602-0.7.0b20230603/diff.md --exclude *.pyd
+[2023-06-04 01:02:56] INFO root fetch - main [MainThread]: End processing [metricspace]: success
+[2023-06-04 01:02:56] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 01:02:56] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-06-04 01:02:56] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-06-04 01:02:56] INFO root fetch - main [MainThread]: Store serial: [18362698]
