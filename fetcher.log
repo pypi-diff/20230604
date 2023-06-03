@@ -552,3 +552,46 @@
 [2023-06-04 01:02:56] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
 [2023-06-04 01:02:56] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-06-04 01:02:56] INFO root fetch - main [MainThread]: Store serial: [18362698]
+[2023-06-04 01:08:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362698]
+[2023-06-04 01:08:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: puup
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toolcat
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: awadb
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: edgartools
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moss-engine
+[2023-06-04 01:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hysteresis
+[2023-06-04 01:08:04] INFO root fetch - processPackages [toolcat]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 01:08:04] INFO root fetch - processPackages [edgartools]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-06-04 01:08:04] WARNING root fetch - processPackages [moss-engine]: Skipping, unable to determine old version
+[2023-06-04 01:08:04] INFO root fetch - main [MainThread]: End processing [moss-engine] error
+[2023-06-04 01:08:04] INFO root fetch - processPackages [puup]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 01:08:04] INFO root fetch - processPackages [awadb]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-04 01:08:04] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230603] Old Version: [0.7.0b20230602]
+[2023-06-04 01:08:05] INFO root fetch - processPackages [hysteresis]: New version: [2.0.0] Old Version: [1.2.1]
+[2023-06-04 01:08:05] INFO root fetch - processPackages [toolcat]: Downloading https://files.pythonhosted.org/packages/9e/18/34eada475a4072fd50d751e61287ad6bbad321062ae810a68507ac641b43/toolcat-0.0.3.tar.gz
+[2023-06-04 01:08:05] INFO root fetch - processPackages [awadb]: Downloading https://files.pythonhosted.org/packages/11/a5/d520d2a51f932890cf5f059014e9e20c6122f414a7c985608f9135af33db/awadb-0.3.0-cp39-cp39-manylinux1_x86_64.whl
+[2023-06-04 01:08:05] INFO root fetch - processPackages [puup]: Downloading https://files.pythonhosted.org/packages/7b/04/e8a95e8b611029ccb1c42d75fbaf703c91beb9f4230483039b90a1a6360d/puup-0.1.2.tar.gz
+[2023-06-04 01:08:05] INFO root fetch - processPackages [toolcat]: executing diffoscope
+[2023-06-04 01:08:05] INFO root fetch - processPackages [toolcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolcat-0.0.2.tar.gz tmp/toolcat-0.0.3.tar.gz --markdown 20230604/t/toolcat/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 01:08:05] INFO root fetch - processPackages [puup]: executing diffoscope
+[2023-06-04 01:08:05] INFO root fetch - processPackages [puup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puup-0.1.1.tar.gz tmp/puup-0.1.2.tar.gz --markdown 20230604/p/puup/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 01:08:05] INFO root fetch - processPackages [hysteresis]: Downloading https://files.pythonhosted.org/packages/d3/2c/2daef447e799d409f26ffe09bcac85523aa95499269404ed0e253e1b23aa/hysteresis-1.2.1.tar.gz
+[2023-06-04 01:08:05] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/34/10/7f1cebe002ba675dfe9d46f304888a1b068057df1663000c6d91c5094b88/tmnt-0.7.0b20230603.tar.gz
+[2023-06-04 01:08:05] INFO root fetch - processPackages [edgartools]: executing diffoscope
+[2023-06-04 01:08:05] INFO root fetch - processPackages [edgartools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgartools-1.8.0.tar.gz tmp/edgartools-1.9.0.tar.gz --markdown 20230604/e/edgartools/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-06-04 01:08:05] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-06-04 01:08:05] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230602.tar.gz tmp/tmnt-0.7.0b20230603.tar.gz --markdown 20230604/t/tmnt/0.7.0b20230602-0.7.0b20230603/diff.md --exclude *.pyd
+[2023-06-04 01:08:05] INFO root fetch - processPackages [hysteresis]: Downloading https://files.pythonhosted.org/packages/ac/25/92bf7a791dea7fac562345f6a822b8d8d8458d687c71a4096877e4ba6d37/hysteresis-2.0.0.tar.gz
+[2023-06-04 01:08:05] INFO root fetch - processPackages [awadb]: Downloading https://files.pythonhosted.org/packages/76/fa/c0772e79bf8f6aacc9df0cc21a0b953fc617a2ed719ffd09ca8323d72a45/awadb-0.3.1-cp37-cp37m-macosx_10_16_x86_64.whl
+[2023-06-04 01:08:05] INFO root fetch - processPackages [awadb]: executing diffoscope
+[2023-06-04 01:08:05] INFO root fetch - processPackages [awadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awadb-0.3.0-cp39-cp39-manylinux1_x86_64.whl.zip tmp/awadb-0.3.1-cp37-cp37m-macosx_10_16_x86_64.whl.zip --markdown 20230604/a/awadb/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 01:08:05] INFO root fetch - processPackages [hysteresis]: executing diffoscope
+[2023-06-04 01:08:05] INFO root fetch - processPackages [hysteresis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hysteresis-1.2.1.tar.gz tmp/hysteresis-2.0.0.tar.gz --markdown 20230604/h/hysteresis/1.2.1-2.0.0/diff.md --exclude *.pyd
+[2023-06-04 01:08:06] INFO root fetch - main [MainThread]: End processing [toolcat]: success
+[2023-06-04 01:08:06] INFO root fetch - main [MainThread]: End processing [puup]: success
+[2023-06-04 01:08:06] INFO root fetch - main [MainThread]: End processing [edgartools]: success
+[2023-06-04 01:08:06] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-06-04 01:08:07] INFO root fetch - main [MainThread]: End processing [awadb]: success
+[2023-06-04 01:08:07] INFO root fetch - main [MainThread]: End processing [hysteresis]: success
+[2023-06-04 01:08:07] INFO root fetch - main [MainThread]: Store serial: [18362719]
