@@ -798,3 +798,48 @@
 [2023-06-04 01:47:34] INFO root fetch - main [MainThread]: End processing [sqlalchemy-firebird]: success
 [2023-06-04 01:47:34] INFO root fetch - main [MainThread]: End processing [pythttp]: success
 [2023-06-04 01:47:34] INFO root fetch - main [MainThread]: Store serial: [18362887]
+[2023-06-04 01:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362887]
+[2023-06-04 01:52:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: printipy
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-reveal-slides
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aesara-nightly
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napari-gemspa
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: windmill-api
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wmill
+[2023-06-04 01:52:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wmill-pg
+[2023-06-04 01:52:43] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [printipy]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [aesara-nightly]: New version: [2.9.0.post2] Old Version: [2.8.9.post118]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [napari-gemspa]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-06-04 01:52:43] INFO root fetch - processPackages [streamlit-reveal-slides]: Downloading https://files.pythonhosted.org/packages/5f/d1/f461326c8f80e44940896a6c20397c08b69b5c08d42ebe14a4082000f66c/streamlit-reveal-slides-0.1.9.tar.gz
+[2023-06-04 01:52:43] INFO root fetch - processPackages [printipy]: Downloading https://files.pythonhosted.org/packages/6d/f7/a2ce98a2a7e5a2736446d64bcc0a168ee5b39ee04b727927dff2d7d7ccee/printipy-0.0.3.tar.gz
+[2023-06-04 01:52:44] INFO root fetch - processPackages [napari-gemspa]: Downloading https://files.pythonhosted.org/packages/eb/a3/c94390ebea02a2a4d627a08ad29864d5218314c9f8dd1637f620ae71a278/napari-gemspa-0.0.1.tar.gz
+[2023-06-04 01:52:44] INFO root fetch - processPackages [aesara-nightly]: Downloading https://files.pythonhosted.org/packages/29/7e/5d6d0fa9a83261b9bb5142e2d7196ed6ba5845c2759bc431599a604a525b/aesara-nightly-2.8.9.post118.tar.gz
+[2023-06-04 01:52:44] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.1.8.tar.gz tmp/streamlit-reveal-slides-0.1.9.tar.gz --markdown 20230604/s/streamlit-reveal-slides/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 01:52:44] INFO root fetch - processPackages [printipy]: Downloading https://files.pythonhosted.org/packages/36/a2/a63d64a9d59fbfe8d19619329e2d5812ab12e282936f80d41c265cca5114/printipy-1.0.0.tar.gz
+[2023-06-04 01:52:44] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230604/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-06-04 01:52:44] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230604/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-06-04 01:52:44] INFO root fetch - processPackages [napari-gemspa]: Downloading https://files.pythonhosted.org/packages/5b/8b/a00a8e818345dd9d83ae5fd0e2c05ebd50aa649b41cddf6b276197b114bf/napari-gemspa-0.0.2.tar.gz
+[2023-06-04 01:52:44] INFO root fetch - processPackages [printipy]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [printipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printipy-0.0.3.tar.gz tmp/printipy-1.0.0.tar.gz --markdown 20230604/p/printipy/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 01:52:44] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230604/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-06-04 01:52:44] INFO root fetch - processPackages [napari-gemspa]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [napari-gemspa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-gemspa-0.0.1.tar.gz tmp/napari-gemspa-0.0.2.tar.gz --markdown 20230604/n/napari-gemspa/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 01:52:44] INFO root fetch - processPackages [aesara-nightly]: Downloading https://files.pythonhosted.org/packages/b2/c8/85c54a447677bb4a9ea293a5a1692963dfe40538f8a7b6db6f5f9b29b153/aesara_nightly-2.9.0.post2.tar.gz
+[2023-06-04 01:52:44] INFO root fetch - processPackages [aesara-nightly]: executing diffoscope
+[2023-06-04 01:52:44] INFO root fetch - processPackages [aesara-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aesara-nightly-2.8.9.post118.tar.gz tmp/aesara_nightly-2.9.0.post2.tar.gz --markdown 20230604/a/aesara-nightly/2.8.9.post118-2.9.0.post2/diff.md --exclude *.pyd
+[2023-06-04 01:52:45] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-06-04 01:52:45] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-06-04 01:52:45] INFO root fetch - main [MainThread]: End processing [printipy]: success
+[2023-06-04 01:52:45] INFO root fetch - main [MainThread]: End processing [napari-gemspa]: success
+[2023-06-04 01:52:55] INFO root fetch - main [MainThread]: End processing [aesara-nightly]: success
+[2023-06-04 01:53:00] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-06-04 01:53:17] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-06-04 01:53:17] INFO root fetch - main [MainThread]: Store serial: [18362907]
