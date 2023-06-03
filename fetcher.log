@@ -697,3 +697,71 @@
 [2023-06-04 01:34:11] INFO root fetch - main [MainThread]: End processing [femr-oldcpu]: success
 [2023-06-04 01:34:11] INFO root fetch - main [MainThread]: End processing [femr-cuda]: success
 [2023-06-04 01:34:11] INFO root fetch - main [MainThread]: Store serial: [18362842]
+[2023-06-04 01:39:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362842]
+[2023-06-04 01:39:23] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sage-conf
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sage-docbuild
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sage-setup
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sage-sws2rst
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sagemath-categories
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sagemath-environment
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sagemath-objects
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sagemath-repl
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sagemath-standard
+[2023-06-04 01:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hockey-rink
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sage-setup]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sage-conf]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sagemath-objects]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sagemath-environment]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sage-sws2rst]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sagemath-categories]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sagemath-standard]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [hockey-rink]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sagemath-repl]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sage-docbuild]: New version: [9.8rc0] Old Version: [9.8b7]
+[2023-06-04 01:39:23] INFO root fetch - processPackages [hockey-rink]: Downloading https://files.pythonhosted.org/packages/a5/25/0e2300bf143a8da1ab606e7a208b6e89b2521cd8e643bc675d0fc8bb9490/hockey_rink-1.0.1.tar.gz
+[2023-06-04 01:39:23] INFO root fetch - processPackages [sagemath-standard]: Downloading https://files.pythonhosted.org/packages/ca/44/3341aa128d2058989dc35be67a94f004ad9873fc2cece58881abf81f3091/sagemath-standard-9.8b7.tar.gz
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-objects]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-objects-9.8b7.tar.gz tmp/sagemath-objects-9.8rc0.tar.gz --markdown 20230604/s/sagemath-objects/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-docbuild]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-docbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-docbuild-9.8b7.tar.gz tmp/sage-docbuild-9.8rc0.tar.gz --markdown 20230604/s/sage-docbuild/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-conf]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-conf-9.8b7.tar.gz tmp/sage-conf-9.8rc0.tar.gz --markdown 20230604/s/sage-conf/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-setup]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-setup-9.8b7.tar.gz tmp/sage-setup-9.8rc0.tar.gz --markdown 20230604/s/sage-setup/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-categories]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-categories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-categories-9.8b7.tar.gz tmp/sagemath-categories-9.8rc0.tar.gz --markdown 20230604/s/sagemath-categories/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [hockey-rink]: Downloading https://files.pythonhosted.org/packages/e4/85/b6b49426ca8deca7b50c6e57b3c198cee9bb5ae615c37f0a350e6be3ae7f/hockey_rink-1.0.2.tar.gz
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-repl]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-repl-9.8b7.tar.gz tmp/sagemath-repl-9.8rc0.tar.gz --markdown 20230604/s/sagemath-repl/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-sws2rst]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sage-sws2rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage-sws2rst-9.8b7.tar.gz tmp/sage-sws2rst-9.8rc0.tar.gz --markdown 20230604/s/sage-sws2rst/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-environment]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemath-environment-9.8b7.tar.gz tmp/sagemath-environment-9.8rc0.tar.gz --markdown 20230604/s/sagemath-environment/9.8b7-9.8rc0/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] INFO root fetch - processPackages [hockey-rink]: executing diffoscope
+[2023-06-04 01:39:24] INFO root fetch - processPackages [hockey-rink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hockey_rink-1.0.1.tar.gz tmp/hockey_rink-1.0.2.tar.gz --markdown 20230604/h/hockey-rink/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 01:39:24] WARNING root fetch - processPackages [sagemath-standard]: Skipping package: exceeds size limit 18194906>=10485760
+[2023-06-04 01:39:24] INFO root fetch - processPackages [sagemath-standard]: Start processing: BoilerTest
+[2023-06-04 01:39:24] INFO root fetch - main [MainThread]: End processing [sagemath-standard] error
+[2023-06-04 01:39:24] INFO root fetch - processPackages [BoilerTest]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-06-04 01:39:24] INFO root fetch - processPackages [BoilerTest]: Downloading https://files.pythonhosted.org/packages/85/a7/46067ef675a2d9fb12bc6af2d638c47795780ba21f75fbba83cd5170bae3/BoilerTest-1.0.0.tar.gz
+[2023-06-04 01:39:24] INFO root fetch - processPackages [BoilerTest]: Downloading https://files.pythonhosted.org/packages/b4/24/5e9f5e2a149c70fd0ce1cb3dc567fbbc11d144d09871e520f6fab7454c61/BoilerTest-1.1.0.tar.gz
+[2023-06-04 01:39:25] INFO root fetch - processPackages [BoilerTest]: executing diffoscope
+[2023-06-04 01:39:25] INFO root fetch - processPackages [BoilerTest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BoilerTest-1.0.0.tar.gz tmp/BoilerTest-1.1.0.tar.gz --markdown 20230604/B/BoilerTest/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 01:39:25] INFO root fetch - processPackages [hockey-rink]: Start processing: kcli
+[2023-06-04 01:39:25] INFO root fetch - main [MainThread]: End processing [hockey-rink]: success
+[2023-06-04 01:39:26] INFO root fetch - processPackages [kcli]: New version: [99.0.202306030859] Old Version: [99.0.202306021221]
+[2023-06-04 01:39:26] INFO root fetch - main [MainThread]: End processing [BoilerTest]: success
+[2023-06-04 01:39:26] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 01:39:26] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306021221-py3-none-any.whl.zip tmp/kcli-99.0.202306030859-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306021221-99.0.202306030859/diff.md --exclude *.pyd
+[2023-06-04 01:39:26] INFO root fetch - main [MainThread]: End processing [sagemath-repl]: success
+[2023-06-04 01:39:26] INFO root fetch - main [MainThread]: End processing [sage-sws2rst]: success
+[2023-06-04 01:39:26] INFO root fetch - main [MainThread]: End processing [sagemath-objects]: success
+[2023-06-04 01:39:27] INFO root fetch - main [MainThread]: End processing [sage-docbuild]: success
+[2023-06-04 01:39:27] INFO root fetch - main [MainThread]: End processing [sage-setup]: success
+[2023-06-04 01:39:27] INFO root fetch - main [MainThread]: End processing [sagemath-environment]: success
+[2023-06-04 01:39:30] INFO root fetch - main [MainThread]: End processing [sagemath-categories]: success
+[2023-06-04 01:39:34] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 01:42:24] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
+[2023-06-04 01:42:24] INFO root fetch - main [MainThread]: End processing [sage-conf] error
+[2023-06-04 01:42:24] INFO root fetch - main [MainThread]: Store serial: [18362868]
