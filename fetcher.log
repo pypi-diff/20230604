@@ -2772,3 +2772,28 @@
 [2023-06-04 07:38:15] INFO root fetch - main [MainThread]: End processing [ilan-dev]: success
 [2023-06-04 07:38:15] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
 [2023-06-04 07:38:15] INFO root fetch - main [MainThread]: Store serial: [18364046]
+[2023-06-04 07:43:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364046]
+[2023-06-04 07:43:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 07:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: michiko
+[2023-06-04 07:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abmatrix
+[2023-06-04 07:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embreeX
+[2023-06-04 07:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ciocore
+[2023-06-04 07:43:23] WARNING root fetch - processPackages [embreeX]: Skipping, unable to determine old version
+[2023-06-04 07:43:23] INFO root fetch - main [MainThread]: End processing [embreeX] error
+[2023-06-04 07:43:23] INFO root fetch - processPackages [michiko]: New version: [0.8.1] Old Version: [0.2.2]
+[2023-06-04 07:43:23] INFO root fetch - processPackages [abmatrix]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-04 07:43:24] INFO root fetch - processPackages [ciocore]: New version: [6.0.0rc2] Old Version: [5.6.0]
+[2023-06-04 07:43:24] INFO root fetch - processPackages [michiko]: Downloading https://files.pythonhosted.org/packages/3a/ad/95471ea90e2a67c465d0d753962653cd6b25fb4289e25f4b610c51d436ec/michiko-0.8.1.tar.gz
+[2023-06-04 07:43:24] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/c2/d4/8778374401b17ab111ffee252732dc87cb1a3d5e44c9d7c5c0f90990179a/abmatrix-0.1.6.tar.gz
+[2023-06-04 07:43:24] INFO root fetch - processPackages [ciocore]: Downloading https://files.pythonhosted.org/packages/6c/93/d9443e33109458d0b4334cc70bc7c4d8c2e2e7c38a5ad42d046e2b93d9b7/ciocore-5.6.0-py2.py3-none-any.whl
+[2023-06-04 07:43:24] INFO root fetch - processPackages [abmatrix]: executing diffoscope
+[2023-06-04 07:43:24] INFO root fetch - processPackages [abmatrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abmatrix-0.1.5.tar.gz tmp/abmatrix-0.1.6.tar.gz --markdown 20230604/a/abmatrix/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-04 07:43:24] INFO root fetch - processPackages [michiko]: executing diffoscope
+[2023-06-04 07:43:24] INFO root fetch - processPackages [michiko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/michiko-0.2.2.tar.gz tmp/michiko-0.8.1.tar.gz --markdown 20230604/m/michiko/0.2.2-0.8.1/diff.md --exclude *.pyd
+[2023-06-04 07:43:24] INFO root fetch - processPackages [ciocore]: Downloading https://files.pythonhosted.org/packages/20/64/78dec334dcee800ca570ab9525f9299d8b28535501409f8123d1751e0ba5/ciocore-6.0.0rc2-py2.py3-none-any.whl
+[2023-06-04 07:43:24] INFO root fetch - processPackages [ciocore]: executing diffoscope
+[2023-06-04 07:43:24] INFO root fetch - processPackages [ciocore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciocore-5.6.0-py2.py3-none-any.whl.zip tmp/ciocore-6.0.0rc2-py2.py3-none-any.whl.zip --markdown 20230604/c/ciocore/5.6.0-6.0.0rc2/diff.md --exclude *.pyd
+[2023-06-04 07:43:25] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
+[2023-06-04 07:43:26] INFO root fetch - main [MainThread]: End processing [ciocore]: success
+[2023-06-04 07:44:19] INFO root fetch - main [MainThread]: End processing [michiko]: success
+[2023-06-04 07:44:19] INFO root fetch - main [MainThread]: Store serial: [18364073]
