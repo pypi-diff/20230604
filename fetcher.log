@@ -7082,3 +7082,56 @@
 [2023-06-04 16:57:58] INFO root fetch - main [MainThread]: End processing [bantam]: success
 [2023-06-04 16:57:58] INFO root fetch - main [MainThread]: End processing [navconfig]: success
 [2023-06-04 16:57:58] INFO root fetch - main [MainThread]: Store serial: [18366637]
+[2023-06-04 17:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366637]
+[2023-06-04 17:03:07] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylwr
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miniaudio
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anycluster
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rowingdata
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipttrace
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: line-async-webhook
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stigg-api-client
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-jsheet
+[2023-06-04 17:03:07] INFO root fetch - processPackages [anycluster]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [pylwr]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [stigg-api-client]: New version: [0.5.0] Old Version: [0.455.1]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [miniaudio]: New version: [1.9] Old Version: [1.8]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [line-async-webhook]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ipttrace]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [django-jsheet]: New version: [0.2.1.3a0] Old Version: [0.2.1.1a0]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [rowingdata]: New version: [3.6.0] Old Version: [3.5.9]
+[2023-06-04 17:03:07] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/20/5c/3e3b4959c42c8110e1e27f17d927829e0fafc7ef4a70cda5965ff625a1b9/stigg_api_client-0.455.1.tar.gz
+[2023-06-04 17:03:07] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/56/28/eafe5bf80f530071f071d468ca9532b7ea5feafbf8fce4fc3adce49f7c0f/pylwr-1.0.0.tar.gz
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ipttrace]: Downloading https://files.pythonhosted.org/packages/c7/bb/3f5e92cbc89e0b6ff62a6cb8259be72a4bd146173d985cc221fa5b9475dc/ipttrace-0.2.0.tar.gz
+[2023-06-04 17:03:07] INFO root fetch - processPackages [line-async-webhook]: Downloading https://files.pythonhosted.org/packages/19/55/a27068662dea20c2d969c84ef58639f5177cf6207f1e2566bf0185be0e47/line_async_webhook-0.1.0.tar.gz
+[2023-06-04 17:03:07] INFO root fetch - processPackages [django-jsheet]: Downloading https://files.pythonhosted.org/packages/b2/25/08470738c7cdcc0a1904c11214350020c9130b5f9cd0c3c4dbb765289915/django_jsheet-0.2.1.3a0.tar.gz
+[2023-06-04 17:03:07] INFO root fetch - processPackages [rowingdata]: Downloading https://files.pythonhosted.org/packages/e5/79/38af28276e62aeb7a28f4c3c396acb19eadf764ec290e27e6e741c84e111/rowingdata-3.5.9.tar.gz
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ipttrace]: executing diffoscope
+[2023-06-04 17:03:07] INFO root fetch - processPackages [ipttrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipttrace-0.1.1.tar.gz tmp/ipttrace-0.2.0.tar.gz --markdown 20230604/i/ipttrace/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 17:03:07] INFO root fetch - processPackages [anycluster]: Downloading https://files.pythonhosted.org/packages/e1/63/3e49bd78d79e1e3c2aae8e5d690642a90a1abc012e436a28ded44606dee6/anycluster-2.2.0.tar.gz
+[2023-06-04 17:03:08] INFO root fetch - processPackages [django-jsheet]: executing diffoscope
+[2023-06-04 17:03:08] INFO root fetch - processPackages [django-jsheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_jsheet-0.2.1.1a0.tar.gz tmp/django_jsheet-0.2.1.3a0.tar.gz --markdown 20230604/d/django-jsheet/0.2.1.1a0-0.2.1.3a0/diff.md --exclude *.pyd
+[2023-06-04 17:03:08] INFO root fetch - processPackages [miniaudio]: executing diffoscope
+[2023-06-04 17:03:08] INFO root fetch - processPackages [miniaudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniaudio-1.8.tar.gz tmp/miniaudio-1.9.tar.gz --markdown 20230604/m/miniaudio/1.8-1.9/diff.md --exclude *.pyd
+[2023-06-04 17:03:08] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/7b/ce/4b4cdda89f596aad25ead626bd720b2a945e651f6527431fc9275e1fa8dc/pylwr-1.0.1.tar.gz
+[2023-06-04 17:03:08] INFO root fetch - processPackages [line-async-webhook]: Downloading https://files.pythonhosted.org/packages/b1/d0/5191303efea547e127a80f1e30d464a499b66d714ce5c9d2696e737c4e23/line_async_webhook-0.2.0.tar.gz
+[2023-06-04 17:03:08] INFO root fetch - processPackages [pylwr]: executing diffoscope
+[2023-06-04 17:03:08] INFO root fetch - processPackages [pylwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylwr-1.0.0.tar.gz tmp/pylwr-1.0.1.tar.gz --markdown 20230604/p/pylwr/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-04 17:03:08] INFO root fetch - processPackages [anycluster]: executing diffoscope
+[2023-06-04 17:03:08] INFO root fetch - processPackages [anycluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycluster-2.1.1.tar.gz tmp/anycluster-2.2.0.tar.gz --markdown 20230604/a/anycluster/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-06-04 17:03:08] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-06-04 17:03:08] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg_api_client-0.455.1.tar.gz tmp/stigg_api_client-0.5.0.tar.gz --markdown 20230604/s/stigg-api-client/0.455.1-0.5.0/diff.md --exclude *.pyd
+[2023-06-04 17:03:08] INFO root fetch - processPackages [line-async-webhook]: executing diffoscope
+[2023-06-04 17:03:08] INFO root fetch - processPackages [line-async-webhook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/line_async_webhook-0.1.0.tar.gz tmp/line_async_webhook-0.2.0.tar.gz --markdown 20230604/l/line-async-webhook/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 17:03:09] INFO root fetch - main [MainThread]: End processing [ipttrace]: success
+[2023-06-04 17:03:09] INFO root fetch - main [MainThread]: End processing [django-jsheet]: success
+[2023-06-04 17:03:09] INFO root fetch - processPackages [rowingdata]: Downloading https://files.pythonhosted.org/packages/64/f3/5e2f16845578593c93d7e043515c60796bda9735fffa0209212ed5a77b61/rowingdata-3.6.0.tar.gz
+[2023-06-04 17:03:09] INFO root fetch - processPackages [rowingdata]: executing diffoscope
+[2023-06-04 17:03:09] INFO root fetch - processPackages [rowingdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rowingdata-3.5.9.tar.gz tmp/rowingdata-3.6.0.tar.gz --markdown 20230604/r/rowingdata/3.5.9-3.6.0/diff.md --exclude *.pyd
+[2023-06-04 17:03:09] INFO root fetch - main [MainThread]: End processing [pylwr]: success
+[2023-06-04 17:03:09] INFO root fetch - main [MainThread]: End processing [line-async-webhook]: success
+[2023-06-04 17:03:09] INFO root fetch - main [MainThread]: End processing [stigg-api-client]: success
+[2023-06-04 17:03:09] INFO root fetch - main [MainThread]: End processing [anycluster]: success
+[2023-06-04 17:03:10] INFO root fetch - main [MainThread]: End processing [miniaudio]: success
+[2023-06-04 17:03:18] INFO root fetch - main [MainThread]: End processing [rowingdata]: success
+[2023-06-04 17:03:18] INFO root fetch - main [MainThread]: Store serial: [18366717]
