@@ -5827,3 +5827,31 @@
 [2023-06-04 14:35:31] INFO root fetch - main [MainThread]: End processing [multipie]: success
 [2023-06-04 14:36:21] INFO root fetch - main [MainThread]: End processing [pybrary]: success
 [2023-06-04 14:36:21] INFO root fetch - main [MainThread]: Store serial: [18365901]
+[2023-06-04 14:41:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365901]
+[2023-06-04 14:41:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 14:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onboardme
+[2023-06-04 14:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hcm-causal
+[2023-06-04 14:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rascal
+[2023-06-04 14:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: circuitpython-mag-cal
+[2023-06-04 14:41:30] INFO root fetch - processPackages [rascal]: New version: [0.3.9] Old Version: [0.3.8.1]
+[2023-06-04 14:41:30] INFO root fetch - processPackages [circuitpython-mag-cal]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-06-04 14:41:30] INFO root fetch - processPackages [hcm-causal]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 14:41:30] INFO root fetch - processPackages [onboardme]: New version: [1.5.0] Old Version: [1.4.1]
+[2023-06-04 14:41:30] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/dd/ea/d97db2f6a46ae7132e29b1b5221aaae137314bb5dbdf1e6f977d211d64a1/circuitpython-mag-cal-1.2.1.tar.gz
+[2023-06-04 14:41:30] INFO root fetch - processPackages [rascal]: Downloading https://files.pythonhosted.org/packages/02/0b/33f96f0f324d1178f8d9705fd1169efaf5e60dfca6ac6ccc9cffc20d4e12/rascal-0.3.8.1.tar.gz
+[2023-06-04 14:41:30] INFO root fetch - processPackages [hcm-causal]: Downloading https://files.pythonhosted.org/packages/bf/8b/42b1188163bda0cf14d4c036e73b7d9972df34a85ad28d8d4457a1711d01/hcm_causal-0.2.0.tar.gz
+[2023-06-04 14:41:30] WARNING root fetch - processPackages [hcm-causal]: Skipping package: exceeds size limit 27177856>=10485760
+[2023-06-04 14:41:30] INFO root fetch - main [MainThread]: End processing [hcm-causal] error
+[2023-06-04 14:41:30] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/c0/57/96e581322a1ca26a654f1d6ec98b102f0f1cf002063baa9247dfab5c15ed/onboardme-1.5.0.tar.gz
+[2023-06-04 14:41:30] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/b1/43/bbdfdcba0d1e308f4b59657fe7af4803b8f7de070c3f3117429fa856a0e5/circuitpython-mag-cal-1.2.2.tar.gz
+[2023-06-04 14:41:30] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-06-04 14:41:30] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.4.1.tar.gz tmp/onboardme-1.5.0.tar.gz --markdown 20230604/o/onboardme/1.4.1-1.5.0/diff.md --exclude *.pyd
+[2023-06-04 14:41:31] INFO root fetch - processPackages [circuitpython-mag-cal]: executing diffoscope
+[2023-06-04 14:41:31] INFO root fetch - processPackages [circuitpython-mag-cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-mag-cal-1.2.1.tar.gz tmp/circuitpython-mag-cal-1.2.2.tar.gz --markdown 20230604/c/circuitpython-mag-cal/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-06-04 14:41:31] INFO root fetch - processPackages [rascal]: Downloading https://files.pythonhosted.org/packages/61/47/eae39faa8deec84023f76a78db2cc408d1975010232247bb8b78cf39021c/rascal-0.3.9.tar.gz
+[2023-06-04 14:41:31] INFO root fetch - processPackages [rascal]: executing diffoscope
+[2023-06-04 14:41:31] INFO root fetch - processPackages [rascal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rascal-0.3.8.1.tar.gz tmp/rascal-0.3.9.tar.gz --markdown 20230604/r/rascal/0.3.8.1-0.3.9/diff.md --exclude *.pyd
+[2023-06-04 14:41:32] INFO root fetch - main [MainThread]: End processing [rascal]: success
+[2023-06-04 14:41:32] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-06-04 14:41:33] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
+[2023-06-04 14:41:33] INFO root fetch - main [MainThread]: Store serial: [18365914]
