@@ -1669,3 +1669,43 @@
 [2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [pydisort]: success
 [2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2023-06-04 03:33:03] INFO root fetch - main [MainThread]: Store serial: [18363447]
+[2023-06-04 03:38:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363447]
+[2023-06-04 03:38:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: noba
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zood
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-sops-secrets
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-stdlib
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bioregistry
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-numpy
+[2023-06-04 03:38:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-pandas
+[2023-06-04 03:38:12] INFO root fetch - processPackages [zood]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [noba]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [bioregistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230604/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:38:12] INFO root fetch - processPackages [zood]: Downloading https://files.pythonhosted.org/packages/0c/04/d1291d54e709f4aaaf28720d8f053823070e815d298927c3ee8e724f6d1d/zood-0.7.6.tar.gz
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230604/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:38:12] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.8.tar.gz tmp/bioregistry-0.9.9.tar.gz --markdown 20230604/b/bioregistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230604/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:38:12] INFO root fetch - processPackages [noba]: Downloading https://files.pythonhosted.org/packages/bb/45/171bdfaa1fae3cf40b4038884f4551d5c3aaef8ad05732b3b735f2413cab/noba-1.1.7.tar.gz
+[2023-06-04 03:38:12] INFO root fetch - processPackages [zood]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [zood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zood-0.7.5.tar.gz tmp/zood-0.7.6.tar.gz --markdown 20230604/z/zood/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-06-04 03:38:12] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.98.tar.gz tmp/cdk-sops-secrets-1.2.99.tar.gz --markdown 20230604/c/cdk-sops-secrets/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-06-04 03:38:12] INFO root fetch - processPackages [noba]: executing diffoscope
+[2023-06-04 03:38:12] INFO root fetch - processPackages [noba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noba-1.1.6.tar.gz tmp/noba-1.1.7.tar.gz --markdown 20230604/n/noba/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-06-04 03:38:13] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-06-04 03:38:13] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-06-04 03:38:13] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-06-04 03:38:13] INFO root fetch - main [MainThread]: End processing [zood]: success
+[2023-06-04 03:38:14] INFO root fetch - main [MainThread]: End processing [noba]: success
+[2023-06-04 03:38:15] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-06-04 03:40:11] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-06-04 03:40:11] INFO root fetch - main [MainThread]: Store serial: [18363471]
