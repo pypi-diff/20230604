@@ -2451,3 +2451,21 @@
 [2023-06-04 06:17:23] INFO root fetch - processPackages [pyaddepar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaddepar-0.6.2.tar.gz tmp/pyaddepar-0.7.0.tar.gz --markdown 20230604/p/pyaddepar/0.6.2-0.7.0/diff.md --exclude *.pyd
 [2023-06-04 06:17:24] INFO root fetch - main [MainThread]: End processing [pyaddepar]: success
 [2023-06-04 06:17:24] INFO root fetch - main [MainThread]: Store serial: [18363880]
+[2023-06-04 06:22:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363880]
+[2023-06-04 06:22:33] INFO root fetch - main [MainThread]: No changed packages found
+[2023-06-04 06:27:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363882]
+[2023-06-04 06:27:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 06:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickstart-vdk
+[2023-06-04 06:27:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: StatLML
+[2023-06-04 06:27:38] INFO root fetch - processPackages [StatLML]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-06-04 06:27:38] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.888678445.dev11087] Old Version: [0.2.888299285.dev11086]
+[2023-06-04 06:27:39] INFO root fetch - processPackages [StatLML]: Downloading https://files.pythonhosted.org/packages/28/e0/9b7b41d4d049f660083739eaa8da4686f981d47439bc1b795d88bd1e2f9c/StatLML-2.0.0.tar.gz
+[2023-06-04 06:27:39] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/dc/fd/4711fbb537aca65b387b7854b85c7234c3851ef629604b89b94434002963/quickstart-vdk-0.2.888678445.dev11087.tar.gz
+[2023-06-04 06:27:39] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-06-04 06:27:39] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.888299285.dev11086.tar.gz tmp/quickstart-vdk-0.2.888678445.dev11087.tar.gz --markdown 20230604/q/quickstart-vdk/0.2.888299285.dev11086-0.2.888678445.dev11087/diff.md --exclude *.pyd
+[2023-06-04 06:27:39] INFO root fetch - processPackages [StatLML]: Downloading https://files.pythonhosted.org/packages/c5/5f/1ae5577ab04633ceee370b0ca7576a4c8899f4f73589ec3592f2e26aa625/StatLML-2.1.0.tar.gz
+[2023-06-04 06:27:39] INFO root fetch - processPackages [StatLML]: executing diffoscope
+[2023-06-04 06:27:39] INFO root fetch - processPackages [StatLML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StatLML-2.0.0.tar.gz tmp/StatLML-2.1.0.tar.gz --markdown 20230604/S/StatLML/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-06-04 06:27:40] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-06-04 06:27:40] INFO root fetch - main [MainThread]: End processing [StatLML]: success
+[2023-06-04 06:27:40] INFO root fetch - main [MainThread]: Store serial: [18363887]
