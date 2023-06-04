@@ -4248,3 +4248,28 @@
 [2023-06-04 11:22:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-06-04 11:22:11] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-06-04 11:22:11] INFO root fetch - main [MainThread]: Store serial: [18364910]
+[2023-06-04 11:27:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364910]
+[2023-06-04 11:27:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 11:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ifastapi
+[2023-06-04 11:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rkstreamer
+[2023-06-04 11:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2023-06-04 11:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchkeras
+[2023-06-04 11:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: inegm.staff
+[2023-06-04 11:27:19] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-04 11:27:19] WARNING root fetch - processPackages [inegm.staff]: Skipping, unable to determine old version
+[2023-06-04 11:27:19] INFO root fetch - main [MainThread]: End processing [inegm.staff] error
+[2023-06-04 11:27:19] INFO root fetch - processPackages [torchkeras]: New version: [3.8.7] Old Version: [3.8.5]
+[2023-06-04 11:27:19] WARNING root fetch - processPackages [rkstreamer]: Skipping, unable to determine old version
+[2023-06-04 11:27:19] INFO root fetch - main [MainThread]: End processing [rkstreamer] error
+[2023-06-04 11:27:19] INFO root fetch - processPackages [yeref]: New version: [0.1.80] Old Version: [0.1.79]
+[2023-06-04 11:27:20] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-04 11:27:20] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230604/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-04 11:27:20] INFO root fetch - processPackages [torchkeras]: Downloading https://files.pythonhosted.org/packages/32/95/4931c544245ae86157290ff62c42452e00d26ec4fcd6f63f7957f53ee011/torchkeras-3.8.5.tar.gz
+[2023-06-04 11:27:20] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ac/62/9849e4069ae6569f28af2e0907972eaa81dc3a7ae122fc23f955f9365f48/yeref-0.1.80.tar.gz
+[2023-06-04 11:27:20] WARNING root fetch - processPackages [torchkeras]: Skipping package: exceeds size limit 19694503>=10485760
+[2023-06-04 11:27:20] INFO root fetch - main [MainThread]: End processing [torchkeras] error
+[2023-06-04 11:27:20] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2023-06-04 11:27:20] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.1.79.tar.gz tmp/yeref-0.1.80.tar.gz --markdown 20230604/y/yeref/0.1.79-0.1.80/diff.md --exclude *.pyd
+[2023-06-04 11:27:21] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-04 11:27:21] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2023-06-04 11:27:21] INFO root fetch - main [MainThread]: Store serial: [18364925]
