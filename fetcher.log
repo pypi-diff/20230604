@@ -6144,3 +6144,74 @@
 [2023-06-04 15:12:58] INFO root fetch - main [MainThread]: End processing [napari-filaments]: success
 [2023-06-04 15:12:58] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
 [2023-06-04 15:12:58] INFO root fetch - main [MainThread]: Store serial: [18366083]
+[2023-06-04 15:18:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366083]
+[2023-06-04 15:18:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: findu
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-scipy
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EdgeGPT
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mafic
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hlatypingtools
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-sphinx
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aafitrans
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-django
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdktf-gke-auth
+[2023-06-04 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mlrun
+[2023-06-04 15:18:07] INFO root fetch - processPackages [findu]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [hlatypingtools]: New version: [1.0.7.1] Old Version: [1.0.7]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [EdgeGPT]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [cdktf-gke-auth]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mlrun]: New version: [1.4.0rc9] Old Version: [1.4.0rc8]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mafic]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [aafitrans]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.4.0rc8-py3-none-any.whl.zip tmp/mlrun-1.4.0rc9-py3-none-any.whl.zip --markdown 20230604/m/mlrun/1.4.0rc8-1.4.0rc9/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230604/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230604/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/bd/66/900cd9f88bc5b22c72154df862bbd041f5a5e412341d28a5aa7db594a8b0/hlatypingtools-1.0.7.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [cdktf-gke-auth]: Downloading https://files.pythonhosted.org/packages/41/b0/d00650b02e6d12ee71519dbd0d2622514d8a219bd41f6cc3978ae4595e45/cdktf-gke-auth-1.0.1.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230604/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/46/cb/c5a5aaf5a45c722f3607e725030c5441c965836ac393195978097f1bd448/findu-0.0.9.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/79/0d/7709f90f74303c5890939c155c081c0e7e10cc4a1a81ff538b39a94155cb/EdgeGPT-0.8.1.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mafic]: Downloading https://files.pythonhosted.org/packages/e6/e5/10eb013b5114ab9ed111e4bfd6d3c0fb9dce12d4f4517851be71e3836275/mafic-2.9.1.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [findu]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [findu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findu-0.0.8.tar.gz tmp/findu-0.0.9.tar.gz --markdown 20230604/f/findu/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.8.0.tar.gz tmp/EdgeGPT-0.8.1.tar.gz --markdown 20230604/E/EdgeGPT/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mafic]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [mafic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mafic-2.9.0.tar.gz tmp/mafic-2.9.1.tar.gz --markdown 20230604/m/mafic/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [aafitrans]: Downloading https://files.pythonhosted.org/packages/43/c2/46395114f6dd47f05a0e588d30d25e365bfbf40087eba8b61bd177e8d1cd/aafitrans-0.2.0.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [cdktf-gke-auth]: Downloading https://files.pythonhosted.org/packages/ba/8d/9314613cb36c9463c5a2daf3e41347162ba5de5f7116e7f7f5a7841d06f5/cdktf-gke-auth-1.1.0.tar.gz
+[2023-06-04 15:18:07] INFO root fetch - processPackages [aafitrans]: executing diffoscope
+[2023-06-04 15:18:07] INFO root fetch - processPackages [aafitrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aafitrans-0.1.2.tar.gz tmp/aafitrans-0.2.0.tar.gz --markdown 20230604/a/aafitrans/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 15:18:07] INFO root fetch - processPackages [hlatypingtools]: Downloading https://files.pythonhosted.org/packages/74/14/fbe5bb2e7ab10baf7419886ebacbb11fe470f4cfd2c4da5b2e5f4879e4c8/hlatypingtools-1.0.7.1.tar.gz
+[2023-06-04 15:18:08] INFO root fetch - processPackages [cdktf-gke-auth]: executing diffoscope
+[2023-06-04 15:18:08] INFO root fetch - processPackages [cdktf-gke-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gke-auth-1.0.1.tar.gz tmp/cdktf-gke-auth-1.1.0.tar.gz --markdown 20230604/c/cdktf-gke-auth/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 15:18:08] INFO root fetch - processPackages [hlatypingtools]: executing diffoscope
+[2023-06-04 15:18:08] INFO root fetch - processPackages [hlatypingtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hlatypingtools-1.0.7.tar.gz tmp/hlatypingtools-1.0.7.1.tar.gz --markdown 20230604/h/hlatypingtools/1.0.7-1.0.7.1/diff.md --exclude *.pyd
+[2023-06-04 15:18:09] INFO root fetch - processPackages [EdgeGPT]: Start processing: nwebclient
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-06-04 15:18:09] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 15:18:09] INFO root fetch - processPackages [aafitrans]: Start processing: hlatypingtools
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [aafitrans]: success
+[2023-06-04 15:18:09] INFO root fetch - processPackages [hlatypingtools]: New version: [1.0.7.1] Old Version: [1.0.7]
+[2023-06-04 15:18:09] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 15:18:09] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 15:18:09] INFO root fetch - processPackages [hlatypingtools]: executing diffoscope
+[2023-06-04 15:18:09] INFO root fetch - processPackages [hlatypingtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hlatypingtools-1.0.7.tar.gz tmp/hlatypingtools-1.0.7.1.tar.gz --markdown 20230604/h/hlatypingtools/1.0.7-1.0.7.1/diff.md --exclude *.pyd
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [cdktf-gke-auth]: success
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [hlatypingtools]: success
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [findu]: success
+[2023-06-04 15:18:09] INFO root fetch - main [MainThread]: End processing [mafic]: success
+[2023-06-04 15:18:10] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-06-04 15:18:10] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-06-04 15:18:10] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 15:18:10] INFO root fetch - main [MainThread]: End processing [hlatypingtools]: success
+[2023-06-04 15:18:14] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2023-06-04 15:18:14] INFO root fetch - main [MainThread]: Store serial: [18366118]
