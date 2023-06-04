@@ -2202,3 +2202,22 @@
 [2023-06-04 04:59:14] INFO root fetch - main [MainThread]: End processing [p2lz]: success
 [2023-06-04 04:59:14] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
 [2023-06-04 04:59:14] INFO root fetch - main [MainThread]: Store serial: [18363748]
+[2023-06-04 05:04:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363748]
+[2023-06-04 05:04:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 05:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-reveal-slides
+[2023-06-04 05:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iam-actions
+[2023-06-04 05:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: x-transformers
+[2023-06-04 05:04:23] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230604] Old Version: [1.2.20230603]
+[2023-06-04 05:04:23] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 05:04:23] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-06-04 05:04:23] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-06-04 05:04:23] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.1.8.tar.gz tmp/streamlit-reveal-slides-0.1.9.tar.gz --markdown 20230604/s/streamlit-reveal-slides/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 05:04:23] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/85/95/c3ef3bc6296ecf201f88cb672210c56d664915d44cb82516469cdfe134e3/iam_actions-1.2.20230604.tar.gz
+[2023-06-04 05:04:23] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-06-04 05:04:23] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230603.tar.gz tmp/iam_actions-1.2.20230604.tar.gz --markdown 20230604/i/iam-actions/1.2.20230603-1.2.20230604/diff.md --exclude *.pyd
+[2023-06-04 05:04:23] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-06-04 05:04:23] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230604/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-06-04 05:04:24] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-06-04 05:04:25] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-06-04 05:04:56] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-06-04 05:04:56] INFO root fetch - main [MainThread]: Store serial: [18363757]
