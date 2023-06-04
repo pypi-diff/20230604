@@ -8445,3 +8445,33 @@
 [2023-06-04 19:34:11] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bawiki]: success
 [2023-06-04 19:34:12] INFO root fetch - main [MainThread]: End processing [sciqlopplots]: success
 [2023-06-04 19:34:12] INFO root fetch - main [MainThread]: Store serial: [18367560]
+[2023-06-04 19:39:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367560]
+[2023-06-04 19:39:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nso-oc
+[2023-06-04 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: last-fm-api-client
+[2023-06-04 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiddifypanel
+[2023-06-04 19:39:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-semantic-release
+[2023-06-04 19:39:21] WARNING root fetch - processPackages [last-fm-api-client]: Skipping, unable to determine old version
+[2023-06-04 19:39:21] INFO root fetch - main [MainThread]: End processing [last-fm-api-client] error
+[2023-06-04 19:39:21] INFO root fetch - processPackages [nso-oc]: New version: [2.59.0] Old Version: [2.58.0]
+[2023-06-04 19:39:21] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 19:39:21] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.9] Old Version: [7.0.8]
+[2023-06-04 19:39:21] INFO root fetch - processPackages [python-semantic-release]: New version: [8.0.0a6] Old Version: [8.0.0a5]
+[2023-06-04 19:39:21] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/e7/27/9990e102b74054b29deb855a56fc122e9dd8a39df576a77d73d03fbd7438/nso-oc-2.59.0.tar.gz
+[2023-06-04 19:39:21] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/fb/56/6e3129254cc40ea83bcdacc662616bcd45ac60a9c17982032af30a3d6725/kelpie_personal_trainer-0.0.8.tar.gz
+[2023-06-04 19:39:21] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-06-04 19:39:21] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.58.0.tar.gz tmp/nso-oc-2.59.0.tar.gz --markdown 20230604/n/nso-oc/2.58.0-2.59.0/diff.md --exclude *.pyd
+[2023-06-04 19:39:21] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:39:21] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.7.tar.gz tmp/kelpie_personal_trainer-0.0.8.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 19:39:21] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/9f/37/072318287b2c72c46598c56a03d274be3efbc25c6fa278535961f4cb0190/hiddifypanel-7.0.9-cp39-cp39-manylinux2014_x86_64.whl
+[2023-06-04 19:39:21] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/80/5f/bde47f21b72b7723d8c922b369a1ba4a5c0e6a2b8f5609c7ac23031a693c/python-semantic-release-8.0.0a6.tar.gz
+[2023-06-04 19:39:21] INFO root fetch - processPackages [python-semantic-release]: executing diffoscope
+[2023-06-04 19:39:21] INFO root fetch - processPackages [python-semantic-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-semantic-release-8.0.0a5.tar.gz tmp/python-semantic-release-8.0.0a6.tar.gz --markdown 20230604/p/python-semantic-release/8.0.0a5-8.0.0a6/diff.md --exclude *.pyd
+[2023-06-04 19:39:22] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:39:22] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-06-04 19:39:23] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
+[2023-06-04 19:39:23] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-06-04 19:39:23] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230604/h/hiddifypanel/7.0.8-7.0.9/diff.md --exclude *.pyd
+[2023-06-04 19:39:45] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-06-04 19:39:45] INFO root fetch - main [MainThread]: Store serial: [18367590]
