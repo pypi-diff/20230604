@@ -9215,3 +9215,62 @@
 [2023-06-04 21:08:30] INFO root fetch - main [MainThread]: End processing [wbddh]: success
 [2023-06-04 21:08:39] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-06-04 21:08:39] INFO root fetch - main [MainThread]: Store serial: [18368039]
+[2023-06-04 21:13:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368039]
+[2023-06-04 21:13:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plutous-trade-crypto
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scopeton
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: promptengine-catapult
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: G2S
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: animegifs
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: netteikei
+[2023-06-04 21:13:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kfish
+[2023-06-04 21:13:48] INFO root fetch - processPackages [scopeton]: New version: [2.4] Old Version: [2.3]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [promptengine-catapult]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [plutous-trade-crypto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [animegifs]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: New version: [99.0.202306041910] Old Version: [99.0.202306041820]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: New version: [99.0.202306041910] Old Version: [99.0.202306041820]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [G2S]: New version: [0.98.4] Old Version: [0.98.3]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kcli]: New version: [99.0.202306041911] Old Version: [99.0.202306041908]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [netteikei]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-06-04 21:13:48] INFO root fetch - processPackages [plutous-trade-crypto]: executing diffoscope
+[2023-06-04 21:13:48] INFO root fetch - processPackages [plutous-trade-crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutous_trade_crypto-0.0.8.tar.gz tmp/plutous_trade_crypto-0.0.9.tar.gz --markdown 20230604/p/plutous-trade-crypto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 21:13:48] INFO root fetch - processPackages [promptengine-catapult]: Downloading https://files.pythonhosted.org/packages/e7/30/5a3bb1fbc82a3f882c8e0cc5cb5ff0bd86e82ba7fd986ce022c0e7683326/promptengine_catapult-0.0.3.tar.gz
+[2023-06-04 21:13:48] INFO root fetch - processPackages [scopeton]: Downloading https://files.pythonhosted.org/packages/f6/ea/1f9191c5029b10b08b2a7ecb4fbc40f07afa03c6c4dd314f25e60c9475be/scopeton-2.3.tar.gz
+[2023-06-04 21:13:48] INFO root fetch - processPackages [G2S]: Downloading https://files.pythonhosted.org/packages/80/1c/319663be5546c14488c19cb8074e1a53f8b0c5d90b25727212bd48aad09d/G2S-0.98.3-cp39-cp39-win_amd64.whl
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/bc/3c/bdafc8072e159d5f9d06639a35bf21fc8ee89ff35c7d4b50bc0f0b59d011/kcli-99.0.202306041911-py3-none-any.whl
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/ff/d5/29e173d5299759351fe220415ef460c4d9c50cdf3c77c03a898ac05659bc/kfish-99.0.202306041910-py3-none-any.whl
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/ff/d5/29e173d5299759351fe220415ef460c4d9c50cdf3c77c03a898ac05659bc/kfish-99.0.202306041910-py3-none-any.whl
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306041820-py3-none-any.whl.zip tmp/kfish-99.0.202306041910-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306041820-99.0.202306041910/diff.md --exclude *.pyd
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306041820-py3-none-any.whl.zip tmp/kfish-99.0.202306041910-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306041820-99.0.202306041910/diff.md --exclude *.pyd
+[2023-06-04 21:13:48] INFO root fetch - processPackages [animegifs]: Downloading https://files.pythonhosted.org/packages/0b/6b/b56ff71c15a781c581a5f0261ff5b9a85640085f4229946e226d9ee32027/animegifs-0.6.1.tar.gz
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 21:13:48] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306041908-py3-none-any.whl.zip tmp/kcli-99.0.202306041911-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306041908-99.0.202306041911/diff.md --exclude *.pyd
+[2023-06-04 21:13:48] INFO root fetch - processPackages [animegifs]: executing diffoscope
+[2023-06-04 21:13:48] INFO root fetch - processPackages [animegifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animegifs-0.6.0.tar.gz tmp/animegifs-0.6.1.tar.gz --markdown 20230604/a/animegifs/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-06-04 21:13:48] INFO root fetch - processPackages [promptengine-catapult]: Downloading https://files.pythonhosted.org/packages/5e/4b/84ac916aee55e6beef0c77104612c7c8391e59d55efa2f3b89e2259946dd/promptengine_catapult-0.0.4.tar.gz
+[2023-06-04 21:13:48] INFO root fetch - processPackages [scopeton]: Downloading https://files.pythonhosted.org/packages/95/2e/633b6bc80b72d8fbb492cbc87436008cb7dd7ae55ac32f412d9a2d086647/scopeton-2.4.tar.gz
+[2023-06-04 21:13:49] INFO root fetch - processPackages [promptengine-catapult]: executing diffoscope
+[2023-06-04 21:13:49] INFO root fetch - processPackages [netteikei]: Downloading https://files.pythonhosted.org/packages/1e/67/8e91bee27bd36b366c794158d1c83e110919a9ba40e883080ef69c18632d/netteikei-0.4.2.tar.gz
+[2023-06-04 21:13:49] INFO root fetch - processPackages [promptengine-catapult]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptengine_catapult-0.0.3.tar.gz tmp/promptengine_catapult-0.0.4.tar.gz --markdown 20230604/p/promptengine-catapult/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 21:13:49] INFO root fetch - processPackages [scopeton]: executing diffoscope
+[2023-06-04 21:13:49] INFO root fetch - processPackages [scopeton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scopeton-2.3.tar.gz tmp/scopeton-2.4.tar.gz --markdown 20230604/s/scopeton/2.3-2.4/diff.md --exclude *.pyd
+[2023-06-04 21:13:49] INFO root fetch - processPackages [netteikei]: executing diffoscope
+[2023-06-04 21:13:49] INFO root fetch - processPackages [netteikei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netteikei-0.4.1.tar.gz tmp/netteikei-0.4.2.tar.gz --markdown 20230604/n/netteikei/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-06-04 21:13:49] INFO root fetch - processPackages [G2S]: Downloading https://files.pythonhosted.org/packages/7c/de/6583bbe01b0bf97ddb4238bcde0852133d5571586b44ca890802f603e6a3/G2S-0.98.4-cp39-cp39-win_amd64.whl
+[2023-06-04 21:13:49] INFO root fetch - processPackages [G2S]: executing diffoscope
+[2023-06-04 21:13:49] INFO root fetch - processPackages [G2S]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/G2S-0.98.3-cp39-cp39-win_amd64.whl.zip tmp/G2S-0.98.4-cp39-cp39-win_amd64.whl.zip --markdown 20230604/G/G2S/0.98.3-0.98.4/diff.md --exclude *.pyd
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [animegifs]: success
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [scopeton]: success
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [netteikei]: success
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [promptengine-catapult]: success
+[2023-06-04 21:13:50] INFO root fetch - main [MainThread]: End processing [plutous-trade-crypto]: success
+[2023-06-04 21:13:52] INFO root fetch - main [MainThread]: End processing [G2S]: success
+[2023-06-04 21:14:00] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 21:14:00] INFO root fetch - main [MainThread]: Store serial: [18368068]
