@@ -6522,3 +6522,18 @@
 [2023-06-04 15:55:30] INFO root fetch - main [MainThread]: End processing [minimapi]: success
 [2023-06-04 15:55:33] INFO root fetch - main [MainThread]: End processing [pubmed-types]: success
 [2023-06-04 15:55:33] INFO root fetch - main [MainThread]: Store serial: [18366280]
+[2023-06-04 16:00:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366280]
+[2023-06-04 16:00:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 16:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaudioai
+[2023-06-04 16:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myPackageLicensePrototype
+[2023-06-04 16:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycbzhelper
+[2023-06-04 16:00:41] WARNING root fetch - processPackages [pycbzhelper]: Skipping, unable to determine old version
+[2023-06-04 16:00:41] INFO root fetch - main [MainThread]: End processing [pycbzhelper] error
+[2023-06-04 16:00:41] WARNING root fetch - processPackages [pyaudioai]: Skipping, unable to determine old version
+[2023-06-04 16:00:41] INFO root fetch - main [MainThread]: End processing [pyaudioai] error
+[2023-06-04 16:00:41] INFO root fetch - processPackages [myPackageLicensePrototype]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-06-04 16:00:42] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/b9/b9/ebfc13c8b75091c0f07095aecefac6f7d64ac43b31ecbe27470d63e2bc4b/myPackageLicensePrototype-1.1.2.tar.gz
+[2023-06-04 16:00:42] INFO root fetch - processPackages [myPackageLicensePrototype]: executing diffoscope
+[2023-06-04 16:00:42] INFO root fetch - processPackages [myPackageLicensePrototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.1.1.tar.gz tmp/myPackageLicensePrototype-1.1.2.tar.gz --markdown 20230604/m/myPackageLicensePrototype/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-06-04 16:00:43] INFO root fetch - main [MainThread]: End processing [myPackageLicensePrototype]: success
+[2023-06-04 16:00:43] INFO root fetch - main [MainThread]: Store serial: [18366289]
