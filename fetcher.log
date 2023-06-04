@@ -4995,3 +4995,86 @@
 [2023-06-04 12:58:12] INFO root fetch - main [MainThread]: End processing [pkiviewer]: success
 [2023-06-04 12:58:52] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-06-04 12:58:52] INFO root fetch - main [MainThread]: Store serial: [18365390]
+[2023-06-04 13:03:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365390]
+[2023-06-04 13:04:01] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hytest
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mangowg
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alpha-trader-python
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mangowg
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mon2pcap
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: domain-admin
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: findu
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kfish
+[2023-06-04 13:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: lokii
+[2023-06-04 13:04:01] INFO root fetch - processPackages [hytest]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [kfish]: New version: [99.0.202306041102] Old Version: [99.0.202306041037]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [mangowg]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [mangowg]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [alpha-trader-python]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [mon2pcap]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [findu]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [lokii]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [domain-admin]: New version: [1.3.1] Old Version: [1.2.9]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [kcli]: New version: [99.0.202306041059] Old Version: [99.0.202306041034]
+[2023-06-04 13:04:01] INFO root fetch - processPackages [alpha-trader-python]: Downloading https://files.pythonhosted.org/packages/b2/11/5c8c52e5e95dae1fff56ac79a94a4e300a0480e3c28ebf74eb9526e4ed79/alpha_trader_python-0.3.2.tar.gz
+[2023-06-04 13:04:01] INFO root fetch - processPackages [mon2pcap]: Downloading https://files.pythonhosted.org/packages/a1/71/2fa8f5448bcb5a98908de03e5f9e788a68e7dcdc62df3daa2406e5d8aa69/mon2pcap-1.0.0.tar.gz
+[2023-06-04 13:04:01] INFO root fetch - processPackages [lokii]: Downloading https://files.pythonhosted.org/packages/33/c6/e84312d5f58cdc37cd704957e534df4c6ace86101615c24679c7217bb227/lokii-1.1.1.tar.gz
+[2023-06-04 13:04:01] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/a4/ae/52363dace82f323353a5c71096fbbbc2d8d8d2bcd39c9be3b19006cfd6bd/kfish-99.0.202306041102-py3-none-any.whl
+[2023-06-04 13:04:02] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/c8/76/9e737a45f69d03014d4b978009f4c47c7b8eb50a24016add02632790960c/kcli-99.0.202306041059-py3-none-any.whl
+[2023-06-04 13:04:02] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/62/ef/27f22c0ba56bf966fc686971f358598c26415df80fe4dc02348c526c823b/findu-0.0.4.tar.gz
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.8.tar.gz tmp/mangowg-0.1.9.tar.gz --markdown 20230604/m/mangowg/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306041037-py3-none-any.whl.zip tmp/kfish-99.0.202306041102-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306041037-99.0.202306041102/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [domain-admin]: Downloading https://files.pythonhosted.org/packages/44/87/4a3d45a7b661b6ad566f2df0b3d49f107df93738044e7618db92579769c0/domain-admin-1.3.1.tar.gz
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.8.tar.gz tmp/mangowg-0.1.9.tar.gz --markdown 20230604/m/mangowg/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [hytest]: Downloading https://files.pythonhosted.org/packages/ea/1c/ce13a1b8a9b01a387f1df39b5c98b4384df71d14ec9f02c1726356928f34/hytest-0.8.9-py3-none-any.whl
+[2023-06-04 13:04:02] INFO root fetch - processPackages [alpha-trader-python]: Downloading https://files.pythonhosted.org/packages/03/21/bbb15b0cf685beb9a01a6cb457c763b9d52154c41e7ebbca81c0d16d8956/alpha_trader_python-0.3.3.tar.gz
+[2023-06-04 13:04:02] INFO root fetch - processPackages [findu]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [findu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findu-0.0.3.tar.gz tmp/findu-0.0.4.tar.gz --markdown 20230604/f/findu/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306041034-py3-none-any.whl.zip tmp/kcli-99.0.202306041059-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306041034-99.0.202306041059/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [lokii]: Downloading https://files.pythonhosted.org/packages/a1/8d/3523af5e9cf069b8d72cb0581d8698eeff9a7346e8a7ca5be7cb0b306e19/lokii-1.1.2.tar.gz
+[2023-06-04 13:04:02] INFO root fetch - processPackages [alpha-trader-python]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [alpha-trader-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpha_trader_python-0.3.2.tar.gz tmp/alpha_trader_python-0.3.3.tar.gz --markdown 20230604/a/alpha-trader-python/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mon2pcap]: Downloading https://files.pythonhosted.org/packages/8b/65/16e06450d89cfe0c50dcc887c42608f95c4cb20d28677aba8637e158ba6e/mon2pcap-1.0.1.tar.gz
+[2023-06-04 13:04:02] INFO root fetch - processPackages [domain-admin]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [domain-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-admin-1.2.9.tar.gz tmp/domain-admin-1.3.1.tar.gz --markdown 20230604/d/domain-admin/1.2.9-1.3.1/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [hytest]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [lokii]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [hytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hytest-0.8.8-py3-none-any.whl.zip tmp/hytest-0.8.9-py3-none-any.whl.zip --markdown 20230604/h/hytest/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [lokii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokii-1.1.1.tar.gz tmp/lokii-1.1.2.tar.gz --markdown 20230604/l/lokii/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mon2pcap]: executing diffoscope
+[2023-06-04 13:04:02] INFO root fetch - processPackages [mon2pcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mon2pcap-1.0.0.tar.gz tmp/mon2pcap-1.0.1.tar.gz --markdown 20230604/m/mon2pcap/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-04 13:04:03] INFO root fetch - processPackages [kfish]: Start processing: tknodesystem
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 13:04:03] INFO root fetch - processPackages [tknodesystem]: New version: [0.6] Old Version: [0.5]
+[2023-06-04 13:04:03] INFO root fetch - processPackages [mangowg]: Start processing: cadmium
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 13:04:03] WARNING root fetch - processPackages [cadmium]: Skipping, unable to determine old version
+[2023-06-04 13:04:03] INFO root fetch - processPackages [cadmium]: Start processing: bridgecrew
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [cadmium] error
+[2023-06-04 13:04:03] INFO root fetch - processPackages [findu]: Start processing: bmsdna-lakeapi
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [findu]: success
+[2023-06-04 13:04:03] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 13:04:03] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [alpha-trader-python]: success
+[2023-06-04 13:04:03] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-06-04 13:04:03] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230604/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 13:04:03] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-06-04 13:04:03] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.6.4.tar.gz tmp/bmsdna_lakeapi-0.6.5.tar.gz --markdown 20230604/b/bmsdna-lakeapi/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 13:04:03] INFO root fetch - main [MainThread]: End processing [hytest]: success
+[2023-06-04 13:04:03] INFO root fetch - processPackages [tknodesystem]: Downloading https://files.pythonhosted.org/packages/47/3c/5093534c462b4f7ed9176b658733c4687815abf2f6673e9defcea6389116/tknodesystem-0.6.tar.gz
+[2023-06-04 13:04:04] INFO root fetch - main [MainThread]: End processing [mon2pcap]: success
+[2023-06-04 13:04:04] INFO root fetch - processPackages [tknodesystem]: executing diffoscope
+[2023-06-04 13:04:04] INFO root fetch - processPackages [tknodesystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tknodesystem-0.5.tar.gz tmp/tknodesystem-0.6.tar.gz --markdown 20230604/t/tknodesystem/0.5-0.6/diff.md --exclude *.pyd
+[2023-06-04 13:04:04] INFO root fetch - main [MainThread]: End processing [lokii]: success
+[2023-06-04 13:04:05] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-06-04 13:04:05] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-06-04 13:04:05] INFO root fetch - main [MainThread]: End processing [tknodesystem]: success
+[2023-06-04 13:04:11] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 13:04:18] INFO root fetch - main [MainThread]: End processing [domain-admin]: success
+[2023-06-04 13:04:18] INFO root fetch - main [MainThread]: Store serial: [18365430]
