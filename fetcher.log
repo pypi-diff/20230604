@@ -5456,3 +5456,31 @@
 [2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [v2ray-util]: success
 [2023-06-04 13:40:49] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
 [2023-06-04 13:40:49] INFO root fetch - main [MainThread]: Store serial: [18365666]
+[2023-06-04 13:45:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365666]
+[2023-06-04 13:45:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 13:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elasticai-creator
+[2023-06-04 13:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aklite
+[2023-06-04 13:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atooms
+[2023-06-04 13:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sccache
+[2023-06-04 13:45:58] INFO root fetch - processPackages [elasticai-creator]: New version: [0.9.0] Old Version: [0.7.0]
+[2023-06-04 13:45:58] INFO root fetch - processPackages [sccache]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-06-04 13:45:58] INFO root fetch - processPackages [aklite]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 13:45:58] INFO root fetch - processPackages [atooms]: New version: [3.9.0] Old Version: [3.8.1]
+[2023-06-04 13:45:58] INFO root fetch - processPackages [atooms]: Downloading https://files.pythonhosted.org/packages/72/05/3614983e3773244bcb66527e931d3a65c79ad03472203e4d2fe1a5078033/atooms-3.8.1-py2.py3-none-any.whl
+[2023-06-04 13:45:58] INFO root fetch - processPackages [aklite]: Downloading https://files.pythonhosted.org/packages/f5/b4/c5782eedb874a693850eea3622f977ecfc7ab470bba65597142e24cf4001/aklite-0.0.1.tar.gz
+[2023-06-04 13:45:58] INFO root fetch - processPackages [sccache]: Downloading https://files.pythonhosted.org/packages/2d/6a/23c54b939101d206338368861d9e76a4ba6786f3a78ee6f14ecb4300323f/sccache-0.5.3-py3-none-win_amd64.whl
+[2023-06-04 13:45:58] INFO root fetch - processPackages [elasticai-creator]: executing diffoscope
+[2023-06-04 13:45:58] INFO root fetch - processPackages [elasticai-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elasticai.creator-0.7.0.tar.gz tmp/elasticai.creator-0.9.0.tar.gz --markdown 20230604/e/elasticai-creator/0.7.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 13:45:58] INFO root fetch - processPackages [aklite]: Downloading https://files.pythonhosted.org/packages/0d/d8/f1a275ae780881bc69b93e5bd2dc5af173fce142fde8964a9ed24d0177c1/aklite-0.0.2.tar.gz
+[2023-06-04 13:45:58] INFO root fetch - processPackages [atooms]: Downloading https://files.pythonhosted.org/packages/7d/bc/04af53c5cd55237944265769fdba4f778dd39a4da8595686d406cab24d8e/atooms-3.9.0-py2.py3-none-any.whl
+[2023-06-04 13:45:58] INFO root fetch - processPackages [aklite]: executing diffoscope
+[2023-06-04 13:45:58] INFO root fetch - processPackages [aklite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aklite-0.0.1.tar.gz tmp/aklite-0.0.2.tar.gz --markdown 20230604/a/aklite/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 13:45:59] INFO root fetch - processPackages [atooms]: executing diffoscope
+[2023-06-04 13:45:59] INFO root fetch - processPackages [atooms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atooms-3.8.1-py2.py3-none-any.whl.zip tmp/atooms-3.9.0-py2.py3-none-any.whl.zip --markdown 20230604/a/atooms/3.8.1-3.9.0/diff.md --exclude *.pyd
+[2023-06-04 13:45:59] INFO root fetch - main [MainThread]: End processing [aklite]: success
+[2023-06-04 13:46:00] INFO root fetch - main [MainThread]: End processing [elasticai-creator]: success
+[2023-06-04 13:46:00] INFO root fetch - processPackages [sccache]: executing diffoscope
+[2023-06-04 13:46:00] INFO root fetch - processPackages [sccache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sccache-0.5.2-py3-none-win_amd64.whl.zip tmp/sccache-0.5.3-py3-none-win_amd64.whl.zip --markdown 20230604/s/sccache/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-06-04 13:46:47] INFO root fetch - main [MainThread]: End processing [atooms]: success
+[2023-06-04 13:46:57] INFO root fetch - main [MainThread]: End processing [sccache]: success
+[2023-06-04 13:46:57] INFO root fetch - main [MainThread]: Store serial: [18365682]
