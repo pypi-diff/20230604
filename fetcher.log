@@ -3350,3 +3350,32 @@
 [2023-06-04 09:23:34] INFO root fetch - main [MainThread]: End processing [autotraders]: success
 [2023-06-04 09:23:47] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-06-04 09:23:47] INFO root fetch - main [MainThread]: Store serial: [18364392]
+[2023-06-04 09:28:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364392]
+[2023-06-04 09:28:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 09:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: liquidpy
+[2023-06-04 09:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mathbib
+[2023-06-04 09:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySupercell
+[2023-06-04 09:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-opa
+[2023-06-04 09:28:56] INFO root fetch - processPackages [mathbib]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-06-04 09:28:56] INFO root fetch - processPackages [PySupercell]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 09:28:56] INFO root fetch - processPackages [fastapi-opa]: New version: [1.4.5] Old Version: [1.4.4]
+[2023-06-04 09:28:56] INFO root fetch - processPackages [liquidpy]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-06-04 09:28:56] INFO root fetch - processPackages [fastapi-opa]: Downloading https://files.pythonhosted.org/packages/33/e6/eb79703ac7f1a5d5c3feb40d5946a91b72c586c02b87f331b9a0384de1c1/fastapi_opa-1.4.4.tar.gz
+[2023-06-04 09:28:56] INFO root fetch - processPackages [PySupercell]: Downloading https://files.pythonhosted.org/packages/9e/33/3664df2f6666fee05f32c8652d8a753a198a73fb4c24f0686348f1a55029/PySupercell-0.0.7.tar.gz
+[2023-06-04 09:28:56] INFO root fetch - processPackages [liquidpy]: Downloading https://files.pythonhosted.org/packages/b4/2a/156f348fc1cfb16b49070ea236b0da89cb12c37dc61c90447c7874958f28/liquidpy-0.8.0.tar.gz
+[2023-06-04 09:28:56] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/6c/bd/35b269006a829958ac2e41303115ee10d87854748f5e32a1cb8a5db1ec5d/mathbib-0.7.1.tar.gz
+[2023-06-04 09:28:56] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-06-04 09:28:56] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.7.0.tar.gz tmp/mathbib-0.7.1.tar.gz --markdown 20230604/m/mathbib/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-06-04 09:28:56] INFO root fetch - processPackages [PySupercell]: executing diffoscope
+[2023-06-04 09:28:56] INFO root fetch - processPackages [PySupercell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySupercell-0.0.6.tar.gz tmp/PySupercell-0.0.7.tar.gz --markdown 20230604/P/PySupercell/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 09:28:56] INFO root fetch - processPackages [fastapi-opa]: Downloading https://files.pythonhosted.org/packages/49/5a/461bc54dec8c70d43863e2950f8e85f56e087e1ce143d3b4da073115165d/fastapi_opa-1.4.5.tar.gz
+[2023-06-04 09:28:56] INFO root fetch - processPackages [liquidpy]: Downloading https://files.pythonhosted.org/packages/74/14/76bd266818fff814fa4ec429bcfd265adf448e86cfb055363d7f37f19fb3/liquidpy-0.8.1.tar.gz
+[2023-06-04 09:28:56] INFO root fetch - processPackages [fastapi-opa]: executing diffoscope
+[2023-06-04 09:28:56] INFO root fetch - processPackages [fastapi-opa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_opa-1.4.4.tar.gz tmp/fastapi_opa-1.4.5.tar.gz --markdown 20230604/f/fastapi-opa/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2023-06-04 09:28:57] INFO root fetch - processPackages [liquidpy]: executing diffoscope
+[2023-06-04 09:28:57] INFO root fetch - processPackages [liquidpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liquidpy-0.8.0.tar.gz tmp/liquidpy-0.8.1.tar.gz --markdown 20230604/l/liquidpy/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-06-04 09:28:57] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-06-04 09:28:58] INFO root fetch - main [MainThread]: End processing [liquidpy]: success
+[2023-06-04 09:28:58] INFO root fetch - main [MainThread]: End processing [fastapi-opa]: success
+[2023-06-04 09:28:58] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
+[2023-06-04 09:28:58] INFO root fetch - main [MainThread]: Store serial: [18364409]
