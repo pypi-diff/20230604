@@ -873,3 +873,58 @@
 [2023-06-04 01:58:28] INFO root fetch - main [MainThread]: End processing [tercol]: success
 [2023-06-04 01:58:28] INFO root fetch - main [MainThread]: End processing [robyn]: success
 [2023-06-04 01:58:28] INFO root fetch - main [MainThread]: Store serial: [18362971]
+[2023-06-04 02:03:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362971]
+[2023-06-04 02:03:37] INFO root fetch - main [MainThread]: No changed packages found
+[2023-06-04 02:08:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18362971]
+[2023-06-04 02:08:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metricspace
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchdatasets-nightly
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-nightly
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaxkern-nightly
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxutils-nightly
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BoilerTest
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: napari-gemspa
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lollms
+[2023-06-04 02:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchlayers-nightly
+[2023-06-04 02:08:43] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1685750601] Old Version: [1685664208]
+[2023-06-04 02:08:43] INFO root fetch - processPackages [napari-gemspa]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 02:08:43] INFO root fetch - processPackages [metricspace]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-06-04 02:08:43] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-06-04 02:08:43] INFO root fetch - processPackages [BoilerTest]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 02:08:44] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230603] Old Version: [0.0.8.dev20230602]
+[2023-06-04 02:08:44] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-06-04 02:08:44] INFO root fetch - processPackages [lollms]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-06-04 02:08:44] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230602.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230603.tar.gz --markdown 20230604/j/jaxutils-nightly/0.0.8.dev20230602-0.0.8.dev20230603/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230604/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230604/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [BoilerTest]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [BoilerTest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BoilerTest-1.1.0.tar.gz tmp/BoilerTest-1.1.1.tar.gz --markdown 20230604/B/BoilerTest/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [napari-gemspa]: Downloading https://files.pythonhosted.org/packages/24/cd/799f509c78a0880511b375572372da44327bd4903fc04b03628baa0fb83a/napari-gemspa-0.0.3.tar.gz
+[2023-06-04 02:08:44] INFO root fetch - processPackages [metricspace]: Downloading https://files.pythonhosted.org/packages/22/78/a887e0a21680b30c5c80d85bf62149c1185886e00b83f114a137108f8035/metricspace-0.5.0.tar.gz
+[2023-06-04 02:08:44] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/ab/4b/3d9c668379a81916d9e77a6ac3bdb69a05c26c5d27968a2effead0d79f63/torchdatasets-nightly-1685750601.tar.gz
+[2023-06-04 02:08:44] INFO root fetch - processPackages [napari-gemspa]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [napari-gemspa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-gemspa-0.0.2.tar.gz tmp/napari-gemspa-0.0.3.tar.gz --markdown 20230604/n/napari-gemspa/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [metricspace]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [metricspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metricspace-0.4.0.tar.gz tmp/metricspace-0.5.0.tar.gz --markdown 20230604/m/metricspace/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1685664208.tar.gz tmp/torchdatasets-nightly-1685750601.tar.gz --markdown 20230604/t/torchdatasets-nightly/1685664208-1685750601/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [lollms]: Downloading https://files.pythonhosted.org/packages/bd/90/c604536c3ffab1b2fb08327cd8a2b9ac672e250fe663bd08aefadaa19630/lollms-1.1.0.tar.gz
+[2023-06-04 02:08:44] INFO root fetch - processPackages [lollms]: executing diffoscope
+[2023-06-04 02:08:44] INFO root fetch - processPackages [lollms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lollms-1.0.3.tar.gz tmp/lollms-1.1.0.tar.gz --markdown 20230604/l/lollms/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 02:08:44] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1685837295] Old Version: [1685750813]
+[2023-06-04 02:08:44] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/90/ef/c367dbebf95aa3fcd980199c6128461db4ce85731b06f53a3e0bba5750e7/torchlayers-nightly-1685837295.tar.gz
+[2023-06-04 02:08:45] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-06-04 02:08:45] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1685750813.tar.gz tmp/torchlayers-nightly-1685837295.tar.gz --markdown 20230604/t/torchlayers-nightly/1685750813-1685837295/diff.md --exclude *.pyd
+[2023-06-04 02:08:45] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-06-04 02:08:45] INFO root fetch - main [MainThread]: End processing [BoilerTest]: success
+[2023-06-04 02:08:45] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-06-04 02:08:45] INFO root fetch - main [MainThread]: End processing [metricspace]: success
+[2023-06-04 02:08:46] INFO root fetch - main [MainThread]: End processing [napari-gemspa]: success
+[2023-06-04 02:08:46] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-06-04 02:08:46] INFO root fetch - main [MainThread]: End processing [lollms]: success
+[2023-06-04 02:08:46] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-06-04 02:08:56] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-06-04 02:08:56] INFO root fetch - main [MainThread]: Store serial: [18362998]
