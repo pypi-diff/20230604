@@ -2677,3 +2677,13 @@
 [2023-06-04 07:17:17] INFO root fetch - main [MainThread]: End processing [borgmatic]: success
 [2023-06-04 07:17:27] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
 [2023-06-04 07:17:27] INFO root fetch - main [MainThread]: Store serial: [18364006]
+[2023-06-04 07:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364006]
+[2023-06-04 07:22:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 07:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysoundanalyser
+[2023-06-04 07:22:36] INFO root fetch - processPackages [pysoundanalyser]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-04 07:22:36] INFO root fetch - processPackages [pysoundanalyser]: Downloading https://files.pythonhosted.org/packages/fb/4c/02c0b816818244bd2d51236512a2982e1e58723974ae24f9a2f9b9d9268d/pysoundanalyser-0.3.0-py3-none-any.whl
+[2023-06-04 07:22:37] INFO root fetch - processPackages [pysoundanalyser]: Downloading https://files.pythonhosted.org/packages/0a/4e/d2ed2b01e902ad62e3dfce1ac93615042b29d88b0e63b1231a0cbc4bb01e/pysoundanalyser-0.3.1.tar.gz
+[2023-06-04 07:22:37] INFO root fetch - processPackages [pysoundanalyser]: executing diffoscope
+[2023-06-04 07:22:37] INFO root fetch - processPackages [pysoundanalyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysoundanalyser-0.3.0-py3-none-any.whl.zip tmp/pysoundanalyser-0.3.1.tar.gz --markdown 20230604/p/pysoundanalyser/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 07:22:40] INFO root fetch - main [MainThread]: End processing [pysoundanalyser]: success
+[2023-06-04 07:22:40] INFO root fetch - main [MainThread]: Store serial: [18364009]
