@@ -7700,3 +7700,26 @@
 [2023-06-04 18:01:22] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
 [2023-06-04 18:01:23] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-06-04 18:01:23] INFO root fetch - main [MainThread]: Store serial: [18367101]
+[2023-06-04 18:06:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367101]
+[2023-06-04 18:06:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 18:06:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-bison
+[2023-06-04 18:06:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spam-analyzer
+[2023-06-04 18:06:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Dickord
+[2023-06-04 18:06:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: translategram
+[2023-06-04 18:06:32] WARNING root fetch - processPackages [Dickord]: Skipping, unable to determine old version
+[2023-06-04 18:06:32] INFO root fetch - main [MainThread]: End processing [Dickord] error
+[2023-06-04 18:06:32] INFO root fetch - processPackages [spam-analyzer]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 18:06:32] INFO root fetch - processPackages [nonebot-bison]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-06-04 18:06:32] INFO root fetch - processPackages [translategram]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 18:06:32] INFO root fetch - processPackages [spam-analyzer]: Downloading https://files.pythonhosted.org/packages/97/ed/0d1d0e7ede0a806b17462535ffe82770d938387cb43ff2f30d52ee5cc33b/spam-analyzer-0.1.0.tar.gz
+[2023-06-04 18:06:32] INFO root fetch - processPackages [nonebot-bison]: Downloading https://files.pythonhosted.org/packages/ef/04/f9000bb8c8b6ec57cd6365bb1a1298c6911d12d52064e7ca3ddde2ed2258/nonebot_bison-0.7.3.tar.gz
+[2023-06-04 18:06:32] WARNING root fetch - processPackages [spam-analyzer]: Skipping package: exceeds size limit 11365587>=10485760
+[2023-06-04 18:06:32] INFO root fetch - main [MainThread]: End processing [spam-analyzer] error
+[2023-06-04 18:06:32] INFO root fetch - processPackages [translategram]: Downloading https://files.pythonhosted.org/packages/3c/ba/411094c9b6f635aa370c4972bfde12197e9d82b9f85cad59b4fe7f368aae/translategram-0.1.2.tar.gz
+[2023-06-04 18:06:32] INFO root fetch - processPackages [nonebot-bison]: executing diffoscope
+[2023-06-04 18:06:32] INFO root fetch - processPackages [nonebot-bison]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_bison-0.7.2.tar.gz tmp/nonebot_bison-0.7.3.tar.gz --markdown 20230604/n/nonebot-bison/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-06-04 18:06:33] INFO root fetch - processPackages [translategram]: executing diffoscope
+[2023-06-04 18:06:33] INFO root fetch - processPackages [translategram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translategram-0.1.1.tar.gz tmp/translategram-0.1.2.tar.gz --markdown 20230604/t/translategram/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 18:06:33] INFO root fetch - main [MainThread]: End processing [translategram]: success
+[2023-06-04 18:07:29] INFO root fetch - main [MainThread]: End processing [nonebot-bison]: success
+[2023-06-04 18:07:29] INFO root fetch - main [MainThread]: Store serial: [18367117]
