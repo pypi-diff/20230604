@@ -6215,3 +6215,29 @@
 [2023-06-04 15:18:10] INFO root fetch - main [MainThread]: End processing [hlatypingtools]: success
 [2023-06-04 15:18:14] INFO root fetch - main [MainThread]: End processing [mlrun]: success
 [2023-06-04 15:18:14] INFO root fetch - main [MainThread]: Store serial: [18366118]
+[2023-06-04 15:23:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366118]
+[2023-06-04 15:23:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 15:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-apl
+[2023-06-04 15:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdktf-gke-auth
+[2023-06-04 15:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yomigana-ebook
+[2023-06-04 15:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: assisted-service-client
+[2023-06-04 15:23:22] INFO root fetch - processPackages [yomigana-ebook]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-06-04 15:23:22] INFO root fetch - processPackages [cdktf-gke-auth]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-06-04 15:23:22] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.814] Old Version: [0.0.813]
+[2023-06-04 15:23:22] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-06-04 15:23:23] INFO root fetch - processPackages [cdktf-gke-auth]: executing diffoscope
+[2023-06-04 15:23:23] INFO root fetch - processPackages [cdktf-gke-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-gke-auth-1.0.1.tar.gz tmp/cdktf-gke-auth-1.1.0.tar.gz --markdown 20230604/c/cdktf-gke-auth/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 15:23:23] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-06-04 15:23:23] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230604/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-06-04 15:23:23] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/a7/5d/891692573bd297da2adf04031f9bb2eccbd16e49b4d09bcce69bb63e386e/nbdev-apl-0.0.813.tar.gz
+[2023-06-04 15:23:23] INFO root fetch - processPackages [yomigana-ebook]: Downloading https://files.pythonhosted.org/packages/6e/ce/c21613174b608e09c8d78164350bb6e7a23720a90a1e83e9a344d505b21c/yomigana_ebook-0.2.2.tar.gz
+[2023-06-04 15:23:23] INFO root fetch - processPackages [yomigana-ebook]: executing diffoscope
+[2023-06-04 15:23:23] INFO root fetch - processPackages [yomigana-ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yomigana_ebook-0.2.1.tar.gz tmp/yomigana_ebook-0.2.2.tar.gz --markdown 20230604/y/yomigana-ebook/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-06-04 15:23:23] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/31/dc/6e4e428a36a6d46a2c8bda830ef23622b16fe35b2afb04ede8571d865df1/nbdev-apl-0.0.814.tar.gz
+[2023-06-04 15:23:23] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-06-04 15:23:23] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.813.tar.gz tmp/nbdev-apl-0.0.814.tar.gz --markdown 20230604/n/nbdev-apl/0.0.813-0.0.814/diff.md --exclude *.pyd
+[2023-06-04 15:23:24] INFO root fetch - main [MainThread]: End processing [cdktf-gke-auth]: success
+[2023-06-04 15:23:24] INFO root fetch - main [MainThread]: End processing [yomigana-ebook]: success
+[2023-06-04 15:23:24] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-06-04 15:23:27] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-06-04 15:23:27] INFO root fetch - main [MainThread]: Store serial: [18366129]
