@@ -5484,3 +5484,52 @@
 [2023-06-04 13:46:47] INFO root fetch - main [MainThread]: End processing [atooms]: success
 [2023-06-04 13:46:57] INFO root fetch - main [MainThread]: End processing [sccache]: success
 [2023-06-04 13:46:57] INFO root fetch - main [MainThread]: Store serial: [18365682]
+[2023-06-04 13:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365682]
+[2023-06-04 13:52:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: philbot-voice
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rysk-client
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: philbot-voice
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: propellant
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arrendatools.plantillas
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vsmuxtools
+[2023-06-04 13:52:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: libretrofuzz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [arrendatools.plantillas]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: New version: [1.7.8] Old Version: [1.7.7]
+[2023-06-04 13:52:23] INFO root fetch - processPackages [rysk-client]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-04 13:52:23] ERROR root fetch - processPackages [propellant]: Unable to get metadata: No such project 'propellant'
+[2023-06-04 13:52:23] INFO root fetch - processPackages [vsmuxtools]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 13:52:23] INFO root fetch - main [MainThread]: End processing [propellant] error
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: New version: [1.7.8] Old Version: [1.7.7]
+[2023-06-04 13:52:23] INFO root fetch - processPackages [libretrofuzz]: New version: [2.8.4] Old Version: [2.8.3]
+[2023-06-04 13:52:23] INFO root fetch - processPackages [moto]: New version: [4.1.9.dev9] Old Version: [4.1.9.dev8]
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/8d/77/063177320ebb00ba7a84a7c1326bb8931378a9fc4d73d424e1e1900296d1/philbot_voice-1.7.7.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [libretrofuzz]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [libretrofuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretrofuzz-2.8.3.tar.gz tmp/libretrofuzz-2.8.4.tar.gz --markdown 20230604/l/libretrofuzz/2.8.3-2.8.4/diff.md --exclude *.pyd
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/8d/77/063177320ebb00ba7a84a7c1326bb8931378a9fc4d73d424e1e1900296d1/philbot_voice-1.7.7.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [arrendatools.plantillas]: Downloading https://files.pythonhosted.org/packages/6b/ac/a0e8bde739bb46e4a2b9aaffcec2659fc0e29dcae69ddea336c6f167fbf6/arrendatools.plantillas-0.2.0.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.9.dev8.tar.gz tmp/moto-4.1.9.dev9.tar.gz --markdown 20230604/m/moto/4.1.9.dev8-4.1.9.dev9/diff.md --exclude *.pyd
+[2023-06-04 13:52:23] INFO root fetch - processPackages [vsmuxtools]: Downloading https://files.pythonhosted.org/packages/e9/9e/c184cdb5668dcf9f6593c2ced9e0795d82f5349eed4cce0472d5c73c4cc0/vsmuxtools-0.0.4.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [rysk-client]: Downloading https://files.pythonhosted.org/packages/ec/87/8825242810bf37cbf44b2e96166cf8a529053b5b1e7f66b67ebf1c5e5592/rysk_client-0.1.8.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/f6/5d/5a5378ccce39c288aeec4b0f8a92d6694af770b6badde4444319fcb9ffb3/philbot_voice-1.7.8.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [vsmuxtools]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [vsmuxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsmuxtools-0.0.3.tar.gz tmp/vsmuxtools-0.0.4.tar.gz --markdown 20230604/v/vsmuxtools/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/f6/5d/5a5378ccce39c288aeec4b0f8a92d6694af770b6badde4444319fcb9ffb3/philbot_voice-1.7.8.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [arrendatools.plantillas]: Downloading https://files.pythonhosted.org/packages/1d/f9/ee1ce523798ff00ad90207c34f8a0b866e510e137df32d9831d3cd8baf11/arrendatools.plantillas-0.3.0.tar.gz
+[2023-06-04 13:52:23] INFO root fetch - processPackages [rysk-client]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [rysk-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rysk_client-0.1.7.tar.gz tmp/rysk_client-0.1.8.tar.gz --markdown 20230604/r/rysk-client/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 13:52:23] INFO root fetch - processPackages [arrendatools.plantillas]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [arrendatools.plantillas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrendatools.plantillas-0.2.0.tar.gz tmp/arrendatools.plantillas-0.3.0.tar.gz --markdown 20230604/a/arrendatools.plantillas/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.7.tar.gz tmp/philbot_voice-1.7.8.tar.gz --markdown 20230604/p/philbot-voice/1.7.7-1.7.8/diff.md --exclude *.pyd
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-04 13:52:23] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.7.tar.gz tmp/philbot_voice-1.7.8.tar.gz --markdown 20230604/p/philbot-voice/1.7.7-1.7.8/diff.md --exclude *.pyd
+[2023-06-04 13:52:24] INFO root fetch - main [MainThread]: End processing [libretrofuzz]: success
+[2023-06-04 13:52:24] INFO root fetch - main [MainThread]: End processing [vsmuxtools]: success
+[2023-06-04 13:52:24] INFO root fetch - main [MainThread]: End processing [arrendatools.plantillas]: success
+[2023-06-04 13:52:24] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-04 13:52:24] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-04 13:52:27] INFO root fetch - main [MainThread]: End processing [rysk-client]: success
+[2023-06-04 13:52:55] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2023-06-04 13:52:55] INFO root fetch - main [MainThread]: Store serial: [18365713]
