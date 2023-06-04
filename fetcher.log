@@ -5652,3 +5652,38 @@
 [2023-06-04 14:09:22] INFO root fetch - main [MainThread]: End processing [templa]: success
 [2023-06-04 14:09:22] INFO root fetch - main [MainThread]: End processing [graphql-service-framework]: success
 [2023-06-04 14:09:22] INFO root fetch - main [MainThread]: Store serial: [18365801]
+[2023-06-04 14:14:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365801]
+[2023-06-04 14:14:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paas
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-agents-nightly
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mosaic-library
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mcutil
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wzry
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nomenklatura
+[2023-06-04 14:14:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twitter-scraper-selenium
+[2023-06-04 14:14:31] INFO root fetch - processPackages [mosaic-library]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 14:14:31] WARNING root fetch - processPackages [mcutil]: Skipping, unable to determine old version
+[2023-06-04 14:14:31] INFO root fetch - main [MainThread]: End processing [mcutil] error
+[2023-06-04 14:14:31] INFO root fetch - processPackages [twitter-scraper-selenium]: New version: [4.1.5] Old Version: [4.1.4]
+[2023-06-04 14:14:31] INFO root fetch - processPackages [wzry]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 14:14:31] INFO root fetch - processPackages [wzry]: Downloading https://files.pythonhosted.org/packages/c5/b4/ea4d504fb1804c0ec2b56d84c6436fcdd8455e691392bd7a69aada7559c8/wzry-1.0.0.tar.gz
+[2023-06-04 14:14:31] WARNING root fetch - processPackages [paas]: Skipping, unable to determine old version
+[2023-06-04 14:14:31] INFO root fetch - main [MainThread]: End processing [paas] error
+[2023-06-04 14:14:31] INFO root fetch - processPackages [twitter-scraper-selenium]: executing diffoscope
+[2023-06-04 14:14:31] INFO root fetch - processPackages [twitter-scraper-selenium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_scraper_selenium-4.1.4.tar.gz tmp/twitter_scraper_selenium-4.1.5.tar.gz --markdown 20230604/t/twitter-scraper-selenium/4.1.4-4.1.5/diff.md --exclude *.pyd
+[2023-06-04 14:14:31] WARNING root fetch - processPackages [wzry]: Skipping package: exceeds size limit 37452412>=10485760
+[2023-06-04 14:14:31] INFO root fetch - main [MainThread]: End processing [wzry] error
+[2023-06-04 14:14:31] INFO root fetch - processPackages [nomenklatura]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-06-04 14:14:31] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-06-04 14:14:31] INFO root fetch - processPackages [mosaic-library]: Downloading https://files.pythonhosted.org/packages/a2/02/4bb338a8bd2253954e699e6a0679eb06586f248446dfc90c53cfd005c233/mosaic-library-1.0.2.tar.gz
+[2023-06-04 14:14:31] INFO root fetch - processPackages [mosaic-library]: executing diffoscope
+[2023-06-04 14:14:31] INFO root fetch - processPackages [mosaic-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaic-library-1.0.1.tar.gz tmp/mosaic-library-1.0.2.tar.gz --markdown 20230604/m/mosaic-library/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 14:14:31] INFO root fetch - processPackages [nomenklatura]: executing diffoscope
+[2023-06-04 14:14:31] INFO root fetch - processPackages [nomenklatura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomenklatura-2.9.4.tar.gz tmp/nomenklatura-2.9.5.tar.gz --markdown 20230604/n/nomenklatura/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-06-04 14:14:31] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-06-04 14:14:31] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230604/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-06-04 14:14:32] INFO root fetch - main [MainThread]: End processing [twitter-scraper-selenium]: success
+[2023-06-04 14:14:32] INFO root fetch - main [MainThread]: End processing [mosaic-library]: success
+[2023-06-04 14:14:33] INFO root fetch - main [MainThread]: End processing [nomenklatura]: success
+[2023-06-04 14:14:39] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-06-04 14:14:39] INFO root fetch - main [MainThread]: Store serial: [18365826]
