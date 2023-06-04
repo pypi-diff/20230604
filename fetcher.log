@@ -7811,3 +7811,47 @@
 [2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
 [2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [flika]: success
 [2023-06-04 18:17:54] INFO root fetch - main [MainThread]: Store serial: [18367165]
+[2023-06-04 18:22:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367165]
+[2023-06-04 18:23:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PropTable
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csv-to-info-chunks
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-ckeditor-5
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mkdocstrings-python
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Python-Proxy
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sqlite-rw
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-master
+[2023-06-04 18:23:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PixID
+[2023-06-04 18:23:03] INFO root fetch - processPackages [csv-to-info-chunks]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 18:23:03] WARNING root fetch - processPackages [Python-Proxy]: Skipping, unable to determine old version
+[2023-06-04 18:23:03] WARNING root fetch - processPackages [PropTable]: Skipping, unable to determine old version
+[2023-06-04 18:23:03] INFO root fetch - main [MainThread]: End processing [Python-Proxy] error
+[2023-06-04 18:23:03] INFO root fetch - processPackages [mkdocstrings-python]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-06-04 18:23:03] INFO root fetch - main [MainThread]: End processing [PropTable] error
+[2023-06-04 18:23:03] WARNING root fetch - processPackages [PixID]: Skipping, unable to determine old version
+[2023-06-04 18:23:03] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230604.8.55.678235] Old Version: [20230604.16.20.319348]
+[2023-06-04 18:23:03] INFO root fetch - processPackages [django-ckeditor-5]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 18:23:03] INFO root fetch - main [MainThread]: End processing [PixID] error
+[2023-06-04 18:23:03] INFO root fetch - processPackages [sqlite-rw]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 18:23:03] INFO root fetch - processPackages [csv-to-info-chunks]: Downloading https://files.pythonhosted.org/packages/48/cb/b314d3356ed9f554539a5b2d5aa1316e132b006b717335872e72e6d691be/csv-to-info-chunks-1.0.0.tar.gz
+[2023-06-04 18:23:03] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/06/c0/b9917b2a052380da01e3f0dca0bf172098587fea109e334099426710a46f/certora-cli-alpha-master-20230604.16.20.319348.tar.gz
+[2023-06-04 18:23:03] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39177767>=10485760
+[2023-06-04 18:23:03] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-06-04 18:23:03] INFO root fetch - processPackages [mkdocstrings-python]: Downloading https://files.pythonhosted.org/packages/7b/22/eaa1ccd8aaeac72953a780f4b6c82650475d241dd953582706db547db004/mkdocstrings_python-1.1.2.tar.gz
+[2023-06-04 18:23:03] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/b8/0e/66eab7a83e03112ee46a9e307922fa1d59c5782f439c250ab129c04a6726/django-ckeditor-5-0.2.7.tar.gz
+[2023-06-04 18:23:03] INFO root fetch - processPackages [sqlite-rw]: Downloading https://files.pythonhosted.org/packages/a0/ed/f5cd6ab19ef9f8ef7b61a2b478a1cdbb4ddaada0dfc66a359749854a3e6e/sqlite-rw-0.0.1.win-amd64.zip
+[2023-06-04 18:23:03] INFO root fetch - processPackages [mkdocstrings-python]: executing diffoscope
+[2023-06-04 18:23:03] INFO root fetch - processPackages [mkdocstrings-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings_python-1.1.1.tar.gz tmp/mkdocstrings_python-1.1.2.tar.gz --markdown 20230604/m/mkdocstrings-python/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-06-04 18:23:04] INFO root fetch - processPackages [csv-to-info-chunks]: Downloading https://files.pythonhosted.org/packages/e2/14/1434171b3bccdb97b41b6ee4f5f49f974460c5ad2bd8ba953b177975ad1c/csv-to-info-chunks-1.0.1.tar.gz
+[2023-06-04 18:23:04] INFO root fetch - processPackages [sqlite-rw]: Downloading https://files.pythonhosted.org/packages/61/6b/494e34f7f3e554ebecce7e625cb0af4521ae8b3d7ad97ea2d7cc1ba55727/sqlite-rw-0.0.2.tar.gz
+[2023-06-04 18:23:04] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/48/da/5f198a5bd2b2cf6f9e90c85113f8ca500f4bfa4a2d073e078f06c4d80c30/django-ckeditor-5-0.2.8.tar.gz
+[2023-06-04 18:23:04] INFO root fetch - processPackages [sqlite-rw]: executing diffoscope
+[2023-06-04 18:23:04] INFO root fetch - processPackages [sqlite-rw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite-rw-0.0.1.win-amd64.zip tmp/sqlite-rw-0.0.2.tar.gz --markdown 20230604/s/sqlite-rw/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 18:23:04] INFO root fetch - processPackages [csv-to-info-chunks]: executing diffoscope
+[2023-06-04 18:23:04] INFO root fetch - processPackages [csv-to-info-chunks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv-to-info-chunks-1.0.0.tar.gz tmp/csv-to-info-chunks-1.0.1.tar.gz --markdown 20230604/c/csv-to-info-chunks/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-04 18:23:04] INFO root fetch - processPackages [django-ckeditor-5]: executing diffoscope
+[2023-06-04 18:23:04] INFO root fetch - processPackages [django-ckeditor-5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ckeditor-5-0.2.7.tar.gz tmp/django-ckeditor-5-0.2.8.tar.gz --markdown 20230604/d/django-ckeditor-5/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 18:23:05] INFO root fetch - main [MainThread]: End processing [sqlite-rw]: success
+[2023-06-04 18:23:05] INFO root fetch - main [MainThread]: End processing [csv-to-info-chunks]: success
+[2023-06-04 18:23:05] INFO root fetch - main [MainThread]: End processing [mkdocstrings-python]: success
+[2023-06-04 18:24:30] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
+[2023-06-04 18:24:30] INFO root fetch - main [MainThread]: Store serial: [18367203]
