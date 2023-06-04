@@ -4955,3 +4955,43 @@
 [2023-06-04 12:52:59] INFO root fetch - main [MainThread]: End processing [mangowg]: success
 [2023-06-04 12:53:00] INFO root fetch - main [MainThread]: End processing [sdbus-networkmanager]: success
 [2023-06-04 12:53:00] INFO root fetch - main [MainThread]: Store serial: [18365355]
+[2023-06-04 12:58:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365355]
+[2023-06-04 12:58:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mon2pcap
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: custardpy
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkov
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: interpreted
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: playbacker
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pkiviewer
+[2023-06-04 12:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: balladeer
+[2023-06-04 12:58:09] WARNING root fetch - processPackages [interpreted]: Skipping, unable to determine old version
+[2023-06-04 12:58:09] INFO root fetch - main [MainThread]: End processing [interpreted] error
+[2023-06-04 12:58:09] WARNING root fetch - processPackages [mon2pcap]: Skipping, unable to determine old version
+[2023-06-04 12:58:09] INFO root fetch - main [MainThread]: End processing [mon2pcap] error
+[2023-06-04 12:58:09] INFO root fetch - processPackages [playbacker]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-06-04 12:58:09] INFO root fetch - processPackages [pkiviewer]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 12:58:09] INFO root fetch - processPackages [balladeer]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-04 12:58:09] INFO root fetch - processPackages [custardpy]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-06-04 12:58:09] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 12:58:09] INFO root fetch - processPackages [pkiviewer]: Downloading https://files.pythonhosted.org/packages/60/01/879100383dc8057a0aea3f02c0d5f304a439413bb82fcd849bf433b1b5b7/pkiviewer-0.2.0.tar.gz
+[2023-06-04 12:58:09] INFO root fetch - processPackages [playbacker]: Downloading https://files.pythonhosted.org/packages/e2/e7/109381ea08089994578890c04dfe28fb3a560c5f320e9f5a0792a68ae05f/playbacker-0.5.1.tar.gz
+[2023-06-04 12:58:09] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-06-04 12:58:09] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230604/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 12:58:09] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/88/54/9ab1469cf1c289e0b1b034f062f086dca8b4bcd3765f523fffb41fc15df1/custardpy-0.5.2-py3-none-any.whl
+[2023-06-04 12:58:09] INFO root fetch - processPackages [balladeer]: executing diffoscope
+[2023-06-04 12:58:09] INFO root fetch - processPackages [balladeer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balladeer-0.8.0.tar.gz tmp/balladeer-0.9.0.tar.gz --markdown 20230604/b/balladeer/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 12:58:09] INFO root fetch - processPackages [playbacker]: Downloading https://files.pythonhosted.org/packages/1f/c4/f1202eb3a664dfe955f997698364a99b37ee187810a8b5f3d31070b4da0a/playbacker-0.6.0.tar.gz
+[2023-06-04 12:58:09] INFO root fetch - processPackages [playbacker]: executing diffoscope
+[2023-06-04 12:58:09] INFO root fetch - processPackages [playbacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playbacker-0.5.1.tar.gz tmp/playbacker-0.6.0.tar.gz --markdown 20230604/p/playbacker/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-06-04 12:58:09] INFO root fetch - processPackages [pkiviewer]: Downloading https://files.pythonhosted.org/packages/38/0d/7cf1a0b2390bc67b3813d7be25727bff96a0062f96aa89197ea88dd9cdbd/pkiviewer-0.2.1.tar.gz
+[2023-06-04 12:58:09] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/c3/e3/4f86c5cfeda1175129ad331a7d6aea282e4fc7491bd6674a89162bc01864/custardpy-0.5.3-py3-none-any.whl
+[2023-06-04 12:58:09] INFO root fetch - processPackages [custardpy]: executing diffoscope
+[2023-06-04 12:58:09] INFO root fetch - processPackages [custardpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custardpy-0.5.2-py3-none-any.whl.zip tmp/custardpy-0.5.3-py3-none-any.whl.zip --markdown 20230604/c/custardpy/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-06-04 12:58:10] INFO root fetch - processPackages [pkiviewer]: executing diffoscope
+[2023-06-04 12:58:10] INFO root fetch - processPackages [pkiviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkiviewer-0.2.0.tar.gz tmp/pkiviewer-0.2.1.tar.gz --markdown 20230604/p/pkiviewer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 12:58:10] INFO root fetch - main [MainThread]: End processing [playbacker]: success
+[2023-06-04 12:58:10] INFO root fetch - main [MainThread]: End processing [custardpy]: success
+[2023-06-04 12:58:10] INFO root fetch - main [MainThread]: End processing [balladeer]: success
+[2023-06-04 12:58:12] INFO root fetch - main [MainThread]: End processing [pkiviewer]: success
+[2023-06-04 12:58:52] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-06-04 12:58:52] INFO root fetch - main [MainThread]: Store serial: [18365390]
