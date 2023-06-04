@@ -3864,3 +3864,42 @@
 [2023-06-04 10:44:03] INFO root fetch - main [MainThread]: End processing [jj]: success
 [2023-06-04 10:44:04] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-06-04 10:44:04] INFO root fetch - main [MainThread]: Store serial: [18364714]
+[2023-06-04 10:49:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364714]
+[2023-06-04 10:49:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 10:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boxmot
+[2023-06-04 10:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PySupercell
+[2023-06-04 10:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Kurdish2Image
+[2023-06-04 10:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfp-nightly
+[2023-06-04 10:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mwxlib
+[2023-06-04 10:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mwxlib
+[2023-06-04 10:49:13] INFO root fetch - processPackages [boxmot]: New version: [10.0.9] Old Version: [10.0.8]
+[2023-06-04 10:49:13] INFO root fetch - processPackages [mwxlib]: New version: [0.84.7] Old Version: [0.84.6]
+[2023-06-04 10:49:13] INFO root fetch - processPackages [PySupercell]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 10:49:13] INFO root fetch - processPackages [mwxlib]: New version: [0.84.7] Old Version: [0.84.6]
+[2023-06-04 10:49:13] INFO root fetch - processPackages [Kurdish2Image]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 10:49:14] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/90/87/e85fc7898fa8c51de9d503b8010d4c58e9ec199d29c44d66983cb43d40df/mwxlib-0.84.6-py3-none-any.whl
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/90/87/e85fc7898fa8c51de9d503b8010d4c58e9ec199d29c44d66983cb43d40df/mwxlib-0.84.6-py3-none-any.whl
+[2023-06-04 10:49:14] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-06-04 10:49:14] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230604/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-06-04 10:49:14] INFO root fetch - processPackages [Kurdish2Image]: Downloading https://files.pythonhosted.org/packages/69/a2/2cd055fa5236dcbf1f6838e5c2c20145e31007b3e9909a027233bf9a909c/Kurdish2Image-0.0.5-py2.py3-none-any.whl
+[2023-06-04 10:49:14] INFO root fetch - processPackages [PySupercell]: Downloading https://files.pythonhosted.org/packages/73/4e/a80df8b529fe378bfa915eadf594310c1cb8a7b17a048daa10a89dd78108/PySupercell-0.0.8.tar.gz
+[2023-06-04 10:49:14] INFO root fetch - processPackages [PySupercell]: executing diffoscope
+[2023-06-04 10:49:14] INFO root fetch - processPackages [PySupercell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySupercell-0.0.7.tar.gz tmp/PySupercell-0.0.8.tar.gz --markdown 20230604/P/PySupercell/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 10:49:14] INFO root fetch - processPackages [Kurdish2Image]: executing diffoscope
+[2023-06-04 10:49:14] INFO root fetch - processPackages [Kurdish2Image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kurdish2Image-0.0.4-py2.py3-none-any.whl.zip tmp/Kurdish2Image-0.0.5-py2.py3-none-any.whl.zip --markdown 20230604/K/Kurdish2Image/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 10:49:14] INFO root fetch - processPackages [boxmot]: executing diffoscope
+[2023-06-04 10:49:14] INFO root fetch - processPackages [boxmot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxmot-10.0.8.tar.gz tmp/boxmot-10.0.9.tar.gz --markdown 20230604/b/boxmot/10.0.8-10.0.9/diff.md --exclude *.pyd
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/a6/13/899702f854a5720c371eb9fa85427f868eb0202e78c5ce433409510f2927/mwxlib-0.84.7-py3-none-any.whl
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/a6/13/899702f854a5720c371eb9fa85427f868eb0202e78c5ce433409510f2927/mwxlib-0.84.7-py3-none-any.whl
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.84.6-py3-none-any.whl.zip tmp/mwxlib-0.84.7-py3-none-any.whl.zip --markdown 20230604/m/mwxlib/0.84.6-0.84.7/diff.md --exclude *.pyd
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2023-06-04 10:49:14] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.84.6-py3-none-any.whl.zip tmp/mwxlib-0.84.7-py3-none-any.whl.zip --markdown 20230604/m/mwxlib/0.84.6-0.84.7/diff.md --exclude *.pyd
+[2023-06-04 10:49:15] INFO root fetch - main [MainThread]: End processing [Kurdish2Image]: success
+[2023-06-04 10:49:15] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
+[2023-06-04 10:49:15] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2023-06-04 10:49:15] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2023-06-04 10:49:15] INFO root fetch - main [MainThread]: End processing [boxmot]: success
+[2023-06-04 10:49:30] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-06-04 10:49:30] INFO root fetch - main [MainThread]: Store serial: [18364729]
