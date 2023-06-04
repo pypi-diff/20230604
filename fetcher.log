@@ -2816,3 +2816,26 @@
 [2023-06-04 07:49:29] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
 [2023-06-04 07:49:31] INFO root fetch - main [MainThread]: End processing [pbtools]: success
 [2023-06-04 07:49:31] INFO root fetch - main [MainThread]: Store serial: [18364083]
+[2023-06-04 07:54:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364083]
+[2023-06-04 07:54:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 07:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hkkang-utils
+[2023-06-04 07:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tabular-ml
+[2023-06-04 07:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opower
+[2023-06-04 07:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chrys
+[2023-06-04 07:54:40] INFO root fetch - processPackages [opower]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 07:54:40] WARNING root fetch - processPackages [tabular-ml]: Skipping, unable to determine old version
+[2023-06-04 07:54:40] INFO root fetch - main [MainThread]: End processing [tabular-ml] error
+[2023-06-04 07:54:40] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.98] Old Version: [0.1.97]
+[2023-06-04 07:54:40] INFO root fetch - processPackages [chrys]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-06-04 07:54:40] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/f2/fc/a78ee8a198382a21731d6107ff35075dfe94a38e16ea80b5ab23dddd8a90/hkkang_utils-0.1.98.tar.gz
+[2023-06-04 07:54:40] INFO root fetch - processPackages [opower]: Downloading https://files.pythonhosted.org/packages/de/e7/5d0e2eea618e46b3230cd28958d2cca7ca8ef0ec3acf7d333b499bc466db/opower-0.0.8.tar.gz
+[2023-06-04 07:54:40] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-06-04 07:54:40] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.97.tar.gz tmp/hkkang_utils-0.1.98.tar.gz --markdown 20230604/h/hkkang-utils/0.1.97-0.1.98/diff.md --exclude *.pyd
+[2023-06-04 07:54:40] INFO root fetch - processPackages [opower]: executing diffoscope
+[2023-06-04 07:54:40] INFO root fetch - processPackages [opower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opower-0.0.7.tar.gz tmp/opower-0.0.8.tar.gz --markdown 20230604/o/opower/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 07:54:40] INFO root fetch - processPackages [chrys]: executing diffoscope
+[2023-06-04 07:54:40] INFO root fetch - processPackages [chrys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chrys-4.0.8.tar.gz tmp/chrys-4.0.9.tar.gz --markdown 20230604/c/chrys/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-06-04 07:54:41] INFO root fetch - main [MainThread]: End processing [opower]: success
+[2023-06-04 07:54:41] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
+[2023-06-04 07:54:41] INFO root fetch - main [MainThread]: End processing [chrys]: success
+[2023-06-04 07:54:41] INFO root fetch - main [MainThread]: Store serial: [18364101]
