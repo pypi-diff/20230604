@@ -7203,3 +7203,81 @@
 [2023-06-04 17:13:43] INFO root fetch - main [MainThread]: End processing [pautobot]: success
 [2023-06-04 17:13:45] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-06-04 17:13:45] INFO root fetch - main [MainThread]: Store serial: [18366772]
+[2023-06-04 17:18:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366772]
+[2023-06-04 17:18:54] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytorch-partial-tagger
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onboardme
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: priceloop-api
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydeephaven
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nwebclient
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: redisamp
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openassist
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pylwr
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cushy-storage
+[2023-06-04 17:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: philbot-voice
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pytorch-partial-tagger]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-04 17:18:54] WARNING root fetch - processPackages [openassist]: Skipping, unable to determine old version
+[2023-06-04 17:18:54] INFO root fetch - processPackages [priceloop-api]: New version: [0.97.0] Old Version: [0.95.0]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [openassist]: Start processing: yaoys-checkin
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pydeephaven]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-04 17:18:54] INFO root fetch - main [MainThread]: End processing [openassist] error
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pylwr]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [onboardme]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-06-04 17:18:54] WARNING root fetch - processPackages [yaoys-checkin]: Skipping, unable to determine old version
+[2023-06-04 17:18:54] INFO root fetch - processPackages [yaoys-checkin]: Start processing: karrio.ups
+[2023-06-04 17:18:54] INFO root fetch - main [MainThread]: End processing [yaoys-checkin] error
+[2023-06-04 17:18:54] WARNING root fetch - processPackages [redisamp]: Skipping, unable to determine old version
+[2023-06-04 17:18:54] INFO root fetch - processPackages [redisamp]: Start processing: karrio.fedex
+[2023-06-04 17:18:54] INFO root fetch - main [MainThread]: End processing [redisamp] error
+[2023-06-04 17:18:54] INFO root fetch - processPackages [cushy-storage]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [philbot-voice]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 17:18:54] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 17:18:54] INFO root fetch - processPackages [karrio.ups]: New version: [2023.5] Old Version: [2023.4.6]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/03/f7/74319ffb3f01389e41cdc92ff26aad14e7efb2e888ffd523a4a4c58da807/onboardme-1.5.1.tar.gz
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/5b/9a/b602628e0be1a33ce2c7608de3aedd456622e196cdfd236148181e096c18/pylwr-1.0.3.tar.gz
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/f4/d6/073c81e81e07ab90a283b7ca9315e273567b95873c9dc0afbf6cccb67255/pydeephaven-0.8.0-py3-none-any.whl
+[2023-06-04 17:18:54] INFO root fetch - processPackages [karrio.fedex]: New version: [2023.5] Old Version: [2023.4.6]
+[2023-06-04 17:18:54] INFO root fetch - processPackages [cushy-storage]: Downloading https://files.pythonhosted.org/packages/16/16/5f53adc0fbdf6aad283f31f7e38602ce57c117f60276d33bccfc979bcd5b/cushy-storage-1.0.3.tar.gz
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pylwr]: executing diffoscope
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pylwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylwr-1.0.2.tar.gz tmp/pylwr-1.0.3.tar.gz --markdown 20230604/p/pylwr/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pytorch-partial-tagger]: Downloading https://files.pythonhosted.org/packages/b4/53/b646f4057d1d349ac41c258f2df4faa589207c1780336b06f0a59f2b9791/pytorch_partial_tagger-0.1.6.tar.gz
+[2023-06-04 17:18:54] INFO root fetch - processPackages [priceloop-api]: executing diffoscope
+[2023-06-04 17:18:54] INFO root fetch - processPackages [priceloop-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/priceloop-api-0.95.0.tar.gz tmp/priceloop-api-0.97.0.tar.gz --markdown 20230604/p/priceloop-api/0.95.0-0.97.0/diff.md --exclude *.pyd
+[2023-06-04 17:18:54] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-06-04 17:18:54] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.5.0.tar.gz tmp/onboardme-1.5.1.tar.gz --markdown 20230604/o/onboardme/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pytorch-partial-tagger]: executing diffoscope
+[2023-06-04 17:18:54] INFO root fetch - processPackages [pytorch-partial-tagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_partial_tagger-0.1.5.tar.gz tmp/pytorch_partial_tagger-0.1.6.tar.gz --markdown 20230604/p/pytorch-partial-tagger/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-04 17:18:54] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/a2/74/91ac0fb4e9c1b7158ddef7a29683ab86fd255b3f788c6ecea423bf79c4da/philbot_voice-1.8.1.tar.gz
+[2023-06-04 17:18:54] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-04 17:18:54] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.8.0.tar.gz tmp/philbot_voice-1.8.1.tar.gz --markdown 20230604/p/philbot-voice/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-06-04 17:18:54] INFO root fetch - processPackages [karrio.ups]: Downloading https://files.pythonhosted.org/packages/ab/26/0820834d9800b0256731e8877a38a3ad70ebde9e4d018337b31fc9808d90/karrio.ups-2023.5-py3-none-any.whl
+[2023-06-04 17:18:54] INFO root fetch - processPackages [cushy-storage]: Downloading https://files.pythonhosted.org/packages/d4/1c/d969e4c5d7effcf2159be3748f72400e0053891687951b563cfe90495e88/cushy-storage-1.0.4.tar.gz
+[2023-06-04 17:18:55] INFO root fetch - processPackages [cushy-storage]: executing diffoscope
+[2023-06-04 17:18:55] INFO root fetch - processPackages [cushy-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cushy-storage-1.0.3.tar.gz tmp/cushy-storage-1.0.4.tar.gz --markdown 20230604/c/cushy-storage/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-06-04 17:18:55] INFO root fetch - processPackages [karrio.fedex]: Downloading https://files.pythonhosted.org/packages/2a/33/49c65371bd876e0156c88d3604ac1b483f4572cfecb2a970316b1a7b0e5d/karrio.fedex-2023.5-py3-none-any.whl
+[2023-06-04 17:18:55] INFO root fetch - processPackages [karrio.ups]: executing diffoscope
+[2023-06-04 17:18:55] INFO root fetch - processPackages [karrio.ups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.ups-2023.4.6-py3-none-any.whl.zip tmp/karrio.ups-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.ups/2023.4.6-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:18:55] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/ba/d1/29e55a8d2d903d0fe4a0231e278a16816ae5fa4ee5b06795a577e848fefe/pydeephaven-0.9.0-py3-none-any.whl
+[2023-06-04 17:18:55] INFO root fetch - processPackages [karrio.fedex]: executing diffoscope
+[2023-06-04 17:18:55] INFO root fetch - processPackages [karrio.fedex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.fedex-2023.4.6-py3-none-any.whl.zip tmp/karrio.fedex-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.fedex/2023.4.6-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:18:55] INFO root fetch - processPackages [pydeephaven]: executing diffoscope
+[2023-06-04 17:18:55] INFO root fetch - processPackages [pydeephaven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeephaven-0.8.0-py3-none-any.whl.zip tmp/pydeephaven-0.9.0-py3-none-any.whl.zip --markdown 20230604/p/pydeephaven/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 17:18:56] INFO root fetch - processPackages [pylwr]: Start processing: karrio.dhl-express
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [pylwr]: success
+[2023-06-04 17:18:56] INFO root fetch - processPackages [karrio.dhl-express]: New version: [2023.5] Old Version: [2023.4.4]
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [pytorch-partial-tagger]: success
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-06-04 17:18:56] INFO root fetch - processPackages [karrio.dhl-express]: Downloading https://files.pythonhosted.org/packages/05/01/b41860dc6766e3c282ad4f415e6ff690aa14c0714a0a3a71780bbcfc9d10/karrio.dhl_express-2023.5-py3-none-any.whl
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [cushy-storage]: success
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [karrio.fedex]: success
+[2023-06-04 17:18:56] INFO root fetch - main [MainThread]: End processing [karrio.ups]: success
+[2023-06-04 17:18:56] INFO root fetch - processPackages [karrio.dhl-express]: executing diffoscope
+[2023-06-04 17:18:56] INFO root fetch - processPackages [karrio.dhl-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.dhl_express-2023.4.4-py3-none-any.whl.zip tmp/karrio.dhl_express-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.dhl-express/2023.4.4-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:18:57] INFO root fetch - main [MainThread]: End processing [pydeephaven]: success
+[2023-06-04 17:18:57] INFO root fetch - main [MainThread]: End processing [priceloop-api]: success
+[2023-06-04 17:18:57] INFO root fetch - main [MainThread]: End processing [karrio.dhl-express]: success
+[2023-06-04 17:18:57] INFO root fetch - main [MainThread]: Store serial: [18366820]
