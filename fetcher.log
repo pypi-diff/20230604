@@ -2034,3 +2034,41 @@
 [2023-06-04 04:37:30] INFO root fetch - main [MainThread]: End processing [binsync]: success
 [2023-06-04 04:37:44] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2023-06-04 04:37:44] INFO root fetch - main [MainThread]: Store serial: [18363667]
+[2023-06-04 04:42:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363667]
+[2023-06-04 04:42:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 04:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfsd
+[2023-06-04 04:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2023-06-04 04:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addons-oca-account-financial-tools
+[2023-06-04 04:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-asset-batch-compute
+[2023-06-04 04:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addons-oca-account-financial-tools
+[2023-06-04 04:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-reveal-slides
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addons-oca-account-financial-tools]: New version: [16.0.20230603.0] Old Version: [16.0.20230524.0]
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo14-addons-oca-account-financial-tools]: New version: [14.0.20230603.0] Old Version: [14.0.20230315.0]
+[2023-06-04 04:42:53] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 04:42:53] INFO root fetch - processPackages [kfsd]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addon-account-asset-batch-compute]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-06-04 04:42:53] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 04:42:53] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-06-04 04:42:53] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.1.8.tar.gz tmp/streamlit-reveal-slides-0.1.9.tar.gz --markdown 20230604/s/streamlit-reveal-slides/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 04:42:53] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-06-04 04:42:53] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo14-addons-oca-account-financial-tools]: Downloading https://files.pythonhosted.org/packages/96/5d/030cc5a2ec396600f1d0c110f78e1c8979194e660f4f991cae1e00c10c9d/odoo14_addons_oca_account_financial_tools-14.0.20230315.0-py3-none-any.whl
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addon-account-asset-batch-compute]: Downloading https://files.pythonhosted.org/packages/97/af/e22a8bf21b1acf88ad99fbe3eaa0ecf00ce040ad425fa9506770fe00efde/odoo_addon_account_asset_batch_compute-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addons-oca-account-financial-tools]: Downloading https://files.pythonhosted.org/packages/87/b5/202294aea401ee6ae7833ff9e826d2abb2500daa53f238169d5aa7fb8ab7/odoo_addons_oca_account_financial_tools-16.0.20230603.0-py3-none-any.whl
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addons-oca-account-financial-tools]: executing diffoscope
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addons-oca-account-financial-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_financial_tools-16.0.20230524.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_financial_tools-16.0.20230603.0-py3-none-any.whl.zip --markdown 20230604/o/odoo-addons-oca-account-financial-tools/16.0.20230524.0-16.0.20230603.0/diff.md --exclude *.pyd
+[2023-06-04 04:42:53] INFO root fetch - processPackages [kfsd]: executing diffoscope
+[2023-06-04 04:42:53] INFO root fetch - processPackages [kfsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsd-0.0.8.tar.gz tmp/kfsd-0.0.9.tar.gz --markdown 20230604/k/kfsd/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo14-addons-oca-account-financial-tools]: Downloading https://files.pythonhosted.org/packages/22/b3/229d2b4f1cfb265d48d5c3bf6b0f112bf7ce192e6c0c6551f1c201981048/odoo14_addons_oca_account_financial_tools-14.0.20230603.0-py3-none-any.whl
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addon-account-asset-batch-compute]: Downloading https://files.pythonhosted.org/packages/9c/d3/e49b0b69288d9ab2a66bf4cea3fec59999745c5b6ccc3edd4811c9bd55c8/odoo_addon_account_asset_batch_compute-16.0.1.0.0.3-py3-none-any.whl
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo14-addons-oca-account-financial-tools]: executing diffoscope
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo14-addons-oca-account-financial-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_account_financial_tools-14.0.20230315.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_account_financial_tools-14.0.20230603.0-py3-none-any.whl.zip --markdown 20230604/o/odoo14-addons-oca-account-financial-tools/14.0.20230315.0-14.0.20230603.0/diff.md --exclude *.pyd
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addon-account-asset-batch-compute]: executing diffoscope
+[2023-06-04 04:42:53] INFO root fetch - processPackages [odoo-addon-account-asset-batch-compute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_asset_batch_compute-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_asset_batch_compute-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230604/o/odoo-addon-account-asset-batch-compute/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-06-04 04:42:54] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-06-04 04:42:54] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-financial-tools]: success
+[2023-06-04 04:42:54] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-account-financial-tools]: success
+[2023-06-04 04:42:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-asset-batch-compute]: success
+[2023-06-04 04:42:55] INFO root fetch - main [MainThread]: End processing [kfsd]: success
+[2023-06-04 04:43:28] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-06-04 04:43:28] INFO root fetch - main [MainThread]: Store serial: [18363683]
