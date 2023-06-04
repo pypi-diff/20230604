@@ -3165,3 +3165,43 @@
 [2023-06-04 09:07:49] INFO root fetch - main [MainThread]: End processing [nats-py]: success
 [2023-06-04 09:07:49] INFO root fetch - main [MainThread]: End processing [SimpleSQLite]: success
 [2023-06-04 09:07:49] INFO root fetch - main [MainThread]: Store serial: [18364294]
+[2023-06-04 09:12:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364294]
+[2023-06-04 09:12:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: firepup650
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prungo
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-explorer
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xcpcio-board-spider
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lki
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: streamlit-nightly
+[2023-06-04 09:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Kurdish2Image
+[2023-06-04 09:12:58] INFO root fetch - processPackages [llm-explorer]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-06-04 09:12:58] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-06-04 09:12:58] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 09:12:58] INFO root fetch - processPackages [prungo]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-04 09:12:58] INFO root fetch - processPackages [firepup650]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 09:12:58] INFO root fetch - processPackages [lki]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-06-04 09:12:58] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-06-04 09:12:58] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230604/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-06-04 09:12:58] WARNING root fetch - processPackages [Kurdish2Image]: Skipping, unable to determine old version
+[2023-06-04 09:12:58] INFO root fetch - main [MainThread]: End processing [Kurdish2Image] error
+[2023-06-04 09:12:58] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-06-04 09:12:58] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230604/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 09:12:58] INFO root fetch - processPackages [prungo]: Downloading https://files.pythonhosted.org/packages/99/f8/9dcaa9e70b8cf7b3a8fc90112cbf679ed99e2e71b8719c956c483e8a1a54/prungo-1.0.7.tar.gz
+[2023-06-04 09:12:58] INFO root fetch - processPackages [lki]: Downloading https://files.pythonhosted.org/packages/3a/ae/7252b00de99479bb3f5aab0ea0246d4a88ab754fbf8e1353282554708743/lki-0.5.0.tar.gz
+[2023-06-04 09:12:58] INFO root fetch - processPackages [llm-explorer]: Downloading https://files.pythonhosted.org/packages/ae/b2/9d29d3a88b6a89b1b75ab0f538ced10c6ea8ae714020929e7501753d7eeb/llm_explorer-0.0.9.tar.gz
+[2023-06-04 09:12:58] INFO root fetch - processPackages [firepup650]: executing diffoscope
+[2023-06-04 09:12:58] INFO root fetch - processPackages [firepup650]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firepup650-1.0.8.tar.gz tmp/firepup650-1.0.9.tar.gz --markdown 20230604/f/firepup650/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 09:12:58] INFO root fetch - processPackages [prungo]: executing diffoscope
+[2023-06-04 09:12:58] INFO root fetch - processPackages [prungo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prungo-1.0.6.tar.gz tmp/prungo-1.0.7.tar.gz --markdown 20230604/p/prungo/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-04 09:12:58] INFO root fetch - processPackages [llm-explorer]: executing diffoscope
+[2023-06-04 09:12:58] INFO root fetch - processPackages [llm-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_explorer-0.0.7.tar.gz tmp/llm_explorer-0.0.9.tar.gz --markdown 20230604/l/llm-explorer/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 09:12:58] INFO root fetch - processPackages [lki]: Downloading https://files.pythonhosted.org/packages/c4/70/ae3a54c3c8e3723b8809d0728ad6c608acaaab917a92aff0d2b642c85962/lki-0.5.1.tar.gz
+[2023-06-04 09:12:58] INFO root fetch - processPackages [lki]: executing diffoscope
+[2023-06-04 09:12:58] INFO root fetch - processPackages [lki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lki-0.5.0.tar.gz tmp/lki-0.5.1.tar.gz --markdown 20230604/l/lki/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-06-04 09:12:59] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-06-04 09:12:59] INFO root fetch - main [MainThread]: End processing [prungo]: success
+[2023-06-04 09:13:00] INFO root fetch - main [MainThread]: End processing [firepup650]: success
+[2023-06-04 09:13:00] INFO root fetch - main [MainThread]: End processing [llm-explorer]: success
+[2023-06-04 09:13:00] INFO root fetch - main [MainThread]: End processing [lki]: success
+[2023-06-04 09:13:08] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-06-04 09:13:08] INFO root fetch - main [MainThread]: Store serial: [18364317]
