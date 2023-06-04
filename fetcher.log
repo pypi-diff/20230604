@@ -8977,3 +8977,49 @@
 [2023-06-04 20:42:27] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
 [2023-06-04 20:42:27] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-06-04 20:42:27] INFO root fetch - main [MainThread]: Store serial: [18367877]
+[2023-06-04 20:47:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367877]
+[2023-06-04 20:47:37] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ciocore
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latinex-sdk
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phiflow
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: actuarialmath
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Dizcord
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kalm
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pystorz
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:47:37] INFO root fetch - processPackages [pystorz]: New version: [0.3.1] Old Version: [0.2.1]
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-04 20:47:37] WARNING root fetch - processPackages [actuarialmath]: Skipping, unable to determine old version
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:47:37] INFO root fetch - main [MainThread]: End processing [actuarialmath] error
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ciocore]: New version: [6.0.0rc3] Old Version: [6.0.0rc2]
+[2023-06-04 20:47:37] WARNING root fetch - processPackages [Dizcord]: Skipping, unable to determine old version
+[2023-06-04 20:47:37] INFO root fetch - main [MainThread]: End processing [Dizcord] error
+[2023-06-04 20:47:37] INFO root fetch - processPackages [phiflow]: New version: [2.4.0] Old Version: [2.3.4]
+[2023-06-04 20:47:37] WARNING root fetch - processPackages [latinex-sdk]: Skipping, unable to determine old version
+[2023-06-04 20:47:37] INFO root fetch - main [MainThread]: End processing [latinex-sdk] error
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230604/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:47:37] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:47:37] INFO root fetch - processPackages [phiflow]: Downloading https://files.pythonhosted.org/packages/f0/a5/0a51ff074c4d49abb249a6a72ae845c5eb642143f0387c26ec03faddb360/phiflow-2.3.4.tar.gz
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ciocore]: Downloading https://files.pythonhosted.org/packages/50/85/ff07aa57720b1348a94effb91e533187d48e768234fab83b35e4a9210f94/ciocore-6.0.0rc3-py2.py3-none-any.whl
+[2023-06-04 20:47:37] INFO root fetch - processPackages [pystorz]: Downloading https://files.pythonhosted.org/packages/71/20/8017a7439e50cc22149e2a6e1d96b7c4aa23856dd8ccc605bcbe93ad6907/pystorz-0.3.1.tar.gz
+[2023-06-04 20:47:37] INFO root fetch - processPackages [pystorz]: executing diffoscope
+[2023-06-04 20:47:37] INFO root fetch - processPackages [pystorz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystorz-0.2.1.tar.gz tmp/pystorz-0.3.1.tar.gz --markdown 20230604/p/pystorz/0.2.1-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ciocore]: executing diffoscope
+[2023-06-04 20:47:37] INFO root fetch - processPackages [ciocore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciocore-6.0.0rc2-py2.py3-none-any.whl.zip tmp/ciocore-6.0.0rc3-py2.py3-none-any.whl.zip --markdown 20230604/c/ciocore/6.0.0rc2-6.0.0rc3/diff.md --exclude *.pyd
+[2023-06-04 20:47:37] INFO root fetch - processPackages [phiflow]: Downloading https://files.pythonhosted.org/packages/3f/66/54b9d31001cff546e9bcd80415c4e7ff30cdfad4dd5042e0764e9207ffad/phiflow-2.4.0.tar.gz
+[2023-06-04 20:47:37] INFO root fetch - processPackages [phiflow]: executing diffoscope
+[2023-06-04 20:47:37] INFO root fetch - processPackages [phiflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phiflow-2.3.4.tar.gz tmp/phiflow-2.4.0.tar.gz --markdown 20230604/p/phiflow/2.3.4-2.4.0/diff.md --exclude *.pyd
+[2023-06-04 20:47:38] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:47:38] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-04 20:47:38] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:47:38] INFO root fetch - main [MainThread]: End processing [pystorz]: success
+[2023-06-04 20:47:38] INFO root fetch - main [MainThread]: End processing [ciocore]: success
+[2023-06-04 20:47:42] INFO root fetch - main [MainThread]: End processing [phiflow]: success
+[2023-06-04 20:47:42] INFO root fetch - main [MainThread]: Store serial: [18367923]
