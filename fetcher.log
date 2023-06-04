@@ -2327,3 +2327,18 @@
 [2023-06-04 05:36:00] INFO root fetch - processPackages [frigidaire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frigidaire-0.7.tar.gz tmp/frigidaire-0.8.tar.gz --markdown 20230604/f/frigidaire/0.7-0.8/diff.md --exclude *.pyd
 [2023-06-04 05:36:02] INFO root fetch - main [MainThread]: End processing [frigidaire]: success
 [2023-06-04 05:36:02] INFO root fetch - main [MainThread]: Store serial: [18363813]
+[2023-06-04 05:41:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363813]
+[2023-06-04 05:41:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 05:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prungo
+[2023-06-04 05:41:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hytest
+[2023-06-04 05:41:10] INFO root fetch - processPackages [prungo]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-04 05:41:10] INFO root fetch - processPackages [hytest]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-06-04 05:41:11] INFO root fetch - processPackages [hytest]: Downloading https://files.pythonhosted.org/packages/63/07/4ddc6d2c41c3db55326b6f58d205d30be4a06512a922c9526d462441e406/hytest-0.8.7-py3-none-any.whl
+[2023-06-04 05:41:11] INFO root fetch - processPackages [prungo]: Downloading https://files.pythonhosted.org/packages/35/02/73d34fe1d421ed361b1c35078194cff6667157d668a03f7675c3edf2b369/prungo-1.0.5.tar.gz
+[2023-06-04 05:41:11] INFO root fetch - processPackages [hytest]: executing diffoscope
+[2023-06-04 05:41:11] INFO root fetch - processPackages [hytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hytest-0.8.6-py3-none-any.whl.zip tmp/hytest-0.8.7-py3-none-any.whl.zip --markdown 20230604/h/hytest/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-06-04 05:41:11] INFO root fetch - processPackages [prungo]: executing diffoscope
+[2023-06-04 05:41:11] INFO root fetch - processPackages [prungo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prungo-1.0.4.tar.gz tmp/prungo-1.0.5.tar.gz --markdown 20230604/p/prungo/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-04 05:41:12] INFO root fetch - main [MainThread]: End processing [prungo]: success
+[2023-06-04 05:41:12] INFO root fetch - main [MainThread]: End processing [hytest]: success
+[2023-06-04 05:41:12] INFO root fetch - main [MainThread]: Store serial: [18363818]
