@@ -2620,3 +2620,60 @@
 [2023-06-04 07:12:04] ERROR root fetch - processPackages [multi-model-server]: Timeout during execution of pkgdiff
 [2023-06-04 07:12:04] INFO root fetch - main [MainThread]: End processing [multi-model-server] error
 [2023-06-04 07:12:04] INFO root fetch - main [MainThread]: Store serial: [18363976]
+[2023-06-04 07:17:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363976]
+[2023-06-04 07:17:13] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: busy
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAllInOne
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addons-oca-sale-workflow
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-homeassistant-custom-component
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Geode-Common
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: michiko
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wpiformat
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: borgmatic
+[2023-06-04 07:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mpservice
+[2023-06-04 07:17:13] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: New version: [14.0.20230603.0] Old Version: [14.0.20230522.0]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [michiko]: New version: [0.2.2] Old Version: [0.0.4]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [busy]: New version: [5.0.3] Old Version: [5.0.2]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [PyAllInOne]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [borgmatic]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [wpiformat]: New version: [2023.22] Old Version: [2023.21]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [Geode-Common]: New version: [26.0.2rc1] Old Version: [26.0.2]
+[2023-06-04 07:17:13] INFO root fetch - processPackages [michiko]: Downloading https://files.pythonhosted.org/packages/29/3a/026344732a831eb9de1f2f5eaaccae4467bcd6ba2f2fcf4c2ae7a0328e0f/michiko-0.0.4.tar.gz
+[2023-06-04 07:17:13] INFO root fetch - processPackages [borgmatic]: Downloading https://files.pythonhosted.org/packages/db/4d/bbe4fe66fb2fc6fcf2f0550638dce9d169acd237b3be29ebe8f6a2615c6b/borgmatic-1.7.8.tar.gz
+[2023-06-04 07:17:13] INFO root fetch - processPackages [PyAllInOne]: Downloading https://files.pythonhosted.org/packages/f5/3d/bf800aef484a06e64afaefefd65cf9be581910b08cfced264d9c6673b1b6/PyAllInOne-1.0.5.tar.gz
+[2023-06-04 07:17:13] INFO root fetch - processPackages [wpiformat]: Downloading https://files.pythonhosted.org/packages/94/fc/169ad4139d0bfd8ba9052f4a5f572e1acba8ab3ea5523dba7b2e51e8f8cb/wpiformat-2023.22-py3-none-any.whl
+[2023-06-04 07:17:13] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/3b/a8/30597881e4daa7fa010089c4cdc238a3dc8c80417f156c9b5219940ef015/Geode_Common-26.0.2-cp39-cp39-win_amd64.whl
+[2023-06-04 07:17:13] WARNING root fetch - processPackages [PyAllInOne]: Skipping package: exceeds size limit 38812885>=10485760
+[2023-06-04 07:17:13] INFO root fetch - main [MainThread]: End processing [PyAllInOne] error
+[2023-06-04 07:17:13] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/c6/4f/ebdd5ea3a201c9cde3afcdefdc216083f224a91501da5cc319a03051e9d6/odoo14_addons_oca_sale_workflow-14.0.20230603.0-py3-none-any.whl
+[2023-06-04 07:17:13] INFO root fetch - processPackages [wpiformat]: executing diffoscope
+[2023-06-04 07:17:13] INFO root fetch - processPackages [wpiformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpiformat-2023.21-py3-none-any.whl.zip tmp/wpiformat-2023.22-py3-none-any.whl.zip --markdown 20230604/w/wpiformat/2023.21-2023.22/diff.md --exclude *.pyd
+[2023-06-04 07:17:13] INFO root fetch - processPackages [busy]: Downloading https://files.pythonhosted.org/packages/b6/57/5ca9a9c56ad38710d1413d40285a381291ff4823d1319b5afd405fdd6f5c/busy-5.0.3.tar.gz
+[2023-06-04 07:17:14] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20230604/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-04 07:17:14] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [odoo14-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_sale_workflow-14.0.20230522.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_sale_workflow-14.0.20230603.0-py3-none-any.whl.zip --markdown 20230604/o/odoo14-addons-oca-sale-workflow/14.0.20230522.0-14.0.20230603.0/diff.md --exclude *.pyd
+[2023-06-04 07:17:14] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230604/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-06-04 07:17:14] INFO root fetch - processPackages [michiko]: Downloading https://files.pythonhosted.org/packages/61/71/5792040ca2662246190496ebdab6c4ee71f5a6be9b72392d1896166e3338/michiko-0.2.2.tar.gz
+[2023-06-04 07:17:14] INFO root fetch - processPackages [busy]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [busy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/busy-5.0.2.tar.gz tmp/busy-5.0.3.tar.gz --markdown 20230604/b/busy/5.0.2-5.0.3/diff.md --exclude *.pyd
+[2023-06-04 07:17:14] INFO root fetch - processPackages [michiko]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [michiko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/michiko-0.0.4.tar.gz tmp/michiko-0.2.2.tar.gz --markdown 20230604/m/michiko/0.0.4-0.2.2/diff.md --exclude *.pyd
+[2023-06-04 07:17:14] INFO root fetch - processPackages [borgmatic]: Downloading https://files.pythonhosted.org/packages/74/53/c7ec58aeff933602ea2eb2a779be5b11c1a7d3dc9aede5e9bdbae5ed1e90/borgmatic-1.7.9.tar.gz
+[2023-06-04 07:17:14] INFO root fetch - processPackages [borgmatic]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [borgmatic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/borgmatic-1.7.8.tar.gz tmp/borgmatic-1.7.9.tar.gz --markdown 20230604/b/borgmatic/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-06-04 07:17:14] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/06/c8/3e29effb5caf3630cf001471e7802f8fd423fc69ee63fb67f90cc5c8a265/Geode_Common-26.0.2rc1-cp39-cp39-win_amd64.whl
+[2023-06-04 07:17:14] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-06-04 07:17:14] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-26.0.2-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-26.0.2rc1-cp39-cp39-win_amd64.whl.zip --markdown 20230604/G/Geode-Common/26.0.2-26.0.2rc1/diff.md --exclude *.pyd
+[2023-06-04 07:17:15] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-sale-workflow]: success
+[2023-06-04 07:17:15] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2023-06-04 07:17:15] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-06-04 07:17:15] INFO root fetch - main [MainThread]: End processing [busy]: success
+[2023-06-04 07:17:15] INFO root fetch - main [MainThread]: End processing [wpiformat]: success
+[2023-06-04 07:17:15] INFO root fetch - main [MainThread]: End processing [michiko]: success
+[2023-06-04 07:17:17] INFO root fetch - main [MainThread]: End processing [borgmatic]: success
+[2023-06-04 07:17:27] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-06-04 07:17:27] INFO root fetch - main [MainThread]: Store serial: [18364006]
