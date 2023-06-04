@@ -6577,3 +6577,23 @@
 [2023-06-04 16:05:54] INFO root fetch - main [MainThread]: End processing [mkdocstrings-python]: success
 [2023-06-04 16:05:57] INFO root fetch - main [MainThread]: End processing [pubmed-types]: success
 [2023-06-04 16:05:57] INFO root fetch - main [MainThread]: Store serial: [18366314]
+[2023-06-04 16:11:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366314]
+[2023-06-04 16:11:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 16:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: winpymenu
+[2023-06-04 16:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CommandAlarm
+[2023-06-04 16:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: all-fives-domino
+[2023-06-04 16:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: appwee
+[2023-06-04 16:11:06] INFO root fetch - processPackages [CommandAlarm]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 16:11:06] WARNING root fetch - processPackages [appwee]: Skipping, unable to determine old version
+[2023-06-04 16:11:06] INFO root fetch - main [MainThread]: End processing [appwee] error
+[2023-06-04 16:11:06] WARNING root fetch - processPackages [winpymenu]: Skipping, unable to determine old version
+[2023-06-04 16:11:06] INFO root fetch - main [MainThread]: End processing [winpymenu] error
+[2023-06-04 16:11:06] INFO root fetch - processPackages [all-fives-domino]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 16:11:06] INFO root fetch - processPackages [all-fives-domino]: executing diffoscope
+[2023-06-04 16:11:06] INFO root fetch - processPackages [all-fives-domino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/all-fives-domino-1.0.8.tar.gz tmp/all-fives-domino-1.0.9.tar.gz --markdown 20230604/a/all-fives-domino/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 16:11:07] INFO root fetch - processPackages [CommandAlarm]: Downloading https://files.pythonhosted.org/packages/68/8b/ef665212d0f8f8984841515638c78c1ad2645e3e2ef99f50b77e486e336e/CommandAlarm-0.2.1.tar.gz
+[2023-06-04 16:11:07] INFO root fetch - processPackages [CommandAlarm]: executing diffoscope
+[2023-06-04 16:11:07] INFO root fetch - processPackages [CommandAlarm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CommandAlarm-0.2.0.tar.gz tmp/CommandAlarm-0.2.1.tar.gz --markdown 20230604/C/CommandAlarm/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 16:11:08] INFO root fetch - main [MainThread]: End processing [all-fives-domino]: success
+[2023-06-04 16:11:08] INFO root fetch - main [MainThread]: End processing [CommandAlarm]: success
+[2023-06-04 16:11:08] INFO root fetch - main [MainThread]: Store serial: [18366331]
