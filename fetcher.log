@@ -3523,3 +3523,23 @@
 [2023-06-04 09:50:27] INFO root fetch - main [MainThread]: End processing [ccxtools]: success
 [2023-06-04 09:50:28] INFO root fetch - main [MainThread]: End processing [Kurdish2Image]: success
 [2023-06-04 09:50:28] INFO root fetch - main [MainThread]: Store serial: [18364524]
+[2023-06-04 09:55:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364524]
+[2023-06-04 09:55:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py3plex
+[2023-06-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fiscalsim-us
+[2023-06-04 09:55:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: miniosl
+[2023-06-04 09:55:36] INFO root fetch - processPackages [fiscalsim-us]: New version: [0.0.8] Old Version: [0.0.11]
+[2023-06-04 09:55:36] INFO root fetch - processPackages [py3plex]: New version: [0.95a0] Old Version: [0.95]
+[2023-06-04 09:55:36] INFO root fetch - processPackages [miniosl]: New version: [0.0.3a1] Old Version: [0.0.3]
+[2023-06-04 09:55:36] INFO root fetch - processPackages [py3plex]: Downloading https://files.pythonhosted.org/packages/db/33/e644855f2ccf769aa0389b0dd0d5f2c4f1cdd5fee5ba5dfa03108e01b7ad/py3plex-0.95.tar.gz
+[2023-06-04 09:55:36] WARNING root fetch - processPackages [py3plex]: Skipping package: exceeds size limit 78081061>=10485760
+[2023-06-04 09:55:36] INFO root fetch - main [MainThread]: End processing [py3plex] error
+[2023-06-04 09:55:37] INFO root fetch - processPackages [fiscalsim-us]: Downloading https://files.pythonhosted.org/packages/38/34/f1db755833daa56f333dc7eefbbba5f14221ded9c88270f4564ab896e002/fiscalsim-us-0.0.11.tar.gz
+[2023-06-04 09:55:37] INFO root fetch - processPackages [miniosl]: Downloading https://files.pythonhosted.org/packages/b2/66/3adf20097d515080b25ba0f6c80c7b1916d60ac1f392f1b58c0343e83fac/miniosl-0.0.3-cp310-cp310-manylinux_2_28_x86_64.whl
+[2023-06-04 09:55:37] INFO root fetch - processPackages [miniosl]: executing diffoscope
+[2023-06-04 09:55:37] INFO root fetch - processPackages [miniosl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniosl-0.0.3-cp310-cp310-manylinux_2_28_x86_64.whl.zip tmp/miniosl-0.0.3a1.tar.gz --markdown 20230604/m/miniosl/0.0.3-0.0.3a1/diff.md --exclude *.pyd
+[2023-06-04 09:55:37] INFO root fetch - processPackages [fiscalsim-us]: executing diffoscope
+[2023-06-04 09:55:37] INFO root fetch - processPackages [fiscalsim-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiscalsim-us-0.0.11.tar.gz tmp/fiscalsim-us-0.0.8.tar.gz --markdown 20230604/f/fiscalsim-us/0.0.11-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 09:55:39] INFO root fetch - main [MainThread]: End processing [miniosl]: success
+[2023-06-04 09:57:19] INFO root fetch - main [MainThread]: End processing [fiscalsim-us]: success
+[2023-06-04 09:57:19] INFO root fetch - main [MainThread]: Store serial: [18364533]
