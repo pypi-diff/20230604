@@ -8336,3 +8336,35 @@
 [2023-06-04 19:18:26] INFO root fetch - main [MainThread]: End processing [batogram]: success
 [2023-06-04 19:18:32] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-06-04 19:18:32] INFO root fetch - main [MainThread]: Store serial: [18367505]
+[2023-06-04 19:23:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367505]
+[2023-06-04 19:23:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 19:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-06-04 19:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-06-04 19:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitter-api-client
+[2023-06-04 19:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: novel-swarms
+[2023-06-04 19:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:23:44] INFO root fetch - processPackages [twitter-api-client]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-06-04 19:23:44] INFO root fetch - processPackages [novel-swarms]: New version: [0.1.5a0] Old Version: [0.1.4a0]
+[2023-06-04 19:23:44] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 19:23:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 19:23:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 19:23:44] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/00/d2/2e3fa80af4b8337b0b3de3083300ce1c98fe243558b95a76aa2226e65458/kelpie_personal_trainer-0.0.6.tar.gz
+[2023-06-04 19:23:44] INFO root fetch - processPackages [novel-swarms]: Downloading https://files.pythonhosted.org/packages/33/42/a718f9d5eb99ba85c4442f7cf536b727fc285c51910724ee33d967e63906/novel_swarms-0.1.4a0.tar.gz
+[2023-06-04 19:23:44] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/64/4e/318a5bfd4052e4cdcc1ac86cb24a1f06dedefa49d6c4e7fec14d48b85682/twitter-api-client-0.8.7.tar.gz
+[2023-06-04 19:23:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 19:23:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 19:23:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 19:23:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 19:23:44] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2023-06-04 19:23:44] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.8.6.tar.gz tmp/twitter-api-client-0.8.7.tar.gz --markdown 20230604/t/twitter-api-client/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-06-04 19:23:44] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:23:44] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.5.tar.gz tmp/kelpie_personal_trainer-0.0.6.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 19:23:44] INFO root fetch - processPackages [novel-swarms]: Downloading https://files.pythonhosted.org/packages/e8/17/6984a11c1fd67d6d4a5d83db9d8d6394f441e9b7bd66ca299574caa80757/novel_swarms-0.1.5a0.tar.gz
+[2023-06-04 19:23:45] INFO root fetch - processPackages [novel-swarms]: executing diffoscope
+[2023-06-04 19:23:45] INFO root fetch - processPackages [novel-swarms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novel_swarms-0.1.4a0.tar.gz tmp/novel_swarms-0.1.5a0.tar.gz --markdown 20230604/n/novel-swarms/0.1.4a0-0.1.5a0/diff.md --exclude *.pyd
+[2023-06-04 19:23:45] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:23:45] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 19:23:46] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2023-06-04 19:23:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 19:23:47] INFO root fetch - main [MainThread]: End processing [novel-swarms]: success
+[2023-06-04 19:23:47] INFO root fetch - main [MainThread]: Store serial: [18367520]
