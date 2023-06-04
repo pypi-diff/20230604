@@ -4731,3 +4731,12 @@
 [2023-06-04 12:14:42] INFO root fetch - main [MainThread]: End processing [mangowg]: success
 [2023-06-04 12:15:34] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-06-04 12:15:34] INFO root fetch - main [MainThread]: Store serial: [18365207]
+[2023-06-04 12:20:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365207]
+[2023-06-04 12:20:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 12:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mangowg
+[2023-06-04 12:20:43] INFO root fetch - processPackages [mangowg]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 12:20:43] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/17/c1/bac9ffecb3fd4e0cb1fa9c00e8cd5da969d152a756c457769af266d1a3ff/mangowg-0.1.3.tar.gz
+[2023-06-04 12:20:44] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:20:44] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.2.tar.gz tmp/mangowg-0.1.3.tar.gz --markdown 20230604/m/mangowg/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 12:20:45] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:20:45] INFO root fetch - main [MainThread]: Store serial: [18365213]
