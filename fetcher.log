@@ -1984,3 +1984,26 @@
 [2023-06-04 04:27:07] INFO root fetch - main [MainThread]: End processing [Blockthon]: success
 [2023-06-04 04:27:08] INFO root fetch - main [MainThread]: End processing [webint-posts]: success
 [2023-06-04 04:27:08] INFO root fetch - main [MainThread]: Store serial: [18363639]
+[2023-06-04 04:32:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363639]
+[2023-06-04 04:32:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 04:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feign-python
+[2023-06-04 04:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BatchParse
+[2023-06-04 04:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easyNotion
+[2023-06-04 04:32:17] INFO root fetch - processPackages [feign-python]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-06-04 04:32:17] INFO root fetch - processPackages [BatchParse]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 04:32:17] INFO root fetch - processPackages [easyNotion]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 04:32:17] INFO root fetch - processPackages [feign-python]: Downloading https://files.pythonhosted.org/packages/d8/78/1644f04c9be1a6bdb9985678e7a7d463d848c61afe72f8c7ffd086b03a9e/feign-python-0.0.1.tar.gz
+[2023-06-04 04:32:17] INFO root fetch - processPackages [BatchParse]: Downloading https://files.pythonhosted.org/packages/e2/49/b79dbcfa7c317e87f8c6deb68c6dbcdb45c927882a9ada73432fc0988c05/BatchParse-0.0.6.tar.gz
+[2023-06-04 04:32:17] INFO root fetch - processPackages [easyNotion]: Downloading https://files.pythonhosted.org/packages/a9/16/5481d82b8049059f19a047d56665699187da9eed859f8b3bf32aae1562f3/easyNotion-0.0.1.tar.gz
+[2023-06-04 04:32:17] INFO root fetch - processPackages [BatchParse]: executing diffoscope
+[2023-06-04 04:32:17] INFO root fetch - processPackages [BatchParse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BatchParse-0.0.5.tar.gz tmp/BatchParse-0.0.6.tar.gz --markdown 20230604/B/BatchParse/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 04:32:17] INFO root fetch - processPackages [feign-python]: Downloading https://files.pythonhosted.org/packages/6b/1f/3c9acebc26439605ae7d44128af022fd7a1c5f8e1729a062e2fc9852c860/feign-python-0.0.3.tar.gz
+[2023-06-04 04:32:17] INFO root fetch - processPackages [feign-python]: executing diffoscope
+[2023-06-04 04:32:17] INFO root fetch - processPackages [feign-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feign-python-0.0.1.tar.gz tmp/feign-python-0.0.3.tar.gz --markdown 20230604/f/feign-python/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 04:32:17] INFO root fetch - processPackages [easyNotion]: Downloading https://files.pythonhosted.org/packages/f2/fb/fb14fe3f0852e458a7104d2d1cd28381321df4df75c19d5ad47cbf6b9bff/easyNotion-0.0.2.tar.gz
+[2023-06-04 04:32:18] INFO root fetch - processPackages [easyNotion]: executing diffoscope
+[2023-06-04 04:32:18] INFO root fetch - processPackages [easyNotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyNotion-0.0.1.tar.gz tmp/easyNotion-0.0.2.tar.gz --markdown 20230604/e/easyNotion/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 04:32:18] INFO root fetch - main [MainThread]: End processing [BatchParse]: success
+[2023-06-04 04:32:18] INFO root fetch - main [MainThread]: End processing [feign-python]: success
+[2023-06-04 04:32:19] INFO root fetch - main [MainThread]: End processing [easyNotion]: success
+[2023-06-04 04:32:19] INFO root fetch - main [MainThread]: Store serial: [18363644]
