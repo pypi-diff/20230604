@@ -4749,3 +4749,66 @@
 [2023-06-04 12:25:54] INFO root fetch - processPackages [opentherm-web-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentherm-web-api-0.1.5.tar.gz tmp/opentherm-web-api-0.1.6.tar.gz --markdown 20230604/o/opentherm-web-api/0.1.5-0.1.6/diff.md --exclude *.pyd
 [2023-06-04 12:25:55] INFO root fetch - main [MainThread]: End processing [opentherm-web-api]: success
 [2023-06-04 12:25:55] INFO root fetch - main [MainThread]: Store serial: [18365222]
+[2023-06-04 12:30:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365222]
+[2023-06-04 12:31:03] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mangowg
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: checkov
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitter-scraper-selenium
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-advert-framework
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assisted-service-client
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pterodactyl-exporter
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tavern
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: auto-screener
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flask-openapi3
+[2023-06-04 12:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: masserstein
+[2023-06-04 12:31:03] INFO root fetch - processPackages [twitter-scraper-selenium]: New version: [4.1.5] Old Version: [4.1.4]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [mangowg]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [tavern]: New version: [2.1.0] Old Version: [2.0.7]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [discord-advert-framework]: New version: [2.8.1] Old Version: [2.8.0]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [flask-openapi3]: New version: [2.4.0rc1] Old Version: [2.4.0]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [pterodactyl-exporter]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [auto-screener]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 12:31:03] INFO root fetch - processPackages [masserstein]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-06-04 12:31:04] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-06-04 12:31:04] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 12:31:04] INFO root fetch - processPackages [flask-openapi3]: Downloading https://files.pythonhosted.org/packages/24/b3/fab754a8dd104e77f649dfc2ce33e2448efd4d91741c5a4b844e3c2c4788/flask-openapi3-2.4.0.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [masserstein]: Downloading https://files.pythonhosted.org/packages/2b/06/e6fd7875b70d1f38ac97c99e1632eb914f9fa4fcca3f6e2e49dab5b904e8/masserstein-0.9.0.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [pterodactyl-exporter]: Downloading https://files.pythonhosted.org/packages/40/94/aabaa5dc281d3c58683451ab1f3b157ff09533ec68c3e6b92a5f040b4fb5/pterodactyl_exporter-0.1.4-py2.py3-none-any.whl
+[2023-06-04 12:31:04] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230604/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/82/72/e9541aa7b9349db7625d0f4dd863ee6c44056886f6c67b3cec3ecd765704/tavern-2.0.7.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [twitter-scraper-selenium]: Downloading https://files.pythonhosted.org/packages/f4/1b/bb84fb652f129ad2b143daecc1a67c198f4bd9e15070ab9160b4b494de7c/twitter_scraper_selenium-4.1.4.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [discord-advert-framework]: Downloading https://files.pythonhosted.org/packages/c1/ec/98acdfe2fc67af7d2e235225668a3e9d40ff9c466ea1e19b9ed2b17e54b5/discord-advert-framework-2.8.0.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/42/26/db2cda921207ba2eefae0fdc3d7cafbe458234384ca5994eb77563e04e61/mangowg-0.1.4.tar.gz
+[2023-06-04 12:31:04] WARNING root fetch - processPackages [discord-advert-framework]: Skipping package: exceeds size limit 18343907>=10485760
+[2023-06-04 12:31:04] INFO root fetch - main [MainThread]: End processing [discord-advert-framework] error
+[2023-06-04 12:31:04] INFO root fetch - processPackages [auto-screener]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [auto-screener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-screener-0.0.8.tar.gz tmp/auto-screener-0.0.9.tar.gz --markdown 20230604/a/auto-screener/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.3.tar.gz tmp/mangowg-0.1.4.tar.gz --markdown 20230604/m/mangowg/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230604/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/3f/07/5a144e10daf323e83cd4df03257286561bef9a126a6bc0826cf816ba0884/tavern-2.1.0.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [masserstein]: Downloading https://files.pythonhosted.org/packages/e0/be/6268d9e246d42896547c58499eb61949623e1dfb1aa7e503acf30de1f3bd/masserstein-1.0.0.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [twitter-scraper-selenium]: Downloading https://files.pythonhosted.org/packages/b2/51/fd4f1dda8d49463e932dccc30727f6468aabbedc6f3819ae394ba587ac58/twitter_scraper_selenium-4.1.5.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [pterodactyl-exporter]: Downloading https://files.pythonhosted.org/packages/26/4a/c894bc8951a969926378e56d91e97e684bde418254bda5d72ee03bc0f1f8/pterodactyl_exporter-0.1.5.tar.gz
+[2023-06-04 12:31:04] INFO root fetch - processPackages [flask-openapi3]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [flask-openapi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-openapi3-2.4.0.tar.gz tmp/flask-openapi3-2.4.0rc1.tar.gz --markdown 20230604/f/flask-openapi3/2.4.0-2.4.0rc1/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [tavern]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [tavern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tavern-2.0.7.tar.gz tmp/tavern-2.1.0.tar.gz --markdown 20230604/t/tavern/2.0.7-2.1.0/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [pterodactyl-exporter]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [pterodactyl-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pterodactyl_exporter-0.1.4-py2.py3-none-any.whl.zip tmp/pterodactyl_exporter-0.1.5.tar.gz --markdown 20230604/p/pterodactyl-exporter/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [twitter-scraper-selenium]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [twitter-scraper-selenium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_scraper_selenium-4.1.4.tar.gz tmp/twitter_scraper_selenium-4.1.5.tar.gz --markdown 20230604/t/twitter-scraper-selenium/4.1.4-4.1.5/diff.md --exclude *.pyd
+[2023-06-04 12:31:04] INFO root fetch - processPackages [masserstein]: executing diffoscope
+[2023-06-04 12:31:04] INFO root fetch - processPackages [masserstein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masserstein-0.9.0.tar.gz tmp/masserstein-1.0.0.tar.gz --markdown 20230604/m/masserstein/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 12:31:05] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:31:05] INFO root fetch - main [MainThread]: End processing [auto-screener]: success
+[2023-06-04 12:31:05] INFO root fetch - main [MainThread]: End processing [pterodactyl-exporter]: success
+[2023-06-04 12:31:06] INFO root fetch - main [MainThread]: End processing [twitter-scraper-selenium]: success
+[2023-06-04 12:31:06] INFO root fetch - main [MainThread]: End processing [flask-openapi3]: success
+[2023-06-04 12:31:06] INFO root fetch - main [MainThread]: End processing [tavern]: success
+[2023-06-04 12:31:08] INFO root fetch - main [MainThread]: End processing [masserstein]: success
+[2023-06-04 12:31:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-06-04 12:31:46] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-06-04 12:31:46] INFO root fetch - main [MainThread]: Store serial: [18365265]
