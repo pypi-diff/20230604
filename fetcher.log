@@ -1507,3 +1507,33 @@
 [2023-06-04 03:06:49] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
 [2023-06-04 03:06:50] INFO root fetch - main [MainThread]: End processing [django-userextensions]: success
 [2023-06-04 03:06:50] INFO root fetch - main [MainThread]: Store serial: [18363353]
+[2023-06-04 03:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363353]
+[2023-06-04 03:11:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 03:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioversions
+[2023-06-04 03:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-sns-notify
+[2023-06-04 03:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-wget
+[2023-06-04 03:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lollms
+[2023-06-04 03:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: printbuddies
+[2023-06-04 03:11:59] INFO root fetch - processPackages [printbuddies]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-06-04 03:11:59] INFO root fetch - processPackages [lollms]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-06-04 03:11:59] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-06-04 03:11:59] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:11:59] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-04 03:11:59] INFO root fetch - processPackages [lollms]: Downloading https://files.pythonhosted.org/packages/d9/a3/92ee6bf9c0337bf61b4e247557eea88debb0ace96ba93f5c3904ab77088e/lollms-1.1.5.tar.gz
+[2023-06-04 03:11:59] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-06-04 03:11:59] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230604/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:11:59] INFO root fetch - processPackages [printbuddies]: Downloading https://files.pythonhosted.org/packages/a3/41/ef80b53dac20477212bdbd9117814337811d2e35f28f30d3306bce33bc76/printbuddies-1.2.0.tar.gz
+[2023-06-04 03:11:59] WARNING root fetch - processPackages [lollms]: Skipping package: exceeds size limit 17358579>=10485760
+[2023-06-04 03:11:59] INFO root fetch - main [MainThread]: End processing [lollms] error
+[2023-06-04 03:11:59] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-06-04 03:11:59] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230604/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-06-04 03:11:59] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-06-04 03:11:59] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230604/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:11:59] INFO root fetch - processPackages [printbuddies]: Downloading https://files.pythonhosted.org/packages/48/67/20912fb88e4a2a460669b01ba086f88363fcffd225244e40a6212b4f3cb0/printbuddies-1.3.0.tar.gz
+[2023-06-04 03:11:59] INFO root fetch - processPackages [printbuddies]: executing diffoscope
+[2023-06-04 03:11:59] INFO root fetch - processPackages [printbuddies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printbuddies-1.2.0.tar.gz tmp/printbuddies-1.3.0.tar.gz --markdown 20230604/p/printbuddies/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-06-04 03:12:00] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-06-04 03:12:00] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-06-04 03:12:01] INFO root fetch - main [MainThread]: End processing [printbuddies]: success
+[2023-06-04 03:12:19] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-06-04 03:12:19] INFO root fetch - main [MainThread]: Store serial: [18363368]
