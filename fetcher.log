@@ -8756,3 +8756,40 @@
 [2023-06-04 20:21:27] INFO root fetch - main [MainThread]: End processing [arango-orm]: success
 [2023-06-04 20:21:33] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-06-04 20:21:33] INFO root fetch - main [MainThread]: Store serial: [18367740]
+[2023-06-04 20:26:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367740]
+[2023-06-04 20:26:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 20:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bmsdna-lakeapi
+[2023-06-04 20:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastdup
+[2023-06-04 20:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oloren
+[2023-06-04 20:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stigg-api-client-v2
+[2023-06-04 20:26:41] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-04 20:26:41] WARNING root fetch - processPackages [stigg-api-client-v2]: Skipping, unable to determine old version
+[2023-06-04 20:26:41] INFO root fetch - main [MainThread]: End processing [stigg-api-client-v2] error
+[2023-06-04 20:26:41] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-04 20:26:41] INFO root fetch - processPackages [oloren]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 20:26:41] INFO root fetch - processPackages [bmsdna-lakeapi]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-06-04 20:26:41] INFO root fetch - processPackages [fastdup]: New version: [1.9] Old Version: [1.8]
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/10/e2/98da7bcbc27a742abf9c6d31fd738a24361df5daa8266268df71db652294/kelpie_personal_trainer-0.1.5.tar.gz
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/10/e2/98da7bcbc27a742abf9c6d31fd738a24361df5daa8266268df71db652294/kelpie_personal_trainer-0.1.5.tar.gz
+[2023-06-04 20:26:42] INFO root fetch - processPackages [fastdup]: Downloading https://files.pythonhosted.org/packages/29/5d/10769d5b684287bffedfa8f0e0bfeb77ada87f6bf7f9bf2a3845a805ebed/fastdup-1.8-cp39-cp39-manylinux_2_31_x86_64.whl
+[2023-06-04 20:26:42] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/aa/23/c5a5ade2859e46f0d3c8c691eb8c286020788422800c9092be2f104de09b/bmsdna_lakeapi-0.6.6.tar.gz
+[2023-06-04 20:26:42] WARNING root fetch - processPackages [fastdup]: Skipping package: exceeds size limit 75116546>=10485760
+[2023-06-04 20:26:42] INFO root fetch - main [MainThread]: End processing [fastdup] error
+[2023-06-04 20:26:42] INFO root fetch - processPackages [oloren]: executing diffoscope
+[2023-06-04 20:26:42] INFO root fetch - processPackages [oloren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oloren-0.0.8.tar.gz tmp/oloren-0.0.9.tar.gz --markdown 20230604/o/oloren/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/fc/6b/05ad9237b8cda8e2922e77a5d2062f2ffac8fb1f6f5a1447cf247eea820e/kelpie_personal_trainer-0.1.6.tar.gz
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/fc/6b/05ad9237b8cda8e2922e77a5d2062f2ffac8fb1f6f5a1447cf247eea820e/kelpie_personal_trainer-0.1.6.tar.gz
+[2023-06-04 20:26:42] INFO root fetch - processPackages [bmsdna-lakeapi]: Downloading https://files.pythonhosted.org/packages/01/02/e6555edb45a869b7508c311bff59c4dde6aee394827f8affa3ae7d3afc2f/bmsdna_lakeapi-0.6.7.tar.gz
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.5.tar.gz tmp/kelpie_personal_trainer-0.1.6.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:26:42] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.5.tar.gz tmp/kelpie_personal_trainer-0.1.6.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-04 20:26:42] INFO root fetch - processPackages [bmsdna-lakeapi]: executing diffoscope
+[2023-06-04 20:26:42] INFO root fetch - processPackages [bmsdna-lakeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmsdna_lakeapi-0.6.6.tar.gz tmp/bmsdna_lakeapi-0.6.7.tar.gz --markdown 20230604/b/bmsdna-lakeapi/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-06-04 20:26:43] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:26:43] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:26:43] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
+[2023-06-04 20:26:47] INFO root fetch - main [MainThread]: End processing [oloren]: success
+[2023-06-04 20:26:47] INFO root fetch - main [MainThread]: Store serial: [18367760]
