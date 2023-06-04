@@ -4863,3 +4863,51 @@
 [2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [sigmaepsilon]: success
 [2023-06-04 12:37:03] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-06-04 12:37:03] INFO root fetch - main [MainThread]: Store serial: [18365296]
+[2023-06-04 12:42:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365296]
+[2023-06-04 12:42:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aggregate
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: templa
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mangowg
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mangowg
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: revChatGPT
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pydecs
+[2023-06-04 12:42:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: customtkinterx
+[2023-06-04 12:42:12] INFO root fetch - processPackages [aggregate]: New version: [0.9.6.8] Old Version: [0.9.6.5]
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-04 12:42:12] WARNING root fetch - processPackages [templa]: Skipping, unable to determine old version
+[2023-06-04 12:42:12] INFO root fetch - main [MainThread]: End processing [templa] error
+[2023-06-04 12:42:12] INFO root fetch - processPackages [kfish]: New version: [99.0.202306041037] Old Version: [99.0.202306032341]
+[2023-06-04 12:42:12] INFO root fetch - processPackages [customtkinterx]: New version: [0.3.0] Old Version: [0.2.4]
+[2023-06-04 12:42:12] INFO root fetch - processPackages [pydecs]: New version: [2023.6.4] Old Version: [2023.6.2]
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-04 12:42:12] INFO root fetch - processPackages [revChatGPT]: New version: [6.0.2] Old Version: [6.0.1]
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/d2/02/ef50668ad8d83a894b327e32d79ad3c719bba9c7f81f8488e94870bafc78/mangowg-0.1.7.tar.gz
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/d2/02/ef50668ad8d83a894b327e32d79ad3c719bba9c7f81f8488e94870bafc78/mangowg-0.1.7.tar.gz
+[2023-06-04 12:42:12] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-06-04 12:42:12] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.2.4.tar.gz tmp/customtkinterx-0.3.0.tar.gz --markdown 20230604/c/customtkinterx/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 12:42:12] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/c8/aa/3ebe87a15013dfef8cea3e47089e6f474f616d2874d456451378c369925e/kfish-99.0.202306041037-py3-none-any.whl
+[2023-06-04 12:42:12] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/17/58/cdc3aec3b32666419248c4fc21be955df71b65c4d34cd76c5c2079cacb67/pydecs-2023.6.4.tar.gz
+[2023-06-04 12:42:12] INFO root fetch - processPackages [aggregate]: executing diffoscope
+[2023-06-04 12:42:12] INFO root fetch - processPackages [aggregate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aggregate-0.9.6.5.tar.gz tmp/aggregate-0.9.6.8.tar.gz --markdown 20230604/a/aggregate/0.9.6.5-0.9.6.8/diff.md --exclude *.pyd
+[2023-06-04 12:42:12] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/bf/dd/50ade954ab3779e86353f7cddba21cc865141feb177a206b8ee41a64ed44/revChatGPT-6.0.2.tar.gz
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/64/88/3ee44ffbf1f5ee783c27289f14d2bde234f1c2c21563d6585d870c03352a/mangowg-0.1.8.tar.gz
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/64/88/3ee44ffbf1f5ee783c27289f14d2bde234f1c2c21563d6585d870c03352a/mangowg-0.1.8.tar.gz
+[2023-06-04 12:42:12] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 12:42:12] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306032341-py3-none-any.whl.zip tmp/kfish-99.0.202306041037-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306032341-99.0.202306041037/diff.md --exclude *.pyd
+[2023-06-04 12:42:12] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-06-04 12:42:12] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-6.0.1.tar.gz tmp/revChatGPT-6.0.2.tar.gz --markdown 20230604/r/revChatGPT/6.0.1-6.0.2/diff.md --exclude *.pyd
+[2023-06-04 12:42:12] INFO root fetch - processPackages [pydecs]: executing diffoscope
+[2023-06-04 12:42:12] INFO root fetch - processPackages [pydecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydecs-2023.6.2.tar.gz tmp/pydecs-2023.6.4.tar.gz --markdown 20230604/p/pydecs/2023.6.2-2023.6.4/diff.md --exclude *.pyd
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:42:12] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.7.tar.gz tmp/mangowg-0.1.8.tar.gz --markdown 20230604/m/mangowg/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 12:42:13] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:42:13] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.7.tar.gz tmp/mangowg-0.1.8.tar.gz --markdown 20230604/m/mangowg/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 12:42:13] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-06-04 12:42:13] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 12:42:14] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:42:14] INFO root fetch - main [MainThread]: End processing [aggregate]: success
+[2023-06-04 12:42:14] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:42:14] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-06-04 12:42:14] INFO root fetch - main [MainThread]: End processing [pydecs]: success
+[2023-06-04 12:42:14] INFO root fetch - main [MainThread]: Store serial: [18365328]
