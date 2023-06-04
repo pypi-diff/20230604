@@ -2439,3 +2439,15 @@
 [2023-06-04 06:07:06] INFO root fetch - processPackages [napari-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-chatgpt-2023.6.2.tar.gz tmp/napari-chatgpt-2023.6.3.tar.gz --markdown 20230604/n/napari-chatgpt/2023.6.2-2023.6.3/diff.md --exclude *.pyd
 [2023-06-04 06:07:09] INFO root fetch - main [MainThread]: End processing [napari-chatgpt]: success
 [2023-06-04 06:07:09] INFO root fetch - main [MainThread]: Store serial: [18363871]
+[2023-06-04 06:12:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363871]
+[2023-06-04 06:12:17] INFO root fetch - main [MainThread]: No changed packages found
+[2023-06-04 06:17:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363875]
+[2023-06-04 06:17:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 06:17:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaddepar
+[2023-06-04 06:17:23] INFO root fetch - processPackages [pyaddepar]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-06-04 06:17:23] INFO root fetch - processPackages [pyaddepar]: Downloading https://files.pythonhosted.org/packages/25/15/c10e0f96fb81d2fd2243275e2048695455dc6f2dd77b40c66f19287ea368/pyaddepar-0.6.2.tar.gz
+[2023-06-04 06:17:23] INFO root fetch - processPackages [pyaddepar]: Downloading https://files.pythonhosted.org/packages/e0/c4/61cbb289ca71f9430762b1089a23b60dbbd2d59a2bbe9fdebfd05501a9b5/pyaddepar-0.7.0.tar.gz
+[2023-06-04 06:17:23] INFO root fetch - processPackages [pyaddepar]: executing diffoscope
+[2023-06-04 06:17:23] INFO root fetch - processPackages [pyaddepar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaddepar-0.6.2.tar.gz tmp/pyaddepar-0.7.0.tar.gz --markdown 20230604/p/pyaddepar/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-06-04 06:17:24] INFO root fetch - main [MainThread]: End processing [pyaddepar]: success
+[2023-06-04 06:17:24] INFO root fetch - main [MainThread]: Store serial: [18363880]
