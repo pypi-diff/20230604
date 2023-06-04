@@ -6038,3 +6038,38 @@
 [2023-06-04 14:57:10] INFO root fetch - main [MainThread]: End processing [timeflux-ui]: success
 [2023-06-04 14:57:24] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-06-04 14:57:24] INFO root fetch - main [MainThread]: Store serial: [18366010]
+[2023-06-04 15:02:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366010]
+[2023-06-04 15:02:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: specwizard
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlfast
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sonic-uia2-client
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ebot
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkhpc1pyr
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CoderSchoolAI
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: madtypes
+[2023-06-04 15:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: findu
+[2023-06-04 15:02:34] WARNING root fetch - processPackages [pkhpc1pyr]: Skipping, unable to determine old version
+[2023-06-04 15:02:34] INFO root fetch - main [MainThread]: End processing [pkhpc1pyr] error
+[2023-06-04 15:02:34] INFO root fetch - processPackages [findu]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 15:02:34] WARNING root fetch - processPackages [sonic-uia2-client]: Skipping, unable to determine old version
+[2023-06-04 15:02:34] INFO root fetch - main [MainThread]: End processing [sonic-uia2-client] error
+[2023-06-04 15:02:34] INFO root fetch - processPackages [mlfast]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 15:02:34] WARNING root fetch - processPackages [specwizard]: Skipping, unable to determine old version
+[2023-06-04 15:02:34] INFO root fetch - main [MainThread]: End processing [specwizard] error
+[2023-06-04 15:02:34] INFO root fetch - processPackages [madtypes]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 15:02:34] WARNING root fetch - processPackages [CoderSchoolAI]: Skipping, unable to determine old version
+[2023-06-04 15:02:34] INFO root fetch - main [MainThread]: End processing [CoderSchoolAI] error
+[2023-06-04 15:02:34] WARNING root fetch - processPackages [ebot]: Skipping, unable to determine old version
+[2023-06-04 15:02:34] INFO root fetch - main [MainThread]: End processing [ebot] error
+[2023-06-04 15:02:34] INFO root fetch - processPackages [findu]: executing diffoscope
+[2023-06-04 15:02:34] INFO root fetch - processPackages [findu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findu-0.0.5.tar.gz tmp/findu-0.0.6.tar.gz --markdown 20230604/f/findu/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 15:02:34] INFO root fetch - processPackages [mlfast]: Downloading https://files.pythonhosted.org/packages/4b/96/002662868307bd126d52e014c5443224de93ed0676e926a9650e3a4058f4/mlfast-0.0.9.tar.gz
+[2023-06-04 15:02:34] INFO root fetch - processPackages [madtypes]: Downloading https://files.pythonhosted.org/packages/f2/2e/5dadfb9640a7814a6741ecbf42709354dc3c0a657f29693c996d83aa8d27/madtypes-0.0.8.tar.gz
+[2023-06-04 15:02:34] INFO root fetch - processPackages [madtypes]: executing diffoscope
+[2023-06-04 15:02:34] INFO root fetch - processPackages [madtypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madtypes-0.0.7.tar.gz tmp/madtypes-0.0.8.tar.gz --markdown 20230604/m/madtypes/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 15:02:34] INFO root fetch - processPackages [mlfast]: executing diffoscope
+[2023-06-04 15:02:34] INFO root fetch - processPackages [mlfast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlfast-0.0.8.tar.gz tmp/mlfast-0.0.9.tar.gz --markdown 20230604/m/mlfast/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 15:02:35] INFO root fetch - main [MainThread]: End processing [findu]: success
+[2023-06-04 15:02:35] INFO root fetch - main [MainThread]: End processing [madtypes]: success
+[2023-06-04 15:02:35] INFO root fetch - main [MainThread]: End processing [mlfast]: success
+[2023-06-04 15:02:35] INFO root fetch - main [MainThread]: Store serial: [18366045]
