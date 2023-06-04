@@ -2797,3 +2797,22 @@
 [2023-06-04 07:43:26] INFO root fetch - main [MainThread]: End processing [ciocore]: success
 [2023-06-04 07:44:19] INFO root fetch - main [MainThread]: End processing [michiko]: success
 [2023-06-04 07:44:19] INFO root fetch - main [MainThread]: Store serial: [18364073]
+[2023-06-04 07:49:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364073]
+[2023-06-04 07:49:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 07:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moneyflow-base
+[2023-06-04 07:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pbtools
+[2023-06-04 07:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abmatrix
+[2023-06-04 07:49:28] INFO root fetch - processPackages [abmatrix]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-04 07:49:28] WARNING root fetch - processPackages [moneyflow-base]: Skipping, unable to determine old version
+[2023-06-04 07:49:28] INFO root fetch - main [MainThread]: End processing [moneyflow-base] error
+[2023-06-04 07:49:28] INFO root fetch - processPackages [pbtools]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-04 07:49:28] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/14/e4/25beb5e8fd339262ed994a12da1a47cc00595c76ea5d610ea3ad3cca8369/abmatrix-0.1.7.tar.gz
+[2023-06-04 07:49:28] INFO root fetch - processPackages [pbtools]: Downloading https://files.pythonhosted.org/packages/87/fa/b86efac638c0eec5d58cf6854bd15bbd68cd1d9413eddcd6a3e9ec72d48c/pbtools-0.8.0.tar.gz
+[2023-06-04 07:49:28] INFO root fetch - processPackages [abmatrix]: executing diffoscope
+[2023-06-04 07:49:28] INFO root fetch - processPackages [abmatrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abmatrix-0.1.6.tar.gz tmp/abmatrix-0.1.7.tar.gz --markdown 20230604/a/abmatrix/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-04 07:49:28] INFO root fetch - processPackages [pbtools]: Downloading https://files.pythonhosted.org/packages/91/98/64b13d3866ab52524e14b0e5d7c88e3838adb17163e14a009d20fb86c892/pbtools-0.9.0.tar.gz
+[2023-06-04 07:49:29] INFO root fetch - processPackages [pbtools]: executing diffoscope
+[2023-06-04 07:49:29] INFO root fetch - processPackages [pbtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbtools-0.8.0.tar.gz tmp/pbtools-0.9.0.tar.gz --markdown 20230604/p/pbtools/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 07:49:29] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
+[2023-06-04 07:49:31] INFO root fetch - main [MainThread]: End processing [pbtools]: success
+[2023-06-04 07:49:31] INFO root fetch - main [MainThread]: Store serial: [18364083]
