@@ -8630,3 +8630,28 @@
 [2023-06-04 20:05:47] INFO root fetch - main [MainThread]: End processing [swolfpy]: success
 [2023-06-04 20:05:47] INFO root fetch - main [MainThread]: End processing [swolfpy-processmodels]: success
 [2023-06-04 20:05:47] INFO root fetch - main [MainThread]: Store serial: [18367676]
+[2023-06-04 20:10:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367676]
+[2023-06-04 20:10:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 20:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: piperider-nightly
+[2023-06-04 20:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peaqevcore
+[2023-06-04 20:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cast-vue
+[2023-06-04 20:10:56] INFO root fetch - processPackages [cast-vue]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 20:10:56] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 20:10:56] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-06-04 20:10:56] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-06-04 20:10:57] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/74/93/7b7fb8f55267dc37cbb00b98195debd907c95b2d9dba360431c246c21c04/kelpie_personal_trainer-0.1.3.tar.gz
+[2023-06-04 20:10:57] INFO root fetch - processPackages [cast-vue]: Downloading https://files.pythonhosted.org/packages/15/ca/932e344e038ddc10b77caf78f6f127e0387aa493e923a5871780083eaf39/cast-vue-0.0.5.tar.gz
+[2023-06-04 20:10:57] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:10:57] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.2.tar.gz tmp/kelpie_personal_trainer-0.1.3.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 20:10:57] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-06-04 20:10:57] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230604/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-06-04 20:10:57] INFO root fetch - processPackages [cast-vue]: executing diffoscope
+[2023-06-04 20:10:57] INFO root fetch - processPackages [cast-vue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cast-vue-0.0.4.tar.gz tmp/cast-vue-0.0.5.tar.gz --markdown 20230604/c/cast-vue/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 20:10:57] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-06-04 20:10:57] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230604/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-06-04 20:10:58] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:10:59] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-06-04 20:10:59] INFO root fetch - main [MainThread]: End processing [cast-vue]: success
+[2023-06-04 20:11:02] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-06-04 20:11:02] INFO root fetch - main [MainThread]: Store serial: [18367690]
