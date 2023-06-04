@@ -7855,3 +7855,38 @@
 [2023-06-04 18:23:05] INFO root fetch - main [MainThread]: End processing [mkdocstrings-python]: success
 [2023-06-04 18:24:30] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
 [2023-06-04 18:24:30] INFO root fetch - main [MainThread]: Store serial: [18367203]
+[2023-06-04 18:29:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367203]
+[2023-06-04 18:29:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psyke
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: community-profiler
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ArverRubika
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dataheroes
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: promiseapi
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jekyll-to-hugo
+[2023-06-04 18:29:40] WARNING root fetch - processPackages [promiseapi]: Skipping, unable to determine old version
+[2023-06-04 18:29:40] INFO root fetch - main [MainThread]: End processing [promiseapi] error
+[2023-06-04 18:29:40] WARNING root fetch - processPackages [community-profiler]: Skipping, unable to determine old version
+[2023-06-04 18:29:40] INFO root fetch - main [MainThread]: End processing [community-profiler] error
+[2023-06-04 18:29:40] INFO root fetch - processPackages [psyke]: New version: [0.4.6.dev5] Old Version: [0.4.5]
+[2023-06-04 18:29:40] INFO root fetch - processPackages [dataheroes]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ArverRubika]: New version: [2.0.1] Old Version: [0.0.1]
+[2023-06-04 18:29:40] INFO root fetch - processPackages [jekyll-to-hugo]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 18:29:40] INFO root fetch - processPackages [ArverRubika]: Downloading https://files.pythonhosted.org/packages/a1/61/a3081e5e1c91ee880ad9f81a3760ab49ff425f81dba6580491a043cb747c/ArverRubika-0.0.1.tar.gz
+[2023-06-04 18:29:40] INFO root fetch - processPackages [dataheroes]: Downloading https://files.pythonhosted.org/packages/42/74/8058d60404291078a725c09e6e00243ef9fd54960fd86e45d7a2ca4df400/dataheroes-0.3.0-cp39-cp39-win_amd64.whl
+[2023-06-04 18:29:40] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/6e/6a/86efc7aac94335d75c802009c744dc3fb75357d19107db68f030830a269f/psyke-0.4.6.dev5.tar.gz
+[2023-06-04 18:29:41] INFO root fetch - processPackages [jekyll-to-hugo]: Downloading https://files.pythonhosted.org/packages/e7/35/83b9da1db45f607d93f744dbcdb6fd6dadb7ad2ccad83f67cf63b222bd42/jekyll_to_hugo-0.0.6.tar.gz
+[2023-06-04 18:29:41] INFO root fetch - processPackages [ArverRubika]: Downloading https://files.pythonhosted.org/packages/a8/82/70fdd77ffb3b161dff3440f8da506e59b2f750ae9377e9e7f895b35b4eca/ArverRubika-2.0.1.tar.gz
+[2023-06-04 18:29:41] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-06-04 18:29:41] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.4.5.tar.gz tmp/psyke-0.4.6.dev5.tar.gz --markdown 20230604/p/psyke/0.4.5-0.4.6.dev5/diff.md --exclude *.pyd
+[2023-06-04 18:29:41] INFO root fetch - processPackages [jekyll-to-hugo]: executing diffoscope
+[2023-06-04 18:29:41] INFO root fetch - processPackages [jekyll-to-hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jekyll_to_hugo-0.0.5.tar.gz tmp/jekyll_to_hugo-0.0.6.tar.gz --markdown 20230604/j/jekyll-to-hugo/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 18:29:41] INFO root fetch - processPackages [dataheroes]: Downloading https://files.pythonhosted.org/packages/43/4d/c3f076b361bf501f357e015f93425b9594e295e539cbd85f4bdf0ad72d53/dataheroes-0.3.1-cp39-cp39-win_amd64.whl
+[2023-06-04 18:29:41] INFO root fetch - processPackages [ArverRubika]: executing diffoscope
+[2023-06-04 18:29:41] INFO root fetch - processPackages [ArverRubika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ArverRubika-0.0.1.tar.gz tmp/ArverRubika-2.0.1.tar.gz --markdown 20230604/A/ArverRubika/0.0.1-2.0.1/diff.md --exclude *.pyd
+[2023-06-04 18:29:41] INFO root fetch - processPackages [dataheroes]: executing diffoscope
+[2023-06-04 18:29:41] INFO root fetch - processPackages [dataheroes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataheroes-0.3.0-cp39-cp39-win_amd64.whl.zip tmp/dataheroes-0.3.1-cp39-cp39-win_amd64.whl.zip --markdown 20230604/d/dataheroes/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 18:29:42] INFO root fetch - main [MainThread]: End processing [ArverRubika]: success
+[2023-06-04 18:29:42] INFO root fetch - main [MainThread]: End processing [jekyll-to-hugo]: success
+[2023-06-04 18:29:42] INFO root fetch - main [MainThread]: End processing [dataheroes]: success
+[2023-06-04 18:30:34] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-06-04 18:30:34] INFO root fetch - main [MainThread]: Store serial: [18367238]
