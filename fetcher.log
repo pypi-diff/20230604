@@ -6449,3 +6449,37 @@
 [2023-06-04 15:44:16] INFO root fetch - main [MainThread]: End processing [overhave]: success
 [2023-06-04 15:45:08] INFO root fetch - main [MainThread]: End processing [lnschema_core]: success
 [2023-06-04 15:45:08] INFO root fetch - main [MainThread]: Store serial: [18366235]
+[2023-06-04 15:50:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366235]
+[2023-06-04 15:50:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 15:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ast-match
+[2023-06-04 15:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydicer
+[2023-06-04 15:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-selve-new
+[2023-06-04 15:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: readfcs
+[2023-06-04 15:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2023-06-04 15:50:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CoderSchoolAI
+[2023-06-04 15:50:17] WARNING root fetch - processPackages [pydicer]: Skipping, unable to determine old version
+[2023-06-04 15:50:17] INFO root fetch - main [MainThread]: End processing [pydicer] error
+[2023-06-04 15:50:17] WARNING root fetch - processPackages [ast-match]: Skipping, unable to determine old version
+[2023-06-04 15:50:17] INFO root fetch - main [MainThread]: End processing [ast-match] error
+[2023-06-04 15:50:17] INFO root fetch - processPackages [python-selve-new]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-06-04 15:50:17] INFO root fetch - processPackages [CoderSchoolAI]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 15:50:17] INFO root fetch - processPackages [readfcs]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-06-04 15:50:17] INFO root fetch - processPackages [pypipr]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-06-04 15:50:17] INFO root fetch - processPackages [CoderSchoolAI]: Downloading https://files.pythonhosted.org/packages/cf/98/4c09e3a535f6dbd9809884e18a9177ea37e519e04b6da819bd5e0013bd8d/CoderSchoolAI-0.0.1.tar.gz
+[2023-06-04 15:50:17] INFO root fetch - processPackages [readfcs]: Downloading https://files.pythonhosted.org/packages/81/a8/dd564e12b642f4cb4b3b8f1428b464221c8cd0d1ada6e0193672fe29bfcf/readfcs-1.1.1.tar.gz
+[2023-06-04 15:50:17] INFO root fetch - processPackages [python-selve-new]: Downloading https://files.pythonhosted.org/packages/ae/04/ede221fd8222f37ece4dd7e074fb64d7379c2e467a5b1b2d1e409b23807b/python-selve-new-2.2.2.tar.gz
+[2023-06-04 15:50:17] INFO root fetch - processPackages [CoderSchoolAI]: Downloading https://files.pythonhosted.org/packages/63/1b/db360656b5907b3ef16f5f3938569a92abe8d9066357b94b6a7e384b0309/CoderSchoolAI-0.0.2.tar.gz
+[2023-06-04 15:50:17] INFO root fetch - processPackages [readfcs]: Downloading https://files.pythonhosted.org/packages/98/84/c01f2debe7663218a95657681b53567e900b37faf396eb8469a2c950a8d9/readfcs-1.1.2.tar.gz
+[2023-06-04 15:50:17] INFO root fetch - processPackages [python-selve-new]: executing diffoscope
+[2023-06-04 15:50:17] INFO root fetch - processPackages [python-selve-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-selve-new-2.2.1.tar.gz tmp/python-selve-new-2.2.2.tar.gz --markdown 20230604/p/python-selve-new/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-06-04 15:50:17] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-06-04 15:50:17] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.94.tar.gz tmp/pypipr-0.1.95.tar.gz --markdown 20230604/p/pypipr/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-06-04 15:50:17] INFO root fetch - processPackages [readfcs]: executing diffoscope
+[2023-06-04 15:50:17] INFO root fetch - processPackages [readfcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/readfcs-1.1.1.tar.gz tmp/readfcs-1.1.2.tar.gz --markdown 20230604/r/readfcs/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-06-04 15:50:17] INFO root fetch - processPackages [CoderSchoolAI]: executing diffoscope
+[2023-06-04 15:50:17] INFO root fetch - processPackages [CoderSchoolAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CoderSchoolAI-0.0.1.tar.gz tmp/CoderSchoolAI-0.0.2.tar.gz --markdown 20230604/C/CoderSchoolAI/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 15:50:18] INFO root fetch - main [MainThread]: End processing [CoderSchoolAI]: success
+[2023-06-04 15:50:18] INFO root fetch - main [MainThread]: End processing [python-selve-new]: success
+[2023-06-04 15:50:18] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-06-04 15:50:19] INFO root fetch - main [MainThread]: End processing [readfcs]: success
+[2023-06-04 15:50:19] INFO root fetch - main [MainThread]: Store serial: [18366260]
