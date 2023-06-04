@@ -4163,3 +4163,50 @@
 [2023-06-04 11:11:14] INFO root fetch - main [MainThread]: End processing [csle-common]: success
 [2023-06-04 11:11:48] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-06-04 11:11:48] INFO root fetch - main [MainThread]: Store serial: [18364862]
+[2023-06-04 11:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364862]
+[2023-06-04 11:16:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csle-rest-api
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csle-cli
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csle-cluster
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: colorsdude-g1gabyteDEV
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bluepy3
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bridgecrew
+[2023-06-04 11:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aquarium-python-api
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-rest-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 11:16:57] WARNING root fetch - processPackages [colorsdude-g1gabyteDEV]: Skipping, unable to determine old version
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cli]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 11:16:57] INFO root fetch - main [MainThread]: End processing [colorsdude-g1gabyteDEV] error
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cluster]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bluepy3]: New version: [1.6.3] Old Version: [1.6.2]
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 11:16:57] INFO root fetch - processPackages [aquarium-python-api]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-06-04 11:16:57] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230604] Old Version: [2.14.0.dev20230603]
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/b6/30/f6d61889657ea048cd23e67b29fd31b6585199a2dd0f4e45b7c5b09ef14e/bluepy3-1.6.3.tar.gz
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-rest-api]: Downloading https://files.pythonhosted.org/packages/f8/f7/3059933531c7c69682985b0cd8837b085e4c7c680a6793e299d9579edd0f/csle_rest_api-0.2.9.tar.gz
+[2023-06-04 11:16:57] INFO root fetch - processPackages [aquarium-python-api]: Downloading https://files.pythonhosted.org/packages/6b/a4/1bb2d967e6ef77d41a544800efecb15cc2353c9f182fcabfe95125b5cf76/aquarium-python-api-2.0.0.tar.gz
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cli]: Downloading https://files.pythonhosted.org/packages/fb/26/bfa413d0c21fba69ae0f5206efa89e68f7f9bf8df03f22a1e328b5b3846f/csle_cli-0.2.9.tar.gz
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cluster]: Downloading https://files.pythonhosted.org/packages/b6/86/93b85bc91fba44b1efe716bf910816aa1222825e02bece3f722cf2ae86a4/csle_cluster-0.2.9.tar.gz
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-rest-api]: executing diffoscope
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_rest_api-0.2.8.tar.gz tmp/csle_rest_api-0.2.9.tar.gz --markdown 20230604/c/csle-rest-api/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 11:16:57] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/bb/83/7b597889b4c4ae7d869af970d90df23ae493fd19a644235dc2a311c2816a/tf_nightly-2.14.0.dev20230603-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230604/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 11:16:57] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 488944971>=10485760
+[2023-06-04 11:16:57] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bluepy3]: executing diffoscope
+[2023-06-04 11:16:57] INFO root fetch - processPackages [bluepy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepy3-1.6.2.tar.gz tmp/bluepy3-1.6.3.tar.gz --markdown 20230604/b/bluepy3/1.6.2-1.6.3/diff.md --exclude *.pyd
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cli]: executing diffoscope
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_cli-0.2.8.tar.gz tmp/csle_cli-0.2.9.tar.gz --markdown 20230604/c/csle-cli/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cluster]: executing diffoscope
+[2023-06-04 11:16:57] INFO root fetch - processPackages [csle-cluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_cluster-0.2.8.tar.gz tmp/csle_cluster-0.2.9.tar.gz --markdown 20230604/c/csle-cluster/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 11:16:57] INFO root fetch - processPackages [aquarium-python-api]: Downloading https://files.pythonhosted.org/packages/0f/ec/97ee78672d1040c93731f5b312b275a8b59c2b7587746d24d797bd35ef07/aquarium-python-api-2.0.1.tar.gz
+[2023-06-04 11:16:57] INFO root fetch - processPackages [aquarium-python-api]: executing diffoscope
+[2023-06-04 11:16:57] INFO root fetch - processPackages [aquarium-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aquarium-python-api-2.0.0.tar.gz tmp/aquarium-python-api-2.0.1.tar.gz --markdown 20230604/a/aquarium-python-api/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-06-04 11:16:58] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-06-04 11:16:58] INFO root fetch - main [MainThread]: End processing [csle-cli]: success
+[2023-06-04 11:16:58] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
+[2023-06-04 11:16:59] INFO root fetch - main [MainThread]: End processing [csle-cluster]: success
+[2023-06-04 11:16:59] INFO root fetch - main [MainThread]: End processing [aquarium-python-api]: success
+[2023-06-04 11:16:59] INFO root fetch - main [MainThread]: End processing [csle-rest-api]: success
+[2023-06-04 11:16:59] INFO root fetch - main [MainThread]: Store serial: [18364887]
