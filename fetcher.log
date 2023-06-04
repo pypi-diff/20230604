@@ -3824,3 +3824,43 @@
 [2023-06-04 10:38:51] INFO root fetch - main [MainThread]: End processing [csle-rest-api]: success
 [2023-06-04 10:38:51] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
 [2023-06-04 10:38:51] INFO root fetch - main [MainThread]: Store serial: [18364697]
+[2023-06-04 10:43:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364697]
+[2023-06-04 10:44:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 10:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Kurdish2Image
+[2023-06-04 10:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tff-nightly
+[2023-06-04 10:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: InternetSpeedLogger
+[2023-06-04 10:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jj
+[2023-06-04 10:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxrenderer
+[2023-06-04 10:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wombo
+[2023-06-04 10:44:01] INFO root fetch - processPackages [InternetSpeedLogger]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-06-04 10:44:01] INFO root fetch - processPackages [Kurdish2Image]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 10:44:01] INFO root fetch - processPackages [wombo]: New version: [0.1.7] Old Version: [0.1.64]
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jaxrenderer]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jj]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-06-04 10:44:01] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230603] Old Version: [0.0.1.dev20230602]
+[2023-06-04 10:44:01] INFO root fetch - processPackages [InternetSpeedLogger]: Downloading https://files.pythonhosted.org/packages/bc/1c/5cafba183cc7d01d5cf70570bb4d113e67c2ff5595d6a39d85463b604025/InternetSpeedLogger-1.2.0.tar.gz
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jj]: Downloading https://files.pythonhosted.org/packages/69/88/52f149c2574ede7044e9d5f21021f9a522dd9d82986f467a066c79920950/jj-2.7.2.tar.gz
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jaxrenderer]: Downloading https://files.pythonhosted.org/packages/58/f2/d12256246f99c3c90edfcf746770c1f8a05a5d54298df6b257514b4ed2db/jaxrenderer-0.2.1.tar.gz
+[2023-06-04 10:44:01] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/5e/62/e297d2ab8f840c6c12773864feda7c120e5d8342b901ed271f27f58c7868/tff_nightly-0.0.1.dev20230603-py2.py3-none-any.whl
+[2023-06-04 10:44:01] INFO root fetch - processPackages [Kurdish2Image]: Downloading https://files.pythonhosted.org/packages/41/78/de359b1bca888b774cbc8736f406e93d7120904e1ef6b088ee25c704ed6d/Kurdish2Image-0.0.4-py2.py3-none-any.whl
+[2023-06-04 10:44:01] INFO root fetch - processPackages [InternetSpeedLogger]: executing diffoscope
+[2023-06-04 10:44:01] INFO root fetch - processPackages [InternetSpeedLogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InternetSpeedLogger-1.1.1.tar.gz tmp/InternetSpeedLogger-1.2.0.tar.gz --markdown 20230604/I/InternetSpeedLogger/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jaxrenderer]: executing diffoscope
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jaxrenderer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxrenderer-0.2.0.tar.gz tmp/jaxrenderer-0.2.1.tar.gz --markdown 20230604/j/jaxrenderer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 10:44:01] INFO root fetch - processPackages [wombo]: Downloading https://files.pythonhosted.org/packages/f8/b1/d899d4a84dec7b76a6f4fd52b3bf4071395962ec30e9ba5ecb6260a8156a/wombo-0.1.7.tar.gz
+[2023-06-04 10:44:01] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-06-04 10:44:01] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230602-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230603-py2.py3-none-any.whl.zip --markdown 20230604/t/tff-nightly/0.0.1.dev20230602-0.0.1.dev20230603/diff.md --exclude *.pyd
+[2023-06-04 10:44:01] INFO root fetch - processPackages [Kurdish2Image]: executing diffoscope
+[2023-06-04 10:44:01] INFO root fetch - processPackages [Kurdish2Image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kurdish2Image-0.0.3-py2.py3-none-any.whl.zip tmp/Kurdish2Image-0.0.4-py2.py3-none-any.whl.zip --markdown 20230604/K/Kurdish2Image/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 10:44:01] INFO root fetch - processPackages [wombo]: executing diffoscope
+[2023-06-04 10:44:01] INFO root fetch - processPackages [wombo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wombo-0.1.64.tar.gz tmp/wombo-0.1.7.tar.gz --markdown 20230604/w/wombo/0.1.64-0.1.7/diff.md --exclude *.pyd
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jj]: Downloading https://files.pythonhosted.org/packages/13/93/4a6d2a6a5748d40910361878be9c16d88b2cd472eb80bcc8bf6bfbc68c81/jj-2.7.3.tar.gz
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jj]: executing diffoscope
+[2023-06-04 10:44:01] INFO root fetch - processPackages [jj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jj-2.7.2.tar.gz tmp/jj-2.7.3.tar.gz --markdown 20230604/j/jj/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-06-04 10:44:02] INFO root fetch - main [MainThread]: End processing [Kurdish2Image]: success
+[2023-06-04 10:44:02] INFO root fetch - main [MainThread]: End processing [jaxrenderer]: success
+[2023-06-04 10:44:02] INFO root fetch - main [MainThread]: End processing [InternetSpeedLogger]: success
+[2023-06-04 10:44:02] INFO root fetch - main [MainThread]: End processing [wombo]: success
+[2023-06-04 10:44:03] INFO root fetch - main [MainThread]: End processing [jj]: success
+[2023-06-04 10:44:04] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-06-04 10:44:04] INFO root fetch - main [MainThread]: Store serial: [18364714]
