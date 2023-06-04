@@ -9896,3 +9896,52 @@
 [2023-06-04 22:33:35] INFO root fetch - main [MainThread]: End processing [segytools]: success
 [2023-06-04 22:33:36] INFO root fetch - main [MainThread]: End processing [lg-april-permissions]: success
 [2023-06-04 22:33:36] INFO root fetch - main [MainThread]: Store serial: [18368461]
+[2023-06-04 22:38:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368461]
+[2023-06-04 22:38:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs-telegram-bot-api
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git2pdf
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psyke
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyavd
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deep-river
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autosrt
+[2023-06-04 22:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: git2pdf
+[2023-06-04 22:38:44] INFO root fetch - processPackages [cs-telegram-bot-api]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [psyke]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [deep-river]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [git2pdf]: New version: [0.1.1] Old Version: [0.1]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [git2pdf]: New version: [0.1.1] Old Version: [0.1]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [pyavd]: New version: [4.0.0a2.dev2] Old Version: [4.0.0a1.dev10]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [autosrt]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-06-04 22:38:44] INFO root fetch - processPackages [pyavd]: Downloading https://files.pythonhosted.org/packages/eb/c8/0f7f86b606e65012e0f3bcb05d55ac2fa21fa2598902c74b5623bfe7b7fb/pyavd-4.0.0a1.dev10-py3-none-any.whl
+[2023-06-04 22:38:44] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/5b/fa/021bac16ee64f896c621d7e378358616e277267f0a34712059acb0e04644/git2pdf-0.1.tar.gz
+[2023-06-04 22:38:44] INFO root fetch - processPackages [deep-river]: Downloading https://files.pythonhosted.org/packages/ae/7c/9ead2d81adfcbb14415ddecc768356fa6c3b5888667a5b383204b0c585fc/deep_river-0.2.2.tar.gz
+[2023-06-04 22:38:44] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/a5/06/82743c5a3c83bd5e7e8473bffe022cba346da36f0d96b4a7f9216ab0ca99/psyke-0.4.9.tar.gz
+[2023-06-04 22:38:44] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/5b/fa/021bac16ee64f896c621d7e378358616e277267f0a34712059acb0e04644/git2pdf-0.1.tar.gz
+[2023-06-04 22:38:44] INFO root fetch - processPackages [cs-telegram-bot-api]: Downloading https://files.pythonhosted.org/packages/40/f8/807e33953c7bc1dbb9e108c00f025b64ef33d36c51ef0b7e3c66520e5876/cs-telegram-bot-api-0.0.6.tar.gz
+[2023-06-04 22:38:45] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.4.7.tar.gz tmp/psyke-0.4.9.tar.gz --markdown 20230604/p/psyke/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-06-04 22:38:45] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/bd/da/8e22a66761df1a430e698205b36f7825452956e633d886b8643782c06508/autosrt-1.3.2.tar.gz
+[2023-06-04 22:38:45] INFO root fetch - processPackages [cs-telegram-bot-api]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [cs-telegram-bot-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-telegram-bot-api-0.0.5.tar.gz tmp/cs-telegram-bot-api-0.0.6.tar.gz --markdown 20230604/c/cs-telegram-bot-api/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 22:38:45] INFO root fetch - processPackages [deep-river]: Downloading https://files.pythonhosted.org/packages/b8/f2/9e28a630a5db26bc0003a7e3290138f85ca57650b3997f1d615482b1b819/deep_river-0.2.4.tar.gz
+[2023-06-04 22:38:45] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/80/88/8012f11a1a34d0708b27d7f2014c5612da8c4c535c448ca5f011ad7ebc45/git2pdf-0.1.1.tar.gz
+[2023-06-04 22:38:45] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/80/88/8012f11a1a34d0708b27d7f2014c5612da8c4c535c448ca5f011ad7ebc45/git2pdf-0.1.1.tar.gz
+[2023-06-04 22:38:45] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.3.1.tar.gz tmp/autosrt-1.3.2.tar.gz --markdown 20230604/a/autosrt/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-06-04 22:38:45] INFO root fetch - processPackages [deep-river]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [deep-river]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_river-0.2.2.tar.gz tmp/deep_river-0.2.4.tar.gz --markdown 20230604/d/deep-river/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-06-04 22:38:45] INFO root fetch - processPackages [git2pdf]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [git2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git2pdf-0.1.tar.gz tmp/git2pdf-0.1.1.tar.gz --markdown 20230604/g/git2pdf/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 22:38:45] INFO root fetch - processPackages [pyavd]: Downloading https://files.pythonhosted.org/packages/df/7a/8124627e81f473fa61a0572f2db680c8daaf4f1e7e317ffab6b2b23bbc74/pyavd-4.0.0a2.dev2-py3-none-any.whl
+[2023-06-04 22:38:45] INFO root fetch - processPackages [git2pdf]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [git2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git2pdf-0.1.tar.gz tmp/git2pdf-0.1.1.tar.gz --markdown 20230604/g/git2pdf/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 22:38:45] INFO root fetch - processPackages [pyavd]: executing diffoscope
+[2023-06-04 22:38:45] INFO root fetch - processPackages [pyavd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyavd-4.0.0a1.dev10-py3-none-any.whl.zip tmp/pyavd-4.0.0a2.dev2-py3-none-any.whl.zip --markdown 20230604/p/pyavd/4.0.0a1.dev10-4.0.0a2.dev2/diff.md --exclude *.pyd
+[2023-06-04 22:38:46] INFO root fetch - main [MainThread]: End processing [cs-telegram-bot-api]: success
+[2023-06-04 22:38:46] INFO root fetch - main [MainThread]: End processing [git2pdf]: success
+[2023-06-04 22:38:46] INFO root fetch - main [MainThread]: End processing [git2pdf]: success
+[2023-06-04 22:38:46] INFO root fetch - main [MainThread]: End processing [deep-river]: success
+[2023-06-04 22:38:46] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-06-04 22:38:47] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-06-04 22:38:55] INFO root fetch - main [MainThread]: End processing [pyavd]: success
+[2023-06-04 22:38:55] INFO root fetch - main [MainThread]: Store serial: [18368489]
