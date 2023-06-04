@@ -8183,3 +8183,40 @@
 [2023-06-04 19:02:43] INFO root fetch - main [MainThread]: End processing [BeyondHD-Parser]: success
 [2023-06-04 19:02:46] INFO root fetch - main [MainThread]: End processing [fluids]: success
 [2023-06-04 19:02:46] INFO root fetch - main [MainThread]: Store serial: [18367382]
+[2023-06-04 19:07:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367382]
+[2023-06-04 19:07:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 19:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: callapi
+[2023-06-04 19:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyswisseph
+[2023-06-04 19:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoviz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: censusdis
+[2023-06-04 19:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assisted-service-client
+[2023-06-04 19:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autoviz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [autoviz]: New version: [0.1.72] Old Version: [0.1.71]
+[2023-06-04 19:07:55] INFO root fetch - processPackages [autoviz]: New version: [0.1.72] Old Version: [0.1.71]
+[2023-06-04 19:07:55] INFO root fetch - processPackages [censusdis]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-06-04 19:07:55] WARNING root fetch - processPackages [callapi]: Skipping, unable to determine old version
+[2023-06-04 19:07:55] INFO root fetch - main [MainThread]: End processing [callapi] error
+[2023-06-04 19:07:55] INFO root fetch - processPackages [pyswisseph]: New version: [2.10.3.2.dev1] Old Version: [2.10.3.2]
+[2023-06-04 19:07:55] INFO root fetch - processPackages [assisted-service-client]: New version: [2.9.0.post9] Old Version: [2.9.0.post8]
+[2023-06-04 19:07:55] INFO root fetch - processPackages [assisted-service-client]: executing diffoscope
+[2023-06-04 19:07:55] INFO root fetch - processPackages [assisted-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assisted_service_client-2.9.0.post8-py3-none-any.whl.zip tmp/assisted_service_client-2.9.0.post9-py3-none-any.whl.zip --markdown 20230604/a/assisted-service-client/2.9.0.post8-2.9.0.post9/diff.md --exclude *.pyd
+[2023-06-04 19:07:55] INFO root fetch - processPackages [pyswisseph]: Downloading https://files.pythonhosted.org/packages/66/a6/db70d67a00dda42ebd033538c086879328f4c17f670eafe8aca2f11abfef/pyswisseph-2.10.3.2.tar.gz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [autoviz]: Downloading https://files.pythonhosted.org/packages/51/21/fcf43dbaceb9c9d7ec55ee8a67b747923809a84182ab3a820a0b5f722a4c/autoviz-0.1.71.tar.gz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [autoviz]: Downloading https://files.pythonhosted.org/packages/51/21/fcf43dbaceb9c9d7ec55ee8a67b747923809a84182ab3a820a0b5f722a4c/autoviz-0.1.71.tar.gz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [censusdis]: executing diffoscope
+[2023-06-04 19:07:55] INFO root fetch - processPackages [censusdis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censusdis-0.8.8.tar.gz tmp/censusdis-0.9.0.tar.gz --markdown 20230604/c/censusdis/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 19:07:55] INFO root fetch - processPackages [autoviz]: Downloading https://files.pythonhosted.org/packages/5e/5d/c899f5e1795f34fd995e83a802ab79b3b79bd35afcd5d80c8987e458cc23/autoviz-0.1.72.tar.gz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [autoviz]: Downloading https://files.pythonhosted.org/packages/5e/5d/c899f5e1795f34fd995e83a802ab79b3b79bd35afcd5d80c8987e458cc23/autoviz-0.1.72.tar.gz
+[2023-06-04 19:07:55] INFO root fetch - processPackages [pyswisseph]: Downloading https://files.pythonhosted.org/packages/2e/2b/13d030e044883e8d3c73ea52618d7c859a68562f8fe87a12c1050fba499a/pyswisseph-2.10.3.2.dev1.tar.gz
+[2023-06-04 19:07:56] INFO root fetch - processPackages [autoviz]: executing diffoscope
+[2023-06-04 19:07:56] INFO root fetch - processPackages [autoviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoviz-0.1.71.tar.gz tmp/autoviz-0.1.72.tar.gz --markdown 20230604/a/autoviz/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2023-06-04 19:07:56] INFO root fetch - processPackages [autoviz]: executing diffoscope
+[2023-06-04 19:07:56] INFO root fetch - processPackages [autoviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoviz-0.1.71.tar.gz tmp/autoviz-0.1.72.tar.gz --markdown 20230604/a/autoviz/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2023-06-04 19:07:56] INFO root fetch - processPackages [pyswisseph]: executing diffoscope
+[2023-06-04 19:07:56] INFO root fetch - processPackages [pyswisseph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswisseph-2.10.3.2.tar.gz tmp/pyswisseph-2.10.3.2.dev1.tar.gz --markdown 20230604/p/pyswisseph/2.10.3.2-2.10.3.2.dev1/diff.md --exclude *.pyd
+[2023-06-04 19:07:56] INFO root fetch - main [MainThread]: End processing [censusdis]: success
+[2023-06-04 19:07:57] INFO root fetch - main [MainThread]: End processing [autoviz]: success
+[2023-06-04 19:07:57] INFO root fetch - main [MainThread]: End processing [autoviz]: success
+[2023-06-04 19:07:58] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
+[2023-06-04 19:08:02] INFO root fetch - main [MainThread]: End processing [pyswisseph]: success
+[2023-06-04 19:08:02] INFO root fetch - main [MainThread]: Store serial: [18367440]
