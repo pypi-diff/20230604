@@ -5533,3 +5533,55 @@
 [2023-06-04 13:52:27] INFO root fetch - main [MainThread]: End processing [rysk-client]: success
 [2023-06-04 13:52:55] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-06-04 13:52:55] INFO root fetch - main [MainThread]: Store serial: [18365713]
+[2023-06-04 13:57:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365713]
+[2023-06-04 13:58:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terver
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: d2y
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inegm.staff
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphql-api
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aklite
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyhgtmap
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mon2pcap
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scikit-llm
+[2023-06-04 13:58:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: openshift-cluster-management-python-wrapper
+[2023-06-04 13:58:04] INFO root fetch - processPackages [d2y]: New version: [0.2.24] Old Version: [0.2.18]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [graphql-api]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-06-04 13:58:04] WARNING root fetch - processPackages [terver]: Skipping, unable to determine old version
+[2023-06-04 13:58:04] INFO root fetch - main [MainThread]: End processing [terver] error
+[2023-06-04 13:58:04] INFO root fetch - processPackages [mon2pcap]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [scikit-llm]: New version: [0.1.1] Old Version: [0.1.0b3]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [pyhgtmap]: New version: [3.2] Old Version: [3.1]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [inegm.staff]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [aklite]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 13:58:04] INFO root fetch - processPackages [mon2pcap]: Downloading https://files.pythonhosted.org/packages/1f/4b/7a988fed92421a4326628d17020ea89fd82828a36c093b0500d312a0fff4/mon2pcap-1.0.3.tar.gz
+[2023-06-04 13:58:04] INFO root fetch - processPackages [aklite]: Downloading https://files.pythonhosted.org/packages/a8/22/0a8855af08b16edbfb9dfd44e4e7bf9875d5ce34367af74d4c9f6aa6b421/aklite-0.0.3.tar.gz
+[2023-06-04 13:58:04] INFO root fetch - processPackages [inegm.staff]: Downloading https://files.pythonhosted.org/packages/c2/e3/f7aae4373f297cbbc7045e0c2ebf99c6ea606fe3c08f809726160c0c864c/inegm.staff-0.2.3.tar.gz
+[2023-06-04 13:58:04] INFO root fetch - processPackages [mon2pcap]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [mon2pcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mon2pcap-1.0.2.tar.gz tmp/mon2pcap-1.0.3.tar.gz --markdown 20230604/m/mon2pcap/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/ac/87/c0be078dd74989ea2f480970875733a32a39c2fe780dc5342c4348a18816/graphql-api-1.3.9.tar.gz
+[2023-06-04 13:58:04] INFO root fetch - processPackages [pyhgtmap]: Downloading https://files.pythonhosted.org/packages/1f/5d/fc2c4a52d548810aaadaef0fbe398970074008a6e623069fea9ae1b77c87/pyhgtmap-3.2.tar.gz
+[2023-06-04 13:58:04] INFO root fetch - processPackages [scikit-llm]: Downloading https://files.pythonhosted.org/packages/0c/42/1da40aa1855ea6bf9a74ac70e9264b8307e299e1795be572031a6bae5238/scikit-llm-0.1.1.tar.gz
+[2023-06-04 13:58:04] INFO root fetch - processPackages [aklite]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [aklite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aklite-0.0.2.tar.gz tmp/aklite-0.0.3.tar.gz --markdown 20230604/a/aklite/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [d2y]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [d2y]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d2y-0.2.18.tar.gz tmp/d2y-0.2.24.tar.gz --markdown 20230604/d/d2y/0.2.18-0.2.24/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [openshift-cluster-management-python-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openshift-cluster-management-python-wrapper-1.0.8.tar.gz tmp/openshift-cluster-management-python-wrapper-1.0.9.tar.gz --markdown 20230604/o/openshift-cluster-management-python-wrapper/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [inegm.staff]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [scikit-llm]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [inegm.staff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inegm.staff-0.2.2.tar.gz tmp/inegm.staff-0.2.3.tar.gz --markdown 20230604/i/inegm.staff/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [scikit-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-llm-0.1.0b3.tar.gz tmp/scikit-llm-0.1.1.tar.gz --markdown 20230604/s/scikit-llm/0.1.0b3-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [pyhgtmap]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [graphql-api]: executing diffoscope
+[2023-06-04 13:58:04] INFO root fetch - processPackages [pyhgtmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhgtmap-3.1.tar.gz tmp/pyhgtmap-3.2.tar.gz --markdown 20230604/p/pyhgtmap/3.1-3.2/diff.md --exclude *.pyd
+[2023-06-04 13:58:04] INFO root fetch - processPackages [graphql-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql-api-1.3.8.tar.gz tmp/graphql-api-1.3.9.tar.gz --markdown 20230604/g/graphql-api/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-06-04 13:58:05] INFO root fetch - main [MainThread]: End processing [d2y]: success
+[2023-06-04 13:58:05] INFO root fetch - main [MainThread]: End processing [mon2pcap]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: End processing [inegm.staff]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: End processing [scikit-llm]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: End processing [graphql-api]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: End processing [aklite]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: End processing [openshift-cluster-management-python-wrapper]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: End processing [pyhgtmap]: success
+[2023-06-04 13:58:06] INFO root fetch - main [MainThread]: Store serial: [18365740]
