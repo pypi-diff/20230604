@@ -6537,3 +6537,43 @@
 [2023-06-04 16:00:42] INFO root fetch - processPackages [myPackageLicensePrototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.1.1.tar.gz tmp/myPackageLicensePrototype-1.1.2.tar.gz --markdown 20230604/m/myPackageLicensePrototype/1.1.1-1.1.2/diff.md --exclude *.pyd
 [2023-06-04 16:00:43] INFO root fetch - main [MainThread]: End processing [myPackageLicensePrototype]: success
 [2023-06-04 16:00:43] INFO root fetch - main [MainThread]: Store serial: [18366289]
+[2023-06-04 16:05:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366289]
+[2023-06-04 16:05:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tidytcells
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leuci-geo
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocstrings-python
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CoderSchoolAI
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pubmed-types
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: example-package-free-zoloft
+[2023-06-04 16:05:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: promptengine-ai
+[2023-06-04 16:05:52] INFO root fetch - processPackages [tidytcells]: New version: [1.8.5] Old Version: [1.8.4]
+[2023-06-04 16:05:52] WARNING root fetch - processPackages [example-package-free-zoloft]: Skipping, unable to determine old version
+[2023-06-04 16:05:52] INFO root fetch - processPackages [CoderSchoolAI]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 16:05:52] INFO root fetch - main [MainThread]: End processing [example-package-free-zoloft] error
+[2023-06-04 16:05:52] INFO root fetch - processPackages [mkdocstrings-python]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 16:05:52] INFO root fetch - processPackages [pubmed-types]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 16:05:52] INFO root fetch - processPackages [leuci-geo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 16:05:52] WARNING root fetch - processPackages [promptengine-ai]: Skipping, unable to determine old version
+[2023-06-04 16:05:52] INFO root fetch - main [MainThread]: End processing [promptengine-ai] error
+[2023-06-04 16:05:52] INFO root fetch - processPackages [CoderSchoolAI]: Downloading https://files.pythonhosted.org/packages/4a/b8/ba4fe776ee1435fb75160b2fd057010ccc3dc507231b3a037d169f18d6c9/CoderSchoolAI-0.0.3.tar.gz
+[2023-06-04 16:05:52] INFO root fetch - processPackages [leuci-geo]: Downloading https://files.pythonhosted.org/packages/72/56/969030479b411bae073bbb2b573af917ae8b76b0b3ba69b7335565864ea3/leuci-geo-0.0.1.tar.gz
+[2023-06-04 16:05:52] INFO root fetch - processPackages [tidytcells]: Downloading https://files.pythonhosted.org/packages/4c/aa/ca57bf7f004fde31802e999692e3817ddad139e22bb730f6c0882d2ec3f7/tidytcells-1.8.5.tar.gz
+[2023-06-04 16:05:52] INFO root fetch - processPackages [pubmed-types]: Downloading https://files.pythonhosted.org/packages/a9/49/fe95bfd88820f61f382ac756059deee4dd5f8fdfdcc2be117478caa5980c/pubmed_types-0.1.2.tar.gz
+[2023-06-04 16:05:52] INFO root fetch - processPackages [mkdocstrings-python]: Downloading https://files.pythonhosted.org/packages/80/d2/88f471e7a7c81cb984bdeac8685b7a62293666bbd7c19157258f023f1f8c/mkdocstrings_python-1.1.1.tar.gz
+[2023-06-04 16:05:52] INFO root fetch - processPackages [CoderSchoolAI]: executing diffoscope
+[2023-06-04 16:05:52] INFO root fetch - processPackages [CoderSchoolAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CoderSchoolAI-0.0.2.tar.gz tmp/CoderSchoolAI-0.0.3.tar.gz --markdown 20230604/C/CoderSchoolAI/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 16:05:52] INFO root fetch - processPackages [tidytcells]: executing diffoscope
+[2023-06-04 16:05:52] INFO root fetch - processPackages [tidytcells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidytcells-1.8.4.tar.gz tmp/tidytcells-1.8.5.tar.gz --markdown 20230604/t/tidytcells/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2023-06-04 16:05:52] INFO root fetch - processPackages [mkdocstrings-python]: executing diffoscope
+[2023-06-04 16:05:52] INFO root fetch - processPackages [mkdocstrings-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings_python-1.1.0.tar.gz tmp/mkdocstrings_python-1.1.1.tar.gz --markdown 20230604/m/mkdocstrings-python/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 16:05:52] INFO root fetch - processPackages [leuci-geo]: Downloading https://files.pythonhosted.org/packages/c6/3d/07c0e6a09f07062bb1d0a7d5f18967bd31ec2222ef256e404dbf0c81b560/leuci-geo-0.0.2.tar.gz
+[2023-06-04 16:05:52] INFO root fetch - processPackages [pubmed-types]: executing diffoscope
+[2023-06-04 16:05:52] INFO root fetch - processPackages [pubmed-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pubmed_types-0.1.1.tar.gz tmp/pubmed_types-0.1.2.tar.gz --markdown 20230604/p/pubmed-types/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 16:05:53] INFO root fetch - processPackages [leuci-geo]: executing diffoscope
+[2023-06-04 16:05:53] INFO root fetch - processPackages [leuci-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-geo-0.0.1.tar.gz tmp/leuci-geo-0.0.2.tar.gz --markdown 20230604/l/leuci-geo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 16:05:54] INFO root fetch - main [MainThread]: End processing [leuci-geo]: success
+[2023-06-04 16:05:54] INFO root fetch - main [MainThread]: End processing [CoderSchoolAI]: success
+[2023-06-04 16:05:54] INFO root fetch - main [MainThread]: End processing [tidytcells]: success
+[2023-06-04 16:05:54] INFO root fetch - main [MainThread]: End processing [mkdocstrings-python]: success
+[2023-06-04 16:05:57] INFO root fetch - main [MainThread]: End processing [pubmed-types]: success
+[2023-06-04 16:05:57] INFO root fetch - main [MainThread]: Store serial: [18366314]
