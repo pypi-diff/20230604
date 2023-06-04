@@ -9092,3 +9092,59 @@
 [2023-06-04 20:52:55] INFO root fetch - main [MainThread]: End processing [adaptix]: success
 [2023-06-04 20:52:56] INFO root fetch - main [MainThread]: End processing [pyDFTutils]: success
 [2023-06-04 20:52:56] INFO root fetch - main [MainThread]: Store serial: [18367959]
+[2023-06-04 20:58:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367959]
+[2023-06-04 20:58:05] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wombo
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kalm
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: briefcase-media
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plutous-trade-crypto
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: navconfig
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SerializerTalay
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pypdf
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: peaqevcore
+[2023-06-04 20:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: Dickscord
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [pypdf]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-06-04 20:58:05] WARNING root fetch - processPackages [briefcase-media]: Skipping, unable to determine old version
+[2023-06-04 20:58:05] INFO root fetch - processPackages [plutous-trade-crypto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [briefcase-media]: Start processing: kalm
+[2023-06-04 20:58:05] INFO root fetch - main [MainThread]: End processing [briefcase-media] error
+[2023-06-04 20:58:05] WARNING root fetch - processPackages [SerializerTalay]: Skipping, unable to determine old version
+[2023-06-04 20:58:05] INFO root fetch - main [MainThread]: End processing [SerializerTalay] error
+[2023-06-04 20:58:05] INFO root fetch - processPackages [wombo]: New version: [0.1.72] Old Version: [0.1.71]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [navconfig]: New version: [1.3.4] Old Version: [1.3.2]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-04 20:58:05] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-06-04 20:58:05] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230604/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-06-04 20:58:05] WARNING root fetch - processPackages [Dickscord]: Skipping, unable to determine old version
+[2023-06-04 20:58:05] INFO root fetch - main [MainThread]: End processing [Dickscord] error
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230604/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-04 20:58:05] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230604/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 20:58:06] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/58/b7/63717fa462e8f54e66e460d95092e242d66d628e885773f4348e50faf0dd/pypdf-3.9.0.tar.gz
+[2023-06-04 20:58:06] INFO root fetch - processPackages [navconfig]: Downloading https://files.pythonhosted.org/packages/c8/ba/88b4fdb00059ef9c45b21689fa7b424c74b19012c6a72c071e0778431c1d/navconfig-1.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 20:58:06] INFO root fetch - processPackages [wombo]: Downloading https://files.pythonhosted.org/packages/66/aa/1024e39f730a0ed889f403b0f50eb5b094ebacc3f78eefce72dfd39f6371/wombo-0.1.72.tar.gz
+[2023-06-04 20:58:06] INFO root fetch - processPackages [navconfig]: executing diffoscope
+[2023-06-04 20:58:06] INFO root fetch - processPackages [navconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navconfig-1.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/navconfig-1.3.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/n/navconfig/1.3.2-1.3.4/diff.md --exclude *.pyd
+[2023-06-04 20:58:06] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:58:06] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:58:06] INFO root fetch - processPackages [plutous-trade-crypto]: executing diffoscope
+[2023-06-04 20:58:06] INFO root fetch - processPackages [plutous-trade-crypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutous_trade_crypto-0.0.8.tar.gz tmp/plutous_trade_crypto-0.0.9.tar.gz --markdown 20230604/p/plutous-trade-crypto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 20:58:06] INFO root fetch - processPackages [pypdf]: Downloading https://files.pythonhosted.org/packages/84/46/50c317477ccd23979b7e18847d2c58c8fca89b0db41670bc819710aab26a/pypdf-3.9.1.tar.gz
+[2023-06-04 20:58:06] INFO root fetch - processPackages [wombo]: executing diffoscope
+[2023-06-04 20:58:06] INFO root fetch - processPackages [wombo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wombo-0.1.71.tar.gz tmp/wombo-0.1.72.tar.gz --markdown 20230604/w/wombo/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2023-06-04 20:58:06] INFO root fetch - processPackages [pypdf]: executing diffoscope
+[2023-06-04 20:58:06] INFO root fetch - processPackages [pypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypdf-3.9.0.tar.gz tmp/pypdf-3.9.1.tar.gz --markdown 20230604/p/pypdf/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-06-04 20:58:07] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-04 20:58:07] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-04 20:58:07] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:58:07] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-06-04 20:58:07] INFO root fetch - main [MainThread]: End processing [wombo]: success
+[2023-06-04 20:58:08] INFO root fetch - main [MainThread]: End processing [pypdf]: success
+[2023-06-04 20:58:08] INFO root fetch - main [MainThread]: End processing [plutous-trade-crypto]: success
+[2023-06-04 20:58:09] INFO root fetch - main [MainThread]: End processing [navconfig]: success
+[2023-06-04 20:58:09] INFO root fetch - main [MainThread]: Store serial: [18367997]
