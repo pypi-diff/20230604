@@ -3391,3 +3391,31 @@
 [2023-06-04 09:34:06] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-0.1.6.tar.gz tmp/iamlistening-0.1.7.tar.gz --markdown 20230604/i/iamlistening/0.1.6-0.1.7/diff.md --exclude *.pyd
 [2023-06-04 09:34:07] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
 [2023-06-04 09:34:07] INFO root fetch - main [MainThread]: Store serial: [18364418]
+[2023-06-04 09:39:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364418]
+[2023-06-04 09:39:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vlppy
+[2023-06-04 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyquizzer
+[2023-06-04 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wzry
+[2023-06-04 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lalsuite
+[2023-06-04 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lanarky
+[2023-06-04 09:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EncryptedHTTP
+[2023-06-04 09:39:16] WARNING root fetch - processPackages [pyquizzer]: Skipping, unable to determine old version
+[2023-06-04 09:39:16] INFO root fetch - main [MainThread]: End processing [pyquizzer] error
+[2023-06-04 09:39:16] WARNING root fetch - processPackages [vlppy]: Skipping, unable to determine old version
+[2023-06-04 09:39:16] INFO root fetch - main [MainThread]: End processing [vlppy] error
+[2023-06-04 09:39:16] INFO root fetch - processPackages [wzry]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 09:39:16] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-06-04 09:39:16] WARNING root fetch - processPackages [EncryptedHTTP]: Skipping, unable to determine old version
+[2023-06-04 09:39:16] INFO root fetch - main [MainThread]: End processing [EncryptedHTTP] error
+[2023-06-04 09:39:16] INFO root fetch - processPackages [lanarky]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-06-04 09:39:16] INFO root fetch - processPackages [wzry]: Downloading https://files.pythonhosted.org/packages/c5/b4/ea4d504fb1804c0ec2b56d84c6436fcdd8455e691392bd7a69aada7559c8/wzry-1.0.0.tar.gz
+[2023-06-04 09:39:16] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 09:39:16] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-06-04 09:39:16] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-06-04 09:39:16] WARNING root fetch - processPackages [wzry]: Skipping package: exceeds size limit 37452412>=10485760
+[2023-06-04 09:39:16] INFO root fetch - main [MainThread]: End processing [wzry] error
+[2023-06-04 09:39:17] INFO root fetch - processPackages [lanarky]: Downloading https://files.pythonhosted.org/packages/33/95/1febd89fd11af7d7e68081547daf1d845658fc23d5be40e8b8eaeb9fd82f/lanarky-0.7.7.tar.gz
+[2023-06-04 09:39:17] INFO root fetch - processPackages [lanarky]: executing diffoscope
+[2023-06-04 09:39:17] INFO root fetch - processPackages [lanarky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanarky-0.7.6.tar.gz tmp/lanarky-0.7.7.tar.gz --markdown 20230604/l/lanarky/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-06-04 09:39:18] INFO root fetch - main [MainThread]: End processing [lanarky]: success
+[2023-06-04 09:39:18] INFO root fetch - main [MainThread]: Store serial: [18364458]
