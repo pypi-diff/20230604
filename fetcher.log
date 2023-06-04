@@ -9186,3 +9186,32 @@
 [2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
 [2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [tulyp]: success
 [2023-06-04 21:03:20] INFO root fetch - main [MainThread]: Store serial: [18368018]
+[2023-06-04 21:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368018]
+[2023-06-04 21:08:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 21:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wbddh
+[2023-06-04 21:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: first-breaks-picking
+[2023-06-04 21:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kelpie-personal-trainer
+[2023-06-04 21:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: latinex-sdk
+[2023-06-04 21:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kcli
+[2023-06-04 21:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: suguru
+[2023-06-04 21:08:29] WARNING root fetch - processPackages [first-breaks-picking]: Skipping, unable to determine old version
+[2023-06-04 21:08:29] INFO root fetch - main [MainThread]: End processing [first-breaks-picking] error
+[2023-06-04 21:08:29] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 21:08:29] INFO root fetch - processPackages [wbddh]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 21:08:29] WARNING root fetch - processPackages [latinex-sdk]: Skipping, unable to determine old version
+[2023-06-04 21:08:29] INFO root fetch - main [MainThread]: End processing [latinex-sdk] error
+[2023-06-04 21:08:29] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 21:08:29] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 21:08:29] WARNING root fetch - processPackages [suguru]: Skipping, unable to determine old version
+[2023-06-04 21:08:29] INFO root fetch - main [MainThread]: End processing [suguru] error
+[2023-06-04 21:08:29] INFO root fetch - processPackages [kcli]: New version: [99.0.202306041908] Old Version: [99.0.202306041817]
+[2023-06-04 21:08:29] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/d1/86/cdc8cd5d2b67c3c23f18636826b73681cd9990cf021d9f398bd9ee8f1bfb/kcli-99.0.202306041908-py3-none-any.whl
+[2023-06-04 21:08:29] INFO root fetch - processPackages [wbddh]: Downloading https://files.pythonhosted.org/packages/e7/94/35dd1ca7a75ab6e958cec4bb1a630d182aa9a90ef54cea7a6b2ffacb40e2/wbddh-0.0.6-py3-none-any.whl
+[2023-06-04 21:08:29] INFO root fetch - processPackages [wbddh]: executing diffoscope
+[2023-06-04 21:08:29] INFO root fetch - processPackages [wbddh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbddh-0.0.5-py3-none-any.whl.zip tmp/wbddh-0.0.6-py3-none-any.whl.zip --markdown 20230604/w/wbddh/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 21:08:30] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 21:08:30] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306041817-py3-none-any.whl.zip tmp/kcli-99.0.202306041908-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306041817-99.0.202306041908/diff.md --exclude *.pyd
+[2023-06-04 21:08:30] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 21:08:30] INFO root fetch - main [MainThread]: End processing [wbddh]: success
+[2023-06-04 21:08:39] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 21:08:39] INFO root fetch - main [MainThread]: Store serial: [18368039]
