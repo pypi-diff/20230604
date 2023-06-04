@@ -3658,3 +3658,18 @@
 [2023-06-04 10:18:03] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
 [2023-06-04 10:18:04] INFO root fetch - main [MainThread]: End processing [netbox-contract]: success
 [2023-06-04 10:18:04] INFO root fetch - main [MainThread]: Store serial: [18364614]
+[2023-06-04 10:23:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364614]
+[2023-06-04 10:23:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 10:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sparrow-order-lib
+[2023-06-04 10:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bluepy3
+[2023-06-04 10:23:13] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.98] Old Version: [0.1.97]
+[2023-06-04 10:23:13] INFO root fetch - processPackages [bluepy3]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-06-04 10:23:13] INFO root fetch - processPackages [sparrow-order-lib]: Downloading https://files.pythonhosted.org/packages/f6/6d/89feeae81a08f9543a5a0f9e3b8ee3d73582abd7038d07f7fc5975f03bc4/sparrow-order-lib-0.1.98.tar.gz
+[2023-06-04 10:23:13] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/2f/e5/48132659ede7dca0301cb5bfaa1ddd37c174837080d93208e3beee47cc51/bluepy3-1.6.2.tar.gz
+[2023-06-04 10:23:13] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-06-04 10:23:13] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.97.tar.gz tmp/sparrow-order-lib-0.1.98.tar.gz --markdown 20230604/s/sparrow-order-lib/0.1.97-0.1.98/diff.md --exclude *.pyd
+[2023-06-04 10:23:13] INFO root fetch - processPackages [bluepy3]: executing diffoscope
+[2023-06-04 10:23:13] INFO root fetch - processPackages [bluepy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepy3-1.6.1.tar.gz tmp/bluepy3-1.6.2.tar.gz --markdown 20230604/b/bluepy3/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-06-04 10:23:14] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
+[2023-06-04 10:23:15] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
+[2023-06-04 10:23:15] INFO root fetch - main [MainThread]: Store serial: [18364621]
