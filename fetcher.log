@@ -8368,3 +8368,48 @@
 [2023-06-04 19:23:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-06-04 19:23:47] INFO root fetch - main [MainThread]: End processing [novel-swarms]: success
 [2023-06-04 19:23:47] INFO root fetch - main [MainThread]: Store serial: [18367520]
+[2023-06-04 19:28:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367520]
+[2023-06-04 19:28:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: podval
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: binit
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: elevenlabs
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crazy-thursday
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yarok
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simulated-signal-data
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: skypilot
+[2023-06-04 19:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tulyp
+[2023-06-04 19:28:56] INFO root fetch - processPackages [podval]: New version: [1.0] Old Version: [0.9]
+[2023-06-04 19:28:56] WARNING root fetch - processPackages [simulated-signal-data]: Skipping, unable to determine old version
+[2023-06-04 19:28:56] INFO root fetch - main [MainThread]: End processing [simulated-signal-data] error
+[2023-06-04 19:28:56] INFO root fetch - processPackages [binit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 19:28:56] INFO root fetch - processPackages [yarok]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 19:28:56] INFO root fetch - processPackages [elevenlabs]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 19:28:56] INFO root fetch - processPackages [skypilot]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-04 19:28:56] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.6.5.0] Old Version: [2023.6.4.1]
+[2023-06-04 19:28:56] WARNING root fetch - processPackages [tulyp]: Skipping, unable to determine old version
+[2023-06-04 19:28:56] INFO root fetch - main [MainThread]: End processing [tulyp] error
+[2023-06-04 19:28:56] INFO root fetch - processPackages [binit]: Downloading https://files.pythonhosted.org/packages/79/3a/6d04cd58362b873c5bc495288899eb9d350b176ff185c339a308bea34d68/binit-0.0.2.tar.gz
+[2023-06-04 19:28:56] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/58/3a/3b364f1b2e69cd9404a1c7ae8232504410a8ff9951b563f645c7b939fb55/crazy-thursday-2023.6.4.1.tar.gz
+[2023-06-04 19:28:56] INFO root fetch - processPackages [podval]: Downloading https://files.pythonhosted.org/packages/23/33/6c903bc9c5bd2bb5268ee9a1bb20cfb4230e89344da274febb24ef3201a1/podval-1.0.tar.gz
+[2023-06-04 19:28:56] INFO root fetch - processPackages [yarok]: executing diffoscope
+[2023-06-04 19:28:56] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230604/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 19:28:56] INFO root fetch - processPackages [skypilot]: Downloading https://files.pythonhosted.org/packages/01/b5/86426470ad3a8c592ab041f173c0f705536732edf69206d2128e3b6c9a84/skypilot-0.3.1.tar.gz
+[2023-06-04 19:28:57] INFO root fetch - processPackages [podval]: executing diffoscope
+[2023-06-04 19:28:57] INFO root fetch - processPackages [podval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/podval-0.9.tar.gz tmp/podval-1.0.tar.gz --markdown 20230604/p/podval/0.9-1.0/diff.md --exclude *.pyd
+[2023-06-04 19:28:57] INFO root fetch - processPackages [elevenlabs]: executing diffoscope
+[2023-06-04 19:28:57] INFO root fetch - processPackages [elevenlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elevenlabs-0.2.8.tar.gz tmp/elevenlabs-0.2.9.tar.gz --markdown 20230604/e/elevenlabs/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 19:28:57] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/34/e9/399164e9af59839865a86cf9246d9a490c180a7fa388fec6372c43c134bf/crazy-thursday-2023.6.5.0.tar.gz
+[2023-06-04 19:28:57] INFO root fetch - processPackages [binit]: Downloading https://files.pythonhosted.org/packages/9f/54/7ca8dbecc0d0db14f02d0bdc5453a37a796893e6952a37ad3572ac57cc36/binit-0.0.3.tar.gz
+[2023-06-04 19:28:57] INFO root fetch - processPackages [binit]: executing diffoscope
+[2023-06-04 19:28:57] INFO root fetch - processPackages [binit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binit-0.0.2.tar.gz tmp/binit-0.0.3.tar.gz --markdown 20230604/b/binit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 19:28:57] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-06-04 19:28:57] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.6.4.1.tar.gz tmp/crazy-thursday-2023.6.5.0.tar.gz --markdown 20230604/c/crazy-thursday/2023.6.4.1-2023.6.5.0/diff.md --exclude *.pyd
+[2023-06-04 19:28:57] INFO root fetch - processPackages [skypilot]: executing diffoscope
+[2023-06-04 19:28:57] INFO root fetch - processPackages [skypilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot-0.3.0.tar.gz tmp/skypilot-0.3.1.tar.gz --markdown 20230604/s/skypilot/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 19:28:58] INFO root fetch - main [MainThread]: End processing [podval]: success
+[2023-06-04 19:28:58] INFO root fetch - main [MainThread]: End processing [elevenlabs]: success
+[2023-06-04 19:28:58] INFO root fetch - main [MainThread]: End processing [binit]: success
+[2023-06-04 19:28:58] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-06-04 19:29:00] INFO root fetch - main [MainThread]: End processing [yarok]: success
+[2023-06-04 19:29:00] INFO root fetch - main [MainThread]: End processing [skypilot]: success
+[2023-06-04 19:29:00] INFO root fetch - main [MainThread]: Store serial: [18367547]
