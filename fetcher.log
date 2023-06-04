@@ -3312,3 +3312,41 @@
 [2023-06-04 09:18:21] INFO root fetch - main [MainThread]: End processing [csle-collector]: success
 [2023-06-04 09:18:23] INFO root fetch - main [MainThread]: End processing [csle-common]: success
 [2023-06-04 09:18:23] INFO root fetch - main [MainThread]: Store serial: [18364372]
+[2023-06-04 09:23:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364372]
+[2023-06-04 09:23:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 09:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autotraders
+[2023-06-04 09:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Geode-Common
+[2023-06-04 09:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: om-quant-fin
+[2023-06-04 09:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webscrapbook
+[2023-06-04 09:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mathbib
+[2023-06-04 09:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nwebclient
+[2023-06-04 09:23:32] INFO root fetch - processPackages [webscrapbook]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-06-04 09:23:32] INFO root fetch - processPackages [autotraders]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-06-04 09:23:32] INFO root fetch - processPackages [mathbib]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-06-04 09:23:32] INFO root fetch - processPackages [om-quant-fin]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-06-04 09:23:32] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 09:23:32] INFO root fetch - processPackages [Geode-Common]: New version: [26.0.3rc1] Old Version: [26.0.3]
+[2023-06-04 09:23:32] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 09:23:32] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 09:23:32] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/06/2d/a2d5e6dff579914f139a96a602a8d1e556eda604162f66b65e5a78959ba6/mathbib-0.7.0.tar.gz
+[2023-06-04 09:23:32] INFO root fetch - processPackages [autotraders]: Downloading https://files.pythonhosted.org/packages/03/08/9e0855f97eff007a478f4ee5f7a214b99112563d823fe86fe13b8776013f/autotraders-1.3.3.tar.gz
+[2023-06-04 09:23:32] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/d3/a4/80dd5853b26cd1cdd2fcc87f2936d76ceaf50a34dad47fadd70c488b09c5/Geode_Common-26.0.3-cp39-cp39-win_amd64.whl
+[2023-06-04 09:23:32] INFO root fetch - processPackages [om-quant-fin]: Downloading https://files.pythonhosted.org/packages/50/5d/c09a63daa5983e5802124974cad1826cccf609bd5baccdfafa84f27a4548/om_quant_fin-1.0.1.tar.gz
+[2023-06-04 09:23:32] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-06-04 09:23:32] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.6.3.tar.gz tmp/mathbib-0.7.0.tar.gz --markdown 20230604/m/mathbib/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-06-04 09:23:32] INFO root fetch - processPackages [webscrapbook]: executing diffoscope
+[2023-06-04 09:23:32] INFO root fetch - processPackages [webscrapbook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscrapbook-2.0.0b8.tar.gz tmp/webscrapbook-2.0.0b9.tar.gz --markdown 20230604/w/webscrapbook/2.0.0b8-2.0.0b9/diff.md --exclude *.pyd
+[2023-06-04 09:23:32] INFO root fetch - processPackages [autotraders]: executing diffoscope
+[2023-06-04 09:23:32] INFO root fetch - processPackages [autotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotraders-1.3.2.tar.gz tmp/autotraders-1.3.3.tar.gz --markdown 20230604/a/autotraders/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-06-04 09:23:33] INFO root fetch - processPackages [om-quant-fin]: Downloading https://files.pythonhosted.org/packages/9e/d2/f9d9303f5b5dcea0be49a83713564fb7b5666039998a06dc5ef0f4ff8ed7/om_quant_fin-1.1.0.tar.gz
+[2023-06-04 09:23:33] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-06-04 09:23:33] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-26.0.3-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-26.0.3rc1-cp39-cp39-win_amd64.whl.zip --markdown 20230604/G/Geode-Common/26.0.3-26.0.3rc1/diff.md --exclude *.pyd
+[2023-06-04 09:23:33] INFO root fetch - processPackages [om-quant-fin]: executing diffoscope
+[2023-06-04 09:23:33] INFO root fetch - processPackages [om-quant-fin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/om_quant_fin-1.0.1.tar.gz tmp/om_quant_fin-1.1.0.tar.gz --markdown 20230604/o/om-quant-fin/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 09:23:33] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 09:23:34] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-06-04 09:23:34] INFO root fetch - main [MainThread]: End processing [om-quant-fin]: success
+[2023-06-04 09:23:34] INFO root fetch - main [MainThread]: End processing [webscrapbook]: success
+[2023-06-04 09:23:34] INFO root fetch - main [MainThread]: End processing [autotraders]: success
+[2023-06-04 09:23:47] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-06-04 09:23:47] INFO root fetch - main [MainThread]: Store serial: [18364392]
