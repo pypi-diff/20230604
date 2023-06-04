@@ -6483,3 +6483,42 @@
 [2023-06-04 15:50:18] INFO root fetch - main [MainThread]: End processing [pypipr]: success
 [2023-06-04 15:50:19] INFO root fetch - main [MainThread]: End processing [readfcs]: success
 [2023-06-04 15:50:19] INFO root fetch - main [MainThread]: Store serial: [18366260]
+[2023-06-04 15:55:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366260]
+[2023-06-04 15:55:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 15:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: txt2ebook
+[2023-06-04 15:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genetikaplusIO
+[2023-06-04 15:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lightweight-charts
+[2023-06-04 15:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: minimapi
+[2023-06-04 15:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: myPackageLicensePrototype
+[2023-06-04 15:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pubmed-types
+[2023-06-04 15:55:27] INFO root fetch - processPackages [minimapi]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 15:55:27] INFO root fetch - processPackages [pubmed-types]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 15:55:27] INFO root fetch - processPackages [genetikaplusIO]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 15:55:28] INFO root fetch - processPackages [myPackageLicensePrototype]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 15:55:28] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 15:55:28] INFO root fetch - processPackages [lightweight-charts]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 15:55:28] INFO root fetch - processPackages [genetikaplusIO]: Downloading https://files.pythonhosted.org/packages/72/0d/2e2986d27c819261326e2bfe16153c632b0dba1dc104d8a88edd9dc06e7f/genetikaplusIO-0.0.6.tar.gz
+[2023-06-04 15:55:28] INFO root fetch - processPackages [pubmed-types]: Downloading https://files.pythonhosted.org/packages/2a/85/0980e5c5a632e3a3cd14fa83cd49273c89280c0f138f97a7c88424e7644d/pubmed_types-0.1.0.tar.gz
+[2023-06-04 15:55:28] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/97/2c/db72208aa063d2b6426aed35603837e65e14e993bc04ff5203a1ecb7acdf/myPackageLicensePrototype-1.1.0.tar.gz
+[2023-06-04 15:55:28] INFO root fetch - processPackages [minimapi]: Downloading https://files.pythonhosted.org/packages/fa/0e/a9836ed4310ab3ec84426ca42d33c578429e3c3ddae362124bcdc9819304/minimapi-0.0.6.tar.gz
+[2023-06-04 15:55:28] INFO root fetch - processPackages [lightweight-charts]: executing diffoscope
+[2023-06-04 15:55:28] INFO root fetch - processPackages [lightweight-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightweight_charts-1.0.8.tar.gz tmp/lightweight_charts-1.0.9.tar.gz --markdown 20230604/l/lightweight-charts/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 15:55:28] INFO root fetch - processPackages [minimapi]: executing diffoscope
+[2023-06-04 15:55:28] INFO root fetch - processPackages [minimapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minimapi-0.0.5.tar.gz tmp/minimapi-0.0.6.tar.gz --markdown 20230604/m/minimapi/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 15:55:28] INFO root fetch - processPackages [pubmed-types]: Downloading https://files.pythonhosted.org/packages/88/86/ff01ce04da951cd4b97e6ace404581a5202d176f16b74c628a706fdb7f30/pubmed_types-0.1.1.tar.gz
+[2023-06-04 15:55:28] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/0c/fb/8df4f51a3ef89198f361392cf57fde68a91294004779eac362338cf10009/myPackageLicensePrototype-1.1.1.tar.gz
+[2023-06-04 15:55:28] INFO root fetch - processPackages [genetikaplusIO]: executing diffoscope
+[2023-06-04 15:55:28] INFO root fetch - processPackages [genetikaplusIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genetikaplusIO-0.0.5.tar.gz tmp/genetikaplusIO-0.0.6.tar.gz --markdown 20230604/g/genetikaplusIO/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 15:55:28] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2023-06-04 15:55:28] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.8.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20230604/t/txt2ebook/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 15:55:28] INFO root fetch - processPackages [myPackageLicensePrototype]: executing diffoscope
+[2023-06-04 15:55:28] INFO root fetch - processPackages [myPackageLicensePrototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.1.0.tar.gz tmp/myPackageLicensePrototype-1.1.1.tar.gz --markdown 20230604/m/myPackageLicensePrototype/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 15:55:28] INFO root fetch - processPackages [pubmed-types]: executing diffoscope
+[2023-06-04 15:55:28] INFO root fetch - processPackages [pubmed-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pubmed_types-0.1.0.tar.gz tmp/pubmed_types-0.1.1.tar.gz --markdown 20230604/p/pubmed-types/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 15:55:29] INFO root fetch - main [MainThread]: End processing [genetikaplusIO]: success
+[2023-06-04 15:55:29] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2023-06-04 15:55:29] INFO root fetch - main [MainThread]: End processing [lightweight-charts]: success
+[2023-06-04 15:55:29] INFO root fetch - main [MainThread]: End processing [myPackageLicensePrototype]: success
+[2023-06-04 15:55:30] INFO root fetch - main [MainThread]: End processing [minimapi]: success
+[2023-06-04 15:55:33] INFO root fetch - main [MainThread]: End processing [pubmed-types]: success
+[2023-06-04 15:55:33] INFO root fetch - main [MainThread]: Store serial: [18366280]
