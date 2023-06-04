@@ -3673,3 +3673,23 @@
 [2023-06-04 10:23:14] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
 [2023-06-04 10:23:15] INFO root fetch - main [MainThread]: End processing [sparrow-order-lib]: success
 [2023-06-04 10:23:15] INFO root fetch - main [MainThread]: Store serial: [18364621]
+[2023-06-04 10:28:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364621]
+[2023-06-04 10:28:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 10:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-sat
+[2023-06-04 10:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-model-optimization-nightly
+[2023-06-04 10:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-generation-server
+[2023-06-04 10:28:23] INFO root fetch - processPackages [tf-model-optimization-nightly]: New version: [0.7.5.dev20230603] Old Version: [0.7.5.dev20230602]
+[2023-06-04 10:28:23] INFO root fetch - processPackages [llm-generation-server]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 10:28:23] INFO root fetch - processPackages [python-sat]: New version: [0.1.8.dev6] Old Version: [0.1.8.dev5]
+[2023-06-04 10:28:23] INFO root fetch - processPackages [tf-model-optimization-nightly]: Downloading https://files.pythonhosted.org/packages/2a/87/ae0779aee7fcfacca2e8d0af3bbc48097ccdf6cf6702b284c5a3bfbaffa7/tf_model_optimization_nightly-0.7.5.dev20230603-py2.py3-none-any.whl
+[2023-06-04 10:28:23] INFO root fetch - processPackages [llm-generation-server]: executing diffoscope
+[2023-06-04 10:28:23] INFO root fetch - processPackages [llm-generation-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_generation_server-0.0.8.tar.gz tmp/llm_generation_server-0.0.9.tar.gz --markdown 20230604/l/llm-generation-server/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 10:28:24] INFO root fetch - processPackages [python-sat]: Downloading https://files.pythonhosted.org/packages/bf/fb/2e0a4e2af5dd0f3c14631d1f38910b9957a9cb4404bdc4c5d75c2d31a511/python-sat-0.1.8.dev6.tar.gz
+[2023-06-04 10:28:24] INFO root fetch - processPackages [tf-model-optimization-nightly]: executing diffoscope
+[2023-06-04 10:28:24] INFO root fetch - processPackages [tf-model-optimization-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_model_optimization_nightly-0.7.5.dev20230602-py2.py3-none-any.whl.zip tmp/tf_model_optimization_nightly-0.7.5.dev20230603-py2.py3-none-any.whl.zip --markdown 20230604/t/tf-model-optimization-nightly/0.7.5.dev20230602-0.7.5.dev20230603/diff.md --exclude *.pyd
+[2023-06-04 10:28:24] INFO root fetch - processPackages [python-sat]: executing diffoscope
+[2023-06-04 10:28:24] INFO root fetch - processPackages [python-sat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-sat-0.1.8.dev5.tar.gz tmp/python-sat-0.1.8.dev6.tar.gz --markdown 20230604/p/python-sat/0.1.8.dev5-0.1.8.dev6/diff.md --exclude *.pyd
+[2023-06-04 10:28:25] INFO root fetch - main [MainThread]: End processing [tf-model-optimization-nightly]: success
+[2023-06-04 10:28:26] INFO root fetch - main [MainThread]: End processing [python-sat]: success
+[2023-06-04 10:28:27] INFO root fetch - main [MainThread]: End processing [llm-generation-server]: success
+[2023-06-04 10:28:27] INFO root fetch - main [MainThread]: Store serial: [18364641]
