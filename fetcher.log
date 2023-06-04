@@ -4702,3 +4702,32 @@
 [2023-06-04 12:09:31] INFO root fetch - main [MainThread]: End processing [csle-rest-api]: success
 [2023-06-04 12:09:31] INFO root fetch - main [MainThread]: End processing [probayes]: success
 [2023-06-04 12:09:31] INFO root fetch - main [MainThread]: Store serial: [18365188]
+[2023-06-04 12:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365188]
+[2023-06-04 12:14:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 12:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dm-reverb-nightly
+[2023-06-04 12:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opentherm-web-api
+[2023-06-04 12:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyaudioai
+[2023-06-04 12:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dagshub
+[2023-06-04 12:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mangowg
+[2023-06-04 12:14:40] WARNING root fetch - processPackages [pyaudioai]: Skipping, unable to determine old version
+[2023-06-04 12:14:40] INFO root fetch - main [MainThread]: End processing [pyaudioai] error
+[2023-06-04 12:14:40] INFO root fetch - processPackages [dagshub]: New version: [0.2.9.post1] Old Version: [0.2.9]
+[2023-06-04 12:14:40] INFO root fetch - processPackages [opentherm-web-api]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 12:14:40] INFO root fetch - processPackages [mangowg]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-06-04 12:14:40] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-06-04 12:14:40] INFO root fetch - processPackages [opentherm-web-api]: Downloading https://files.pythonhosted.org/packages/a0/94/49d0b3e73d9596a1b5cc6a36bfe08b336801d3d49c13ae91f281e4adcd90/opentherm-web-api-0.1.5.tar.gz
+[2023-06-04 12:14:41] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/2f/f4/7f938beab4c3c3e0a7edfe4bec2742dadd9e8e811d14f3f6503a69493c9c/mangowg-0.1.0.tar.gz
+[2023-06-04 12:14:41] INFO root fetch - processPackages [opentherm-web-api]: executing diffoscope
+[2023-06-04 12:14:41] INFO root fetch - processPackages [opentherm-web-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentherm-web-api-0.1.4.tar.gz tmp/opentherm-web-api-0.1.5.tar.gz --markdown 20230604/o/opentherm-web-api/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 12:14:41] INFO root fetch - processPackages [dagshub]: executing diffoscope
+[2023-06-04 12:14:41] INFO root fetch - processPackages [dagshub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagshub-0.2.9.tar.gz tmp/dagshub-0.2.9.post1-py3-none-any.whl.zip --markdown 20230604/d/dagshub/0.2.9-0.2.9.post1/diff.md --exclude *.pyd
+[2023-06-04 12:14:41] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-06-04 12:14:41] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230604/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-06-04 12:14:41] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/c3/70/e7958c7160f4cb04603c699edc71f032e67fa8e7f81a0049fbd3030a4de5/mangowg-0.1.2.tar.gz
+[2023-06-04 12:14:41] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:14:41] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.0.tar.gz tmp/mangowg-0.1.2.tar.gz --markdown 20230604/m/mangowg/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 12:14:42] INFO root fetch - main [MainThread]: End processing [dagshub]: success
+[2023-06-04 12:14:42] INFO root fetch - main [MainThread]: End processing [opentherm-web-api]: success
+[2023-06-04 12:14:42] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:15:34] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-06-04 12:15:34] INFO root fetch - main [MainThread]: Store serial: [18365207]
