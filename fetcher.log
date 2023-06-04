@@ -4434,3 +4434,37 @@
 [2023-06-04 11:37:47] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
 [2023-06-04 11:37:53] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-06-04 11:37:53] INFO root fetch - main [MainThread]: Store serial: [18365032]
+[2023-06-04 11:42:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365032]
+[2023-06-04 11:43:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 11:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2023-06-04 11:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb-mean-field-hubbard
+[2023-06-04 11:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-eveuniverse
+[2023-06-04 11:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatdocs
+[2023-06-04 11:43:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opentherm-web-api
+[2023-06-04 11:43:01] INFO root fetch - processPackages [tb-mean-field-hubbard]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-06-04 11:43:01] INFO root fetch - processPackages [opentherm-web-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 11:43:01] INFO root fetch - processPackages [chatdocs]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-06-04 11:43:02] INFO root fetch - processPackages [django-eveuniverse]: New version: [1.1.0] Old Version: [1.0.0a3]
+[2023-06-04 11:43:02] INFO root fetch - processPackages [khoj-assistant]: New version: [0.6.3.dev3] Old Version: [0.6.3.dev26]
+[2023-06-04 11:43:02] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/df/16/78872cc36df24ddd2f5659dc7497bfda6e68cd9aab9ca0f00572a8590ea7/khoj_assistant-0.6.3.dev26.tar.gz
+[2023-06-04 11:43:02] INFO root fetch - processPackages [tb-mean-field-hubbard]: Downloading https://files.pythonhosted.org/packages/8d/b8/516c0c26168aad1dd2f1aec592c3c3fb7a2d8d7a23062e002b8f96745e7d/tb-mean-field-hubbard-2.1.0.tar.gz
+[2023-06-04 11:43:02] INFO root fetch - processPackages [opentherm-web-api]: Downloading https://files.pythonhosted.org/packages/c9/e8/b4e6c42cc331b7405e650b667af91b81a2dbd2760672ab43e942d04a476a/opentherm-web-api-0.1.2.tar.gz
+[2023-06-04 11:43:02] INFO root fetch - processPackages [chatdocs]: Downloading https://files.pythonhosted.org/packages/ee/b4/8104b87b531b3ef2337662b1534ab9cf3f2124a2a010d21430115cb54777/chatdocs-0.2.0.tar.gz
+[2023-06-04 11:43:02] INFO root fetch - processPackages [opentherm-web-api]: executing diffoscope
+[2023-06-04 11:43:02] INFO root fetch - processPackages [opentherm-web-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentherm-web-api-0.1.1.tar.gz tmp/opentherm-web-api-0.1.2.tar.gz --markdown 20230604/o/opentherm-web-api/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 11:43:02] INFO root fetch - processPackages [django-eveuniverse]: Downloading https://files.pythonhosted.org/packages/37/9c/72f92c0dcb34d342601c23c5b48b47359b46175d86e63d39bde4afa749c7/django_eveuniverse-1.1.0-py3-none-any.whl
+[2023-06-04 11:43:02] INFO root fetch - processPackages [chatdocs]: executing diffoscope
+[2023-06-04 11:43:02] INFO root fetch - processPackages [chatdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatdocs-0.1.1.tar.gz tmp/chatdocs-0.2.0.tar.gz --markdown 20230604/c/chatdocs/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 11:43:02] INFO root fetch - processPackages [django-eveuniverse]: executing diffoscope
+[2023-06-04 11:43:02] INFO root fetch - processPackages [django-eveuniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_eveuniverse-1.0.0a3.tar.gz tmp/django_eveuniverse-1.1.0-py3-none-any.whl.zip --markdown 20230604/d/django-eveuniverse/1.0.0a3-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 11:43:02] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2023-06-04 11:43:02] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-0.6.3.dev26.tar.gz tmp/khoj_assistant-0.6.3.dev3.tar.gz --markdown 20230604/k/khoj-assistant/0.6.3.dev26-0.6.3.dev3/diff.md --exclude *.pyd
+[2023-06-04 11:43:02] INFO root fetch - processPackages [tb-mean-field-hubbard]: Downloading https://files.pythonhosted.org/packages/9c/30/3bfa908201ed62d03bc9704a0c21e6d875003ab5bc99d9f6ef57b8fc1430/tb-mean-field-hubbard-2.2.0.tar.gz
+[2023-06-04 11:43:02] INFO root fetch - processPackages [tb-mean-field-hubbard]: executing diffoscope
+[2023-06-04 11:43:02] INFO root fetch - processPackages [tb-mean-field-hubbard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb-mean-field-hubbard-2.1.0.tar.gz tmp/tb-mean-field-hubbard-2.2.0.tar.gz --markdown 20230604/t/tb-mean-field-hubbard/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-06-04 11:43:03] INFO root fetch - main [MainThread]: End processing [opentherm-web-api]: success
+[2023-06-04 11:43:03] INFO root fetch - main [MainThread]: End processing [chatdocs]: success
+[2023-06-04 11:43:03] INFO root fetch - main [MainThread]: End processing [django-eveuniverse]: success
+[2023-06-04 11:43:03] INFO root fetch - main [MainThread]: End processing [tb-mean-field-hubbard]: success
+[2023-06-04 11:43:03] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2023-06-04 11:43:03] INFO root fetch - main [MainThread]: Store serial: [18365047]
