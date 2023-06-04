@@ -9356,3 +9356,34 @@
 [2023-06-04 21:25:07] INFO root fetch - main [MainThread]: End processing [kfish]: success
 [2023-06-04 21:25:14] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-06-04 21:25:14] INFO root fetch - main [MainThread]: Store serial: [18368132]
+[2023-06-04 21:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368132]
+[2023-06-04 21:30:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 21:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wahoomc
+[2023-06-04 21:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikicat
+[2023-06-04 21:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tja2fumen
+[2023-06-04 21:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qiskit-alice-bob-provider
+[2023-06-04 21:30:23] INFO root fetch - processPackages [tja2fumen]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-06-04 21:30:23] INFO root fetch - processPackages [wikicat]: New version: [0.0.1.dev8] Old Version: [0.0.1.dev7]
+[2023-06-04 21:30:23] INFO root fetch - processPackages [qiskit-alice-bob-provider]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 21:30:23] INFO root fetch - processPackages [wahoomc]: New version: [4.0.3a0] Old Version: [4.0.2]
+[2023-06-04 21:30:23] INFO root fetch - processPackages [wikicat]: Downloading https://files.pythonhosted.org/packages/86/e0/bf27ffe4ff79b3fee2ce1a50ce32cbd022e3bdf883221a04f6cfdc04be46/wikicat-0.0.1.dev7.tar.gz
+[2023-06-04 21:30:23] INFO root fetch - processPackages [tja2fumen]: Downloading https://files.pythonhosted.org/packages/af/92/754c0de012527c9d059ee23bdcfcabc21d83162f6bda455560df19423c5c/tja2fumen-0.0.0.tar.gz
+[2023-06-04 21:30:23] INFO root fetch - processPackages [wahoomc]: Downloading https://files.pythonhosted.org/packages/94/04/a4c1195c5320fb34bcf9a1d5072b6aa7177e4cb6c3b2de2bb053d2228eac/wahoomc-4.0.2.tar.gz
+[2023-06-04 21:30:23] INFO root fetch - processPackages [qiskit-alice-bob-provider]: Downloading https://files.pythonhosted.org/packages/74/bc/732b7efdb6198aa9ad125de34fccbd6a6ad49bb76442d77971c146886f9d/qiskit_alice_bob_provider-0.1.0.tar.gz
+[2023-06-04 21:30:23] INFO root fetch - processPackages [wikicat]: Downloading https://files.pythonhosted.org/packages/9f/37/843f8b12318aedda86d39181dcda78c92ab419798d5b3e0db0c08608f3c6/wikicat-0.0.1.dev8.tar.gz
+[2023-06-04 21:30:24] INFO root fetch - processPackages [qiskit-alice-bob-provider]: Downloading https://files.pythonhosted.org/packages/78/71/8f883c9b3726ea37bc69f7b3f13f8a59cc206fdbde243f883e5f15455cfb/qiskit_alice_bob_provider-0.1.1.tar.gz
+[2023-06-04 21:30:24] INFO root fetch - processPackages [tja2fumen]: Downloading https://files.pythonhosted.org/packages/e6/a0/19c26a94b080c813caf0e209f24aaad2a55a79a4c9c84cbe1c7df04ec70e/tja2fumen-0.0.1.tar.gz
+[2023-06-04 21:30:24] INFO root fetch - processPackages [qiskit-alice-bob-provider]: executing diffoscope
+[2023-06-04 21:30:24] INFO root fetch - processPackages [qiskit-alice-bob-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qiskit_alice_bob_provider-0.1.0.tar.gz tmp/qiskit_alice_bob_provider-0.1.1.tar.gz --markdown 20230604/q/qiskit-alice-bob-provider/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 21:30:24] INFO root fetch - processPackages [wahoomc]: Downloading https://files.pythonhosted.org/packages/b5/3c/7120deeee22833fa737c8ac7ce1a863ceae9cb023aeacfe586db8dc4a0a9/wahoomc-4.0.3a0.tar.gz
+[2023-06-04 21:30:24] INFO root fetch - processPackages [wikicat]: executing diffoscope
+[2023-06-04 21:30:24] INFO root fetch - processPackages [wikicat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikicat-0.0.1.dev7.tar.gz tmp/wikicat-0.0.1.dev8.tar.gz --markdown 20230604/w/wikicat/0.0.1.dev7-0.0.1.dev8/diff.md --exclude *.pyd
+[2023-06-04 21:30:24] INFO root fetch - processPackages [tja2fumen]: executing diffoscope
+[2023-06-04 21:30:24] INFO root fetch - processPackages [tja2fumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tja2fumen-0.0.0.tar.gz tmp/tja2fumen-0.0.1.tar.gz --markdown 20230604/t/tja2fumen/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-06-04 21:30:24] INFO root fetch - processPackages [wahoomc]: executing diffoscope
+[2023-06-04 21:30:24] INFO root fetch - processPackages [wahoomc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wahoomc-4.0.2.tar.gz tmp/wahoomc-4.0.3a0.tar.gz --markdown 20230604/w/wahoomc/4.0.2-4.0.3a0/diff.md --exclude *.pyd
+[2023-06-04 21:30:25] INFO root fetch - main [MainThread]: End processing [qiskit-alice-bob-provider]: success
+[2023-06-04 21:30:25] INFO root fetch - main [MainThread]: End processing [tja2fumen]: success
+[2023-06-04 21:30:25] INFO root fetch - main [MainThread]: End processing [wikicat]: success
+[2023-06-04 21:30:25] INFO root fetch - main [MainThread]: End processing [wahoomc]: success
+[2023-06-04 21:30:25] INFO root fetch - main [MainThread]: Store serial: [18368144]
