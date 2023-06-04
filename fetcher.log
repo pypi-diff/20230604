@@ -4500,3 +4500,27 @@
 [2023-06-04 11:48:16] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2023-06-04 11:48:22] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-06-04 11:48:22] INFO root fetch - main [MainThread]: Store serial: [18365063]
+[2023-06-04 11:53:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365063]
+[2023-06-04 11:53:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 11:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rkstreamer
+[2023-06-04 11:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: inegm.staff
+[2023-06-04 11:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NMapify
+[2023-06-04 11:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: probayes
+[2023-06-04 11:53:31] INFO root fetch - processPackages [inegm.staff]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-06-04 11:53:31] INFO root fetch - processPackages [probayes]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 11:53:31] INFO root fetch - processPackages [rkstreamer]: New version: [1.1] Old Version: [1.0]
+[2023-06-04 11:53:32] WARNING root fetch - processPackages [NMapify]: Skipping, unable to determine old version
+[2023-06-04 11:53:32] INFO root fetch - main [MainThread]: End processing [NMapify] error
+[2023-06-04 11:53:32] INFO root fetch - processPackages [probayes]: executing diffoscope
+[2023-06-04 11:53:32] INFO root fetch - processPackages [probayes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probayes-0.0.3.tar.gz tmp/probayes-0.0.4.tar.gz --markdown 20230604/p/probayes/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 11:53:32] INFO root fetch - processPackages [rkstreamer]: Downloading https://files.pythonhosted.org/packages/85/2c/bd5d1875730221e45a2f90819a46bf8db2af1f9bf0c6ef5380547c952bf1/rkstreamer-1.0-py3-none-any.whl
+[2023-06-04 11:53:32] INFO root fetch - processPackages [inegm.staff]: Downloading https://files.pythonhosted.org/packages/e9/96/799a83034a6a48c5a9b6988a3d812a7b8d67b8dfa466bb7030706d5ecb5a/inegm.staff-0.2.2.tar.gz
+[2023-06-04 11:53:32] INFO root fetch - processPackages [rkstreamer]: Downloading https://files.pythonhosted.org/packages/d1/da/d2f63f98acb92d0dacd8a041f8a49e0ce2521041a28963903ec8c0ea0d9f/rkstreamer-1.1-py3-none-any.whl
+[2023-06-04 11:53:32] INFO root fetch - processPackages [inegm.staff]: executing diffoscope
+[2023-06-04 11:53:32] INFO root fetch - processPackages [inegm.staff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inegm.staff-0.2.1.tar.gz tmp/inegm.staff-0.2.2.tar.gz --markdown 20230604/i/inegm.staff/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-06-04 11:53:32] INFO root fetch - processPackages [rkstreamer]: executing diffoscope
+[2023-06-04 11:53:32] INFO root fetch - processPackages [rkstreamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rkstreamer-1.0-py3-none-any.whl.zip tmp/rkstreamer-1.1-py3-none-any.whl.zip --markdown 20230604/r/rkstreamer/1.0-1.1/diff.md --exclude *.pyd
+[2023-06-04 11:53:33] INFO root fetch - main [MainThread]: End processing [inegm.staff]: success
+[2023-06-04 11:53:33] INFO root fetch - main [MainThread]: End processing [rkstreamer]: success
+[2023-06-04 11:53:33] INFO root fetch - main [MainThread]: End processing [probayes]: success
+[2023-06-04 11:53:33] INFO root fetch - main [MainThread]: Store serial: [18365079]
