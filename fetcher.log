@@ -6904,3 +6904,75 @@
 [2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [finary-uapi]: success
 [2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
 [2023-06-04 16:42:21] INFO root fetch - main [MainThread]: Store serial: [18366541]
+[2023-06-04 16:47:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366541]
+[2023-06-04 16:47:30] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invoker-terminal
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redisamp
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kaiju-tools
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qtgql
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: as3toplevel
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: staircase-kit
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-jsheet
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: innovationmerge
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nsdpy
+[2023-06-04 16:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openassist
+[2023-06-04 16:47:30] INFO root fetch - processPackages [kaiju-tools]: New version: [2.0.56] Old Version: [2.0.55]
+[2023-06-04 16:47:30] WARNING root fetch - processPackages [redisamp]: Skipping, unable to determine old version
+[2023-06-04 16:47:30] INFO root fetch - processPackages [redisamp]: Start processing: clear-skies-akeyless-custom-producer
+[2023-06-04 16:47:30] INFO root fetch - main [MainThread]: End processing [redisamp] error
+[2023-06-04 16:47:30] INFO root fetch - processPackages [as3toplevel]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [invoker-terminal]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [innovationmerge]: New version: [1.0.3] Old Version: [1.0.1]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [staircase-kit]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [django-jsheet]: New version: [0.2.1.1a0] Old Version: [0.2.1]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [openassist]: New version: [2.2.3] Old Version: [2.2.1]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [qtgql]: New version: [0.119.6] Old Version: [0.119.5]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [nsdpy]: New version: [0.3.4b0] Old Version: [0.3.3b0]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [clear-skies-akeyless-custom-producer]: New version: [1.0.0] Old Version: [0.9.1]
+[2023-06-04 16:47:30] INFO root fetch - processPackages [staircase-kit]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [staircase-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staircase_kit-0.1.8.tar.gz tmp/staircase_kit-0.1.9.tar.gz --markdown 20230604/s/staircase-kit/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [as3toplevel]: Downloading https://files.pythonhosted.org/packages/7b/ec/8d23f726f058626ebed7b8dfb99d4374c842b89447254b70d3f3a75540f8/as3toplevel-0.0.4.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [kaiju-tools]: Downloading https://files.pythonhosted.org/packages/c4/18/60a0e9a2d7be98e3ad89b05072608a93896a009d205d6420f5ece1338062/kaiju_tools-2.0.55-py3-none-any.whl
+[2023-06-04 16:47:30] INFO root fetch - processPackages [innovationmerge]: Downloading https://files.pythonhosted.org/packages/59/4f/a33e6be697164b6986bc243d0e08e826c88ee94bbf68865452468b43bb22/innovationmerge-1.0.3.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [invoker-terminal]: Downloading https://files.pythonhosted.org/packages/23/bb/cfba0b66a3549d8733c41c68ec8579fe84a5eceeb65b5ffab042e9b4e05b/invoker_terminal-0.0.37.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/80/4b/5d3ce66d87280edf4d25d0f107f32c7f8252f0a59ba2ab324a62bd23862b/nsdpy-0.3.4b0.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [django-jsheet]: Downloading https://files.pythonhosted.org/packages/ba/74/677171f62462daf0ad6f926d2bce873018f2c1b81d1ac8009f4cbd0bb2d1/django_jsheet-0.2.1.1a0.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [openassist]: Downloading https://files.pythonhosted.org/packages/15/48/854e6d1286c0a72757108bc8c21823c20c81878f6cec06b88544fb4de2de/openassist-2.2.3.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [innovationmerge]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [innovationmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innovationmerge-1.0.1-py3-none-any.whl.zip tmp/innovationmerge-1.0.3.tar.gz --markdown 20230604/i/innovationmerge/1.0.1-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [as3toplevel]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [as3toplevel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/as3toplevel-0.0.3.tar.gz tmp/as3toplevel-0.0.4.tar.gz --markdown 20230604/a/as3toplevel/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [invoker-terminal]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [invoker-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invoker_terminal-0.0.36.tar.gz tmp/invoker_terminal-0.0.37.tar.gz --markdown 20230604/i/invoker-terminal/0.0.36-0.0.37/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [clear-skies-akeyless-custom-producer]: Downloading https://files.pythonhosted.org/packages/98/10/0d4ab7b34336d83272ebdc4d1a27bc8bae55aabae40ce044d0942d8175b9/clear-skies-akeyless-custom-producer-0.9.1.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [qtgql]: Downloading https://files.pythonhosted.org/packages/a6/94/88ce03ece1059f7b39c6790ec2d709910d55c0d2c15a2527745265ce26e6/qtgql-0.119.6.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [django-jsheet]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [django-jsheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_jsheet-0.2.1.tar.gz tmp/django_jsheet-0.2.1.1a0.tar.gz --markdown 20230604/d/django-jsheet/0.2.1-0.2.1.1a0/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [openassist]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [openassist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openassist-2.2.1.tar.gz tmp/openassist-2.2.3.tar.gz --markdown 20230604/o/openassist/2.2.1-2.2.3/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.3.3b0.tar.gz tmp/nsdpy-0.3.4b0.tar.gz --markdown 20230604/n/nsdpy/0.3.3b0-0.3.4b0/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [qtgql]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [qtgql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtgql-0.119.5.tar.gz tmp/qtgql-0.119.6.tar.gz --markdown 20230604/q/qtgql/0.119.5-0.119.6/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [kaiju-tools]: Downloading https://files.pythonhosted.org/packages/17/74/84326910c6f5d52fc0ba55487e8d2cff9b2dc830b71986112d76cd574f38/kaiju_tools-2.0.56-py3-none-any.whl
+[2023-06-04 16:47:30] INFO root fetch - processPackages [kaiju-tools]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [kaiju-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_tools-2.0.55-py3-none-any.whl.zip tmp/kaiju_tools-2.0.56-py3-none-any.whl.zip --markdown 20230604/k/kaiju-tools/2.0.55-2.0.56/diff.md --exclude *.pyd
+[2023-06-04 16:47:30] INFO root fetch - processPackages [clear-skies-akeyless-custom-producer]: Downloading https://files.pythonhosted.org/packages/1d/9f/2a51c337751065efa31f292d772ea56f86237cf34bb23fa535470648ff5b/clear_skies_akeyless_custom_producer-1.0.0.tar.gz
+[2023-06-04 16:47:30] INFO root fetch - processPackages [clear-skies-akeyless-custom-producer]: executing diffoscope
+[2023-06-04 16:47:30] INFO root fetch - processPackages [clear-skies-akeyless-custom-producer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear-skies-akeyless-custom-producer-0.9.1.tar.gz tmp/clear_skies_akeyless_custom_producer-1.0.0.tar.gz --markdown 20230604/c/clear-skies-akeyless-custom-producer/0.9.1-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 16:47:31] INFO root fetch - processPackages [innovationmerge]: Start processing: pytest-logikal
+[2023-06-04 16:47:31] INFO root fetch - main [MainThread]: End processing [innovationmerge]: success
+[2023-06-04 16:47:31] INFO root fetch - processPackages [pytest-logikal]: New version: [1.9.0] Old Version: [1.8.4]
+[2023-06-04 16:47:31] INFO root fetch - main [MainThread]: End processing [staircase-kit]: success
+[2023-06-04 16:47:32] INFO root fetch - processPackages [pytest-logikal]: executing diffoscope
+[2023-06-04 16:47:32] INFO root fetch - processPackages [pytest-logikal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-logikal-1.8.4.tar.gz tmp/pytest-logikal-1.9.0.tar.gz --markdown 20230604/p/pytest-logikal/1.8.4-1.9.0/diff.md --exclude *.pyd
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [django-jsheet]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [openassist]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [invoker-terminal]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [as3toplevel]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [qtgql]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [clear-skies-akeyless-custom-producer]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [kaiju-tools]: success
+[2023-06-04 16:47:33] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
+[2023-06-04 16:47:33] INFO root fetch - main [MainThread]: Store serial: [18366581]
