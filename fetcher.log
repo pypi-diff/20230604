@@ -8413,3 +8413,35 @@
 [2023-06-04 19:29:00] INFO root fetch - main [MainThread]: End processing [yarok]: success
 [2023-06-04 19:29:00] INFO root fetch - main [MainThread]: End processing [skypilot]: success
 [2023-06-04 19:29:00] INFO root fetch - main [MainThread]: Store serial: [18367547]
+[2023-06-04 19:34:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367547]
+[2023-06-04 19:34:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 19:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bawiki
+[2023-06-04 19:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cheap-pie
+[2023-06-04 19:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sciqlopplots
+[2023-06-04 19:34:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: promptengine-ai
+[2023-06-04 19:34:09] INFO root fetch - processPackages [nonebot-plugin-bawiki]: New version: [0.7.8] Old Version: [0.7.7]
+[2023-06-04 19:34:09] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 19:34:09] WARNING root fetch - processPackages [promptengine-ai]: Skipping, unable to determine old version
+[2023-06-04 19:34:09] INFO root fetch - main [MainThread]: End processing [promptengine-ai] error
+[2023-06-04 19:34:09] INFO root fetch - processPackages [cheap-pie]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 19:34:09] INFO root fetch - processPackages [sciqlopplots]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-06-04 19:34:09] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/4a/a8/1209edc0739791ead7fafa036234260b53d3d49b756d6dc1940a51ffad60/kelpie_personal_trainer-0.0.7.tar.gz
+[2023-06-04 19:34:09] INFO root fetch - processPackages [nonebot-plugin-bawiki]: Downloading https://files.pythonhosted.org/packages/ce/41/95b854229b929fd37493f9fa81210b0a72c9e37c826dd34a8fcf8df39967/nonebot_plugin_bawiki-0.7.7.tar.gz
+[2023-06-04 19:34:09] INFO root fetch - processPackages [sciqlopplots]: Downloading https://files.pythonhosted.org/packages/ee/e6/f67427b63eec834270c8db84c639b454fdcb435ab87103cf42a570aa51a9/sciqlopplots-0.3.4.tar.gz
+[2023-06-04 19:34:09] INFO root fetch - processPackages [cheap-pie]: Downloading https://files.pythonhosted.org/packages/79/bc/8faf47f9285e0ebd34f16d53cef04f9e9cf5546a8766ab01667336e9559c/cheap_pie-1.0.3.tar.gz
+[2023-06-04 19:34:09] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:34:09] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.6.tar.gz tmp/kelpie_personal_trainer-0.0.7.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 19:34:09] INFO root fetch - processPackages [nonebot-plugin-bawiki]: Downloading https://files.pythonhosted.org/packages/c4/3f/6dada9667bd7d1f38511d32379e3491f130bcaa81828c24bb1e8becbce34/nonebot_plugin_bawiki-0.7.8.tar.gz
+[2023-06-04 19:34:09] INFO root fetch - processPackages [cheap-pie]: executing diffoscope
+[2023-06-04 19:34:09] INFO root fetch - processPackages [cheap-pie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheap_pie-1.0.2.tar.gz tmp/cheap_pie-1.0.3.tar.gz --markdown 20230604/c/cheap-pie/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 19:34:10] INFO root fetch - processPackages [sciqlopplots]: Downloading https://files.pythonhosted.org/packages/bb/20/3e96885427e732f641063c42b4635beb7fc72d4e45bfc6fc6dd8de5f57bf/sciqlopplots-0.4.0-cp310-cp310-manylinux_2_28_x86_64.whl
+[2023-06-04 19:34:10] INFO root fetch - processPackages [nonebot-plugin-bawiki]: executing diffoscope
+[2023-06-04 19:34:10] INFO root fetch - processPackages [nonebot-plugin-bawiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bawiki-0.7.7.tar.gz tmp/nonebot_plugin_bawiki-0.7.8.tar.gz --markdown 20230604/n/nonebot-plugin-bawiki/0.7.7-0.7.8/diff.md --exclude *.pyd
+[2023-06-04 19:34:10] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:34:11] INFO root fetch - main [MainThread]: End processing [cheap-pie]: success
+[2023-06-04 19:34:11] INFO root fetch - processPackages [sciqlopplots]: executing diffoscope
+[2023-06-04 19:34:11] INFO root fetch - processPackages [sciqlopplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciqlopplots-0.3.4.tar.gz tmp/sciqlopplots-0.4.0-cp310-cp310-manylinux_2_28_x86_64.whl.zip --markdown 20230604/s/sciqlopplots/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-06-04 19:34:11] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bawiki]: success
+[2023-06-04 19:34:12] INFO root fetch - main [MainThread]: End processing [sciqlopplots]: success
+[2023-06-04 19:34:12] INFO root fetch - main [MainThread]: Store serial: [18367560]
