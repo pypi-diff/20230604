@@ -5687,3 +5687,46 @@
 [2023-06-04 14:14:33] INFO root fetch - main [MainThread]: End processing [nomenklatura]: success
 [2023-06-04 14:14:39] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
 [2023-06-04 14:14:39] INFO root fetch - main [MainThread]: Store serial: [18365826]
+[2023-06-04 14:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365826]
+[2023-06-04 14:19:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mediana-rest-sdk
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: casbin-redis-adapter
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fitsnap3
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-utilitas
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: google-sheet-downloader
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: circuitpython-mag-cal
+[2023-06-04 14:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbproject
+[2023-06-04 14:19:47] INFO root fetch - processPackages [django-utilitas]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-06-04 14:19:47] INFO root fetch - processPackages [google-sheet-downloader]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 14:19:47] INFO root fetch - processPackages [fitsnap3]: New version: [3.1.0.4] Old Version: [3.1.0.2]
+[2023-06-04 14:19:47] INFO root fetch - processPackages [casbin-redis-adapter]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 14:19:47] WARNING root fetch - processPackages [mediana-rest-sdk]: Skipping, unable to determine old version
+[2023-06-04 14:19:47] INFO root fetch - main [MainThread]: End processing [mediana-rest-sdk] error
+[2023-06-04 14:19:48] INFO root fetch - processPackages [circuitpython-mag-cal]: New version: [1.2.0] Old Version: [1.1.4]
+[2023-06-04 14:19:48] INFO root fetch - processPackages [django-utilitas]: executing diffoscope
+[2023-06-04 14:19:48] INFO root fetch - processPackages [django-utilitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-utilitas-1.3.8.tar.gz tmp/django-utilitas-1.3.9.tar.gz --markdown 20230604/d/django-utilitas/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-06-04 14:19:48] INFO root fetch - processPackages [nbproject]: New version: [0.8.7] Old Version: [0.8.6]
+[2023-06-04 14:19:48] INFO root fetch - processPackages [casbin-redis-adapter]: Downloading https://files.pythonhosted.org/packages/7b/e0/1707a02ed53880d6425e63c7f975d85abc7d1f08c0e98dfeb29e550920b2/casbin_redis_adapter-1.0.0.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [google-sheet-downloader]: Downloading https://files.pythonhosted.org/packages/16/b7/05fa282103e139426a577a7a35e8b5774ecad06fa511da7ae3f095a53f17/google-sheet-downloader-1.1.1.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [fitsnap3]: Downloading https://files.pythonhosted.org/packages/c8/1b/a1ed59a0fb0004c9d25f00174a32727e6fcfac89c49edfd1232454a70b29/fitsnap3-3.1.0.4.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [google-sheet-downloader]: executing diffoscope
+[2023-06-04 14:19:48] INFO root fetch - processPackages [google-sheet-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-sheet-downloader-1.1.0.tar.gz tmp/google-sheet-downloader-1.1.1.tar.gz --markdown 20230604/g/google-sheet-downloader/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 14:19:48] INFO root fetch - processPackages [nbproject]: Downloading https://files.pythonhosted.org/packages/58/9b/98e277a36b073f7fe57e1d28b65bbc8c9eb890daf2b3c1ac688b4bfc20c1/nbproject-0.8.6.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [circuitpython-mag-cal]: Downloading https://files.pythonhosted.org/packages/14/4b/1348367eac68e5050f341ee3f44670630d5dde44260f1de1f9356516fb62/circuitpython-mag-cal-1.2.0.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [fitsnap3]: executing diffoscope
+[2023-06-04 14:19:48] INFO root fetch - processPackages [fitsnap3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fitsnap3-3.1.0.2.tar.gz tmp/fitsnap3-3.1.0.4.tar.gz --markdown 20230604/f/fitsnap3/3.1.0.2-3.1.0.4/diff.md --exclude *.pyd
+[2023-06-04 14:19:48] INFO root fetch - processPackages [casbin-redis-adapter]: Downloading https://files.pythonhosted.org/packages/6c/5c/83fe92cb91f4423f4890276e4779774a936a7881fd0eff6e74f5add677a6/casbin_redis_adapter-1.0.1.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [casbin-redis-adapter]: executing diffoscope
+[2023-06-04 14:19:48] INFO root fetch - processPackages [casbin-redis-adapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casbin_redis_adapter-1.0.0.tar.gz tmp/casbin_redis_adapter-1.0.1.tar.gz --markdown 20230604/c/casbin-redis-adapter/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-04 14:19:48] INFO root fetch - processPackages [nbproject]: Downloading https://files.pythonhosted.org/packages/0c/26/b578a851e8e84845edc3216080e03c084a241d1b419cc6aad86c4c92a621/nbproject-0.8.7.tar.gz
+[2023-06-04 14:19:48] INFO root fetch - processPackages [circuitpython-mag-cal]: executing diffoscope
+[2023-06-04 14:19:48] INFO root fetch - processPackages [circuitpython-mag-cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-mag-cal-1.1.4.tar.gz tmp/circuitpython-mag-cal-1.2.0.tar.gz --markdown 20230604/c/circuitpython-mag-cal/1.1.4-1.2.0/diff.md --exclude *.pyd
+[2023-06-04 14:19:48] INFO root fetch - processPackages [nbproject]: executing diffoscope
+[2023-06-04 14:19:48] INFO root fetch - processPackages [nbproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbproject-0.8.6.tar.gz tmp/nbproject-0.8.7.tar.gz --markdown 20230604/n/nbproject/0.8.6-0.8.7/diff.md --exclude *.pyd
+[2023-06-04 14:19:49] INFO root fetch - main [MainThread]: End processing [django-utilitas]: success
+[2023-06-04 14:19:49] INFO root fetch - main [MainThread]: End processing [google-sheet-downloader]: success
+[2023-06-04 14:19:49] INFO root fetch - main [MainThread]: End processing [casbin-redis-adapter]: success
+[2023-06-04 14:19:50] INFO root fetch - main [MainThread]: End processing [nbproject]: success
+[2023-06-04 14:19:50] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
+[2023-06-04 14:19:52] INFO root fetch - main [MainThread]: End processing [fitsnap3]: success
+[2023-06-04 14:19:52] INFO root fetch - main [MainThread]: Store serial: [18365851]
