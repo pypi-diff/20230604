@@ -6697,3 +6697,70 @@
 [2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [flash-attn-wheels]: success
 [2023-06-04 16:21:31] INFO root fetch - main [MainThread]: Store serial: [18366384]
+[2023-06-04 16:26:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366384]
+[2023-06-04 16:26:40] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whisper-autosrt
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stream-zip
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: as3toplevel
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rico
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: banks
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nsdpy
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: helloworld-deshrit
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: banks
+[2023-06-04 16:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: airnitro
+[2023-06-04 16:26:40] INFO root fetch - processPackages [as3toplevel]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [stream-zip]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [whisper-autosrt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [banks]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-06-04 16:26:40] WARNING root fetch - processPackages [airnitro]: Skipping, unable to determine old version
+[2023-06-04 16:26:40] INFO root fetch - processPackages [helloworld-deshrit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [airnitro]: Start processing: openassist
+[2023-06-04 16:26:40] INFO root fetch - main [MainThread]: End processing [airnitro] error
+[2023-06-04 16:26:40] INFO root fetch - processPackages [banks]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [nsdpy]: New version: [0.3.2b0] Old Version: [0.3.1b0]
+[2023-06-04 16:26:40] INFO root fetch - processPackages [rico]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-06-04 16:26:40] WARNING root fetch - processPackages [openassist]: Skipping, unable to determine old version
+[2023-06-04 16:26:40] INFO root fetch - main [MainThread]: End processing [openassist] error
+[2023-06-04 16:26:40] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/35/b6/9c13879b037c0c803346f37898089c5a563746c1963ac7fc4979d3f6728b/banks-0.0.2.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/35/b6/9c13879b037c0c803346f37898089c5a563746c1963ac7fc4979d3f6728b/banks-0.0.2.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [helloworld-deshrit]: Downloading https://files.pythonhosted.org/packages/74/7f/86ff740f8177c458cd5d0f250257387051124b07941d3f2f364694f6b7dc/helloworld_deshrit-0.0.1.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/e1/41/82c70e7604a3565dc9ef1faf84b6d6753c71ec03ccea5b25b1edd8364327/myPackageLicensePrototype-1.2.1.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [stream-zip]: Downloading https://files.pythonhosted.org/packages/4b/65/27b6998732f631a7691a5157fb51c5d5328faa138986c06684c5ae4fe771/stream-zip-0.0.8.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/91/bc/4dead21f192bf32ff8bb08bad25b81804f119d06a95518f463b0dee3279e/nsdpy-0.3.2b0.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [rico]: Downloading https://files.pythonhosted.org/packages/d0/ce/1c1905bbf9b8707ff07179e5a5f01d626d62b2202dbb5a39a8783f4f19b4/rico-0.2.0.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:26:40] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.2.0.tar.gz tmp/myPackageLicensePrototype-1.2.1.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-06-04 16:26:40] INFO root fetch - processPackages [whisper-autosrt]: Downloading https://files.pythonhosted.org/packages/55/bd/7c31de5dcd8dbce9bda72db93e9b2a1aade2b47b52789d1149776b6794f3/whisper_autosrt-0.1.1.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [as3toplevel]: Downloading https://files.pythonhosted.org/packages/e8/fa/1881599622640f5b42565d67c97d2aeda38c0a1eee4677aeeb48478084c6/as3toplevel-0.0.3.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/bb/c6/a17edc1f5b8255db9c47e795070c6c1b2237b2e4e68d73a5ca7b61084137/banks-0.0.3.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [helloworld-deshrit]: Downloading https://files.pythonhosted.org/packages/f0/7a/8250b60493ef2a3becfe7fd9dabe1a9fb5c92413b848b68651952325ef9e/helloworld_deshrit-0.0.2.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-06-04 16:26:40] INFO root fetch - processPackages [whisper-autosrt]: executing diffoscope
+[2023-06-04 16:26:40] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.3.1b0.tar.gz tmp/nsdpy-0.3.2b0.tar.gz --markdown 20230604/n/nsdpy/0.3.1b0-0.3.2b0/diff.md --exclude *.pyd
+[2023-06-04 16:26:40] INFO root fetch - processPackages [whisper-autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_autosrt-0.1.0.tar.gz tmp/whisper_autosrt-0.1.1.tar.gz --markdown 20230604/w/whisper-autosrt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 16:26:40] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/bb/c6/a17edc1f5b8255db9c47e795070c6c1b2237b2e4e68d73a5ca7b61084137/banks-0.0.3.tar.gz
+[2023-06-04 16:26:40] INFO root fetch - processPackages [rico]: executing diffoscope
+[2023-06-04 16:26:40] INFO root fetch - processPackages [rico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rico-0.1.0.tar.gz tmp/rico-0.2.0.tar.gz --markdown 20230604/r/rico/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 16:26:41] INFO root fetch - processPackages [as3toplevel]: executing diffoscope
+[2023-06-04 16:26:41] INFO root fetch - processPackages [as3toplevel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/as3toplevel-0.0.2.tar.gz tmp/as3toplevel-0.0.3.tar.gz --markdown 20230604/a/as3toplevel/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 16:26:41] INFO root fetch - processPackages [banks]: executing diffoscope
+[2023-06-04 16:26:41] INFO root fetch - processPackages [banks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banks-0.0.2.tar.gz tmp/banks-0.0.3.tar.gz --markdown 20230604/b/banks/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 16:26:41] INFO root fetch - processPackages [banks]: executing diffoscope
+[2023-06-04 16:26:41] INFO root fetch - processPackages [banks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banks-0.0.2.tar.gz tmp/banks-0.0.3.tar.gz --markdown 20230604/b/banks/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 16:26:41] INFO root fetch - processPackages [helloworld-deshrit]: executing diffoscope
+[2023-06-04 16:26:41] INFO root fetch - processPackages [helloworld-deshrit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helloworld_deshrit-0.0.1.tar.gz tmp/helloworld_deshrit-0.0.2.tar.gz --markdown 20230604/h/helloworld-deshrit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 16:26:41] INFO root fetch - processPackages [stream-zip]: Downloading https://files.pythonhosted.org/packages/0e/94/162b767659b1b6afe9241c47773d921e2b8a0f97f124d374e76c7f1d2b53/stream-zip-0.0.9.tar.gz
+[2023-06-04 16:26:42] INFO root fetch - processPackages [stream-zip]: executing diffoscope
+[2023-06-04 16:26:42] INFO root fetch - processPackages [stream-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream-zip-0.0.8.tar.gz tmp/stream-zip-0.0.9.tar.gz --markdown 20230604/s/stream-zip/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [rico]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [helloworld-deshrit]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [as3toplevel]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [whisper-autosrt]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [banks]: success
+[2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [banks]: success
+[2023-06-04 16:26:43] INFO root fetch - main [MainThread]: End processing [stream-zip]: success
+[2023-06-04 16:26:43] INFO root fetch - main [MainThread]: Store serial: [18366423]
