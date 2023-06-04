@@ -8491,3 +8491,11 @@
 [2023-06-04 19:44:56] INFO root fetch - main [MainThread]: End processing [colorful-terminal]: success
 [2023-06-04 19:44:57] INFO root fetch - main [MainThread]: End processing [starrail-toolkit]: success
 [2023-06-04 19:44:57] INFO root fetch - main [MainThread]: Store serial: [18367600]
+[2023-06-04 19:50:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367600]
+[2023-06-04 19:50:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 19:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infinstor-mlflow-plugin
+[2023-06-04 19:50:05] INFO root fetch - processPackages [infinstor-mlflow-plugin]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-06-04 19:50:06] INFO root fetch - processPackages [infinstor-mlflow-plugin]: executing diffoscope
+[2023-06-04 19:50:06] INFO root fetch - processPackages [infinstor-mlflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinstor-mlflow-plugin-2.0.8.tar.gz tmp/infinstor-mlflow-plugin-2.0.9.tar.gz --markdown 20230604/i/infinstor-mlflow-plugin/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-06-04 19:50:07] INFO root fetch - main [MainThread]: End processing [infinstor-mlflow-plugin]: success
+[2023-06-04 19:50:07] INFO root fetch - main [MainThread]: Store serial: [18367603]
