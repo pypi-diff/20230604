@@ -9493,3 +9493,43 @@
 [2023-06-04 21:40:52] INFO root fetch - main [MainThread]: End processing [docassemble.demo]: success
 [2023-06-04 21:40:54] INFO root fetch - main [MainThread]: End processing [docassemble.webapp]: success
 [2023-06-04 21:40:54] INFO root fetch - main [MainThread]: Store serial: [18368191]
+[2023-06-04 21:45:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368191]
+[2023-06-04 21:46:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genetic-algo
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latinex-sdk
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uk-postcodes-parsing
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eisenheimisme
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: briefcase-media
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cashews
+[2023-06-04 21:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-cast
+[2023-06-04 21:46:04] INFO root fetch - processPackages [uk-postcodes-parsing]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-06-04 21:46:04] WARNING root fetch - processPackages [latinex-sdk]: Skipping, unable to determine old version
+[2023-06-04 21:46:04] INFO root fetch - main [MainThread]: End processing [latinex-sdk] error
+[2023-06-04 21:46:04] WARNING root fetch - processPackages [eisenheimisme]: Skipping, unable to determine old version
+[2023-06-04 21:46:04] INFO root fetch - main [MainThread]: End processing [eisenheimisme] error
+[2023-06-04 21:46:04] INFO root fetch - processPackages [genetic-algo]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-06-04 21:46:04] INFO root fetch - processPackages [briefcase-media]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-06-04 21:46:04] INFO root fetch - processPackages [cashews]: New version: [6.2.0] Old Version: [6.1.0]
+[2023-06-04 21:46:04] INFO root fetch - processPackages [django-cast]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 21:46:04] INFO root fetch - processPackages [genetic-algo]: Downloading https://files.pythonhosted.org/packages/df/f9/67d636b0cbbe0db0a7584389bcfddc9cf26463d6d4922e128d573c688932/genetic-algo-0.0.0.tar.gz
+[2023-06-04 21:46:04] INFO root fetch - processPackages [uk-postcodes-parsing]: Downloading https://files.pythonhosted.org/packages/4c/98/4685af7d04f32e97c549fe09b73147020aeffe3ad76607f39631089e016c/uk_postcodes_parsing-0.3.0.tar.gz
+[2023-06-04 21:46:04] INFO root fetch - processPackages [briefcase-media]: Downloading https://files.pythonhosted.org/packages/89/0e/ec94da8442c422b28980af7a4e7706f01acb1aea854d9189633e0ec08e0b/briefcase_media-0.4.0.tar.gz
+[2023-06-04 21:46:04] INFO root fetch - processPackages [cashews]: Downloading https://files.pythonhosted.org/packages/e1/0e/e4f81e91a46b2a72a010d0942e3a0fe126d079214da9d1c37218b290b110/cashews-6.1.0.tar.gz
+[2023-06-04 21:46:04] INFO root fetch - processPackages [uk-postcodes-parsing]: executing diffoscope
+[2023-06-04 21:46:04] INFO root fetch - processPackages [uk-postcodes-parsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_postcodes_parsing-0.2.0.tar.gz tmp/uk_postcodes_parsing-0.3.0.tar.gz --markdown 20230604/u/uk-postcodes-parsing/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 21:46:04] INFO root fetch - processPackages [briefcase-media]: executing diffoscope
+[2023-06-04 21:46:04] INFO root fetch - processPackages [briefcase-media]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/briefcase_media-0.3.0.tar.gz tmp/briefcase_media-0.4.0.tar.gz --markdown 20230604/b/briefcase-media/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-06-04 21:46:04] INFO root fetch - processPackages [genetic-algo]: Downloading https://files.pythonhosted.org/packages/4f/09/5ca7c310629b366f9042ef29bf33bd7ec62fe153bda4e6aeb75c2d84da1b/genetic-algo-0.0.1.tar.gz
+[2023-06-04 21:46:04] INFO root fetch - processPackages [django-cast]: executing diffoscope
+[2023-06-04 21:46:04] INFO root fetch - processPackages [django-cast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cast-0.2.8.tar.gz tmp/django-cast-0.2.9.tar.gz --markdown 20230604/d/django-cast/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 21:46:05] INFO root fetch - processPackages [cashews]: Downloading https://files.pythonhosted.org/packages/63/ad/4b6203d555c1593545c6f42017d81e6d6b4280961052eeac58efb3df7d40/cashews-6.2.0.tar.gz
+[2023-06-04 21:46:05] INFO root fetch - processPackages [genetic-algo]: executing diffoscope
+[2023-06-04 21:46:05] INFO root fetch - processPackages [genetic-algo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genetic-algo-0.0.0.tar.gz tmp/genetic-algo-0.0.1.tar.gz --markdown 20230604/g/genetic-algo/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-06-04 21:46:05] INFO root fetch - processPackages [cashews]: executing diffoscope
+[2023-06-04 21:46:05] INFO root fetch - processPackages [cashews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cashews-6.1.0.tar.gz tmp/cashews-6.2.0.tar.gz --markdown 20230604/c/cashews/6.1.0-6.2.0/diff.md --exclude *.pyd
+[2023-06-04 21:46:05] INFO root fetch - main [MainThread]: End processing [briefcase-media]: success
+[2023-06-04 21:46:06] INFO root fetch - main [MainThread]: End processing [genetic-algo]: success
+[2023-06-04 21:46:07] INFO root fetch - main [MainThread]: End processing [uk-postcodes-parsing]: success
+[2023-06-04 21:46:07] INFO root fetch - main [MainThread]: End processing [cashews]: success
+[2023-06-04 21:46:08] INFO root fetch - main [MainThread]: End processing [django-cast]: success
+[2023-06-04 21:46:08] INFO root fetch - main [MainThread]: Store serial: [18368213]
