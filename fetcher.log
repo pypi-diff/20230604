@@ -1709,3 +1709,92 @@
 [2023-06-04 03:38:15] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-06-04 03:40:11] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-06-04 03:40:11] INFO root fetch - main [MainThread]: Store serial: [18363471]
+[2023-06-04 03:45:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363471]
+[2023-06-04 03:45:21] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: engorgio
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-pytorch
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wpiformat
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-model-core
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-scipy
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sweetrpg-web-core
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dsutils-ms
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-sphinx
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: proactive
+[2023-06-04 03:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sweetrpg-api-core
+[2023-06-04 03:45:21] INFO root fetch - processPackages [sweetrpg-model-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:21] WARNING root fetch - processPackages [engorgio]: Skipping, unable to determine old version
+[2023-06-04 03:45:21] INFO root fetch - processPackages [engorgio]: Start processing: sweetrpg-library-objects
+[2023-06-04 03:45:21] INFO root fetch - main [MainThread]: End processing [engorgio] error
+[2023-06-04 03:45:21] INFO root fetch - processPackages [dsutils-ms]: New version: [1.1] Old Version: [1.0]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [wpiformat]: New version: [2023.19] Old Version: [2023.18]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-06-04 03:45:21] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:22] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230604/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230604/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [dsutils-ms]: Downloading https://files.pythonhosted.org/packages/5c/f5/71441d3e3b920d25a46f42a3fe3b9b1b75a47537ec3b786e91da2dcb0f60/dsutils_ms-1.0.tar.gz
+[2023-06-04 03:45:22] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-06-04 03:45:22] INFO root fetch - processPackages [proactive]: Start processing: sweetrpg-db
+[2023-06-04 03:45:22] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230604/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-db]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-db]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-db-0.0.98.tar.gz tmp/sweetrpg-db-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-db/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [wpiformat]: Downloading https://files.pythonhosted.org/packages/23/07/6e5c66e1d7c1c4f048863241902122ecf5d59bd201f142c57ddae55499cc/wpiformat-2023.19-py3-none-any.whl
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-model-core]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [sweetrpg-model-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-model-core-0.0.98.tar.gz tmp/sweetrpg-model-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-model-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [wpiformat]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [wpiformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpiformat-2023.18-py3-none-any.whl.zip tmp/wpiformat-2023.19-py3-none-any.whl.zip --markdown 20230604/w/wpiformat/2023.18-2023.19/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [dsutils-ms]: Downloading https://files.pythonhosted.org/packages/c2/95/320355feb757956af0dd8fdfeca60c1c327b7702b81e499670349623aefb/dsutils_ms-1.1.tar.gz
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230604/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:22] INFO root fetch - processPackages [dsutils-ms]: executing diffoscope
+[2023-06-04 03:45:22] INFO root fetch - processPackages [dsutils-ms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsutils_ms-1.0.tar.gz tmp/dsutils_ms-1.1.tar.gz --markdown 20230604/d/dsutils-ms/1.0-1.1/diff.md --exclude *.pyd
+[2023-06-04 03:45:23] INFO root fetch - processPackages [sweetrpg-web-core]: Start processing: proactive-jupyter-kernel
+[2023-06-04 03:45:23] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-06-04 03:45:23] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-06-04 03:45:23] INFO root fetch - processPackages [nbdev-scipy]: Start processing: nbdev-django
+[2023-06-04 03:45:23] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-06-04 03:45:23] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-06-04 03:45:23] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230604/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-06-04 03:45:23] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:23] INFO root fetch - processPackages [sweetrpg-api-core]: Start processing: nbdev-apl
+[2023-06-04 03:45:23] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-06-04 03:45:23] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-06-04 03:45:23] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230604/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:23] INFO root fetch - processPackages [sweetrpg-db]: Start processing: lollms
+[2023-06-04 03:45:23] INFO root fetch - main [MainThread]: End processing [sweetrpg-db]: success
+[2023-06-04 03:45:23] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.812] Old Version: [0.0.811]
+[2023-06-04 03:45:23] INFO root fetch - processPackages [nbdev-sphinx]: Start processing: sweetrpg-web-core
+[2023-06-04 03:45:23] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-06-04 03:45:23] INFO root fetch - processPackages [lollms]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-06-04 03:45:23] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:45:23] INFO root fetch - main [MainThread]: End processing [sweetrpg-model-core]: success
+[2023-06-04 03:45:23] INFO root fetch - processPackages [lollms]: Downloading https://files.pythonhosted.org/packages/d9/a3/92ee6bf9c0337bf61b4e247557eea88debb0ace96ba93f5c3904ab77088e/lollms-1.1.5.tar.gz
+[2023-06-04 03:45:24] WARNING root fetch - processPackages [lollms]: Skipping package: exceeds size limit 17358579>=10485760
+[2023-06-04 03:45:24] INFO root fetch - main [MainThread]: End processing [lollms] error
+[2023-06-04 03:45:24] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-06-04 03:45:24] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.811.tar.gz tmp/nbdev-apl-0.0.812.tar.gz --markdown 20230604/n/nbdev-apl/0.0.811-0.0.812/diff.md --exclude *.pyd
+[2023-06-04 03:45:24] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-06-04 03:45:24] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:45:24] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-06-04 03:45:24] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-06-04 03:45:24] INFO root fetch - main [MainThread]: End processing [wpiformat]: success
+[2023-06-04 03:45:24] INFO root fetch - main [MainThread]: End processing [dsutils-ms]: success
+[2023-06-04 03:45:25] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-06-04 03:45:25] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-06-04 03:45:25] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-06-04 03:45:25] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-06-04 03:45:25] INFO root fetch - main [MainThread]: Store serial: [18363527]
