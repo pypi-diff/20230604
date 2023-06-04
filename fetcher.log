@@ -8499,3 +8499,33 @@
 [2023-06-04 19:50:06] INFO root fetch - processPackages [infinstor-mlflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinstor-mlflow-plugin-2.0.8.tar.gz tmp/infinstor-mlflow-plugin-2.0.9.tar.gz --markdown 20230604/i/infinstor-mlflow-plugin/2.0.8-2.0.9/diff.md --exclude *.pyd
 [2023-06-04 19:50:07] INFO root fetch - main [MainThread]: End processing [infinstor-mlflow-plugin]: success
 [2023-06-04 19:50:07] INFO root fetch - main [MainThread]: Store serial: [18367603]
+[2023-06-04 19:55:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367603]
+[2023-06-04 19:55:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 19:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zood
+[2023-06-04 19:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promptengine-catapult
+[2023-06-04 19:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nso-oc
+[2023-06-04 19:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: linkplay-cli
+[2023-06-04 19:55:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llmflows
+[2023-06-04 19:55:15] WARNING root fetch - processPackages [promptengine-catapult]: Skipping, unable to determine old version
+[2023-06-04 19:55:15] INFO root fetch - main [MainThread]: End processing [promptengine-catapult] error
+[2023-06-04 19:55:15] INFO root fetch - processPackages [zood]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-06-04 19:55:15] INFO root fetch - processPackages [nso-oc]: New version: [2.60.0] Old Version: [2.59.0]
+[2023-06-04 19:55:15] INFO root fetch - processPackages [llmflows]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 19:55:15] INFO root fetch - processPackages [linkplay-cli]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 19:55:15] INFO root fetch - processPackages [zood]: executing diffoscope
+[2023-06-04 19:55:15] INFO root fetch - processPackages [zood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zood-0.7.5.tar.gz tmp/zood-0.7.6.tar.gz --markdown 20230604/z/zood/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-06-04 19:55:16] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/46/b5/3bde5cf77b8b5dc500c0ba8fcabb4ea54f922d2ae6c3655a5b2487f111cf/nso-oc-2.60.0.tar.gz
+[2023-06-04 19:55:16] INFO root fetch - processPackages [llmflows]: Downloading https://files.pythonhosted.org/packages/29/9f/f83e8f9466e0fe73a03cd3c0e8722e9167b56a7cb6c767fa453fe19c430a/llmflows-0.0.1.tar.gz
+[2023-06-04 19:55:16] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-06-04 19:55:16] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.59.0.tar.gz tmp/nso-oc-2.60.0.tar.gz --markdown 20230604/n/nso-oc/2.59.0-2.60.0/diff.md --exclude *.pyd
+[2023-06-04 19:55:16] INFO root fetch - processPackages [linkplay-cli]: Downloading https://files.pythonhosted.org/packages/27/39/fe9c1a8859af6c6fa4b28c9af265d175b91d03202e3012b4fb21b5a42058/linkplay-cli-0.0.3.tar.gz
+[2023-06-04 19:55:16] INFO root fetch - processPackages [linkplay-cli]: executing diffoscope
+[2023-06-04 19:55:16] INFO root fetch - processPackages [linkplay-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkplay-cli-0.0.2.tar.gz tmp/linkplay-cli-0.0.3.tar.gz --markdown 20230604/l/linkplay-cli/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 19:55:16] INFO root fetch - processPackages [llmflows]: Downloading https://files.pythonhosted.org/packages/5a/12/7fe4958b8817b05e294da52bf694b6cc7a800754ca4fa7ea8b7da246bb4c/llmflows-0.0.2.tar.gz
+[2023-06-04 19:55:16] INFO root fetch - processPackages [llmflows]: executing diffoscope
+[2023-06-04 19:55:16] INFO root fetch - processPackages [llmflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmflows-0.0.1.tar.gz tmp/llmflows-0.0.2.tar.gz --markdown 20230604/l/llmflows/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 19:55:17] INFO root fetch - main [MainThread]: End processing [zood]: success
+[2023-06-04 19:55:17] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-06-04 19:55:17] INFO root fetch - main [MainThread]: End processing [linkplay-cli]: success
+[2023-06-04 19:55:17] INFO root fetch - main [MainThread]: End processing [llmflows]: success
+[2023-06-04 19:55:17] INFO root fetch - main [MainThread]: Store serial: [18367619]
