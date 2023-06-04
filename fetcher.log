@@ -9756,3 +9756,57 @@
 [2023-06-04 22:17:26] INFO root fetch - main [MainThread]: End processing [gitm]: success
 [2023-06-04 22:17:58] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-06-04 22:17:58] INFO root fetch - main [MainThread]: Store serial: [18368360]
+[2023-06-04 22:23:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368360]
+[2023-06-04 22:23:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pe
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bytecodemanipulation
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rsync-time-machine
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-admin-reset
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scikit-query
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: saxo-apy
+[2023-06-04 22:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: whg-lotr-sdk
+[2023-06-04 22:23:07] INFO root fetch - processPackages [pe]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-06-04 22:23:07] INFO root fetch - processPackages [bytecodemanipulation]: New version: [0.3.1] Old Version: [0.2.9]
+[2023-06-04 22:23:07] INFO root fetch - processPackages [rsync-time-machine]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-06-04 22:23:07] INFO root fetch - processPackages [django-admin-reset]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-06-04 22:23:07] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 22:23:07] WARNING root fetch - processPackages [whg-lotr-sdk]: Skipping, unable to determine old version
+[2023-06-04 22:23:07] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 22:23:07] WARNING root fetch - processPackages [scikit-query]: Skipping, unable to determine old version
+[2023-06-04 22:23:07] INFO root fetch - main [MainThread]: End processing [whg-lotr-sdk] error
+[2023-06-04 22:23:07] INFO root fetch - main [MainThread]: End processing [scikit-query] error
+[2023-06-04 22:23:07] INFO root fetch - processPackages [saxo-apy]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-06-04 22:23:07] INFO root fetch - processPackages [rsync-time-machine]: Downloading https://files.pythonhosted.org/packages/f9/8f/78f87d20e70daf9544ac45e8ef341e0b324c240e139490850c636da1ea35/rsync-time-machine-1.0.0.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [bytecodemanipulation]: Downloading https://files.pythonhosted.org/packages/2a/04/e6725eaaed3835f4687032a0996be759d2ac212989839b365b6bb803e67e/bytecodemanipulation-0.2.9.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [pe]: Downloading https://files.pythonhosted.org/packages/a7/e3/b351f5e5249e3e716ebfc6ea9070d45c38570ff7281e6b015ad664c177f1/pe-0.3.2.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 22:23:07] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 22:23:07] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 22:23:07] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 22:23:07] INFO root fetch - processPackages [django-admin-reset]: Downloading https://files.pythonhosted.org/packages/b4/2c/67ceb3ffbdc748810b0a858f710da802a9572dd191f4d9cc95ca12ef7931/django_admin_reset-0.6.1-py2.py3-none-any.whl
+[2023-06-04 22:23:07] INFO root fetch - processPackages [saxo-apy]: Downloading https://files.pythonhosted.org/packages/db/26/3e265b9aa8941d7dd4b9fdd6af0e05ef79d8e95242bc7c4b4a8eea49a85b/saxo_apy-0.2.4.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [bytecodemanipulation]: Downloading https://files.pythonhosted.org/packages/ab/a7/a3e55fdcd457745c0dbfd81afb08978e409d93d81e5b578bee3b9f7595fc/bytecodemanipulation-0.3.1.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [pe]: Downloading https://files.pythonhosted.org/packages/f4/fb/61c60d97f9665dd94263bef8b9021d52014cb4e9402034a7241fe77ca916/pe-0.4.0.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [rsync-time-machine]: Downloading https://files.pythonhosted.org/packages/af/1d/936e72acb53972da7f30a6e826832d07825b2ae1285fc6f905c4add111fd/rsync-time-machine-1.1.0.tar.gz
+[2023-06-04 22:23:07] INFO root fetch - processPackages [django-admin-reset]: Downloading https://files.pythonhosted.org/packages/7d/51/551829e2bf20265c9d16cd9e5587c7408de0ef0f17401dc533f09869901b/django_admin_reset-0.6.2-py2.py3-none-any.whl
+[2023-06-04 22:23:07] INFO root fetch - processPackages [bytecodemanipulation]: executing diffoscope
+[2023-06-04 22:23:07] INFO root fetch - processPackages [bytecodemanipulation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytecodemanipulation-0.2.9.tar.gz tmp/bytecodemanipulation-0.3.1.tar.gz --markdown 20230604/b/bytecodemanipulation/0.2.9-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 22:23:07] INFO root fetch - processPackages [pe]: executing diffoscope
+[2023-06-04 22:23:07] INFO root fetch - processPackages [pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pe-0.3.2.tar.gz tmp/pe-0.4.0.tar.gz --markdown 20230604/p/pe/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-06-04 22:23:07] INFO root fetch - processPackages [rsync-time-machine]: executing diffoscope
+[2023-06-04 22:23:07] INFO root fetch - processPackages [rsync-time-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsync-time-machine-1.0.0.tar.gz tmp/rsync-time-machine-1.1.0.tar.gz --markdown 20230604/r/rsync-time-machine/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 22:23:08] INFO root fetch - processPackages [django-admin-reset]: executing diffoscope
+[2023-06-04 22:23:08] INFO root fetch - processPackages [django-admin-reset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_admin_reset-0.6.1-py2.py3-none-any.whl.zip tmp/django_admin_reset-0.6.2-py2.py3-none-any.whl.zip --markdown 20230604/d/django-admin-reset/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-06-04 22:23:08] INFO root fetch - processPackages [saxo-apy]: Downloading https://files.pythonhosted.org/packages/70/1d/1eaf21c10593f66983fa46ae2388ca50880c3826683d3dddd032a52def5c/saxo_apy-0.2.5.tar.gz
+[2023-06-04 22:23:08] INFO root fetch - processPackages [saxo-apy]: executing diffoscope
+[2023-06-04 22:23:08] INFO root fetch - processPackages [saxo-apy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saxo_apy-0.2.4.tar.gz tmp/saxo_apy-0.2.5.tar.gz --markdown 20230604/s/saxo-apy/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-06-04 22:23:08] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 22:23:09] INFO root fetch - main [MainThread]: End processing [django-admin-reset]: success
+[2023-06-04 22:23:09] INFO root fetch - main [MainThread]: End processing [rsync-time-machine]: success
+[2023-06-04 22:23:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 22:23:09] INFO root fetch - main [MainThread]: End processing [pe]: success
+[2023-06-04 22:23:10] INFO root fetch - main [MainThread]: End processing [saxo-apy]: success
+[2023-06-04 22:23:13] INFO root fetch - main [MainThread]: End processing [bytecodemanipulation]: success
+[2023-06-04 22:23:13] INFO root fetch - main [MainThread]: Store serial: [18368410]
