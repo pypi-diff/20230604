@@ -3028,3 +3028,26 @@
 [2023-06-04 08:36:26] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
 [2023-06-04 08:36:26] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
 [2023-06-04 08:36:26] INFO root fetch - main [MainThread]: Store serial: [18364226]
+[2023-06-04 08:41:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364226]
+[2023-06-04 08:41:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 08:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib-dzne-filedata
+[2023-06-04 08:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adb-enhanced
+[2023-06-04 08:41:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adb-enhanced
+[2023-06-04 08:41:34] INFO root fetch - processPackages [adb-enhanced]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-06-04 08:41:34] INFO root fetch - processPackages [lib-dzne-filedata]: New version: [0.4.2] Old Version: [0.4.0]
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: Downloading https://files.pythonhosted.org/packages/66/96/61eb70ea1d11a9171a47d8d36796eaedc5fb10fea509b9e3853f4408b9a1/adb-enhanced-2.5.8.tar.gz
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: Downloading https://files.pythonhosted.org/packages/66/96/61eb70ea1d11a9171a47d8d36796eaedc5fb10fea509b9e3853f4408b9a1/adb-enhanced-2.5.8.tar.gz
+[2023-06-04 08:41:35] INFO root fetch - processPackages [lib-dzne-filedata]: Downloading https://files.pythonhosted.org/packages/54/44/6fc111c8d7abd09120c66d016c2707a84c8782220729185882a1c16f52bf/lib-dzne-filedata-0.4.2.tar.gz
+[2023-06-04 08:41:35] INFO root fetch - processPackages [lib-dzne-filedata]: executing diffoscope
+[2023-06-04 08:41:35] INFO root fetch - processPackages [lib-dzne-filedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-filedata-0.4.0.tar.gz tmp/lib-dzne-filedata-0.4.2.tar.gz --markdown 20230604/l/lib-dzne-filedata/0.4.0-0.4.2/diff.md --exclude *.pyd
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: Downloading https://files.pythonhosted.org/packages/3f/f8/923f303e71299b7de66680c9bc6f630793c4a4a05fb23f6dd65787981b42/adb-enhanced-2.5.9.tar.gz
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: Downloading https://files.pythonhosted.org/packages/3f/f8/923f303e71299b7de66680c9bc6f630793c4a4a05fb23f6dd65787981b42/adb-enhanced-2.5.9.tar.gz
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: executing diffoscope
+[2023-06-04 08:41:35] INFO root fetch - processPackages [adb-enhanced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adb-enhanced-2.5.8.tar.gz tmp/adb-enhanced-2.5.9.tar.gz --markdown 20230604/a/adb-enhanced/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-06-04 08:41:36] INFO root fetch - processPackages [adb-enhanced]: executing diffoscope
+[2023-06-04 08:41:36] INFO root fetch - processPackages [adb-enhanced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adb-enhanced-2.5.8.tar.gz tmp/adb-enhanced-2.5.9.tar.gz --markdown 20230604/a/adb-enhanced/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-06-04 08:41:36] INFO root fetch - main [MainThread]: End processing [lib-dzne-filedata]: success
+[2023-06-04 08:41:37] INFO root fetch - main [MainThread]: End processing [adb-enhanced]: success
+[2023-06-04 08:41:37] INFO root fetch - main [MainThread]: End processing [adb-enhanced]: success
+[2023-06-04 08:41:37] INFO root fetch - main [MainThread]: Store serial: [18364236]
