@@ -6976,3 +6976,70 @@
 [2023-06-04 16:47:32] INFO root fetch - main [MainThread]: End processing [kaiju-tools]: success
 [2023-06-04 16:47:33] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
 [2023-06-04 16:47:33] INFO root fetch - main [MainThread]: Store serial: [18366581]
+[2023-06-04 16:52:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366581]
+[2023-06-04 16:52:42] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redisamp
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zesty.zbs-api-securonix
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-project-center
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: once-utils
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cpp-linter-hooks
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: multipie
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openassist
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: catencfamily
+[2023-06-04 16:52:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:52:42] WARNING root fetch - processPackages [redisamp]: Skipping, unable to determine old version
+[2023-06-04 16:52:42] INFO root fetch - processPackages [redisamp]: Start processing: nonebot-plugin-twitter
+[2023-06-04 16:52:42] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [zesty.zbs-api-securonix]: New version: [1.0.2023.6.4.1685890121] Old Version: [1.0.2023.5.7.1683455929]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [django-project-center]: New version: [0.7] Old Version: [0.6]
+[2023-06-04 16:52:42] INFO root fetch - main [MainThread]: End processing [redisamp] error
+[2023-06-04 16:52:42] INFO root fetch - processPackages [once-utils]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [cpp-linter-hooks]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [multipie]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [openassist]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-06-04 16:52:42] INFO root fetch - processPackages [catencfamily]: New version: [0.0.62] Old Version: [0.0.61]
+[2023-06-04 16:52:42] WARNING root fetch - processPackages [nonebot-plugin-twitter]: Skipping, unable to determine old version
+[2023-06-04 16:52:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-twitter] error
+[2023-06-04 16:52:42] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/68/04/6f390e7f12e264bf8c4535ac3d0c0b6c702564820106df22de28f4e0e0df/myPackageLicensePrototype-1.2.4.tar.gz
+[2023-06-04 16:52:42] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/68/04/6f390e7f12e264bf8c4535ac3d0c0b6c702564820106df22de28f4e0e0df/myPackageLicensePrototype-1.2.4.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [openassist]: Downloading https://files.pythonhosted.org/packages/37/cd/455f5376417ee6c8e271151fcf8ea3ab21a2375aa0c78883a406de3e7354/openassist-2.2.4.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [cpp-linter-hooks]: Downloading https://files.pythonhosted.org/packages/e7/17/7013f9f0e022043b51e0944d84149a4529d8ae62106b98e7fd309e45ec43/cpp_linter_hooks-0.2.2-py3-none-any.whl
+[2023-06-04 16:52:43] INFO root fetch - processPackages [catencfamily]: Downloading https://files.pythonhosted.org/packages/44/56/f24b0d42a3b6390b4fdf8b6be8a82f271531b27202e264895f11dd3e2c83/catencfamily-0.0.62.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [multipie]: Downloading https://files.pythonhosted.org/packages/fb/2f/d653c6eda8597723baff5a9d26b04a59f73db1fb901162cb59a90538c4fd/multipie-1.1.4.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [once-utils]: Downloading https://files.pythonhosted.org/packages/e9/66/9534f8a4905268ae4c9df852021ebe6ba8a98a07a746de20f0d2476df4b4/once-utils-0.0.4.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [zesty.zbs-api-securonix]: Downloading https://files.pythonhosted.org/packages/93/ef/99494700305a48f7ec8327862af8f68680b8f8efd87ccaae6eeb193ec70d/zesty.zbs-api-securonix-1.0.2023.6.4.1685890121.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [openassist]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [openassist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openassist-2.2.3.tar.gz tmp/openassist-2.2.4.tar.gz --markdown 20230604/o/openassist/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/98/c9/36ca6c67753206eae1b11ff8ec306ba9d2a2c2d23d79a510115708d05d6a/myPackageLicensePrototype-1.2.5.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [django-project-center]: Downloading https://files.pythonhosted.org/packages/9e/c7/d3caea7156c467ebc0810407185fd3ca71a00f5dadd85fad446cd812d629/django-project-center-0.7.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/98/c9/36ca6c67753206eae1b11ff8ec306ba9d2a2c2d23d79a510115708d05d6a/myPackageLicensePrototype-1.2.5.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [catencfamily]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [catencfamily]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catencfamily-0.0.61.tar.gz tmp/catencfamily-0.0.62.tar.gz --markdown 20230604/c/catencfamily/0.0.61-0.0.62/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [multipie]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [multipie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multipie-1.1.3.tar.gz tmp/multipie-1.1.4.tar.gz --markdown 20230604/m/multipie/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [zesty.zbs-api-securonix]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [zesty.zbs-api-securonix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zesty.zbs-api-securonix-1.0.2023.5.7.1683455929.tar.gz tmp/zesty.zbs-api-securonix-1.0.2023.6.4.1685890121.tar.gz --markdown 20230604/z/zesty.zbs-api-securonix/1.0.2023.5.7.1683455929-1.0.2023.6.4.1685890121/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [cpp-linter-hooks]: Downloading https://files.pythonhosted.org/packages/6e/cd/351af2013f6b1a18fecd875ffa2310f52d03eb988e1181b878d17f650d53/cpp_linter_hooks-0.2.4-py3-none-any.whl
+[2023-06-04 16:52:43] INFO root fetch - processPackages [django-project-center]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [django-project-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-project-center-0.6.tar.gz tmp/django-project-center-0.7.tar.gz --markdown 20230604/d/django-project-center/0.6-0.7/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [once-utils]: Downloading https://files.pythonhosted.org/packages/c3/7e/d334c60e51e292a72c58b9801758cd842b8ddd6bec0933bc94bfcbc5df6a/once-utils-0.0.5.tar.gz
+[2023-06-04 16:52:43] INFO root fetch - processPackages [cpp-linter-hooks]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [cpp-linter-hooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpp_linter_hooks-0.2.2-py3-none-any.whl.zip tmp/cpp_linter_hooks-0.2.4-py3-none-any.whl.zip --markdown 20230604/c/cpp-linter-hooks/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.2.4.tar.gz tmp/myPackageLicensePrototype-1.2.5.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.2.4.tar.gz tmp/myPackageLicensePrototype-1.2.5.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-06-04 16:52:43] INFO root fetch - processPackages [once-utils]: executing diffoscope
+[2023-06-04 16:52:43] INFO root fetch - processPackages [once-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/once-utils-0.0.4.tar.gz tmp/once-utils-0.0.5.tar.gz --markdown 20230604/o/once-utils/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 16:52:44] INFO root fetch - main [MainThread]: End processing [openassist]: success
+[2023-06-04 16:52:44] INFO root fetch - main [MainThread]: End processing [cpp-linter-hooks]: success
+[2023-06-04 16:52:44] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:52:44] INFO root fetch - main [MainThread]: End processing [catencfamily]: success
+[2023-06-04 16:52:44] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:52:45] INFO root fetch - main [MainThread]: End processing [once-utils]: success
+[2023-06-04 16:52:45] INFO root fetch - main [MainThread]: End processing [django-project-center]: success
+[2023-06-04 16:52:45] INFO root fetch - main [MainThread]: End processing [zesty.zbs-api-securonix]: success
+[2023-06-04 16:52:47] INFO root fetch - main [MainThread]: End processing [multipie]: success
+[2023-06-04 16:52:47] INFO root fetch - main [MainThread]: Store serial: [18366612]
