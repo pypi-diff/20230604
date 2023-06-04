@@ -9850,3 +9850,49 @@
 [2023-06-04 22:28:24] INFO root fetch - main [MainThread]: End processing [circuitpython-display-ht16k33]: success
 [2023-06-04 22:28:25] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder]: success
 [2023-06-04 22:28:25] INFO root fetch - main [MainThread]: Store serial: [18368432]
+[2023-06-04 22:33:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368432]
+[2023-06-04 22:33:34] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: terver
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupytext
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lg-april-permissions
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lanarky
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: env2ini
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: caic-python
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: segytools
+[2023-06-04 22:33:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lollms
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lg-april-permissions]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 22:33:34] WARNING root fetch - processPackages [env2ini]: Skipping, unable to determine old version
+[2023-06-04 22:33:34] INFO root fetch - main [MainThread]: End processing [env2ini] error
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lanarky]: New version: [0.7.8] Old Version: [0.7.7]
+[2023-06-04 22:33:34] INFO root fetch - processPackages [terver]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 22:33:34] WARNING root fetch - processPackages [caic-python]: Skipping, unable to determine old version
+[2023-06-04 22:33:34] INFO root fetch - main [MainThread]: End processing [caic-python] error
+[2023-06-04 22:33:34] INFO root fetch - processPackages [segytools]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lollms]: New version: [1.1.9] Old Version: [1.1.7]
+[2023-06-04 22:33:34] INFO root fetch - processPackages [jupytext]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lg-april-permissions]: Downloading https://files.pythonhosted.org/packages/76/90/7e25c22d3cb70940f3e2efca1cb2045fde09b0bbd8140f0c53ccddba2f4d/lg_april_permissions-0.1.8.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lollms]: Downloading https://files.pythonhosted.org/packages/3d/63/5860743c06fbd44180fc9469d6a01bbc0644f8be5bc965843b7c2864a173/lollms-1.1.7.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lanarky]: Downloading https://files.pythonhosted.org/packages/e3/d0/25718133c4af1001b02549187ff8695d89f5c95564ffa6c0d575964115c1/lanarky-0.7.8.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [jupytext]: Downloading https://files.pythonhosted.org/packages/c5/d9/c4c30454d3e04920e2903d5c6d48ad928d94278dcf33ad3f96b055f41dd9/jupytext-1.9.0.tar.gz
+[2023-06-04 22:33:34] WARNING root fetch - processPackages [lollms]: Skipping package: exceeds size limit 17349845>=10485760
+[2023-06-04 22:33:34] INFO root fetch - main [MainThread]: End processing [lollms] error
+[2023-06-04 22:33:34] INFO root fetch - processPackages [terver]: Downloading https://files.pythonhosted.org/packages/28/ae/cec0ca6a11a4c3ea3376f9138d4b81eb2c435b6d6f2ef3146973f6d8b65e/terver-1.0.2.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lanarky]: executing diffoscope
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lanarky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lanarky-0.7.7.tar.gz tmp/lanarky-0.7.8.tar.gz --markdown 20230604/l/lanarky/0.7.7-0.7.8/diff.md --exclude *.pyd
+[2023-06-04 22:33:34] INFO root fetch - processPackages [segytools]: Downloading https://files.pythonhosted.org/packages/46/ff/d8f669aba2af7c4a172811c4987fc4e4e2d5c5f1e6fa914930069758b1a4/segytools-0.2.0.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [segytools]: executing diffoscope
+[2023-06-04 22:33:34] INFO root fetch - processPackages [segytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/segytools-0.1.1.tar.gz tmp/segytools-0.2.0.tar.gz --markdown 20230604/s/segytools/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 22:33:34] INFO root fetch - processPackages [terver]: Downloading https://files.pythonhosted.org/packages/c1/fd/f53f150b36a1bc9bd1e4f3e49d0a6f9e6cb017049cb560fc2381dece7874/terver-1.0.3.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [lg-april-permissions]: Downloading https://files.pythonhosted.org/packages/12/f4/aff8a613d3ea9214c0d0da72045c81cb625ca6c2d08bda976fce2e802975/lg_april_permissions-0.1.9.tar.gz
+[2023-06-04 22:33:34] INFO root fetch - processPackages [terver]: executing diffoscope
+[2023-06-04 22:33:34] INFO root fetch - processPackages [terver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terver-1.0.2.tar.gz tmp/terver-1.0.3.tar.gz --markdown 20230604/t/terver/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 22:33:35] INFO root fetch - processPackages [lg-april-permissions]: executing diffoscope
+[2023-06-04 22:33:35] INFO root fetch - processPackages [lg-april-permissions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lg_april_permissions-0.1.8.tar.gz tmp/lg_april_permissions-0.1.9.tar.gz --markdown 20230604/l/lg-april-permissions/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 22:33:35] INFO root fetch - processPackages [jupytext]: Downloading https://files.pythonhosted.org/packages/9a/ea/989cad1f4454819b08737a97c155a82f486e21cfbeda5451457f990679d6/jupytext-1.9.1.tar.gz
+[2023-06-04 22:33:35] WARNING root fetch - processPackages [jupytext]: Skipping package: exceeds size limit 44883075>=10485760
+[2023-06-04 22:33:35] INFO root fetch - main [MainThread]: End processing [jupytext] error
+[2023-06-04 22:33:35] INFO root fetch - main [MainThread]: End processing [lanarky]: success
+[2023-06-04 22:33:35] INFO root fetch - main [MainThread]: End processing [terver]: success
+[2023-06-04 22:33:35] INFO root fetch - main [MainThread]: End processing [segytools]: success
+[2023-06-04 22:33:36] INFO root fetch - main [MainThread]: End processing [lg-april-permissions]: success
+[2023-06-04 22:33:36] INFO root fetch - main [MainThread]: Store serial: [18368461]
