@@ -7393,3 +7393,37 @@
 [2023-06-04 17:29:45] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
 [2023-06-04 17:29:56] INFO root fetch - main [MainThread]: End processing [plotoptix]: success
 [2023-06-04 17:29:56] INFO root fetch - main [MainThread]: Store serial: [18366889]
+[2023-06-04 17:35:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366889]
+[2023-06-04 17:35:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 17:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytyper-weather-forecast
+[2023-06-04 17:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: InternetSpeedVisualizer
+[2023-06-04 17:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygeoweaver
+[2023-06-04 17:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metapensiero.sphinx.patchdb
+[2023-06-04 17:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: releasecmd
+[2023-06-04 17:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gdsfactory
+[2023-06-04 17:35:07] INFO root fetch - processPackages [pygeoweaver]: New version: [0.6.8] Old Version: [0.6.7]
+[2023-06-04 17:35:07] WARNING root fetch - processPackages [InternetSpeedVisualizer]: Skipping, unable to determine old version
+[2023-06-04 17:35:07] INFO root fetch - main [MainThread]: End processing [InternetSpeedVisualizer] error
+[2023-06-04 17:35:07] WARNING root fetch - processPackages [pytyper-weather-forecast]: Skipping, unable to determine old version
+[2023-06-04 17:35:07] INFO root fetch - main [MainThread]: End processing [pytyper-weather-forecast] error
+[2023-06-04 17:35:07] INFO root fetch - processPackages [releasecmd]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-06-04 17:35:07] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: New version: [4.0.dev5] Old Version: [4.0.dev4]
+[2023-06-04 17:35:07] INFO root fetch - processPackages [gdsfactory]: New version: [6.99.0] Old Version: [6.98.2]
+[2023-06-04 17:35:08] INFO root fetch - processPackages [gdsfactory]: executing diffoscope
+[2023-06-04 17:35:08] INFO root fetch - processPackages [gdsfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdsfactory-6.98.2.tar.gz tmp/gdsfactory-6.99.0.tar.gz --markdown 20230604/g/gdsfactory/6.98.2-6.99.0/diff.md --exclude *.pyd
+[2023-06-04 17:35:08] INFO root fetch - processPackages [releasecmd]: Downloading https://files.pythonhosted.org/packages/d8/e2/ad57cfecf9498dd057cfe1d4396f9f11d6cc6c9650a592b31fccf13231c1/releasecmd-0.8.1.tar.gz
+[2023-06-04 17:35:08] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Downloading https://files.pythonhosted.org/packages/45/3b/e4be44d6b5c896ba034b46ef54654c0dc93055c468de24554008ab5f6632/metapensiero.sphinx.patchdb-4.0.dev4.tar.gz
+[2023-06-04 17:35:08] INFO root fetch - processPackages [pygeoweaver]: Downloading https://files.pythonhosted.org/packages/e1/e6/cebbcc85961e976c30d3410fec3974b68de6578d7aa4a9934d08ae9b0255/pygeoweaver-0.6.8.tar.gz
+[2023-06-04 17:35:08] INFO root fetch - processPackages [pygeoweaver]: executing diffoscope
+[2023-06-04 17:35:08] INFO root fetch - processPackages [pygeoweaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeoweaver-0.6.7.tar.gz tmp/pygeoweaver-0.6.8.tar.gz --markdown 20230604/p/pygeoweaver/0.6.7-0.6.8/diff.md --exclude *.pyd
+[2023-06-04 17:35:08] INFO root fetch - processPackages [releasecmd]: Downloading https://files.pythonhosted.org/packages/a1/94/ae8b73f629bc894f4fad8313b0db20b60f1b027bc4aa2dbd6e814ef41a17/releasecmd-0.9.0.tar.gz
+[2023-06-04 17:35:08] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Downloading https://files.pythonhosted.org/packages/5c/6a/a71542d7c071990016aea011f1bf338b2cff20a3120006d479bc67faf523/metapensiero.sphinx.patchdb-4.0.dev5.tar.gz
+[2023-06-04 17:35:08] INFO root fetch - processPackages [releasecmd]: executing diffoscope
+[2023-06-04 17:35:08] INFO root fetch - processPackages [releasecmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/releasecmd-0.8.1.tar.gz tmp/releasecmd-0.9.0.tar.gz --markdown 20230604/r/releasecmd/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 17:35:08] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: executing diffoscope
+[2023-06-04 17:35:08] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metapensiero.sphinx.patchdb-4.0.dev4.tar.gz tmp/metapensiero.sphinx.patchdb-4.0.dev5.tar.gz --markdown 20230604/m/metapensiero.sphinx.patchdb/4.0.dev4-4.0.dev5/diff.md --exclude *.pyd
+[2023-06-04 17:35:09] INFO root fetch - main [MainThread]: End processing [releasecmd]: success
+[2023-06-04 17:35:09] INFO root fetch - main [MainThread]: End processing [pygeoweaver]: success
+[2023-06-04 17:35:09] INFO root fetch - main [MainThread]: End processing [metapensiero.sphinx.patchdb]: success
+[2023-06-04 17:35:15] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
+[2023-06-04 17:35:15] INFO root fetch - main [MainThread]: Store serial: [18366922]
