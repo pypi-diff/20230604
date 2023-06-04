@@ -9969,3 +9969,54 @@
 [2023-06-04 22:44:06] INFO root fetch - main [MainThread]: End processing [git2pdf]: success
 [2023-06-04 22:44:06] INFO root fetch - main [MainThread]: End processing [ventus]: success
 [2023-06-04 22:44:06] INFO root fetch - main [MainThread]: Store serial: [18368505]
+[2023-06-04 22:49:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368505]
+[2023-06-04 22:49:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: repo-chat
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: azureml-automl-core
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autosrt
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notionlib
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: git2pdf
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bitcoinrpc
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rabe-cridlib
+[2023-06-04 22:49:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: NREL-gaps
+[2023-06-04 22:49:15] INFO root fetch - processPackages [azureml-automl-core]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [notionlib]: New version: [0.2.dev0] Old Version: [0.1.dev0]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [repo-chat]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [git2pdf]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [autosrt]: New version: [1.3.3] Old Version: [1.3.1]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [bitcoinrpc]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [rabe-cridlib]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [NREL-gaps]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-06-04 22:49:15] INFO root fetch - processPackages [notionlib]: Downloading https://files.pythonhosted.org/packages/38/a4/c598ff0ba863a6ba61998f6107c9ab7bf5b1ef03423cad879704849d9366/notionlib-0.1.dev0.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/f5/8d/baa90edf939b06eb188c78e3c273c749ae45605fc71eff8ef9a5312eee84/git2pdf-0.1.3.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/81/f4/050479bd90029bd6bd48bad11404529d11fea8e971189a51f65b9ad265aa/autosrt-1.3.3.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [repo-chat]: Downloading https://files.pythonhosted.org/packages/9d/03/0ec1c72a16c2675367d4c98ba5b89fc63f17b1ade2ed6d16fd1a9cee06ec/repo_chat-0.1.3.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [git2pdf]: executing diffoscope
+[2023-06-04 22:49:15] INFO root fetch - processPackages [git2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git2pdf-0.1.2.tar.gz tmp/git2pdf-0.1.3.tar.gz --markdown 20230604/g/git2pdf/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 22:49:15] INFO root fetch - processPackages [rabe-cridlib]: Downloading https://files.pythonhosted.org/packages/e5/62/6970ce467b68609211ca982a9b28abe5ac5604a5ee1bec7a6726f07ee106/rabe_cridlib-0.9.0.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [NREL-gaps]: Downloading https://files.pythonhosted.org/packages/71/27/ed8b45b929425c893adf25968496b52cc36d704a69681669c5f433d615b1/NREL-gaps-0.3.4.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-06-04 22:49:15] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.3.1.tar.gz tmp/autosrt-1.3.3.tar.gz --markdown 20230604/a/autosrt/1.3.1-1.3.3/diff.md --exclude *.pyd
+[2023-06-04 22:49:15] INFO root fetch - processPackages [bitcoinrpc]: Downloading https://files.pythonhosted.org/packages/21/4b/2342ae688a7b1b87ce4b6f2988c8d5de147b71714f0d340d4c45bfe670d9/bitcoinrpc-0.6.1.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [repo-chat]: executing diffoscope
+[2023-06-04 22:49:15] INFO root fetch - processPackages [repo-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repo_chat-0.1.2.tar.gz tmp/repo_chat-0.1.3.tar.gz --markdown 20230604/r/repo-chat/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 22:49:15] INFO root fetch - processPackages [notionlib]: Downloading https://files.pythonhosted.org/packages/9a/79/22e5ed3b074c024d5e90121206b1176ca527304a4ce39f95d56aa985778a/notionlib-0.2.dev0.tar.gz
+[2023-06-04 22:49:15] INFO root fetch - processPackages [rabe-cridlib]: executing diffoscope
+[2023-06-04 22:49:15] INFO root fetch - processPackages [rabe-cridlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rabe_cridlib-0.8.0.tar.gz tmp/rabe_cridlib-0.9.0.tar.gz --markdown 20230604/r/rabe-cridlib/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 22:49:15] INFO root fetch - processPackages [azureml-automl-core]: executing diffoscope
+[2023-06-04 22:49:15] INFO root fetch - processPackages [azureml-automl-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_automl_core-1.9.0-py3-none-any.whl.zip tmp/azureml_automl_core-1.9.0.post1-py3-none-any.whl.zip --markdown 20230604/a/azureml-automl-core/1.9.0-1.9.0.post1/diff.md --exclude *.pyd
+[2023-06-04 22:49:16] INFO root fetch - processPackages [bitcoinrpc]: executing diffoscope
+[2023-06-04 22:49:16] INFO root fetch - processPackages [bitcoinrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitcoinrpc-0.6.0.tar.gz tmp/bitcoinrpc-0.6.1.tar.gz --markdown 20230604/b/bitcoinrpc/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-06-04 22:49:16] INFO root fetch - processPackages [notionlib]: executing diffoscope
+[2023-06-04 22:49:16] INFO root fetch - processPackages [notionlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notionlib-0.1.dev0.tar.gz tmp/notionlib-0.2.dev0.tar.gz --markdown 20230604/n/notionlib/0.1.dev0-0.2.dev0/diff.md --exclude *.pyd
+[2023-06-04 22:49:16] INFO root fetch - processPackages [NREL-gaps]: executing diffoscope
+[2023-06-04 22:49:16] INFO root fetch - processPackages [NREL-gaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NREL-gaps-0.3.3.tar.gz tmp/NREL-gaps-0.3.4.tar.gz --markdown 20230604/N/NREL-gaps/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [git2pdf]: success
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [repo-chat]: success
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [rabe-cridlib]: success
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [bitcoinrpc]: success
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [NREL-gaps]: success
+[2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [notionlib]: success
+[2023-06-04 22:50:10] INFO root fetch - main [MainThread]: End processing [azureml-automl-core]: success
+[2023-06-04 22:50:10] INFO root fetch - main [MainThread]: Store serial: [18368536]
