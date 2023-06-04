@@ -5259,3 +5259,64 @@
 [2023-06-04 13:20:00] INFO root fetch - main [MainThread]: End processing [tcod]: success
 [2023-06-04 13:20:02] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-06-04 13:20:02] INFO root fetch - main [MainThread]: Store serial: [18365539]
+[2023-06-04 13:25:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365539]
+[2023-06-04 13:25:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mon2pcap
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logidrivepy
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: domain-admin
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SimpleShape
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensordict-nightly
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyupway
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchtnt-nightly
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: muxtools
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchrl-nightly
+[2023-06-04 13:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vsmuxtools
+[2023-06-04 13:25:11] INFO root fetch - processPackages [mon2pcap]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 13:25:11] WARNING root fetch - processPackages [SimpleShape]: Skipping, unable to determine old version
+[2023-06-04 13:25:11] INFO root fetch - processPackages [logidrivepy]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [SimpleShape]: Start processing: odoo14-addon-account-reconciliation-widget
+[2023-06-04 13:25:11] INFO root fetch - main [MainThread]: End processing [SimpleShape] error
+[2023-06-04 13:25:11] INFO root fetch - processPackages [vsmuxtools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 13:25:11] WARNING root fetch - processPackages [pyupway]: Skipping, unable to determine old version
+[2023-06-04 13:25:11] INFO root fetch - main [MainThread]: End processing [pyupway] error
+[2023-06-04 13:25:11] INFO root fetch - processPackages [domain-admin]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [muxtools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [vsmuxtools]: Downloading https://files.pythonhosted.org/packages/f2/c5/cb6382ebe195722da841e2a576bfbbb304f4055ee30dd0f47bb88e4a688e/vsmuxtools-0.0.3.tar.gz
+[2023-06-04 13:25:11] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-06-04 13:25:11] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.6.2-py39-none-any.whl.zip tmp/tensordict_nightly-2023.6.3-py39-none-any.whl.zip --markdown 20230604/t/tensordict-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 13:25:11] INFO root fetch - processPackages [odoo14-addon-account-reconciliation-widget]: New version: [14.0.2.0.4] Old Version: [14.0.2.0.3.dev4]
+[2023-06-04 13:25:11] INFO root fetch - processPackages [mon2pcap]: Downloading https://files.pythonhosted.org/packages/d5/31/07f7d851a200a8445920575d40467048188c81b53efd7ae15472d3d9f70e/mon2pcap-1.0.2.tar.gz
+[2023-06-04 13:25:11] INFO root fetch - processPackages [vsmuxtools]: executing diffoscope
+[2023-06-04 13:25:11] INFO root fetch - processPackages [vsmuxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsmuxtools-0.0.2.tar.gz tmp/vsmuxtools-0.0.3.tar.gz --markdown 20230604/v/vsmuxtools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [muxtools]: Downloading https://files.pythonhosted.org/packages/9a/31/77f0c942271eddcbf9f3945679aad0ca78ce871996305e3af830bb8e4a27/muxtools-0.0.3.tar.gz
+[2023-06-04 13:25:12] INFO root fetch - processPackages [domain-admin]: Downloading https://files.pythonhosted.org/packages/0e/1b/b1b99010f42cf0783b8af5c18731c6c8fb6866930dcfec88da314ef28748/domain-admin-1.3.2.tar.gz
+[2023-06-04 13:25:12] INFO root fetch - processPackages [logidrivepy]: Downloading https://files.pythonhosted.org/packages/2e/a5/acfe7a5768fbadf6c1cae005932e7316ca1e77c002c6ece8a598c7b160d0/logidrivepy-0.2.0.tar.gz
+[2023-06-04 13:25:12] INFO root fetch - processPackages [mon2pcap]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [mon2pcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mon2pcap-1.0.1.tar.gz tmp/mon2pcap-1.0.2.tar.gz --markdown 20230604/m/mon2pcap/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [muxtools]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [muxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muxtools-0.0.2.tar.gz tmp/muxtools-0.0.3.tar.gz --markdown 20230604/m/muxtools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [domain-admin]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [domain-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domain-admin-1.3.1.tar.gz tmp/domain-admin-1.3.2.tar.gz --markdown 20230604/d/domain-admin/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [logidrivepy]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [logidrivepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logidrivepy-0.1.3.tar.gz tmp/logidrivepy-0.2.0.tar.gz --markdown 20230604/l/logidrivepy/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.6.2-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.6.3-cp39-cp39-win_amd64.whl.zip --markdown 20230604/t/torchrl-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/5c/63/8c70e7071ac8536487a10a1a72ecafa854a29717806303618f3cfdef6b31/torchtnt-nightly-2023.6.3.tar.gz
+[2023-06-04 13:25:12] INFO root fetch - processPackages [odoo14-addon-account-reconciliation-widget]: Downloading https://files.pythonhosted.org/packages/c0/d4/ec353a173526021b983224a2c122fae6c76eb405b4ea4c3647bd20fceff6/odoo14_addon_account_reconciliation_widget-14.0.2.0.4-py3-none-any.whl
+[2023-06-04 13:25:12] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.6.2.tar.gz tmp/torchtnt-nightly-2023.6.3.tar.gz --markdown 20230604/t/torchtnt-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 13:25:12] INFO root fetch - processPackages [odoo14-addon-account-reconciliation-widget]: executing diffoscope
+[2023-06-04 13:25:12] INFO root fetch - processPackages [odoo14-addon-account-reconciliation-widget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_reconciliation_widget-14.0.2.0.3.dev4-py3-none-any.whl.zip tmp/odoo14_addon_account_reconciliation_widget-14.0.2.0.4-py3-none-any.whl.zip --markdown 20230604/o/odoo14-addon-account-reconciliation-widget/14.0.2.0.3.dev4-14.0.2.0.4/diff.md --exclude *.pyd
+[2023-06-04 13:25:13] INFO root fetch - main [MainThread]: End processing [vsmuxtools]: success
+[2023-06-04 13:25:13] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-06-04 13:25:13] INFO root fetch - main [MainThread]: End processing [mon2pcap]: success
+[2023-06-04 13:25:13] INFO root fetch - main [MainThread]: End processing [logidrivepy]: success
+[2023-06-04 13:25:13] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-06-04 13:25:14] INFO root fetch - main [MainThread]: End processing [muxtools]: success
+[2023-06-04 13:25:14] INFO root fetch - main [MainThread]: End processing [domain-admin]: success
+[2023-06-04 13:25:14] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-06-04 13:25:14] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-reconciliation-widget]: success
+[2023-06-04 13:25:14] INFO root fetch - main [MainThread]: Store serial: [18365581]
