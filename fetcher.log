@@ -3602,3 +3602,28 @@
 [2023-06-04 10:07:42] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
 [2023-06-04 10:07:43] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-06-04 10:07:43] INFO root fetch - main [MainThread]: Store serial: [18364567]
+[2023-06-04 10:12:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364567]
+[2023-06-04 10:12:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 10:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textual-astview
+[2023-06-04 10:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: module-server
+[2023-06-04 10:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-fluepdot
+[2023-06-04 10:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyspark-project-setup
+[2023-06-04 10:12:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: module-client
+[2023-06-04 10:12:52] INFO root fetch - processPackages [textual-astview]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-06-04 10:12:52] WARNING root fetch - processPackages [pyspark-project-setup]: Skipping, unable to determine old version
+[2023-06-04 10:12:52] INFO root fetch - processPackages [python-fluepdot]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 10:12:52] INFO root fetch - main [MainThread]: End processing [pyspark-project-setup] error
+[2023-06-04 10:12:52] WARNING root fetch - processPackages [module-client]: Skipping, unable to determine old version
+[2023-06-04 10:12:52] WARNING root fetch - processPackages [module-server]: Skipping, unable to determine old version
+[2023-06-04 10:12:52] INFO root fetch - main [MainThread]: End processing [module-client] error
+[2023-06-04 10:12:52] INFO root fetch - main [MainThread]: End processing [module-server] error
+[2023-06-04 10:12:52] INFO root fetch - processPackages [python-fluepdot]: Downloading https://files.pythonhosted.org/packages/04/c0/88466ffdacc096d930cb411711e009bb0c13cacbfade45df28d5e750cfd9/python-fluepdot-0.0.1.tar.gz
+[2023-06-04 10:12:52] INFO root fetch - processPackages [textual-astview]: Downloading https://files.pythonhosted.org/packages/98/4f/f9acbb9b856eb13691676619bd9a82175c7ffc34ca3d4db149e9583d1c18/textual-astview-0.7.1.tar.gz
+[2023-06-04 10:12:52] INFO root fetch - processPackages [textual-astview]: executing diffoscope
+[2023-06-04 10:12:52] INFO root fetch - processPackages [textual-astview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-astview-0.7.0.tar.gz tmp/textual-astview-0.7.1.tar.gz --markdown 20230604/t/textual-astview/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-06-04 10:12:52] INFO root fetch - processPackages [python-fluepdot]: Downloading https://files.pythonhosted.org/packages/cf/51/2573eeca3b3858e13a32868b969c28de6cb5cc741dc547900ae94b7863ee/python-fluepdot-0.0.2.tar.gz
+[2023-06-04 10:12:53] INFO root fetch - processPackages [python-fluepdot]: executing diffoscope
+[2023-06-04 10:12:53] INFO root fetch - processPackages [python-fluepdot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-fluepdot-0.0.1.tar.gz tmp/python-fluepdot-0.0.2.tar.gz --markdown 20230604/p/python-fluepdot/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 10:12:53] INFO root fetch - main [MainThread]: End processing [python-fluepdot]: success
+[2023-06-04 10:12:53] INFO root fetch - main [MainThread]: End processing [textual-astview]: success
+[2023-06-04 10:12:53] INFO root fetch - main [MainThread]: Store serial: [18364594]
