@@ -7281,3 +7281,91 @@
 [2023-06-04 17:18:57] INFO root fetch - main [MainThread]: End processing [priceloop-api]: success
 [2023-06-04 17:18:57] INFO root fetch - main [MainThread]: End processing [karrio.dhl-express]: success
 [2023-06-04 17:18:57] INFO root fetch - main [MainThread]: Store serial: [18366820]
+[2023-06-04 17:24:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366820]
+[2023-06-04 17:24:06] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: karrio.dhl-express
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: karrio
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: core-utils
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hagrid
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sympy.keras
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: karrio.server.core
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: karrio.server.graph
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pydisort
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: karrio.server.manager
+[2023-06-04 17:24:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: karrio.server
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.dhl-express]: New version: [2023.5] Old Version: [2023.4.4]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio]: New version: [2023.5] Old Version: [2023.4.6]
+[2023-06-04 17:24:06] WARNING root fetch - processPackages [core-utils]: Skipping, unable to determine old version
+[2023-06-04 17:24:06] INFO root fetch - processPackages [core-utils]: Start processing: django-jsheet
+[2023-06-04 17:24:06] INFO root fetch - main [MainThread]: End processing [core-utils] error
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.server.manager]: New version: [2023.5] Old Version: [2023.4.4]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [hagrid]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [sympy.keras]: New version: [1.0.4] Old Version: [1.0.21]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.server.graph]: New version: [2023.5] Old Version: [2023.4.4]
+[2023-06-04 17:24:06] WARNING root fetch - processPackages [pydisort]: Skipping, unable to determine old version
+[2023-06-04 17:24:06] INFO root fetch - processPackages [pydisort]: Start processing: std.algorithm
+[2023-06-04 17:24:06] INFO root fetch - main [MainThread]: End processing [pydisort] error
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.server]: New version: [2023.5] Old Version: [2023.4.6]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.server.core]: New version: [2023.5] Old Version: [2023.4.5]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [django-jsheet]: New version: [0.2.1.4a0] Old Version: [0.2.1.3a0]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [std.algorithm]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.dhl-express]: executing diffoscope
+[2023-06-04 17:24:06] INFO root fetch - processPackages [karrio.dhl-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.dhl_express-2023.4.4-py3-none-any.whl.zip tmp/karrio.dhl_express-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.dhl-express/2023.4.4-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:24:06] INFO root fetch - processPackages [sympy.keras]: Downloading https://files.pythonhosted.org/packages/4a/6e/e615cda2b0d169a1c713473441e5b316061864d3543c3ce42f7ccf5a27d5/sympy.keras-1.0.21.tar.gz
+[2023-06-04 17:24:06] INFO root fetch - processPackages [django-jsheet]: Downloading https://files.pythonhosted.org/packages/9f/7c/037fc70e258c09bbd25ee1fe756c89d0d5d3a87a585e373ed2d2dde32106/django_jsheet-0.2.1.4a0.tar.gz
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio]: Downloading https://files.pythonhosted.org/packages/40/2f/4f07012629bef605ba02b7f07fd4f2206f495d38d074461853e47a03bc0e/karrio-2023.5-py3-none-any.whl
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.core]: Downloading https://files.pythonhosted.org/packages/61/2c/9cef5d9ac6a39bdacfd5d04aaf79c600936e3cfb0e3e99af1b0297709bf8/karrio.server.core-2023.5-py3-none-any.whl
+[2023-06-04 17:24:07] INFO root fetch - processPackages [django-jsheet]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [django-jsheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_jsheet-0.2.1.3a0.tar.gz tmp/django_jsheet-0.2.1.4a0.tar.gz --markdown 20230604/d/django-jsheet/0.2.1.3a0-0.2.1.4a0/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.manager]: Downloading https://files.pythonhosted.org/packages/55/a5/14059ef09bb1694c15b07a4e2d057ac2206feb914daa9b13c69aa67fb98b/karrio.server.manager-2023.5-py3-none-any.whl
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.graph]: Downloading https://files.pythonhosted.org/packages/6f/d1/827eedfa49c4fb276a3cdc299629715bec2d7ba6ad5f49d5ab20987d4cc8/karrio.server.graph-2023.5-py3-none-any.whl
+[2023-06-04 17:24:07] INFO root fetch - processPackages [std.algorithm]: Downloading https://files.pythonhosted.org/packages/fc/7a/a6fcd22000250c144d35d210bdfcc996f5c8a34f1cf80a1b4599e01b89b1/std.algorithm-1.1.4.tar.gz
+[2023-06-04 17:24:07] INFO root fetch - processPackages [hagrid]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [hagrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagrid-0.3.8.tar.gz tmp/hagrid-0.3.9.tar.gz --markdown 20230604/h/hagrid/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.graph]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.graph-2023.4.4-py3-none-any.whl.zip tmp/karrio.server.graph-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.server.graph/2023.4.4-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.core]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.core-2023.4.5-py3-none-any.whl.zip tmp/karrio.server.core-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.server.core/2023.4.5-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.manager]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server]: Downloading https://files.pythonhosted.org/packages/f7/4f/9b960df39dc9f12cfe362e3dfeee35eda4cc02fdacfadde9ab2fdf146939/karrio.server-2023.5-py3-none-any.whl
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server.manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.manager-2023.4.4-py3-none-any.whl.zip tmp/karrio.server.manager-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.server.manager/2023.4.4-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio-2023.4.6-py3-none-any.whl.zip tmp/karrio-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio/2023.4.6-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [std.algorithm]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [std.algorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std.algorithm-1.1.3.tar.gz tmp/std.algorithm-1.1.4.tar.gz --markdown 20230604/s/std.algorithm/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [sympy.keras]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [sympy.keras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sympy.keras-1.0.21.tar.gz tmp/sympy.keras-1.0.4.tar.gz --markdown 20230604/s/sympy.keras/1.0.21-1.0.4/diff.md --exclude *.pyd
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server]: executing diffoscope
+[2023-06-04 17:24:07] INFO root fetch - processPackages [karrio.server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server-2023.4.6-py3-none-any.whl.zip tmp/karrio.server-2023.5-py3-none-any.whl.zip --markdown 20230604/k/karrio.server/2023.4.6-2023.5/diff.md --exclude *.pyd
+[2023-06-04 17:24:08] INFO root fetch - processPackages [karrio.dhl-express]: Start processing: finalynx
+[2023-06-04 17:24:08] INFO root fetch - main [MainThread]: End processing [karrio.dhl-express]: success
+[2023-06-04 17:24:08] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-06-04 17:24:08] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-06-04 17:24:08] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230604/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-06-04 17:24:08] INFO root fetch - processPackages [hagrid]: Start processing: nwebclient
+[2023-06-04 17:24:08] INFO root fetch - main [MainThread]: End processing [hagrid]: success
+[2023-06-04 17:24:08] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 17:24:08] INFO root fetch - processPackages [karrio.server.graph]: Start processing: navconfig
+[2023-06-04 17:24:08] INFO root fetch - main [MainThread]: End processing [karrio.server.graph]: success
+[2023-06-04 17:24:08] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 17:24:08] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 17:24:08] INFO root fetch - processPackages [navconfig]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-06-04 17:24:09] INFO root fetch - processPackages [navconfig]: Downloading https://files.pythonhosted.org/packages/c8/72/719225196e43e48e6cd2bafc87bbd7cf01db1e57ff0eef2e208bf2ff5f33/navconfig-1.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 17:24:09] INFO root fetch - processPackages [karrio.server.manager]: Start processing: pylwr
+[2023-06-04 17:24:09] INFO root fetch - main [MainThread]: End processing [karrio.server.manager]: success
+[2023-06-04 17:24:09] INFO root fetch - processPackages [pylwr]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 17:24:09] INFO root fetch - processPackages [pylwr]: executing diffoscope
+[2023-06-04 17:24:09] INFO root fetch - processPackages [pylwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylwr-1.0.2.tar.gz tmp/pylwr-1.0.3.tar.gz --markdown 20230604/p/pylwr/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 17:24:09] INFO root fetch - processPackages [navconfig]: executing diffoscope
+[2023-06-04 17:24:09] INFO root fetch - processPackages [navconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navconfig-1.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/navconfig-1.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/n/navconfig/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-06-04 17:24:09] INFO root fetch - main [MainThread]: End processing [karrio]: success
+[2023-06-04 17:24:09] INFO root fetch - main [MainThread]: End processing [karrio.server.core]: success
+[2023-06-04 17:24:10] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 17:24:10] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-06-04 17:24:10] INFO root fetch - main [MainThread]: End processing [pylwr]: success
+[2023-06-04 17:24:10] INFO root fetch - main [MainThread]: End processing [navconfig]: success
+[2023-06-04 17:24:10] INFO root fetch - main [MainThread]: End processing [karrio.server]: success
+[2023-06-04 17:24:11] INFO root fetch - main [MainThread]: End processing [django-jsheet]: success
+[2023-06-04 17:24:12] INFO root fetch - main [MainThread]: End processing [std.algorithm]: success
+[2023-06-04 17:24:33] INFO root fetch - main [MainThread]: End processing [sympy.keras]: success
+[2023-06-04 17:24:33] INFO root fetch - main [MainThread]: Store serial: [18366872]
