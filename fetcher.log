@@ -3051,3 +3051,30 @@
 [2023-06-04 08:41:37] INFO root fetch - main [MainThread]: End processing [adb-enhanced]: success
 [2023-06-04 08:41:37] INFO root fetch - main [MainThread]: End processing [adb-enhanced]: success
 [2023-06-04 08:41:37] INFO root fetch - main [MainThread]: Store serial: [18364236]
+[2023-06-04 08:46:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364236]
+[2023-06-04 08:46:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 08:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mathbib
+[2023-06-04 08:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textual-fspicker
+[2023-06-04 08:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: applyx
+[2023-06-04 08:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hytest
+[2023-06-04 08:46:46] INFO root fetch - processPackages [mathbib]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-06-04 08:46:46] INFO root fetch - processPackages [textual-fspicker]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 08:46:46] INFO root fetch - processPackages [applyx]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-06-04 08:46:46] INFO root fetch - processPackages [hytest]: New version: [0.8.8] Old Version: [0.8.7]
+[2023-06-04 08:46:46] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/19/a9/39bf9344a86330fc3b16c61eff28e28c114e7732f371ddcf5c8ab3bed799/mathbib-0.6.3.tar.gz
+[2023-06-04 08:46:46] INFO root fetch - processPackages [textual-fspicker]: Downloading https://files.pythonhosted.org/packages/98/36/254cdef493fee47c1f96a1828856845a89941e707044f178997ed98e50c1/textual_fspicker-0.0.8-py3-none-any.whl
+[2023-06-04 08:46:46] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/55/82/e3be3f202f0a3163a1550c0b5b78be1aea8301a9ac6459c4ad6c5d2f7499/applyx-0.2.9-py3-none-any.whl
+[2023-06-04 08:46:46] INFO root fetch - processPackages [hytest]: Downloading https://files.pythonhosted.org/packages/7a/aa/e13098a5e2e3da2f6e882fe84bfed51262e95251012c3a2687206ef3b652/hytest-0.8.8-py3-none-any.whl
+[2023-06-04 08:46:46] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-06-04 08:46:46] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.6.2.tar.gz tmp/mathbib-0.6.3.tar.gz --markdown 20230604/m/mathbib/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-06-04 08:46:46] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-06-04 08:46:46] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.7-py3-none-any.whl.zip tmp/applyx-0.2.9-py3-none-any.whl.zip --markdown 20230604/a/applyx/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 08:46:46] INFO root fetch - processPackages [textual-fspicker]: executing diffoscope
+[2023-06-04 08:46:46] INFO root fetch - processPackages [textual-fspicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual_fspicker-0.0.7-py3-none-any.whl.zip tmp/textual_fspicker-0.0.8-py3-none-any.whl.zip --markdown 20230604/t/textual-fspicker/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 08:46:46] INFO root fetch - processPackages [hytest]: executing diffoscope
+[2023-06-04 08:46:46] INFO root fetch - processPackages [hytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hytest-0.8.7-py3-none-any.whl.zip tmp/hytest-0.8.8-py3-none-any.whl.zip --markdown 20230604/h/hytest/0.8.7-0.8.8/diff.md --exclude *.pyd
+[2023-06-04 08:46:47] INFO root fetch - main [MainThread]: End processing [textual-fspicker]: success
+[2023-06-04 08:46:47] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-06-04 08:46:48] INFO root fetch - main [MainThread]: End processing [hytest]: success
+[2023-06-04 08:46:48] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2023-06-04 08:46:48] INFO root fetch - main [MainThread]: Store serial: [18364245]
