@@ -1084,3 +1084,122 @@
 [2023-06-04 02:19:31] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2023-06-04 02:19:56] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
 [2023-06-04 02:19:56] INFO root fetch - main [MainThread]: Store serial: [18363086]
+[2023-06-04 02:25:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363086]
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: Found 30 changed packages
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: constructs
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.appsync-utils
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-pipelines-github
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s-valheim
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-budibase
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: syslog-udp
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prometheus-psutil-exporter
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wheel-cache
+[2023-06-04 02:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pip-cache-dir
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [prometheus-psutil-exporter]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [prometheus-psutil-exporter]: Start processing: cdk-nag
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [prometheus-psutil-exporter] error
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [wheel-cache]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [wheel-cache]: Start processing: celery-poolroutes
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [wheel-cache] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk8s-valheim]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [syslog-udp]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [pip-cache-dir]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [syslog-udp]: Start processing: cdklabs.cdk-ethereum-node
+[2023-06-04 02:25:06] INFO root fetch - processPackages [pip-cache-dir]: Start processing: celery-routr
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [syslog-udp] error
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [pip-cache-dir] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-pipelines-github]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [celery-routr]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [celery-routr]: Start processing: celery-routing
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [celery-routr] error
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [celery-poolroutes]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [celery-poolroutes]: Start processing: regexparam
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [celery-poolroutes] error
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [regexparam]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [regexparam]: Start processing: cdk-gitlab-runner
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [regexparam] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [celery-routing]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [celery-routing]: Start processing: kubespy
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [celery-routing] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [kubespy]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [kubespy]: Start processing: prometheus-client-twisted
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [kubespy] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [prometheus-client-twisted]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [prometheus-client-twisted]: Start processing: prometheus-api-metrics
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [prometheus-client-twisted] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.8.tar.gz tmp/cdk-budibase-0.0.9.tar.gz --markdown 20230604/c/cdk-budibase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 02:25:06] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-06-04 02:25:06] WARNING root fetch - processPackages [prometheus-api-metrics]: Skipping, unable to determine old version
+[2023-06-04 02:25:06] INFO root fetch - processPackages [prometheus-api-metrics]: Start processing: cdktf-surreal-backend
+[2023-06-04 02:25:06] INFO root fetch - main [MainThread]: End processing [prometheus-api-metrics] error
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.98.tar.gz tmp/cdklabs.appsync-utils-0.0.99.tar.gz --markdown 20230604/c/cdklabs.appsync-utils/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdktf-surreal-backend]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk8s-valheim]: executing diffoscope
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk8s-valheim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-valheim-0.0.8.tar.gz tmp/cdk8s-valheim-0.0.9.tar.gz --markdown 20230604/c/cdk8s-valheim/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2023-06-04 02:25:06] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20230604/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-pipelines-github]: executing diffoscope
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-pipelines-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-pipelines-github-0.4.8.tar.gz tmp/cdk-pipelines-github-0.4.9.tar.gz --markdown 20230604/c/cdk-pipelines-github/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230604/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20230604/c/cdk-nag/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdktf-surreal-backend]: executing diffoscope
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdktf-surreal-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-surreal-backend-1.0.98.tar.gz tmp/cdktf-surreal-backend-1.0.99.tar.gz --markdown 20230604/c/cdktf-surreal-backend/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-06-04 02:25:07] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230604/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:07] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-06-04 02:25:07] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230604/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-gitlab-runner]: Start processing: pysanitizer
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [pysanitizer]: Skipping, unable to determine old version
+[2023-06-04 02:25:08] INFO root fetch - processPackages [pysanitizer]: Start processing: graphene-arangodb
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [pysanitizer] error
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [graphene-arangodb]: Skipping, unable to determine old version
+[2023-06-04 02:25:08] INFO root fetch - processPackages [graphene-arangodb]: Start processing: arangodb-python
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [graphene-arangodb] error
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-nag]: Start processing: arangodb-driver
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Start processing: foxx-py
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [arangodb-python]: Skipping, unable to determine old version
+[2023-06-04 02:25:08] INFO root fetch - processPackages [arangodb-python]: Start processing: sqlalchemy-presto
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [arangodb-python] error
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [arangodb-driver]: Skipping, unable to determine old version
+[2023-06-04 02:25:08] INFO root fetch - processPackages [arangodb-driver]: Start processing: cdk-cr-constructs
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [arangodb-driver] error
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdktf-surreal-backend]: Start processing: cdk-aurora-globaldatabase
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdktf-surreal-backend]: success
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [foxx-py]: Skipping, unable to determine old version
+[2023-06-04 02:25:08] INFO root fetch - processPackages [foxx-py]: Start processing: lollms
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [foxx-py] error
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [sqlalchemy-presto]: Skipping, unable to determine old version
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [sqlalchemy-presto] error
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-06-04 02:25:08] INFO root fetch - processPackages [lollms]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/fe/58/3e435ab85ca79a785db1238624c29b48fc60946bcbae9b2813fd45cb0a41/cdk-cr-constructs-2.1.98.tar.gz
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2023-06-04 02:25:08] INFO root fetch - processPackages [lollms]: executing diffoscope
+[2023-06-04 02:25:08] INFO root fetch - processPackages [lollms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lollms-1.0.3.tar.gz tmp/lollms-1.1.0.tar.gz --markdown 20230604/l/lollms/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 02:25:08] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 12826336>=10485760
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-06-04 02:25:08] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230604/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-06-04 02:25:08] INFO root fetch - main [MainThread]: End processing [cdk8s-valheim]: success
+[2023-06-04 02:25:09] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2023-06-04 02:25:09] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2023-06-04 02:25:09] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-06-04 02:25:09] INFO root fetch - main [MainThread]: End processing [lollms]: success
+[2023-06-04 02:25:10] INFO root fetch - main [MainThread]: End processing [cdk-pipelines-github]: success
+[2023-06-04 02:25:10] INFO root fetch - main [MainThread]: Store serial: [18363190]
