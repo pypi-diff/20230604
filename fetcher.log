@@ -2554,3 +2554,24 @@
 [2023-06-04 06:53:33] INFO root fetch - main [MainThread]: End processing [twofas-cli]: success
 [2023-06-04 06:53:33] INFO root fetch - main [MainThread]: End processing [bantam]: success
 [2023-06-04 06:53:33] INFO root fetch - main [MainThread]: Store serial: [18363939]
+[2023-06-04 06:58:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363939]
+[2023-06-04 06:58:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 06:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openllm
+[2023-06-04 06:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wpiformat
+[2023-06-04 06:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sleep-inhibitor
+[2023-06-04 06:58:42] INFO root fetch - processPackages [wpiformat]: New version: [2023.21] Old Version: [2023.20]
+[2023-06-04 06:58:42] INFO root fetch - processPackages [sleep-inhibitor]: New version: [1.9] Old Version: [1.8.1]
+[2023-06-04 06:58:42] INFO root fetch - processPackages [openllm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 06:58:42] INFO root fetch - processPackages [wpiformat]: Downloading https://files.pythonhosted.org/packages/ae/59/f12703c9f064519dce0e1ad94cd5dff85adfe51a3d3e760dca8f81945e34/wpiformat-2023.21-py3-none-any.whl
+[2023-06-04 06:58:42] INFO root fetch - processPackages [sleep-inhibitor]: Downloading https://files.pythonhosted.org/packages/c1/3a/3a6c64088b2a48f43e4460792b144c42fbb4805e71ef2450ed9a82c63830/sleep-inhibitor-1.8.1.tar.gz
+[2023-06-04 06:58:42] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/36/cd/20848bcb4c9b68c31a099ce94b6edef3d995143454f89cbb9db8e7b7c99f/openllm-0.0.8.tar.gz
+[2023-06-04 06:58:42] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11989091>=10485760
+[2023-06-04 06:58:42] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-06-04 06:58:42] INFO root fetch - processPackages [wpiformat]: executing diffoscope
+[2023-06-04 06:58:42] INFO root fetch - processPackages [wpiformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpiformat-2023.20-py3-none-any.whl.zip tmp/wpiformat-2023.21-py3-none-any.whl.zip --markdown 20230604/w/wpiformat/2023.20-2023.21/diff.md --exclude *.pyd
+[2023-06-04 06:58:42] INFO root fetch - processPackages [sleep-inhibitor]: Downloading https://files.pythonhosted.org/packages/e1/0c/4e177110002dd7654fa87c662a524b3dbc80c6f08624bede67ad498257ad/sleep-inhibitor-1.9.tar.gz
+[2023-06-04 06:58:42] INFO root fetch - processPackages [sleep-inhibitor]: executing diffoscope
+[2023-06-04 06:58:42] INFO root fetch - processPackages [sleep-inhibitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleep-inhibitor-1.8.1.tar.gz tmp/sleep-inhibitor-1.9.tar.gz --markdown 20230604/s/sleep-inhibitor/1.8.1-1.9/diff.md --exclude *.pyd
+[2023-06-04 06:58:43] INFO root fetch - main [MainThread]: End processing [wpiformat]: success
+[2023-06-04 06:58:43] INFO root fetch - main [MainThread]: End processing [sleep-inhibitor]: success
+[2023-06-04 06:58:43] INFO root fetch - main [MainThread]: Store serial: [18363947]
