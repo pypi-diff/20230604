@@ -4326,3 +4326,111 @@
 [2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-payment-order]: success
 [2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [python-tado]: success
 [2023-06-04 11:32:32] INFO root fetch - main [MainThread]: Store serial: [18364971]
+[2023-06-04 11:37:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364971]
+[2023-06-04 11:37:41] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onboardme
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: get-eyedata
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [onboardme]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:41] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/ac/05/53de9709172240cc42bef13697981e449fe6293b5b25d0802fdb313e0398/get_eyedata-1.1.3.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/0f/1c/504bb23495ab9a221cd716f893faab6f09fd1ccbaaf461073e2893ab87f2/onboardme-1.4.1.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.4.0.tar.gz tmp/onboardme-1.4.1.tar.gz --markdown 20230604/o/onboardme/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: Downloading https://files.pythonhosted.org/packages/60/a1/d1ec646e413b9267511ed0d27668bffa52f1c3fe8840f20958b6665caad6/get_eyedata-1.1.4.tar.gz
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: executing diffoscope
+[2023-06-04 11:37:42] INFO root fetch - processPackages [get-eyedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_eyedata-1.1.3.tar.gz tmp/get_eyedata-1.1.4.tar.gz --markdown 20230604/g/get-eyedata/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 11:37:44] INFO root fetch - processPackages [get-eyedata]: Start processing: opentherm-web-api
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [opentherm-web-api]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 11:37:44] INFO root fetch - processPackages [get-eyedata]: Start processing: oarepo-ui
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [oarepo-ui]: New version: [5.0.9] Old Version: [5.0.8]
+[2023-06-04 11:37:44] INFO root fetch - processPackages [get-eyedata]: Start processing: ezbeq
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [opentherm-web-api]: Downloading https://files.pythonhosted.org/packages/9e/8a/b6f6e85e1f99bdf14fb9e7dd074b2ca190a6fa00d96c1fd7b9b0fb9c83ca/opentherm-web-api-0.1.0.tar.gz
+[2023-06-04 11:37:44] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-06-04 11:37:44] INFO root fetch - processPackages [get-eyedata]: Start processing: tf-nightly-cpu
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [get-eyedata]: Start processing: martin-binance
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [martin-binance]: New version: [1.3.0b18] Old Version: [1.3.0b17]
+[2023-06-04 11:37:44] INFO root fetch - processPackages [get-eyedata]: Start processing: gtci
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] WARNING root fetch - processPackages [gtci]: Skipping, unable to determine old version
+[2023-06-04 11:37:44] INFO root fetch - processPackages [gtci]: Start processing: nwebclient
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [gtci] error
+[2023-06-04 11:37:44] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-06-04 11:37:44] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230604/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-06-04 11:37:44] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [opentherm-web-api]: Downloading https://files.pythonhosted.org/packages/1e/b3/69b7850256ae19f22aeaa7ff7ffe066ebedc69ad73588acd32343322bd11/opentherm-web-api-0.1.1.tar.gz
+[2023-06-04 11:37:44] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.14.0.dev20230604] Old Version: [2.14.0.dev20230603]
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [get-eyedata]: success
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-06-04 11:37:44] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 11:37:44] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 11:37:44] INFO root fetch - processPackages [opentherm-web-api]: executing diffoscope
+[2023-06-04 11:37:44] INFO root fetch - processPackages [opentherm-web-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentherm-web-api-0.1.0.tar.gz tmp/opentherm-web-api-0.1.1.tar.gz --markdown 20230604/o/opentherm-web-api/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 11:37:44] INFO root fetch - processPackages [martin-binance]: Downloading https://files.pythonhosted.org/packages/4c/38/b21559ffeb35e710e360a60567ef6e3d01d2a7e72c35d06857bf03477166/martin-binance-1.3.0b18.tar.gz
+[2023-06-04 11:37:44] INFO root fetch - processPackages [oarepo-ui]: executing diffoscope
+[2023-06-04 11:37:44] INFO root fetch - processPackages [oarepo-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-ui-5.0.8.tar.gz tmp/oarepo-ui-5.0.9.tar.gz --markdown 20230604/o/oarepo-ui/5.0.8-5.0.9/diff.md --exclude *.pyd
+[2023-06-04 11:37:44] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/9f/42/8c5929cdda3e89a773699aeb2cb95e9560e73d913fdb4935e128f8c17e45/tf_nightly_cpu-2.14.0.dev20230603-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 11:37:44] WARNING root fetch - processPackages [tf-nightly-cpu]: Skipping package: exceeds size limit 194285558>=10485760
+[2023-06-04 11:37:44] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu] error
+[2023-06-04 11:37:45] INFO root fetch - processPackages [martin-binance]: executing diffoscope
+[2023-06-04 11:37:45] INFO root fetch - processPackages [martin-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/martin-binance-1.3.0b17.tar.gz tmp/martin-binance-1.3.0b18.tar.gz --markdown 20230604/m/martin-binance/1.3.0b17-1.3.0b18/diff.md --exclude *.pyd
+[2023-06-04 11:37:45] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 11:37:45] INFO root fetch - main [MainThread]: End processing [opentherm-web-api]: success
+[2023-06-04 11:37:45] INFO root fetch - main [MainThread]: End processing [oarepo-ui]: success
+[2023-06-04 11:37:47] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
+[2023-06-04 11:37:53] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-06-04 11:37:53] INFO root fetch - main [MainThread]: Store serial: [18365032]
