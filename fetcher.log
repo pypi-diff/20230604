@@ -8860,3 +8860,60 @@
 [2023-06-04 20:32:01] INFO root fetch - main [MainThread]: End processing [otpme]: success
 [2023-06-04 20:32:03] INFO root fetch - main [MainThread]: End processing [yarok]: success
 [2023-06-04 20:32:03] INFO root fetch - main [MainThread]: Store serial: [18367800]
+[2023-06-04 20:37:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367800]
+[2023-06-04 20:37:12] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lamin_logger
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bovine
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bovine-store
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gemseo-mlearning
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tulyp
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bovine-process
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: strictdoc
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:37:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mkdocs-walt
+[2023-06-04 20:37:12] INFO root fetch - processPackages [lamin_logger]: New version: [0.3rc1] Old Version: [0.3.3]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-store]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [gemseo-mlearning]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-process]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-store]: Downloading https://files.pythonhosted.org/packages/f3/90/33a8d082f524a74148d2e0665e53a2faa21dc46f042cd654538f393e769f/bovine_store-0.2.5.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20230604/s/strictdoc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 20:37:12] WARNING root fetch - processPackages [tulyp]: Skipping, unable to determine old version
+[2023-06-04 20:37:12] INFO root fetch - main [MainThread]: End processing [tulyp] error
+[2023-06-04 20:37:12] INFO root fetch - processPackages [mkdocs-walt]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 20:37:12] INFO root fetch - processPackages [lamin_logger]: Downloading https://files.pythonhosted.org/packages/cf/57/76934e90a6b2e7473cebec7d11320def7e365d8b4a48834b8239c0e9252c/lamin_logger-0.3.3.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/71/59/9e7532e05f9ca912bec444ef8d514f8fc6064c3be9b0dab2d515b8f76750/bovine-0.2.5.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [gemseo-mlearning]: Downloading https://files.pythonhosted.org/packages/fc/27/715ca5170a043882085e8c6ae5ff0f5afc647b4d3ec7b71f60670df4bd3a/gemseo-mlearning-1.0.1.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-process]: Downloading https://files.pythonhosted.org/packages/65/ef/806fecb6f25d0180c7b17c6146d6f01f20913ad2244ec256158dc48cd532/bovine_process-0.2.5.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/7b/ca/3747acf828d2d3b957831b5ca2e947bc246a428d651d22fad3f888a00967/kelpie_personal_trainer-0.1.9.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-store]: Downloading https://files.pythonhosted.org/packages/b3/e3/8085ff29ccd29237eda6dbb6b37477cf850fe8001ba2093005d9ac0c7be3/bovine_store-0.2.6.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:37:12] INFO root fetch - processPackages [mkdocs-walt]: Downloading https://files.pythonhosted.org/packages/e0/c6/f281b3f8a5b90ac89b7a997a7fb9e7d9c5d1683a00eebe3a3b83c2df36ec/mkdocs-walt-0.1.1.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [lamin_logger]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [lamin_logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamin_logger-0.3.3.tar.gz tmp/lamin_logger-0.3rc1.tar.gz --markdown 20230604/l/lamin_logger/0.3.3-0.3rc1/diff.md --exclude *.pyd
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-store]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_store-0.2.5.tar.gz tmp/bovine_store-0.2.6.tar.gz --markdown 20230604/b/bovine-store/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/60/af/e792fc81a19e29f8a9b47fc531a7234978af80ff475aaaee1536169eda6e/bovine-0.2.6.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [gemseo-mlearning]: Downloading https://files.pythonhosted.org/packages/fd/f9/6962cbcdef43b1b12b738e688c4c977c90b2b991e5dde20c0a4527922ec8/gemseo-mlearning-1.1.0.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-process]: Downloading https://files.pythonhosted.org/packages/7b/5d/33e8f7f69e1d032e9bbf20d257c0ffe1aa6f8f2ff2d7eb3a943a6d28350a/bovine_process-0.2.6.tar.gz
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine-0.2.5.tar.gz tmp/bovine-0.2.6.tar.gz --markdown 20230604/b/bovine/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-04 20:37:12] INFO root fetch - processPackages [gemseo-mlearning]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [gemseo-mlearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemseo-mlearning-1.0.1.tar.gz tmp/gemseo-mlearning-1.1.0.tar.gz --markdown 20230604/g/gemseo-mlearning/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-process]: executing diffoscope
+[2023-06-04 20:37:12] INFO root fetch - processPackages [bovine-process]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_process-0.2.5.tar.gz tmp/bovine_process-0.2.6.tar.gz --markdown 20230604/b/bovine-process/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-04 20:37:13] INFO root fetch - processPackages [mkdocs-walt]: executing diffoscope
+[2023-06-04 20:37:13] INFO root fetch - processPackages [mkdocs-walt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-walt-0.1.0.tar.gz tmp/mkdocs-walt-0.1.1.tar.gz --markdown 20230604/m/mkdocs-walt/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 20:37:13] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:37:14] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2023-06-04 20:37:14] INFO root fetch - main [MainThread]: End processing [lamin_logger]: success
+[2023-06-04 20:37:14] INFO root fetch - main [MainThread]: End processing [mkdocs-walt]: success
+[2023-06-04 20:37:14] INFO root fetch - main [MainThread]: End processing [bovine-store]: success
+[2023-06-04 20:37:15] INFO root fetch - main [MainThread]: End processing [bovine-process]: success
+[2023-06-04 20:37:15] INFO root fetch - main [MainThread]: End processing [gemseo-mlearning]: success
+[2023-06-04 20:37:15] INFO root fetch - main [MainThread]: End processing [bovine]: success
+[2023-06-04 20:37:15] INFO root fetch - main [MainThread]: Store serial: [18367830]
