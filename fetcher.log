@@ -2369,3 +2369,21 @@
 [2023-06-04 05:46:22] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
 [2023-06-04 05:46:24] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-fiscal]: success
 [2023-06-04 05:46:24] INFO root fetch - main [MainThread]: Store serial: [18363827]
+[2023-06-04 05:51:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363827]
+[2023-06-04 05:51:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 05:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poe-api
+[2023-06-04 05:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wpiformat
+[2023-06-04 05:51:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epubsum
+[2023-06-04 05:51:32] INFO root fetch - processPackages [wpiformat]: New version: [2023.20] Old Version: [2023.19]
+[2023-06-04 05:51:32] WARNING root fetch - processPackages [epubsum]: Skipping, unable to determine old version
+[2023-06-04 05:51:32] INFO root fetch - main [MainThread]: End processing [epubsum] error
+[2023-06-04 05:51:32] INFO root fetch - processPackages [poe-api]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-06-04 05:51:33] INFO root fetch - processPackages [wpiformat]: Downloading https://files.pythonhosted.org/packages/27/0a/ff951356ca873c640c9e530be87b1677f023f58c5f49f7b75164549a845a/wpiformat-2023.20-py3-none-any.whl
+[2023-06-04 05:51:33] INFO root fetch - processPackages [wpiformat]: executing diffoscope
+[2023-06-04 05:51:33] INFO root fetch - processPackages [wpiformat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wpiformat-2023.19-py3-none-any.whl.zip tmp/wpiformat-2023.20-py3-none-any.whl.zip --markdown 20230604/w/wpiformat/2023.19-2023.20/diff.md --exclude *.pyd
+[2023-06-04 05:51:33] INFO root fetch - processPackages [poe-api]: Downloading https://files.pythonhosted.org/packages/bb/b2/964310ba4d13c2566a154d4c250b7acbe78f7c3a25fa67b705eaaf2000ee/poe_api-0.4.4-py3-none-any.whl
+[2023-06-04 05:51:33] INFO root fetch - processPackages [poe-api]: executing diffoscope
+[2023-06-04 05:51:33] INFO root fetch - processPackages [poe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe_api-0.4.3-py3-none-any.whl.zip tmp/poe_api-0.4.4-py3-none-any.whl.zip --markdown 20230604/p/poe-api/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-06-04 05:51:34] INFO root fetch - main [MainThread]: End processing [poe-api]: success
+[2023-06-04 05:51:34] INFO root fetch - main [MainThread]: End processing [wpiformat]: success
+[2023-06-04 05:51:34] INFO root fetch - main [MainThread]: Store serial: [18363836]
