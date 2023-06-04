@@ -7456,3 +7456,49 @@
 [2023-06-04 17:40:26] INFO root fetch - main [MainThread]: End processing [richspot]: success
 [2023-06-04 17:40:26] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatglm]: success
 [2023-06-04 17:40:26] INFO root fetch - main [MainThread]: Store serial: [18366946]
+[2023-06-04 17:45:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366946]
+[2023-06-04 17:45:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crispy-forms-foundation
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylwr
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-master
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: applyx
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shareddata
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-buildkite-bridge
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nwebclient
+[2023-06-04 17:45:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chyp
+[2023-06-04 17:45:35] INFO root fetch - processPackages [applyx]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-06-04 17:45:35] INFO root fetch - processPackages [pylwr]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-04 17:45:35] INFO root fetch - processPackages [crispy-forms-foundation]: New version: [1.0.0] Old Version: [0.9.0]
+[2023-06-04 17:45:35] ERROR root fetch - processPackages [pulumi-buildkite-bridge]: Unable to get metadata: No such project 'pulumi-buildkite-bridge'
+[2023-06-04 17:45:35] INFO root fetch - main [MainThread]: End processing [pulumi-buildkite-bridge] error
+[2023-06-04 17:45:35] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230604.8.55.678235] Old Version: [20230604.15.42.753529]
+[2023-06-04 17:45:35] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 17:45:35] INFO root fetch - processPackages [shareddata]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-06-04 17:45:35] INFO root fetch - processPackages [chyp]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-06-04 17:45:35] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 17:45:35] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 17:45:35] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/e8/24/74fef1ba35493ddb411dd7374d60c784b81886edfd90c326f4f7dcdf3c0e/certora-cli-alpha-master-20230604.15.42.753529.tar.gz
+[2023-06-04 17:45:35] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-06-04 17:45:35] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.8.tar.gz tmp/shareddata-2.0.9.tar.gz --markdown 20230604/s/shareddata/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-06-04 17:45:35] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39177755>=10485760
+[2023-06-04 17:45:35] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-06-04 17:45:35] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-06-04 17:45:35] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.7-py3-none-any.whl.zip tmp/applyx-0.2.9-py3-none-any.whl.zip --markdown 20230604/a/applyx/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 17:45:35] INFO root fetch - processPackages [crispy-forms-foundation]: Downloading https://files.pythonhosted.org/packages/26/08/a05d8b84727ddb02fbb5cae1b4b9ab28d69c32b812913c44fd6c8a0fcf62/crispy-forms-foundation-0.9.0.tar.gz
+[2023-06-04 17:45:35] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/6e/3d/54af50eb20a81f29b0849a509a8a84331da68313ba2ceac92a01aab358fd/pylwr-1.0.4.tar.gz
+[2023-06-04 17:45:36] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/00/b5/e0b539961411153f51abd19fc52a12eea27a68e2aa36fb8ebe17799583c8/chyp-0.5.2.tar.gz
+[2023-06-04 17:45:36] INFO root fetch - processPackages [crispy-forms-foundation]: Downloading https://files.pythonhosted.org/packages/b1/f2/22e5097caf41646ae176d3087f5e578955f6e56a8587cd6380196b89fcfa/crispy-forms-foundation-1.0.0.tar.gz
+[2023-06-04 17:45:36] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/8f/60/0f232589e22834e80479e6b4241e9d6797d4f167d308ff0315fd906ce650/pylwr-1.0.5.tar.gz
+[2023-06-04 17:45:36] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-06-04 17:45:36] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.5.1.tar.gz tmp/chyp-0.5.2.tar.gz --markdown 20230604/c/chyp/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-06-04 17:45:36] INFO root fetch - processPackages [crispy-forms-foundation]: executing diffoscope
+[2023-06-04 17:45:36] INFO root fetch - processPackages [crispy-forms-foundation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crispy-forms-foundation-0.9.0.tar.gz tmp/crispy-forms-foundation-1.0.0.tar.gz --markdown 20230604/c/crispy-forms-foundation/0.9.0-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 17:45:36] INFO root fetch - processPackages [pylwr]: executing diffoscope
+[2023-06-04 17:45:36] INFO root fetch - processPackages [pylwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylwr-1.0.4.tar.gz tmp/pylwr-1.0.5.tar.gz --markdown 20230604/p/pylwr/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-04 17:45:36] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [crispy-forms-foundation]: success
+[2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [pylwr]: success
+[2023-06-04 17:45:37] INFO root fetch - main [MainThread]: Store serial: [18366970]
