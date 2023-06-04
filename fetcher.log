@@ -9148,3 +9148,41 @@
 [2023-06-04 20:58:08] INFO root fetch - main [MainThread]: End processing [plutous-trade-crypto]: success
 [2023-06-04 20:58:09] INFO root fetch - main [MainThread]: End processing [navconfig]: success
 [2023-06-04 20:58:09] INFO root fetch - main [MainThread]: Store serial: [18367997]
+[2023-06-04 21:03:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367997]
+[2023-06-04 21:03:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stegonosaurus
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tulyp
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kalm
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flxtrd
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abmatrix
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: briefcase-media
+[2023-06-04 21:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: promptengine-catapult
+[2023-06-04 21:03:18] INFO root fetch - processPackages [tulyp]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 21:03:18] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-04 21:03:18] INFO root fetch - processPackages [abmatrix]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-06-04 21:03:18] WARNING root fetch - processPackages [stegonosaurus]: Skipping, unable to determine old version
+[2023-06-04 21:03:18] WARNING root fetch - processPackages [briefcase-media]: Skipping, unable to determine old version
+[2023-06-04 21:03:18] INFO root fetch - processPackages [flxtrd]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 21:03:18] INFO root fetch - main [MainThread]: End processing [stegonosaurus] error
+[2023-06-04 21:03:18] INFO root fetch - main [MainThread]: End processing [briefcase-media] error
+[2023-06-04 21:03:18] INFO root fetch - processPackages [promptengine-catapult]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 21:03:19] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-04 21:03:19] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230604/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 21:03:19] INFO root fetch - processPackages [promptengine-catapult]: executing diffoscope
+[2023-06-04 21:03:19] INFO root fetch - processPackages [promptengine-catapult]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptengine_catapult-0.0.1.tar.gz tmp/promptengine_catapult-0.0.2.tar.gz --markdown 20230604/p/promptengine-catapult/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 21:03:19] INFO root fetch - processPackages [tulyp]: Downloading https://files.pythonhosted.org/packages/14/ed/4b6c6649a7f7143aca2400e7df1b42026930258657345ee73d6f35f9bcc9/tulyp-0.0.3.tar.gz
+[2023-06-04 21:03:19] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/92/7c/99dbe9bb82db63a46ecc23f823686800e90f26cff1d1b5fb922bf5e24926/abmatrix-0.3.0.tar.gz
+[2023-06-04 21:03:19] INFO root fetch - processPackages [flxtrd]: Downloading https://files.pythonhosted.org/packages/a9/1f/b9cdb96bddd218a873bf051d34088577904bdd1cc93be45adde738d5a06f/flxtrd-0.1.2.tar.gz
+[2023-06-04 21:03:19] INFO root fetch - processPackages [flxtrd]: executing diffoscope
+[2023-06-04 21:03:19] INFO root fetch - processPackages [flxtrd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flxtrd-0.1.1.tar.gz tmp/flxtrd-0.1.2.tar.gz --markdown 20230604/f/flxtrd/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 21:03:19] INFO root fetch - processPackages [abmatrix]: executing diffoscope
+[2023-06-04 21:03:19] INFO root fetch - processPackages [abmatrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abmatrix-0.2.1.tar.gz tmp/abmatrix-0.3.0.tar.gz --markdown 20230604/a/abmatrix/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 21:03:19] INFO root fetch - processPackages [tulyp]: Downloading https://files.pythonhosted.org/packages/44/ea/43e7c12951249d0c5fc695d0110e6de365f13d55f52623aa649c63b25602/tulyp-0.0.4.tar.gz
+[2023-06-04 21:03:19] INFO root fetch - processPackages [tulyp]: executing diffoscope
+[2023-06-04 21:03:19] INFO root fetch - processPackages [tulyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulyp-0.0.3.tar.gz tmp/tulyp-0.0.4.tar.gz --markdown 20230604/t/tulyp/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [promptengine-catapult]: success
+[2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [flxtrd]: success
+[2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
+[2023-06-04 21:03:20] INFO root fetch - main [MainThread]: End processing [tulyp]: success
+[2023-06-04 21:03:20] INFO root fetch - main [MainThread]: Store serial: [18368018]
