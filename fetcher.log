@@ -1635,3 +1635,37 @@
 [2023-06-04 03:27:52] INFO root fetch - main [MainThread]: End processing [linuxnet-iptables]: success
 [2023-06-04 03:27:53] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
 [2023-06-04 03:27:53] INFO root fetch - main [MainThread]: Store serial: [18363427]
+[2023-06-04 03:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363427]
+[2023-06-04 03:33:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 03:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paper-qa
+[2023-06-04 03:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2023-06-04 03:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweetrpg-api-core
+[2023-06-04 03:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydisort
+[2023-06-04 03:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: engorgio
+[2023-06-04 03:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xklb
+[2023-06-04 03:33:01] INFO root fetch - processPackages [pydisort]: New version: [1.0] Old Version: [0.0.2]
+[2023-06-04 03:33:01] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:33:01] ERROR root fetch - processPackages [engorgio]: Unable to get metadata: No such project 'engorgio'
+[2023-06-04 03:33:01] INFO root fetch - main [MainThread]: End processing [engorgio] error
+[2023-06-04 03:33:01] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 03:33:02] INFO root fetch - processPackages [paper-qa]: New version: [2.1.0] Old Version: [2.0.3]
+[2023-06-04 03:33:02] INFO root fetch - processPackages [xklb]: New version: [1.29.8] Old Version: [1.29.7]
+[2023-06-04 03:33:02] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-06-04 03:33:02] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:33:02] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-06-04 03:33:02] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.29.7.tar.gz tmp/xklb-1.29.8.tar.gz --markdown 20230604/x/xklb/1.29.7-1.29.8/diff.md --exclude *.pyd
+[2023-06-04 03:33:02] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-06-04 03:33:02] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230604/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:33:02] INFO root fetch - processPackages [pydisort]: Downloading https://files.pythonhosted.org/packages/67/d1/6e7267eb453e6a5330bea55f7fb6c809fdf02f4dfb0239fcbe6f75b327f1/pydisort-0.0.2.tar.gz
+[2023-06-04 03:33:02] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/be/6c/ab423f4359d4702e06e7a6af36a7d733d57c27f925a362bfb5a8b7ce533d/paper-qa-2.1.0.tar.gz
+[2023-06-04 03:33:02] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2023-06-04 03:33:02] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-qa-2.0.3.tar.gz tmp/paper-qa-2.1.0.tar.gz --markdown 20230604/p/paper-qa/2.0.3-2.1.0/diff.md --exclude *.pyd
+[2023-06-04 03:33:02] INFO root fetch - processPackages [pydisort]: Downloading https://files.pythonhosted.org/packages/c3/9c/c5f2a25fc49bc1dbbcf4a6ac05e6db7208c653d69ca8f335cabcf920d097/pydisort-1.0.tar.gz
+[2023-06-04 03:33:02] INFO root fetch - processPackages [pydisort]: executing diffoscope
+[2023-06-04 03:33:02] INFO root fetch - processPackages [pydisort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydisort-0.0.2.tar.gz tmp/pydisort-1.0.tar.gz --markdown 20230604/p/pydisort/0.0.2-1.0/diff.md --exclude *.pyd
+[2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
+[2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [pydisort]: success
+[2023-06-04 03:33:03] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-06-04 03:33:03] INFO root fetch - main [MainThread]: Store serial: [18363447]
