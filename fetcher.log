@@ -9322,3 +9322,37 @@
 [2023-06-04 21:19:12] INFO root fetch - main [MainThread]: End processing [scale-nucleus]: success
 [2023-06-04 21:19:56] INFO root fetch - main [MainThread]: End processing [py-lav]: success
 [2023-06-04 21:19:56] INFO root fetch - main [MainThread]: Store serial: [18368108]
+[2023-06-04 21:25:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368108]
+[2023-06-04 21:25:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 21:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflibrosa
+[2023-06-04 21:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: context-menu
+[2023-06-04 21:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-06-04 21:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: conforce
+[2023-06-04 21:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Blockthon
+[2023-06-04 21:25:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kfish
+[2023-06-04 21:25:06] INFO root fetch - processPackages [Blockthon]: New version: [2.4.6] Old Version: [2.3.6]
+[2023-06-04 21:25:06] WARNING root fetch - processPackages [tflibrosa]: Skipping, unable to determine old version
+[2023-06-04 21:25:06] INFO root fetch - main [MainThread]: End processing [tflibrosa] error
+[2023-06-04 21:25:06] WARNING root fetch - processPackages [conforce]: Skipping, unable to determine old version
+[2023-06-04 21:25:06] INFO root fetch - main [MainThread]: End processing [conforce] error
+[2023-06-04 21:25:06] INFO root fetch - processPackages [context-menu]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kfish]: New version: [99.0.202306041923] Old Version: [99.0.202306041913]
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kcli]: New version: [99.0.202306041921] Old Version: [99.0.202306041911]
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/b3/fc/e62e3ebf02b9aa85a97f286bb18e89cb4f0e15c719bacc01ce58bbe6a64d/kfish-99.0.202306041913-py3-none-any.whl
+[2023-06-04 21:25:06] INFO root fetch - processPackages [Blockthon]: Downloading https://files.pythonhosted.org/packages/49/11/1767f983ad8404c5cb2477e8a7c7b762bca31f74543e6ced618bea8dd3af/Blockthon-2.4.6.tar.gz
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/cc/d6/23a6f4ab58eb64abe8a97721e193fe5875b6fa07e6b221689217c379945a/kcli-99.0.202306041921-py3-none-any.whl
+[2023-06-04 21:25:06] INFO root fetch - processPackages [Blockthon]: executing diffoscope
+[2023-06-04 21:25:06] INFO root fetch - processPackages [Blockthon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Blockthon-2.3.6.tar.gz tmp/Blockthon-2.4.6.tar.gz --markdown 20230604/B/Blockthon/2.3.6-2.4.6/diff.md --exclude *.pyd
+[2023-06-04 21:25:06] INFO root fetch - processPackages [context-menu]: Downloading https://files.pythonhosted.org/packages/b3/0d/6358ca8e07e6914f9bd1e5e8a9c9b3d74375c18840df74dc59976616efd8/context_menu-1.3.1.tar.gz
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306041911-py3-none-any.whl.zip tmp/kcli-99.0.202306041921-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306041911-99.0.202306041921/diff.md --exclude *.pyd
+[2023-06-04 21:25:06] INFO root fetch - processPackages [context-menu]: executing diffoscope
+[2023-06-04 21:25:06] INFO root fetch - processPackages [context-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/context_menu-1.3.0.tar.gz tmp/context_menu-1.3.1.tar.gz --markdown 20230604/c/context-menu/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/9c/4b/1ed268255c4366b305c8f2d136b7735e3c5375f4a9abe57d4fc461b11ffb/kfish-99.0.202306041923-py3-none-any.whl
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 21:25:06] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306041913-py3-none-any.whl.zip tmp/kfish-99.0.202306041923-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306041913-99.0.202306041923/diff.md --exclude *.pyd
+[2023-06-04 21:25:07] INFO root fetch - main [MainThread]: End processing [Blockthon]: success
+[2023-06-04 21:25:07] INFO root fetch - main [MainThread]: End processing [context-menu]: success
+[2023-06-04 21:25:07] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 21:25:14] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 21:25:14] INFO root fetch - main [MainThread]: Store serial: [18368132]
