@@ -8098,3 +8098,88 @@
 [2023-06-04 18:57:23] INFO root fetch - main [MainThread]: End processing [django-bootstrap-modal-forms]: success
 [2023-06-04 18:57:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-06-04 18:57:31] INFO root fetch - main [MainThread]: Store serial: [18367337]
+[2023-06-04 19:02:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367337]
+[2023-06-04 19:02:40] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psyke
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SimpleShape
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fluids
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mkdocs-blogging-plugin
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scientific-tools
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bayesianbandits
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dvc-data
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: BeyondHD-Parser
+[2023-06-04 19:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:02:40] INFO root fetch - processPackages [fluids]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [psyke]: New version: [0.4.6.dev6] Old Version: [0.4.6.dev5]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [mkdocs-blogging-plugin]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [BeyondHD-Parser]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [scientific-tools]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [bayesianbandits]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [SimpleShape]: New version: [1.2] Old Version: [1.1]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [dvc-data]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/57/bb/5e70d2b07a39c982d00718c3f9d9679e3f9d794862ed3f67d6dabfbe6d2f/kelpie_personal_trainer-0.0.2.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/57/bb/5e70d2b07a39c982d00718c3f9d9679e3f9d794862ed3f67d6dabfbe6d2f/kelpie_personal_trainer-0.0.2.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [mkdocs-blogging-plugin]: Downloading https://files.pythonhosted.org/packages/1c/55/a46e20a6e1718be306f75168af4b0223c659316414cdf37bc61c01a0bd41/mkdocs-blogging-plugin-2.2.5.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [scientific-tools]: Downloading https://files.pythonhosted.org/packages/9d/34/d943e2487c479f76624b7c44f5158f79503fcc59754611e56f761c8924c6/scientific_tools-0.0.0a8-py3-none-any.whl
+[2023-06-04 19:02:40] INFO root fetch - processPackages [fluids]: Downloading https://files.pythonhosted.org/packages/24/63/e76906ee8472940f12c3a7e1e0806037d04fedf1e6fc51d172b4e695778d/fluids-1.0.8.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [BeyondHD-Parser]: Downloading https://files.pythonhosted.org/packages/88/a3/3b7cb78238ad02bad243e638d16b145eb06fe0477b654d33e2f2571e5922/BeyondHD-Parser-1.0.6.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [SimpleShape]: Downloading https://files.pythonhosted.org/packages/cf/f2/a2636172f3b881c2c2ec6d294e73cd8fa1a64b8728dd0bb2af8dde810229/SimpleShape-1.1-py3-none-any.whl
+[2023-06-04 19:02:40] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/3c/f7/33a80b84febae9b30672d9a7ca8373c20f320fb8531be3fc7acecbee906c/psyke-0.4.6.dev6.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [bayesianbandits]: Downloading https://files.pythonhosted.org/packages/67/7f/c0797f591aa27d9b91ca8fa7960274e4f89d66c5350625c56cd5541fc5c5/bayesianbandits-0.3.1.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [mkdocs-blogging-plugin]: Downloading https://files.pythonhosted.org/packages/91/40/f3ed63f46d7c5f7de5f987ff1459facbf0d9e370754ca85c67eb47685652/mkdocs-blogging-plugin-2.2.6.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [dvc-data]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [dvc-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-data-0.8.0.tar.gz tmp/dvc-data-0.9.0.tar.gz --markdown 20230604/d/dvc-data/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [bayesianbandits]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [bayesianbandits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayesianbandits-0.3.0.tar.gz tmp/bayesianbandits-0.3.1.tar.gz --markdown 20230604/b/bayesianbandits/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [SimpleShape]: Downloading https://files.pythonhosted.org/packages/5b/cb/d47bdf578722600331664bf8f33631367dafa64ec47e96f463074031d54d/SimpleShape-1.2-py3-none-any.whl
+[2023-06-04 19:02:40] INFO root fetch - processPackages [mkdocs-blogging-plugin]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [mkdocs-blogging-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-blogging-plugin-2.2.5.tar.gz tmp/mkdocs-blogging-plugin-2.2.6.tar.gz --markdown 20230604/m/mkdocs-blogging-plugin/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [BeyondHD-Parser]: Downloading https://files.pythonhosted.org/packages/7f/fd/9807fec0f80ef780485f029773db3f5b23cbeb39c995258017bb2b8dda16/BeyondHD-Parser-1.0.7.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.4.6.dev5.tar.gz tmp/psyke-0.4.6.dev6.tar.gz --markdown 20230604/p/psyke/0.4.6.dev5-0.4.6.dev6/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/e1/67/7ae232f2afd79c26473cbbd3b61503355b54d524e79fe8e7e3462541a11d/kelpie_personal_trainer-0.0.3.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/e1/67/7ae232f2afd79c26473cbbd3b61503355b54d524e79fe8e7e3462541a11d/kelpie_personal_trainer-0.0.3.tar.gz
+[2023-06-04 19:02:40] INFO root fetch - processPackages [BeyondHD-Parser]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [BeyondHD-Parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BeyondHD-Parser-1.0.6.tar.gz tmp/BeyondHD-Parser-1.0.7.tar.gz --markdown 20230604/B/BeyondHD-Parser/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [SimpleShape]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [SimpleShape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleShape-1.1-py3-none-any.whl.zip tmp/SimpleShape-1.2-py3-none-any.whl.zip --markdown 20230604/S/SimpleShape/1.1-1.2/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.2.tar.gz tmp/kelpie_personal_trainer-0.0.3.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:02:40] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.2.tar.gz tmp/kelpie_personal_trainer-0.0.3.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 19:02:41] INFO root fetch - processPackages [scientific-tools]: Downloading https://files.pythonhosted.org/packages/8a/23/eaf234bc1a84aaff96228877a699367f8ff7104c622f810217f0441dc269/scientific_tools-0.0.0a9-py3-none-any.whl
+[2023-06-04 19:02:41] INFO root fetch - processPackages [scientific-tools]: executing diffoscope
+[2023-06-04 19:02:41] INFO root fetch - processPackages [scientific-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scientific_tools-0.0.0a8-py3-none-any.whl.zip tmp/scientific_tools-0.0.0a9-py3-none-any.whl.zip --markdown 20230604/s/scientific-tools/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-06-04 19:02:41] INFO root fetch - processPackages [fluids]: Downloading https://files.pythonhosted.org/packages/9d/c4/8372ac4d044d4d27a34a8e1177c28cc53d954f649373b023478f6e60c464/fluids-1.0.9.tar.gz
+[2023-06-04 19:02:42] INFO root fetch - processPackages [fluids]: executing diffoscope
+[2023-06-04 19:02:42] INFO root fetch - processPackages [fluids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluids-1.0.8.tar.gz tmp/fluids-1.0.9.tar.gz --markdown 20230604/f/fluids/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 19:02:42] INFO root fetch - processPackages [mkdocs-blogging-plugin]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [mkdocs-blogging-plugin]: success
+[2023-06-04 19:02:42] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 19:02:42] INFO root fetch - processPackages [BeyondHD-Parser]: Start processing: chalk-harness
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [BeyondHD-Parser]: success
+[2023-06-04 19:02:42] INFO root fetch - processPackages [chalk-harness]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-04 19:02:42] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:02:42] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.2.tar.gz tmp/kelpie_personal_trainer-0.0.3.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 19:02:42] INFO root fetch - processPackages [bayesianbandits]: Start processing: BeyondHD-Parser
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [bayesianbandits]: success
+[2023-06-04 19:02:42] INFO root fetch - processPackages [BeyondHD-Parser]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [dvc-data]: success
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [SimpleShape]: success
+[2023-06-04 19:02:42] INFO root fetch - processPackages [BeyondHD-Parser]: Downloading https://files.pythonhosted.org/packages/b3/27/26175363fffe04ee60fe40667404825efe9532de13bccf04aad10d62ca00/BeyondHD-Parser-1.0.8.tar.gz
+[2023-06-04 19:02:42] INFO root fetch - processPackages [chalk-harness]: executing diffoscope
+[2023-06-04 19:02:42] INFO root fetch - processPackages [chalk-harness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalk-harness-0.9.8.tar.gz tmp/chalk-harness-0.9.9.tar.gz --markdown 20230604/c/chalk-harness/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [scientific-tools]: success
+[2023-06-04 19:02:42] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-06-04 19:02:42] INFO root fetch - processPackages [BeyondHD-Parser]: executing diffoscope
+[2023-06-04 19:02:42] INFO root fetch - processPackages [BeyondHD-Parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BeyondHD-Parser-1.0.7.tar.gz tmp/BeyondHD-Parser-1.0.8.tar.gz --markdown 20230604/B/BeyondHD-Parser/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-04 19:02:43] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:02:43] INFO root fetch - main [MainThread]: End processing [chalk-harness]: success
+[2023-06-04 19:02:43] INFO root fetch - main [MainThread]: End processing [BeyondHD-Parser]: success
+[2023-06-04 19:02:46] INFO root fetch - main [MainThread]: End processing [fluids]: success
+[2023-06-04 19:02:46] INFO root fetch - main [MainThread]: Store serial: [18367382]
