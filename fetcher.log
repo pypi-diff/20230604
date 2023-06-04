@@ -2493,3 +2493,18 @@
 [2023-06-04 06:38:00] INFO root fetch - processPackages [chatstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatstream-0.1.5.tar.gz tmp/chatstream-0.2.0.tar.gz --markdown 20230604/c/chatstream/0.1.5-0.2.0/diff.md --exclude *.pyd
 [2023-06-04 06:38:01] INFO root fetch - main [MainThread]: End processing [chatstream]: success
 [2023-06-04 06:38:01] INFO root fetch - main [MainThread]: Store serial: [18363897]
+[2023-06-04 06:43:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363897]
+[2023-06-04 06:43:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 06:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfem
+[2023-06-04 06:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twofas-cli
+[2023-06-04 06:43:10] INFO root fetch - processPackages [pyfem]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 06:43:10] INFO root fetch - processPackages [twofas-cli]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 06:43:10] INFO root fetch - processPackages [twofas-cli]: Downloading https://files.pythonhosted.org/packages/43/c0/0ae59600770e421daa7cb9240bd4c11233978d7dd9b0d9e576bb20734d27/twofas-cli-0.0.3.tar.gz
+[2023-06-04 06:43:10] INFO root fetch - processPackages [pyfem]: Downloading https://files.pythonhosted.org/packages/37/25/cf98825d2e6376115dd35ab7bfc24861c603b0b4906c104538d5ab3cc5e9/pyfem-0.0.9.tar.gz
+[2023-06-04 06:43:10] INFO root fetch - processPackages [twofas-cli]: executing diffoscope
+[2023-06-04 06:43:10] INFO root fetch - processPackages [twofas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twofas-cli-0.0.2.tar.gz tmp/twofas-cli-0.0.3.tar.gz --markdown 20230604/t/twofas-cli/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 06:43:10] INFO root fetch - processPackages [pyfem]: executing diffoscope
+[2023-06-04 06:43:10] INFO root fetch - processPackages [pyfem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfem-0.0.8.tar.gz tmp/pyfem-0.0.9.tar.gz --markdown 20230604/p/pyfem/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 06:43:11] INFO root fetch - main [MainThread]: End processing [twofas-cli]: success
+[2023-06-04 06:43:12] INFO root fetch - main [MainThread]: End processing [pyfem]: success
+[2023-06-04 06:43:12] INFO root fetch - main [MainThread]: Store serial: [18363905]
