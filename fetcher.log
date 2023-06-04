@@ -9659,3 +9659,56 @@
 [2023-06-04 22:06:56] INFO root fetch - processPackages [py-dbcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-dbcn-0.3.1.tar.gz tmp/py-dbcn-0.3.2.tar.gz --markdown 20230604/p/py-dbcn/0.3.1-0.3.2/diff.md --exclude *.pyd
 [2023-06-04 22:06:58] INFO root fetch - main [MainThread]: End processing [py-dbcn]: success
 [2023-06-04 22:06:58] INFO root fetch - main [MainThread]: Store serial: [18368298]
+[2023-06-04 22:12:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368298]
+[2023-06-04 22:12:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-mock-queries
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: winpymenu
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fetch-lyrics-from-genius
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: namedtreemap
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bookio-fetchfox
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aim-ui
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aim
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fetch-lyrics-from-genius
+[2023-06-04 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: helloPypi-topic
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 22:12:07] INFO root fetch - processPackages [winpymenu]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-06-04 22:12:07] INFO root fetch - processPackages [django-mock-queries]: New version: [2.1.8] Old Version: [2.1.7]
+[2023-06-04 22:12:07] INFO root fetch - processPackages [helloPypi-topic]: New version: [0.0.5] Old Version: [0.0.2]
+[2023-06-04 22:12:07] WARNING root fetch - processPackages [bookio-fetchfox]: Skipping, unable to determine old version
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 22:12:07] INFO root fetch - main [MainThread]: End processing [bookio-fetchfox] error
+[2023-06-04 22:12:07] WARNING root fetch - processPackages [namedtreemap]: Skipping, unable to determine old version
+[2023-06-04 22:12:07] INFO root fetch - main [MainThread]: End processing [namedtreemap] error
+[2023-06-04 22:12:07] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0a4] Old Version: [4.0.0a3]
+[2023-06-04 22:12:07] INFO root fetch - processPackages [aim]: New version: [4.0.0a4] Old Version: [4.0.0a3]
+[2023-06-04 22:12:07] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/72/11/d6a599ec4ad003d59801200d43ab098d9e29c73b16b2ef5ae8c3913470e4/aim-ui-4.0.0a3.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: Downloading https://files.pythonhosted.org/packages/dd/ae/c3181d3e626cf21bd943af6389c7e9c43c108d03f220adacc0573733cc38/fetch-lyrics-from-genius-0.1.1.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: Downloading https://files.pythonhosted.org/packages/dd/ae/c3181d3e626cf21bd943af6389c7e9c43c108d03f220adacc0573733cc38/fetch-lyrics-from-genius-0.1.1.tar.gz
+[2023-06-04 22:12:07] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 20217136>=10485760
+[2023-06-04 22:12:07] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-06-04 22:12:07] INFO root fetch - processPackages [django-mock-queries]: Downloading https://files.pythonhosted.org/packages/02/41/b06dc41678a0b33d9cdfbf534f0ed4e903db4b851d7822a0b85bed43e651/django_mock_queries-2.1.7.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [winpymenu]: Downloading https://files.pythonhosted.org/packages/92/cc/b6273ac5f9f04dcdb645f74d58876e206941a4bfe07b1dc1e70a1c6be957/winpymenu-0.0.1.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: Downloading https://files.pythonhosted.org/packages/98/1f/1650c9cf07feb52873786131bca4d29c0f3797ba94e1ed7f766b1f956420/fetch-lyrics-from-genius-0.1.2.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: Downloading https://files.pythonhosted.org/packages/98/1f/1650c9cf07feb52873786131bca4d29c0f3797ba94e1ed7f766b1f956420/fetch-lyrics-from-genius-0.1.2.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [helloPypi-topic]: Downloading https://files.pythonhosted.org/packages/a5/b2/bdf07331910d1943bd47c266700eda383b0b83810848bbdce50a50b42705/helloPypi-topic-0.0.5.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [winpymenu]: Downloading https://files.pythonhosted.org/packages/ea/4d/2650a6976a4e433558fbda12f4d0b2794ba20c564befe1a48932fd4fc1d8/winpymenu-0.1.0.tar.gz
+[2023-06-04 22:12:07] INFO root fetch - processPackages [django-mock-queries]: Downloading https://files.pythonhosted.org/packages/b3/26/0e050d565f1cbf4e4d1e3bd1354bc130ff16b10460705420bfe0f837c780/django_mock_queries-2.1.8-py2.py3-none-any.whl
+[2023-06-04 22:12:07] INFO root fetch - processPackages [helloPypi-topic]: executing diffoscope
+[2023-06-04 22:12:07] INFO root fetch - processPackages [helloPypi-topic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helloPypi-topic-0.0.2.tar.gz tmp/helloPypi-topic-0.0.5.tar.gz --markdown 20230604/h/helloPypi-topic/0.0.2-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: executing diffoscope
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetch-lyrics-from-genius-0.1.1.tar.gz tmp/fetch-lyrics-from-genius-0.1.2.tar.gz --markdown 20230604/f/fetch-lyrics-from-genius/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: executing diffoscope
+[2023-06-04 22:12:07] INFO root fetch - processPackages [fetch-lyrics-from-genius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetch-lyrics-from-genius-0.1.1.tar.gz tmp/fetch-lyrics-from-genius-0.1.2.tar.gz --markdown 20230604/f/fetch-lyrics-from-genius/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 22:12:07] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-06-04 22:12:07] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0a3.tar.gz tmp/aim-4.0.0a4.tar.gz --markdown 20230604/a/aim/4.0.0a3-4.0.0a4/diff.md --exclude *.pyd
+[2023-06-04 22:12:07] INFO root fetch - processPackages [winpymenu]: executing diffoscope
+[2023-06-04 22:12:07] INFO root fetch - processPackages [winpymenu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/winpymenu-0.0.1.tar.gz tmp/winpymenu-0.1.0.tar.gz --markdown 20230604/w/winpymenu/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-06-04 22:12:07] INFO root fetch - processPackages [django-mock-queries]: executing diffoscope
+[2023-06-04 22:12:07] INFO root fetch - processPackages [django-mock-queries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_mock_queries-2.1.7.tar.gz tmp/django_mock_queries-2.1.8-py2.py3-none-any.whl.zip --markdown 20230604/d/django-mock-queries/2.1.7-2.1.8/diff.md --exclude *.pyd
+[2023-06-04 22:12:08] INFO root fetch - main [MainThread]: End processing [helloPypi-topic]: success
+[2023-06-04 22:12:09] INFO root fetch - main [MainThread]: End processing [fetch-lyrics-from-genius]: success
+[2023-06-04 22:12:09] INFO root fetch - main [MainThread]: End processing [fetch-lyrics-from-genius]: success
+[2023-06-04 22:12:09] INFO root fetch - main [MainThread]: End processing [django-mock-queries]: success
+[2023-06-04 22:12:09] INFO root fetch - main [MainThread]: End processing [winpymenu]: success
+[2023-06-04 22:12:15] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-06-04 22:12:15] INFO root fetch - main [MainThread]: Store serial: [18368332]
