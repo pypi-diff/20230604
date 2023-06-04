@@ -6787,3 +6787,80 @@
 [2023-06-04 16:31:53] INFO root fetch - main [MainThread]: End processing [helloworld-deshrit]: success
 [2023-06-04 16:31:53] INFO root fetch - main [MainThread]: End processing [helloworld-deshrit]: success
 [2023-06-04 16:31:53] INFO root fetch - main [MainThread]: Store serial: [18366433]
+[2023-06-04 16:36:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366433]
+[2023-06-04 16:37:02] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amino.api
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protocol0
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: appwee
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: philbot-voice
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: akshare
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dartrig
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-access-control
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: qwak-core
+[2023-06-04 16:37:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openassist
+[2023-06-04 16:37:02] WARNING root fetch - processPackages [protocol0]: Skipping, unable to determine old version
+[2023-06-04 16:37:02] INFO root fetch - processPackages [protocol0]: Start processing: nsdpy
+[2023-06-04 16:37:02] INFO root fetch - main [MainThread]: End processing [protocol0] error
+[2023-06-04 16:37:02] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [qwak-core]: New version: [0.0.94] Old Version: [0.0.93]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [openassist]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [amino.api]: New version: [1.3] Old Version: [1.2b7]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [philbot-voice]: New version: [1.8.0] Old Version: [1.7.9]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [appwee]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [nonebot-plugin-access-control]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [nsdpy]: New version: [0.3.3b0] Old Version: [0.3.2b0]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [dartrig]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2023-06-04 16:37:02] INFO root fetch - processPackages [amino.api]: Downloading https://files.pythonhosted.org/packages/01/5e/245227bf436905b4804084943c1769e749da96a0737aa26ec697102ad8ab/amino.api-1.2b7.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [openassist]: Downloading https://files.pythonhosted.org/packages/d4/64/15493f5ffc11b34550db65f710515fef6e0c1a46cf4d0e82646b8db03ca3/openassist-2.2.0.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/16/ef/a5cd582a0748223876df73736d2a3ff591d6c7e67297a45d0475f00e938f/myPackageLicensePrototype-1.2.2.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [appwee]: Downloading https://files.pythonhosted.org/packages/51/16/ebaeba3557ef023a44bafbff20aaff16969049b94c91cb34b801ba5e62f9/appwee-0.1.0.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/fa/2a/247ba8f3738018e372faa008f124a943f551b9ef2cd3d87321e892888dfb/qwak_core-0.0.93.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/4b/ef/8a294d391c682ea5ea2ee99366e501d1677a7574cfb5eb75af6d4abe54b9/dartrig-0.1.5.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:37:02] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/a2/d4/ef61ca20442d4515432ce273b827bad465cdc097c87e4162f9a95dd1e743/nsdpy-0.3.3b0.tar.gz
+[2023-06-04 16:37:02] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.2.1.tar.gz tmp/myPackageLicensePrototype-1.2.2.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/1a/77/606cf78fc6c72042d58c9d24cab03eb7150a0ed6637500b84b4b438cdc5c/philbot_voice-1.8.0.tar.gz
+[2023-06-04 16:37:03] INFO root fetch - processPackages [amino.api]: Downloading https://files.pythonhosted.org/packages/06/e2/f32ac8f5b008c72750e7ec13d2867dfadc17e3b5b2b8225f22b7aaa809d0/amino.api-1.3.tar.gz
+[2023-06-04 16:37:03] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.3.2b0.tar.gz tmp/nsdpy-0.3.3b0.tar.gz --markdown 20230604/n/nsdpy/0.3.2b0-0.3.3b0/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [openassist]: Downloading https://files.pythonhosted.org/packages/ae/2c/3effd733a973cd11c73520cbe78d6c7c0834cab2c24a7065671e72b90c9a/openassist-2.2.1.tar.gz
+[2023-06-04 16:37:03] INFO root fetch - processPackages [nonebot-plugin-access-control]: Downloading https://files.pythonhosted.org/packages/46/5b/7e585ed5044e9b69121ccdb86174f4f9dee4ff39e8afa722108b9134a4cc/nonebot_plugin_access_control-0.5.3.tar.gz
+[2023-06-04 16:37:03] INFO root fetch - processPackages [appwee]: Downloading https://files.pythonhosted.org/packages/ac/47/cb4978312e89e45159b301e2db1be1fac389a63eb5c5c85d634dc0acf020/appwee-0.1.1.tar.gz
+[2023-06-04 16:37:03] INFO root fetch - processPackages [qwak-core]: Downloading https://files.pythonhosted.org/packages/5b/1d/0b67160e47821cb4f11ef5094c5f2c85b4aa06ccbf0ba2f2d208ed563caa/qwak_core-0.0.94.tar.gz
+[2023-06-04 16:37:03] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.9.tar.gz tmp/philbot_voice-1.8.0.tar.gz --markdown 20230604/p/philbot-voice/1.7.9-1.8.0/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [dartrig]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [dartrig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dartrig-0.1.4.tar.gz tmp/dartrig-0.1.5.tar.gz --markdown 20230604/d/dartrig/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [amino.api]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [amino.api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.api-1.2b7.tar.gz tmp/amino.api-1.3.tar.gz --markdown 20230604/a/amino.api/1.2b7-1.3/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [openassist]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [openassist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openassist-2.2.0.tar.gz tmp/openassist-2.2.1.tar.gz --markdown 20230604/o/openassist/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20230604/a/akshare/1.9.98-1.9.99/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [nonebot-plugin-access-control]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [nonebot-plugin-access-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_access_control-0.5.2.tar.gz tmp/nonebot_plugin_access_control-0.5.3.tar.gz --markdown 20230604/n/nonebot-plugin-access-control/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [appwee]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [appwee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appwee-0.1.0.tar.gz tmp/appwee-0.1.1.tar.gz --markdown 20230604/a/appwee/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 16:37:03] INFO root fetch - processPackages [qwak-core]: executing diffoscope
+[2023-06-04 16:37:03] INFO root fetch - processPackages [qwak-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwak_core-0.0.93.tar.gz tmp/qwak_core-0.0.94.tar.gz --markdown 20230604/q/qwak-core/0.0.93-0.0.94/diff.md --exclude *.pyd
+[2023-06-04 16:37:04] INFO root fetch - processPackages [mypackagelicenseprototype]: Start processing: innovationmerge
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:37:04] WARNING root fetch - processPackages [innovationmerge]: Skipping, unable to determine old version
+[2023-06-04 16:37:04] INFO root fetch - processPackages [innovationmerge]: Start processing: leuci-map
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [innovationmerge] error
+[2023-06-04 16:37:04] INFO root fetch - processPackages [leuci-map]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [openassist]: success
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [appwee]: success
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-06-04 16:37:04] INFO root fetch - main [MainThread]: End processing [amino.api]: success
+[2023-06-04 16:37:05] INFO root fetch - processPackages [leuci-map]: executing diffoscope
+[2023-06-04 16:37:05] INFO root fetch - processPackages [leuci-map]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-map-0.1.8.tar.gz tmp/leuci-map-0.1.9.tar.gz --markdown 20230604/l/leuci-map/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 16:37:05] INFO root fetch - main [MainThread]: End processing [dartrig]: success
+[2023-06-04 16:37:05] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-access-control]: success
+[2023-06-04 16:37:05] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
+[2023-06-04 16:37:10] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2023-06-04 16:37:10] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
+[2023-06-04 16:37:10] INFO root fetch - main [MainThread]: Store serial: [18366484]
