@@ -10085,3 +10085,31 @@
 [2023-06-04 22:55:24] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
 [2023-06-04 22:55:24] INFO root fetch - main [MainThread]: End processing [yarok]: success
 [2023-06-04 22:55:24] INFO root fetch - main [MainThread]: Store serial: [18368572]
+[2023-06-04 23:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368572]
+[2023-06-04 23:00:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 23:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: runtest
+[2023-06-04 23:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mleko
+[2023-06-04 23:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flowtask
+[2023-06-04 23:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: veta
+[2023-06-04 23:00:34] INFO root fetch - processPackages [runtest]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-06-04 23:00:34] INFO root fetch - processPackages [mleko]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-06-04 23:00:34] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-06-04 23:00:34] INFO root fetch - processPackages [veta]: New version: [0.7.7] Old Version: [0.7.6]
+[2023-06-04 23:00:34] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-06-04 23:00:34] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-06-04 23:00:34] INFO root fetch - processPackages [runtest]: Downloading https://files.pythonhosted.org/packages/78/a3/98850bec7f4b7bf617bfc068563d2b4210fe7a5cbae5c4e5334c8546d071/runtest-2.3.3.tar.gz
+[2023-06-04 23:00:34] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/42/7d/1df583ef5bc300b4178dbd04738dbc7e591cf53320cfdf2fe98ba78d5ed5/mleko-0.4.1.tar.gz
+[2023-06-04 23:00:34] INFO root fetch - processPackages [veta]: Downloading https://files.pythonhosted.org/packages/aa/22/5a5eb7ef6ca2b0c22e007833ffb26fbf6c95ad7911aa9a7e8c77f83ba9fa/veta-0.7.6.tar.gz
+[2023-06-04 23:00:34] INFO root fetch - processPackages [runtest]: Downloading https://files.pythonhosted.org/packages/27/ca/8f76804054189bb9ad2a76cf68a892eb1770460afc7bafa2bcffcd619440/runtest-2.3.4.tar.gz
+[2023-06-04 23:00:34] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-06-04 23:00:34] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.4.0.tar.gz tmp/mleko-0.4.1.tar.gz --markdown 20230604/m/mleko/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-06-04 23:00:34] INFO root fetch - processPackages [runtest]: executing diffoscope
+[2023-06-04 23:00:34] INFO root fetch - processPackages [runtest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtest-2.3.3.tar.gz tmp/runtest-2.3.4.tar.gz --markdown 20230604/r/runtest/2.3.3-2.3.4/diff.md --exclude *.pyd
+[2023-06-04 23:00:35] INFO root fetch - processPackages [veta]: Downloading https://files.pythonhosted.org/packages/89/d7/e79d25755111541523bba097185282339db81d5a8626e8a58e1ad87a60ef/veta-0.7.7.tar.gz
+[2023-06-04 23:00:35] INFO root fetch - processPackages [veta]: executing diffoscope
+[2023-06-04 23:00:35] INFO root fetch - processPackages [veta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veta-0.7.6.tar.gz tmp/veta-0.7.7.tar.gz --markdown 20230604/v/veta/0.7.6-0.7.7/diff.md --exclude *.pyd
+[2023-06-04 23:00:36] INFO root fetch - main [MainThread]: End processing [runtest]: success
+[2023-06-04 23:00:36] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-06-04 23:00:36] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-06-04 23:00:37] INFO root fetch - main [MainThread]: End processing [veta]: success
+[2023-06-04 23:00:37] INFO root fetch - main [MainThread]: Store serial: [18368585]
