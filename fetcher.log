@@ -6073,3 +6073,42 @@
 [2023-06-04 15:02:35] INFO root fetch - main [MainThread]: End processing [madtypes]: success
 [2023-06-04 15:02:35] INFO root fetch - main [MainThread]: End processing [mlfast]: success
 [2023-06-04 15:02:35] INFO root fetch - main [MainThread]: Store serial: [18366045]
+[2023-06-04 15:07:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366045]
+[2023-06-04 15:07:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snowland-easyquotation
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-motor-oil
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genetikaplusIO
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-stdlib
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lakefs-client
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mangowg
+[2023-06-04 15:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: toolcat
+[2023-06-04 15:07:44] WARNING root fetch - processPackages [snowland-easyquotation]: Skipping, unable to determine old version
+[2023-06-04 15:07:44] INFO root fetch - main [MainThread]: End processing [snowland-easyquotation] error
+[2023-06-04 15:07:44] INFO root fetch - processPackages [fastapi-motor-oil]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-06-04 15:07:44] INFO root fetch - processPackages [toolcat]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 15:07:44] INFO root fetch - processPackages [genetikaplusIO]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 15:07:44] INFO root fetch - processPackages [lakefs-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-06-04 15:07:44] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:07:44] INFO root fetch - processPackages [mangowg]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 15:07:44] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-06-04 15:07:44] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230604/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:07:44] INFO root fetch - processPackages [toolcat]: executing diffoscope
+[2023-06-04 15:07:44] INFO root fetch - processPackages [toolcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolcat-0.0.2.tar.gz tmp/toolcat-0.0.3.tar.gz --markdown 20230604/t/toolcat/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 15:07:44] INFO root fetch - processPackages [fastapi-motor-oil]: Downloading https://files.pythonhosted.org/packages/41/d2/7d21a9b9fd0b564d4738f70c72a378eea47e25fdeb3f82d8c990f7f67237/fastapi_motor_oil-0.5.0.tar.gz
+[2023-06-04 15:07:44] INFO root fetch - processPackages [genetikaplusIO]: Downloading https://files.pythonhosted.org/packages/48/2c/7e87ed9e2a7b6f7412b03838638d511ddd240594663b12b599a1c27556c9/genetikaplusIO-0.0.5.tar.gz
+[2023-06-04 15:07:45] INFO root fetch - processPackages [genetikaplusIO]: executing diffoscope
+[2023-06-04 15:07:45] INFO root fetch - processPackages [genetikaplusIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genetikaplusIO-0.0.4.tar.gz tmp/genetikaplusIO-0.0.5.tar.gz --markdown 20230604/g/genetikaplusIO/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 15:07:45] INFO root fetch - processPackages [lakefs-client]: executing diffoscope
+[2023-06-04 15:07:45] INFO root fetch - processPackages [lakefs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lakefs-client-0.98.0.tar.gz tmp/lakefs-client-0.99.0.tar.gz --markdown 20230604/l/lakefs-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-06-04 15:07:45] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 15:07:45] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.8.tar.gz tmp/mangowg-0.1.9.tar.gz --markdown 20230604/m/mangowg/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 15:07:45] INFO root fetch - processPackages [fastapi-motor-oil]: Downloading https://files.pythonhosted.org/packages/fb/6d/3d29bbc3d7db906a4d987dfc26432a4edd9b6e5289a8acb2a853c57e70c4/fastapi_motor_oil-0.5.1.tar.gz
+[2023-06-04 15:07:45] INFO root fetch - processPackages [fastapi-motor-oil]: executing diffoscope
+[2023-06-04 15:07:45] INFO root fetch - processPackages [fastapi-motor-oil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_motor_oil-0.5.0.tar.gz tmp/fastapi_motor_oil-0.5.1.tar.gz --markdown 20230604/f/fastapi-motor-oil/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-06-04 15:07:45] INFO root fetch - main [MainThread]: End processing [toolcat]: success
+[2023-06-04 15:07:45] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-06-04 15:07:46] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 15:07:46] INFO root fetch - main [MainThread]: End processing [genetikaplusIO]: success
+[2023-06-04 15:07:46] INFO root fetch - main [MainThread]: End processing [fastapi-motor-oil]: success
+[2023-06-04 15:07:47] INFO root fetch - main [MainThread]: End processing [lakefs-client]: success
+[2023-06-04 15:07:47] INFO root fetch - main [MainThread]: Store serial: [18366068]
