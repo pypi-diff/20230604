@@ -2253,3 +2253,19 @@
 [2023-06-04 05:15:17] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
 [2023-06-04 05:15:17] INFO root fetch - main [MainThread]: End processing [coffeefetch]: success
 [2023-06-04 05:15:17] INFO root fetch - main [MainThread]: Store serial: [18363767]
+[2023-06-04 05:20:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363767]
+[2023-06-04 05:20:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 05:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: markdown-slides
+[2023-06-04 05:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iciba
+[2023-06-04 05:20:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pubmed-types
+[2023-06-04 05:20:26] WARNING root fetch - processPackages [pubmed-types]: Skipping, unable to determine old version
+[2023-06-04 05:20:26] INFO root fetch - main [MainThread]: End processing [pubmed-types] error
+[2023-06-04 05:20:26] INFO root fetch - processPackages [markdown-slides]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 05:20:26] WARNING root fetch - processPackages [iciba]: Skipping, unable to determine old version
+[2023-06-04 05:20:26] INFO root fetch - main [MainThread]: End processing [iciba] error
+[2023-06-04 05:20:26] INFO root fetch - processPackages [markdown-slides]: Downloading https://files.pythonhosted.org/packages/cc/e6/e832db805d61c4585ab0ec63a3a10b18ba2e4a9bad8b2059b5fd89a13539/markdown-slides-0.1.8.tar.gz
+[2023-06-04 05:20:26] INFO root fetch - processPackages [markdown-slides]: Downloading https://files.pythonhosted.org/packages/c5/8a/7c3c1ed216a01dbdd479af5a4d8c820f100d67f4841dffddee9286b5977a/markdown-slides-0.1.9.tar.gz
+[2023-06-04 05:20:26] INFO root fetch - processPackages [markdown-slides]: executing diffoscope
+[2023-06-04 05:20:26] INFO root fetch - processPackages [markdown-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown-slides-0.1.8.tar.gz tmp/markdown-slides-0.1.9.tar.gz --markdown 20230604/m/markdown-slides/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 05:20:27] INFO root fetch - main [MainThread]: End processing [markdown-slides]: success
+[2023-06-04 05:20:27] INFO root fetch - main [MainThread]: Store serial: [18363782]
