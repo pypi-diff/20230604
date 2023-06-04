@@ -2221,3 +2221,20 @@
 [2023-06-04 05:04:25] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-06-04 05:04:56] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
 [2023-06-04 05:04:56] INFO root fetch - main [MainThread]: Store serial: [18363757]
+[2023-06-04 05:09:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363757]
+[2023-06-04 05:10:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 05:10:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-account-invoice-overdue-reminder
+[2023-06-04 05:10:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: only-train-once
+[2023-06-04 05:10:04] INFO root fetch - processPackages [only-train-once]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-06-04 05:10:04] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: New version: [14.0.1.4.1.dev8] Old Version: [14.0.1.4.1.dev7]
+[2023-06-04 05:10:05] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: Downloading https://files.pythonhosted.org/packages/e6/80/93385f450ed0c00b0cb194719a6900733d59b8b1db522a1d0d6f26cab1e9/odoo14_addon_account_invoice_overdue_reminder-14.0.1.4.1.dev7-py3-none-any.whl
+[2023-06-04 05:10:05] INFO root fetch - processPackages [only-train-once]: Downloading https://files.pythonhosted.org/packages/1f/7a/131fb7a00349883fe8adae5ae2f81a35fff82eb4b4e0d8823afd015e9e58/only_train_once-2.0.8.tar.gz
+[2023-06-04 05:10:05] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: Downloading https://files.pythonhosted.org/packages/6d/8e/1b7a52675f1a1af9aff959c37ea58b7c16a00a043c5dd7c0439f01554c8e/odoo14_addon_account_invoice_overdue_reminder-14.0.1.4.1.dev8-py3-none-any.whl
+[2023-06-04 05:10:05] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: executing diffoscope
+[2023-06-04 05:10:05] INFO root fetch - processPackages [odoo14-addon-account-invoice-overdue-reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_invoice_overdue_reminder-14.0.1.4.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_account_invoice_overdue_reminder-14.0.1.4.1.dev8-py3-none-any.whl.zip --markdown 20230604/o/odoo14-addon-account-invoice-overdue-reminder/14.0.1.4.1.dev7-14.0.1.4.1.dev8/diff.md --exclude *.pyd
+[2023-06-04 05:10:05] INFO root fetch - processPackages [only-train-once]: Downloading https://files.pythonhosted.org/packages/ee/80/06ee4385ba8b427773f71c598eb179360dee5b41a04df5fc40054537ea28/only_train_once-2.0.9.tar.gz
+[2023-06-04 05:10:06] INFO root fetch - processPackages [only-train-once]: executing diffoscope
+[2023-06-04 05:10:06] INFO root fetch - processPackages [only-train-once]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/only_train_once-2.0.8.tar.gz tmp/only_train_once-2.0.9.tar.gz --markdown 20230604/o/only-train-once/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-06-04 05:10:07] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-invoice-overdue-reminder]: success
+[2023-06-04 05:10:07] INFO root fetch - main [MainThread]: End processing [only-train-once]: success
+[2023-06-04 05:10:07] INFO root fetch - main [MainThread]: Store serial: [18363762]
