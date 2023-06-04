@@ -9387,3 +9387,40 @@
 [2023-06-04 21:30:25] INFO root fetch - main [MainThread]: End processing [wikicat]: success
 [2023-06-04 21:30:25] INFO root fetch - main [MainThread]: End processing [wahoomc]: success
 [2023-06-04 21:30:25] INFO root fetch - main [MainThread]: Store serial: [18368144]
+[2023-06-04 21:35:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368144]
+[2023-06-04 21:35:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 21:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: briefcase-media
+[2023-06-04 21:35:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strictdoc
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: erdiagram
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxitemspy
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ascvid
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: domdiv
+[2023-06-04 21:35:35] INFO root fetch - processPackages [briefcase-media]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-06-04 21:35:35] WARNING root fetch - processPackages [dxitemspy]: Skipping, unable to determine old version
+[2023-06-04 21:35:35] INFO root fetch - main [MainThread]: End processing [dxitemspy] error
+[2023-06-04 21:35:35] INFO root fetch - processPackages [erdiagram]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ascvid]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-06-04 21:35:35] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 21:35:35] INFO root fetch - processPackages [domdiv]: New version: [4.4.0] Old Version: [4.3.0]
+[2023-06-04 21:35:35] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2023-06-04 21:35:35] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20230604/s/strictdoc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 21:35:35] INFO root fetch - processPackages [erdiagram]: Downloading https://files.pythonhosted.org/packages/d2/0f/be43f8cdd5855150d9b9bb6293bd381bc8752547e31f38028eca60a66d6f/erdiagram-0.1.1.tar.gz
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ascvid]: Downloading https://files.pythonhosted.org/packages/70/c1/a1d415549ce4f6c00cb173d73e0968c82f55dde0056f345b82e6198b43af/ascvid-1.5.0.tar.gz
+[2023-06-04 21:35:35] INFO root fetch - processPackages [briefcase-media]: Downloading https://files.pythonhosted.org/packages/5b/dd/5a83defb0fdb2ad8efea9ff8f52a3b7a845968940092f726e1fae74585d6/briefcase_media-0.2.0.tar.gz
+[2023-06-04 21:35:35] INFO root fetch - processPackages [domdiv]: Downloading https://files.pythonhosted.org/packages/8d/4a/ee744367150cb92d0b15571fa61209cf381fce8ba049013f5a2d9c074e18/domdiv-4.3.0.tar.gz
+[2023-06-04 21:35:35] WARNING root fetch - processPackages [domdiv]: Skipping package: exceeds size limit 24912913>=10485760
+[2023-06-04 21:35:35] INFO root fetch - main [MainThread]: End processing [domdiv] error
+[2023-06-04 21:35:35] INFO root fetch - processPackages [erdiagram]: Downloading https://files.pythonhosted.org/packages/97/2d/b59b2f2ef4055c109390710f3c97d417ffc197d4c6ee975619d613c81065/erdiagram-0.1.2.tar.gz
+[2023-06-04 21:35:35] INFO root fetch - processPackages [briefcase-media]: Downloading https://files.pythonhosted.org/packages/3f/4e/1069e92e5dfc7c6ceda53309938d32b9e9728899701f2e65a0dc35ea9f22/briefcase_media-0.3.0.tar.gz
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ascvid]: Downloading https://files.pythonhosted.org/packages/16/7e/85c7f89834b1a35a7134bd88b13dbaf4c6384cc7ed6053c588f19347a0ef/ascvid-1.5.1.tar.gz
+[2023-06-04 21:35:35] INFO root fetch - processPackages [erdiagram]: executing diffoscope
+[2023-06-04 21:35:35] INFO root fetch - processPackages [erdiagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erdiagram-0.1.1.tar.gz tmp/erdiagram-0.1.2.tar.gz --markdown 20230604/e/erdiagram/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ascvid]: executing diffoscope
+[2023-06-04 21:35:35] INFO root fetch - processPackages [briefcase-media]: executing diffoscope
+[2023-06-04 21:35:35] INFO root fetch - processPackages [ascvid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascvid-1.5.0.tar.gz tmp/ascvid-1.5.1.tar.gz --markdown 20230604/a/ascvid/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-06-04 21:35:35] INFO root fetch - processPackages [briefcase-media]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/briefcase_media-0.2.0.tar.gz tmp/briefcase_media-0.3.0.tar.gz --markdown 20230604/b/briefcase-media/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 21:35:36] INFO root fetch - main [MainThread]: End processing [briefcase-media]: success
+[2023-06-04 21:35:36] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2023-06-04 21:35:37] INFO root fetch - main [MainThread]: End processing [erdiagram]: success
+[2023-06-04 21:35:37] INFO root fetch - main [MainThread]: End processing [ascvid]: success
+[2023-06-04 21:35:37] INFO root fetch - main [MainThread]: Store serial: [18368160]
