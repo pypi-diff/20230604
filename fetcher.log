@@ -7043,3 +7043,42 @@
 [2023-06-04 16:52:45] INFO root fetch - main [MainThread]: End processing [zesty.zbs-api-securonix]: success
 [2023-06-04 16:52:47] INFO root fetch - main [MainThread]: End processing [multipie]: success
 [2023-06-04 16:52:47] INFO root fetch - main [MainThread]: Store serial: [18366612]
+[2023-06-04 16:57:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366612]
+[2023-06-04 16:57:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: navconfig
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nsdpy
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bantam
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torch-exid
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: line-async-webhook
+[2023-06-04 16:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pylwr
+[2023-06-04 16:57:56] INFO root fetch - processPackages [nsdpy]: New version: [0.3.5b0] Old Version: [0.3.4b0]
+[2023-06-04 16:57:56] INFO root fetch - processPackages [torch-exid]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-04 16:57:56] INFO root fetch - processPackages [bantam]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-06-04 16:57:56] WARNING root fetch - processPackages [pylwr]: Skipping, unable to determine old version
+[2023-06-04 16:57:56] INFO root fetch - main [MainThread]: End processing [pylwr] error
+[2023-06-04 16:57:56] WARNING root fetch - processPackages [line-async-webhook]: Skipping, unable to determine old version
+[2023-06-04 16:57:56] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-06-04 16:57:56] INFO root fetch - main [MainThread]: End processing [line-async-webhook] error
+[2023-06-04 16:57:56] INFO root fetch - processPackages [navconfig]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-04 16:57:56] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/2d/d7/c93df9e3abfe0d01904329c011bdf36b13ac7000a1cdb01ef4f24f3f8332/nsdpy-0.3.5b0.tar.gz
+[2023-06-04 16:57:56] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/a8/60/6f416b3a7197093c7262d776f4433d13c0dcb40b5a18a44c223e0dea79e5/myPackageLicensePrototype-1.2.6.tar.gz
+[2023-06-04 16:57:56] INFO root fetch - processPackages [torch-exid]: Downloading https://files.pythonhosted.org/packages/4b/3a/b490b9d18fb041e20381ffc97efa9bc89d4c15b60b13e1fb97a3c2b7d4be/torch_exid-0.1.4.tar.gz
+[2023-06-04 16:57:56] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:57:56] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.2.5.tar.gz tmp/myPackageLicensePrototype-1.2.6.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-06-04 16:57:56] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-06-04 16:57:56] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.3.4b0.tar.gz tmp/nsdpy-0.3.5b0.tar.gz --markdown 20230604/n/nsdpy/0.3.4b0-0.3.5b0/diff.md --exclude *.pyd
+[2023-06-04 16:57:56] INFO root fetch - processPackages [bantam]: Downloading https://files.pythonhosted.org/packages/6f/19/9492a2b2a89ad43b82d57b1be2ccf9e8b3328dc162650aeef313d7f77f1f/bantam-2.2.0.tar.gz
+[2023-06-04 16:57:56] INFO root fetch - processPackages [torch-exid]: executing diffoscope
+[2023-06-04 16:57:56] INFO root fetch - processPackages [torch-exid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_exid-0.1.3.tar.gz tmp/torch_exid-0.1.4.tar.gz --markdown 20230604/t/torch-exid/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 16:57:56] INFO root fetch - processPackages [navconfig]: Downloading https://files.pythonhosted.org/packages/2e/eb/06009acdb740c0f411d6bb3ebf9b9ec932a56c28ae380245519ace7a8afd/navconfig-1.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 16:57:56] INFO root fetch - processPackages [bantam]: executing diffoscope
+[2023-06-04 16:57:56] INFO root fetch - processPackages [bantam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bantam-2.1.0.tar.gz tmp/bantam-2.2.0.tar.gz --markdown 20230604/b/bantam/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-06-04 16:57:57] INFO root fetch - processPackages [navconfig]: executing diffoscope
+[2023-06-04 16:57:57] INFO root fetch - processPackages [navconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navconfig-1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/navconfig-1.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/n/navconfig/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-04 16:57:57] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:57:57] INFO root fetch - main [MainThread]: End processing [torch-exid]: success
+[2023-06-04 16:57:57] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-06-04 16:57:58] INFO root fetch - main [MainThread]: End processing [bantam]: success
+[2023-06-04 16:57:58] INFO root fetch - main [MainThread]: End processing [navconfig]: success
+[2023-06-04 16:57:58] INFO root fetch - main [MainThread]: Store serial: [18366637]
