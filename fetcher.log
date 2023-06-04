@@ -2269,3 +2269,32 @@
 [2023-06-04 05:20:26] INFO root fetch - processPackages [markdown-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markdown-slides-0.1.8.tar.gz tmp/markdown-slides-0.1.9.tar.gz --markdown 20230604/m/markdown-slides/0.1.8-0.1.9/diff.md --exclude *.pyd
 [2023-06-04 05:20:27] INFO root fetch - main [MainThread]: End processing [markdown-slides]: success
 [2023-06-04 05:20:27] INFO root fetch - main [MainThread]: Store serial: [18363782]
+[2023-06-04 05:25:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363782]
+[2023-06-04 05:25:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 05:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MultiResImagePy
+[2023-06-04 05:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GANDLF
+[2023-06-04 05:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iciba
+[2023-06-04 05:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: policyuniverse
+[2023-06-04 05:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector2dggs
+[2023-06-04 05:25:36] INFO root fetch - processPackages [MultiResImagePy]: New version: [0.2] Old Version: [0.1]
+[2023-06-04 05:25:36] INFO root fetch - processPackages [GANDLF]: New version: [0.0.17.dev20230604] Old Version: [0.0.17.dev20230603]
+[2023-06-04 05:25:36] INFO root fetch - processPackages [policyuniverse]: New version: [1.5.1.20230603] Old Version: [1.5.1.20230531]
+[2023-06-04 05:25:36] WARNING root fetch - processPackages [iciba]: Skipping, unable to determine old version
+[2023-06-04 05:25:36] INFO root fetch - main [MainThread]: End processing [iciba] error
+[2023-06-04 05:25:36] INFO root fetch - processPackages [vector2dggs]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-06-04 05:25:36] INFO root fetch - processPackages [MultiResImagePy]: Downloading https://files.pythonhosted.org/packages/f1/f2/eaec45b25c4b9b741e37430af9adff8236ce1240832015106ffcba1bbe4e/MultiResImagePy-0.1-cp39-cp39-macosx_11_0_arm64.whl
+[2023-06-04 05:25:36] WARNING root fetch - processPackages [MultiResImagePy]: Skipping package: exceeds size limit 37333249>=10485760
+[2023-06-04 05:25:36] INFO root fetch - main [MainThread]: End processing [MultiResImagePy] error
+[2023-06-04 05:25:36] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/b7/83/9e844390b9ae4af753e9d3f336b54d64f2998fb4a84a14c1706fb3f9e93a/GANDLF-0.0.17.dev20230604.tar.gz
+[2023-06-04 05:25:37] INFO root fetch - processPackages [policyuniverse]: Downloading https://files.pythonhosted.org/packages/f2/08/95f9b508e54690bb981a92ff100821f544e338deed0dfa86417338b80128/policyuniverse-1.5.1.20230603.tar.gz
+[2023-06-04 05:25:37] INFO root fetch - processPackages [vector2dggs]: Downloading https://files.pythonhosted.org/packages/5f/16/8e648eae090ad784ce4e601872b6808696088da29301c573853b7966cda5/vector2dggs-0.4.0.tar.gz
+[2023-06-04 05:25:37] INFO root fetch - processPackages [policyuniverse]: executing diffoscope
+[2023-06-04 05:25:37] INFO root fetch - processPackages [policyuniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyuniverse-1.5.1.20230531.tar.gz tmp/policyuniverse-1.5.1.20230603.tar.gz --markdown 20230604/p/policyuniverse/1.5.1.20230531-1.5.1.20230603/diff.md --exclude *.pyd
+[2023-06-04 05:25:37] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-06-04 05:25:37] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230603.tar.gz tmp/GANDLF-0.0.17.dev20230604.tar.gz --markdown 20230604/G/GANDLF/0.0.17.dev20230603-0.0.17.dev20230604/diff.md --exclude *.pyd
+[2023-06-04 05:25:37] INFO root fetch - processPackages [vector2dggs]: executing diffoscope
+[2023-06-04 05:25:37] INFO root fetch - processPackages [vector2dggs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector2dggs-0.3.4.tar.gz tmp/vector2dggs-0.4.0.tar.gz --markdown 20230604/v/vector2dggs/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-06-04 05:25:38] INFO root fetch - main [MainThread]: End processing [vector2dggs]: success
+[2023-06-04 05:25:38] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-06-04 05:25:41] INFO root fetch - main [MainThread]: End processing [policyuniverse]: success
+[2023-06-04 05:25:41] INFO root fetch - main [MainThread]: Store serial: [18363802]
