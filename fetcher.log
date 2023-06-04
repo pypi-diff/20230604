@@ -5092,3 +5092,51 @@
 [2023-06-04 13:09:29] INFO root fetch - main [MainThread]: End processing [mangowg]: success
 [2023-06-04 13:09:30] INFO root fetch - main [MainThread]: End processing [kavk-api]: success
 [2023-06-04 13:09:30] INFO root fetch - main [MainThread]: Store serial: [18365438]
+[2023-06-04 13:14:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365438]
+[2023-06-04 13:14:41] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lokii
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mangowg
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: muxtools
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vsmuxtools
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yomigana-ebook
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: octopus-sensing
+[2023-06-04 13:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: henxel
+[2023-06-04 13:14:42] INFO root fetch - processPackages [mangowg]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [lokii]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [octopus-sensing]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [yomigana-ebook]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [muxtools]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [vsmuxtools]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.8.tar.gz tmp/mangowg-0.1.9.tar.gz --markdown 20230604/m/mangowg/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 13:14:42] INFO root fetch - processPackages [henxel]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 13:14:42] INFO root fetch - processPackages [yomigana-ebook]: Downloading https://files.pythonhosted.org/packages/65/17/434234ddb939e38d01c892e444d63c7bc019eaccbf1b9b310fa797fc83c4/yomigana_ebook-0.2.0.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [lokii]: Downloading https://files.pythonhosted.org/packages/ff/70/ce67ad68385274f6198e108d63d2df9efc07a18e154af931a64dee2ec0a8/lokii-1.1.3.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [vsmuxtools]: Downloading https://files.pythonhosted.org/packages/ad/74/fe7c9470d693ab934f0a92f44113b6859ef71a3fb6090a1f1ec1900fc014/vsmuxtools-0.0.1.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [henxel]: Downloading https://files.pythonhosted.org/packages/51/0d/05c6bda7aefe30fff5d17a5a549cd5dceb5c32337c895e0ac5f82b89fbf8/henxel-0.1.8.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [muxtools]: Downloading https://files.pythonhosted.org/packages/b1/72/70f9b8eb6390dfa5a9d1ad8a93452123e416455c6349c787a508a7e4137e/muxtools-0.0.1.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [lokii]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [lokii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokii-1.1.2.tar.gz tmp/lokii-1.1.3.tar.gz --markdown 20230604/l/lokii/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-06-04 13:14:42] INFO root fetch - processPackages [octopus-sensing]: Downloading https://files.pythonhosted.org/packages/5a/92/ed2e7892d3c1b17e0417edd25466cc74b1cd58ecac05db731409edb140c2/octopus-sensing-4.0.3.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [octopus-sensing]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [octopus-sensing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octopus-sensing-4.0.2.tar.gz tmp/octopus-sensing-4.0.3.tar.gz --markdown 20230604/o/octopus-sensing/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:14:42] INFO root fetch - processPackages [yomigana-ebook]: Downloading https://files.pythonhosted.org/packages/38/c2/c3f8f336f92d35b5de2b96fd86df0823a873f657fa65f4e297a7dcc1bc4c/yomigana_ebook-0.2.1.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [vsmuxtools]: Downloading https://files.pythonhosted.org/packages/ea/99/75e59c58fa009cdb9f4737ed821a58fe59def6c475dcaec40f2107fa78f3/vsmuxtools-0.0.2.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [henxel]: Downloading https://files.pythonhosted.org/packages/8c/c1/4f0417a6f4354cbc51c8e629e21e87e36d46e97349d907bd58f9ffa30ec9/henxel-0.1.9.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [yomigana-ebook]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [yomigana-ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yomigana_ebook-0.2.0.tar.gz tmp/yomigana_ebook-0.2.1.tar.gz --markdown 20230604/y/yomigana-ebook/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 13:14:42] INFO root fetch - processPackages [vsmuxtools]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [vsmuxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsmuxtools-0.0.1.tar.gz tmp/vsmuxtools-0.0.2.tar.gz --markdown 20230604/v/vsmuxtools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 13:14:42] INFO root fetch - processPackages [muxtools]: Downloading https://files.pythonhosted.org/packages/27/10/72fd81caba38ddd7c6f840bbcb4ae2a0daeb58755882bb9c1d156fadc188/muxtools-0.0.2.tar.gz
+[2023-06-04 13:14:42] INFO root fetch - processPackages [henxel]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [henxel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/henxel-0.1.8.tar.gz tmp/henxel-0.1.9.tar.gz --markdown 20230604/h/henxel/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 13:14:42] INFO root fetch - processPackages [muxtools]: executing diffoscope
+[2023-06-04 13:14:42] INFO root fetch - processPackages [muxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muxtools-0.0.1.tar.gz tmp/muxtools-0.0.2.tar.gz --markdown 20230604/m/muxtools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 13:14:43] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 13:14:43] INFO root fetch - main [MainThread]: End processing [lokii]: success
+[2023-06-04 13:14:43] INFO root fetch - main [MainThread]: End processing [yomigana-ebook]: success
+[2023-06-04 13:14:43] INFO root fetch - main [MainThread]: End processing [vsmuxtools]: success
+[2023-06-04 13:14:43] INFO root fetch - main [MainThread]: End processing [henxel]: success
+[2023-06-04 13:14:44] INFO root fetch - main [MainThread]: End processing [octopus-sensing]: success
+[2023-06-04 13:14:44] INFO root fetch - main [MainThread]: End processing [muxtools]: success
+[2023-06-04 13:14:44] INFO root fetch - main [MainThread]: Store serial: [18365461]
