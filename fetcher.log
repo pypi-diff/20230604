@@ -3627,3 +3627,34 @@
 [2023-06-04 10:12:53] INFO root fetch - main [MainThread]: End processing [python-fluepdot]: success
 [2023-06-04 10:12:53] INFO root fetch - main [MainThread]: End processing [textual-astview]: success
 [2023-06-04 10:12:53] INFO root fetch - main [MainThread]: Store serial: [18364594]
+[2023-06-04 10:17:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364594]
+[2023-06-04 10:18:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 10:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lesscode-database
+[2023-06-04 10:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nwebclient
+[2023-06-04 10:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nwebclient
+[2023-06-04 10:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sagemaker-rightline
+[2023-06-04 10:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: automate-pyspark-project-setup
+[2023-06-04 10:18:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netbox-contract
+[2023-06-04 10:18:02] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 10:18:02] INFO root fetch - processPackages [lesscode-database]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 10:18:02] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 10:18:02] WARNING root fetch - processPackages [sagemaker-rightline]: Skipping, unable to determine old version
+[2023-06-04 10:18:02] INFO root fetch - main [MainThread]: End processing [sagemaker-rightline] error
+[2023-06-04 10:18:02] WARNING root fetch - processPackages [automate-pyspark-project-setup]: Skipping, unable to determine old version
+[2023-06-04 10:18:02] INFO root fetch - main [MainThread]: End processing [automate-pyspark-project-setup] error
+[2023-06-04 10:18:02] INFO root fetch - processPackages [netbox-contract]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-06-04 10:18:02] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 10:18:02] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 10:18:02] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 10:18:02] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 10:18:02] INFO root fetch - processPackages [lesscode-database]: Downloading https://files.pythonhosted.org/packages/37/74/e60024705ff44f4484f2a42fc1415671535c7d9acc0141145097c72719de/lesscode_database-0.0.4.tar.gz
+[2023-06-04 10:18:02] INFO root fetch - processPackages [netbox-contract]: Downloading https://files.pythonhosted.org/packages/b3/89/2261df5e3f33ece6a98fe7762244739b94d2a3e1f71c75f33e6f90226ccc/netbox-contract-2.0.2.tar.gz
+[2023-06-04 10:18:02] INFO root fetch - processPackages [lesscode-database]: executing diffoscope
+[2023-06-04 10:18:02] INFO root fetch - processPackages [lesscode-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_database-0.0.3.tar.gz tmp/lesscode_database-0.0.4.tar.gz --markdown 20230604/l/lesscode-database/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 10:18:03] INFO root fetch - processPackages [netbox-contract]: executing diffoscope
+[2023-06-04 10:18:03] INFO root fetch - processPackages [netbox-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-contract-2.0.1.tar.gz tmp/netbox-contract-2.0.2.tar.gz --markdown 20230604/n/netbox-contract/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-06-04 10:18:03] INFO root fetch - main [MainThread]: End processing [lesscode-database]: success
+[2023-06-04 10:18:03] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 10:18:03] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 10:18:04] INFO root fetch - main [MainThread]: End processing [netbox-contract]: success
+[2023-06-04 10:18:04] INFO root fetch - main [MainThread]: Store serial: [18364614]
