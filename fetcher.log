@@ -8793,3 +8793,70 @@
 [2023-06-04 20:26:43] INFO root fetch - main [MainThread]: End processing [bmsdna-lakeapi]: success
 [2023-06-04 20:26:47] INFO root fetch - main [MainThread]: End processing [oloren]: success
 [2023-06-04 20:26:47] INFO root fetch - main [MainThread]: Store serial: [18367760]
+[2023-06-04 20:31:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367760]
+[2023-06-04 20:31:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arango-orm
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-vault
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stegonosaurus
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yarok
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wombo
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: otpme
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gemseo-umdo
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:31:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pystorz
+[2023-06-04 20:31:56] INFO root fetch - processPackages [yarok]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 20:31:56] INFO root fetch - processPackages [arango-orm]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-06-04 20:31:56] INFO root fetch - processPackages [vector-vault]: New version: [1.8.5] Old Version: [1.8.4]
+[2023-06-04 20:31:56] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-06-04 20:31:56] INFO root fetch - processPackages [gemseo-umdo]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-06-04 20:31:56] ERROR root fetch - processPackages [stegonosaurus]: Unable to get metadata: No such project 'stegonosaurus'
+[2023-06-04 20:31:56] INFO root fetch - processPackages [stegonosaurus]: Start processing: pcsFilter
+[2023-06-04 20:31:56] INFO root fetch - main [MainThread]: End processing [stegonosaurus] error
+[2023-06-04 20:31:56] INFO root fetch - processPackages [otpme]: New version: [0.3.0a9] Old Version: [0.3.0a8]
+[2023-06-04 20:31:56] INFO root fetch - processPackages [wombo]: New version: [0.1.71] Old Version: [0.1.7]
+[2023-06-04 20:31:56] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pystorz]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pcsFilter]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-06-04 20:31:57] INFO root fetch - processPackages [yarok]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230604/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [arango-orm]: Downloading https://files.pythonhosted.org/packages/9f/5e/3761b23bec83c3aa80fad64869dfdd97bffed859b5aca533a17f69e279de/arango_orm-0.7.2.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/a9/b9/1ddfc2839d9f29554c6d9dfa441618af85a4a5ce48597ae55ff4cbfe33b0/vector_vault-1.8.4.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [wombo]: Downloading https://files.pythonhosted.org/packages/26/2d/58b0cb1320777a16bbcfa0b398646c87a8749bbae42ec278ecb64581a2e6/wombo-0.1.71.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/a2/99/53913f2f6f342f66d47c373a20273c446b7252a82d22d537e25e09e491c5/kelpie_personal_trainer-0.1.8.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/a2/99/53913f2f6f342f66d47c373a20273c446b7252a82d22d537e25e09e491c5/kelpie_personal_trainer-0.1.8.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [gemseo-umdo]: Downloading https://files.pythonhosted.org/packages/65/09/00f78165ab0e4a980183122e9eedd5c757b944e408aff502424044de6f21/gemseo-umdo-1.0.2.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [wombo]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [wombo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wombo-0.1.7.tar.gz tmp/wombo-0.1.71.tar.gz --markdown 20230604/w/wombo/0.1.7-0.1.71/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.6.tar.gz tmp/kelpie_personal_trainer-0.1.8.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.6.tar.gz tmp/kelpie_personal_trainer-0.1.8.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pcsFilter]: Downloading https://files.pythonhosted.org/packages/83/15/77a4ccfd4769b336a2e34c9fef519438946a49b5ff2b7c02413dae61b981/pcsFilter-1.0.0.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [arango-orm]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [arango-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arango_orm-0.7.1.tar.gz tmp/arango_orm-0.7.2.tar.gz --markdown 20230604/a/arango-orm/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [otpme]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [otpme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpme-0.3.0a8.tar.gz tmp/otpme-0.3.0a9.tar.gz --markdown 20230604/o/otpme/0.3.0a8-0.3.0a9/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pystorz]: Downloading https://files.pythonhosted.org/packages/b0/b1/2ca3acf43a60bb8c9bee34226dddf001ad7ce25e89f7927fddb303ebbb61/pystorz-0.3.0.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/bc/4d/ee06bdafadc1f7bea7820b6a0d9158fc064b51982b0e4b3d575db2a04645/vector_vault-1.8.5.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [gemseo-umdo]: Downloading https://files.pythonhosted.org/packages/4b/d0/460fc641a00e96c32a214b77390e10fb97bec236516b6c7f2201d09b0ab2/gemseo-umdo-1.1.0.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pystorz]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pystorz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystorz-0.2.1.tar.gz tmp/pystorz-0.3.0.tar.gz --markdown 20230604/p/pystorz/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [gemseo-umdo]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [gemseo-umdo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemseo-umdo-1.0.2.tar.gz tmp/gemseo-umdo-1.1.0.tar.gz --markdown 20230604/g/gemseo-umdo/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pcsFilter]: Downloading https://files.pythonhosted.org/packages/2e/25/c82693dea29ce56793f0a57413e7ba3e50a335b705e199b76f688d01a392/pcsFilter-1.0.1.tar.gz
+[2023-06-04 20:31:57] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.8.4.tar.gz tmp/vector_vault-1.8.5.tar.gz --markdown 20230604/v/vector-vault/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pcsFilter]: executing diffoscope
+[2023-06-04 20:31:57] INFO root fetch - processPackages [pcsFilter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcsFilter-1.0.0.tar.gz tmp/pcsFilter-1.0.1.tar.gz --markdown 20230604/p/pcsFilter/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-04 20:31:58] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:31:58] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:31:58] INFO root fetch - main [MainThread]: End processing [wombo]: success
+[2023-06-04 20:31:58] INFO root fetch - main [MainThread]: End processing [arango-orm]: success
+[2023-06-04 20:31:59] INFO root fetch - main [MainThread]: End processing [pcsFilter]: success
+[2023-06-04 20:31:59] INFO root fetch - main [MainThread]: End processing [pystorz]: success
+[2023-06-04 20:31:59] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 20:32:00] INFO root fetch - main [MainThread]: End processing [gemseo-umdo]: success
+[2023-06-04 20:32:01] INFO root fetch - main [MainThread]: End processing [otpme]: success
+[2023-06-04 20:32:03] INFO root fetch - main [MainThread]: End processing [yarok]: success
+[2023-06-04 20:32:03] INFO root fetch - main [MainThread]: Store serial: [18367800]
