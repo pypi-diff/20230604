@@ -7177,3 +7177,29 @@
 [2023-06-04 17:08:33] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-06-04 17:08:33] INFO root fetch - main [MainThread]: End processing [bmb-martlet-organization-client]: success
 [2023-06-04 17:08:33] INFO root fetch - main [MainThread]: Store serial: [18366750]
+[2023-06-04 17:13:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366750]
+[2023-06-04 17:13:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipttrace
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openassist
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpdbg
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pautobot
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tensorflow-text-nightly
+[2023-06-04 17:13:42] WARNING root fetch - processPackages [mpdbg]: Skipping, unable to determine old version
+[2023-06-04 17:13:42] INFO root fetch - main [MainThread]: End processing [mpdbg] error
+[2023-06-04 17:13:42] INFO root fetch - processPackages [pautobot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ipttrace]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-06-04 17:13:42] WARNING root fetch - processPackages [openassist]: Skipping, unable to determine old version
+[2023-06-04 17:13:42] INFO root fetch - main [MainThread]: End processing [openassist] error
+[2023-06-04 17:13:42] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.14.0.dev20230603] Old Version: [2.14.0.dev20230602]
+[2023-06-04 17:13:42] INFO root fetch - processPackages [pautobot]: executing diffoscope
+[2023-06-04 17:13:42] INFO root fetch - processPackages [pautobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pautobot-0.0.8.tar.gz tmp/pautobot-0.0.9.tar.gz --markdown 20230604/p/pautobot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 17:13:42] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/ea/17/1ca7bdf28c354fee52c73d575a9e9ff03f24e25bc39b3f197b27a76e7234/tensorflow_text_nightly-2.14.0.dev20230603-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ipttrace]: Downloading https://files.pythonhosted.org/packages/45/20/a048094a0d47a077044cbd73d42ccfee10139ab48e6d77a6c2f568561fc7/ipttrace-0.2.1.tar.gz
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ipttrace]: executing diffoscope
+[2023-06-04 17:13:42] INFO root fetch - processPackages [ipttrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipttrace-0.1.1.tar.gz tmp/ipttrace-0.2.1.tar.gz --markdown 20230604/i/ipttrace/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 17:13:42] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-06-04 17:13:42] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.14.0.dev20230602-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.14.0.dev20230603-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/t/tensorflow-text-nightly/2.14.0.dev20230602-2.14.0.dev20230603/diff.md --exclude *.pyd
+[2023-06-04 17:13:43] INFO root fetch - main [MainThread]: End processing [ipttrace]: success
+[2023-06-04 17:13:43] INFO root fetch - main [MainThread]: End processing [pautobot]: success
+[2023-06-04 17:13:45] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-06-04 17:13:45] INFO root fetch - main [MainThread]: Store serial: [18366772]
