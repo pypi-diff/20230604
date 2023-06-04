@@ -2871,3 +2871,22 @@
 [2023-06-04 08:05:03] INFO root fetch - processPackages [torchplate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchplate-0.0.8.tar.gz tmp/torchplate-0.0.9.tar.gz --markdown 20230604/t/torchplate/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-06-04 08:05:04] INFO root fetch - main [MainThread]: End processing [torchplate]: success
 [2023-06-04 08:05:04] INFO root fetch - main [MainThread]: Store serial: [18364120]
+[2023-06-04 08:10:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364120]
+[2023-06-04 08:10:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 08:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2023-06-04 08:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emews
+[2023-06-04 08:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezqc
+[2023-06-04 08:10:13] WARNING root fetch - processPackages [emews]: Skipping, unable to determine old version
+[2023-06-04 08:10:13] INFO root fetch - main [MainThread]: End processing [emews] error
+[2023-06-04 08:10:13] INFO root fetch - processPackages [ezqc]: New version: [0.3] Old Version: [0.2]
+[2023-06-04 08:10:13] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230603] Old Version: [2.4.0.dev20230602]
+[2023-06-04 08:10:13] INFO root fetch - processPackages [ezqc]: Downloading https://files.pythonhosted.org/packages/91/6f/4e27660c4f06ad6d786261575d67f3da8a4cd5ab382f4fb35d7840d8ac44/ezqc-0.2.tar.gz
+[2023-06-04 08:10:14] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/cf/4d/33aea14db55a585c486d0e6c865557227312dadd6ac2da71ec4a1dc13f37/pyg_nightly-2.4.0.dev20230603.tar.gz
+[2023-06-04 08:10:14] INFO root fetch - processPackages [ezqc]: Downloading https://files.pythonhosted.org/packages/fd/04/36918049a5e6dbb21cc134f40c3ce4717266c8dc12de40d493d593163cf0/ezqc-0.3.tar.gz
+[2023-06-04 08:10:14] INFO root fetch - processPackages [ezqc]: executing diffoscope
+[2023-06-04 08:10:14] INFO root fetch - processPackages [ezqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezqc-0.2.tar.gz tmp/ezqc-0.3.tar.gz --markdown 20230604/e/ezqc/0.2-0.3/diff.md --exclude *.pyd
+[2023-06-04 08:10:14] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-06-04 08:10:14] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230602.tar.gz tmp/pyg_nightly-2.4.0.dev20230603.tar.gz --markdown 20230604/p/pyg-nightly/2.4.0.dev20230602-2.4.0.dev20230603/diff.md --exclude *.pyd
+[2023-06-04 08:10:15] INFO root fetch - main [MainThread]: End processing [ezqc]: success
+[2023-06-04 08:10:19] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-06-04 08:10:19] INFO root fetch - main [MainThread]: Store serial: [18364133]
