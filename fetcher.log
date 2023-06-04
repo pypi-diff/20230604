@@ -2238,3 +2238,18 @@
 [2023-06-04 05:10:07] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-invoice-overdue-reminder]: success
 [2023-06-04 05:10:07] INFO root fetch - main [MainThread]: End processing [only-train-once]: success
 [2023-06-04 05:10:07] INFO root fetch - main [MainThread]: Store serial: [18363762]
+[2023-06-04 05:15:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363762]
+[2023-06-04 05:15:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 05:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coffeefetch
+[2023-06-04 05:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: text2phonemesequence
+[2023-06-04 05:15:15] INFO root fetch - processPackages [coffeefetch]: New version: [1.2.1] Old Version: [1.1.0]
+[2023-06-04 05:15:15] INFO root fetch - processPackages [text2phonemesequence]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 05:15:16] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/9c/cf/0fc35a57e610c1351942502d55fbcc85b43c3586d207d43d49c67c90b3b5/text2phonemesequence-0.1.2.tar.gz
+[2023-06-04 05:15:16] INFO root fetch - processPackages [text2phonemesequence]: executing diffoscope
+[2023-06-04 05:15:16] INFO root fetch - processPackages [text2phonemesequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2phonemesequence-0.1.1.tar.gz tmp/text2phonemesequence-0.1.2.tar.gz --markdown 20230604/t/text2phonemesequence/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 05:15:16] INFO root fetch - processPackages [coffeefetch]: Downloading https://files.pythonhosted.org/packages/68/0a/ebcfe4b2df7dd6b01e249626f5b41222d7466a9b28f51abcc93180f8b779/coffeefetch-1.2.1.tar.gz
+[2023-06-04 05:15:16] INFO root fetch - processPackages [coffeefetch]: executing diffoscope
+[2023-06-04 05:15:16] INFO root fetch - processPackages [coffeefetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coffeefetch-1.1.0.tar.gz tmp/coffeefetch-1.2.1.tar.gz --markdown 20230604/c/coffeefetch/1.1.0-1.2.1/diff.md --exclude *.pyd
+[2023-06-04 05:15:17] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
+[2023-06-04 05:15:17] INFO root fetch - main [MainThread]: End processing [coffeefetch]: success
+[2023-06-04 05:15:17] INFO root fetch - main [MainThread]: Store serial: [18363767]
