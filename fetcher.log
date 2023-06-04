@@ -10324,3 +10324,36 @@
 [2023-06-04 23:23:25] INFO root fetch - main [MainThread]: End processing [mlplatformutils]: success
 [2023-06-04 23:23:26] INFO root fetch - main [MainThread]: End processing [SciQLop]: success
 [2023-06-04 23:23:26] INFO root fetch - main [MainThread]: Store serial: [18368729]
+[2023-06-04 23:28:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368729]
+[2023-06-04 23:28:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 23:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pspdfutils
+[2023-06-04 23:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbcore
+[2023-06-04 23:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autotraders
+[2023-06-04 23:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rlenvironments
+[2023-06-04 23:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: read-rapidpe
+[2023-06-04 23:28:35] INFO root fetch - processPackages [read-rapidpe]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-06-04 23:28:35] INFO root fetch - processPackages [rlenvironments]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 23:28:35] INFO root fetch - processPackages [pspdfutils]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-06-04 23:28:35] INFO root fetch - processPackages [vbcore]: New version: [2.0.0rc4] Old Version: [2.0.0rc3]
+[2023-06-04 23:28:35] INFO root fetch - processPackages [autotraders]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-06-04 23:28:35] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-06-04 23:28:35] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.5.6.tar.gz tmp/read_rapidpe-0.5.7.tar.gz --markdown 20230604/r/read-rapidpe/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-06-04 23:28:35] INFO root fetch - processPackages [rlenvironments]: Downloading https://files.pythonhosted.org/packages/97/07/236f7c4e445523288622143541781dbfe490fc1175ce91ce3c729fe02bdd/rlenvironments-0.1.0.tar.gz
+[2023-06-04 23:28:35] INFO root fetch - processPackages [autotraders]: Downloading https://files.pythonhosted.org/packages/2b/49/68eb277744489520869d3abd057e5f5779b959e623400f5ffe5d2ee1df72/autotraders-1.4.1.tar.gz
+[2023-06-04 23:28:35] INFO root fetch - processPackages [pspdfutils]: Downloading https://files.pythonhosted.org/packages/65/57/65ec78caae76c9ac86f756478a534543bbb4a403e60934aa13f5b2c44cbf/pspdfutils-3.0.4.tar.gz
+[2023-06-04 23:28:35] INFO root fetch - processPackages [vbcore]: Downloading https://files.pythonhosted.org/packages/2b/4d/c3640191e8c20bb080e28275377e99977cfd84a03370a7fcbd7041c785b2/vbcore-2.0.0rc4.tar.gz
+[2023-06-04 23:28:35] INFO root fetch - processPackages [rlenvironments]: Downloading https://files.pythonhosted.org/packages/26/d4/0ad06da2e0c74fdda29040dce06800c0198cb68851358957a022a7fd8549/rlenvironments-0.1.1.tar.gz
+[2023-06-04 23:28:35] INFO root fetch - processPackages [vbcore]: executing diffoscope
+[2023-06-04 23:28:35] INFO root fetch - processPackages [vbcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbcore-2.0.0rc3.tar.gz tmp/vbcore-2.0.0rc4.tar.gz --markdown 20230604/v/vbcore/2.0.0rc3-2.0.0rc4/diff.md --exclude *.pyd
+[2023-06-04 23:28:35] INFO root fetch - processPackages [pspdfutils]: executing diffoscope
+[2023-06-04 23:28:35] INFO root fetch - processPackages [pspdfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pspdfutils-3.0.3.tar.gz tmp/pspdfutils-3.0.4.tar.gz --markdown 20230604/p/pspdfutils/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-06-04 23:28:36] INFO root fetch - processPackages [autotraders]: executing diffoscope
+[2023-06-04 23:28:36] INFO root fetch - processPackages [autotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotraders-1.4.0.tar.gz tmp/autotraders-1.4.1.tar.gz --markdown 20230604/a/autotraders/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-06-04 23:28:36] INFO root fetch - processPackages [rlenvironments]: executing diffoscope
+[2023-06-04 23:28:36] INFO root fetch - processPackages [rlenvironments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlenvironments-0.1.0.tar.gz tmp/rlenvironments-0.1.1.tar.gz --markdown 20230604/r/rlenvironments/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 23:28:36] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-06-04 23:28:37] INFO root fetch - main [MainThread]: End processing [rlenvironments]: success
+[2023-06-04 23:28:37] INFO root fetch - main [MainThread]: End processing [autotraders]: success
+[2023-06-04 23:28:37] INFO root fetch - main [MainThread]: End processing [vbcore]: success
+[2023-06-04 23:28:38] INFO root fetch - main [MainThread]: End processing [pspdfutils]: success
+[2023-06-04 23:28:38] INFO root fetch - main [MainThread]: Store serial: [18368783]
