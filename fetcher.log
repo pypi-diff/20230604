@@ -2904,3 +2904,44 @@
 [2023-06-04 08:15:28] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.5.8.tar.gz tmp/chalkpy-2.5.9.tar.gz --markdown 20230604/c/chalkpy/2.5.8-2.5.9/diff.md --exclude *.pyd
 [2023-06-04 08:15:34] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-06-04 08:15:34] INFO root fetch - main [MainThread]: Store serial: [18364150]
+[2023-06-04 08:20:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364150]
+[2023-06-04 08:20:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-cffi
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-babel
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pretext
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rainaa-utils-aunlyt2i
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nwebclient
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: roco
+[2023-06-04 08:20:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: miktikpy
+[2023-06-04 08:20:43] INFO root fetch - processPackages [types-cffi]: New version: [1.15.1.9] Old Version: [1.15.1.8]
+[2023-06-04 08:20:43] INFO root fetch - processPackages [types-babel]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-06-04 08:20:43] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 08:20:43] INFO root fetch - processPackages [roco]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 08:20:43] WARNING root fetch - processPackages [rainaa-utils-aunlyt2i]: Skipping, unable to determine old version
+[2023-06-04 08:20:43] INFO root fetch - main [MainThread]: End processing [rainaa-utils-aunlyt2i] error
+[2023-06-04 08:20:43] INFO root fetch - processPackages [pretext]: New version: [1.6.1.dev20230604] Old Version: [1.6.1.dev20230603]
+[2023-06-04 08:20:43] WARNING root fetch - processPackages [miktikpy]: Skipping, unable to determine old version
+[2023-06-04 08:20:43] INFO root fetch - main [MainThread]: End processing [miktikpy] error
+[2023-06-04 08:20:43] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 08:20:43] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 08:20:43] INFO root fetch - processPackages [types-cffi]: Downloading https://files.pythonhosted.org/packages/c9/72/0f3adb5b45f839149a4049e48f2be7e6a5d984e25bd6eb39434e6303cfb4/types-cffi-1.15.1.8.tar.gz
+[2023-06-04 08:20:43] INFO root fetch - processPackages [roco]: Downloading https://files.pythonhosted.org/packages/c9/98/7cf55d701e085bcbaf208c310ab53cfd80a3c72617311db4c6cdf0c21902/roco-0.1.0.tar.gz
+[2023-06-04 08:20:43] INFO root fetch - processPackages [types-babel]: Downloading https://files.pythonhosted.org/packages/f1/59/f4390ee7f2d0a70a8d7f3be75d993304a2de4baa140793564d953d0817bb/types-babel-2.9.8.tar.gz
+[2023-06-04 08:20:43] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/96/07/45b7a23a6c22ae3ef3c6c69b8e1c8b2163fc6c1e0cc638a39247774fde52/pretext-1.6.1.dev20230604.tar.gz
+[2023-06-04 08:20:43] INFO root fetch - processPackages [roco]: Downloading https://files.pythonhosted.org/packages/93/d5/a2e6310593ca9018aef672f8baa0d09a05ce3e583188832a424109ebebbb/roco-0.1.1.tar.gz
+[2023-06-04 08:20:43] INFO root fetch - processPackages [roco]: executing diffoscope
+[2023-06-04 08:20:43] INFO root fetch - processPackages [roco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roco-0.1.0.tar.gz tmp/roco-0.1.1.tar.gz --markdown 20230604/r/roco/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 08:20:43] INFO root fetch - processPackages [types-cffi]: Downloading https://files.pythonhosted.org/packages/f1/e8/e011e8735156577eeb684f5f7be873dc12164a05fa129cf1fb7bdaf2f401/types-cffi-1.15.1.9.tar.gz
+[2023-06-04 08:20:43] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-06-04 08:20:43] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.6.1.dev20230603.tar.gz tmp/pretext-1.6.1.dev20230604.tar.gz --markdown 20230604/p/pretext/1.6.1.dev20230603-1.6.1.dev20230604/diff.md --exclude *.pyd
+[2023-06-04 08:20:43] INFO root fetch - processPackages [types-babel]: Downloading https://files.pythonhosted.org/packages/c0/e5/cb1abaddf305a6d3de6c0b6760e5e8eb2ce8c9947d4f8adcb0bb4ab7b75b/types-babel-2.9.9.tar.gz
+[2023-06-04 08:20:44] INFO root fetch - processPackages [types-cffi]: executing diffoscope
+[2023-06-04 08:20:44] INFO root fetch - processPackages [types-cffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-cffi-1.15.1.8.tar.gz tmp/types-cffi-1.15.1.9.tar.gz --markdown 20230604/t/types-cffi/1.15.1.8-1.15.1.9/diff.md --exclude *.pyd
+[2023-06-04 08:20:44] INFO root fetch - processPackages [types-babel]: executing diffoscope
+[2023-06-04 08:20:44] INFO root fetch - processPackages [types-babel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-babel-2.9.8.tar.gz tmp/types-babel-2.9.9.tar.gz --markdown 20230604/t/types-babel/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-06-04 08:20:44] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 08:20:45] INFO root fetch - main [MainThread]: End processing [roco]: success
+[2023-06-04 08:20:45] INFO root fetch - main [MainThread]: End processing [types-cffi]: success
+[2023-06-04 08:20:45] INFO root fetch - main [MainThread]: End processing [types-babel]: success
+[2023-06-04 08:20:48] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-06-04 08:20:48] INFO root fetch - main [MainThread]: Store serial: [18364175]
