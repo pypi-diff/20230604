@@ -9023,3 +9023,72 @@
 [2023-06-04 20:47:38] INFO root fetch - main [MainThread]: End processing [ciocore]: success
 [2023-06-04 20:47:42] INFO root fetch - main [MainThread]: End processing [phiflow]: success
 [2023-06-04 20:47:42] INFO root fetch - main [MainThread]: Store serial: [18367923]
+[2023-06-04 20:52:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367923]
+[2023-06-04 20:52:51] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyDFTutils
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kalm
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adaptix
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shepherd-core
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shepherd-data
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: selenium-recaptcha-solver
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: plutous
+[2023-06-04 20:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: doFolder
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kalm]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [pyDFTutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [shepherd-core]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [shepherd-data]: New version: [2023.6.2] Old Version: [2023.6.1]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [plutous]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [adaptix]: New version: [3.0.0a4] Old Version: [3.0.0a3]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [doFolder]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [selenium-recaptcha-solver]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kalm]: executing diffoscope
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kalm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kalm-0.6.8.tar.gz tmp/kalm-0.6.9.tar.gz --markdown 20230604/k/kalm/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:52:51] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:52:51] INFO root fetch - processPackages [adaptix]: Downloading https://files.pythonhosted.org/packages/a1/8c/b3d2b1c8d8a1874063d3e7e7c2bbecd437231bf4cbf042dd0eb28a0dab92/adaptix-3.0.0a3.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [pyDFTutils]: Downloading https://files.pythonhosted.org/packages/f9/ba/55c7cdafce26342d792f20bafa0372c9a76eecb2e46fcd99447244ce3f7f/pyDFTutils-0.1.8.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [doFolder]: Downloading https://files.pythonhosted.org/packages/06/02/6e0f3a2ecaa139303f30f1f839328787025dac7b684eed1c05c98a9a9e1e/doFolder-0.0.7.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [selenium-recaptcha-solver]: Downloading https://files.pythonhosted.org/packages/c4/86/2819f46d66662fd20d2fff5a462fc79d0dd2faad160175c89e5a4b515a26/selenium-recaptcha-solver-1.8.2.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [shepherd-data]: Downloading https://files.pythonhosted.org/packages/f3/39/9505704f3721beb1e5980dca995fbce34b5ef1059732f2cf639ee2441418/shepherd_data-2023.6.2.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [adaptix]: Downloading https://files.pythonhosted.org/packages/d6/00/dfda48d626d9532dbf488f9988fca3180fb997546bd0bc41ae86c746900b/adaptix-3.0.0a4.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [doFolder]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [doFolder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doFolder-0.0.6.tar.gz tmp/doFolder-0.0.7.tar.gz --markdown 20230604/d/doFolder/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 20:52:52] INFO root fetch - processPackages [selenium-recaptcha-solver]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [selenium-recaptcha-solver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-recaptcha-solver-1.8.1.tar.gz tmp/selenium-recaptcha-solver-1.8.2.tar.gz --markdown 20230604/s/selenium-recaptcha-solver/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-06-04 20:52:52] INFO root fetch - processPackages [plutous]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [plutous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutous-0.0.8.tar.gz tmp/plutous-0.0.9.tar.gz --markdown 20230604/p/plutous/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 20:52:52] INFO root fetch - processPackages [pyDFTutils]: Downloading https://files.pythonhosted.org/packages/fa/49/7f2d834c0f0bbe1c7999b923414fc18ed112613137b8d85de6b933afc653/pyDFTutils-0.1.9.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [shepherd-data]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [shepherd-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shepherd_data-2023.6.1.tar.gz tmp/shepherd_data-2023.6.2.tar.gz --markdown 20230604/s/shepherd-data/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-04 20:52:52] INFO root fetch - processPackages [adaptix]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [adaptix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adaptix-3.0.0a3.tar.gz tmp/adaptix-3.0.0a4.tar.gz --markdown 20230604/a/adaptix/3.0.0a3-3.0.0a4/diff.md --exclude *.pyd
+[2023-06-04 20:52:52] INFO root fetch - processPackages [shepherd-core]: Downloading https://files.pythonhosted.org/packages/e7/8e/ed3d7fdc7084025bf27025bce9e66c1639252a586316f60b244c03494537/shepherd_core-2023.6.2.tar.gz
+[2023-06-04 20:52:52] INFO root fetch - processPackages [pyDFTutils]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [pyDFTutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyDFTutils-0.1.8.tar.gz tmp/pyDFTutils-0.1.9.tar.gz --markdown 20230604/p/pyDFTutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:52:52] INFO root fetch - processPackages [shepherd-core]: executing diffoscope
+[2023-06-04 20:52:52] INFO root fetch - processPackages [shepherd-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shepherd_core-2023.6.1.tar.gz tmp/shepherd_core-2023.6.2.tar.gz --markdown 20230604/s/shepherd-core/2023.6.1-2023.6.2/diff.md --exclude *.pyd
+[2023-06-04 20:52:53] INFO root fetch - processPackages [kelpie-personal-trainer]: Start processing: tja2fumen
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:52:53] WARNING root fetch - processPackages [tja2fumen]: Skipping, unable to determine old version
+[2023-06-04 20:52:53] INFO root fetch - processPackages [tja2fumen]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [tja2fumen] error
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:52:53] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:52:53] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:52:53] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.8.tar.gz tmp/kelpie_personal_trainer-0.1.9.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [kalm]: success
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [doFolder]: success
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [selenium-recaptcha-solver]: success
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [plutous]: success
+[2023-06-04 20:52:53] INFO root fetch - main [MainThread]: End processing [shepherd-data]: success
+[2023-06-04 20:52:54] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:52:55] INFO root fetch - main [MainThread]: End processing [shepherd-core]: success
+[2023-06-04 20:52:55] INFO root fetch - main [MainThread]: End processing [adaptix]: success
+[2023-06-04 20:52:56] INFO root fetch - main [MainThread]: End processing [pyDFTutils]: success
+[2023-06-04 20:52:56] INFO root fetch - main [MainThread]: Store serial: [18367959]
