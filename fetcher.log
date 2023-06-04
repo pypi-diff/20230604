@@ -2890,3 +2890,17 @@
 [2023-06-04 08:10:15] INFO root fetch - main [MainThread]: End processing [ezqc]: success
 [2023-06-04 08:10:19] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-06-04 08:10:19] INFO root fetch - main [MainThread]: Store serial: [18364133]
+[2023-06-04 08:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364133]
+[2023-06-04 08:15:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalkpy
+[2023-06-04 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-grafana-sdk
+[2023-06-04 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weizi2
+[2023-06-04 08:15:28] WARNING root fetch - processPackages [py-grafana-sdk]: Skipping, unable to determine old version
+[2023-06-04 08:15:28] INFO root fetch - main [MainThread]: End processing [py-grafana-sdk] error
+[2023-06-04 08:15:28] WARNING root fetch - processPackages [weizi2]: Skipping, unable to determine old version
+[2023-06-04 08:15:28] INFO root fetch - main [MainThread]: End processing [weizi2] error
+[2023-06-04 08:15:28] INFO root fetch - processPackages [chalkpy]: New version: [2.5.9] Old Version: [2.5.8]
+[2023-06-04 08:15:28] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-06-04 08:15:28] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.5.8.tar.gz tmp/chalkpy-2.5.9.tar.gz --markdown 20230604/c/chalkpy/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2023-06-04 08:15:34] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-06-04 08:15:34] INFO root fetch - main [MainThread]: Store serial: [18364150]
