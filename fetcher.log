@@ -2072,3 +2072,56 @@
 [2023-06-04 04:42:55] INFO root fetch - main [MainThread]: End processing [kfsd]: success
 [2023-06-04 04:43:28] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
 [2023-06-04 04:43:28] INFO root fetch - main [MainThread]: Store serial: [18363683]
+[2023-06-04 04:48:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363683]
+[2023-06-04 04:48:37] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text2phonemesequence
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-24
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monailabel-weekly
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-sale-order-invoicing-grouping-criteria
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s-plus-25
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: notebook-copilot
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vector-vault
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: text2phonemesequence
+[2023-06-04 04:48:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdk8s-plus-26
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-06-04 04:48:37] WARNING root fetch - processPackages [notebook-copilot]: Skipping, unable to determine old version
+[2023-06-04 04:48:37] INFO root fetch - main [MainThread]: End processing [notebook-copilot] error
+[2023-06-04 04:48:37] INFO root fetch - processPackages [vector-vault]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2323] Old Version: [0.5.dev2322]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.8.8.tar.gz tmp/cdk8s-plus-25-2.8.9.tar.gz --markdown 20230604/c/cdk8s-plus-25/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/57/40/922ea001ac663c59e2b33cafd5ff85825c3854b2b35f85df4858c37eef0e/text2phonemesequence-0.0.9.tar.gz
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/57/40/922ea001ac663c59e2b33cafd5ff85825c3854b2b35f85df4858c37eef0e/text2phonemesequence-0.0.9.tar.gz
+[2023-06-04 04:48:37] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/32/a2/559a5c1845dc126fc4024a934abef3f6923cb9fb4568781b28145438f6f7/vector_vault-1.8.1.tar.gz
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.4.8.tar.gz tmp/cdk8s-plus-26-2.4.9.tar.gz --markdown 20230604/c/cdk8s-plus-26/2.4.8-2.4.9/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.8.0.tar.gz tmp/vector_vault-1.8.1.tar.gz --markdown 20230604/v/vector-vault/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/a5/f3/e869a879bc13a2c11f8ee7a4d61a028fd63ce6f02c4685b81f12fc4dffc8/monailabel_weekly-0.5.dev2323-py3-none-any.whl
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/e9/41/e5577be4533ce31d554fb22649ea067798c4fc9c07cb928455d9df2a4605/text2phonemesequence-0.1.0.tar.gz
+[2023-06-04 04:48:37] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: Downloading https://files.pythonhosted.org/packages/e0/01/4fbe1b89ab09fd304ffbdc175d4be06157b3ba042302386377b4de93e55f/odoo_addon_sale_order_invoicing_grouping_criteria-16.0.1.0.0.3-py3-none-any.whl
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/e9/41/e5577be4533ce31d554fb22649ea067798c4fc9c07cb928455d9df2a4605/text2phonemesequence-0.1.0.tar.gz
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.8.8.tar.gz tmp/cdk8s-plus-24-2.8.9.tar.gz --markdown 20230604/c/cdk8s-plus-24/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2322-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2323-py3-none-any.whl.zip --markdown 20230604/m/monailabel-weekly/0.5.dev2322-0.5.dev2323/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [odoo-addon-sale-order-invoicing-grouping-criteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_order_invoicing_grouping_criteria-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_sale_order_invoicing_grouping_criteria-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230604/o/odoo-addon-sale-order-invoicing-grouping-criteria/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: executing diffoscope
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2phonemesequence-0.0.9.tar.gz tmp/text2phonemesequence-0.1.0.tar.gz --markdown 20230604/t/text2phonemesequence/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-06-04 04:48:37] INFO root fetch - processPackages [text2phonemesequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2phonemesequence-0.0.9.tar.gz tmp/text2phonemesequence-0.1.0.tar.gz --markdown 20230604/t/text2phonemesequence/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-06-04 04:48:39] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
+[2023-06-04 04:48:39] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-06-04 04:48:39] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
+[2023-06-04 04:48:39] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 04:48:39] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-06-04 04:48:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-invoicing-grouping-criteria]: success
+[2023-06-04 04:48:41] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-06-04 04:48:44] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-06-04 04:48:44] INFO root fetch - main [MainThread]: Store serial: [18363709]
