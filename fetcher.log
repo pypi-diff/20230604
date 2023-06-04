@@ -1457,3 +1457,24 @@
 [2023-06-04 02:51:15] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-06-04 02:51:19] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-06-04 02:51:19] INFO root fetch - main [MainThread]: Store serial: [18363325]
+[2023-06-04 02:56:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363325]
+[2023-06-04 02:56:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 02:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: repo-review
+[2023-06-04 02:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-06-04 02:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyAutoSummarizer
+[2023-06-04 02:56:28] INFO root fetch - processPackages [pyAutoSummarizer]: New version: [1.1.2] Old Version: [1.1.0]
+[2023-06-04 02:56:28] INFO root fetch - processPackages [repo-review]: New version: [0.7.0b2] Old Version: [0.7.0b1]
+[2023-06-04 02:56:28] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-04 02:56:28] INFO root fetch - processPackages [repo-review]: Downloading https://files.pythonhosted.org/packages/13/9a/ea75ff4b3db68ce4badf6b910e811da651238b6b0249de6caebc0151b5f0/repo_review-0.7.0b1.tar.gz
+[2023-06-04 02:56:28] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-06-04 02:56:28] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-06-04 02:56:28] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-06-04 02:56:28] INFO root fetch - processPackages [pyAutoSummarizer]: Downloading https://files.pythonhosted.org/packages/d3/f2/9406054e8acb07e55db19da875a11f25ab72014b5ba6713e0e3958c1bf37/pyAutoSummarizer-1.1.2.tar.gz
+[2023-06-04 02:56:28] INFO root fetch - processPackages [pyAutoSummarizer]: executing diffoscope
+[2023-06-04 02:56:28] INFO root fetch - processPackages [pyAutoSummarizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAutoSummarizer-1.1.0.tar.gz tmp/pyAutoSummarizer-1.1.2.tar.gz --markdown 20230604/p/pyAutoSummarizer/1.1.0-1.1.2/diff.md --exclude *.pyd
+[2023-06-04 02:56:28] INFO root fetch - processPackages [repo-review]: Downloading https://files.pythonhosted.org/packages/ec/e9/2fb8bff073a2bb073dee48e965dfb499ebce5b897fe905100b809f2d24a0/repo_review-0.7.0b2.tar.gz
+[2023-06-04 02:56:29] INFO root fetch - processPackages [repo-review]: executing diffoscope
+[2023-06-04 02:56:29] INFO root fetch - processPackages [repo-review]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repo_review-0.7.0b1.tar.gz tmp/repo_review-0.7.0b2.tar.gz --markdown 20230604/r/repo-review/0.7.0b1-0.7.0b2/diff.md --exclude *.pyd
+[2023-06-04 02:56:30] INFO root fetch - main [MainThread]: End processing [pyAutoSummarizer]: success
+[2023-06-04 02:56:30] INFO root fetch - main [MainThread]: End processing [repo-review]: success
+[2023-06-04 02:56:30] INFO root fetch - main [MainThread]: Store serial: [18363339]
