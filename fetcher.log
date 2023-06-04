@@ -7502,3 +7502,59 @@
 [2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [chyp]: success
 [2023-06-04 17:45:37] INFO root fetch - main [MainThread]: End processing [pylwr]: success
 [2023-06-04 17:45:37] INFO root fetch - main [MainThread]: Store serial: [18366970]
+[2023-06-04 17:50:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366970]
+[2023-06-04 17:50:47] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: previewer
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-websocket
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: currency-codes
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iced-x86
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onnx-simplifier
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mypackagelicenseprototype
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: juno-ai
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: onnxsim
+[2023-06-04 17:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: engorgio
+[2023-06-04 17:50:47] INFO root fetch - processPackages [iced-x86]: New version: [1.9.1] Old Version: [1.19.0]
+[2023-06-04 17:50:47] WARNING root fetch - processPackages [engorgio]: Skipping, unable to determine old version
+[2023-06-04 17:50:47] INFO root fetch - processPackages [simple-websocket]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-06-04 17:50:47] INFO root fetch - processPackages [previewer]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-06-04 17:50:47] INFO root fetch - main [MainThread]: End processing [engorgio] error
+[2023-06-04 17:50:47] INFO root fetch - processPackages [juno-ai]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 17:50:47] INFO root fetch - processPackages [currency-codes]: New version: [23.6.4] Old Version: [23.5.6]
+[2023-06-04 17:50:47] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.3.0] Old Version: [1.2.6]
+[2023-06-04 17:50:47] INFO root fetch - processPackages [onnxsim]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-04 17:50:47] INFO root fetch - processPackages [onnx-simplifier]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-04 17:50:47] INFO root fetch - processPackages [iced-x86]: Downloading https://files.pythonhosted.org/packages/d6/27/3995e1e81f9954d628c3d5f0db8f9e8885f44389503b7dfa15e2a5c4b936/iced-x86-1.19.0.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [previewer]: Downloading https://files.pythonhosted.org/packages/bb/b2/e1133b50f318783354bc59ee0ce56b98aeac913f56a887987dd5cf43a90f/previewer-0.5.0.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [simple-websocket]: Downloading https://files.pythonhosted.org/packages/d1/1d/09ac444e0bf6badb2ef3203f0e52b0923337518dfce08eee6b98f7ab442a/simple-websocket-0.8.1.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/1b/47/88655c7a81a4c02156d48a85e00133307bb44c75053de6ab745b78613f1a/mypackagelicenseprototype-1.3.0.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [currency-codes]: Downloading https://files.pythonhosted.org/packages/65/91/1cd9c7a8e123e109db6527c19597cb8e0c416966cfd22d370a7e79033452/currency_codes-23.5.6.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [onnxsim]: Downloading https://files.pythonhosted.org/packages/e7/b9/202cc2584a4ec999caa935e7e0fdb09bedec99bf28f3a8b35455ff6864eb/onnxsim-0.4.8.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [onnx-simplifier]: Downloading https://files.pythonhosted.org/packages/d6/bb/4883248b3354d146d32371ede26d0194526a8c138b74c45fbaca5af54651/onnx-simplifier-0.4.8.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [juno-ai]: Downloading https://files.pythonhosted.org/packages/d2/e7/232548e600317528b75b8aa655ba7ce4c4fbdc886ebcf72a67edeaa3909d/juno-ai-0.0.7.tar.gz
+[2023-06-04 17:50:47] WARNING root fetch - processPackages [onnx-simplifier]: Skipping package: exceeds size limit 18116655>=10485760
+[2023-06-04 17:50:47] INFO root fetch - main [MainThread]: End processing [onnx-simplifier] error
+[2023-06-04 17:50:47] WARNING root fetch - processPackages [onnxsim]: Skipping package: exceeds size limit 18121422>=10485760
+[2023-06-04 17:50:47] INFO root fetch - main [MainThread]: End processing [onnxsim] error
+[2023-06-04 17:50:47] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 17:50:47] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.2.6.tar.gz tmp/mypackagelicenseprototype-1.3.0.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.2.6-1.3.0/diff.md --exclude *.pyd
+[2023-06-04 17:50:47] INFO root fetch - processPackages [juno-ai]: executing diffoscope
+[2023-06-04 17:50:47] INFO root fetch - processPackages [juno-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/juno-ai-0.0.6.tar.gz tmp/juno-ai-0.0.7.tar.gz --markdown 20230604/j/juno-ai/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 17:50:47] INFO root fetch - processPackages [currency-codes]: Downloading https://files.pythonhosted.org/packages/67/93/4756d484b3bc006e76a5cfcd5c3cb5943adfa2e7d6a907be2f48b2819576/currency_codes-23.6.4.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [iced-x86]: Downloading https://files.pythonhosted.org/packages/83/06/fcfeb76ec3a29ff7710b14176e017e804eb675bab0893763a6fa8952b0a8/iced-x86-1.9.1.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [previewer]: Downloading https://files.pythonhosted.org/packages/04/6a/730e8e10518f9a32dbac6c63c2434321674c93130371c2f90ab8739c91c3/previewer-0.5.1.tar.gz
+[2023-06-04 17:50:47] INFO root fetch - processPackages [simple-websocket]: Downloading https://files.pythonhosted.org/packages/74/71/d2f97cc06d82e24e54a2efb887d3a5a4d1f0d40a0f20104e69bf2c626efa/simple-websocket-0.9.0.tar.gz
+[2023-06-04 17:50:48] INFO root fetch - processPackages [currency-codes]: executing diffoscope
+[2023-06-04 17:50:48] INFO root fetch - processPackages [currency-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/currency_codes-23.5.6.tar.gz tmp/currency_codes-23.6.4.tar.gz --markdown 20230604/c/currency-codes/23.5.6-23.6.4/diff.md --exclude *.pyd
+[2023-06-04 17:50:48] INFO root fetch - processPackages [previewer]: executing diffoscope
+[2023-06-04 17:50:48] INFO root fetch - processPackages [previewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/previewer-0.5.0.tar.gz tmp/previewer-0.5.1.tar.gz --markdown 20230604/p/previewer/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-06-04 17:50:48] INFO root fetch - processPackages [simple-websocket]: executing diffoscope
+[2023-06-04 17:50:48] INFO root fetch - processPackages [simple-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-websocket-0.8.1.tar.gz tmp/simple-websocket-0.9.0.tar.gz --markdown 20230604/s/simple-websocket/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 17:50:48] INFO root fetch - processPackages [iced-x86]: executing diffoscope
+[2023-06-04 17:50:48] INFO root fetch - processPackages [iced-x86]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iced-x86-1.19.0.tar.gz tmp/iced-x86-1.9.1.tar.gz --markdown 20230604/i/iced-x86/1.19.0-1.9.1/diff.md --exclude *.pyd
+[2023-06-04 17:50:48] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 17:50:49] INFO root fetch - main [MainThread]: End processing [currency-codes]: success
+[2023-06-04 17:50:49] INFO root fetch - main [MainThread]: End processing [previewer]: success
+[2023-06-04 17:50:49] INFO root fetch - main [MainThread]: End processing [simple-websocket]: success
+[2023-06-04 17:50:49] INFO root fetch - main [MainThread]: End processing [juno-ai]: success
+[2023-06-04 17:50:52] INFO root fetch - main [MainThread]: End processing [iced-x86]: success
+[2023-06-04 17:50:52] INFO root fetch - main [MainThread]: Store serial: [18367031]
