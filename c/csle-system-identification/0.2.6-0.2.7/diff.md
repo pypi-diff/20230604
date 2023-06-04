@@ -1,0 +1,209 @@
+# Comparing `tmp/csle_system_identification-0.2.6.tar.gz` & `tmp/csle_system_identification-0.2.7.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "csle_system_identification-0.2.6.tar", last modified: Sun Jun  4 07:40:00 2023, max compression
++gzip compressed data, was "csle_system_identification-0.2.7.tar", last modified: Sun Jun  4 08:33:07 2023, max compression
+```
+
+## Comparing `csle_system_identification-0.2.6.tar` & `csle_system_identification-0.2.7.tar`
+
+### file list
+
+```diff
+@@ -1,38 +1,38 @@
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/
+--rw-rw-r--   0 kim       (1000) kim       (1000)      671 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/PKG-INFO
+--rw-rw-r--   0 kim       (1000) kim       (1000)     4235 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/README.md
+--rw-rw-r--   0 kim       (1000) kim       (1000)      686 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/pyproject.toml
+--rw-rw-r--   0 kim       (1000) kim       (1000)     1340 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/setup.cfg
+--rw-rw-r--   0 kim       (1000) kim       (1000)       69 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/setup.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.517863 csle_system_identification-0.2.6/src/
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.517863 csle_system_identification-0.2.6/src/csle_system_identification/
+--rw-rw-r--   0 kim       (1000) kim       (1000)       37 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)       22 2023-06-04 07:39:12.000000 csle_system_identification-0.2.6/src/csle_system_identification/__version__.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.517863 csle_system_identification-0.2.6/src/csle_system_identification/base/
+--rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/base/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)     2074 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/base/base_system_identification_algorithm.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.517863 csle_system_identification-0.2.6/src/csle_system_identification/constants/
+--rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/constants/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)      688 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/constants/constants.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/src/csle_system_identification/empirical/
+--rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/empirical/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)     7249 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/empirical/empirical_algorithm.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)    17108 2023-04-18 12:43:31.000000 csle_system_identification-0.2.6/src/csle_system_identification/emulator.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/src/csle_system_identification/expectation_maximization/
+--rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/expectation_maximization/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)     7494 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/expectation_maximization/expectation_maximization_algorithm.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/src/csle_system_identification/gp/
+--rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/gp/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)     9801 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/gp/gp_regression_algorithm.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)      555 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/gp/gp_regression_model_with_gauissan_noise.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.521863 csle_system_identification-0.2.6/src/csle_system_identification/job_controllers/
+--rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/job_controllers/__init__.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)     2159 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/job_controllers/data_collection_job_manager.py
+--rw-rw-r--   0 kim       (1000) kim       (1000)     2212 2023-03-28 14:03:22.000000 csle_system_identification-0.2.6/src/csle_system_identification/job_controllers/system_identification_job_manager.py
+-drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 07:40:00.517863 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/
+--rw-rw-r--   0 kim       (1000) kim       (1000)      671 2023-06-04 07:40:00.000000 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/PKG-INFO
+--rw-rw-r--   0 kim       (1000) kim       (1000)     1412 2023-06-04 07:40:00.000000 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/SOURCES.txt
+--rw-rw-r--   0 kim       (1000) kim       (1000)        1 2023-06-04 07:40:00.000000 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/dependency_links.txt
+--rw-rw-r--   0 kim       (1000) kim       (1000)        1 2022-11-28 13:36:14.000000 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/not-zip-safe
+--rw-rw-r--   0 kim       (1000) kim       (1000)      257 2023-06-04 07:40:00.000000 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/requires.txt
+--rw-rw-r--   0 kim       (1000) kim       (1000)       27 2023-06-04 07:40:00.000000 csle_system_identification-0.2.6/src/csle_system_identification.egg-info/top_level.txt
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/
++-rw-rw-r--   0 kim       (1000) kim       (1000)      671 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/PKG-INFO
++-rw-rw-r--   0 kim       (1000) kim       (1000)     4235 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/README.md
++-rw-rw-r--   0 kim       (1000) kim       (1000)      686 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/pyproject.toml
++-rw-rw-r--   0 kim       (1000) kim       (1000)     1340 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/setup.cfg
++-rw-rw-r--   0 kim       (1000) kim       (1000)       69 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/setup.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/
++-rw-rw-r--   0 kim       (1000) kim       (1000)       37 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)       22 2023-06-04 08:32:18.000000 csle_system_identification-0.2.7/src/csle_system_identification/__version__.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/base/
++-rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/base/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)     2074 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/base/base_system_identification_algorithm.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/constants/
++-rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/constants/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)      688 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/constants/constants.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/empirical/
++-rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/empirical/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)     7249 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/empirical/empirical_algorithm.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)    17108 2023-04-18 12:43:31.000000 csle_system_identification-0.2.7/src/csle_system_identification/emulator.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/expectation_maximization/
++-rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/expectation_maximization/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)     7494 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/expectation_maximization/expectation_maximization_algorithm.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/gp/
++-rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/gp/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)     9801 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/gp/gp_regression_algorithm.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)      555 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/gp/gp_regression_model_with_gauissan_noise.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification/job_controllers/
++-rw-rw-r--   0 kim       (1000) kim       (1000)        0 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/job_controllers/__init__.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)     2159 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/job_controllers/data_collection_job_manager.py
++-rw-rw-r--   0 kim       (1000) kim       (1000)     2212 2023-03-28 14:03:22.000000 csle_system_identification-0.2.7/src/csle_system_identification/job_controllers/system_identification_job_manager.py
++drwxrwxr-x   0 kim       (1000) kim       (1000)        0 2023-06-04 08:33:07.907280 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/
++-rw-rw-r--   0 kim       (1000) kim       (1000)      671 2023-06-04 08:33:07.000000 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/PKG-INFO
++-rw-rw-r--   0 kim       (1000) kim       (1000)     1412 2023-06-04 08:33:07.000000 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/SOURCES.txt
++-rw-rw-r--   0 kim       (1000) kim       (1000)        1 2023-06-04 08:33:07.000000 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/dependency_links.txt
++-rw-rw-r--   0 kim       (1000) kim       (1000)        1 2022-11-28 13:36:14.000000 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/not-zip-safe
++-rw-rw-r--   0 kim       (1000) kim       (1000)      257 2023-06-04 08:33:07.000000 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/requires.txt
++-rw-rw-r--   0 kim       (1000) kim       (1000)       27 2023-06-04 08:33:07.000000 csle_system_identification-0.2.7/src/csle_system_identification.egg-info/top_level.txt
+```
+
+### Comparing `csle_system_identification-0.2.6/PKG-INFO` & `csle_system_identification-0.2.7/PKG-INFO`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: csle_system_identification
+-Version: 0.2.6
++Version: 0.2.7
+ Summary: Scripts for system identification in CSLE
+ Author: Kim Hammar
+ Author-email: hammar.kim@gmail.com
+ License: Creative Commons Attribution-ShareAlike 4.0 International
+ Keywords: Reinforcement-Learning Cyber-Security Markov-Games Markov-Decision-Processes
+ Platform: unix
+ Platform: linux
+```
+
+### Comparing `csle_system_identification-0.2.6/README.md` & `csle_system_identification-0.2.7/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/pyproject.toml` & `csle_system_identification-0.2.7/pyproject.toml`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/setup.cfg` & `csle_system_identification-0.2.7/setup.cfg`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -15,18 +15,18 @@
+ 	Programming Language :: Python :: 3 :: Only
+ 	Programming Language :: Python :: 3.8
+ 	Programming Language :: Python :: 3.9
+ 	Intended Audience :: Science/Research
+ 
+ [options]
+ install_requires = 
+-	csle-common>=0.2.6
+-	csle-collector>=0.2.6
+-	csle-attacker>=0.2.6
+-	csle-defender>=0.2.6
++	csle-common>=0.2.7
++	csle-collector>=0.2.7
++	csle-attacker>=0.2.7
++	csle-defender>=0.2.7
+ 	gpytorch>=1.9.0
+ python_requires = >=3.8
+ package_dir = 
+ 	=src
+ packages = find:
+ zip_safe = no
+```
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/base/base_system_identification_algorithm.py` & `csle_system_identification-0.2.7/src/csle_system_identification/base/base_system_identification_algorithm.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/constants/constants.py` & `csle_system_identification-0.2.7/src/csle_system_identification/constants/constants.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/empirical/empirical_algorithm.py` & `csle_system_identification-0.2.7/src/csle_system_identification/empirical/empirical_algorithm.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/emulator.py` & `csle_system_identification-0.2.7/src/csle_system_identification/emulator.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/expectation_maximization/expectation_maximization_algorithm.py` & `csle_system_identification-0.2.7/src/csle_system_identification/expectation_maximization/expectation_maximization_algorithm.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/gp/gp_regression_algorithm.py` & `csle_system_identification-0.2.7/src/csle_system_identification/gp/gp_regression_algorithm.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/gp/gp_regression_model_with_gauissan_noise.py` & `csle_system_identification-0.2.7/src/csle_system_identification/gp/gp_regression_model_with_gauissan_noise.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/job_controllers/data_collection_job_manager.py` & `csle_system_identification-0.2.7/src/csle_system_identification/job_controllers/data_collection_job_manager.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification/job_controllers/system_identification_job_manager.py` & `csle_system_identification-0.2.7/src/csle_system_identification/job_controllers/system_identification_job_manager.py`
+
+ * *Files identical despite different names*
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification.egg-info/PKG-INFO` & `csle_system_identification-0.2.7/src/csle_system_identification.egg-info/PKG-INFO`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: csle-system-identification
+-Version: 0.2.6
++Version: 0.2.7
+ Summary: Scripts for system identification in CSLE
+ Author: Kim Hammar
+ Author-email: hammar.kim@gmail.com
+ License: Creative Commons Attribution-ShareAlike 4.0 International
+ Keywords: Reinforcement-Learning Cyber-Security Markov-Games Markov-Decision-Processes
+ Platform: unix
+ Platform: linux
+```
+
+### Comparing `csle_system_identification-0.2.6/src/csle_system_identification.egg-info/SOURCES.txt` & `csle_system_identification-0.2.7/src/csle_system_identification.egg-info/SOURCES.txt`
+
+ * *Files identical despite different names*
+
