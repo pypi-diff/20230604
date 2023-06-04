@@ -7977,3 +7977,28 @@
 [2023-06-04 18:40:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
 [2023-06-04 18:41:50] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
 [2023-06-04 18:41:50] INFO root fetch - main [MainThread]: Store serial: [18367275]
+[2023-06-04 18:46:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367275]
+[2023-06-04 18:46:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpservice
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-stt-plugin-server
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-skill-stop
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cpggen
+[2023-06-04 18:46:59] INFO root fetch - processPackages [cpggen]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-stt-plugin-server]: New version: [0.0.4a2] Old Version: [0.0.4a1]
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-skill-stop]: New version: [0.3.0a2] Old Version: [0.3.0a1]
+[2023-06-04 18:46:59] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-06-04 18:46:59] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/5b/f5/493d7847b1eeb337ff962d7112152abac50144c9677f0db54c48a51a50bf/cpggen-1.3.1.tar.gz
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-skill-stop]: Downloading https://files.pythonhosted.org/packages/14/a2/8982e2ce7d154c973adaa7bee40edb60f1824ffc388cb7e8e3bca543ad30/ovos_skill_stop-0.3.0a2-py3-none-any.whl
+[2023-06-04 18:46:59] WARNING root fetch - processPackages [cpggen]: Skipping package: exceeds size limit 72045098>=10485760
+[2023-06-04 18:46:59] INFO root fetch - main [MainThread]: End processing [cpggen] error
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-stt-plugin-server]: Downloading https://files.pythonhosted.org/packages/0a/3a/b598861ae621ab8cc561b6e1762385d1122ce594091d1018c9c1b22ea4b9/ovos_stt_plugin_server-0.0.4a2-py3-none-any.whl
+[2023-06-04 18:46:59] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-06-04 18:46:59] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230604/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-skill-stop]: executing diffoscope
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-skill-stop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_stop-0.3.0a1-py3-none-any.whl.zip tmp/ovos_skill_stop-0.3.0a2-py3-none-any.whl.zip --markdown 20230604/o/ovos-skill-stop/0.3.0a1-0.3.0a2/diff.md --exclude *.pyd
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-stt-plugin-server]: executing diffoscope
+[2023-06-04 18:46:59] INFO root fetch - processPackages [ovos-stt-plugin-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_stt_plugin_server-0.0.4a1-py3-none-any.whl.zip tmp/ovos_stt_plugin_server-0.0.4a2-py3-none-any.whl.zip --markdown 20230604/o/ovos-stt-plugin-server/0.0.4a1-0.0.4a2/diff.md --exclude *.pyd
+[2023-06-04 18:47:00] INFO root fetch - main [MainThread]: End processing [ovos-stt-plugin-server]: success
+[2023-06-04 18:47:00] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-06-04 18:47:00] INFO root fetch - main [MainThread]: End processing [ovos-skill-stop]: success
+[2023-06-04 18:47:00] INFO root fetch - main [MainThread]: Store serial: [18367290]
