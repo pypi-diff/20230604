@@ -9588,3 +9588,31 @@
 [2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [paracrine]: success
 [2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cldomain]: success
 [2023-06-04 21:51:19] INFO root fetch - main [MainThread]: Store serial: [18368256]
+[2023-06-04 21:56:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368256]
+[2023-06-04 21:56:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 21:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pibble
+[2023-06-04 21:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: podval
+[2023-06-04 21:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parafilt
+[2023-06-04 21:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plynx
+[2023-06-04 21:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qick
+[2023-06-04 21:56:28] INFO root fetch - processPackages [plynx]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-06-04 21:56:28] INFO root fetch - processPackages [pibble]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-06-04 21:56:28] WARNING root fetch - processPackages [parafilt]: Skipping, unable to determine old version
+[2023-06-04 21:56:28] INFO root fetch - main [MainThread]: End processing [parafilt] error
+[2023-06-04 21:56:28] INFO root fetch - processPackages [podval]: New version: [2.0] Old Version: [1.0]
+[2023-06-04 21:56:29] INFO root fetch - processPackages [qick]: New version: [0.2.150] Old Version: [0.2.147]
+[2023-06-04 21:56:29] INFO root fetch - processPackages [pibble]: Downloading https://files.pythonhosted.org/packages/2b/63/d61bbc5ca0c265ea945dc485df437e62eac46096ef54820de704d823075f/pibble-0.5.8.tar.gz
+[2023-06-04 21:56:29] INFO root fetch - processPackages [pibble]: executing diffoscope
+[2023-06-04 21:56:29] INFO root fetch - processPackages [pibble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pibble-0.5.7.tar.gz tmp/pibble-0.5.8.tar.gz --markdown 20230604/p/pibble/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2023-06-04 21:56:29] INFO root fetch - processPackages [qick]: Downloading https://files.pythonhosted.org/packages/7c/9c/2a3f16ca3f74716f3bfcb8ef3ea30e075f6cdd63a521ac44c0c4321eedf3/qick-0.2.147.tar.gz
+[2023-06-04 21:56:29] INFO root fetch - processPackages [podval]: Downloading https://files.pythonhosted.org/packages/07/57/5c0ae1c837fc08a8fbb6a84a548d2a69996a1c19c347d7ccd7d8e01af97a/podval-2.0.tar.gz
+[2023-06-04 21:56:29] INFO root fetch - processPackages [plynx]: executing diffoscope
+[2023-06-04 21:56:29] INFO root fetch - processPackages [plynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plynx-1.9.8.tar.gz tmp/plynx-1.9.9.tar.gz --markdown 20230604/p/plynx/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-06-04 21:56:29] WARNING root fetch - processPackages [qick]: Skipping package: exceeds size limit 13546793>=10485760
+[2023-06-04 21:56:29] INFO root fetch - main [MainThread]: End processing [qick] error
+[2023-06-04 21:56:29] INFO root fetch - processPackages [podval]: executing diffoscope
+[2023-06-04 21:56:29] INFO root fetch - processPackages [podval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/podval-1.0.tar.gz tmp/podval-2.0.tar.gz --markdown 20230604/p/podval/1.0-2.0/diff.md --exclude *.pyd
+[2023-06-04 21:56:30] INFO root fetch - main [MainThread]: End processing [podval]: success
+[2023-06-04 21:56:30] INFO root fetch - main [MainThread]: End processing [plynx]: success
+[2023-06-04 21:56:31] INFO root fetch - main [MainThread]: End processing [pibble]: success
+[2023-06-04 21:56:31] INFO root fetch - main [MainThread]: Store serial: [18368271]
