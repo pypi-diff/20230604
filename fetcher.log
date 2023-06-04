@@ -10020,3 +10020,68 @@
 [2023-06-04 22:49:17] INFO root fetch - main [MainThread]: End processing [notionlib]: success
 [2023-06-04 22:50:10] INFO root fetch - main [MainThread]: End processing [azureml-automl-core]: success
 [2023-06-04 22:50:10] INFO root fetch - main [MainThread]: Store serial: [18368536]
+[2023-06-04 22:55:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368536]
+[2023-06-04 22:55:19] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etm-dgraham
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: y4d
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ultralytics
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: frascii
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whisper-clipboard
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: thermo
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pychasing
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yarok
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: frascii
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jaxhelper
+[2023-06-04 22:55:19] INFO root fetch - processPackages [y4d]: New version: [1.0.0] Old Version: [0.1.5]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [frascii]: New version: [3.7] Old Version: [3.6]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [frascii]: New version: [3.7] Old Version: [3.6]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [whisper-clipboard]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [thermo]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [pychasing]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [yarok]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [ultralytics]: New version: [8.0.99] Old Version: [8.0.98]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [etm-dgraham]: New version: [5.0.3] Old Version: [4.9.7]
+[2023-06-04 22:55:19] INFO root fetch - processPackages [yarok]: executing diffoscope
+[2023-06-04 22:55:19] INFO root fetch - processPackages [yarok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yarok-0.0.8.tar.gz tmp/yarok-0.0.9.tar.gz --markdown 20230604/y/yarok/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 22:55:19] WARNING root fetch - processPackages [jaxhelper]: Skipping, unable to determine old version
+[2023-06-04 22:55:19] INFO root fetch - processPackages [jaxhelper]: Start processing: acrclient
+[2023-06-04 22:55:19] INFO root fetch - main [MainThread]: End processing [jaxhelper] error
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: Downloading https://files.pythonhosted.org/packages/d4/88/f8247f3e9cf082c04800c8cbcd9a51a03203d2499ec87839f6b822e1b50b/frascii-3.6.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [thermo]: Downloading https://files.pythonhosted.org/packages/27/c9/7aa856583152387add5b9700ec8245ebe08243b9d75dcba3ea1ee1e9f6a6/thermo-0.2.8.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: Downloading https://files.pythonhosted.org/packages/d4/88/f8247f3e9cf082c04800c8cbcd9a51a03203d2499ec87839f6b822e1b50b/frascii-3.6.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [acrclient]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-06-04 22:55:20] INFO root fetch - processPackages [whisper-clipboard]: Downloading https://files.pythonhosted.org/packages/21/09/704022054cfb4ad19b6114f613dd96c42800a8e1f5377d8f30f633232c0d/whisper-clipboard-0.2.0.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [y4d]: Downloading https://files.pythonhosted.org/packages/20/d9/6dd5e04835ce988b067724aab6135da148518781a212a4c140ff63b0a1bd/y4d-1.0.0.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [pychasing]: Downloading https://files.pythonhosted.org/packages/3f/3f/1120dfbd5688f0ca123de5dd3a84f7ab6a3759e8f619b5911c1b86ac68d2/pychasing-0.1.8.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [whisper-clipboard]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [whisper-clipboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-clipboard-0.1.3.tar.gz tmp/whisper-clipboard-0.2.0.tar.gz --markdown 20230604/w/whisper-clipboard/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: Downloading https://files.pythonhosted.org/packages/4a/3f/8fdc7c3fa49287be57806ac9d51c077ffc997f67725f03aa3c897dde6d28/frascii-3.7.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/a8/d0/7ac12ac072551e2e47a527216b389c4182e4e8b104f6949e061332c7484d/etm-dgraham-5.0.3.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: Downloading https://files.pythonhosted.org/packages/4a/3f/8fdc7c3fa49287be57806ac9d51c077ffc997f67725f03aa3c897dde6d28/frascii-3.7.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [pychasing]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [pychasing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychasing-0.1.7.tar.gz tmp/pychasing-0.1.8.tar.gz --markdown 20230604/p/pychasing/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.98.tar.gz tmp/ultralytics-8.0.99.tar.gz --markdown 20230604/u/ultralytics/8.0.98-8.0.99/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frascii-3.6.tar.gz tmp/frascii-3.7.tar.gz --markdown 20230604/f/frascii/3.6-3.7/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [y4d]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [y4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/y4d-0.1.5.tar.gz tmp/y4d-1.0.0.tar.gz --markdown 20230604/y/y4d/0.1.5-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [frascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frascii-3.6.tar.gz tmp/frascii-3.7.tar.gz --markdown 20230604/f/frascii/3.6-3.7/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-4.9.7.tar.gz tmp/etm-dgraham-5.0.3.tar.gz --markdown 20230604/e/etm-dgraham/4.9.7-5.0.3/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] INFO root fetch - processPackages [acrclient]: Downloading https://files.pythonhosted.org/packages/d0/99/d5a41b3e6789edacc9f4f86351ad7ddab4efe07fd0a1e003f4a386367251/acrclient-0.4.1.tar.gz
+[2023-06-04 22:55:20] INFO root fetch - processPackages [acrclient]: executing diffoscope
+[2023-06-04 22:55:20] INFO root fetch - processPackages [acrclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrclient-0.4.0.tar.gz tmp/acrclient-0.4.1.tar.gz --markdown 20230604/a/acrclient/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-06-04 22:55:20] WARNING root fetch - processPackages [thermo]: Skipping package: exceeds size limit 10732574>=10485760
+[2023-06-04 22:55:20] INFO root fetch - main [MainThread]: End processing [thermo] error
+[2023-06-04 22:55:21] INFO root fetch - main [MainThread]: End processing [whisper-clipboard]: success
+[2023-06-04 22:55:21] INFO root fetch - main [MainThread]: End processing [pychasing]: success
+[2023-06-04 22:55:21] INFO root fetch - main [MainThread]: End processing [frascii]: success
+[2023-06-04 22:55:21] INFO root fetch - main [MainThread]: End processing [y4d]: success
+[2023-06-04 22:55:21] INFO root fetch - main [MainThread]: End processing [frascii]: success
+[2023-06-04 22:55:21] INFO root fetch - main [MainThread]: End processing [acrclient]: success
+[2023-06-04 22:55:22] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2023-06-04 22:55:24] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2023-06-04 22:55:24] INFO root fetch - main [MainThread]: End processing [yarok]: success
+[2023-06-04 22:55:24] INFO root fetch - main [MainThread]: Store serial: [18368572]
