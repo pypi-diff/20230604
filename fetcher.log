@@ -6597,3 +6597,56 @@
 [2023-06-04 16:11:08] INFO root fetch - main [MainThread]: End processing [all-fives-domino]: success
 [2023-06-04 16:11:08] INFO root fetch - main [MainThread]: End processing [CommandAlarm]: success
 [2023-06-04 16:11:08] INFO root fetch - main [MainThread]: Store serial: [18366331]
+[2023-06-04 16:16:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366331]
+[2023-06-04 16:16:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genetikaplusIO
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypipr
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydash2hls
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycbzhelper
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: westat
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: banks
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thunder-ase
+[2023-06-04 16:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: clusterfun
+[2023-06-04 16:16:17] INFO root fetch - processPackages [genetikaplusIO]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 16:16:17] INFO root fetch - processPackages [clusterfun]: New version: [0.1.5a7] Old Version: [0.1.4a7]
+[2023-06-04 16:16:17] WARNING root fetch - processPackages [banks]: Skipping, unable to determine old version
+[2023-06-04 16:16:17] INFO root fetch - processPackages [westat]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-06-04 16:16:17] INFO root fetch - main [MainThread]: End processing [banks] error
+[2023-06-04 16:16:17] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.1.4] Old Version: [1.1.2]
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pydash2hls]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pycbzhelper]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-06-04 16:16:17] INFO root fetch - processPackages [thunder-ase]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pypipr]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.94.tar.gz tmp/pypipr-0.1.95.tar.gz --markdown 20230604/p/pypipr/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pycbzhelper]: Downloading https://files.pythonhosted.org/packages/bd/d0/9ce52aeba36d57ce5b946a2a30e6c334cbbd71339e3690848339f6b4460c/pycbzhelper-3.1.0.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/42/77/16804fedfa5a6ac86082d833007197d8ad8a7ef7bdb5e9e381751f3fd277/clusterfun-0.1.5a7.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pydash2hls]: Downloading https://files.pythonhosted.org/packages/98/f1/6809fc3c0bfe4ab5b4aff78eca511db9517b28f069c5f801f9aa7fe253fc/pydash2hls-2.1.2.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/f5/53/0f4cd6648c3b9a6716e23b803566a1bb97e01801a8c482b34e9e5f6e4e7e/myPackageLicensePrototype-1.1.4.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pydash2hls]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pydash2hls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydash2hls-2.1.1.tar.gz tmp/pydash2hls-2.1.2.tar.gz --markdown 20230604/p/pydash2hls/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-06-04 16:16:17] INFO root fetch - processPackages [genetikaplusIO]: Downloading https://files.pythonhosted.org/packages/76/48/b78c7ca4fb614499721b609e6d274578af28f3c3a5f4373a3c08b3201052/genetikaplusIO-0.0.7.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.1.2.tar.gz tmp/myPackageLicensePrototype-1.1.4.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.1.2-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 16:16:17] INFO root fetch - processPackages [genetikaplusIO]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [genetikaplusIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genetikaplusIO-0.0.6.tar.gz tmp/genetikaplusIO-0.0.7.tar.gz --markdown 20230604/g/genetikaplusIO/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 16:16:17] INFO root fetch - processPackages [thunder-ase]: Downloading https://files.pythonhosted.org/packages/d4/c8/60f3b77503a17d2e82483a83d0ab063042b11bbb2bdf628f52b082b14521/thunder-ase-0.2.4.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [westat]: Downloading https://files.pythonhosted.org/packages/41/87/2bcd6831050eed036c4bccd123a9a94532e51d67df9183c2dfe348f727b9/westat-0.2.0.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pycbzhelper]: Downloading https://files.pythonhosted.org/packages/d9/55/e413827393e44352a12a68c7333df91401bf8e3fda54d5d3727355ac62d8/pycbzhelper-3.1.1.tar.gz
+[2023-06-04 16:16:17] INFO root fetch - processPackages [thunder-ase]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [thunder-ase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunder-ase-0.2.2.tar.gz tmp/thunder-ase-0.2.4.tar.gz --markdown 20230604/t/thunder-ase/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-06-04 16:16:17] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.1.4a7.tar.gz tmp/clusterfun-0.1.5a7.tar.gz --markdown 20230604/c/clusterfun/0.1.4a7-0.1.5a7/diff.md --exclude *.pyd
+[2023-06-04 16:16:17] WARNING root fetch - processPackages [westat]: Skipping package: exceeds size limit 14420561>=10485760
+[2023-06-04 16:16:17] INFO root fetch - main [MainThread]: End processing [westat] error
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pycbzhelper]: executing diffoscope
+[2023-06-04 16:16:17] INFO root fetch - processPackages [pycbzhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycbzhelper-3.1.0.tar.gz tmp/pycbzhelper-3.1.1.tar.gz --markdown 20230604/p/pycbzhelper/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-06-04 16:16:18] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-06-04 16:16:18] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:16:18] INFO root fetch - main [MainThread]: End processing [genetikaplusIO]: success
+[2023-06-04 16:16:18] INFO root fetch - main [MainThread]: End processing [pydash2hls]: success
+[2023-06-04 16:16:18] INFO root fetch - main [MainThread]: End processing [thunder-ase]: success
+[2023-06-04 16:16:19] INFO root fetch - main [MainThread]: End processing [pycbzhelper]: success
+[2023-06-04 16:16:20] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2023-06-04 16:16:20] INFO root fetch - main [MainThread]: Store serial: [18366357]
