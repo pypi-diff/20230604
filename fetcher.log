@@ -2125,3 +2125,58 @@
 [2023-06-04 04:48:41] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
 [2023-06-04 04:48:44] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-06-04 04:48:44] INFO root fetch - main [MainThread]: Store serial: [18363709]
+[2023-06-04 04:53:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363709]
+[2023-06-04 04:53:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rainaa-res-fonts
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gravitorch
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webint-editor
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-vault
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpc-obscodes
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-account-banking-sepa-credit-transfer
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addons-oca-bank-payment
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dibug
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: naif-eop-high-prec
+[2023-06-04 04:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: langdash
+[2023-06-04 04:53:53] INFO root fetch - processPackages [webint-editor]: New version: [0.0.169] Old Version: [0.0.168]
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: New version: [16.0.20230603.1] Old Version: [16.0.20230602.0]
+[2023-06-04 04:53:53] WARNING root fetch - processPackages [rainaa-res-fonts]: Skipping, unable to determine old version
+[2023-06-04 04:53:53] INFO root fetch - main [MainThread]: End processing [rainaa-res-fonts] error
+[2023-06-04 04:53:53] INFO root fetch - processPackages [mpc-obscodes]: New version: [2023.6.4] Old Version: [2023.5.5]
+[2023-06-04 04:53:53] INFO root fetch - processPackages [naif-eop-high-prec]: New version: [2023.6.4] Old Version: [2023.6.3]
+[2023-06-04 04:53:53] INFO root fetch - processPackages [gravitorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 04:53:53] WARNING root fetch - processPackages [dibug]: Skipping, unable to determine old version
+[2023-06-04 04:53:53] INFO root fetch - main [MainThread]: End processing [dibug] error
+[2023-06-04 04:53:53] INFO root fetch - processPackages [langdash]: New version: [0.0.5.dev2] Old Version: [0.0.5.dev1]
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-06-04 04:53:53] INFO root fetch - processPackages [vector-vault]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-06-04 04:53:53] INFO root fetch - processPackages [langdash]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [langdash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langdash-0.0.5.dev1.tar.gz tmp/langdash-0.0.5.dev2.tar.gz --markdown 20230604/l/langdash/0.0.5.dev1-0.0.5.dev2/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/7b/8f/0c044eaecc091cda3a440daad5b465eab0c93ef6cfbb5adcda99e2894f5a/webint_editor-0.0.169.tar.gz
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: Downloading https://files.pythonhosted.org/packages/05/de/76e0902cfcbec23b0085e7770c647451bb78030782aae7bc584a3f0ad93b/odoo_addons_oca_bank_payment-16.0.20230603.1-py3-none-any.whl
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: Downloading https://files.pythonhosted.org/packages/1f/37/93573bda7e0518de6fb59944ad1de7e749121e3a21c2f32cd4c31ffd1811/odoo_addon_account_banking_sepa_credit_transfer-16.0.1.0.0.3-py3-none-any.whl
+[2023-06-04 04:53:53] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/3c/0b/11692c1ef9251e4a7845da2680185da39630cfdecdeb1c1990f81923b3e3/vector_vault-1.8.2.tar.gz
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addons-oca-bank-payment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_bank_payment-16.0.20230602.0-py3-none-any.whl.zip tmp/odoo_addons_oca_bank_payment-16.0.20230603.1-py3-none-any.whl.zip --markdown 20230604/o/odoo-addons-oca-bank-payment/16.0.20230602.0-16.0.20230603.1/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.168.tar.gz tmp/webint_editor-0.0.169.tar.gz --markdown 20230604/w/webint-editor/0.0.168-0.0.169/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [odoo-addon-account-banking-sepa-credit-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_banking_sepa_credit_transfer-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_banking_sepa_credit_transfer-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230604/o/odoo-addon-account-banking-sepa-credit-transfer/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [mpc-obscodes]: Downloading https://files.pythonhosted.org/packages/9a/aa/ec068e0492f65edac793f3ac5d7c8288328cbc861af38391f23c8e2e564c/mpc_obscodes-2023.6.4.tar.gz
+[2023-06-04 04:53:53] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/16/aa/f9d117f9f7247257d5690c06eabe87fcaca4026c9b86365db617e8757b26/naif_eop_high_prec-2023.6.4.tar.gz
+[2023-06-04 04:53:53] INFO root fetch - processPackages [gravitorch]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [gravitorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitorch-0.0.8.tar.gz tmp/gravitorch-0.0.9.tar.gz --markdown 20230604/g/gravitorch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [mpc-obscodes]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [mpc-obscodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpc_obscodes-2023.5.5.tar.gz tmp/mpc_obscodes-2023.6.4.tar.gz --markdown 20230604/m/mpc-obscodes/2023.5.5-2023.6.4/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [naif-eop-high-prec]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 04:53:53] INFO root fetch - processPackages [naif-eop-high-prec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naif_eop_high_prec-2023.6.3.tar.gz tmp/naif_eop_high_prec-2023.6.4.tar.gz --markdown 20230604/n/naif-eop-high-prec/2023.6.3-2023.6.4/diff.md --exclude *.pyd
+[2023-06-04 04:53:53] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.8.1.tar.gz tmp/vector_vault-1.8.2.tar.gz --markdown 20230604/v/vector-vault/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-06-04 04:53:54] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-bank-payment]: success
+[2023-06-04 04:53:54] INFO root fetch - main [MainThread]: End processing [langdash]: success
+[2023-06-04 04:53:54] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-04 04:53:55] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 04:53:55] INFO root fetch - main [MainThread]: End processing [mpc-obscodes]: success
+[2023-06-04 04:53:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-credit-transfer]: success
+[2023-06-04 04:53:57] INFO root fetch - main [MainThread]: End processing [gravitorch]: success
+[2023-06-04 04:53:58] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
+[2023-06-04 04:53:58] INFO root fetch - main [MainThread]: Store serial: [18363740]
