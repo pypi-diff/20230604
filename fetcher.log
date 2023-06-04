@@ -2317,3 +2317,13 @@
 [2023-06-04 05:30:51] INFO root fetch - main [MainThread]: End processing [only-train-once]: success
 [2023-06-04 05:30:51] INFO root fetch - main [MainThread]: End processing [langchain-utils]: success
 [2023-06-04 05:30:51] INFO root fetch - main [MainThread]: Store serial: [18363810]
+[2023-06-04 05:35:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363810]
+[2023-06-04 05:36:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 05:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: frigidaire
+[2023-06-04 05:36:00] INFO root fetch - processPackages [frigidaire]: New version: [0.8] Old Version: [0.7]
+[2023-06-04 05:36:00] INFO root fetch - processPackages [frigidaire]: Downloading https://files.pythonhosted.org/packages/79/a4/bfae4cedd9898802e6ce0f9d85acfbc99fe9a0fdba2be25f68a73ecc3df0/frigidaire-0.7.tar.gz
+[2023-06-04 05:36:00] INFO root fetch - processPackages [frigidaire]: Downloading https://files.pythonhosted.org/packages/d9/2a/a579207ff06e07f868f36f96843de4cbf8a245257d2638517d7b840f5d86/frigidaire-0.8.tar.gz
+[2023-06-04 05:36:00] INFO root fetch - processPackages [frigidaire]: executing diffoscope
+[2023-06-04 05:36:00] INFO root fetch - processPackages [frigidaire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frigidaire-0.7.tar.gz tmp/frigidaire-0.8.tar.gz --markdown 20230604/f/frigidaire/0.7-0.8/diff.md --exclude *.pyd
+[2023-06-04 05:36:02] INFO root fetch - main [MainThread]: End processing [frigidaire]: success
+[2023-06-04 05:36:02] INFO root fetch - main [MainThread]: Store serial: [18363813]
