@@ -6864,3 +6864,43 @@
 [2023-06-04 16:37:10] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2023-06-04 16:37:10] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-06-04 16:37:10] INFO root fetch - main [MainThread]: Store serial: [18366484]
+[2023-06-04 16:42:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366484]
+[2023-06-04 16:42:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-rs
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bs4-web-scraper
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: finary-uapi
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylwr
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cspot
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: innovationmerge
+[2023-06-04 16:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openassist
+[2023-06-04 16:42:19] WARNING root fetch - processPackages [pylwr]: Skipping, unable to determine old version
+[2023-06-04 16:42:19] INFO root fetch - main [MainThread]: End processing [pylwr] error
+[2023-06-04 16:42:19] INFO root fetch - processPackages [bs4-web-scraper]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 16:42:19] INFO root fetch - processPackages [llm-rs]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 16:42:19] INFO root fetch - processPackages [innovationmerge]: New version: [1.0.1] Old Version: [1.0]
+[2023-06-04 16:42:19] WARNING root fetch - processPackages [cspot]: Skipping, unable to determine old version
+[2023-06-04 16:42:19] INFO root fetch - main [MainThread]: End processing [cspot] error
+[2023-06-04 16:42:19] INFO root fetch - processPackages [openassist]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-06-04 16:42:19] INFO root fetch - processPackages [finary-uapi]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-06-04 16:42:19] INFO root fetch - processPackages [openassist]: executing diffoscope
+[2023-06-04 16:42:19] INFO root fetch - processPackages [openassist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openassist-2.2.0.tar.gz tmp/openassist-2.2.1.tar.gz --markdown 20230604/o/openassist/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-06-04 16:42:20] INFO root fetch - processPackages [innovationmerge]: Downloading https://files.pythonhosted.org/packages/7a/1b/860c03cddecc882493a73fc677a0a51fa6816f3a03fd6c2b1d3337f12de9/innovationmerge-1.0.tar.gz
+[2023-06-04 16:42:20] INFO root fetch - processPackages [llm-rs]: Downloading https://files.pythonhosted.org/packages/7f/ac/5eca07a22a27931bf70bdb9b13d82122f94d47b7c66b98cf122915f26a50/llm_rs-0.2.8.tar.gz
+[2023-06-04 16:42:20] INFO root fetch - processPackages [bs4-web-scraper]: Downloading https://files.pythonhosted.org/packages/0a/66/c45eff5e5ae84f71ce42dc1708b3c3711a4d2f1c8f7da8d4370cab9633fa/bs4_web_scraper-0.1.3.tar.gz
+[2023-06-04 16:42:20] INFO root fetch - processPackages [innovationmerge]: Downloading https://files.pythonhosted.org/packages/d9/f6/80d897a8ae334172ebdbc5600c398a516db6665143f1412a7f11e3e3a253/innovationmerge-1.0.1-py3-none-any.whl
+[2023-06-04 16:42:20] INFO root fetch - processPackages [llm-rs]: Downloading https://files.pythonhosted.org/packages/52/51/5160d982d0e0e1b332d3e5763dfe89711ee021008488a07f2498a979e5cb/llm_rs-0.2.9.tar.gz
+[2023-06-04 16:42:20] INFO root fetch - processPackages [finary-uapi]: Downloading https://files.pythonhosted.org/packages/ee/5e/f1d0431848995c80a76bf77e1367ea76ce33ba17d10575ae46f21dde0f4b/finary_uapi-0.1.4.tar.gz
+[2023-06-04 16:42:20] INFO root fetch - processPackages [bs4-web-scraper]: executing diffoscope
+[2023-06-04 16:42:20] INFO root fetch - processPackages [bs4-web-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bs4_web_scraper-0.1.2.tar.gz tmp/bs4_web_scraper-0.1.3.tar.gz --markdown 20230604/b/bs4-web-scraper/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 16:42:20] INFO root fetch - processPackages [innovationmerge]: executing diffoscope
+[2023-06-04 16:42:20] INFO root fetch - processPackages [innovationmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innovationmerge-1.0.tar.gz tmp/innovationmerge-1.0.1-py3-none-any.whl.zip --markdown 20230604/i/innovationmerge/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-06-04 16:42:20] INFO root fetch - processPackages [llm-rs]: executing diffoscope
+[2023-06-04 16:42:20] INFO root fetch - processPackages [llm-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_rs-0.2.8.tar.gz tmp/llm_rs-0.2.9.tar.gz --markdown 20230604/l/llm-rs/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 16:42:20] INFO root fetch - processPackages [finary-uapi]: executing diffoscope
+[2023-06-04 16:42:20] INFO root fetch - processPackages [finary-uapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finary_uapi-0.1.2.tar.gz tmp/finary_uapi-0.1.4.tar.gz --markdown 20230604/f/finary-uapi/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [openassist]: success
+[2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [innovationmerge]: success
+[2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [bs4-web-scraper]: success
+[2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [finary-uapi]: success
+[2023-06-04 16:42:21] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
+[2023-06-04 16:42:21] INFO root fetch - main [MainThread]: Store serial: [18366541]
