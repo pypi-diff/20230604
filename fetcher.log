@@ -3137,3 +3137,31 @@
 [2023-06-04 09:02:30] INFO root fetch - main [MainThread]: End processing [autotraders]: success
 [2023-06-04 09:02:38] INFO root fetch - main [MainThread]: End processing [umap-project]: success
 [2023-06-04 09:02:38] INFO root fetch - main [MainThread]: Store serial: [18364280]
+[2023-06-04 09:07:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364280]
+[2023-06-04 09:07:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 09:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autotraders
+[2023-06-04 09:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whatsapp-chatbot-python
+[2023-06-04 09:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SimpleSQLite
+[2023-06-04 09:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nats-py
+[2023-06-04 09:07:47] INFO root fetch - processPackages [autotraders]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-04 09:07:47] INFO root fetch - processPackages [whatsapp-chatbot-python]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 09:07:47] INFO root fetch - processPackages [nats-py]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-06-04 09:07:47] INFO root fetch - processPackages [SimpleSQLite]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-04 09:07:47] INFO root fetch - processPackages [autotraders]: Downloading https://files.pythonhosted.org/packages/c8/55/51872259efbe764071aacbd5ac07daaf431e70b40ba19be0d441c31a4896/autotraders-1.3.1.tar.gz
+[2023-06-04 09:07:47] INFO root fetch - processPackages [SimpleSQLite]: Downloading https://files.pythonhosted.org/packages/a0/2c/39a9e7dc4af46d101f48753086c686982790ecc2bdf5e9fa88f85f027e7a/SimpleSQLite-1.3.0.tar.gz
+[2023-06-04 09:07:48] INFO root fetch - processPackages [whatsapp-chatbot-python]: Downloading https://files.pythonhosted.org/packages/f3/f6/ddcaa88431d5a99bb8229f535859f32eb82306f50df916dd6ee3b87597e2/whatsapp-chatbot-python-0.2.1.tar.gz
+[2023-06-04 09:07:48] INFO root fetch - processPackages [autotraders]: executing diffoscope
+[2023-06-04 09:07:48] INFO root fetch - processPackages [autotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotraders-1.3.0.tar.gz tmp/autotraders-1.3.1.tar.gz --markdown 20230604/a/autotraders/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-04 09:07:48] INFO root fetch - processPackages [whatsapp-chatbot-python]: executing diffoscope
+[2023-06-04 09:07:48] INFO root fetch - processPackages [whatsapp-chatbot-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatsapp-chatbot-python-0.2.0.tar.gz tmp/whatsapp-chatbot-python-0.2.1.tar.gz --markdown 20230604/w/whatsapp-chatbot-python/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 09:07:48] INFO root fetch - processPackages [nats-py]: Downloading https://files.pythonhosted.org/packages/be/d2/1da16bc71d39a5a49c00341676d447a1c790f7384a535b38dde866a24297/nats-py-2.3.1.tar.gz
+[2023-06-04 09:07:48] INFO root fetch - processPackages [SimpleSQLite]: Downloading https://files.pythonhosted.org/packages/89/ad/9120d2e6f8e620d04120b80a01b251bc74eb4e2bb910d808a8899ff38bb5/SimpleSQLite-1.3.1.tar.gz
+[2023-06-04 09:07:48] INFO root fetch - processPackages [nats-py]: executing diffoscope
+[2023-06-04 09:07:48] INFO root fetch - processPackages [nats-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats-py-2.3.0.tar.gz tmp/nats-py-2.3.1.tar.gz --markdown 20230604/n/nats-py/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-06-04 09:07:48] INFO root fetch - processPackages [SimpleSQLite]: executing diffoscope
+[2023-06-04 09:07:48] INFO root fetch - processPackages [SimpleSQLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleSQLite-1.3.0.tar.gz tmp/SimpleSQLite-1.3.1.tar.gz --markdown 20230604/S/SimpleSQLite/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-04 09:07:49] INFO root fetch - main [MainThread]: End processing [whatsapp-chatbot-python]: success
+[2023-06-04 09:07:49] INFO root fetch - main [MainThread]: End processing [autotraders]: success
+[2023-06-04 09:07:49] INFO root fetch - main [MainThread]: End processing [nats-py]: success
+[2023-06-04 09:07:49] INFO root fetch - main [MainThread]: End processing [SimpleSQLite]: success
+[2023-06-04 09:07:49] INFO root fetch - main [MainThread]: Store serial: [18364294]
