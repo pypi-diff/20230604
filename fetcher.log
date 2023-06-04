@@ -10113,3 +10113,28 @@
 [2023-06-04 23:00:36] INFO root fetch - main [MainThread]: End processing [flowtask]: success
 [2023-06-04 23:00:37] INFO root fetch - main [MainThread]: End processing [veta]: success
 [2023-06-04 23:00:37] INFO root fetch - main [MainThread]: Store serial: [18368585]
+[2023-06-04 23:05:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368585]
+[2023-06-04 23:05:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 23:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: caic-python
+[2023-06-04 23:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scientific-tools
+[2023-06-04 23:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vegafusion-python-embed
+[2023-06-04 23:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: raya
+[2023-06-04 23:05:47] INFO root fetch - processPackages [caic-python]: New version: [0.1.8] Old Version: [0.1.10]
+[2023-06-04 23:05:47] INFO root fetch - processPackages [scientific-tools]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2023-06-04 23:05:47] INFO root fetch - processPackages [vegafusion-python-embed]: New version: [1.3.0rc4] Old Version: [1.3.0rc3]
+[2023-06-04 23:05:47] INFO root fetch - processPackages [raya]: New version: [3.4.1.dev9] Old Version: [3.4.1.dev8]
+[2023-06-04 23:05:47] INFO root fetch - processPackages [caic-python]: Downloading https://files.pythonhosted.org/packages/d9/a6/87137b3b2616ec1e3efeb9bde2c79a64172141d46d91906f00447dd5c88a/caic_python-0.1.10.tar.gz
+[2023-06-04 23:05:47] INFO root fetch - processPackages [scientific-tools]: executing diffoscope
+[2023-06-04 23:05:47] INFO root fetch - processPackages [scientific-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scientific_tools-0.0.0a8-py3-none-any.whl.zip tmp/scientific_tools-0.0.0a9-py3-none-any.whl.zip --markdown 20230604/s/scientific-tools/0.0.0a8-0.0.0a9/diff.md --exclude *.pyd
+[2023-06-04 23:05:47] INFO root fetch - processPackages [vegafusion-python-embed]: executing diffoscope
+[2023-06-04 23:05:47] INFO root fetch - processPackages [vegafusion-python-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion_python_embed-1.3.0_rc3.tar.gz tmp/vegafusion_python_embed-1.3.0_rc4.tar.gz --markdown 20230604/v/vegafusion-python-embed/1.3.0rc3-1.3.0rc4/diff.md --exclude *.pyd
+[2023-06-04 23:05:47] INFO root fetch - processPackages [raya]: executing diffoscope
+[2023-06-04 23:05:47] INFO root fetch - processPackages [raya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raya-3.4.1.dev8.tar.gz tmp/raya-3.4.1.dev9.tar.gz --markdown 20230604/r/raya/3.4.1.dev8-3.4.1.dev9/diff.md --exclude *.pyd
+[2023-06-04 23:05:47] INFO root fetch - processPackages [caic-python]: Downloading https://files.pythonhosted.org/packages/16/0c/fc458ed7ca63e635bd7f63c4e016fb65008858a5b1c27f024cf936ec9c0c/caic_python-0.1.8.tar.gz
+[2023-06-04 23:05:47] INFO root fetch - processPackages [caic-python]: executing diffoscope
+[2023-06-04 23:05:47] INFO root fetch - processPackages [caic-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caic_python-0.1.10.tar.gz tmp/caic_python-0.1.8.tar.gz --markdown 20230604/c/caic-python/0.1.10-0.1.8/diff.md --exclude *.pyd
+[2023-06-04 23:05:48] INFO root fetch - main [MainThread]: End processing [scientific-tools]: success
+[2023-06-04 23:05:48] INFO root fetch - main [MainThread]: End processing [caic-python]: success
+[2023-06-04 23:05:48] INFO root fetch - main [MainThread]: End processing [raya]: success
+[2023-06-04 23:06:19] INFO root fetch - main [MainThread]: End processing [vegafusion-python-embed]: success
+[2023-06-04 23:06:19] INFO root fetch - main [MainThread]: Store serial: [18368609]
