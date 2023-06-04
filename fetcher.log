@@ -7771,3 +7771,43 @@
 [2023-06-04 18:12:43] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-06-04 18:12:43] INFO root fetch - main [MainThread]: End processing [roseau-load-flow]: success
 [2023-06-04 18:12:43] INFO root fetch - main [MainThread]: Store serial: [18367140]
+[2023-06-04 18:17:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367140]
+[2023-06-04 18:17:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nso-oc
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csv-to-info-chunks
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flika
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylwr
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PropertyTable
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygeoweaver
+[2023-06-04 18:17:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-jsheet
+[2023-06-04 18:17:52] INFO root fetch - processPackages [nso-oc]: New version: [2.57.0] Old Version: [2.56.0]
+[2023-06-04 18:17:52] WARNING root fetch - processPackages [PropertyTable]: Skipping, unable to determine old version
+[2023-06-04 18:17:52] INFO root fetch - main [MainThread]: End processing [PropertyTable] error
+[2023-06-04 18:17:52] INFO root fetch - processPackages [flika]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-06-04 18:17:52] INFO root fetch - processPackages [django-jsheet]: New version: [0.2.4] Old Version: [0.2.1.4a0]
+[2023-06-04 18:17:52] WARNING root fetch - processPackages [csv-to-info-chunks]: Skipping, unable to determine old version
+[2023-06-04 18:17:52] INFO root fetch - processPackages [pylwr]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-04 18:17:52] INFO root fetch - main [MainThread]: End processing [csv-to-info-chunks] error
+[2023-06-04 18:17:52] INFO root fetch - processPackages [pygeoweaver]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-06-04 18:17:52] INFO root fetch - processPackages [flika]: Downloading https://files.pythonhosted.org/packages/15/2b/ce4e5f504f3dbbe0e9ae369eb73bd3946eb2ffa628910860cfea7cbd19cd/flika-0.2.9.tar.gz
+[2023-06-04 18:17:52] INFO root fetch - processPackages [django-jsheet]: Downloading https://files.pythonhosted.org/packages/6b/fd/6c119182feefcfb3ecd8fcca0f46c89dd1df0a8145493213b7712df990e4/django_jsheet-0.2.4.tar.gz
+[2023-06-04 18:17:52] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/9e/dd/fe6d14b220a40482fa05f7a5d9693c7a5558fe57c96bdc41f7a3ed9186a7/pylwr-1.0.8.tar.gz
+[2023-06-04 18:17:52] INFO root fetch - processPackages [pygeoweaver]: Downloading https://files.pythonhosted.org/packages/1d/a0/3aed3861d673cf10573bb61e4f114331be2f9040fad159c1af452f29567e/pygeoweaver-0.6.9.tar.gz
+[2023-06-04 18:17:52] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/d3/0d/032d76c75141b201b1550c7b0511455e8361899bb2717286fa2d88e53aef/nso-oc-2.57.0.tar.gz
+[2023-06-04 18:17:53] INFO root fetch - processPackages [django-jsheet]: executing diffoscope
+[2023-06-04 18:17:53] INFO root fetch - processPackages [django-jsheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_jsheet-0.2.1.4a0.tar.gz tmp/django_jsheet-0.2.4.tar.gz --markdown 20230604/d/django-jsheet/0.2.1.4a0-0.2.4/diff.md --exclude *.pyd
+[2023-06-04 18:17:53] INFO root fetch - processPackages [pylwr]: executing diffoscope
+[2023-06-04 18:17:53] INFO root fetch - processPackages [pylwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylwr-1.0.7.tar.gz tmp/pylwr-1.0.8.tar.gz --markdown 20230604/p/pylwr/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-04 18:17:53] INFO root fetch - processPackages [pygeoweaver]: executing diffoscope
+[2023-06-04 18:17:53] INFO root fetch - processPackages [pygeoweaver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeoweaver-0.6.8.tar.gz tmp/pygeoweaver-0.6.9.tar.gz --markdown 20230604/p/pygeoweaver/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 18:17:53] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-06-04 18:17:53] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.56.0.tar.gz tmp/nso-oc-2.57.0.tar.gz --markdown 20230604/n/nso-oc/2.56.0-2.57.0/diff.md --exclude *.pyd
+[2023-06-04 18:17:53] INFO root fetch - processPackages [flika]: Downloading https://files.pythonhosted.org/packages/14/c0/335af353a50a289805ecdcb430003e57f8322b62eda97e7cf3b84256587b/flika-0.3.0.tar.gz
+[2023-06-04 18:17:53] INFO root fetch - processPackages [flika]: executing diffoscope
+[2023-06-04 18:17:53] INFO root fetch - processPackages [flika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flika-0.2.9.tar.gz tmp/flika-0.3.0.tar.gz --markdown 20230604/f/flika/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [django-jsheet]: success
+[2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [pygeoweaver]: success
+[2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [pylwr]: success
+[2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-06-04 18:17:54] INFO root fetch - main [MainThread]: End processing [flika]: success
+[2023-06-04 18:17:54] INFO root fetch - main [MainThread]: Store serial: [18367165]
