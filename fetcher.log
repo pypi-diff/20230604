@@ -2945,3 +2945,42 @@
 [2023-06-04 08:20:45] INFO root fetch - main [MainThread]: End processing [types-babel]: success
 [2023-06-04 08:20:48] INFO root fetch - main [MainThread]: End processing [pretext]: success
 [2023-06-04 08:20:48] INFO root fetch - main [MainThread]: Store serial: [18364175]
+[2023-06-04 08:25:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364175]
+[2023-06-04 08:25:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FlexiCache
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: brainsurf
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnata-plugin-devkit
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlrun
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lib-dzne-math
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: michiko
+[2023-06-04 08:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gimapdev
+[2023-06-04 08:25:57] WARNING root fetch - processPackages [FlexiCache]: Skipping, unable to determine old version
+[2023-06-04 08:25:57] INFO root fetch - main [MainThread]: End processing [FlexiCache] error
+[2023-06-04 08:25:57] INFO root fetch - processPackages [brainsurf]: New version: [6.0] Old Version: [4.0.0]
+[2023-06-04 08:25:57] INFO root fetch - processPackages [lib-dzne-math]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-04 08:25:57] INFO root fetch - processPackages [omnata-plugin-devkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 08:25:57] WARNING root fetch - processPackages [gimapdev]: Skipping, unable to determine old version
+[2023-06-04 08:25:57] INFO root fetch - main [MainThread]: End processing [gimapdev] error
+[2023-06-04 08:25:57] INFO root fetch - processPackages [michiko]: New version: [0.8.3] Old Version: [0.8.1]
+[2023-06-04 08:25:57] INFO root fetch - processPackages [mlrun]: New version: [1.4.0rc9] Old Version: [1.4.0rc8]
+[2023-06-04 08:25:57] INFO root fetch - processPackages [brainsurf]: Downloading https://files.pythonhosted.org/packages/50/50/47280077648230b2caa2a27192f0384aa43fc1396569c830f4e0814f8108/brainsurf-4.0.0.tar.gz
+[2023-06-04 08:25:57] INFO root fetch - processPackages [omnata-plugin-devkit]: Downloading https://files.pythonhosted.org/packages/1c/ea/7decaad469c3efd0b3c55996811d32ab1114ebd75f1ecafedca829be04ec/omnata_plugin_devkit-0.1.0.tar.gz
+[2023-06-04 08:25:57] INFO root fetch - processPackages [michiko]: Downloading https://files.pythonhosted.org/packages/71/cc/cc269a0fd274cbaf20d954b76e693ae7d6050a61bb9e31c283592764038c/michiko-0.8.3.tar.gz
+[2023-06-04 08:25:57] INFO root fetch - processPackages [michiko]: executing diffoscope
+[2023-06-04 08:25:57] INFO root fetch - processPackages [michiko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/michiko-0.8.1.tar.gz tmp/michiko-0.8.3.tar.gz --markdown 20230604/m/michiko/0.8.1-0.8.3/diff.md --exclude *.pyd
+[2023-06-04 08:25:57] INFO root fetch - processPackages [lib-dzne-math]: Downloading https://files.pythonhosted.org/packages/18/54/f716152a1f8600f39128e3af1bbd028d40c865c9cd5d3e968e6fb608bfd7/lib-dzne-math-0.2.3.tar.gz
+[2023-06-04 08:25:58] INFO root fetch - processPackages [mlrun]: executing diffoscope
+[2023-06-04 08:25:58] INFO root fetch - processPackages [mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun-1.4.0rc8-py3-none-any.whl.zip tmp/mlrun-1.4.0rc9-py3-none-any.whl.zip --markdown 20230604/m/mlrun/1.4.0rc8-1.4.0rc9/diff.md --exclude *.pyd
+[2023-06-04 08:25:58] INFO root fetch - processPackages [omnata-plugin-devkit]: Downloading https://files.pythonhosted.org/packages/fc/1d/6763c94db60f45bb04745bf26f1b09e14544cc14fb347afff1d04f5f76ca/omnata_plugin_devkit-0.1.1.tar.gz
+[2023-06-04 08:25:58] INFO root fetch - processPackages [lib-dzne-math]: executing diffoscope
+[2023-06-04 08:25:58] INFO root fetch - processPackages [lib-dzne-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-math-0.2.2.tar.gz tmp/lib-dzne-math-0.2.3.tar.gz --markdown 20230604/l/lib-dzne-math/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-04 08:25:58] INFO root fetch - processPackages [brainsurf]: executing diffoscope
+[2023-06-04 08:25:58] INFO root fetch - processPackages [brainsurf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainsurf-4.0.0.tar.gz tmp/brainsurf-6.0.tar.gz --markdown 20230604/b/brainsurf/4.0.0-6.0/diff.md --exclude *.pyd
+[2023-06-04 08:25:58] INFO root fetch - processPackages [omnata-plugin-devkit]: executing diffoscope
+[2023-06-04 08:25:58] INFO root fetch - processPackages [omnata-plugin-devkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_devkit-0.1.0.tar.gz tmp/omnata_plugin_devkit-0.1.1.tar.gz --markdown 20230604/o/omnata-plugin-devkit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 08:25:59] INFO root fetch - main [MainThread]: End processing [michiko]: success
+[2023-06-04 08:25:59] INFO root fetch - main [MainThread]: End processing [lib-dzne-math]: success
+[2023-06-04 08:25:59] INFO root fetch - main [MainThread]: End processing [brainsurf]: success
+[2023-06-04 08:25:59] INFO root fetch - main [MainThread]: End processing [omnata-plugin-devkit]: success
+[2023-06-04 08:26:05] INFO root fetch - main [MainThread]: End processing [mlrun]: success
+[2023-06-04 08:26:05] INFO root fetch - main [MainThread]: Store serial: [18364197]
