@@ -2180,3 +2180,25 @@
 [2023-06-04 04:53:57] INFO root fetch - main [MainThread]: End processing [gravitorch]: success
 [2023-06-04 04:53:58] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
 [2023-06-04 04:53:58] INFO root fetch - main [MainThread]: Store serial: [18363740]
+[2023-06-04 04:59:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363740]
+[2023-06-04 04:59:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 04:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text2phonemesequence
+[2023-06-04 04:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p2lz
+[2023-06-04 04:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webint-editor
+[2023-06-04 04:59:13] INFO root fetch - processPackages [p2lz]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 04:59:13] INFO root fetch - processPackages [webint-editor]: New version: [0.0.170] Old Version: [0.0.169]
+[2023-06-04 04:59:13] INFO root fetch - processPackages [text2phonemesequence]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 04:59:13] INFO root fetch - processPackages [p2lz]: Downloading https://files.pythonhosted.org/packages/40/ee/e09ace284d5dcfae96e58b3cc70481c7dffeba2ca08d17a01c053d92b781/p2lz-0.1.2.tar.gz
+[2023-06-04 04:59:13] INFO root fetch - processPackages [webint-editor]: Downloading https://files.pythonhosted.org/packages/6c/c5/3cf59cb7d51a63f2949c2767d6d00db3997a50261622012dbda69e82c80b/webint_editor-0.0.170.tar.gz
+[2023-06-04 04:59:13] INFO root fetch - processPackages [webint-editor]: executing diffoscope
+[2023-06-04 04:59:13] INFO root fetch - processPackages [webint-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_editor-0.0.169.tar.gz tmp/webint_editor-0.0.170.tar.gz --markdown 20230604/w/webint-editor/0.0.169-0.0.170/diff.md --exclude *.pyd
+[2023-06-04 04:59:13] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/ed/b1/c3028151b6705b0041801c009df88ab03d2e1c564d61f01aec136fd1e573/text2phonemesequence-0.1.1.tar.gz
+[2023-06-04 04:59:13] INFO root fetch - processPackages [p2lz]: Downloading https://files.pythonhosted.org/packages/b1/fd/57e322b1f019a665ce8efac698fc7dc9e8f454e069aef2cfaa3e1c22c550/p2lz-0.1.3.tar.gz
+[2023-06-04 04:59:13] INFO root fetch - processPackages [text2phonemesequence]: executing diffoscope
+[2023-06-04 04:59:13] INFO root fetch - processPackages [text2phonemesequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2phonemesequence-0.1.0.tar.gz tmp/text2phonemesequence-0.1.1.tar.gz --markdown 20230604/t/text2phonemesequence/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 04:59:13] INFO root fetch - processPackages [p2lz]: executing diffoscope
+[2023-06-04 04:59:13] INFO root fetch - processPackages [p2lz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p2lz-0.1.2.tar.gz tmp/p2lz-0.1.3.tar.gz --markdown 20230604/p/p2lz/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 04:59:14] INFO root fetch - main [MainThread]: End processing [webint-editor]: success
+[2023-06-04 04:59:14] INFO root fetch - main [MainThread]: End processing [p2lz]: success
+[2023-06-04 04:59:14] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
+[2023-06-04 04:59:14] INFO root fetch - main [MainThread]: Store serial: [18363748]
