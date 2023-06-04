@@ -4210,3 +4210,41 @@
 [2023-06-04 11:16:59] INFO root fetch - main [MainThread]: End processing [aquarium-python-api]: success
 [2023-06-04 11:16:59] INFO root fetch - main [MainThread]: End processing [csle-rest-api]: success
 [2023-06-04 11:16:59] INFO root fetch - main [MainThread]: Store serial: [18364887]
+[2023-06-04 11:22:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364887]
+[2023-06-04 11:22:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-sheet-downloader
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sagemaker-rightline
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tbp-nightly
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ifastapi
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opendigger
+[2023-06-04 11:22:07] INFO root fetch - processPackages [google-sheet-downloader]: New version: [1.1.0] Old Version: [1.0.7]
+[2023-06-04 11:22:07] INFO root fetch - processPackages [opendigger]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 11:22:07] INFO root fetch - processPackages [sagemaker-rightline]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-06-04 11:22:07] INFO root fetch - processPackages [ifastapi]: New version: [0.0.3.9] Old Version: [0.0.3.8]
+[2023-06-04 11:22:07] INFO root fetch - processPackages [opendigger]: executing diffoscope
+[2023-06-04 11:22:07] INFO root fetch - processPackages [opendigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendigger-0.1.4.tar.gz tmp/opendigger-0.1.5.tar.gz --markdown 20230604/o/opendigger/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 11:22:08] ERROR root fetch - processPackages [sagemaker-rightline]: Unable to fetch info: No such project/version 'sagemaker-rightline' 0.0.0
+[2023-06-04 11:22:08] INFO root fetch - main [MainThread]: End processing [sagemaker-rightline] error
+[2023-06-04 11:22:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 11:22:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 11:22:08] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-06-04 11:22:08] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 11:22:08] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 11:22:08] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 11:22:08] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 11:22:08] INFO root fetch - processPackages [google-sheet-downloader]: Downloading https://files.pythonhosted.org/packages/be/49/5db8df5e4b0ab4ba97ce3af3f57f52859a480a597cebf46f96b823b18927/google-sheet-downloader-1.1.0.tar.gz
+[2023-06-04 11:22:08] INFO root fetch - processPackages [ifastapi]: executing diffoscope
+[2023-06-04 11:22:08] INFO root fetch - processPackages [ifastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifastapi-0.0.3.8-py3-none-any.whl.zip tmp/ifastapi-0.0.3.9-py3-none-any.whl.zip --markdown 20230604/i/ifastapi/0.0.3.8-0.0.3.9/diff.md --exclude *.pyd
+[2023-06-04 11:22:08] INFO root fetch - processPackages [google-sheet-downloader]: executing diffoscope
+[2023-06-04 11:22:08] INFO root fetch - processPackages [google-sheet-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-sheet-downloader-1.0.7.tar.gz tmp/google-sheet-downloader-1.1.0.tar.gz --markdown 20230604/g/google-sheet-downloader/1.0.7-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 11:22:08] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-06-04 11:22:08] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230604/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-06-04 11:22:09] INFO root fetch - main [MainThread]: End processing [opendigger]: success
+[2023-06-04 11:22:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 11:22:09] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
+[2023-06-04 11:22:09] INFO root fetch - main [MainThread]: End processing [google-sheet-downloader]: success
+[2023-06-04 11:22:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 11:22:11] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-06-04 11:22:11] INFO root fetch - main [MainThread]: Store serial: [18364910]
