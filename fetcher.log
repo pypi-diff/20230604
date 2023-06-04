@@ -10534,3 +10534,70 @@
 [2023-06-04 23:49:38] INFO root fetch - main [MainThread]: End processing [flowtask]: success
 [2023-06-04 23:50:19] INFO root fetch - main [MainThread]: End processing [entangled-cli]: success
 [2023-06-04 23:50:19] INFO root fetch - main [MainThread]: Store serial: [18368903]
+[2023-06-04 23:55:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368903]
+[2023-06-04 23:55:30] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: silverback
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qepy
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: static-frame-pyodide
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lung-analysis-pipeline
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rlenvironments
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: libretrofuzz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: coffea
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: terka
+[2023-06-04 23:55:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openllm
+[2023-06-04 23:55:30] INFO root fetch - processPackages [rlenvironments]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [silverback]: New version: [0.1.0b1] Old Version: [0.1.0a1]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [static-frame-pyodide]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [qepy]: New version: [0.0.3rc0] Old Version: [0.0.3]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [lung-analysis-pipeline]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [terka]: New version: [1.9.1] Old Version: [1.9.0.1]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [openllm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [libretrofuzz]: New version: [2.9.0] Old Version: [2.8.6]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [coffea]: New version: [2023.6.0rc0] Old Version: [2023.5.0rc0]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/36/cd/20848bcb4c9b68c31a099ce94b6edef3d995143454f89cbb9db8e7b7c99f/openllm-0.0.8.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-06-04 23:55:30] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230604/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-06-04 23:55:30] INFO root fetch - processPackages [qepy]: Downloading https://files.pythonhosted.org/packages/58/69/dc3f48a3413aa0a02322e93a92c07fc4a4ca87540bfc31022eb0ec8e2f38/qepy-0.0.3.tar.gz
+[2023-06-04 23:55:30] ERROR root fetch - processPackages [rlenvironments]: Unable to fetch info: No such project/version 'rlenvironments' 0.1.2
+[2023-06-04 23:55:30] INFO root fetch - processPackages [rlenvironments]: Start processing: kwimage
+[2023-06-04 23:55:30] INFO root fetch - main [MainThread]: End processing [rlenvironments] error
+[2023-06-04 23:55:30] INFO root fetch - processPackages [static-frame-pyodide]: Downloading https://files.pythonhosted.org/packages/7f/28/7e236d9a9dd8b1d3e33745160f0b88038f0b994ce36af92a166a78096fc6/static-frame-pyodide-0.1.4.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [silverback]: Downloading https://files.pythonhosted.org/packages/01/36/341dbd6c835e8d9b7f7f46d33fab26301c336b7736efb3675d6213f21b2e/silverback-0.1.0a1.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [libretrofuzz]: Downloading https://files.pythonhosted.org/packages/b8/59/975e1b1a913ef0a758792e50e51cc7c1fc502a7ebe26705735071f3b5346/libretrofuzz-2.8.6.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [coffea]: Downloading https://files.pythonhosted.org/packages/80/a5/603f17d8def9eee7878dced77d338f8454f61fec9687673e4111d5a86268/coffea-2023.5.0rc0.tar.gz
+[2023-06-04 23:55:30] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11989091>=10485760
+[2023-06-04 23:55:30] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-06-04 23:55:30] WARNING root fetch - processPackages [coffea]: Skipping package: exceeds size limit 12217393>=10485760
+[2023-06-04 23:55:30] INFO root fetch - main [MainThread]: End processing [coffea] error
+[2023-06-04 23:55:30] INFO root fetch - processPackages [kwimage]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-04 23:55:30] INFO root fetch - processPackages [static-frame-pyodide]: executing diffoscope
+[2023-06-04 23:55:30] INFO root fetch - processPackages [static-frame-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/static-frame-pyodide-0.1.3.tar.gz tmp/static-frame-pyodide-0.1.4.tar.gz --markdown 20230604/s/static-frame-pyodide/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 23:55:30] INFO root fetch - processPackages [lung-analysis-pipeline]: Downloading https://files.pythonhosted.org/packages/7d/8f/4837cb45df003765827cebb672dd36639f5dcf0ed7962c870ae4561fde98/lung_analysis_pipeline-0.0.7.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-06-04 23:55:30] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.1.tar.gz tmp/terka-1.9.1.tar.gz --markdown 20230604/t/terka/1.9.0.1-1.9.1/diff.md --exclude *.pyd
+[2023-06-04 23:55:30] INFO root fetch - processPackages [lung-analysis-pipeline]: executing diffoscope
+[2023-06-04 23:55:30] INFO root fetch - processPackages [lung-analysis-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lung_analysis_pipeline-0.0.6.tar.gz tmp/lung_analysis_pipeline-0.0.7.tar.gz --markdown 20230604/l/lung-analysis-pipeline/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 23:55:30] INFO root fetch - processPackages [libretrofuzz]: Downloading https://files.pythonhosted.org/packages/35/44/d7be1de4366cf353f419d316656fe1daface10e15f337868e3f865c5cfc1/libretrofuzz-2.9.0.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [qepy]: Downloading https://files.pythonhosted.org/packages/8a/25/91bb00e93e524cf02aafbd2776b853ef9712ccb6ce15853b5b7b0683a530/qepy-0.0.3rc0.tar.gz
+[2023-06-04 23:55:30] INFO root fetch - processPackages [libretrofuzz]: executing diffoscope
+[2023-06-04 23:55:30] INFO root fetch - processPackages [libretrofuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretrofuzz-2.8.6.tar.gz tmp/libretrofuzz-2.9.0.tar.gz --markdown 20230604/l/libretrofuzz/2.8.6-2.9.0/diff.md --exclude *.pyd
+[2023-06-04 23:55:30] INFO root fetch - processPackages [kwimage]: Downloading https://files.pythonhosted.org/packages/72/a8/62db2031647662b4fae45542537c56bc1a50318309612eebc6350113971d/kwimage-0.9.8-py3-none-any.whl
+[2023-06-04 23:55:31] INFO root fetch - processPackages [silverback]: Downloading https://files.pythonhosted.org/packages/e6/fe/53a1c1900c55f7368b18f7de6b489bd2b0230c7f2ddf69920e80176df360/silverback-0.1.0b1.tar.gz
+[2023-06-04 23:55:31] INFO root fetch - processPackages [silverback]: executing diffoscope
+[2023-06-04 23:55:31] INFO root fetch - processPackages [silverback]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silverback-0.1.0a1.tar.gz tmp/silverback-0.1.0b1.tar.gz --markdown 20230604/s/silverback/0.1.0a1-0.1.0b1/diff.md --exclude *.pyd
+[2023-06-04 23:55:31] INFO root fetch - processPackages [kwimage]: Downloading https://files.pythonhosted.org/packages/3c/37/803557a35b66b6a6736757899040c0c421e09a17fb9a7ddf24651456a99b/kwimage-0.9.9-py3-none-any.whl
+[2023-06-04 23:55:31] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-06-04 23:55:31] INFO root fetch - processPackages [qepy]: executing diffoscope
+[2023-06-04 23:55:31] INFO root fetch - processPackages [qepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qepy-0.0.3.tar.gz tmp/qepy-0.0.3rc0.tar.gz --markdown 20230604/q/qepy/0.0.3-0.0.3rc0/diff.md --exclude *.pyd
+[2023-06-04 23:55:31] INFO root fetch - processPackages [kwimage]: executing diffoscope
+[2023-06-04 23:55:31] INFO root fetch - processPackages [kwimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kwimage-0.9.8-py3-none-any.whl.zip tmp/kwimage-0.9.9-py3-none-any.whl.zip --markdown 20230604/k/kwimage/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-04 23:55:31] INFO root fetch - main [MainThread]: End processing [static-frame-pyodide]: success
+[2023-06-04 23:55:31] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-06-04 23:55:31] INFO root fetch - main [MainThread]: End processing [libretrofuzz]: success
+[2023-06-04 23:55:32] INFO root fetch - main [MainThread]: End processing [silverback]: success
+[2023-06-04 23:55:32] INFO root fetch - main [MainThread]: End processing [lung-analysis-pipeline]: success
+[2023-06-04 23:55:33] INFO root fetch - main [MainThread]: End processing [kwimage]: success
+[2023-06-04 23:55:34] INFO root fetch - main [MainThread]: End processing [qepy]: success
+[2023-06-04 23:55:34] INFO root fetch - main [MainThread]: Store serial: [18368978]
