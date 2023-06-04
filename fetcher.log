@@ -3002,3 +3002,29 @@
 [2023-06-04 08:31:14] INFO root fetch - processPackages [epubsum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epubsum-0.1.tar.gz tmp/epubsum-0.2.tar.gz --markdown 20230604/e/epubsum/0.1-0.2/diff.md --exclude *.pyd
 [2023-06-04 08:31:15] INFO root fetch - main [MainThread]: End processing [epubsum]: success
 [2023-06-04 08:31:15] INFO root fetch - main [MainThread]: Store serial: [18364210]
+[2023-06-04 08:36:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364210]
+[2023-06-04 08:36:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 08:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xcpcio-board-spider
+[2023-06-04 08:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yaoys-checkin
+[2023-06-04 08:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mathbib
+[2023-06-04 08:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: text2phonemesequence
+[2023-06-04 08:36:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: miktikpy
+[2023-06-04 08:36:24] INFO root fetch - processPackages [text2phonemesequence]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 08:36:24] WARNING root fetch - processPackages [yaoys-checkin]: Skipping, unable to determine old version
+[2023-06-04 08:36:24] INFO root fetch - main [MainThread]: End processing [yaoys-checkin] error
+[2023-06-04 08:36:24] INFO root fetch - processPackages [mathbib]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-06-04 08:36:24] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 08:36:25] WARNING root fetch - processPackages [miktikpy]: Skipping, unable to determine old version
+[2023-06-04 08:36:25] INFO root fetch - main [MainThread]: End processing [miktikpy] error
+[2023-06-04 08:36:25] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/5d/70/d05296f489da3c79a17af67c938f7bfabc2b94692e45e52389eb7d20c0e7/text2phonemesequence-0.1.3.tar.gz
+[2023-06-04 08:36:25] INFO root fetch - processPackages [mathbib]: Downloading https://files.pythonhosted.org/packages/27/97/6539d40951178cedfbd9f65d3a7c87690c829156113cf466ac43929a785d/mathbib-0.6.2.tar.gz
+[2023-06-04 08:36:25] INFO root fetch - processPackages [text2phonemesequence]: executing diffoscope
+[2023-06-04 08:36:25] INFO root fetch - processPackages [text2phonemesequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2phonemesequence-0.1.2.tar.gz tmp/text2phonemesequence-0.1.3.tar.gz --markdown 20230604/t/text2phonemesequence/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 08:36:25] INFO root fetch - processPackages [mathbib]: executing diffoscope
+[2023-06-04 08:36:25] INFO root fetch - processPackages [mathbib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathbib-0.6.1.tar.gz tmp/mathbib-0.6.2.tar.gz --markdown 20230604/m/mathbib/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-06-04 08:36:25] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-06-04 08:36:25] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230604/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 08:36:26] INFO root fetch - main [MainThread]: End processing [mathbib]: success
+[2023-06-04 08:36:26] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
+[2023-06-04 08:36:26] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-06-04 08:36:26] INFO root fetch - main [MainThread]: Store serial: [18364226]
