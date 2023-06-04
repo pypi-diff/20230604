@@ -9274,3 +9274,51 @@
 [2023-06-04 21:13:52] INFO root fetch - main [MainThread]: End processing [G2S]: success
 [2023-06-04 21:14:00] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-06-04 21:14:00] INFO root fetch - main [MainThread]: Store serial: [18368068]
+[2023-06-04 21:19:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368068]
+[2023-06-04 21:19:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lnhub_rest
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gemseo-pseven
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latinex-sdk
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: promptengine-catapult
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wbddh
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scale-nucleus
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyelectroluxconnect
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-lav
+[2023-06-04 21:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: leuci-map
+[2023-06-04 21:19:10] WARNING root fetch - processPackages [gemseo-pseven]: Skipping, unable to determine old version
+[2023-06-04 21:19:10] INFO root fetch - main [MainThread]: End processing [gemseo-pseven] error
+[2023-06-04 21:19:10] INFO root fetch - processPackages [leuci-map]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 21:19:10] INFO root fetch - processPackages [lnhub_rest]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-06-04 21:19:10] INFO root fetch - processPackages [promptengine-catapult]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 21:19:10] WARNING root fetch - processPackages [latinex-sdk]: Skipping, unable to determine old version
+[2023-06-04 21:19:10] INFO root fetch - processPackages [wbddh]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-06-04 21:19:10] INFO root fetch - main [MainThread]: End processing [latinex-sdk] error
+[2023-06-04 21:19:10] INFO root fetch - processPackages [py-lav]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-06-04 21:19:10] INFO root fetch - processPackages [pyelectroluxconnect]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-04 21:19:10] INFO root fetch - processPackages [scale-nucleus]: New version: [0.9b6] Old Version: [0.9b5]
+[2023-06-04 21:19:10] INFO root fetch - processPackages [leuci-map]: executing diffoscope
+[2023-06-04 21:19:10] INFO root fetch - processPackages [leuci-map]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-map-0.1.8.tar.gz tmp/leuci-map-0.1.9.tar.gz --markdown 20230604/l/leuci-map/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 21:19:10] INFO root fetch - processPackages [promptengine-catapult]: Downloading https://files.pythonhosted.org/packages/d6/47/5fa2a18c7076981d87207e5c861532b7c79dbc88e2552ee068a077d4dcc6/promptengine_catapult-0.0.5.tar.gz
+[2023-06-04 21:19:10] INFO root fetch - processPackages [scale-nucleus]: Downloading https://files.pythonhosted.org/packages/bf/c8/3c9bb9264e452777f75ca0449c13fb21ca37bf72f8738404d71baf5b1e5f/scale-nucleus-0.9b5.tar.gz
+[2023-06-04 21:19:10] INFO root fetch - processPackages [wbddh]: Downloading https://files.pythonhosted.org/packages/40/9a/f065479a88bad3507d8852aa17fabf3088d8af3f6c0e0b3f09b454e7b3af/wbddh-0.0.8-py3-none-any.whl
+[2023-06-04 21:19:10] INFO root fetch - processPackages [promptengine-catapult]: executing diffoscope
+[2023-06-04 21:19:10] INFO root fetch - processPackages [promptengine-catapult]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptengine_catapult-0.0.4.tar.gz tmp/promptengine_catapult-0.0.5.tar.gz --markdown 20230604/p/promptengine-catapult/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 21:19:10] INFO root fetch - processPackages [lnhub_rest]: executing diffoscope
+[2023-06-04 21:19:10] INFO root fetch - processPackages [lnhub_rest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnhub_rest-0.9.8.tar.gz tmp/lnhub_rest-0.9.9.tar.gz --markdown 20230604/l/lnhub_rest/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-06-04 21:19:10] INFO root fetch - processPackages [py-lav]: executing diffoscope
+[2023-06-04 21:19:10] INFO root fetch - processPackages [pyelectroluxconnect]: executing diffoscope
+[2023-06-04 21:19:10] INFO root fetch - processPackages [py-lav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_lav-1.9.0.tar.gz tmp/py_lav-1.9.1.tar.gz --markdown 20230604/p/py-lav/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-06-04 21:19:10] INFO root fetch - processPackages [pyelectroluxconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyelectroluxconnect-0.3.8.tar.gz tmp/pyelectroluxconnect-0.3.9.tar.gz --markdown 20230604/p/pyelectroluxconnect/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-04 21:19:10] INFO root fetch - processPackages [wbddh]: executing diffoscope
+[2023-06-04 21:19:10] INFO root fetch - processPackages [wbddh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbddh-0.0.6-py3-none-any.whl.zip tmp/wbddh-0.0.8-py3-none-any.whl.zip --markdown 20230604/w/wbddh/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 21:19:10] INFO root fetch - processPackages [scale-nucleus]: Downloading https://files.pythonhosted.org/packages/35/78/6ee21b292c395656a8fa3e6431b6070ee45f13b09754a998b4f9f2d510ad/scale-nucleus-0.9b6.tar.gz
+[2023-06-04 21:19:11] INFO root fetch - processPackages [scale-nucleus]: executing diffoscope
+[2023-06-04 21:19:11] INFO root fetch - processPackages [scale-nucleus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scale-nucleus-0.9b5.tar.gz tmp/scale-nucleus-0.9b6.tar.gz --markdown 20230604/s/scale-nucleus/0.9b5-0.9b6/diff.md --exclude *.pyd
+[2023-06-04 21:19:11] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
+[2023-06-04 21:19:11] INFO root fetch - main [MainThread]: End processing [promptengine-catapult]: success
+[2023-06-04 21:19:12] INFO root fetch - main [MainThread]: End processing [wbddh]: success
+[2023-06-04 21:19:12] INFO root fetch - main [MainThread]: End processing [pyelectroluxconnect]: success
+[2023-06-04 21:19:12] INFO root fetch - main [MainThread]: End processing [lnhub_rest]: success
+[2023-06-04 21:19:12] INFO root fetch - main [MainThread]: End processing [scale-nucleus]: success
+[2023-06-04 21:19:56] INFO root fetch - main [MainThread]: End processing [py-lav]: success
+[2023-06-04 21:19:56] INFO root fetch - main [MainThread]: Store serial: [18368108]
