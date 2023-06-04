@@ -2469,3 +2469,13 @@
 [2023-06-04 06:27:40] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2023-06-04 06:27:40] INFO root fetch - main [MainThread]: End processing [StatLML]: success
 [2023-06-04 06:27:40] INFO root fetch - main [MainThread]: Store serial: [18363887]
+[2023-06-04 06:32:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363887]
+[2023-06-04 06:32:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 06:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-operating-unit
+[2023-06-04 06:32:49] INFO root fetch - processPackages [odoo-addon-operating-unit]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-06-04 06:32:49] INFO root fetch - processPackages [odoo-addon-operating-unit]: Downloading https://files.pythonhosted.org/packages/5b/23/a7dacc20295d2ff10a98199633a6fb34a6c92e031e577a7a300faf1f4662/odoo_addon_operating_unit-16.0.1.0.0.2-py3-none-any.whl
+[2023-06-04 06:32:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: Downloading https://files.pythonhosted.org/packages/99/79/14c06d300112ae237684146d68b4a4837e72a74884630e0b93c89421f808/odoo_addon_operating_unit-16.0.1.0.0.3-py3-none-any.whl
+[2023-06-04 06:32:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: executing diffoscope
+[2023-06-04 06:32:50] INFO root fetch - processPackages [odoo-addon-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_operating_unit-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_operating_unit-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230604/o/odoo-addon-operating-unit/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-06-04 06:32:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-operating-unit]: success
+[2023-06-04 06:32:51] INFO root fetch - main [MainThread]: Store serial: [18363889]
