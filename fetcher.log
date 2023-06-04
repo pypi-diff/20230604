@@ -8917,3 +8917,63 @@
 [2023-06-04 20:37:15] INFO root fetch - main [MainThread]: End processing [gemseo-mlearning]: success
 [2023-06-04 20:37:15] INFO root fetch - main [MainThread]: End processing [bovine]: success
 [2023-06-04 20:37:15] INFO root fetch - main [MainThread]: Store serial: [18367830]
+[2023-06-04 20:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367830]
+[2023-06-04 20:42:24] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: can-message-data-generator
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hkfdb
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bovine-pubsub
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psyke
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qworker
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: s-tool
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bovine-herd
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: can-message-data-generator
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hypothesis
+[2023-06-04 20:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bovine-tool
+[2023-06-04 20:42:24] WARNING root fetch - processPackages [can-message-data-generator]: Skipping, unable to determine old version
+[2023-06-04 20:42:24] INFO root fetch - main [MainThread]: End processing [can-message-data-generator] error
+[2023-06-04 20:42:24] INFO root fetch - processPackages [hkfdb]: New version: [3.4] Old Version: [3.3]
+[2023-06-04 20:42:24] INFO root fetch - processPackages [psyke]: New version: [0.4.7] Old Version: [0.4.6.dev6]
+[2023-06-04 20:42:24] WARNING root fetch - processPackages [can-message-data-generator]: Skipping, unable to determine old version
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-pubsub]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-04 20:42:24] INFO root fetch - main [MainThread]: End processing [can-message-data-generator] error
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-herd]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-04 20:42:24] INFO root fetch - processPackages [s-tool]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-tool]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-06-04 20:42:24] INFO root fetch - processPackages [qworker]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-06-04 20:42:24] INFO root fetch - processPackages [hypothesis]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-06-04 20:42:24] INFO root fetch - processPackages [s-tool]: Downloading https://files.pythonhosted.org/packages/25/7b/a0d5f57d27318f747433d2a3297e9c382d2d0c9462d509e9ad3a51b58caa/s-tool-0.0.3.tar.gz
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-pubsub]: Downloading https://files.pythonhosted.org/packages/97/b2/0935200a4f07c82a265640072486c8f1fac98837c8008ac43db25b88e097/bovine_pubsub-0.2.5.tar.gz
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-tool]: Downloading https://files.pythonhosted.org/packages/6b/02/50cf055d4a4d595cea54f306c9f2a824e3d9555fbaba8133cbb1df516969/bovine_tool-0.2.5.tar.gz
+[2023-06-04 20:42:24] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/c3/26/581f7be5b25f8a3e6ec452bfd85966b579cbe0aba7b9a747315928d16286/psyke-0.4.7.tar.gz
+[2023-06-04 20:42:24] INFO root fetch - processPackages [qworker]: Downloading https://files.pythonhosted.org/packages/95/53/fc07a7585b9adfdc987910b01e4abbdb50cc2a09d70bc28fd6bed12998b7/qworker-1.8.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-herd]: Downloading https://files.pythonhosted.org/packages/bc/b4/545ccf366bc168b00580ac8a2f2efbb7c2d0784de8ea1b2d3433dd683793/bovine_herd-0.2.5.tar.gz
+[2023-06-04 20:42:24] INFO root fetch - processPackages [hkfdb]: Downloading https://files.pythonhosted.org/packages/c0/55/f2a839b42ba7530606af712062005b10f3c199cf8a313685d2ca0dfeefee/hkfdb-3.4.tar.gz
+[2023-06-04 20:42:24] INFO root fetch - processPackages [bovine-pubsub]: Downloading https://files.pythonhosted.org/packages/ca/0d/87c63280daa143a82b9d77930d4dbdecc9d606c0054b28b6704bc6338de4/bovine_pubsub-0.2.6.tar.gz
+[2023-06-04 20:42:25] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.4.6.dev6.tar.gz tmp/psyke-0.4.7.tar.gz --markdown 20230604/p/psyke/0.4.6.dev6-0.4.7/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [hkfdb]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [hkfdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkfdb-3.3.tar.gz tmp/hkfdb-3.4.tar.gz --markdown 20230604/h/hkfdb/3.3-3.4/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [s-tool]: Downloading https://files.pythonhosted.org/packages/00/c1/d54fccb5970c009a7aaf165772590189e7f70df09b44a2e598289babccf4/s_tool-0.0.4.tar.gz
+[2023-06-04 20:42:25] INFO root fetch - processPackages [qworker]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [qworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qworker-1.8.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qworker-1.8.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/q/qworker/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-tool]: Downloading https://files.pythonhosted.org/packages/51/be/86b3315a804c9ff43c50299707bde4ffdf682541216e78aa0b007e590865/bovine_tool-0.2.6.tar.gz
+[2023-06-04 20:42:25] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.9.1.tar.gz tmp/hypothesis-6.9.2.tar.gz --markdown 20230604/h/hypothesis/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-pubsub]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-pubsub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_pubsub-0.2.5.tar.gz tmp/bovine_pubsub-0.2.6.tar.gz --markdown 20230604/b/bovine-pubsub/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-herd]: Downloading https://files.pythonhosted.org/packages/9e/60/3fb3c0b2130ffc27c21b29f5f235bcd560b220fce04b7b4a354a4dfdb5e8/bovine_herd-0.2.6.tar.gz
+[2023-06-04 20:42:25] INFO root fetch - processPackages [s-tool]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [s-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s-tool-0.0.3.tar.gz tmp/s_tool-0.0.4.tar.gz --markdown 20230604/s/s-tool/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-tool]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_tool-0.2.5.tar.gz tmp/bovine_tool-0.2.6.tar.gz --markdown 20230604/b/bovine-tool/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-herd]: executing diffoscope
+[2023-06-04 20:42:25] INFO root fetch - processPackages [bovine-herd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_herd-0.2.5.tar.gz tmp/bovine_herd-0.2.6.tar.gz --markdown 20230604/b/bovine-herd/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-06-04 20:42:26] INFO root fetch - main [MainThread]: End processing [hkfdb]: success
+[2023-06-04 20:42:26] INFO root fetch - main [MainThread]: End processing [bovine-pubsub]: success
+[2023-06-04 20:42:26] INFO root fetch - main [MainThread]: End processing [bovine-herd]: success
+[2023-06-04 20:42:26] INFO root fetch - main [MainThread]: End processing [s-tool]: success
+[2023-06-04 20:42:26] INFO root fetch - main [MainThread]: End processing [bovine-tool]: success
+[2023-06-04 20:42:26] INFO root fetch - main [MainThread]: End processing [qworker]: success
+[2023-06-04 20:42:27] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2023-06-04 20:42:27] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-06-04 20:42:27] INFO root fetch - main [MainThread]: Store serial: [18367877]
