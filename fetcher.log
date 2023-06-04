@@ -1353,3 +1353,30 @@
 [2023-06-04 02:35:36] INFO root fetch - main [MainThread]: End processing [repo-chat]: success
 [2023-06-04 02:35:37] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
 [2023-06-04 02:35:37] INFO root fetch - main [MainThread]: Store serial: [18363274]
+[2023-06-04 02:40:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363274]
+[2023-06-04 02:40:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 02:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-redis
+[2023-06-04 02:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: everdrop-aws-cdk-constructs
+[2023-06-04 02:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-06-04 02:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-gke-auth
+[2023-06-04 02:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aeppl-nightly
+[2023-06-04 02:40:46] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 02:40:46] ERROR root fetch - processPackages [cdktf-gke-auth]: Unable to get metadata: No such project 'cdktf-gke-auth'
+[2023-06-04 02:40:46] INFO root fetch - main [MainThread]: End processing [cdktf-gke-auth] error
+[2023-06-04 02:40:46] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 02:40:46] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230603] Old Version: [0.1.4.dev20230602]
+[2023-06-04 02:40:46] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-06-04 02:40:46] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-06-04 02:40:46] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230604/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 02:40:46] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-06-04 02:40:46] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230604/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 02:40:46] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-06-04 02:40:46] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230604/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-06-04 02:40:46] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/61/54/666f53dd880d583885092e5296c5d8603bbac4e3c5efc0dec8015dc8db62/aeppl-nightly-0.1.4.dev20230603.tar.gz
+[2023-06-04 02:40:46] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-06-04 02:40:46] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230602.tar.gz tmp/aeppl-nightly-0.1.4.dev20230603.tar.gz --markdown 20230604/a/aeppl-nightly/0.1.4.dev20230602-0.1.4.dev20230603/diff.md --exclude *.pyd
+[2023-06-04 02:40:47] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-06-04 02:40:47] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-06-04 02:40:47] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-06-04 02:40:48] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-06-04 02:40:48] INFO root fetch - main [MainThread]: Store serial: [18363290]
