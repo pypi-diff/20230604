@@ -5320,3 +5320,56 @@
 [2023-06-04 13:25:14] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2023-06-04 13:25:14] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-reconciliation-widget]: success
 [2023-06-04 13:25:14] INFO root fetch - main [MainThread]: Store serial: [18365581]
+[2023-06-04 13:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365581]
+[2023-06-04 13:30:23] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rmlab
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-frequency-analysis
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cihai-cli
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gamer3514
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: findyou
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchrec-nightly
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchserve-nightly
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torch-model-archiver-nightly
+[2023-06-04 13:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torch-workflow-archiver-nightly
+[2023-06-04 13:30:23] INFO root fetch - processPackages [image-frequency-analysis]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [cihai-cli]: New version: [0.9.0a1] Old Version: [0.9.0a0]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [rmlab]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [gamer3514]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 13:30:23] WARNING root fetch - processPackages [findyou]: Skipping, unable to determine old version
+[2023-06-04 13:30:23] INFO root fetch - main [MainThread]: End processing [findyou] error
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.6.3] Old Version: [2023.5.8]
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip tmp/torchrec_nightly-2023.6.3-py39-none-any.whl.zip --markdown 20230604/t/torchrec-nightly/2023.5.8-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 13:30:23] INFO root fetch - processPackages [gamer3514]: Downloading https://files.pythonhosted.org/packages/7e/72/e98830b47028514cec902e4fe72f21c60aa3de8e1953cab36fbf287a1418/gamer3514-0.0.2.tar.gz
+[2023-06-04 13:30:23] INFO root fetch - processPackages [rmlab]: Downloading https://files.pythonhosted.org/packages/8c/b9/873a85f92d138d40429ee9c0e2a039a1dd0303b6a2041d0032d44c5cff35/rmlab-0.4.0.tar.gz
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/85/e7/a44500544a77ded0ea60dfc04450674e595d19718354df8577a80ac8080a/torchserve_nightly-2023.6.2-py3-none-any.whl
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/33/3a/97f9c5403a12a5765c762d49d42531092d7c2864563379d38e6f81f0d285/torch_workflow_archiver_nightly-2023.6.3-py3-none-any.whl
+[2023-06-04 13:30:23] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/f6/26/b3a52c032d3df820913d48b3f488de0dec5711ccde170776cbfd696b1a2b/torch_model_archiver_nightly-2023.6.3-py3-none-any.whl
+[2023-06-04 13:30:23] INFO root fetch - processPackages [image-frequency-analysis]: Downloading https://files.pythonhosted.org/packages/89/43/2ae608099c63e72ba735ac7662e72b7fbdea24a4bacca7d5ff4cc089d6ca/image_frequency_analysis-0.2.5.tar.gz
+[2023-06-04 13:30:23] INFO root fetch - processPackages [image-frequency-analysis]: executing diffoscope
+[2023-06-04 13:30:23] INFO root fetch - processPackages [image-frequency-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_frequency_analysis-0.2.4.tar.gz tmp/image_frequency_analysis-0.2.5.tar.gz --markdown 20230604/i/image-frequency-analysis/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-06-04 13:30:23] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23719580>=10485760
+[2023-06-04 13:30:23] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-06-04 13:30:23] INFO root fetch - processPackages [gamer3514]: Downloading https://files.pythonhosted.org/packages/24/85/28c3b3bba9eec6ed18cf933e21ea3bcac29c761da7162682584d93aa1c61/gamer3514-0.0.3.tar.gz
+[2023-06-04 13:30:24] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-06-04 13:30:24] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.6.2-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.6.3-py3-none-any.whl.zip --markdown 20230604/t/torch-workflow-archiver-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 13:30:24] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-06-04 13:30:24] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.6.2-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.6.3-py3-none-any.whl.zip --markdown 20230604/t/torch-model-archiver-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 13:30:24] INFO root fetch - processPackages [cihai-cli]: executing diffoscope
+[2023-06-04 13:30:24] INFO root fetch - processPackages [cihai-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cihai-cli-0.9.0a0.tar.gz tmp/cihai-cli-0.9.0a1.tar.gz --markdown 20230604/c/cihai-cli/0.9.0a0-0.9.0a1/diff.md --exclude *.pyd
+[2023-06-04 13:30:24] INFO root fetch - processPackages [rmlab]: Downloading https://files.pythonhosted.org/packages/1f/9c/e465172edf44a830cd787a6f8be85462ad5c5694375f75a9bd32e23ab3e4/rmlab-0.4.1.tar.gz
+[2023-06-04 13:30:24] INFO root fetch - processPackages [gamer3514]: executing diffoscope
+[2023-06-04 13:30:24] INFO root fetch - processPackages [gamer3514]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamer3514-0.0.2.tar.gz tmp/gamer3514-0.0.3.tar.gz --markdown 20230604/g/gamer3514/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:30:24] INFO root fetch - processPackages [rmlab]: executing diffoscope
+[2023-06-04 13:30:24] INFO root fetch - processPackages [rmlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmlab-0.4.0.tar.gz tmp/rmlab-0.4.1.tar.gz --markdown 20230604/r/rmlab/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [image-frequency-analysis]: success
+[2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [cihai-cli]: success
+[2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [gamer3514]: success
+[2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [rmlab]: success
+[2023-06-04 13:30:26] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-06-04 13:30:26] INFO root fetch - main [MainThread]: Store serial: [18365614]
