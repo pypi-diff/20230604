@@ -8262,3 +8262,77 @@
 [2023-06-04 19:13:13] INFO root fetch - main [MainThread]: End processing [rkstreamer]: success
 [2023-06-04 19:13:13] INFO root fetch - main [MainThread]: End processing [flowtask]: success
 [2023-06-04 19:13:13] INFO root fetch - main [MainThread]: Store serial: [18367465]
+[2023-06-04 19:18:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367465]
+[2023-06-04 19:18:22] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batogram
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-callapi
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ezbeq
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-fuckyou
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ht
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-multincm
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-picmcstat
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pointnet
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: DigiTokens
+[2023-06-04 19:18:22] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [nonebot-plugin-callapi]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [batogram]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ht]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-06-04 19:18:22] WARNING root fetch - processPackages [pointnet]: Skipping, unable to determine old version
+[2023-06-04 19:18:22] INFO root fetch - processPackages [nonebot-plugin-multincm]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [pointnet]: Start processing: nonebot-plugin-rimofun
+[2023-06-04 19:18:22] INFO root fetch - main [MainThread]: End processing [pointnet] error
+[2023-06-04 19:18:22] WARNING root fetch - processPackages [DigiTokens]: Skipping, unable to determine old version
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [DigiTokens]: Start processing: wnb
+[2023-06-04 19:18:22] INFO root fetch - main [MainThread]: End processing [DigiTokens] error
+[2023-06-04 19:18:22] INFO root fetch - processPackages [nonebot-plugin-rimofun]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-06-04 19:18:22] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230604/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-06-04 19:18:22] INFO root fetch - processPackages [wnb]: New version: [0.1.13] Old Version: [0.1.12]
+[2023-06-04 19:18:23] INFO root fetch - processPackages [batogram]: Downloading https://files.pythonhosted.org/packages/71/bd/74de1dba69e53ed33d4d7a2e00d18722163cb3e5a88a24f2f5e91ddbe4ca/batogram-1.0.7.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [ht]: Downloading https://files.pythonhosted.org/packages/81/b7/9d574041d6f4e2cb92505d54bbabe1c6bd442bae7694ddc72d1945916c89/ht-1.0.4-py3-none-any.whl
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-callapi]: Downloading https://files.pythonhosted.org/packages/8b/3d/38d7241a2cfd79a052b55c613925c67badd35b04ce46fd268c0d30fe0158/nonebot_plugin_callapi-0.1.1.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/8c/88/ae919b1f1f74892db9d0c9e11535abd9baa5806dd2b1b0cdaa547bd6e2e9/kelpie_personal_trainer-0.0.5.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: Downloading https://files.pythonhosted.org/packages/bb/c1/746c2f297b83a9bbf945afbd7cc7ed2ebdb16a8c1457244025f9cf02538e/nonebot-plugin-picmcstat-0.3.1.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: Downloading https://files.pythonhosted.org/packages/f4/f6/e1da3e60a22add9c8ea7d0a888ed61d8cec008a34de6be8fac3f63b2cbb0/nonebot-plugin-fuckyou-0.1.3.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-rimofun]: Downloading https://files.pythonhosted.org/packages/98/f8/d170ee2bf037f01d62b2be971a4889bbf52ef4be8133b77713189776a3a6/nonebot_plugin_rimofun-0.1.0.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.4.tar.gz tmp/kelpie_personal_trainer-0.0.5.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-multincm]: Downloading https://files.pythonhosted.org/packages/c9/c8/30e53702bc28ae76780718ad234b1c01adb14b1d4ebcf60e13cdad12e056/nonebot_plugin_multincm-0.3.5.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [wnb]: Downloading https://files.pythonhosted.org/packages/15/b9/c180eb6823b432de66e89d07392da7baf07147ad3f4bf4cc7231ec30e711/wnb-0.1.13.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [batogram]: Downloading https://files.pythonhosted.org/packages/6d/46/4004c2d36038e23f1eca82ad1d43d5861643484f51f167d79f891debc82a/batogram-1.0.8.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [ht]: Downloading https://files.pythonhosted.org/packages/1c/6f/33e96a1a2c93d775033bbc781a14c3362657ce45cfc0aaf48f60e8c350b0/ht-1.0.5.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-callapi]: Downloading https://files.pythonhosted.org/packages/23/ac/d350992f227fee043b2918f1eda50ef60f392a9f8ec499c79eaf4802df74/nonebot_plugin_callapi-0.1.2.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-multincm]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-multincm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_multincm-0.3.4.tar.gz tmp/nonebot_plugin_multincm-0.3.5.tar.gz --markdown 20230604/n/nonebot-plugin-multincm/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: Downloading https://files.pythonhosted.org/packages/b1/49/496fe76b42b7343892ffaa73e6f314ac3033c2e33143fb0ef887801a029d/nonebot_plugin_picmcstat-0.3.2.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: Downloading https://files.pythonhosted.org/packages/61/90/f000229297479e5c853378ac9ad5e591dad6ae7ae9c7f3fe9c44f5806225/nonebot-plugin-fuckyou-0.1.4.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [wnb]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [wnb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wnb-0.1.12.tar.gz tmp/wnb-0.1.13.tar.gz --markdown 20230604/w/wnb/0.1.12-0.1.13/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [batogram]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [batogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batogram-1.0.7.tar.gz tmp/batogram-1.0.8.tar.gz --markdown 20230604/b/batogram/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-rimofun]: Downloading https://files.pythonhosted.org/packages/87/35/8e7e022c66ada761c4faa6998c9b4aa1b66c99b061caa326b1248f3d3189/nonebot_plugin_rimofun-0.1.1.tar.gz
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-callapi]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-callapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_callapi-0.1.1.tar.gz tmp/nonebot_plugin_callapi-0.1.2.tar.gz --markdown 20230604/n/nonebot-plugin-callapi/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-picmcstat-0.3.1.tar.gz tmp/nonebot_plugin_picmcstat-0.3.2.tar.gz --markdown 20230604/n/nonebot-plugin-picmcstat/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [nonebot-plugin-fuckyou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-fuckyou-0.1.3.tar.gz tmp/nonebot-plugin-fuckyou-0.1.4.tar.gz --markdown 20230604/n/nonebot-plugin-fuckyou/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 19:18:23] INFO root fetch - processPackages [ht]: executing diffoscope
+[2023-06-04 19:18:23] INFO root fetch - processPackages [ht]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ht-1.0.4-py3-none-any.whl.zip tmp/ht-1.0.5.tar.gz --markdown 20230604/h/ht/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-06-04 19:18:24] INFO root fetch - processPackages [nonebot-plugin-rimofun]: executing diffoscope
+[2023-06-04 19:18:24] INFO root fetch - processPackages [nonebot-plugin-rimofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_rimofun-0.1.0.tar.gz tmp/nonebot_plugin_rimofun-0.1.1.tar.gz --markdown 20230604/n/nonebot-plugin-rimofun/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 19:18:24] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:18:24] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-picmcstat]: success
+[2023-06-04 19:18:24] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-callapi]: success
+[2023-06-04 19:18:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fuckyou]: success
+[2023-06-04 19:18:25] INFO root fetch - main [MainThread]: End processing [wnb]: success
+[2023-06-04 19:18:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-multincm]: success
+[2023-06-04 19:18:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-rimofun]: success
+[2023-06-04 19:18:26] INFO root fetch - main [MainThread]: End processing [ht]: success
+[2023-06-04 19:18:26] INFO root fetch - main [MainThread]: End processing [batogram]: success
+[2023-06-04 19:18:32] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-06-04 19:18:32] INFO root fetch - main [MainThread]: Store serial: [18367505]
