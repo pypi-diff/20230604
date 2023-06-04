@@ -2430,3 +2430,12 @@
 [2023-06-04 06:01:55] INFO root fetch - main [MainThread]: End processing [pychasing]: success
 [2023-06-04 06:01:57] INFO root fetch - main [MainThread]: End processing [astro-ghost]: success
 [2023-06-04 06:01:57] INFO root fetch - main [MainThread]: Store serial: [18363866]
+[2023-06-04 06:07:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363866]
+[2023-06-04 06:07:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-06-04 06:07:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: napari-chatgpt
+[2023-06-04 06:07:05] INFO root fetch - processPackages [napari-chatgpt]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 06:07:06] INFO root fetch - processPackages [napari-chatgpt]: Downloading https://files.pythonhosted.org/packages/8c/96/9c6112d08a0b010d80cf211bd0cfdd8dcf83d4a900f06842547e759087fe/napari-chatgpt-2023.6.3.tar.gz
+[2023-06-04 06:07:06] INFO root fetch - processPackages [napari-chatgpt]: executing diffoscope
+[2023-06-04 06:07:06] INFO root fetch - processPackages [napari-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-chatgpt-2023.6.2.tar.gz tmp/napari-chatgpt-2023.6.3.tar.gz --markdown 20230604/n/napari-chatgpt/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 06:07:09] INFO root fetch - main [MainThread]: End processing [napari-chatgpt]: success
+[2023-06-04 06:07:09] INFO root fetch - main [MainThread]: Store serial: [18363871]
