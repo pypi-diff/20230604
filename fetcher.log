@@ -2508,3 +2508,30 @@
 [2023-06-04 06:43:11] INFO root fetch - main [MainThread]: End processing [twofas-cli]: success
 [2023-06-04 06:43:12] INFO root fetch - main [MainThread]: End processing [pyfem]: success
 [2023-06-04 06:43:12] INFO root fetch - main [MainThread]: Store serial: [18363905]
+[2023-06-04 06:48:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363905]
+[2023-06-04 06:48:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 06:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yetl-framework
+[2023-06-04 06:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pantsbuild.pants
+[2023-06-04 06:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pantsbuild.pants.testutil
+[2023-06-04 06:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: req-update
+[2023-06-04 06:48:21] INFO root fetch - processPackages [req-update]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-06-04 06:48:21] INFO root fetch - processPackages [yetl-framework]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-06-04 06:48:21] INFO root fetch - processPackages [pantsbuild.pants.testutil]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-06-04 06:48:21] INFO root fetch - processPackages [pantsbuild.pants]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-06-04 06:48:21] INFO root fetch - processPackages [req-update]: Downloading https://files.pythonhosted.org/packages/3f/6f/1a89fb932452d2b734ffc1c8c32869ef7ce1c406ddf10898432509ef024f/req-update-2.2.2.tar.gz
+[2023-06-04 06:48:21] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/3b/da/9a0b3208526fde7f749f317de7dae72d945fc82b69feb632bddfa7a7183b/yetl-framework-1.4.7.tar.gz
+[2023-06-04 06:48:21] INFO root fetch - processPackages [pantsbuild.pants]: Downloading https://files.pythonhosted.org/packages/9d/fb/48c0150109e3f3706e9104d71fa88777a017fbbdb74c6e6fe4890559df4a/pantsbuild.pants-2.9.2-cp39-cp39-manylinux2014_x86_64.whl
+[2023-06-04 06:48:21] WARNING root fetch - processPackages [pantsbuild.pants]: Skipping package: exceeds size limit 43333544>=10485760
+[2023-06-04 06:48:21] INFO root fetch - main [MainThread]: End processing [pantsbuild.pants] error
+[2023-06-04 06:48:21] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/8b/f6/06420da98dc83038ecb8783d665b4f7cea12abf80b1ebaa76ecdacdc5c6b/yetl-framework-1.4.8.tar.gz
+[2023-06-04 06:48:21] INFO root fetch - processPackages [req-update]: Downloading https://files.pythonhosted.org/packages/14/03/9eb20a9d060291e52738f8e70af72a3d926334080725ffad1f1ae9c050df/req-update-2.2.3.tar.gz
+[2023-06-04 06:48:21] INFO root fetch - processPackages [pantsbuild.pants.testutil]: executing diffoscope
+[2023-06-04 06:48:21] INFO root fetch - processPackages [pantsbuild.pants.testutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pantsbuild.pants.testutil-2.9.2-py37.py38.py39-none-any.whl.zip tmp/pantsbuild.pants.testutil-2.9.2rc0-py37.py38.py39-none-any.whl.zip --markdown 20230604/p/pantsbuild.pants.testutil/2.9.2-2.9.2rc0/diff.md --exclude *.pyd
+[2023-06-04 06:48:21] INFO root fetch - processPackages [req-update]: executing diffoscope
+[2023-06-04 06:48:21] INFO root fetch - processPackages [req-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/req-update-2.2.2.tar.gz tmp/req-update-2.2.3.tar.gz --markdown 20230604/r/req-update/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-06-04 06:48:21] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-06-04 06:48:21] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.4.7.tar.gz tmp/yetl-framework-1.4.8.tar.gz --markdown 20230604/y/yetl-framework/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-06-04 06:48:22] INFO root fetch - main [MainThread]: End processing [req-update]: success
+[2023-06-04 06:48:22] INFO root fetch - main [MainThread]: End processing [pantsbuild.pants.testutil]: success
+[2023-06-04 06:48:22] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-06-04 06:48:22] INFO root fetch - main [MainThread]: Store serial: [18363923]
