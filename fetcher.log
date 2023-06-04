@@ -5406,3 +5406,53 @@
 [2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [tcod-ecs]: success
 [2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [NanoRepeat]: success
 [2023-06-04 13:35:36] INFO root fetch - main [MainThread]: Store serial: [18365636]
+[2023-06-04 13:40:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365636]
+[2023-06-04 13:40:45] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyRealEstate
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: d2y
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clusterfun
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: v2ray-util
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chatai-streamer
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-utilitas
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: philbot-voice
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyre-check-nightly
+[2023-06-04 13:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: xcpcio-board-spider
+[2023-06-04 13:40:45] INFO root fetch - processPackages [d2y]: New version: [0.2.24] Old Version: [0.2.18]
+[2023-06-04 13:40:45] INFO root fetch - processPackages [pyRealEstate]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 13:40:45] INFO root fetch - processPackages [django-utilitas]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-06-04 13:40:45] INFO root fetch - processPackages [clusterfun]: New version: [0.1.3a7] Old Version: [0.1.1a7]
+[2023-06-04 13:40:45] INFO root fetch - processPackages [v2ray-util]: New version: [3.9.4] Old Version: [3.9.3]
+[2023-06-04 13:40:45] WARNING root fetch - processPackages [chatai-streamer]: Skipping, unable to determine old version
+[2023-06-04 13:40:45] INFO root fetch - main [MainThread]: End processing [chatai-streamer] error
+[2023-06-04 13:40:45] INFO root fetch - processPackages [philbot-voice]: New version: [1.7.6] Old Version: [1.7.5]
+[2023-06-04 13:40:45] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101685877121] Old Version: [0.0.101685790718]
+[2023-06-04 13:40:45] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 13:40:46] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/c4/28/5dae18d6fd4dd2bca9ab3545e4322bf10f0e0732aeb645656e2a9e8a849d/clusterfun-0.1.1a7.tar.gz
+[2023-06-04 13:40:46] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230604/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 13:40:46] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/90/e3/f20e6b6a38fa6e43d2825dac25a6e6113ae5841292425ee755112164dc7d/pyre-check-nightly-0.0.101685790718.tar.gz
+[2023-06-04 13:40:46] INFO root fetch - processPackages [pyRealEstate]: Downloading https://files.pythonhosted.org/packages/24/be/ba63651f57131a442b0c9a8839b1575d735e48d518ff81dfb68b120d25cd/pyRealEstate-0.0.3.tar.gz
+[2023-06-04 13:40:46] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23497107>=10485760
+[2023-06-04 13:40:46] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-06-04 13:40:46] INFO root fetch - processPackages [pyRealEstate]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [pyRealEstate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyRealEstate-0.0.2.tar.gz tmp/pyRealEstate-0.0.3.tar.gz --markdown 20230604/p/pyRealEstate/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 13:40:46] INFO root fetch - processPackages [django-utilitas]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [django-utilitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-utilitas-1.3.8.tar.gz tmp/django-utilitas-1.3.9.tar.gz --markdown 20230604/d/django-utilitas/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-06-04 13:40:46] INFO root fetch - processPackages [d2y]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [d2y]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d2y-0.2.18.tar.gz tmp/d2y-0.2.24.tar.gz --markdown 20230604/d/d2y/0.2.18-0.2.24/diff.md --exclude *.pyd
+[2023-06-04 13:40:46] INFO root fetch - processPackages [v2ray-util]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [v2ray-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v2ray-util-3.9.3.tar.gz tmp/v2ray-util-3.9.4.tar.gz --markdown 20230604/v/v2ray-util/3.9.3-3.9.4/diff.md --exclude *.pyd
+[2023-06-04 13:40:46] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/57/21/965e2c0dc9c33459a213dc3ae4986ccff140a1e02326861efc0db9969974/philbot_voice-1.7.6.tar.gz
+[2023-06-04 13:40:46] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/b1/62/48fb555a8563f09c613024b389b721669caddf9130a25e517c0503e0392c/clusterfun-0.1.3a7.tar.gz
+[2023-06-04 13:40:46] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.5.tar.gz tmp/philbot_voice-1.7.6.tar.gz --markdown 20230604/p/philbot-voice/1.7.5-1.7.6/diff.md --exclude *.pyd
+[2023-06-04 13:40:46] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2023-06-04 13:40:46] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.1.1a7.tar.gz tmp/clusterfun-0.1.3a7.tar.gz --markdown 20230604/c/clusterfun/0.1.1a7-0.1.3a7/diff.md --exclude *.pyd
+[2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [django-utilitas]: success
+[2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [d2y]: success
+[2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [pyRealEstate]: success
+[2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-06-04 13:40:47] INFO root fetch - main [MainThread]: End processing [v2ray-util]: success
+[2023-06-04 13:40:49] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2023-06-04 13:40:49] INFO root fetch - main [MainThread]: Store serial: [18365666]
