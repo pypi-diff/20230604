@@ -10357,3 +10357,51 @@
 [2023-06-04 23:28:37] INFO root fetch - main [MainThread]: End processing [vbcore]: success
 [2023-06-04 23:28:38] INFO root fetch - main [MainThread]: End processing [pspdfutils]: success
 [2023-06-04 23:28:38] INFO root fetch - main [MainThread]: Store serial: [18368783]
+[2023-06-04 23:33:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368783]
+[2023-06-04 23:33:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib-pybroker
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytele2api
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tvdcn
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: leeger
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finalynx
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rlenvironments
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: git2pdf
+[2023-06-04 23:33:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openllm
+[2023-06-04 23:33:47] INFO root fetch - processPackages [lib-pybroker]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [openllm]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [rlenvironments]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [leeger]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [tvdcn]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [pytele2api]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [finalynx]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/36/cd/20848bcb4c9b68c31a099ce94b6edef3d995143454f89cbb9db8e7b7c99f/openllm-0.0.8.tar.gz
+[2023-06-04 23:33:47] INFO root fetch - processPackages [git2pdf]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 23:33:47] INFO root fetch - processPackages [rlenvironments]: executing diffoscope
+[2023-06-04 23:33:47] INFO root fetch - processPackages [rlenvironments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlenvironments-0.1.0.tar.gz tmp/rlenvironments-0.1.1.tar.gz --markdown 20230604/r/rlenvironments/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 23:33:47] INFO root fetch - processPackages [finalynx]: executing diffoscope
+[2023-06-04 23:33:47] INFO root fetch - processPackages [finalynx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalynx-1.8.3.tar.gz tmp/finalynx-1.9.0.tar.gz --markdown 20230604/f/finalynx/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-06-04 23:33:47] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11989091>=10485760
+[2023-06-04 23:33:47] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-06-04 23:33:47] INFO root fetch - processPackages [leeger]: Downloading https://files.pythonhosted.org/packages/66/0c/9ec07e415bf09ec4f78e8e628cd5cec27f942a9aa4301ec4e16775cf294b/leeger-2.4.0.tar.gz
+[2023-06-04 23:33:47] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/48/45/b939adcea27dab1f2305164971a8e4ad4e621a6b211176fb87a41fa2af3b/git2pdf-0.1.5.tar.gz
+[2023-06-04 23:33:47] INFO root fetch - processPackages [tvdcn]: Downloading https://files.pythonhosted.org/packages/4b/7f/0dac02e624aa20bef5fa5f60aa659d7f25417a72c38aa2f2792ddecab3b7/tvdcn-0.2.7.tar.gz
+[2023-06-04 23:33:47] INFO root fetch - processPackages [pytele2api]: Downloading https://files.pythonhosted.org/packages/0a/bd/d0d3a3029659b6e061bc346f50d0dc50c46f086f717c0e5b7a01c0bb15cf/pytele2api-0.1.5.tar.gz
+[2023-06-04 23:33:47] INFO root fetch - processPackages [lib-pybroker]: executing diffoscope
+[2023-06-04 23:33:47] INFO root fetch - processPackages [lib-pybroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-pybroker-1.1.8.tar.gz tmp/lib-pybroker-1.1.9.tar.gz --markdown 20230604/l/lib-pybroker/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-06-04 23:33:47] INFO root fetch - processPackages [tvdcn]: executing diffoscope
+[2023-06-04 23:33:47] INFO root fetch - processPackages [tvdcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvdcn-0.2.6.tar.gz tmp/tvdcn-0.2.7.tar.gz --markdown 20230604/t/tvdcn/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-06-04 23:33:47] INFO root fetch - processPackages [pytele2api]: executing diffoscope
+[2023-06-04 23:33:47] INFO root fetch - processPackages [pytele2api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytele2api-0.1.4.tar.gz tmp/pytele2api-0.1.5.tar.gz --markdown 20230604/p/pytele2api/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 23:33:47] INFO root fetch - processPackages [git2pdf]: executing diffoscope
+[2023-06-04 23:33:47] INFO root fetch - processPackages [git2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git2pdf-0.1.4.tar.gz tmp/git2pdf-0.1.5.tar.gz --markdown 20230604/g/git2pdf/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 23:33:48] INFO root fetch - processPackages [leeger]: Downloading https://files.pythonhosted.org/packages/89/80/35e01af748b74ce9bf846c26e3c946461713d60210dbc30c9ad7b8de6b59/leeger-2.5.0.tar.gz
+[2023-06-04 23:33:48] INFO root fetch - processPackages [leeger]: executing diffoscope
+[2023-06-04 23:33:48] INFO root fetch - processPackages [leeger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leeger-2.4.0.tar.gz tmp/leeger-2.5.0.tar.gz --markdown 20230604/l/leeger/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-06-04 23:33:48] INFO root fetch - main [MainThread]: End processing [rlenvironments]: success
+[2023-06-04 23:33:49] INFO root fetch - main [MainThread]: End processing [pytele2api]: success
+[2023-06-04 23:33:49] INFO root fetch - main [MainThread]: End processing [finalynx]: success
+[2023-06-04 23:33:49] INFO root fetch - main [MainThread]: End processing [lib-pybroker]: success
+[2023-06-04 23:33:49] INFO root fetch - main [MainThread]: End processing [git2pdf]: success
+[2023-06-04 23:33:49] INFO root fetch - main [MainThread]: End processing [tvdcn]: success
+[2023-06-04 23:33:51] INFO root fetch - main [MainThread]: End processing [leeger]: success
+[2023-06-04 23:33:51] INFO root fetch - main [MainThread]: Store serial: [18368817]
