@@ -7945,3 +7945,35 @@
 [2023-06-04 18:35:47] INFO root fetch - main [MainThread]: End processing [kodexa]: success
 [2023-06-04 18:35:47] INFO root fetch - main [MainThread]: End processing [pydisort]: success
 [2023-06-04 18:35:47] INFO root fetch - main [MainThread]: Store serial: [18367261]
+[2023-06-04 18:40:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367261]
+[2023-06-04 18:40:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 18:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flightgear-python
+[2023-06-04 18:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feathub-nightly
+[2023-06-04 18:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nso-oc
+[2023-06-04 18:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-bilichat
+[2023-06-04 18:40:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jekyll-to-hugo
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nso-oc]: New version: [2.58.0] Old Version: [2.57.0]
+[2023-06-04 18:40:56] INFO root fetch - processPackages [jekyll-to-hugo]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-06-04 18:40:56] INFO root fetch - processPackages [flightgear-python]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-06-04 18:40:56] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230604] Old Version: [0.1.dev20230603]
+[2023-06-04 18:40:56] INFO root fetch - processPackages [jekyll-to-hugo]: executing diffoscope
+[2023-06-04 18:40:56] INFO root fetch - processPackages [jekyll-to-hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jekyll_to_hugo-0.0.5.tar.gz tmp/jekyll_to_hugo-0.0.6.tar.gz --markdown 20230604/j/jekyll-to-hugo/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-06-04 18:40:56] INFO root fetch - processPackages [flightgear-python]: Downloading https://files.pythonhosted.org/packages/a8/55/4af5d05389cb63235e2df77177ec99f880af5a6ed8cbf15a29cdfcacab6d/flightgear_python-1.2.2.tar.gz
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/12/46/ded5fd00aad6b591ec7ed9fd9b1721aa76aca5f2dea4f1098f600a1eb91f/nso-oc-2.58.0.tar.gz
+[2023-06-04 18:40:56] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/78/c7/00c4d01db28861a873aea60a1a2e4e68c3c0f4b5db70b3210dfeec6bc85e/feathub_nightly-0.1.dev20230603-py3-none-any.whl
+[2023-06-04 18:40:56] WARNING root fetch - processPackages [feathub-nightly]: Skipping package: exceeds size limit 12203985>=10485760
+[2023-06-04 18:40:56] INFO root fetch - main [MainThread]: End processing [feathub-nightly] error
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.57.0.tar.gz tmp/nso-oc-2.58.0.tar.gz --markdown 20230604/n/nso-oc/2.57.0-2.58.0/diff.md --exclude *.pyd
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/79/54/362933d494df9982ef4e2793c6941138048950d003a983de0b8e047116a6/nonebot_plugin_bilichat-2.3.2.tar.gz
+[2023-06-04 18:40:56] INFO root fetch - processPackages [flightgear-python]: Downloading https://files.pythonhosted.org/packages/4e/2a/5dc66309514aed60ee239e305b5101245c01ca026b5244a2da07a5ea2308/flightgear_python-1.3.0.tar.gz
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-06-04 18:40:56] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-2.3.1.tar.gz tmp/nonebot_plugin_bilichat-2.3.2.tar.gz --markdown 20230604/n/nonebot-plugin-bilichat/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-06-04 18:40:56] INFO root fetch - processPackages [flightgear-python]: executing diffoscope
+[2023-06-04 18:40:56] INFO root fetch - processPackages [flightgear-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flightgear_python-1.2.2.tar.gz tmp/flightgear_python-1.3.0.tar.gz --markdown 20230604/f/flightgear-python/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-06-04 18:40:57] INFO root fetch - main [MainThread]: End processing [jekyll-to-hugo]: success
+[2023-06-04 18:40:57] INFO root fetch - main [MainThread]: End processing [flightgear-python]: success
+[2023-06-04 18:40:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2023-06-04 18:41:50] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-06-04 18:41:50] INFO root fetch - main [MainThread]: Store serial: [18367275]
