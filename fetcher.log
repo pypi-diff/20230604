@@ -2592,3 +2592,31 @@
 [2023-06-04 07:03:54] INFO root fetch - main [MainThread]: End processing [sleep-inhibitor]: success
 [2023-06-04 07:03:55] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-06-04 07:03:55] INFO root fetch - main [MainThread]: Store serial: [18363965]
+[2023-06-04 07:08:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363965]
+[2023-06-04 07:09:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 07:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multi-model-server
+[2023-06-04 07:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2023-06-04 07:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-model-maker-nightly
+[2023-06-04 07:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vector-vault
+[2023-06-04 07:09:04] INFO root fetch - processPackages [vector-vault]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-06-04 07:09:04] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230604] Old Version: [0.1.1.dev20230603]
+[2023-06-04 07:09:04] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.9b20230601] Old Version: [1.1.8b20230531]
+[2023-06-04 07:09:04] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202306040508] Old Version: [0.4.3.dev202306030508]
+[2023-06-04 07:09:04] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-06-04 07:09:04] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230531-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.9b20230601-py2.py3-none-any.whl.zip --markdown 20230604/m/multi-model-server/1.1.8b20230531-1.1.9b20230601/diff.md --exclude *.pyd
+[2023-06-04 07:09:04] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/1e/1a/00214fc14bfcfe86b1e3b74187f2f7936564eb1629094e5add9f856089be/rapid_pe-0.1.1.dev20230604.tar.gz
+[2023-06-04 07:09:04] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/b3/b4/9435ff4b00b3bba30924ae8a1ddce0003ae74e700b12cbe1494016635b2f/vector_vault-1.8.3.tar.gz
+[2023-06-04 07:09:04] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/a7/8f/f2cb840382ea9424d224ddcf028d9ab8bbbe8d7a46c46dcea268d442439f/tflite-model-maker-nightly-0.4.3.dev202306030508.tar.gz
+[2023-06-04 07:09:04] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 07:09:04] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.8.2.tar.gz tmp/vector_vault-1.8.3.tar.gz --markdown 20230604/v/vector-vault/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-06-04 07:09:04] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-06-04 07:09:04] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230603.tar.gz tmp/rapid_pe-0.1.1.dev20230604.tar.gz --markdown 20230604/r/rapid-pe/0.1.1.dev20230603-0.1.1.dev20230604/diff.md --exclude *.pyd
+[2023-06-04 07:09:04] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/d7/cd/29ffab1b776be6893d556b9cb410e30b51cd0b6c826ae32c78c1744d900d/tflite-model-maker-nightly-0.4.3.dev202306040508.tar.gz
+[2023-06-04 07:09:04] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-06-04 07:09:04] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202306030508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202306040508.tar.gz --markdown 20230604/t/tflite-model-maker-nightly/0.4.3.dev202306030508-0.4.3.dev202306040508/diff.md --exclude *.pyd
+[2023-06-04 07:09:05] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 07:09:05] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-06-04 07:09:07] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-06-04 07:12:04] ERROR root fetch - processPackages [multi-model-server]: Timeout during execution of pkgdiff
+[2023-06-04 07:12:04] INFO root fetch - main [MainThread]: End processing [multi-model-server] error
+[2023-06-04 07:12:04] INFO root fetch - main [MainThread]: Store serial: [18363976]
