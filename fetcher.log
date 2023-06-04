@@ -1570,3 +1570,29 @@
 [2023-06-04 03:17:30] INFO root fetch - main [MainThread]: End processing [cdk-emrserverless-with-delta-lake]: success
 [2023-06-04 03:17:32] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-06-04 03:17:32] INFO root fetch - main [MainThread]: Store serial: [18363380]
+[2023-06-04 03:22:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363380]
+[2023-06-04 03:22:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 03:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datascope-experiments
+[2023-06-04 03:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tomas
+[2023-06-04 03:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qworker
+[2023-06-04 03:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: douyin-tiktok-scraper
+[2023-06-04 03:22:40] INFO root fetch - processPackages [douyin-tiktok-scraper]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-06-04 03:22:40] INFO root fetch - processPackages [tomas]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 03:22:40] INFO root fetch - processPackages [datascope-experiments]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 03:22:40] INFO root fetch - processPackages [qworker]: New version: [1.8.0] Old Version: [1.7.8]
+[2023-06-04 03:22:40] INFO root fetch - processPackages [douyin-tiktok-scraper]: executing diffoscope
+[2023-06-04 03:22:40] INFO root fetch - processPackages [douyin-tiktok-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douyin_tiktok_scraper-1.2.4.tar.gz tmp/douyin_tiktok_scraper-1.2.5.tar.gz --markdown 20230604/d/douyin-tiktok-scraper/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-06-04 03:22:40] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/45/04/38d90a22277d9e206a1f680f99cbfda58ca9cb856a5fdfdcee40e032f0e8/datascope-experiments-0.0.8.tar.gz
+[2023-06-04 03:22:40] INFO root fetch - processPackages [tomas]: executing diffoscope
+[2023-06-04 03:22:40] INFO root fetch - processPackages [tomas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomas-0.1.8.tar.gz tmp/tomas-0.1.9.tar.gz --markdown 20230604/t/tomas/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 03:22:40] INFO root fetch - processPackages [qworker]: Downloading https://files.pythonhosted.org/packages/73/4f/5dea690ab83d7fe7f85aec5e50dfa02f7b6c7d5c78cf2893f00cfad0414a/qworker-1.8.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 03:22:41] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/b1/bc/05ddc96ba1314c3a59709691d24646790023b2b8b38620c39e9ae4412371/datascope-experiments-0.0.9.tar.gz
+[2023-06-04 03:22:41] INFO root fetch - processPackages [qworker]: executing diffoscope
+[2023-06-04 03:22:41] INFO root fetch - processPackages [qworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qworker-1.7.8-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qworker-1.8.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/q/qworker/1.7.8-1.8.0/diff.md --exclude *.pyd
+[2023-06-04 03:22:41] INFO root fetch - processPackages [datascope-experiments]: executing diffoscope
+[2023-06-04 03:22:41] INFO root fetch - processPackages [datascope-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datascope-experiments-0.0.8.tar.gz tmp/datascope-experiments-0.0.9.tar.gz --markdown 20230604/d/datascope-experiments/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 03:22:41] INFO root fetch - main [MainThread]: End processing [douyin-tiktok-scraper]: success
+[2023-06-04 03:22:42] INFO root fetch - main [MainThread]: End processing [qworker]: success
+[2023-06-04 03:22:42] INFO root fetch - main [MainThread]: End processing [datascope-experiments]: success
+[2023-06-04 03:22:42] INFO root fetch - main [MainThread]: End processing [tomas]: success
+[2023-06-04 03:22:42] INFO root fetch - main [MainThread]: Store serial: [18363392]
