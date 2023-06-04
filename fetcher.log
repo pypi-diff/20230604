@@ -4812,3 +4812,54 @@
 [2023-06-04 12:31:08] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-06-04 12:31:46] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-06-04 12:31:46] INFO root fetch - main [MainThread]: Store serial: [18365265]
+[2023-06-04 12:36:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365265]
+[2023-06-04 12:36:55] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymermaiddiagram
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sigmaepsilon
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mangowg
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kcli
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: normcap
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mangowg
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bridgecrew
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: yuface
+[2023-06-04 12:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aggregate
+[2023-06-04 12:36:55] WARNING root fetch - processPackages [pymermaiddiagram]: Skipping, unable to determine old version
+[2023-06-04 12:36:55] INFO root fetch - main [MainThread]: End processing [pymermaiddiagram] error
+[2023-06-04 12:36:55] INFO root fetch - processPackages [sigmaepsilon]: New version: [0.0.36] Old Version: [0.0.34]
+[2023-06-04 12:36:55] WARNING root fetch - processPackages [yuface]: Skipping, unable to determine old version
+[2023-06-04 12:36:55] INFO root fetch - main [MainThread]: End processing [yuface] error
+[2023-06-04 12:36:55] INFO root fetch - processPackages [mangowg]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 12:36:55] INFO root fetch - processPackages [mangowg]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 12:36:55] INFO root fetch - processPackages [normcap]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-06-04 12:36:55] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 12:36:55] INFO root fetch - processPackages [kcli]: New version: [99.0.202306041034] Old Version: [99.0.202306032339]
+[2023-06-04 12:36:55] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-06-04 12:36:55] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230604/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 12:36:55] INFO root fetch - processPackages [sigmaepsilon]: Downloading https://files.pythonhosted.org/packages/fa/5f/76cef72cd65c7b99f83d8f73cd38fb0e3e55e1b1f9da303bb2bdd05e4b3f/sigmaepsilon-0.0.34.tar.gz
+[2023-06-04 12:36:55] INFO root fetch - processPackages [aggregate]: New version: [0.9.6.8] Old Version: [0.9.6.5]
+[2023-06-04 12:36:55] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/5e/14/6f698e5b51f187e36a94147a37166aead0050566d08b90e51e1a886dd717/mangowg-0.1.5.tar.gz
+[2023-06-04 12:36:55] INFO root fetch - processPackages [mangowg]: Downloading https://files.pythonhosted.org/packages/5e/14/6f698e5b51f187e36a94147a37166aead0050566d08b90e51e1a886dd717/mangowg-0.1.5.tar.gz
+[2023-06-04 12:36:56] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/3e/99/91d4e876f15fd5979c204a19fa57989885c253c0039afefdff1a0e80f8a2/kcli-99.0.202306032339-py3-none-any.whl
+[2023-06-04 12:36:56] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:36:56] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.4.tar.gz tmp/mangowg-0.1.5.tar.gz --markdown 20230604/m/mangowg/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 12:36:56] INFO root fetch - processPackages [mangowg]: executing diffoscope
+[2023-06-04 12:36:56] INFO root fetch - processPackages [mangowg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mangowg-0.1.4.tar.gz tmp/mangowg-0.1.5.tar.gz --markdown 20230604/m/mangowg/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 12:36:56] INFO root fetch - processPackages [sigmaepsilon]: Downloading https://files.pythonhosted.org/packages/7b/5e/42470e082fdfa70f84046b1b47183aab75b57d380dc1188368fa081be5c0/sigmaepsilon-0.0.36.tar.gz
+[2023-06-04 12:36:56] INFO root fetch - processPackages [normcap]: Downloading https://files.pythonhosted.org/packages/21/90/a6f5990db9a24fbc27e139374e5fee23d2c67167b9719ee282e0924b5d43/normcap-0.4.4.tar.gz
+[2023-06-04 12:36:56] INFO root fetch - processPackages [sigmaepsilon]: executing diffoscope
+[2023-06-04 12:36:56] INFO root fetch - processPackages [sigmaepsilon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmaepsilon-0.0.34.tar.gz tmp/sigmaepsilon-0.0.36.tar.gz --markdown 20230604/s/sigmaepsilon/0.0.34-0.0.36/diff.md --exclude *.pyd
+[2023-06-04 12:36:56] INFO root fetch - processPackages [aggregate]: executing diffoscope
+[2023-06-04 12:36:56] INFO root fetch - processPackages [aggregate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aggregate-0.9.6.5.tar.gz tmp/aggregate-0.9.6.8.tar.gz --markdown 20230604/a/aggregate/0.9.6.5-0.9.6.8/diff.md --exclude *.pyd
+[2023-06-04 12:36:56] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/04/e5/b30bef50857060f191d0fd55fed522ead38897e78b6a5bc085fc2f3369e8/kcli-99.0.202306041034-py3-none-any.whl
+[2023-06-04 12:36:56] INFO root fetch - processPackages [normcap]: executing diffoscope
+[2023-06-04 12:36:56] INFO root fetch - processPackages [normcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/normcap-0.4.3.tar.gz tmp/normcap-0.4.4.tar.gz --markdown 20230604/n/normcap/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-06-04 12:36:56] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 12:36:56] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306032339-py3-none-any.whl.zip tmp/kcli-99.0.202306041034-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306032339-99.0.202306041034/diff.md --exclude *.pyd
+[2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [mangowg]: success
+[2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [aggregate]: success
+[2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [normcap]: success
+[2023-06-04 12:36:57] INFO root fetch - main [MainThread]: End processing [sigmaepsilon]: success
+[2023-06-04 12:37:03] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 12:37:03] INFO root fetch - main [MainThread]: Store serial: [18365296]
