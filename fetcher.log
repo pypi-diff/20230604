@@ -5373,3 +5373,36 @@
 [2023-06-04 13:30:25] INFO root fetch - main [MainThread]: End processing [rmlab]: success
 [2023-06-04 13:30:26] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
 [2023-06-04 13:30:26] INFO root fetch - main [MainThread]: Store serial: [18365614]
+[2023-06-04 13:35:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365614]
+[2023-06-04 13:35:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 13:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fieldedge-utilities
+[2023-06-04 13:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: topologicpy
+[2023-06-04 13:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NanoRepeat
+[2023-06-04 13:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grievios
+[2023-06-04 13:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rmlab
+[2023-06-04 13:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tcod-ecs
+[2023-06-04 13:35:35] INFO root fetch - processPackages [rmlab]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-06-04 13:35:35] WARNING root fetch - processPackages [grievios]: Skipping, unable to determine old version
+[2023-06-04 13:35:35] INFO root fetch - main [MainThread]: End processing [grievios] error
+[2023-06-04 13:35:35] INFO root fetch - processPackages [NanoRepeat]: New version: [1.6] Old Version: [1.5]
+[2023-06-04 13:35:35] INFO root fetch - processPackages [topologicpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-06-04 13:35:35] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-06-04 13:35:35] INFO root fetch - processPackages [tcod-ecs]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-06-04 13:35:35] INFO root fetch - processPackages [rmlab]: executing diffoscope
+[2023-06-04 13:35:35] INFO root fetch - processPackages [rmlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmlab-0.4.0.tar.gz tmp/rmlab-0.4.1.tar.gz --markdown 20230604/r/rmlab/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-06-04 13:35:35] INFO root fetch - processPackages [NanoRepeat]: Downloading https://files.pythonhosted.org/packages/3e/0c/2f8d0ea1d679f279c6d7fc396c40fa2c8473339f371ae5772a074f9e0d82/NanoRepeat-1.6.tar.gz
+[2023-06-04 13:35:35] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-06-04 13:35:35] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230604/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-06-04 13:35:35] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/b2/2d/e25152bdc86bc1a0b6f5574e4a59e9594642942d85b03acf20d5112b3d3b/tcod_ecs-3.0.1.tar.gz
+[2023-06-04 13:35:35] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/c5/85/1c4479b468dd8447a392da1fb4879881f139f70892e1015a6f377c4cea2b/topologicpy-0.4.9.tar.gz
+[2023-06-04 13:35:35] INFO root fetch - processPackages [NanoRepeat]: executing diffoscope
+[2023-06-04 13:35:35] INFO root fetch - processPackages [NanoRepeat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NanoRepeat-1.5.tar.gz tmp/NanoRepeat-1.6.tar.gz --markdown 20230604/N/NanoRepeat/1.5-1.6/diff.md --exclude *.pyd
+[2023-06-04 13:35:35] INFO root fetch - processPackages [tcod-ecs]: executing diffoscope
+[2023-06-04 13:35:35] INFO root fetch - processPackages [tcod-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod_ecs-3.0.0.tar.gz tmp/tcod_ecs-3.0.1.tar.gz --markdown 20230604/t/tcod-ecs/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-06-04 13:35:36] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34020520>=10485760
+[2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [rmlab]: success
+[2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [tcod-ecs]: success
+[2023-06-04 13:35:36] INFO root fetch - main [MainThread]: End processing [NanoRepeat]: success
+[2023-06-04 13:35:36] INFO root fetch - main [MainThread]: Store serial: [18365636]
