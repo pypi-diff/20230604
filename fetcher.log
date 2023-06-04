@@ -8588,3 +8588,45 @@
 [2023-06-04 20:00:29] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
 [2023-06-04 20:00:33] INFO root fetch - main [MainThread]: End processing [num-tini4]: success
 [2023-06-04 20:00:33] INFO root fetch - main [MainThread]: Store serial: [18367653]
+[2023-06-04 20:05:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367653]
+[2023-06-04 20:05:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: batogram
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kelpie-personal-trainer
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: highghlow-pythonweb
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swolfpy-processmodels
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flowtask
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swolfpy
+[2023-06-04 20:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vector-vault
+[2023-06-04 20:05:44] INFO root fetch - processPackages [swolfpy]: New version: [1.0.0] Old Version: [0.2.5]
+[2023-06-04 20:05:44] INFO root fetch - processPackages [batogram]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 20:05:44] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 20:05:44] WARNING root fetch - processPackages [highghlow-pythonweb]: Skipping, unable to determine old version
+[2023-06-04 20:05:44] INFO root fetch - main [MainThread]: End processing [highghlow-pythonweb] error
+[2023-06-04 20:05:44] INFO root fetch - processPackages [vector-vault]: New version: [1.8.3] Old Version: [1.8.2]
+[2023-06-04 20:05:44] INFO root fetch - processPackages [swolfpy-processmodels]: New version: [1.0.0] Old Version: [0.1.9]
+[2023-06-04 20:05:44] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-06-04 20:05:44] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-06-04 20:05:44] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-06-04 20:05:44] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-06-04 20:05:44] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-1.8.2.tar.gz tmp/vector_vault-1.8.3.tar.gz --markdown 20230604/v/vector-vault/1.8.2-1.8.3/diff.md --exclude *.pyd
+[2023-06-04 20:05:44] INFO root fetch - processPackages [swolfpy]: Downloading https://files.pythonhosted.org/packages/7e/82/d377be37ee377d66ed61932203311c427457f0c4f75b0f64fb785288a2bb/swolfpy-0.2.5.tar.gz
+[2023-06-04 20:05:44] INFO root fetch - processPackages [swolfpy-processmodels]: Downloading https://files.pythonhosted.org/packages/fd/31/6457b3019101c1fda241d6c8f44ddec4d86694b47436d7bcec8ba58144b6/swolfpy_processmodels-0.1.9.tar.gz
+[2023-06-04 20:05:44] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/7c/50/eeaf2afcb0368bb9c29bbad09e61c2c630db2ac7369338ae2ca9285cf0d6/kelpie_personal_trainer-0.1.2.tar.gz
+[2023-06-04 20:05:44] INFO root fetch - processPackages [batogram]: Downloading https://files.pythonhosted.org/packages/61/cc/60ddb4e4859611297bac32308bb25926e574cfaea2c295276dcd1fc5f5f0/batogram-1.0.9.tar.gz
+[2023-06-04 20:05:44] INFO root fetch - processPackages [batogram]: executing diffoscope
+[2023-06-04 20:05:44] INFO root fetch - processPackages [batogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batogram-1.0.8.tar.gz tmp/batogram-1.0.9.tar.gz --markdown 20230604/b/batogram/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 20:05:44] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 20:05:44] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.1.1.tar.gz tmp/kelpie_personal_trainer-0.1.2.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 20:05:45] INFO root fetch - processPackages [swolfpy-processmodels]: Downloading https://files.pythonhosted.org/packages/fc/3d/e59defc20a8c632d6c44da806154aa8e345d25aa65372af8b2a0a840976e/swolfpy_processmodels-1.0.0.tar.gz
+[2023-06-04 20:05:45] INFO root fetch - processPackages [swolfpy-processmodels]: executing diffoscope
+[2023-06-04 20:05:45] INFO root fetch - processPackages [swolfpy-processmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swolfpy_processmodels-0.1.9.tar.gz tmp/swolfpy_processmodels-1.0.0.tar.gz --markdown 20230604/s/swolfpy-processmodels/0.1.9-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 20:05:45] INFO root fetch - processPackages [swolfpy]: Downloading https://files.pythonhosted.org/packages/97/40/2c29da1cd5546d84731d89035556db5da3a4b7e1cfc3782dff49e8b588f3/swolfpy-1.0.0.tar.gz
+[2023-06-04 20:05:45] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-06-04 20:05:46] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 20:05:46] INFO root fetch - processPackages [swolfpy]: executing diffoscope
+[2023-06-04 20:05:46] INFO root fetch - processPackages [swolfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swolfpy-0.2.5.tar.gz tmp/swolfpy-1.0.0.tar.gz --markdown 20230604/s/swolfpy/0.2.5-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 20:05:46] INFO root fetch - main [MainThread]: End processing [batogram]: success
+[2023-06-04 20:05:47] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-06-04 20:05:47] INFO root fetch - main [MainThread]: End processing [swolfpy]: success
+[2023-06-04 20:05:47] INFO root fetch - main [MainThread]: End processing [swolfpy-processmodels]: success
+[2023-06-04 20:05:47] INFO root fetch - main [MainThread]: Store serial: [18367676]
