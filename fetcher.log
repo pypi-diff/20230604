@@ -8702,3 +8702,57 @@
 [2023-06-04 20:16:13] INFO root fetch - main [MainThread]: End processing [superannotate]: success
 [2023-06-04 20:16:15] INFO root fetch - main [MainThread]: End processing [frasa]: success
 [2023-06-04 20:16:15] INFO root fetch - main [MainThread]: Store serial: [18367713]
+[2023-06-04 20:21:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367713]
+[2023-06-04 20:21:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seedspark
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arango-orm
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: promptengine-catapult
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leuci-geo
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kfish
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tigrisdb
+[2023-06-04 20:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: iamlistening
+[2023-06-04 20:21:24] INFO root fetch - processPackages [iamlistening]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [arango-orm]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [promptengine-catapult]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [seedspark]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [kfish]: New version: [99.0.202306041820] Old Version: [99.0.202306041654]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [leuci-geo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [tigrisdb]: New version: [1.0.0b6] Old Version: [1.0.0b5]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [kcli]: New version: [99.0.202306041817] Old Version: [99.0.202306041652]
+[2023-06-04 20:21:24] INFO root fetch - processPackages [promptengine-catapult]: Downloading https://files.pythonhosted.org/packages/fb/e8/a71ea25aebbead40638e60cbd1fb660d0f3f933b0b5bfcdcb775032c19d9/promptengine_catapult-0.0.1.tar.gz
+[2023-06-04 20:21:24] INFO root fetch - processPackages [arango-orm]: Downloading https://files.pythonhosted.org/packages/73/5d/4619e2a37b6140bab4d1e8cf6d93d9b60f9c8f7d1cfaade67698c8fb3b72/arango-orm-0.7.0.tar.gz
+[2023-06-04 20:21:24] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2023-06-04 20:21:24] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-0.1.6.tar.gz tmp/iamlistening-0.1.7.tar.gz --markdown 20230604/i/iamlistening/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-04 20:21:24] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/c3/d9/4010f5e12bfcd961ab717a795489a75a29d6f617a39df14f8cffc293eaa8/kfish-99.0.202306041820-py3-none-any.whl
+[2023-06-04 20:21:24] INFO root fetch - processPackages [seedspark]: Downloading https://files.pythonhosted.org/packages/a8/a0/e8c8bf0263ba6a86bcde7ed7dba7f28e20bb9cc8b431a1869451ddd6b967/seedspark-0.1.8.tar.gz
+[2023-06-04 20:21:24] INFO root fetch - processPackages [tigrisdb]: Downloading https://files.pythonhosted.org/packages/41/c1/3265e1aa162185e27c06179586650595b26f615eacddfb0f33b85ca66352/tigrisdb-1.0.0b5.tar.gz
+[2023-06-04 20:21:24] INFO root fetch - processPackages [leuci-geo]: Downloading https://files.pythonhosted.org/packages/3e/d9/bd9ff0127dc476b03342bcd92766324df04b059746a9ee2fba07fba1e64a/leuci-geo-0.0.3.tar.gz
+[2023-06-04 20:21:25] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/fa/6d/086e5a44cc0f0b53a4352980c6952405c730e5b32915ccb7c4ae7a7f66e7/kcli-99.0.202306041817-py3-none-any.whl
+[2023-06-04 20:21:25] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202306041654-py3-none-any.whl.zip tmp/kfish-99.0.202306041820-py3-none-any.whl.zip --markdown 20230604/k/kfish/99.0.202306041654-99.0.202306041820/diff.md --exclude *.pyd
+[2023-06-04 20:21:25] INFO root fetch - processPackages [promptengine-catapult]: Downloading https://files.pythonhosted.org/packages/2a/10/90b5936548dd1801b1285172650b118455d9ed33577f6c6eb2691869d520/promptengine_catapult-0.0.2.tar.gz
+[2023-06-04 20:21:25] INFO root fetch - processPackages [arango-orm]: Downloading https://files.pythonhosted.org/packages/4a/e6/eb7a02d156a9167ce541d034fccc1d2d24bc9e8dfa21c034faf54f3cf009/arango_orm-0.7.1.tar.gz
+[2023-06-04 20:21:25] INFO root fetch - processPackages [leuci-geo]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [leuci-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-geo-0.0.2.tar.gz tmp/leuci-geo-0.0.3.tar.gz --markdown 20230604/l/leuci-geo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 20:21:25] INFO root fetch - processPackages [tigrisdb]: Downloading https://files.pythonhosted.org/packages/9d/03/9069979ef2bfefa45fae9a27e76d8e85bc2114a0397f5c8f9427fb061e62/tigrisdb-1.0.0b6.tar.gz
+[2023-06-04 20:21:25] INFO root fetch - processPackages [arango-orm]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [arango-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arango-orm-0.7.0.tar.gz tmp/arango_orm-0.7.1.tar.gz --markdown 20230604/a/arango-orm/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-06-04 20:21:25] INFO root fetch - processPackages [tigrisdb]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [tigrisdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigrisdb-1.0.0b5.tar.gz tmp/tigrisdb-1.0.0b6.tar.gz --markdown 20230604/t/tigrisdb/1.0.0b5-1.0.0b6/diff.md --exclude *.pyd
+[2023-06-04 20:21:25] INFO root fetch - processPackages [promptengine-catapult]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [promptengine-catapult]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptengine_catapult-0.0.1.tar.gz tmp/promptengine_catapult-0.0.2.tar.gz --markdown 20230604/p/promptengine-catapult/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 20:21:25] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202306041652-py3-none-any.whl.zip tmp/kcli-99.0.202306041817-py3-none-any.whl.zip --markdown 20230604/k/kcli/99.0.202306041652-99.0.202306041817/diff.md --exclude *.pyd
+[2023-06-04 20:21:25] INFO root fetch - processPackages [seedspark]: Downloading https://files.pythonhosted.org/packages/9a/01/ce4b78ea628303e1ef4d9f50794c8707b0b3fb5e05c1d0ce1203ec881eca/seedspark-0.1.9.tar.gz
+[2023-06-04 20:21:25] INFO root fetch - processPackages [seedspark]: executing diffoscope
+[2023-06-04 20:21:25] INFO root fetch - processPackages [seedspark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seedspark-0.1.8.tar.gz tmp/seedspark-0.1.9.tar.gz --markdown 20230604/s/seedspark/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 20:21:26] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2023-06-04 20:21:26] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-06-04 20:21:26] INFO root fetch - main [MainThread]: End processing [leuci-geo]: success
+[2023-06-04 20:21:26] INFO root fetch - main [MainThread]: End processing [promptengine-catapult]: success
+[2023-06-04 20:21:26] INFO root fetch - main [MainThread]: End processing [tigrisdb]: success
+[2023-06-04 20:21:26] INFO root fetch - main [MainThread]: End processing [seedspark]: success
+[2023-06-04 20:21:27] INFO root fetch - main [MainThread]: End processing [arango-orm]: success
+[2023-06-04 20:21:33] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-06-04 20:21:33] INFO root fetch - main [MainThread]: Store serial: [18367740]
