@@ -1840,3 +1840,28 @@
 [2023-06-04 03:50:36] INFO root fetch - main [MainThread]: End processing [xalpha]: success
 [2023-06-04 03:50:37] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
 [2023-06-04 03:50:37] INFO root fetch - main [MainThread]: Store serial: [18363551]
+[2023-06-04 03:55:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363551]
+[2023-06-04 03:55:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 03:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: panml
+[2023-06-04 03:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2023-06-04 03:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: igrade
+[2023-06-04 03:55:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scotthsieh-projen-statemachine
+[2023-06-04 03:55:45] INFO root fetch - processPackages [panml]: New version: [0.0.24] Old Version: [0.0.23]
+[2023-06-04 03:55:45] INFO root fetch - processPackages [igrade]: New version: [2.6.0] Old Version: [2.5.2]
+[2023-06-04 03:55:45] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-04 03:55:46] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-06-04 03:55:46] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-06-04 03:55:46] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230604/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:55:46] INFO root fetch - processPackages [igrade]: Downloading https://files.pythonhosted.org/packages/05/b0/729d67458bf3a7121aeac984c7e341444152699b1ce5b107e58b7c63cd26/igrade-2.6.0.tar.gz
+[2023-06-04 03:55:46] INFO root fetch - processPackages [panml]: Downloading https://files.pythonhosted.org/packages/3e/5c/ac05cf07de566be7d1b37b5ff2fad4c5edfe98dd415f688146d203bd32dc/panml-0.0.24.tar.gz
+[2023-06-04 03:55:46] INFO root fetch - processPackages [panml]: executing diffoscope
+[2023-06-04 03:55:46] INFO root fetch - processPackages [panml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panml-0.0.23.tar.gz tmp/panml-0.0.24.tar.gz --markdown 20230604/p/panml/0.0.23-0.0.24/diff.md --exclude *.pyd
+[2023-06-04 03:55:46] INFO root fetch - processPackages [igrade]: executing diffoscope
+[2023-06-04 03:55:46] INFO root fetch - processPackages [igrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/igrade-2.5.2.tar.gz tmp/igrade-2.6.0.tar.gz --markdown 20230604/i/igrade/2.5.2-2.6.0/diff.md --exclude *.pyd
+[2023-06-04 03:55:46] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-06-04 03:55:46] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230604/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-06-04 03:55:47] INFO root fetch - main [MainThread]: End processing [igrade]: success
+[2023-06-04 03:55:47] INFO root fetch - main [MainThread]: End processing [panml]: success
+[2023-06-04 03:55:47] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-06-04 03:55:48] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-06-04 03:55:48] INFO root fetch - main [MainThread]: Store serial: [18363563]
