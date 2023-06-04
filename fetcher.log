@@ -2575,3 +2575,20 @@
 [2023-06-04 06:58:43] INFO root fetch - main [MainThread]: End processing [wpiformat]: success
 [2023-06-04 06:58:43] INFO root fetch - main [MainThread]: End processing [sleep-inhibitor]: success
 [2023-06-04 06:58:43] INFO root fetch - main [MainThread]: Store serial: [18363947]
+[2023-06-04 07:03:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363947]
+[2023-06-04 07:03:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 07:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonic-uia2-client
+[2023-06-04 07:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sleep-inhibitor
+[2023-06-04 07:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-runtime-nightly
+[2023-06-04 07:03:52] WARNING root fetch - processPackages [sonic-uia2-client]: Skipping, unable to determine old version
+[2023-06-04 07:03:52] INFO root fetch - main [MainThread]: End processing [sonic-uia2-client] error
+[2023-06-04 07:03:52] INFO root fetch - processPackages [sleep-inhibitor]: New version: [1.9] Old Version: [1.8.1]
+[2023-06-04 07:03:52] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230602] Old Version: [2.14.0.dev20230601]
+[2023-06-04 07:03:53] INFO root fetch - processPackages [sleep-inhibitor]: executing diffoscope
+[2023-06-04 07:03:53] INFO root fetch - processPackages [sleep-inhibitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleep-inhibitor-1.8.1.tar.gz tmp/sleep-inhibitor-1.9.tar.gz --markdown 20230604/s/sleep-inhibitor/1.8.1-1.9/diff.md --exclude *.pyd
+[2023-06-04 07:03:53] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/ed/a8/269878474c811143a8aa34803b1226b31da9f2b3cf2f863cb55362b6f651/tflite_runtime_nightly-2.14.0.dev20230602-cp39-cp39-manylinux2014_x86_64.whl
+[2023-06-04 07:03:53] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-06-04 07:03:53] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230601-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230602-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230604/t/tflite-runtime-nightly/2.14.0.dev20230601-2.14.0.dev20230602/diff.md --exclude *.pyd
+[2023-06-04 07:03:54] INFO root fetch - main [MainThread]: End processing [sleep-inhibitor]: success
+[2023-06-04 07:03:55] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-06-04 07:03:55] INFO root fetch - main [MainThread]: Store serial: [18363965]
