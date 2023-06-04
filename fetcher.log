@@ -1409,3 +1409,51 @@
 [2023-06-04 02:45:57] INFO root fetch - main [MainThread]: End processing [devvio-util]: success
 [2023-06-04 02:45:58] INFO root fetch - main [MainThread]: End processing [xspf-fixup]: success
 [2023-06-04 02:45:58] INFO root fetch - main [MainThread]: Store serial: [18363302]
+[2023-06-04 02:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363302]
+[2023-06-04 02:51:07] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compose-go
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfds-nightly
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nodered.py
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kubric-nightly
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: repo-chat
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ubcpdk
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gdsfactory
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: erdgen
+[2023-06-04 02:51:07] INFO root fetch - processPackages [compose-go]: New version: [2.18.1] Old Version: [1.0.4]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [nodered.py]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [repo-chat]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ubcpdk]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.6.3] Old Version: [2023.6.2]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202306030045] Old Version: [4.9.2.dev202306020044]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [gdsfactory]: New version: [6.99.0] Old Version: [6.98.2]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [erdgen]: New version: [0.0.1rc3] Old Version: [0.0.1rc2]
+[2023-06-04 02:51:07] INFO root fetch - processPackages [compose-go]: Downloading https://files.pythonhosted.org/packages/a4/d1/0e24f6b4a6162984c396ea8391795655eea135c894ab2097eeea8efb0719/compose_go-1.0.4.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [ubcpdk]: Downloading https://files.pythonhosted.org/packages/9a/13/b80a610cf29d024f564f0da9b191d549b343cf2ab63a25a4556f72ff2118/ubcpdk-1.9.0.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [repo-chat]: Downloading https://files.pythonhosted.org/packages/d5/e1/dcad9e8561a213d73c263c3b8dcc071e1fe6dcdc12607381d865d0604dac/repo_chat-0.1.2.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [gdsfactory]: executing diffoscope
+[2023-06-04 02:51:07] INFO root fetch - processPackages [gdsfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdsfactory-6.98.2.tar.gz tmp/gdsfactory-6.99.0.tar.gz --markdown 20230604/g/gdsfactory/6.98.2-6.99.0/diff.md --exclude *.pyd
+[2023-06-04 02:51:07] WARNING root fetch - processPackages [compose-go]: Skipping package: exceeds size limit 15973787>=10485760
+[2023-06-04 02:51:07] INFO root fetch - main [MainThread]: End processing [compose-go] error
+[2023-06-04 02:51:07] INFO root fetch - processPackages [nodered.py]: Downloading https://files.pythonhosted.org/packages/45/2e/d1c44c6d679a79068a5115a70d4939328b0494226b3ed5d2c7c6b201c925/nodered.py-0.2.3.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [repo-chat]: executing diffoscope
+[2023-06-04 02:51:07] INFO root fetch - processPackages [repo-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repo_chat-0.1.1.tar.gz tmp/repo_chat-0.1.2.tar.gz --markdown 20230604/r/repo-chat/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 02:51:07] INFO root fetch - processPackages [kubric-nightly]: Downloading https://files.pythonhosted.org/packages/67/56/cd0983b7791e2ce928ac4d64ab6f167cf57e07d48c06b5c63476fc184ace/kubric-nightly-2023.6.3.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/54/24/ebcc9a88f2ae3abac98a30bf79211820c5fc9af85caa7f21ec3fa44c0a09/tfds-nightly-4.9.2.dev202306030045.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [nodered.py]: executing diffoscope
+[2023-06-04 02:51:07] INFO root fetch - processPackages [nodered.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodered.py-0.2.2.tar.gz tmp/nodered.py-0.2.3.tar.gz --markdown 20230604/n/nodered.py/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-04 02:51:07] INFO root fetch - processPackages [erdgen]: Downloading https://files.pythonhosted.org/packages/5d/89/74cdf229da0e6a1ab6f6d39b6d08f3b7b23b1eb079c6375d2ab2d132a49b/erdgen-0.0.1rc3.tar.gz
+[2023-06-04 02:51:07] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-06-04 02:51:07] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.6.2.tar.gz tmp/kubric-nightly-2023.6.3.tar.gz --markdown 20230604/k/kubric-nightly/2023.6.2-2023.6.3/diff.md --exclude *.pyd
+[2023-06-04 02:51:07] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-06-04 02:51:07] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202306020044.tar.gz tmp/tfds-nightly-4.9.2.dev202306030045.tar.gz --markdown 20230604/t/tfds-nightly/4.9.2.dev202306020044-4.9.2.dev202306030045/diff.md --exclude *.pyd
+[2023-06-04 02:51:07] INFO root fetch - processPackages [erdgen]: executing diffoscope
+[2023-06-04 02:51:07] INFO root fetch - processPackages [erdgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/erdgen-0.0.1rc2.tar.gz tmp/erdgen-0.0.1rc3.tar.gz --markdown 20230604/e/erdgen/0.0.1rc2-0.0.1rc3/diff.md --exclude *.pyd
+[2023-06-04 02:51:08] WARNING root fetch - processPackages [ubcpdk]: Skipping package: exceeds size limit 45777112>=10485760
+[2023-06-04 02:51:08] INFO root fetch - main [MainThread]: End processing [ubcpdk] error
+[2023-06-04 02:51:08] INFO root fetch - main [MainThread]: End processing [repo-chat]: success
+[2023-06-04 02:51:08] INFO root fetch - main [MainThread]: End processing [nodered.py]: success
+[2023-06-04 02:51:09] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-06-04 02:51:09] INFO root fetch - main [MainThread]: End processing [erdgen]: success
+[2023-06-04 02:51:15] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
+[2023-06-04 02:51:19] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-06-04 02:51:19] INFO root fetch - main [MainThread]: Store serial: [18363325]
