@@ -6112,3 +6112,35 @@
 [2023-06-04 15:07:46] INFO root fetch - main [MainThread]: End processing [fastapi-motor-oil]: success
 [2023-06-04 15:07:47] INFO root fetch - main [MainThread]: End processing [lakefs-client]: success
 [2023-06-04 15:07:47] INFO root fetch - main [MainThread]: Store serial: [18366068]
+[2023-06-04 15:12:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366068]
+[2023-06-04 15:12:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-numpy
+[2023-06-04 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-pandas
+[2023-06-04 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: findu
+[2023-06-04 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napari-filaments
+[2023-06-04 15:12:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-pytorch
+[2023-06-04 15:12:56] INFO root fetch - processPackages [findu]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 15:12:56] INFO root fetch - processPackages [napari-filaments]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230604/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:12:56] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/91/da/854ad52b6c8210b2ba56840124d18d38b108d55007038d1c143dbbfa98f6/findu-0.0.7.tar.gz
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230604/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-06-04 15:12:56] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230604/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-06-04 15:12:56] INFO root fetch - processPackages [napari-filaments]: Downloading https://files.pythonhosted.org/packages/78/95/9335543c5721bd709beacfebc2d0947ecec135f18636a121eea9c00b31bd/napari_filaments-0.2.1.tar.gz
+[2023-06-04 15:12:56] INFO root fetch - processPackages [findu]: Downloading https://files.pythonhosted.org/packages/f2/ae/ccd3fcc598bae37139ccd35d05a2628e696eef9fd2c270f81c0a1d8c954f/findu-0.0.8.tar.gz
+[2023-06-04 15:12:56] INFO root fetch - processPackages [napari-filaments]: Downloading https://files.pythonhosted.org/packages/2b/32/41317bd26442f5bf7821faefdfc13716c359cb05f6387461e52073ed4fac/napari_filaments-0.3.0.tar.gz
+[2023-06-04 15:12:56] INFO root fetch - processPackages [findu]: executing diffoscope
+[2023-06-04 15:12:56] INFO root fetch - processPackages [findu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findu-0.0.7.tar.gz tmp/findu-0.0.8.tar.gz --markdown 20230604/f/findu/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 15:12:56] INFO root fetch - processPackages [napari-filaments]: executing diffoscope
+[2023-06-04 15:12:56] INFO root fetch - processPackages [napari-filaments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_filaments-0.2.1.tar.gz tmp/napari_filaments-0.3.0.tar.gz --markdown 20230604/n/napari-filaments/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 15:12:57] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-06-04 15:12:57] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-06-04 15:12:57] INFO root fetch - main [MainThread]: End processing [findu]: success
+[2023-06-04 15:12:58] INFO root fetch - main [MainThread]: End processing [napari-filaments]: success
+[2023-06-04 15:12:58] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-06-04 15:12:58] INFO root fetch - main [MainThread]: Store serial: [18366083]
