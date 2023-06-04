@@ -9945,3 +9945,27 @@
 [2023-06-04 22:38:47] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-06-04 22:38:55] INFO root fetch - main [MainThread]: End processing [pyavd]: success
 [2023-06-04 22:38:55] INFO root fetch - main [MainThread]: Store serial: [18368489]
+[2023-06-04 22:44:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368489]
+[2023-06-04 22:44:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 22:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leafmap
+[2023-06-04 22:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gentoo-update
+[2023-06-04 22:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: git2pdf
+[2023-06-04 22:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ventus
+[2023-06-04 22:44:05] INFO root fetch - processPackages [git2pdf]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 22:44:05] INFO root fetch - processPackages [ventus]: New version: [0.3.4] Old Version: [0.3.2]
+[2023-06-04 22:44:05] WARNING root fetch - processPackages [gentoo-update]: Skipping, unable to determine old version
+[2023-06-04 22:44:05] INFO root fetch - main [MainThread]: End processing [gentoo-update] error
+[2023-06-04 22:44:05] INFO root fetch - processPackages [leafmap]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-06-04 22:44:05] INFO root fetch - processPackages [leafmap]: executing diffoscope
+[2023-06-04 22:44:05] INFO root fetch - processPackages [leafmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leafmap-0.9.5.tar.gz tmp/leafmap-0.9.6.tar.gz --markdown 20230604/l/leafmap/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-06-04 22:44:05] INFO root fetch - processPackages [git2pdf]: Downloading https://files.pythonhosted.org/packages/17/bd/96c227390c69fb918a477e559eb3b21e3aa99984327f0763100a3fa10d2b/git2pdf-0.1.2.tar.gz
+[2023-06-04 22:44:05] INFO root fetch - processPackages [ventus]: Downloading https://files.pythonhosted.org/packages/0d/39/9663f273a3457ad13154de976bae085106220fdac85bbba19476d1139e68/ventus-0.3.2.tar.gz
+[2023-06-04 22:44:05] INFO root fetch - processPackages [git2pdf]: executing diffoscope
+[2023-06-04 22:44:05] INFO root fetch - processPackages [git2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git2pdf-0.1.1.tar.gz tmp/git2pdf-0.1.2.tar.gz --markdown 20230604/g/git2pdf/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 22:44:05] INFO root fetch - processPackages [ventus]: Downloading https://files.pythonhosted.org/packages/4a/5e/5212d03666021a3fe063ac6342028165ce988c1fbcba5f444bbcea2056ea/ventus-0.3.4.tar.gz
+[2023-06-04 22:44:05] INFO root fetch - processPackages [ventus]: executing diffoscope
+[2023-06-04 22:44:05] INFO root fetch - processPackages [ventus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ventus-0.3.2.tar.gz tmp/ventus-0.3.4.tar.gz --markdown 20230604/v/ventus/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2023-06-04 22:44:06] INFO root fetch - main [MainThread]: End processing [leafmap]: success
+[2023-06-04 22:44:06] INFO root fetch - main [MainThread]: End processing [git2pdf]: success
+[2023-06-04 22:44:06] INFO root fetch - main [MainThread]: End processing [ventus]: success
+[2023-06-04 22:44:06] INFO root fetch - main [MainThread]: Store serial: [18368505]
