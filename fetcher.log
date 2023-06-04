@@ -8475,3 +8475,19 @@
 [2023-06-04 19:39:23] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230604/h/hiddifypanel/7.0.8-7.0.9/diff.md --exclude *.pyd
 [2023-06-04 19:39:45] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-06-04 19:39:45] INFO root fetch - main [MainThread]: Store serial: [18367590]
+[2023-06-04 19:44:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367590]
+[2023-06-04 19:44:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 19:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colorful-terminal
+[2023-06-04 19:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starrail-toolkit
+[2023-06-04 19:44:55] INFO root fetch - processPackages [colorful-terminal]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 19:44:55] INFO root fetch - processPackages [starrail-toolkit]: New version: [0.6.9] Old Version: [0.6.5]
+[2023-06-04 19:44:55] INFO root fetch - processPackages [colorful-terminal]: Downloading https://files.pythonhosted.org/packages/a3/c4/3dc94582f3f9eed20860bd9e68f2765a3846502e51f15eded7566226d70c/colorful_terminal-0.0.3.tar.gz
+[2023-06-04 19:44:55] INFO root fetch - processPackages [starrail-toolkit]: Downloading https://files.pythonhosted.org/packages/f2/55/9a3324d6256b2cbf3096343aaf5f9a70aa9099219664962937a9ea1d0d37/starrail-toolkit-0.6.9.tar.gz
+[2023-06-04 19:44:55] INFO root fetch - processPackages [colorful-terminal]: Downloading https://files.pythonhosted.org/packages/5a/24/aeaaa1d7004c2ea415e168777b9d0c9781155a21014c9c6d4450e2e756aa/colorful_terminal-0.0.4.tar.gz
+[2023-06-04 19:44:55] INFO root fetch - processPackages [starrail-toolkit]: executing diffoscope
+[2023-06-04 19:44:55] INFO root fetch - processPackages [starrail-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrail-toolkit-0.6.5.tar.gz tmp/starrail-toolkit-0.6.9.tar.gz --markdown 20230604/s/starrail-toolkit/0.6.5-0.6.9/diff.md --exclude *.pyd
+[2023-06-04 19:44:55] INFO root fetch - processPackages [colorful-terminal]: executing diffoscope
+[2023-06-04 19:44:55] INFO root fetch - processPackages [colorful-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorful_terminal-0.0.3.tar.gz tmp/colorful_terminal-0.0.4.tar.gz --markdown 20230604/c/colorful-terminal/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 19:44:56] INFO root fetch - main [MainThread]: End processing [colorful-terminal]: success
+[2023-06-04 19:44:57] INFO root fetch - main [MainThread]: End processing [starrail-toolkit]: success
+[2023-06-04 19:44:57] INFO root fetch - main [MainThread]: Store serial: [18367600]
