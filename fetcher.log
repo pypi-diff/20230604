@@ -6764,3 +6764,26 @@
 [2023-06-04 16:26:42] INFO root fetch - main [MainThread]: End processing [banks]: success
 [2023-06-04 16:26:43] INFO root fetch - main [MainThread]: End processing [stream-zip]: success
 [2023-06-04 16:26:43] INFO root fetch - main [MainThread]: Store serial: [18366423]
+[2023-06-04 16:31:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366423]
+[2023-06-04 16:31:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 16:31:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dartrig
+[2023-06-04 16:31:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helloworld-deshrit
+[2023-06-04 16:31:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: helloworld-deshrit
+[2023-06-04 16:31:51] INFO root fetch - processPackages [dartrig]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-06-04 16:31:51] INFO root fetch - processPackages [helloworld-deshrit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 16:31:51] INFO root fetch - processPackages [helloworld-deshrit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: Downloading https://files.pythonhosted.org/packages/89/e4/1b6bf09f7ff43876fa85a1a08f712846cf45aac5da9810173160a046522f/helloworld_deshrit-0.0.3.tar.gz
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: Downloading https://files.pythonhosted.org/packages/89/e4/1b6bf09f7ff43876fa85a1a08f712846cf45aac5da9810173160a046522f/helloworld_deshrit-0.0.3.tar.gz
+[2023-06-04 16:31:52] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/c0/67/003d02d863b6951baf2f7ca095d8e48c821069e4ab5e3c4f0a39a4307778/dartrig-0.1.4.tar.gz
+[2023-06-04 16:31:52] INFO root fetch - processPackages [dartrig]: executing diffoscope
+[2023-06-04 16:31:52] INFO root fetch - processPackages [dartrig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dartrig-0.1.3.tar.gz tmp/dartrig-0.1.4.tar.gz --markdown 20230604/d/dartrig/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: Downloading https://files.pythonhosted.org/packages/f1/4f/7c25c310f3ea8da887afd5676f7c8292f4df799bf2e80f9948cb9969a315/helloworld_deshrit-0.0.4.tar.gz
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: Downloading https://files.pythonhosted.org/packages/f1/4f/7c25c310f3ea8da887afd5676f7c8292f4df799bf2e80f9948cb9969a315/helloworld_deshrit-0.0.4.tar.gz
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: executing diffoscope
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helloworld_deshrit-0.0.3.tar.gz tmp/helloworld_deshrit-0.0.4.tar.gz --markdown 20230604/h/helloworld-deshrit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: executing diffoscope
+[2023-06-04 16:31:52] INFO root fetch - processPackages [helloworld-deshrit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helloworld_deshrit-0.0.3.tar.gz tmp/helloworld_deshrit-0.0.4.tar.gz --markdown 20230604/h/helloworld-deshrit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 16:31:53] INFO root fetch - main [MainThread]: End processing [dartrig]: success
+[2023-06-04 16:31:53] INFO root fetch - main [MainThread]: End processing [helloworld-deshrit]: success
+[2023-06-04 16:31:53] INFO root fetch - main [MainThread]: End processing [helloworld-deshrit]: success
+[2023-06-04 16:31:53] INFO root fetch - main [MainThread]: Store serial: [18366433]
