@@ -2757,3 +2757,18 @@
 [2023-06-04 07:33:04] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
 [2023-06-04 07:33:05] INFO root fetch - main [MainThread]: End processing [vz-recommender]: success
 [2023-06-04 07:33:05] INFO root fetch - main [MainThread]: Store serial: [18364041]
+[2023-06-04 07:38:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364041]
+[2023-06-04 07:38:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 07:38:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ilan-dev
+[2023-06-04 07:38:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nwebclient
+[2023-06-04 07:38:13] INFO root fetch - processPackages [ilan-dev]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-06-04 07:38:13] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 07:38:13] INFO root fetch - processPackages [ilan-dev]: Downloading https://files.pythonhosted.org/packages/0d/d1/553faf2e38849878ad55e59eb3f7771acdc5e2f265ad52787e5ebea9f78e/ilan-dev-0.2.1.tar.gz
+[2023-06-04 07:38:14] INFO root fetch - processPackages [ilan-dev]: Downloading https://files.pythonhosted.org/packages/c8/1e/7e7fb24e48908a631ea1e65d5142723a5bfdb0154ef75dd0d0a1ace4b7c8/ilan-dev-0.2.2.tar.gz
+[2023-06-04 07:38:14] INFO root fetch - processPackages [ilan-dev]: executing diffoscope
+[2023-06-04 07:38:14] INFO root fetch - processPackages [ilan-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ilan-dev-0.2.1.tar.gz tmp/ilan-dev-0.2.2.tar.gz --markdown 20230604/i/ilan-dev/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-06-04 07:38:14] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 07:38:14] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 07:38:15] INFO root fetch - main [MainThread]: End processing [ilan-dev]: success
+[2023-06-04 07:38:15] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 07:38:15] INFO root fetch - main [MainThread]: Store serial: [18364046]
