@@ -9533,3 +9533,58 @@
 [2023-06-04 21:46:07] INFO root fetch - main [MainThread]: End processing [cashews]: success
 [2023-06-04 21:46:08] INFO root fetch - main [MainThread]: End processing [django-cast]: success
 [2023-06-04 21:46:08] INFO root fetch - main [MainThread]: Store serial: [18368213]
+[2023-06-04 21:51:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368213]
+[2023-06-04 21:51:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leuci-map
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: riseup-vpn-configurator
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trrc
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyloggor
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prefab
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: paracrine
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: can-message-data-generator
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sphinxcontrib-cldomain
+[2023-06-04 21:51:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pySSRSapi
+[2023-06-04 21:51:17] INFO root fetch - processPackages [pySSRSapi]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [riseup-vpn-configurator]: New version: [1.0.0] Old Version: [0.1.6]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [paracrine]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [prefab]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [can-message-data-generator]: New version: [0.7.3] Old Version: [0.7.1]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [pyloggor]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [sphinxcontrib-cldomain]: New version: [0.9] Old Version: [0.8-]
+[2023-06-04 21:51:17] INFO root fetch - processPackages [leuci-map]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 21:51:17] WARNING root fetch - processPackages [trrc]: Skipping, unable to determine old version
+[2023-06-04 21:51:17] INFO root fetch - main [MainThread]: End processing [trrc] error
+[2023-06-04 21:51:17] INFO root fetch - processPackages [pySSRSapi]: executing diffoscope
+[2023-06-04 21:51:17] INFO root fetch - processPackages [pySSRSapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySSRSapi-0.0.3.tar.gz tmp/pySSRSapi-0.0.4.tar.gz --markdown 20230604/p/pySSRSapi/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 21:51:17] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Downloading https://files.pythonhosted.org/packages/bc/1c/b13419a9135c4ad54863ce1e7ddd617109f92f5fda908e1ecf095fd1ed5a/sphinxcontrib-cldomain-0.8-.tar.gz
+[2023-06-04 21:51:17] INFO root fetch - processPackages [can-message-data-generator]: Downloading https://files.pythonhosted.org/packages/73/79/4ee30048560ae78cb4d2eaf604a695e5588f6bad6cac59ced7338947bbe6/can_message_data_generator-0.7.1.tar.gz
+[2023-06-04 21:51:17] INFO root fetch - processPackages [riseup-vpn-configurator]: Downloading https://files.pythonhosted.org/packages/74/82/0f29dbad3b51c29f7766b8428fc1f73871a0ac14007592128b942589faad/riseup_vpn_configurator-0.1.6.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [prefab]: Downloading https://files.pythonhosted.org/packages/c4/06/1ca49e244f1aae0eb44db9423f91e253cebbbb456bb17143262affea559f/prefab-0.3.0.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [pyloggor]: Downloading https://files.pythonhosted.org/packages/73/f3/2333f4f4caa4849bfe00c6195536ceed9d05d3539871a0239749b5dbf1b2/pyloggor-1.1.4.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [paracrine]: Downloading https://files.pythonhosted.org/packages/4d/13/7521cc19508842410d278f5b0f714867d8502f07c2bb5891577a30caddc8/paracrine-0.0.8.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [leuci-map]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [leuci-map]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-map-0.1.8.tar.gz tmp/leuci-map-0.1.9.tar.gz --markdown 20230604/l/leuci-map/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 21:51:18] INFO root fetch - processPackages [can-message-data-generator]: Downloading https://files.pythonhosted.org/packages/7a/05/7d18db8ee13b066e835445d1da7654f8ee6082ab9a725ab0bcf6ba1263b5/can_message_data_generator-0.7.3.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [pyloggor]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [pyloggor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyloggor-1.1.3.tar.gz tmp/pyloggor-1.1.4.tar.gz --markdown 20230604/p/pyloggor/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-06-04 21:51:18] INFO root fetch - processPackages [paracrine]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [paracrine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paracrine-0.0.7.tar.gz tmp/paracrine-0.0.8.tar.gz --markdown 20230604/p/paracrine/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-06-04 21:51:18] INFO root fetch - processPackages [prefab]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [prefab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefab-0.2.6.tar.gz tmp/prefab-0.3.0.tar.gz --markdown 20230604/p/prefab/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-06-04 21:51:18] INFO root fetch - processPackages [can-message-data-generator]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [can-message-data-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/can_message_data_generator-0.7.1.tar.gz tmp/can_message_data_generator-0.7.3.tar.gz --markdown 20230604/c/can-message-data-generator/0.7.1-0.7.3/diff.md --exclude *.pyd
+[2023-06-04 21:51:18] INFO root fetch - processPackages [riseup-vpn-configurator]: Downloading https://files.pythonhosted.org/packages/65/05/3d72fc55e52fa20709863d3900f9bb9a479744d3dacbeb21530358682d42/riseup_vpn_configurator-1.0.0.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Downloading https://files.pythonhosted.org/packages/5b/09/4edef5ac539db71a20dfd991a2dc126a2e680c0e024e584c79e9296e9b78/sphinxcontrib-cldomain-0.9.tar.gz
+[2023-06-04 21:51:18] INFO root fetch - processPackages [riseup-vpn-configurator]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [riseup-vpn-configurator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riseup_vpn_configurator-0.1.6.tar.gz tmp/riseup_vpn_configurator-1.0.0.tar.gz --markdown 20230604/r/riseup-vpn-configurator/0.1.6-1.0.0/diff.md --exclude *.pyd
+[2023-06-04 21:51:18] INFO root fetch - processPackages [sphinxcontrib-cldomain]: executing diffoscope
+[2023-06-04 21:51:18] INFO root fetch - processPackages [sphinxcontrib-cldomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-cldomain-0.8-.tar.gz tmp/sphinxcontrib-cldomain-0.9.tar.gz --markdown 20230604/s/sphinxcontrib-cldomain/0.8--0.9/diff.md --exclude *.pyd
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [pySSRSapi]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [pyloggor]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [can-message-data-generator]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [riseup-vpn-configurator]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [prefab]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [paracrine]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cldomain]: success
+[2023-06-04 21:51:19] INFO root fetch - main [MainThread]: Store serial: [18368256]
