@@ -2839,3 +2839,19 @@
 [2023-06-04 07:54:41] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
 [2023-06-04 07:54:41] INFO root fetch - main [MainThread]: End processing [chrys]: success
 [2023-06-04 07:54:41] INFO root fetch - main [MainThread]: Store serial: [18364101]
+[2023-06-04 07:59:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364101]
+[2023-06-04 07:59:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 07:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: busy
+[2023-06-04 07:59:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paux
+[2023-06-04 07:59:50] INFO root fetch - processPackages [paux]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 07:59:50] INFO root fetch - processPackages [busy]: New version: [5.0.4] Old Version: [5.0.3]
+[2023-06-04 07:59:50] INFO root fetch - processPackages [paux]: Downloading https://files.pythonhosted.org/packages/01/5a/0a7278949d935c4b2aa6a9a8dd76644d2fd34f508914864825306237283e/paux-1.0.8.tar.gz
+[2023-06-04 07:59:50] INFO root fetch - processPackages [busy]: Downloading https://files.pythonhosted.org/packages/c2/9a/a7a82f8be8f3d77e0b90d5538dd372a9b714ab78900f556a751bba9c53bc/busy-5.0.4.tar.gz
+[2023-06-04 07:59:50] INFO root fetch - processPackages [busy]: executing diffoscope
+[2023-06-04 07:59:50] INFO root fetch - processPackages [busy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/busy-5.0.3.tar.gz tmp/busy-5.0.4.tar.gz --markdown 20230604/b/busy/5.0.3-5.0.4/diff.md --exclude *.pyd
+[2023-06-04 07:59:51] INFO root fetch - processPackages [paux]: Downloading https://files.pythonhosted.org/packages/72/de/3f48581ee8ebd48919d024a6c2c5737a88cec7170ef7de5acab24a467587/paux-1.0.9.tar.gz
+[2023-06-04 07:59:51] INFO root fetch - processPackages [paux]: executing diffoscope
+[2023-06-04 07:59:51] INFO root fetch - processPackages [paux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paux-1.0.8.tar.gz tmp/paux-1.0.9.tar.gz --markdown 20230604/p/paux/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 07:59:52] INFO root fetch - main [MainThread]: End processing [busy]: success
+[2023-06-04 07:59:52] INFO root fetch - main [MainThread]: End processing [paux]: success
+[2023-06-04 07:59:52] INFO root fetch - main [MainThread]: Store serial: [18364108]
