@@ -10405,3 +10405,46 @@
 [2023-06-04 23:33:49] INFO root fetch - main [MainThread]: End processing [tvdcn]: success
 [2023-06-04 23:33:51] INFO root fetch - main [MainThread]: End processing [leeger]: success
 [2023-06-04 23:33:51] INFO root fetch - main [MainThread]: Store serial: [18368817]
+[2023-06-04 23:38:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368817]
+[2023-06-04 23:39:00] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ePos-Print-XML
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hello50
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whg-lotr-sdk
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asynkit
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bmi-calc-new
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oloren
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: godto
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lollms
+[2023-06-04 23:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mavsdk
+[2023-06-04 23:39:00] WARNING root fetch - processPackages [whg-lotr-sdk]: Skipping, unable to determine old version
+[2023-06-04 23:39:00] INFO root fetch - main [MainThread]: End processing [whg-lotr-sdk] error
+[2023-06-04 23:39:00] INFO root fetch - processPackages [oloren]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 23:39:00] INFO root fetch - processPackages [asynkit]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-06-04 23:39:00] INFO root fetch - processPackages [godto]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 23:39:00] INFO root fetch - processPackages [lollms]: New version: [1.1.9] Old Version: [1.1.7]
+[2023-06-04 23:39:00] WARNING root fetch - processPackages [hello50]: Skipping, unable to determine old version
+[2023-06-04 23:39:00] INFO root fetch - main [MainThread]: End processing [hello50] error
+[2023-06-04 23:39:00] WARNING root fetch - processPackages [ePos-Print-XML]: Skipping, unable to determine old version
+[2023-06-04 23:39:00] WARNING root fetch - processPackages [bmi-calc-new]: Skipping, unable to determine old version
+[2023-06-04 23:39:00] INFO root fetch - main [MainThread]: End processing [ePos-Print-XML] error
+[2023-06-04 23:39:00] INFO root fetch - main [MainThread]: End processing [bmi-calc-new] error
+[2023-06-04 23:39:00] INFO root fetch - processPackages [lollms]: Downloading https://files.pythonhosted.org/packages/3d/63/5860743c06fbd44180fc9469d6a01bbc0644f8be5bc965843b7c2864a173/lollms-1.1.7.tar.gz
+[2023-06-04 23:39:00] INFO root fetch - processPackages [mavsdk]: New version: [1.4.7] Old Version: [1.4.6]
+[2023-06-04 23:39:00] INFO root fetch - processPackages [oloren]: executing diffoscope
+[2023-06-04 23:39:00] INFO root fetch - processPackages [oloren]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oloren-0.0.8.tar.gz tmp/oloren-0.0.9.tar.gz --markdown 20230604/o/oloren/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 23:39:00] WARNING root fetch - processPackages [lollms]: Skipping package: exceeds size limit 17349845>=10485760
+[2023-06-04 23:39:00] INFO root fetch - main [MainThread]: End processing [lollms] error
+[2023-06-04 23:39:00] INFO root fetch - processPackages [godto]: Downloading https://files.pythonhosted.org/packages/2e/ca/f72418e369e8b450e17f3b1cf77aa9ab596bcc67995a4373bba5873b5437/godto-0.0.2.tar.gz
+[2023-06-04 23:39:00] INFO root fetch - processPackages [asynkit]: Downloading https://files.pythonhosted.org/packages/08/27/d257583ec30a4a09deee8b9f1cce35b846e07540405eb1e3f1485cc4781f/asynkit-0.9.1.tar.gz
+[2023-06-04 23:39:00] INFO root fetch - processPackages [godto]: Downloading https://files.pythonhosted.org/packages/89/e9/c68682c8284faa301b2c6647434eded2b98ce0208c1729cd3412b05fc873/godto-0.0.3.tar.gz
+[2023-06-04 23:39:00] INFO root fetch - processPackages [mavsdk]: Downloading https://files.pythonhosted.org/packages/6b/2d/e36e834b4cbce55be43383f95e6b9cca6cc3a59b4c6e3152c61198f5513b/mavsdk-1.4.7-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-06-04 23:39:00] INFO root fetch - processPackages [asynkit]: executing diffoscope
+[2023-06-04 23:39:00] INFO root fetch - processPackages [asynkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asynkit-0.9.0.tar.gz tmp/asynkit-0.9.1.tar.gz --markdown 20230604/a/asynkit/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-06-04 23:39:00] INFO root fetch - processPackages [godto]: executing diffoscope
+[2023-06-04 23:39:00] INFO root fetch - processPackages [godto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/godto-0.0.2.tar.gz tmp/godto-0.0.3.tar.gz --markdown 20230604/g/godto/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 23:39:01] WARNING root fetch - processPackages [mavsdk]: Skipping package: exceeds size limit 11571254>=10485760
+[2023-06-04 23:39:01] INFO root fetch - main [MainThread]: End processing [mavsdk] error
+[2023-06-04 23:39:01] INFO root fetch - main [MainThread]: End processing [asynkit]: success
+[2023-06-04 23:39:01] INFO root fetch - main [MainThread]: End processing [godto]: success
+[2023-06-04 23:39:05] INFO root fetch - main [MainThread]: End processing [oloren]: success
+[2023-06-04 23:39:05] INFO root fetch - main [MainThread]: Store serial: [18368850]
