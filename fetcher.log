@@ -2730,3 +2730,30 @@
 [2023-06-04 07:27:54] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
 [2023-06-04 07:27:54] INFO root fetch - main [MainThread]: End processing [django-shopify-app]: success
 [2023-06-04 07:27:54] INFO root fetch - main [MainThread]: Store serial: [18364030]
+[2023-06-04 07:32:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364030]
+[2023-06-04 07:33:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 07:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rescupybs
+[2023-06-04 07:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modelon-impact-client
+[2023-06-04 07:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hkkang-utils
+[2023-06-04 07:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vz-recommender
+[2023-06-04 07:33:03] INFO root fetch - processPackages [rescupybs]: New version: [0.1.1.2] Old Version: [0.1.1.1]
+[2023-06-04 07:33:03] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.97] Old Version: [0.1.96]
+[2023-06-04 07:33:03] INFO root fetch - processPackages [modelon-impact-client]: New version: [3.0.0.dev9] Old Version: [3.0.0.dev8]
+[2023-06-04 07:33:03] INFO root fetch - processPackages [vz-recommender]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-06-04 07:33:03] INFO root fetch - processPackages [modelon-impact-client]: executing diffoscope
+[2023-06-04 07:33:03] INFO root fetch - processPackages [modelon-impact-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelon_impact_client-3.0.0.dev8.tar.gz tmp/modelon_impact_client-3.0.0.dev9.tar.gz --markdown 20230604/m/modelon-impact-client/3.0.0.dev8-3.0.0.dev9/diff.md --exclude *.pyd
+[2023-06-04 07:33:03] INFO root fetch - processPackages [vz-recommender]: Downloading https://files.pythonhosted.org/packages/29/fc/e02e51565b61c36131f2e7f8451305bdd3f05a60ad40a82ffd1b26abe164/vz-recommender-0.4.5.tar.gz
+[2023-06-04 07:33:03] INFO root fetch - processPackages [rescupybs]: Downloading https://files.pythonhosted.org/packages/bb/74/b7f9cdf0457a806462bd52cca758d368b1e98e4f12981aad07073b73c874/rescupybs-0.1.1.2-py3-none-any.whl
+[2023-06-04 07:33:03] INFO root fetch - processPackages [hkkang-utils]: Downloading https://files.pythonhosted.org/packages/4f/9e/4c39fbeda44e57b2b4ad9577f834b0c7c25eac66eee92118b1b4ebe06997/hkkang_utils-0.1.97.tar.gz
+[2023-06-04 07:33:03] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-06-04 07:33:03] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.96.tar.gz tmp/hkkang_utils-0.1.97.tar.gz --markdown 20230604/h/hkkang-utils/0.1.96-0.1.97/diff.md --exclude *.pyd
+[2023-06-04 07:33:03] INFO root fetch - processPackages [rescupybs]: executing diffoscope
+[2023-06-04 07:33:03] INFO root fetch - processPackages [rescupybs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rescupybs-0.1.1.1-py3-none-any.whl.zip tmp/rescupybs-0.1.1.2-py3-none-any.whl.zip --markdown 20230604/r/rescupybs/0.1.1.1-0.1.1.2/diff.md --exclude *.pyd
+[2023-06-04 07:33:03] INFO root fetch - processPackages [vz-recommender]: Downloading https://files.pythonhosted.org/packages/8f/85/d5b88a202e87f5e6646ea39383a7c8de9b1e72e0380585e1fe2e22fe2cb0/vz-recommender-0.4.6.tar.gz
+[2023-06-04 07:33:04] INFO root fetch - processPackages [vz-recommender]: executing diffoscope
+[2023-06-04 07:33:04] INFO root fetch - processPackages [vz-recommender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vz-recommender-0.4.5.tar.gz tmp/vz-recommender-0.4.6.tar.gz --markdown 20230604/v/vz-recommender/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-06-04 07:33:04] INFO root fetch - main [MainThread]: End processing [modelon-impact-client]: success
+[2023-06-04 07:33:04] INFO root fetch - main [MainThread]: End processing [rescupybs]: success
+[2023-06-04 07:33:04] INFO root fetch - main [MainThread]: End processing [hkkang-utils]: success
+[2023-06-04 07:33:05] INFO root fetch - main [MainThread]: End processing [vz-recommender]: success
+[2023-06-04 07:33:05] INFO root fetch - main [MainThread]: Store serial: [18364041]
