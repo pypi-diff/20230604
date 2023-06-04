@@ -10223,3 +10223,59 @@
 [2023-06-04 23:11:47] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-06-04 23:12:54] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
 [2023-06-04 23:12:54] INFO root fetch - main [MainThread]: Store serial: [18368675]
+[2023-06-04 23:18:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368675]
+[2023-06-04 23:18:11] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-shelly-proverArgsNotPopulatedWithDualArgsFix
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: commandsgpt
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: raya
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FitBridge
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlplatformutils
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ab-test-toolkit
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-selve-new
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: joern-lib
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lib-dzne-basetables
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ejtraderMT
+[2023-06-04 23:18:11] WARNING root fetch - processPackages [certora-cli-alpha-shelly-proverArgsNotPopulatedWithDualArgsFix]: Skipping, unable to determine old version
+[2023-06-04 23:18:11] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-proverArgsNotPopulatedWithDualArgsFix] error
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ab-test-toolkit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 23:18:11] INFO root fetch - processPackages [raya]: New version: [3.4.1.dev9] Old Version: [3.4.1.dev8]
+[2023-06-04 23:18:11] INFO root fetch - processPackages [lib-dzne-basetables]: New version: [0.3.3] Old Version: [0.3.0]
+[2023-06-04 23:18:11] WARNING root fetch - processPackages [FitBridge]: Skipping, unable to determine old version
+[2023-06-04 23:18:11] INFO root fetch - processPackages [python-selve-new]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-06-04 23:18:11] INFO root fetch - processPackages [mlplatformutils]: New version: [0.3] Old Version: [0.2]
+[2023-06-04 23:18:11] INFO root fetch - main [MainThread]: End processing [FitBridge] error
+[2023-06-04 23:18:11] INFO root fetch - processPackages [joern-lib]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ejtraderMT]: New version: [3.16] Old Version: [3.14]
+[2023-06-04 23:18:11] INFO root fetch - processPackages [commandsgpt]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-06-04 23:18:11] INFO root fetch - processPackages [ab-test-toolkit]: Downloading https://files.pythonhosted.org/packages/78/03/e7759807e2961d0bb4d6831fa0cc9c7df1b1615101149985f1cca37eaaf2/ab-test-toolkit-0.0.1.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [python-selve-new]: Downloading https://files.pythonhosted.org/packages/b5/68/087f049993ba21699d00bb0cff339dc2b03350b055ba976e795cda8110ae/python-selve-new-2.2.3.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [python-selve-new]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [python-selve-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-selve-new-2.2.2.tar.gz tmp/python-selve-new-2.2.3.tar.gz --markdown 20230604/p/python-selve-new/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [ejtraderMT]: Downloading https://files.pythonhosted.org/packages/5a/a9/080e3e624866b8bae50e49c4646b5209f0df74c279ee1fdb25796eb5a8c1/ejtraderMT-3.16.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [mlplatformutils]: Downloading https://files.pythonhosted.org/packages/dc/60/7b6d7a60e0dd96802176aa7cab0b079e35ff83877a42f3ac1dd508763391/mlplatformutils-0.3.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [lib-dzne-basetables]: Downloading https://files.pythonhosted.org/packages/4d/37/e929c5be4af8e51249262e665b87cc4a164d46b793f3b4e6d3520fdc6ae3/lib-dzne-basetables-0.3.3.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [commandsgpt]: Downloading https://files.pythonhosted.org/packages/e6/e1/d946df1fff4a700e9351973716e44ce5b7c1fea4813f3e1f0cb2b41c6a66/commandsgpt-1.4.1.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [ab-test-toolkit]: Downloading https://files.pythonhosted.org/packages/4e/a1/90c47d4d58bd90db9a09575c447464f47fcf5e959e7f96c0cbd6d359a3b3/ab-test-toolkit-0.0.2.tar.gz
+[2023-06-04 23:18:12] INFO root fetch - processPackages [raya]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [raya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raya-3.4.1.dev8.tar.gz tmp/raya-3.4.1.dev9.tar.gz --markdown 20230604/r/raya/3.4.1.dev8-3.4.1.dev9/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [joern-lib]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [joern-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joern_lib-0.9.1.tar.gz tmp/joern_lib-0.9.2.tar.gz --markdown 20230604/j/joern-lib/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [lib-dzne-basetables]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [lib-dzne-basetables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-dzne-basetables-0.3.0.tar.gz tmp/lib-dzne-basetables-0.3.3.tar.gz --markdown 20230604/l/lib-dzne-basetables/0.3.0-0.3.3/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [commandsgpt]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [commandsgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commandsgpt-1.4.0.tar.gz tmp/commandsgpt-1.4.1.tar.gz --markdown 20230604/c/commandsgpt/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [ab-test-toolkit]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [ab-test-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ab-test-toolkit-0.0.1.tar.gz tmp/ab-test-toolkit-0.0.2.tar.gz --markdown 20230604/a/ab-test-toolkit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [ejtraderMT]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [ejtraderMT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejtraderMT-3.14.tar.gz tmp/ejtraderMT-3.16.tar.gz --markdown 20230604/e/ejtraderMT/3.14-3.16/diff.md --exclude *.pyd
+[2023-06-04 23:18:12] INFO root fetch - processPackages [mlplatformutils]: executing diffoscope
+[2023-06-04 23:18:12] INFO root fetch - processPackages [mlplatformutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlplatformutils-0.2.tar.gz tmp/mlplatformutils-0.3.tar.gz --markdown 20230604/m/mlplatformutils/0.2-0.3/diff.md --exclude *.pyd
+[2023-06-04 23:18:13] INFO root fetch - main [MainThread]: End processing [lib-dzne-basetables]: success
+[2023-06-04 23:18:13] INFO root fetch - main [MainThread]: End processing [mlplatformutils]: success
+[2023-06-04 23:18:13] INFO root fetch - main [MainThread]: End processing [raya]: success
+[2023-06-04 23:18:13] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
+[2023-06-04 23:18:13] INFO root fetch - main [MainThread]: End processing [ab-test-toolkit]: success
+[2023-06-04 23:18:14] INFO root fetch - main [MainThread]: End processing [joern-lib]: success
+[2023-06-04 23:18:14] INFO root fetch - main [MainThread]: End processing [python-selve-new]: success
+[2023-06-04 23:18:14] INFO root fetch - main [MainThread]: End processing [ejtraderMT]: success
+[2023-06-04 23:18:14] INFO root fetch - main [MainThread]: Store serial: [18368708]
