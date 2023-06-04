@@ -5908,3 +5908,64 @@
 [2023-06-04 14:46:45] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2023-06-04 14:46:45] INFO root fetch - main [MainThread]: End processing [manticore]: success
 [2023-06-04 14:46:45] INFO root fetch - main [MainThread]: Store serial: [18365938]
+[2023-06-04 14:51:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365938]
+[2023-06-04 14:51:54] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: awschains
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-cognito-auth
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mediana-rest-sdk
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: genetikaplusIO
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ruleminer
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wzry
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tensorcircuit-nightly
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autobricks
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tidytcells
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: google-sheet-downloader
+[2023-06-04 14:51:54] INFO root fetch - processPackages [genetikaplusIO]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [awschains]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [autobricks]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [wzry]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 14:51:54] WARNING root fetch - processPackages [mediana-rest-sdk]: Skipping, unable to determine old version
+[2023-06-04 14:51:54] INFO root fetch - processPackages [streamlit-cognito-auth]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ruleminer]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 14:51:54] INFO root fetch - main [MainThread]: End processing [mediana-rest-sdk] error
+[2023-06-04 14:51:54] INFO root fetch - processPackages [tidytcells]: New version: [1.8.4] Old Version: [1.8.3]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [google-sheet-downloader]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230604] Old Version: [0.9.1.dev20230603]
+[2023-06-04 14:51:54] INFO root fetch - processPackages [google-sheet-downloader]: executing diffoscope
+[2023-06-04 14:51:54] INFO root fetch - processPackages [google-sheet-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-sheet-downloader-1.1.0.tar.gz tmp/google-sheet-downloader-1.1.1.tar.gz --markdown 20230604/g/google-sheet-downloader/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-06-04 14:51:54] INFO root fetch - processPackages [wzry]: Downloading https://files.pythonhosted.org/packages/ac/f7/a00211cb80945149300b9c2be382a1b594e7699a6418e7db4d51d252b366/wzry-1.0.2.tar.gz
+[2023-06-04 14:51:54] INFO root fetch - processPackages [genetikaplusIO]: Downloading https://files.pythonhosted.org/packages/83/e7/1493f7b5eae20f722ce6d4885736cacf4231163cd631cbc1749fb04c0e09/genetikaplusIO-0.0.4.tar.gz
+[2023-06-04 14:51:54] WARNING root fetch - processPackages [wzry]: Skipping package: exceeds size limit 37452542>=10485760
+[2023-06-04 14:51:54] INFO root fetch - main [MainThread]: End processing [wzry] error
+[2023-06-04 14:51:54] INFO root fetch - processPackages [streamlit-cognito-auth]: Downloading https://files.pythonhosted.org/packages/50/c0/8d174810feea76431c27835d674a5e840ebd7c922f93a16ab9cca3773d1e/streamlit-cognito-auth-1.1.1.tar.gz
+[2023-06-04 14:51:54] INFO root fetch - processPackages [ruleminer]: Downloading https://files.pythonhosted.org/packages/56/4a/8c1d0b0130beebde1b21925b1094dfcecbad18c00342038c0b7ad085a1e5/ruleminer-0.1.8-py2.py3-none-any.whl
+[2023-06-04 14:51:54] INFO root fetch - processPackages [tidytcells]: Downloading https://files.pythonhosted.org/packages/06/a1/4e79ddf6f626dd80991e286682ada51538a281ec099d447c6d333a442447/tidytcells-1.8.4.tar.gz
+[2023-06-04 14:51:54] INFO root fetch - processPackages [autobricks]: Downloading https://files.pythonhosted.org/packages/bb/24/e9e22469136ed2dde49ee3e3d60a37d04d8fec40f8317c0e15c5b2fa76fe/autobricks-0.8.0.tar.gz
+[2023-06-04 14:51:55] INFO root fetch - processPackages [genetikaplusIO]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [genetikaplusIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genetikaplusIO-0.0.2.tar.gz tmp/genetikaplusIO-0.0.4.tar.gz --markdown 20230604/g/genetikaplusIO/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 14:51:55] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/d8/18/8fef85dc19dc5c3f4a74f8a7d510545a74f50fa69a84d2c8c495b86a7d4d/tensorcircuit-nightly-0.9.1.dev20230603.tar.gz
+[2023-06-04 14:51:55] INFO root fetch - processPackages [autobricks]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [awschains]: Downloading https://files.pythonhosted.org/packages/a5/6c/71b97b1a4d1a83c3b1ef2ed08fc04551da07c27d07d1e77bec3d138f7bb9/awschains-0.0.3.tar.gz
+[2023-06-04 14:51:55] INFO root fetch - processPackages [autobricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autobricks-0.7.0.tar.gz tmp/autobricks-0.8.0.tar.gz --markdown 20230604/a/autobricks/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-06-04 14:51:55] INFO root fetch - processPackages [tidytcells]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [tidytcells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidytcells-1.8.3.tar.gz tmp/tidytcells-1.8.4.tar.gz --markdown 20230604/t/tidytcells/1.8.3-1.8.4/diff.md --exclude *.pyd
+[2023-06-04 14:51:55] INFO root fetch - processPackages [awschains]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [awschains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awschains-0.0.2.tar.gz tmp/awschains-0.0.3.tar.gz --markdown 20230604/a/awschains/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-06-04 14:51:55] INFO root fetch - processPackages [streamlit-cognito-auth]: Downloading https://files.pythonhosted.org/packages/54/77/b4891a1115b6e9b6ad2c64be54573c9510d9644c8c8fb71d59327bf1dbf3/streamlit-cognito-auth-1.2.0.tar.gz
+[2023-06-04 14:51:55] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/c9/75/bc5e2ea77a52487275972be61edadcfb50b4dabbfdc5d3c9d444badad953/tensorcircuit-nightly-0.9.1.dev20230604.tar.gz
+[2023-06-04 14:51:55] INFO root fetch - processPackages [ruleminer]: Downloading https://files.pythonhosted.org/packages/42/4e/5ea94f19fc07634c633158d076ba968b988458f1ea195a51b8d4ce3883f0/ruleminer-0.1.9-py2.py3-none-any.whl
+[2023-06-04 14:51:55] INFO root fetch - processPackages [streamlit-cognito-auth]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [streamlit-cognito-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-cognito-auth-1.1.1.tar.gz tmp/streamlit-cognito-auth-1.2.0.tar.gz --markdown 20230604/s/streamlit-cognito-auth/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-06-04 14:51:55] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230603.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230604.tar.gz --markdown 20230604/t/tensorcircuit-nightly/0.9.1.dev20230603-0.9.1.dev20230604/diff.md --exclude *.pyd
+[2023-06-04 14:51:55] INFO root fetch - processPackages [ruleminer]: executing diffoscope
+[2023-06-04 14:51:55] INFO root fetch - processPackages [ruleminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruleminer-0.1.8-py2.py3-none-any.whl.zip tmp/ruleminer-0.1.9-py2.py3-none-any.whl.zip --markdown 20230604/r/ruleminer/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [google-sheet-downloader]: success
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [genetikaplusIO]: success
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [autobricks]: success
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [awschains]: success
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [streamlit-cognito-auth]: success
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [tidytcells]: success
+[2023-06-04 14:51:56] INFO root fetch - main [MainThread]: End processing [ruleminer]: success
+[2023-06-04 14:51:57] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-06-04 14:51:57] INFO root fetch - main [MainThread]: Store serial: [18365971]
