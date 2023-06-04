@@ -6313,3 +6313,38 @@
 [2023-06-04 15:28:39] INFO root fetch - main [MainThread]: End processing [leafmap]: success
 [2023-06-04 15:28:42] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2023-06-04 15:28:42] INFO root fetch - main [MainThread]: Store serial: [18366165]
+[2023-06-04 15:33:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366165]
+[2023-06-04 15:33:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-06-04 15:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rest-helper
+[2023-06-04 15:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autosrt
+[2023-06-04 15:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: compel
+[2023-06-04 15:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: authomize-rest-api-client
+[2023-06-04 15:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyFIS
+[2023-06-04 15:33:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: myPackageLicensePrototype
+[2023-06-04 15:33:50] INFO root fetch - processPackages [authomize-rest-api-client]: New version: [4.1.6] Old Version: [4.1.5]
+[2023-06-04 15:33:50] INFO root fetch - processPackages [pyFIS]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-06-04 15:33:50] WARNING root fetch - processPackages [rest-helper]: Skipping, unable to determine old version
+[2023-06-04 15:33:50] INFO root fetch - processPackages [autosrt]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-06-04 15:33:50] INFO root fetch - main [MainThread]: End processing [rest-helper] error
+[2023-06-04 15:33:50] INFO root fetch - processPackages [compel]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-06-04 15:33:50] INFO root fetch - processPackages [myPackageLicensePrototype]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-04 15:33:50] INFO root fetch - processPackages [pyFIS]: executing diffoscope
+[2023-06-04 15:33:50] INFO root fetch - processPackages [pyFIS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFIS-1.8.1.tar.gz tmp/pyFIS-1.9.0.tar.gz --markdown 20230604/p/pyFIS/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-06-04 15:33:51] INFO root fetch - processPackages [compel]: Downloading https://files.pythonhosted.org/packages/85/d2/726beb88214ca9d513ef09a1ca0738f61903ba867c9357c0c6be62ce754c/compel-1.2.1.tar.gz
+[2023-06-04 15:33:51] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/d8/25/efa83c5e1086634f30427955f6ba217ab6433a0da583a6aa1c24e836cfcb/myPackageLicensePrototype-1.0.6.tar.gz
+[2023-06-04 15:33:51] INFO root fetch - processPackages [autosrt]: Downloading https://files.pythonhosted.org/packages/d9/f4/c107c20d07d111f841c4910b36d86b4b2a0a58dc8ab222aa50a57c73eb08/autosrt-1.3.1.tar.gz
+[2023-06-04 15:33:51] INFO root fetch - processPackages [compel]: executing diffoscope
+[2023-06-04 15:33:51] INFO root fetch - processPackages [compel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compel-1.2.0.tar.gz tmp/compel-1.2.1.tar.gz --markdown 20230604/c/compel/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-06-04 15:33:51] INFO root fetch - processPackages [authomize-rest-api-client]: Downloading https://files.pythonhosted.org/packages/57/e9/33a73f59552ec8d2831141a78aa359970995a90299bccb52fde65f341d0c/authomize-rest-api-client-4.1.6.tar.gz
+[2023-06-04 15:33:51] INFO root fetch - processPackages [myPackageLicensePrototype]: executing diffoscope
+[2023-06-04 15:33:51] INFO root fetch - processPackages [myPackageLicensePrototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.0.5-py3-none-any.whl.zip tmp/myPackageLicensePrototype-1.0.6.tar.gz --markdown 20230604/m/myPackageLicensePrototype/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-06-04 15:33:51] INFO root fetch - processPackages [authomize-rest-api-client]: executing diffoscope
+[2023-06-04 15:33:51] INFO root fetch - processPackages [authomize-rest-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authomize-rest-api-client-4.1.5.tar.gz tmp/authomize-rest-api-client-4.1.6.tar.gz --markdown 20230604/a/authomize-rest-api-client/4.1.5-4.1.6/diff.md --exclude *.pyd
+[2023-06-04 15:33:51] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-06-04 15:33:51] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.3.0.tar.gz tmp/autosrt-1.3.1.tar.gz --markdown 20230604/a/autosrt/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-06-04 15:33:52] INFO root fetch - main [MainThread]: End processing [myPackageLicensePrototype]: success
+[2023-06-04 15:33:52] INFO root fetch - main [MainThread]: End processing [compel]: success
+[2023-06-04 15:33:52] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-06-04 15:33:52] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
+[2023-06-04 15:33:53] INFO root fetch - main [MainThread]: End processing [pyFIS]: success
+[2023-06-04 15:33:53] INFO root fetch - main [MainThread]: Store serial: [18366184]
