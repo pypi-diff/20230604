@@ -3092,3 +3092,22 @@
 [2023-06-04 08:51:58] INFO root fetch - main [MainThread]: End processing [flask-leaflet]: success
 [2023-06-04 08:51:58] INFO root fetch - main [MainThread]: End processing [adb-enhanced]: success
 [2023-06-04 08:51:58] INFO root fetch - main [MainThread]: Store serial: [18364251]
+[2023-06-04 08:57:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364251]
+[2023-06-04 08:57:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-06-04 08:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nwebclient
+[2023-06-04 08:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gimapdev
+[2023-06-04 08:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Geode-Common
+[2023-06-04 08:57:07] INFO root fetch - processPackages [gimapdev]: New version: [3.5.0] Old Version: [3.4.6]
+[2023-06-04 08:57:07] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 08:57:07] INFO root fetch - processPackages [Geode-Common]: New version: [26.0.3rc1] Old Version: [26.0.2rc1]
+[2023-06-04 08:57:07] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 08:57:07] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 08:57:07] INFO root fetch - processPackages [gimapdev]: Downloading https://files.pythonhosted.org/packages/fe/ff/602473a88d1aa9e5a92a801cf59ce34d87b149edb78abf0fb85657969638/gimapdev-3.4.6.tar.gz
+[2023-06-04 08:57:08] WARNING root fetch - processPackages [gimapdev]: Skipping package: exceeds size limit 66403607>=10485760
+[2023-06-04 08:57:08] INFO root fetch - main [MainThread]: End processing [gimapdev] error
+[2023-06-04 08:57:08] INFO root fetch - processPackages [Geode-Common]: Downloading https://files.pythonhosted.org/packages/e1/d5/907797860a52655434fc2e5f98f9eb65af6f955a597fabb714df1ba68a7c/Geode_Common-26.0.3rc1-cp39-cp39-win_amd64.whl
+[2023-06-04 08:57:08] INFO root fetch - processPackages [Geode-Common]: executing diffoscope
+[2023-06-04 08:57:08] INFO root fetch - processPackages [Geode-Common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Common-26.0.2rc1-cp39-cp39-win_amd64.whl.zip tmp/Geode_Common-26.0.3rc1-cp39-cp39-win_amd64.whl.zip --markdown 20230604/G/Geode-Common/26.0.2rc1-26.0.3rc1/diff.md --exclude *.pyd
+[2023-06-04 08:57:09] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 08:57:20] INFO root fetch - main [MainThread]: End processing [Geode-Common]: success
+[2023-06-04 08:57:20] INFO root fetch - main [MainThread]: Store serial: [18364266]
