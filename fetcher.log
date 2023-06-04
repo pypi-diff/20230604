@@ -8220,3 +8220,45 @@
 [2023-06-04 19:07:58] INFO root fetch - main [MainThread]: End processing [assisted-service-client]: success
 [2023-06-04 19:08:02] INFO root fetch - main [MainThread]: End processing [pyswisseph]: success
 [2023-06-04 19:08:02] INFO root fetch - main [MainThread]: Store serial: [18367440]
+[2023-06-04 19:13:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367440]
+[2023-06-04 19:13:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lookaside
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kelpie-personal-trainer
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: algviz
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flowtask
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-akinator
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rkstreamer
+[2023-06-04 19:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-autoreply
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-akinator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-06-04 19:13:11] INFO root fetch - processPackages [rkstreamer]: New version: [1.2] Old Version: [1.1]
+[2023-06-04 19:13:11] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-06-04 19:13:11] INFO root fetch - processPackages [kelpie-personal-trainer]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 19:13:11] INFO root fetch - processPackages [algviz]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-06-04 19:13:11] WARNING root fetch - processPackages [lookaside]: Skipping, unable to determine old version
+[2023-06-04 19:13:11] INFO root fetch - main [MainThread]: End processing [lookaside] error
+[2023-06-04 19:13:11] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-06-04 19:13:11] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230604/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-autoreply]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-akinator]: Downloading https://files.pythonhosted.org/packages/0b/39/749ad7abf77810140530301a7840be99c6a0fa2c1b68745570ccd222697c/nonebot-plugin-akinator-0.1.1.tar.gz
+[2023-06-04 19:13:11] INFO root fetch - processPackages [algviz]: Downloading https://files.pythonhosted.org/packages/b5/0c/74ecf0bf6ca6a7c0f6d5b03c2e55b4d0d6578b73cc067135e23077f43ad3/algviz-0.2.2.tar.gz
+[2023-06-04 19:13:11] INFO root fetch - processPackages [kelpie-personal-trainer]: Downloading https://files.pythonhosted.org/packages/a2/ab/a3f0aa8154d37e10291b8343f81a94aa0e505c463c2f25266bc2f007925e/kelpie_personal_trainer-0.0.4.tar.gz
+[2023-06-04 19:13:11] INFO root fetch - processPackages [rkstreamer]: Downloading https://files.pythonhosted.org/packages/62/0a/0598cd5fa9380cf01a49d5059493847676d5db35b27210cb0ad0ba7b3d92/rkstreamer-1.2-py3-none-any.whl
+[2023-06-04 19:13:11] INFO root fetch - processPackages [kelpie-personal-trainer]: executing diffoscope
+[2023-06-04 19:13:11] INFO root fetch - processPackages [kelpie-personal-trainer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kelpie_personal_trainer-0.0.3.tar.gz tmp/kelpie_personal_trainer-0.0.4.tar.gz --markdown 20230604/k/kelpie-personal-trainer/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-akinator]: Downloading https://files.pythonhosted.org/packages/18/dd/2e69d7e6dc2bcc945a98311534e361c8ea11ecb8811b8ecd820d9fcdc7c2/nonebot-plugin-akinator-0.1.2.tar.gz
+[2023-06-04 19:13:11] INFO root fetch - processPackages [algviz]: Downloading https://files.pythonhosted.org/packages/33/99/4d8823e30b89373e2381a92b1ee3ab50fba801ec3b01d708ab962536a68f/algviz-0.2.3.tar.gz
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-autoreply]: executing diffoscope
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-autoreply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_autoreply-0.2.8.tar.gz tmp/nonebot_plugin_autoreply-0.2.9.tar.gz --markdown 20230604/n/nonebot-plugin-autoreply/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 19:13:11] INFO root fetch - processPackages [rkstreamer]: executing diffoscope
+[2023-06-04 19:13:11] INFO root fetch - processPackages [rkstreamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rkstreamer-1.1-py3-none-any.whl.zip tmp/rkstreamer-1.2-py3-none-any.whl.zip --markdown 20230604/r/rkstreamer/1.1-1.2/diff.md --exclude *.pyd
+[2023-06-04 19:13:11] INFO root fetch - processPackages [algviz]: executing diffoscope
+[2023-06-04 19:13:11] INFO root fetch - processPackages [algviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algviz-0.2.2.tar.gz tmp/algviz-0.2.3.tar.gz --markdown 20230604/a/algviz/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-akinator]: executing diffoscope
+[2023-06-04 19:13:11] INFO root fetch - processPackages [nonebot-plugin-akinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-akinator-0.1.1.tar.gz tmp/nonebot-plugin-akinator-0.1.2.tar.gz --markdown 20230604/n/nonebot-plugin-akinator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-06-04 19:13:12] INFO root fetch - main [MainThread]: End processing [kelpie-personal-trainer]: success
+[2023-06-04 19:13:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-autoreply]: success
+[2023-06-04 19:13:13] INFO root fetch - main [MainThread]: End processing [algviz]: success
+[2023-06-04 19:13:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-akinator]: success
+[2023-06-04 19:13:13] INFO root fetch - main [MainThread]: End processing [rkstreamer]: success
+[2023-06-04 19:13:13] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-06-04 19:13:13] INFO root fetch - main [MainThread]: Store serial: [18367465]
