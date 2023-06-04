@@ -4273,3 +4273,56 @@
 [2023-06-04 11:27:21] INFO root fetch - main [MainThread]: End processing [ifastapi]: success
 [2023-06-04 11:27:21] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2023-06-04 11:27:21] INFO root fetch - main [MainThread]: Store serial: [18364925]
+[2023-06-04 11:32:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364925]
+[2023-06-04 11:32:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mzarr
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-account-payment-order
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yuface
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-tado
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sagemaker-rightline
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-nightly-cpu-aws
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: simple-pymq
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mqflow
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: y4d
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ccxtools
+[2023-06-04 11:32:30] INFO root fetch - processPackages [python-tado]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-06-04 11:32:30] WARNING root fetch - processPackages [yuface]: Skipping, unable to determine old version
+[2023-06-04 11:32:30] INFO root fetch - main [MainThread]: End processing [yuface] error
+[2023-06-04 11:32:30] WARNING root fetch - processPackages [sagemaker-rightline]: Skipping, unable to determine old version
+[2023-06-04 11:32:30] INFO root fetch - main [MainThread]: End processing [sagemaker-rightline] error
+[2023-06-04 11:32:30] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: New version: [14.0.2.0.3.dev7] Old Version: [14.0.2.0.3.dev6]
+[2023-06-04 11:32:30] WARNING root fetch - processPackages [mqflow]: Skipping, unable to determine old version
+[2023-06-04 11:32:30] INFO root fetch - main [MainThread]: End processing [mqflow] error
+[2023-06-04 11:32:30] INFO root fetch - processPackages [mzarr]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-06-04 11:32:30] INFO root fetch - processPackages [y4d]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ccxtools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 11:32:30] INFO root fetch - processPackages [simple-pymq]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-06-04 11:32:30] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.14.0.dev20230604] Old Version: [2.14.0.dev20230603]
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ccxtools]: executing diffoscope
+[2023-06-04 11:32:30] INFO root fetch - processPackages [ccxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxtools-0.0.8.tar.gz tmp/ccxtools-0.0.9.tar.gz --markdown 20230604/c/ccxtools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 11:32:30] INFO root fetch - processPackages [python-tado]: Downloading https://files.pythonhosted.org/packages/39/30/edd85748b0a061f3d7157abd06815caf4c5e90bcf7e3a42aa9a3168446a5/python-tado-0.8.0.tar.gz
+[2023-06-04 11:32:30] INFO root fetch - processPackages [simple-pymq]: Downloading https://files.pythonhosted.org/packages/33/a8/437dd97f0fb6759f4879756a7ce4cd0b973c7da1adaee219440f34e363c4/simple_pymq-0.3.0.tar.gz
+[2023-06-04 11:32:30] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/55/8b/932951c04ee0351b2c6599ffec7977ee8d5e046b374eaaf9b21a16a0c7eb/tf_nightly_cpu_aws-2.14.0.dev20230603-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-06-04 11:32:31] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 258860354>=10485760
+[2023-06-04 11:32:31] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu-aws] error
+[2023-06-04 11:32:31] INFO root fetch - processPackages [mzarr]: Downloading https://files.pythonhosted.org/packages/86/db/9785aff83b3d5ffb7357ac01f26ce8faff48a6cf928c92e457603ad58784/mzarr-0.0.7.tar.gz
+[2023-06-04 11:32:31] INFO root fetch - processPackages [y4d]: Downloading https://files.pythonhosted.org/packages/90/e9/fcf3d4d389b442587ce61f4836cd9d93c75f553638bfa9dec4ddd43fbfdf/y4d-0.1.5.tar.gz
+[2023-06-04 11:32:31] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: executing diffoscope
+[2023-06-04 11:32:31] INFO root fetch - processPackages [odoo14-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_payment_order-14.0.2.0.3.dev6-py3-none-any.whl.zip tmp/odoo14_addon_account_payment_order-14.0.2.0.3.dev7-py3-none-any.whl.zip --markdown 20230604/o/odoo14-addon-account-payment-order/14.0.2.0.3.dev6-14.0.2.0.3.dev7/diff.md --exclude *.pyd
+[2023-06-04 11:32:31] INFO root fetch - processPackages [mzarr]: executing diffoscope
+[2023-06-04 11:32:31] INFO root fetch - processPackages [mzarr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mzarr-0.0.6.tar.gz tmp/mzarr-0.0.7.tar.gz --markdown 20230604/m/mzarr/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-06-04 11:32:31] INFO root fetch - processPackages [simple-pymq]: Downloading https://files.pythonhosted.org/packages/5f/ed/63e9d6dd7a20e8b19afc238df25764ffc987fe9d6fd3fa9cb7c74ac223e0/simple_pymq-0.4.0-py3-none-any.whl
+[2023-06-04 11:32:31] INFO root fetch - processPackages [y4d]: executing diffoscope
+[2023-06-04 11:32:31] INFO root fetch - processPackages [y4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/y4d-0.1.4.tar.gz tmp/y4d-0.1.5.tar.gz --markdown 20230604/y/y4d/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-06-04 11:32:31] INFO root fetch - processPackages [simple-pymq]: executing diffoscope
+[2023-06-04 11:32:31] INFO root fetch - processPackages [simple-pymq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_pymq-0.3.0.tar.gz tmp/simple_pymq-0.4.0-py3-none-any.whl.zip --markdown 20230604/s/simple-pymq/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-06-04 11:32:31] INFO root fetch - processPackages [python-tado]: Downloading https://files.pythonhosted.org/packages/3d/5b/3c69bc8776771f1413bd7ade70f01ebc08f67241f0fbe20498de2d7cb055/python-tado-0.8.1.tar.gz
+[2023-06-04 11:32:31] INFO root fetch - processPackages [python-tado]: executing diffoscope
+[2023-06-04 11:32:31] INFO root fetch - processPackages [python-tado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tado-0.8.0.tar.gz tmp/python-tado-0.8.1.tar.gz --markdown 20230604/p/python-tado/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-06-04 11:32:31] INFO root fetch - main [MainThread]: End processing [ccxtools]: success
+[2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [mzarr]: success
+[2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [y4d]: success
+[2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [simple-pymq]: success
+[2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-payment-order]: success
+[2023-06-04 11:32:32] INFO root fetch - main [MainThread]: End processing [python-tado]: success
+[2023-06-04 11:32:32] INFO root fetch - main [MainThread]: Store serial: [18364971]
