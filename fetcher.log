@@ -5855,3 +5855,56 @@
 [2023-06-04 14:41:32] INFO root fetch - main [MainThread]: End processing [onboardme]: success
 [2023-06-04 14:41:33] INFO root fetch - main [MainThread]: End processing [circuitpython-mag-cal]: success
 [2023-06-04 14:41:33] INFO root fetch - main [MainThread]: Store serial: [18365914]
+[2023-06-04 14:46:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18365914]
+[2023-06-04 14:46:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySupercell
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invoker-terminal
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: facebook-page-scraper
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyFIS
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: coolpy
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: syft
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xplainable
+[2023-06-04 14:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: manticore
+[2023-06-04 14:46:42] INFO root fetch - processPackages [PySupercell]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [invoker-terminal]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [pyFIS]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [facebook-page-scraper]: New version: [5.0.0] Old Version: [4.0.3]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [coolpy]: New version: [0.0.51] Old Version: [0.0.50]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [xplainable]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [syft]: New version: [0.8.1b6] Old Version: [0.8.1b5]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230603] Old Version: [0.3.8.dev230602]
+[2023-06-04 14:46:42] INFO root fetch - processPackages [coolpy]: Downloading https://files.pythonhosted.org/packages/f1/ca/f81fed63d1344ec03d7f5e4d204640e9b4b3d9398d4abd67ab2dd7ce3a9b/coolpy-0.0.50.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230602.tar.gz tmp/manticore-0.3.8.dev230603.tar.gz --markdown 20230604/m/manticore/0.3.8.dev230602-0.3.8.dev230603/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [pyFIS]: Downloading https://files.pythonhosted.org/packages/68/a2/2a3d0fb19269109b4d81e2cdb269b28d9da9971f5b14190a1685f41a9b8e/pyFIS-1.8.1.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [facebook-page-scraper]: Downloading https://files.pythonhosted.org/packages/51/0c/85298759e93b961b630620a27548056138c6f3c7f788a146db4768c7c13d/facebook_page_scraper-4.0.3.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [invoker-terminal]: Downloading https://files.pythonhosted.org/packages/f5/fa/f2670774e4b4a110d070a9ee8d06be1a1ef95bfcdd6387be9aaacc8f205a/invoker_terminal-0.0.36.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [xplainable]: Downloading https://files.pythonhosted.org/packages/3b/1d/0af28c49994a25cbc55657673ee78244fbb06f6773735985f05bc2d42c43/xplainable-1.0.1-py3-none-any.whl
+[2023-06-04 14:46:42] INFO root fetch - processPackages [invoker-terminal]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [invoker-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invoker_terminal-0.0.35.tar.gz tmp/invoker_terminal-0.0.36.tar.gz --markdown 20230604/i/invoker-terminal/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [PySupercell]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [PySupercell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySupercell-0.0.8.tar.gz tmp/PySupercell-0.0.9.tar.gz --markdown 20230604/P/PySupercell/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/ce/bf/427147a288bb2435561edec101aed9e0131370d5f933bbe7a724a832cfd6/syft-0.8.1b6.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [coolpy]: Downloading https://files.pythonhosted.org/packages/75/80/256cb73348c7d20d73477ce92a307813bbfa9d84ffb172f36dbcf4bec20c/coolpy-0.0.51.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [pyFIS]: Downloading https://files.pythonhosted.org/packages/cf/c2/3287ee8e42ae3c78874785878ad29f12ede41cd030c5765ad4e535f9109b/pyFIS-1.9.0.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [xplainable]: Downloading https://files.pythonhosted.org/packages/7c/ac/c772dbf4d1eead48a8a25974fabc99efcb6466106aa5f7dbf847b4ce766c/xplainable-1.0.2-py3-none-any.whl
+[2023-06-04 14:46:42] INFO root fetch - processPackages [facebook-page-scraper]: Downloading https://files.pythonhosted.org/packages/1c/8a/7b695fdeda184e62358dc628843551a8e52bcdfaab5d297a2ec5763a22ab/facebook_page_scraper-5.0.0.tar.gz
+[2023-06-04 14:46:42] INFO root fetch - processPackages [coolpy]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [coolpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolpy-0.0.50.tar.gz tmp/coolpy-0.0.51.tar.gz --markdown 20230604/c/coolpy/0.0.50-0.0.51/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [pyFIS]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [pyFIS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyFIS-1.8.1.tar.gz tmp/pyFIS-1.9.0.tar.gz --markdown 20230604/p/pyFIS/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [xplainable]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [xplainable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplainable-1.0.1-py3-none-any.whl.zip tmp/xplainable-1.0.2-py3-none-any.whl.zip --markdown 20230604/x/xplainable/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [facebook-page-scraper]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [facebook-page-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facebook_page_scraper-4.0.3.tar.gz tmp/facebook_page_scraper-5.0.0.tar.gz --markdown 20230604/f/facebook-page-scraper/4.0.3-5.0.0/diff.md --exclude *.pyd
+[2023-06-04 14:46:42] INFO root fetch - processPackages [syft]: executing diffoscope
+[2023-06-04 14:46:42] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.1b5.tar.gz tmp/syft-0.8.1b6.tar.gz --markdown 20230604/s/syft/0.8.1b5-0.8.1b6/diff.md --exclude *.pyd
+[2023-06-04 14:46:43] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
+[2023-06-04 14:46:44] INFO root fetch - main [MainThread]: End processing [coolpy]: success
+[2023-06-04 14:46:44] INFO root fetch - main [MainThread]: End processing [invoker-terminal]: success
+[2023-06-04 14:46:44] INFO root fetch - main [MainThread]: End processing [facebook-page-scraper]: success
+[2023-06-04 14:46:44] INFO root fetch - main [MainThread]: End processing [pyFIS]: success
+[2023-06-04 14:46:44] INFO root fetch - main [MainThread]: End processing [xplainable]: success
+[2023-06-04 14:46:45] INFO root fetch - main [MainThread]: End processing [syft]: success
+[2023-06-04 14:46:45] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-06-04 14:46:45] INFO root fetch - main [MainThread]: Store serial: [18365938]
