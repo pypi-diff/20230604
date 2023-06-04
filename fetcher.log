@@ -6650,3 +6650,50 @@
 [2023-06-04 16:16:19] INFO root fetch - main [MainThread]: End processing [pycbzhelper]: success
 [2023-06-04 16:16:20] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
 [2023-06-04 16:16:20] INFO root fetch - main [MainThread]: Store serial: [18366357]
+[2023-06-04 16:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366357]
+[2023-06-04 16:21:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-jsheet
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nsdpy
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flash-attn-wheels
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mypackagelicenseprototype
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: innovationmerge
+[2023-06-04 16:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-utilitas
+[2023-06-04 16:21:29] INFO root fetch - processPackages [flash-attn-wheels]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-jsheet]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-06-04 16:21:29] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.2.0] Old Version: [1.1.4]
+[2023-06-04 16:21:29] INFO root fetch - processPackages [nsdpy]: New version: [0.3.1b0] Old Version: [0.3.0b0]
+[2023-06-04 16:21:29] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 16:21:29] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-06-04 16:21:29] WARNING root fetch - processPackages [innovationmerge]: Skipping, unable to determine old version
+[2023-06-04 16:21:29] INFO root fetch - main [MainThread]: End processing [innovationmerge] error
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-utilitas]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-jsheet]: Downloading https://files.pythonhosted.org/packages/19/d3/bf80349279ad7a435cf305b78665292eb60332746c8c2d155e627b37bcca/django_jsheet-0.2.0.tar.gz
+[2023-06-04 16:21:29] INFO root fetch - processPackages [flash-attn-wheels]: Downloading https://files.pythonhosted.org/packages/a7/0c/c5fcd891f0e60b68cd2cfec76e100e03daf8b013806de3c8fa459bd327d6/flash_attn_wheels-1.0.7.tar.gz
+[2023-06-04 16:21:29] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 16:21:29] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 16:21:29] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-06-04 16:21:29] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230604/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-utilitas]: executing diffoscope
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-utilitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-utilitas-1.3.8.tar.gz tmp/django-utilitas-1.3.9.tar.gz --markdown 20230604/d/django-utilitas/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-06-04 16:21:29] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/c0/2d/636dbe4c3715855ccbe7d98d57aefb03e90b9cfc836b7580d20a95937a9e/myPackageLicensePrototype-1.2.0.tar.gz
+[2023-06-04 16:21:29] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/86/55/d19f6c124d53d97defdbbe133fb5070efc42c459bf2f9705314e93205c7d/nsdpy-0.3.1b0.tar.gz
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-jsheet]: Downloading https://files.pythonhosted.org/packages/37/94/82873b46aa3fe7c2155d6e24fdd8f299f6b63d6cc9b3d119d00d26afd57b/django_jsheet-0.2.1.tar.gz
+[2023-06-04 16:21:29] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-06-04 16:21:29] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.3.0b0.tar.gz tmp/nsdpy-0.3.1b0.tar.gz --markdown 20230604/n/nsdpy/0.3.0b0-0.3.1b0/diff.md --exclude *.pyd
+[2023-06-04 16:21:29] INFO root fetch - processPackages [flash-attn-wheels]: Downloading https://files.pythonhosted.org/packages/24/7f/f477dbc5d6f4a6f032dcc59752cdc6db509ed4f7e1fe32e453f5989c43c7/flash_attn_wheels-1.0.8.tar.gz
+[2023-06-04 16:21:29] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 16:21:29] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.1.4.tar.gz tmp/myPackageLicensePrototype-1.2.0.tar.gz --markdown 20230604/m/mypackagelicenseprototype/1.1.4-1.2.0/diff.md --exclude *.pyd
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-jsheet]: executing diffoscope
+[2023-06-04 16:21:29] INFO root fetch - processPackages [django-jsheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_jsheet-0.2.0.tar.gz tmp/django_jsheet-0.2.1.tar.gz --markdown 20230604/d/django-jsheet/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 16:21:30] INFO root fetch - processPackages [flash-attn-wheels]: executing diffoscope
+[2023-06-04 16:21:30] INFO root fetch - processPackages [flash-attn-wheels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash_attn_wheels-1.0.7.tar.gz tmp/flash_attn_wheels-1.0.8.tar.gz --markdown 20230604/f/flash-attn-wheels/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-04 16:21:30] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 16:21:30] INFO root fetch - main [MainThread]: End processing [django-utilitas]: success
+[2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [django-jsheet]: success
+[2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-06-04 16:21:31] INFO root fetch - main [MainThread]: End processing [flash-attn-wheels]: success
+[2023-06-04 16:21:31] INFO root fetch - main [MainThread]: Store serial: [18366384]
