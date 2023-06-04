@@ -7369,3 +7369,27 @@
 [2023-06-04 17:24:12] INFO root fetch - main [MainThread]: End processing [std.algorithm]: success
 [2023-06-04 17:24:33] INFO root fetch - main [MainThread]: End processing [sympy.keras]: success
 [2023-06-04 17:24:33] INFO root fetch - main [MainThread]: Store serial: [18366872]
+[2023-06-04 17:29:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366872]
+[2023-06-04 17:29:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-proxmoxve
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plotoptix
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ast-match
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: genetic-algo
+[2023-06-04 17:29:43] INFO root fetch - processPackages [plotoptix]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-06-04 17:29:43] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [5.1.1] Old Version: [5.1.0]
+[2023-06-04 17:29:43] WARNING root fetch - processPackages [genetic-algo]: Skipping, unable to determine old version
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ast-match]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-06-04 17:29:43] INFO root fetch - main [MainThread]: End processing [genetic-algo] error
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ast-match]: Downloading https://files.pythonhosted.org/packages/e2/fc/b9623f4e512f9cefeff4852c16c128a4fff5305af1e9d54073fdc5fbcd6a/ast-match-0.0.0.tar.gz
+[2023-06-04 17:29:43] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/95/8b/c932860f8172ae47b62cc33097de29945b3b00a0ba808a9e2e2774524eb2/pulumi_proxmoxve-5.1.1.tar.gz
+[2023-06-04 17:29:43] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2023-06-04 17:29:43] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-5.1.0.tar.gz tmp/pulumi_proxmoxve-5.1.1.tar.gz --markdown 20230604/p/pulumi-proxmoxve/5.1.0-5.1.1/diff.md --exclude *.pyd
+[2023-06-04 17:29:43] INFO root fetch - processPackages [plotoptix]: executing diffoscope
+[2023-06-04 17:29:43] INFO root fetch - processPackages [plotoptix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotoptix-0.8.2.tar.gz tmp/plotoptix-0.9.0.tar.gz --markdown 20230604/p/plotoptix/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ast-match]: Downloading https://files.pythonhosted.org/packages/5e/1d/670342fbfa870724dde610e94390e9f7cf10f4b04e64242a682ef9608ce1/ast-match-0.1.0.tar.gz
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ast-match]: executing diffoscope
+[2023-06-04 17:29:43] INFO root fetch - processPackages [ast-match]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ast-match-0.0.0.tar.gz tmp/ast-match-0.1.0.tar.gz --markdown 20230604/a/ast-match/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-06-04 17:29:44] INFO root fetch - main [MainThread]: End processing [ast-match]: success
+[2023-06-04 17:29:45] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2023-06-04 17:29:56] INFO root fetch - main [MainThread]: End processing [plotoptix]: success
+[2023-06-04 17:29:56] INFO root fetch - main [MainThread]: Store serial: [18366889]
