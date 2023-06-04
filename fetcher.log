@@ -7558,3 +7558,82 @@
 [2023-06-04 17:50:49] INFO root fetch - main [MainThread]: End processing [juno-ai]: success
 [2023-06-04 17:50:52] INFO root fetch - main [MainThread]: End processing [iced-x86]: success
 [2023-06-04 17:50:52] INFO root fetch - main [MainThread]: Store serial: [18367031]
+[2023-06-04 17:55:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367031]
+[2023-06-04 17:56:01] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: test-class
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbe
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grai-source-bigquery
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mypackagelicenseprototype
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zrouter
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pylwr
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: voyager-dev
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mypackagelicenseprototype
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rmlab
+[2023-06-04 17:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nwebclient
+[2023-06-04 17:56:01] INFO root fetch - processPackages [sbe]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [grai-source-bigquery]: New version: [0.1.0a1] Old Version: [0.0.6]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [test-class]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [zrouter]: New version: [0.2.1] Old Version: [0.1.5]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [pylwr]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [rmlab]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [voyager-dev]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 17:56:01] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/69/ef/00e392085b047b3ee99c56e5f23ff863a5bd87976c3d6314aa904ce0544c/mypackagelicenseprototype-1.3.1-py3-none-any.whl
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/69/ef/00e392085b047b3ee99c56e5f23ff863a5bd87976c3d6314aa904ce0544c/mypackagelicenseprototype-1.3.1-py3-none-any.whl
+[2023-06-04 17:56:01] INFO root fetch - processPackages [test-class]: Downloading https://files.pythonhosted.org/packages/91/68/8e1f5235747e92518cfa0e5196bff1e458f4899a1543060e41a485ce15ca/test-class-0.0.1.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [grai-source-bigquery]: Downloading https://files.pythonhosted.org/packages/2e/97/1312897b91b770d252fe14b5bed414f7ede28b3d94f53cf6d7f4c69e0df3/grai_source_bigquery-0.0.6.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [pylwr]: Downloading https://files.pythonhosted.org/packages/39/2d/025e9a937df7e85c76e89cd788342aa27e273a34df500fd0e5d9e033aaf2/pylwr-1.0.6.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [zrouter]: Downloading https://files.pythonhosted.org/packages/f2/51/3fb8755326ef030c11b76ba1e1d186ef1e5a4c18f54d8045d563b1477964/zrouter-0.1.5.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [voyager-dev]: Downloading https://files.pythonhosted.org/packages/5a/f2/ca86b6759cfbb9283ace10752f67fa7be6c8c19a6ae421b7270b8efc702f/voyager_dev-0.0.1-py3-none-any.whl
+[2023-06-04 17:56:01] INFO root fetch - processPackages [rmlab]: Downloading https://files.pythonhosted.org/packages/bc/98/83710e587daa15ee88d5fc6f929d0e9ce04e4dbd43f3c4d5caa16ad5f5ac/rmlab-0.4.2.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [rmlab]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [rmlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmlab-0.4.1.tar.gz tmp/rmlab-0.4.2.tar.gz --markdown 20230604/r/rmlab/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [pylwr]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [pylwr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylwr-1.0.5.tar.gz tmp/pylwr-1.0.6.tar.gz --markdown 20230604/p/pylwr/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [test-class]: Downloading https://files.pythonhosted.org/packages/f3/c6/db91bb9f58c2ca7a26adbdbd2890d6b749dbb8c7167eba654d4dc4dade6f/test-class-0.0.2.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [voyager-dev]: Downloading https://files.pythonhosted.org/packages/98/5a/fe1dc258f0f2f4a47a999778220885a8a950f5e0786aa9a459e47600dda6/voyager_dev-0.0.2-py3-none-any.whl
+[2023-06-04 17:56:01] INFO root fetch - processPackages [sbe]: Downloading https://files.pythonhosted.org/packages/e2/30/d0f46de7f50f4875561abdfbcea2c44e755d1d8403f4424b5b3445613f2a/sbe-0.3.3.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [test-class]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [test-class]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test-class-0.0.1.tar.gz tmp/test-class-0.0.2.tar.gz --markdown 20230604/t/test-class/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [sbe]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [sbe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbe-0.3.2.tar.gz tmp/sbe-0.3.3.tar.gz --markdown 20230604/s/sbe/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/a1/d4/0eb579f8fb8b4eed3455a3053e5a567f65090a028ec3c76faac9f8ded597/mypackagelicenseprototype-1.4.0-py3-none-any.whl
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: Downloading https://files.pythonhosted.org/packages/a1/d4/0eb579f8fb8b4eed3455a3053e5a567f65090a028ec3c76faac9f8ded597/mypackagelicenseprototype-1.4.0-py3-none-any.whl
+[2023-06-04 17:56:01] INFO root fetch - processPackages [zrouter]: Downloading https://files.pythonhosted.org/packages/96/84/2751963f7bda819b3710f4f1383a40d19bb60f11022b6f19ab007af63755/zrouter-0.2.1.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [grai-source-bigquery]: Downloading https://files.pythonhosted.org/packages/7e/b7/61aa4de2369f5548c2fe37eda581f104d2e650a429f12a9259856f1ecca0/grai_source_bigquery-0.1.0a1.tar.gz
+[2023-06-04 17:56:01] INFO root fetch - processPackages [voyager-dev]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [voyager-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/voyager_dev-0.0.1-py3-none-any.whl.zip tmp/voyager_dev-0.0.2-py3-none-any.whl.zip --markdown 20230604/v/voyager-dev/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypackagelicenseprototype-1.3.1-py3-none-any.whl.zip tmp/mypackagelicenseprototype-1.4.0-py3-none-any.whl.zip --markdown 20230604/m/mypackagelicenseprototype/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [zrouter]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [zrouter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrouter-0.1.5.tar.gz tmp/zrouter-0.2.1.tar.gz --markdown 20230604/z/zrouter/0.1.5-0.2.1/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [mypackagelicenseprototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypackagelicenseprototype-1.3.1-py3-none-any.whl.zip tmp/mypackagelicenseprototype-1.4.0-py3-none-any.whl.zip --markdown 20230604/m/mypackagelicenseprototype/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-06-04 17:56:01] INFO root fetch - processPackages [grai-source-bigquery]: executing diffoscope
+[2023-06-04 17:56:01] INFO root fetch - processPackages [grai-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_bigquery-0.0.6.tar.gz tmp/grai_source_bigquery-0.1.0a1.tar.gz --markdown 20230604/g/grai-source-bigquery/0.0.6-0.1.0a1/diff.md --exclude *.pyd
+[2023-06-04 17:56:03] INFO root fetch - processPackages [nwebclient]: Start processing: dbdicom
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 17:56:03] INFO root fetch - processPackages [test-class]: Start processing: nef-pipelines
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [test-class]: success
+[2023-06-04 17:56:03] INFO root fetch - processPackages [dbdicom]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [voyager-dev]: success
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [pylwr]: success
+[2023-06-04 17:56:03] INFO root fetch - processPackages [nef-pipelines]: New version: [0.1.42] Old Version: [0.1.41]
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 17:56:03] INFO root fetch - processPackages [dbdicom]: Downloading https://files.pythonhosted.org/packages/26/fe/e6de66accfb18f2c6a7d99e63d8933578c738d57a37df3399c380348d39b/dbdicom-0.1.8.tar.gz
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [mypackagelicenseprototype]: success
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [rmlab]: success
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [zrouter]: success
+[2023-06-04 17:56:03] WARNING root fetch - processPackages [dbdicom]: Skipping package: exceeds size limit 29705442>=10485760
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [dbdicom] error
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [grai-source-bigquery]: success
+[2023-06-04 17:56:03] INFO root fetch - processPackages [nef-pipelines]: Downloading https://files.pythonhosted.org/packages/e7/0e/08d291d6a67af4e56c75feaeea965d812d593937b9d68a66b3c3cb3fb002/nef_pipelines-0.1.42.tar.gz
+[2023-06-04 17:56:03] INFO root fetch - main [MainThread]: End processing [sbe]: success
+[2023-06-04 17:56:03] INFO root fetch - processPackages [nef-pipelines]: executing diffoscope
+[2023-06-04 17:56:03] INFO root fetch - processPackages [nef-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nef_pipelines-0.1.41.tar.gz tmp/nef_pipelines-0.1.42.tar.gz --markdown 20230604/n/nef-pipelines/0.1.41-0.1.42/diff.md --exclude *.pyd
+[2023-06-04 17:56:07] INFO root fetch - main [MainThread]: End processing [nef-pipelines]: success
+[2023-06-04 17:56:07] INFO root fetch - main [MainThread]: Store serial: [18367066]
