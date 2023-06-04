@@ -7890,3 +7890,58 @@
 [2023-06-04 18:29:42] INFO root fetch - main [MainThread]: End processing [dataheroes]: success
 [2023-06-04 18:30:34] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-06-04 18:30:34] INFO root fetch - main [MainThread]: Store serial: [18367238]
+[2023-06-04 18:35:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18367238]
+[2023-06-04 18:35:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: granny-pliers
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nwebclient
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydisort
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitaudit
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovos-skill-stop
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-picstatus
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kodexa
+[2023-06-04 18:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gerbil-api-wrapper
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gitaudit]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nonebot-plugin-picstatus]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [ovos-skill-stop]: New version: [0.3.0a1] Old Version: [0.2.1a2]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gerbil-api-wrapper]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [granny-pliers]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [pydisort]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [kodexa]: New version: [6.2.25170117554] Old Version: [6.2.25163341375]
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 18:35:44] INFO root fetch - processPackages [pydisort]: Downloading https://files.pythonhosted.org/packages/20/9a/265b7ab8d40b13ff1169255693d295553025a7f2417ca906db9fba206963/pydisort-0.0.3.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [granny-pliers]: Downloading https://files.pythonhosted.org/packages/ab/30/62d2aa2c4b1f890d979a6c4681c9af23dee5605b1929eae9ffd1517a90e4/granny-pliers-0.0.4.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [ovos-skill-stop]: Downloading https://files.pythonhosted.org/packages/24/8d/cf41114fb61afd638b3952739689d30ce43903dc075965ff5ef6f9b39b28/ovos_skill_stop-0.2.1a2-py3-none-any.whl
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nonebot-plugin-picstatus]: Downloading https://files.pythonhosted.org/packages/0e/58/51ddd4bdc43445ec4bb68fd8adff77268d541357f6d4e46b61a118dd8843/nonebot_plugin_picstatus-0.4.1.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/44/e0/a5077656a350977ca01848fea95906deedbe54a9c722c703db7c38bb2222/kodexa-6.2.25163341375.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gerbil-api-wrapper]: Downloading https://files.pythonhosted.org/packages/84/aa/4f7f3db29a3f5e0bd25d182920c2acc16aad2d1d75833521c52a87bb1176/gerbil-api-wrapper-1.0.2.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gitaudit]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gitaudit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitaudit-0.8.8.tar.gz tmp/gitaudit-0.9.0.tar.gz --markdown 20230604/g/gitaudit/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 18:35:44] INFO root fetch - processPackages [ovos-skill-stop]: Downloading https://files.pythonhosted.org/packages/c0/e1/772a2801cae5f64a1f10a062e8f9595ee4c8fd17945ce07114decd3c6731/ovos_skill_stop-0.3.0a1-py3-none-any.whl
+[2023-06-04 18:35:44] INFO root fetch - processPackages [pydisort]: Downloading https://files.pythonhosted.org/packages/94/cb/11f1934b0b89914feb48af064df7911de3fd6b4f590ad38ed0731d5f50f7/pydisort-0.0.4.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [kodexa]: Downloading https://files.pythonhosted.org/packages/85/38/9a75dbfcfb0e95adcc72629b86e82632fa8019ff273a64dd0b26fb1866b6/kodexa-6.2.25170117554.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [granny-pliers]: Downloading https://files.pythonhosted.org/packages/14/44/7cf2a41304592d50c4bf4131f24a6143ff541eaaa7f5e0b47d17cf2a26d3/granny-pliers-0.0.5.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gerbil-api-wrapper]: Downloading https://files.pythonhosted.org/packages/59/65/60cf48e0285c3aaa5137ec51678911a6fb2ebb6c5b732201a1fc1425812b/gerbil-api-wrapper-1.0.3.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nonebot-plugin-picstatus]: Downloading https://files.pythonhosted.org/packages/22/a0/b565a7563de3d8917a686e4fc30a97ae0c9ea19fadedda03adb51a04912d/nonebot_plugin_picstatus-0.4.2.tar.gz
+[2023-06-04 18:35:44] INFO root fetch - processPackages [ovos-skill-stop]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [ovos-skill-stop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_skill_stop-0.2.1a2-py3-none-any.whl.zip tmp/ovos_skill_stop-0.3.0a1-py3-none-any.whl.zip --markdown 20230604/o/ovos-skill-stop/0.2.1a2-0.3.0a1/diff.md --exclude *.pyd
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gerbil-api-wrapper]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [gerbil-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerbil-api-wrapper-1.0.2.tar.gz tmp/gerbil-api-wrapper-1.0.3.tar.gz --markdown 20230604/g/gerbil-api-wrapper/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-06-04 18:35:44] INFO root fetch - processPackages [granny-pliers]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [granny-pliers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granny-pliers-0.0.4.tar.gz tmp/granny-pliers-0.0.5.tar.gz --markdown 20230604/g/granny-pliers/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-06-04 18:35:44] INFO root fetch - processPackages [kodexa]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [kodexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodexa-6.2.25163341375.tar.gz tmp/kodexa-6.2.25170117554.tar.gz --markdown 20230604/k/kodexa/6.2.25163341375-6.2.25170117554/diff.md --exclude *.pyd
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nonebot-plugin-picstatus]: executing diffoscope
+[2023-06-04 18:35:44] INFO root fetch - processPackages [nonebot-plugin-picstatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_picstatus-0.4.1.tar.gz tmp/nonebot_plugin_picstatus-0.4.2.tar.gz --markdown 20230604/n/nonebot-plugin-picstatus/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-06-04 18:35:45] INFO root fetch - processPackages [pydisort]: executing diffoscope
+[2023-06-04 18:35:45] INFO root fetch - processPackages [pydisort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydisort-0.0.3.tar.gz tmp/pydisort-0.0.4.tar.gz --markdown 20230604/p/pydisort/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 18:35:45] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 18:35:45] INFO root fetch - main [MainThread]: End processing [gerbil-api-wrapper]: success
+[2023-06-04 18:35:45] INFO root fetch - main [MainThread]: End processing [ovos-skill-stop]: success
+[2023-06-04 18:35:46] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-picstatus]: success
+[2023-06-04 18:35:46] INFO root fetch - main [MainThread]: End processing [granny-pliers]: success
+[2023-06-04 18:35:46] INFO root fetch - main [MainThread]: End processing [gitaudit]: success
+[2023-06-04 18:35:47] INFO root fetch - main [MainThread]: End processing [kodexa]: success
+[2023-06-04 18:35:47] INFO root fetch - main [MainThread]: End processing [pydisort]: success
+[2023-06-04 18:35:47] INFO root fetch - main [MainThread]: Store serial: [18367261]
