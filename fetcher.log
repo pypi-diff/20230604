@@ -3379,3 +3379,15 @@
 [2023-06-04 09:28:58] INFO root fetch - main [MainThread]: End processing [fastapi-opa]: success
 [2023-06-04 09:28:58] INFO root fetch - main [MainThread]: End processing [PySupercell]: success
 [2023-06-04 09:28:58] INFO root fetch - main [MainThread]: Store serial: [18364409]
+[2023-06-04 09:34:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364409]
+[2023-06-04 09:34:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-06-04 09:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iamlistening
+[2023-06-04 09:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypinterest
+[2023-06-04 09:34:06] INFO root fetch - processPackages [iamlistening]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-06-04 09:34:06] WARNING root fetch - processPackages [pypinterest]: Skipping, unable to determine old version
+[2023-06-04 09:34:06] INFO root fetch - main [MainThread]: End processing [pypinterest] error
+[2023-06-04 09:34:06] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/84/3b/ea9442ee0416aff713c7367d37077d2c0d769f6c80c3e727fecc939c8f3d/iamlistening-0.1.7.tar.gz
+[2023-06-04 09:34:06] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2023-06-04 09:34:06] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-0.1.6.tar.gz tmp/iamlistening-0.1.7.tar.gz --markdown 20230604/i/iamlistening/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-06-04 09:34:07] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2023-06-04 09:34:07] INFO root fetch - main [MainThread]: Store serial: [18364418]
