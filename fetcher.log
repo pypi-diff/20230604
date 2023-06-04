@@ -7427,3 +7427,32 @@
 [2023-06-04 17:35:09] INFO root fetch - main [MainThread]: End processing [metapensiero.sphinx.patchdb]: success
 [2023-06-04 17:35:15] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-06-04 17:35:15] INFO root fetch - main [MainThread]: Store serial: [18366922]
+[2023-06-04 17:40:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366922]
+[2023-06-04 17:40:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 17:40:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: richspot
+[2023-06-04 17:40:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abmatrix
+[2023-06-04 17:40:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Ma3yTuKserializer
+[2023-06-04 17:40:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: abusentry
+[2023-06-04 17:40:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-chatglm
+[2023-06-04 17:40:24] INFO root fetch - processPackages [richspot]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-06-04 17:40:24] INFO root fetch - processPackages [abmatrix]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-06-04 17:40:24] WARNING root fetch - processPackages [Ma3yTuKserializer]: Skipping, unable to determine old version
+[2023-06-04 17:40:24] INFO root fetch - main [MainThread]: End processing [Ma3yTuKserializer] error
+[2023-06-04 17:40:24] ERROR root fetch - processPackages [abusentry]: Unable to get metadata: No such project 'abusentry'
+[2023-06-04 17:40:24] INFO root fetch - main [MainThread]: End processing [abusentry] error
+[2023-06-04 17:40:24] INFO root fetch - processPackages [nonebot-plugin-chatglm]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-06-04 17:40:25] INFO root fetch - processPackages [nonebot-plugin-chatglm]: Downloading https://files.pythonhosted.org/packages/1b/e7/c70f60e93033880b90d4dceb7a9e38893570bf09bfbf7ff68681732d71c8/nonebot-plugin-chatglm-0.1.5.tar.gz
+[2023-06-04 17:40:25] INFO root fetch - processPackages [richspot]: Downloading https://files.pythonhosted.org/packages/af/2b/fbb93bb4933fa35466de9a3b1b150489f779ef564b8464ecf19c31f90386/richspot-1.0.1.tar.gz
+[2023-06-04 17:40:25] INFO root fetch - processPackages [abmatrix]: Downloading https://files.pythonhosted.org/packages/c3/63/d05de1642cf2abfcea3949d9730a08231a21d5c0880fe8ea7c4522e401c5/abmatrix-0.2.0.tar.gz
+[2023-06-04 17:40:25] INFO root fetch - processPackages [nonebot-plugin-chatglm]: Downloading https://files.pythonhosted.org/packages/52/15/ca5c82254bc9df43b997bd89c14045fd99119fd3763ea91900322053af7d/nonebot-plugin-chatglm-0.1.6.tar.gz
+[2023-06-04 17:40:25] INFO root fetch - processPackages [richspot]: Downloading https://files.pythonhosted.org/packages/e6/a1/0d98839ed71518ab65b5f4c3cf7d22f8a097a9eb7c6d1f4d8d9b0d31c05e/richspot-1.0.2.tar.gz
+[2023-06-04 17:40:25] INFO root fetch - processPackages [abmatrix]: executing diffoscope
+[2023-06-04 17:40:25] INFO root fetch - processPackages [abmatrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abmatrix-0.1.7.tar.gz tmp/abmatrix-0.2.0.tar.gz --markdown 20230604/a/abmatrix/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-06-04 17:40:25] INFO root fetch - processPackages [richspot]: executing diffoscope
+[2023-06-04 17:40:25] INFO root fetch - processPackages [richspot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richspot-1.0.1.tar.gz tmp/richspot-1.0.2.tar.gz --markdown 20230604/r/richspot/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-06-04 17:40:25] INFO root fetch - processPackages [nonebot-plugin-chatglm]: executing diffoscope
+[2023-06-04 17:40:25] INFO root fetch - processPackages [nonebot-plugin-chatglm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatglm-0.1.5.tar.gz tmp/nonebot-plugin-chatglm-0.1.6.tar.gz --markdown 20230604/n/nonebot-plugin-chatglm/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-06-04 17:40:26] INFO root fetch - main [MainThread]: End processing [abmatrix]: success
+[2023-06-04 17:40:26] INFO root fetch - main [MainThread]: End processing [richspot]: success
+[2023-06-04 17:40:26] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chatglm]: success
+[2023-06-04 17:40:26] INFO root fetch - main [MainThread]: Store serial: [18366946]
