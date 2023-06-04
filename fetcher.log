@@ -4065,3 +4065,101 @@
 [2023-06-04 11:05:06] INFO root fetch - main [MainThread]: End processing [gimap] error
 [2023-06-04 11:05:58] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
 [2023-06-04 11:05:58] INFO root fetch - main [MainThread]: Store serial: [18364806]
+[2023-06-04 11:11:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364806]
+[2023-06-04 11:11:07] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.multimodal
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.timeseries
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: checkov
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autogluon.eda
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nwebclient
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: halmoney
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: csle-ryu
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: csle-collector
+[2023-06-04 11:11:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: csle-common
+[2023-06-04 11:11:07] INFO root fetch - processPackages [halmoney]: New version: [3.0.0] Old Version: [2.1.1]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [autogluon.eda]: New version: [0.7.1b20230604] Old Version: [0.7.1b20230603]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-common]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [nwebclient]: New version: [1.0.94] Old Version: [1.0.47]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-collector]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-ryu]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [autogluon.timeseries]: New version: [0.7.1b20230604] Old Version: [0.7.1b20230603]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [autogluon.multimodal]: New version: [0.7.1b20230604] Old Version: [0.7.1b20230603]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [autogluon]: New version: [0.7.1b20230604] Old Version: [0.7.1b20230603]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-common]: executing diffoscope
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_common-0.2.7.tar.gz tmp/csle_common-0.2.8.tar.gz --markdown 20230604/c/csle-common/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:07] INFO root fetch - processPackages [halmoney]: Downloading https://files.pythonhosted.org/packages/a3/aa/b5d428afdae602ca31d99f97694c1e8c27d2dab27d12f6f065518cc9e76e/halmoney-2.1.1.tar.gz
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-collector]: Downloading https://files.pythonhosted.org/packages/d0/12/d4d09a5e6883efdf4e890caef745d3da61710019b10306665e58bbc16599/csle_collector-0.2.9.tar.gz
+[2023-06-04 11:11:07] INFO root fetch - processPackages [csle-ryu]: Downloading https://files.pythonhosted.org/packages/2d/fa/85ed3f1e7daf6f134aa1fbeab5eb6813a86e9770ff07b2037b001cb8097c/csle_ryu-0.2.9.tar.gz
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.eda]: Downloading https://files.pythonhosted.org/packages/d2/f0/12b7847dc1774cef8f16c00d25542058f1b8649fa81a6911bd91934f9c00/autogluon.eda-0.7.1b20230604.tar.gz
+[2023-06-04 11:11:08] INFO root fetch - processPackages [nwebclient]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [nwebclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nwebclient-1.0.47.tar.gz tmp/nwebclient-1.0.94.tar.gz --markdown 20230604/n/nwebclient/1.0.47-1.0.94/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [csle-ryu]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [csle-ryu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_ryu-0.2.8.tar.gz tmp/csle_ryu-0.2.9.tar.gz --markdown 20230604/c/csle-ryu/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/d4/d6/4316756ef418406caf4c1fe45a3c1d4606eb6b5a02f603582a2fe2e73658/autogluon.multimodal-0.7.1b20230604.tar.gz
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/c1/84/90600aef0053929f49a0927b35edbcc457f2df2e3fc8fd2c6524e72da2d1/autogluon.timeseries-0.7.1b20230604.tar.gz
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.eda]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.eda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.eda-0.7.1b20230603.tar.gz tmp/autogluon.eda-0.7.1b20230604.tar.gz --markdown 20230604/a/autogluon.eda/0.7.1b20230603-0.7.1b20230604/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [csle-collector]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [csle-collector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_collector-0.2.8.tar.gz tmp/csle_collector-0.2.9.tar.gz --markdown 20230604/c/csle-collector/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [halmoney]: Downloading https://files.pythonhosted.org/packages/66/80/6ba3d8863b0fbddd120e2294ffc96db2f89259ae9a8e126651e8bfdf1de6/halmoney-3.0.0.tar.gz
+[2023-06-04 11:11:08] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230604/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/db/af/c767031c67d49b70b3cd5775175a67e96ff29ec0fda62f2be8198567c79d/autogluon-0.7.1b20230604.tar.gz
+[2023-06-04 11:11:08] INFO root fetch - processPackages [halmoney]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [halmoney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/halmoney-2.1.1.tar.gz tmp/halmoney-3.0.0.tar.gz --markdown 20230604/h/halmoney/2.1.1-3.0.0/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-0.7.1b20230603.tar.gz tmp/autogluon.multimodal-0.7.1b20230604.tar.gz --markdown 20230604/a/autogluon.multimodal/0.7.1b20230603-0.7.1b20230604/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-0.7.1b20230603.tar.gz tmp/autogluon.timeseries-0.7.1b20230604.tar.gz --markdown 20230604/a/autogluon.timeseries/0.7.1b20230603-0.7.1b20230604/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-0.7.1b20230603.tar.gz tmp/autogluon-0.7.1b20230604.tar.gz --markdown 20230604/a/autogluon/0.7.1b20230603-0.7.1b20230604/diff.md --exclude *.pyd
+[2023-06-04 11:11:08] ERROR root fetch - processPackages [autogluon.multimodal]: Diffoscope failed: Error: error creating container storage: the container name "epic_zhukovsky" is already in use by "77fcf6ab0faa5149bd8b3ce1ba0a4d0f7709819724deeb3033707a8a13e6b398". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-06-04 11:11:08] INFO root fetch - processPackages [autogluon.multimodal]: Start processing: shelephant
+[2023-06-04 11:11:08] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal] error
+[2023-06-04 11:11:08] INFO root fetch - processPackages [shelephant]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-06-04 11:11:09] INFO root fetch - processPackages [shelephant]: executing diffoscope
+[2023-06-04 11:11:09] INFO root fetch - processPackages [shelephant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelephant-0.8.1.tar.gz tmp/shelephant-0.9.0.tar.gz --markdown 20230604/s/shelephant/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-06-04 11:11:09] INFO root fetch - processPackages [autogluon.eda]: Start processing: csle-attacker
+[2023-06-04 11:11:09] INFO root fetch - main [MainThread]: End processing [autogluon.eda]: success
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-attacker]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:09] INFO root fetch - processPackages [autogluon]: Start processing: csle-defender
+[2023-06-04 11:11:09] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2023-06-04 11:11:09] INFO root fetch - processPackages [nwebclient]: Start processing: csle-system-identification
+[2023-06-04 11:11:09] INFO root fetch - main [MainThread]: End processing [nwebclient]: success
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-attacker]: executing diffoscope
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-attacker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_attacker-0.2.7.tar.gz tmp/csle_attacker-0.2.8.tar.gz --markdown 20230604/c/csle-attacker/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-defender]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-system-identification]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-defender]: executing diffoscope
+[2023-06-04 11:11:09] INFO root fetch - processPackages [csle-defender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_defender-0.2.7.tar.gz tmp/csle_defender-0.2.8.tar.gz --markdown 20230604/c/csle-defender/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:09] INFO root fetch - processPackages [autogluon.timeseries]: Start processing: gym-csle-stopping-game
+[2023-06-04 11:11:09] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2023-06-04 11:11:09] INFO root fetch - processPackages [gym-csle-stopping-game]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:10] INFO root fetch - processPackages [gym-csle-stopping-game]: executing diffoscope
+[2023-06-04 11:11:10] INFO root fetch - processPackages [gym-csle-stopping-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_csle_stopping_game-0.2.7.tar.gz tmp/gym_csle_stopping_game-0.2.8.tar.gz --markdown 20230604/g/gym-csle-stopping-game/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:10] INFO root fetch - processPackages [csle-ryu]: Start processing: gym-csle-intrusion-response-game
+[2023-06-04 11:11:10] INFO root fetch - main [MainThread]: End processing [csle-ryu]: success
+[2023-06-04 11:11:10] INFO root fetch - processPackages [csle-system-identification]: executing diffoscope
+[2023-06-04 11:11:10] INFO root fetch - processPackages [csle-system-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_system_identification-0.2.7.tar.gz tmp/csle_system_identification-0.2.8.tar.gz --markdown 20230604/c/csle-system-identification/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:10] INFO root fetch - processPackages [gym-csle-intrusion-response-game]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:10] INFO root fetch - processPackages [gym-csle-intrusion-response-game]: executing diffoscope
+[2023-06-04 11:11:10] INFO root fetch - processPackages [gym-csle-intrusion-response-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_csle_intrusion_response_game-0.2.7.tar.gz tmp/gym_csle_intrusion_response_game-0.2.8.tar.gz --markdown 20230604/g/gym-csle-intrusion-response-game/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:10] INFO root fetch - processPackages [halmoney]: Start processing: csle-agents
+[2023-06-04 11:11:10] INFO root fetch - main [MainThread]: End processing [halmoney]: success
+[2023-06-04 11:11:10] INFO root fetch - processPackages [csle-agents]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-06-04 11:11:10] INFO root fetch - processPackages [csle-agents]: executing diffoscope
+[2023-06-04 11:11:10] INFO root fetch - processPackages [csle-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csle_agents-0.2.7.tar.gz tmp/csle_agents-0.2.8.tar.gz --markdown 20230604/c/csle-agents/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-06-04 11:11:10] INFO root fetch - main [MainThread]: End processing [shelephant]: success
+[2023-06-04 11:11:11] INFO root fetch - main [MainThread]: End processing [csle-defender]: success
+[2023-06-04 11:11:11] INFO root fetch - main [MainThread]: End processing [csle-system-identification]: success
+[2023-06-04 11:11:11] INFO root fetch - main [MainThread]: End processing [gym-csle-intrusion-response-game]: success
+[2023-06-04 11:11:11] INFO root fetch - main [MainThread]: End processing [gym-csle-stopping-game]: success
+[2023-06-04 11:11:11] INFO root fetch - main [MainThread]: End processing [csle-attacker]: success
+[2023-06-04 11:11:11] INFO root fetch - main [MainThread]: End processing [csle-collector]: success
+[2023-06-04 11:11:13] INFO root fetch - main [MainThread]: End processing [csle-agents]: success
+[2023-06-04 11:11:14] INFO root fetch - main [MainThread]: End processing [csle-common]: success
+[2023-06-04 11:11:48] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-06-04 11:11:48] INFO root fetch - main [MainThread]: Store serial: [18364862]
