@@ -3543,3 +3543,37 @@
 [2023-06-04 09:55:39] INFO root fetch - main [MainThread]: End processing [miniosl]: success
 [2023-06-04 09:57:19] INFO root fetch - main [MainThread]: End processing [fiscalsim-us]: success
 [2023-06-04 09:57:19] INFO root fetch - main [MainThread]: Store serial: [18364533]
+[2023-06-04 10:02:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364533]
+[2023-06-04 10:02:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: computing-toolbox
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textual-fspicker
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipttrace
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyuno-game
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sosecrets
+[2023-06-04 10:02:30] INFO root fetch - processPackages [computing-toolbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-06-04 10:02:30] INFO root fetch - processPackages [sosecrets]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ipttrace]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-06-04 10:02:30] INFO root fetch - processPackages [textual-fspicker]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-06-04 10:02:30] INFO root fetch - processPackages [pyuno-game]: New version: [0.0.4] Old Version: [0.0.1]
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ipttrace]: Downloading https://files.pythonhosted.org/packages/96/31/bdc17690c3aff8aaad059b3e07055bff44d58e7414ed5510e0e89398ea05/ipttrace-0.1.0.tar.gz
+[2023-06-04 10:02:30] INFO root fetch - processPackages [pyuno-game]: Downloading https://files.pythonhosted.org/packages/01/c5/3117c1c4490e7c5bbc4560afd95ae267bfc49412072e702f49c96bc4e885/pyuno-game-0.0.1.tar.gz
+[2023-06-04 10:02:30] INFO root fetch - processPackages [textual-fspicker]: Downloading https://files.pythonhosted.org/packages/98/8c/5d54046e790ab8f570ae843c5f73ae7169ec571fee6e0816ea3ab7a579c2/textual_fspicker-0.0.9-py3-none-any.whl
+[2023-06-04 10:02:30] INFO root fetch - processPackages [textual-fspicker]: executing diffoscope
+[2023-06-04 10:02:30] INFO root fetch - processPackages [textual-fspicker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual_fspicker-0.0.8-py3-none-any.whl.zip tmp/textual_fspicker-0.0.9-py3-none-any.whl.zip --markdown 20230604/t/textual-fspicker/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-06-04 10:02:30] INFO root fetch - processPackages [sosecrets]: executing diffoscope
+[2023-06-04 10:02:30] INFO root fetch - processPackages [sosecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosecrets-0.1.8.tar.gz tmp/sosecrets-0.1.9.tar.gz --markdown 20230604/s/sosecrets/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-06-04 10:02:30] INFO root fetch - processPackages [pyuno-game]: Downloading https://files.pythonhosted.org/packages/65/4b/db02b9a7a303032adf7fe4e267edc03e20d0b77146d5ac0e12aa998f6661/pyuno-game-0.0.4.tar.gz
+[2023-06-04 10:02:30] INFO root fetch - processPackages [computing-toolbox]: Downloading https://files.pythonhosted.org/packages/6b/b2/2055e8710175c16d9446870260eefa5911a20101ca4160c9bd9e72c326a7/computing-toolbox-0.1.3.tar.gz
+[2023-06-04 10:02:30] INFO root fetch - processPackages [ipttrace]: Downloading https://files.pythonhosted.org/packages/ae/35/70c6c278f3878824f88315f249efeaaab241e68eab55fa43b6c3810e2203/ipttrace-0.1.1.tar.gz
+[2023-06-04 10:02:30] INFO root fetch - processPackages [pyuno-game]: executing diffoscope
+[2023-06-04 10:02:30] INFO root fetch - processPackages [pyuno-game]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuno-game-0.0.1.tar.gz tmp/pyuno-game-0.0.4.tar.gz --markdown 20230604/p/pyuno-game/0.0.1-0.0.4/diff.md --exclude *.pyd
+[2023-06-04 10:02:31] INFO root fetch - processPackages [ipttrace]: executing diffoscope
+[2023-06-04 10:02:31] INFO root fetch - processPackages [ipttrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipttrace-0.1.0.tar.gz tmp/ipttrace-0.1.1.tar.gz --markdown 20230604/i/ipttrace/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-06-04 10:02:31] INFO root fetch - processPackages [computing-toolbox]: executing diffoscope
+[2023-06-04 10:02:31] INFO root fetch - processPackages [computing-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/computing-toolbox-0.1.2.tar.gz tmp/computing-toolbox-0.1.3.tar.gz --markdown 20230604/c/computing-toolbox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [pyuno-game]: success
+[2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [ipttrace]: success
+[2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [textual-fspicker]: success
+[2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [computing-toolbox]: success
+[2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [sosecrets]: success
+[2023-06-04 10:02:32] INFO root fetch - main [MainThread]: Store serial: [18364548]
