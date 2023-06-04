@@ -6348,3 +6348,55 @@
 [2023-06-04 15:33:52] INFO root fetch - main [MainThread]: End processing [authomize-rest-api-client]: success
 [2023-06-04 15:33:53] INFO root fetch - main [MainThread]: End processing [pyFIS]: success
 [2023-06-04 15:33:53] INFO root fetch - main [MainThread]: Store serial: [18366184]
+[2023-06-04 15:38:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18366184]
+[2023-06-04 15:39:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mafic
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gsaiortc
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: helloworld-deshrit
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Musicreater
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-roborock
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rest-helper
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: myPackageLicensePrototype
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: myPackageLicensePrototype
+[2023-06-04 15:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sftp-uploader
+[2023-06-04 15:39:02] INFO root fetch - processPackages [Musicreater]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-06-04 15:39:02] INFO root fetch - processPackages [mafic]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-06-04 15:39:02] INFO root fetch - processPackages [rest-helper]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 15:39:02] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-06-04 15:39:02] INFO root fetch - processPackages [sftp-uploader]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-06-04 15:39:02] WARNING root fetch - processPackages [helloworld-deshrit]: Skipping, unable to determine old version
+[2023-06-04 15:39:02] INFO root fetch - main [MainThread]: End processing [helloworld-deshrit] error
+[2023-06-04 15:39:02] WARNING root fetch - processPackages [gsaiortc]: Skipping, unable to determine old version
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-04 15:39:02] INFO root fetch - main [MainThread]: End processing [gsaiortc] error
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-06-04 15:39:02] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-1.0.8.tar.gz tmp/sftp_uploader-1.0.9.tar.gz --markdown 20230604/s/sftp-uploader/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/69/4b/eb15e3be7a8107b4a28291b522e3b22089c4f76973a3da70b05c0e9a0561/myPackageLicensePrototype-1.0.7.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/69/4b/eb15e3be7a8107b4a28291b522e3b22089c4f76973a3da70b05c0e9a0561/myPackageLicensePrototype-1.0.7.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [rest-helper]: Downloading https://files.pythonhosted.org/packages/f2/7e/081db8973151f8d18621b0992034974760fa3a6ef12e8f26e0358867da4c/rest_helper-0.0.1.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [Musicreater]: Downloading https://files.pythonhosted.org/packages/e0/7b/2aecf2dcdbc0ead2167730f561dbc0a3d65d3feae547b872c8b083732a35/Musicreater-1.1.0.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [mafic]: Downloading https://files.pythonhosted.org/packages/26/e2/198743af9e269368a75685d5cbef1640ca9a799666cfcf5d38ceeecb9d80/mafic-2.9.2.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [Musicreater]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [Musicreater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Musicreater-1.0.0.tar.gz tmp/Musicreater-1.1.0.tar.gz --markdown 20230604/M/Musicreater/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/3a/24/605a75ba744de89d3b1ca82e35750d1753e6b0b3a240b4c9125dcc23db91/myPackageLicensePrototype-1.0.8.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: Downloading https://files.pythonhosted.org/packages/3a/24/605a75ba744de89d3b1ca82e35750d1753e6b0b3a240b4c9125dcc23db91/myPackageLicensePrototype-1.0.8.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [mafic]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [mafic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mafic-2.9.1.tar.gz tmp/mafic-2.9.2.tar.gz --markdown 20230604/m/mafic/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-06-04 15:39:02] INFO root fetch - processPackages [rest-helper]: Downloading https://files.pythonhosted.org/packages/41/5a/9e9dc16b8f7c4f036bd8b4144bfa2cb4ccbcbcdcd826ce30540147ce4558/rest_helper-0.0.2.tar.gz
+[2023-06-04 15:39:02] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230604/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.0.7.tar.gz tmp/myPackageLicensePrototype-1.0.8.tar.gz --markdown 20230604/m/myPackageLicensePrototype/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [myPackageLicensePrototype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myPackageLicensePrototype-1.0.7.tar.gz tmp/myPackageLicensePrototype-1.0.8.tar.gz --markdown 20230604/m/myPackageLicensePrototype/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-06-04 15:39:02] INFO root fetch - processPackages [rest-helper]: executing diffoscope
+[2023-06-04 15:39:02] INFO root fetch - processPackages [rest-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_helper-0.0.1.tar.gz tmp/rest_helper-0.0.2.tar.gz --markdown 20230604/r/rest-helper/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 15:39:03] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-06-04 15:39:03] INFO root fetch - main [MainThread]: End processing [myPackageLicensePrototype]: success
+[2023-06-04 15:39:03] INFO root fetch - main [MainThread]: End processing [mafic]: success
+[2023-06-04 15:39:03] INFO root fetch - main [MainThread]: End processing [rest-helper]: success
+[2023-06-04 15:39:03] INFO root fetch - main [MainThread]: End processing [Musicreater]: success
+[2023-06-04 15:39:04] INFO root fetch - main [MainThread]: End processing [myPackageLicensePrototype]: success
+[2023-06-04 15:39:04] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-06-04 15:39:04] INFO root fetch - main [MainThread]: Store serial: [18366214]
