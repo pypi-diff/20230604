@@ -2007,3 +2007,30 @@
 [2023-06-04 04:32:18] INFO root fetch - main [MainThread]: End processing [feign-python]: success
 [2023-06-04 04:32:19] INFO root fetch - main [MainThread]: End processing [easyNotion]: success
 [2023-06-04 04:32:19] INFO root fetch - main [MainThread]: Store serial: [18363644]
+[2023-06-04 04:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18363644]
+[2023-06-04 04:37:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 04:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easyNotion
+[2023-06-04 04:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-active-window
+[2023-06-04 04:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binsync
+[2023-06-04 04:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-library-objects
+[2023-06-04 04:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monai-weekly
+[2023-06-04 04:37:28] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-06-04 04:37:28] WARNING root fetch - processPackages [py-active-window]: Skipping, unable to determine old version
+[2023-06-04 04:37:28] INFO root fetch - main [MainThread]: End processing [py-active-window] error
+[2023-06-04 04:37:28] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-06-04 04:37:28] INFO root fetch - processPackages [monai-weekly]: New version: [1.2.dev2323] Old Version: [1.2.dev2322]
+[2023-06-04 04:37:28] INFO root fetch - processPackages [easyNotion]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-06-04 04:37:28] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-06-04 04:37:28] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230604/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-06-04 04:37:28] INFO root fetch - processPackages [easyNotion]: executing diffoscope
+[2023-06-04 04:37:28] INFO root fetch - processPackages [easyNotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyNotion-0.0.1.tar.gz tmp/easyNotion-0.0.2.tar.gz --markdown 20230604/e/easyNotion/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-06-04 04:37:28] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-06-04 04:37:28] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230604/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-06-04 04:37:28] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/0b/1c/394a56008b94744edf607d0ec401f7f58d4216744f988b75d2332a09cea6/monai-weekly-1.2.dev2323.tar.gz
+[2023-06-04 04:37:28] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2023-06-04 04:37:28] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai-weekly-1.2.dev2322.tar.gz tmp/monai-weekly-1.2.dev2323.tar.gz --markdown 20230604/m/monai-weekly/1.2.dev2322-1.2.dev2323/diff.md --exclude *.pyd
+[2023-06-04 04:37:29] INFO root fetch - main [MainThread]: End processing [easyNotion]: success
+[2023-06-04 04:37:29] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-06-04 04:37:30] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-06-04 04:37:44] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2023-06-04 04:37:44] INFO root fetch - main [MainThread]: Store serial: [18363667]
