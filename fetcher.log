@@ -9639,3 +9639,23 @@
 [2023-06-04 22:01:41] INFO root fetch - main [MainThread]: End processing [notctyparser]: success
 [2023-06-04 22:01:45] INFO root fetch - main [MainThread]: End processing [graphql-core]: success
 [2023-06-04 22:01:45] INFO root fetch - main [MainThread]: Store serial: [18368280]
+[2023-06-04 22:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18368280]
+[2023-06-04 22:06:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-06-04 22:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: conforce
+[2023-06-04 22:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbcn
+[2023-06-04 22:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fetch-lyrics-from-genius
+[2023-06-04 22:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zydnitro
+[2023-06-04 22:06:55] INFO root fetch - processPackages [py-dbcn]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-06-04 22:06:55] INFO root fetch - processPackages [conforce]: New version: [1.0.1b0] Old Version: [1.0.0a0]
+[2023-06-04 22:06:55] WARNING root fetch - processPackages [zydnitro]: Skipping, unable to determine old version
+[2023-06-04 22:06:55] INFO root fetch - main [MainThread]: End processing [zydnitro] error
+[2023-06-04 22:06:55] WARNING root fetch - processPackages [fetch-lyrics-from-genius]: Skipping, unable to determine old version
+[2023-06-04 22:06:55] INFO root fetch - main [MainThread]: End processing [fetch-lyrics-from-genius] error
+[2023-06-04 22:06:55] ERROR root fetch - processPackages [conforce]: Unable to fetch info: No such project/version 'conforce' 1.0.0a0
+[2023-06-04 22:06:55] INFO root fetch - main [MainThread]: End processing [conforce] error
+[2023-06-04 22:06:55] INFO root fetch - processPackages [py-dbcn]: Downloading https://files.pythonhosted.org/packages/43/23/fd8ddf0f82a40a8b16787d033336a1fb5d52c1e1e6819bc6a4d9548f714f/py-dbcn-0.3.1.tar.gz
+[2023-06-04 22:06:56] INFO root fetch - processPackages [py-dbcn]: Downloading https://files.pythonhosted.org/packages/9b/f9/2ce1052f58f55b5789348ce49d9ca6d5711aaeae30e81b3bd0009aecf51f/py-dbcn-0.3.2.tar.gz
+[2023-06-04 22:06:56] INFO root fetch - processPackages [py-dbcn]: executing diffoscope
+[2023-06-04 22:06:56] INFO root fetch - processPackages [py-dbcn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-dbcn-0.3.1.tar.gz tmp/py-dbcn-0.3.2.tar.gz --markdown 20230604/p/py-dbcn/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-06-04 22:06:58] INFO root fetch - main [MainThread]: End processing [py-dbcn]: success
+[2023-06-04 22:06:58] INFO root fetch - main [MainThread]: Store serial: [18368298]
