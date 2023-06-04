@@ -3577,3 +3577,28 @@
 [2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [computing-toolbox]: success
 [2023-06-04 10:02:32] INFO root fetch - main [MainThread]: End processing [sosecrets]: success
 [2023-06-04 10:02:32] INFO root fetch - main [MainThread]: Store serial: [18364548]
+[2023-06-04 10:07:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18364548]
+[2023-06-04 10:07:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-06-04 10:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hdbo-b
+[2023-06-04 10:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2023-06-04 10:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: screen-html
+[2023-06-04 10:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hydrogibs
+[2023-06-04 10:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: igfold
+[2023-06-04 10:07:40] INFO root fetch - processPackages [igfold]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-06-04 10:07:40] WARNING root fetch - processPackages [hdbo-b]: Skipping, unable to determine old version
+[2023-06-04 10:07:40] INFO root fetch - main [MainThread]: End processing [hdbo-b] error
+[2023-06-04 10:07:40] WARNING root fetch - processPackages [screen-html]: Skipping, unable to determine old version
+[2023-06-04 10:07:40] INFO root fetch - main [MainThread]: End processing [screen-html] error
+[2023-06-04 10:07:40] INFO root fetch - processPackages [hydrogibs]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-06-04 10:07:41] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230604] Old Version: [0.3.1.dev20230603]
+[2023-06-04 10:07:41] INFO root fetch - processPackages [hydrogibs]: executing diffoscope
+[2023-06-04 10:07:41] INFO root fetch - processPackages [hydrogibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrogibs-0.3.8.tar.gz tmp/hydrogibs-0.3.9.tar.gz --markdown 20230604/h/hydrogibs/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-06-04 10:07:41] INFO root fetch - processPackages [igfold]: Downloading https://files.pythonhosted.org/packages/77/f5/1e42082789f310b07ce292c782b6d7b3d413b157d00dd120372b3d9d429e/igfold-0.3.1.tar.gz
+[2023-06-04 10:07:41] WARNING root fetch - processPackages [igfold]: Skipping package: exceeds size limit 23351104>=10485760
+[2023-06-04 10:07:41] INFO root fetch - main [MainThread]: End processing [igfold] error
+[2023-06-04 10:07:41] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/ba/79/b6a96280f48b9c05194ce73bc6b7e5a87532412f3ca8aebe6d6387363b40/pyglove-0.3.1.dev20230604.tar.gz
+[2023-06-04 10:07:41] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-06-04 10:07:41] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230604:/home/abi/fetcher/20230604:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230603.tar.gz tmp/pyglove-0.3.1.dev20230604.tar.gz --markdown 20230604/p/pyglove/0.3.1.dev20230603-0.3.1.dev20230604/diff.md --exclude *.pyd
+[2023-06-04 10:07:42] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
+[2023-06-04 10:07:43] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-06-04 10:07:43] INFO root fetch - main [MainThread]: Store serial: [18364567]
